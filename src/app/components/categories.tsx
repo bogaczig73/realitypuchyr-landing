@@ -13,7 +13,7 @@ async function getCategories(): Promise<Category[]> {
     try {
         const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
         const res = await fetch(`${apiUrl}/api/categories`, {
-            cache: 'no-store',
+            next: { revalidate: 3600 }, // Cache for 1 hour
             headers: {
                 'Content-Type': 'application/json',
             },

@@ -12,7 +12,6 @@ import ClientTwo from './components/client-two'
 import GetInTuch from './components/get-in-touch'
 import Footer from './components/footer'
 import Switcher from './components/switcher'
-import Counter from './components/counter'
 import CounterSection from './components/counter-section'
 import AboutOurCooperation from './components/about-our-cooperation'
 

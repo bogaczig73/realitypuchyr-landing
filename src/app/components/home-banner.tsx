@@ -7,7 +7,7 @@ const TinySlider = dynamic(()=>import('tiny-slider-react'),{ssr:false})
 import 'tiny-slider/dist/tiny-slider.css';
 import Image from 'next/image'
 import { counterData, partnerData } from '../data/data'
-import Counter from './counter'
+
 const heroimage = '/images/agency/pavel.webp'
 
 export default function HomeBanner() {
