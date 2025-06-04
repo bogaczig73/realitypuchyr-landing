@@ -60,7 +60,7 @@ async function getCategories(): Promise<Category[]> {
 export default async function Categories() {
     try {
         const categories = await getCategories();
-
+        console.log(categories);
         return (
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 md:gap-[30px] gap-3">
                 {categories.map((category) => (

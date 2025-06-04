@@ -84,8 +84,8 @@ export default function VideoTourCarousel() {
             try {
                 setLoading(true);
                 setError(null);
-                const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
-                const response = await fetch(`${apiUrl}/api/properties/video-tours`);
+                const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+                const response = await fetch(`${apiUrl}/properties/video-tours`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
