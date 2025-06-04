@@ -108,7 +108,7 @@ export default function Page() {
                             
                             <h5 className="text-xl font-medium mt-6">Services</h5>
                             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                                {servicesData.map((item: servicesData, index: number) => {
+                                {servicesData.map((item: typeof servicesData[number], index: number) => {
                                     return (
                                         <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-transparent overflow-hidden text-center" key={index}>
                                             <div className="relative overflow-hidden text-transparent -m-3">
