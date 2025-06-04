@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 import { useParams } from 'next/navigation';
 import { LiaCompressArrowsAltSolid } from 'react-icons/lia';
 import { LuBath, LuBedDouble } from 'react-icons/lu';
-import { FiMapPin, FiPhone } from 'react-icons/fi';
+import { FiMapPin, FiPhone, FiX } from 'react-icons/fi';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Switcher from '../../components/switcher';
@@ -78,6 +78,7 @@ interface Property {
   videoUrl: string;
   layout: string;
   images: { id: number; url: string }[];
+  floorplans: { id: number; url: string; name: string }[];
 }
 
 
@@ -89,6 +90,7 @@ export default function PropertyDetail() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [zoomedImage, setZoomedImage] = useState<{ url: string; name: string } | null>(null);
 
   const settings = {
     container: '.tiny-one-item',
@@ -182,6 +184,14 @@ export default function PropertyDetail() {
     return 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin';
   };
 
+  const handleImageClick = (url: string, name: string) => {
+    setZoomedImage({ url, name });
+  };
+
+  const closeZoomedImage = () => {
+    setZoomedImage(null);
+  };
+
   return (
     <>
       <Navbar navClass={''} topnavClass={''} tagline={false}/>
@@ -225,9 +235,14 @@ export default function PropertyDetail() {
                   <span className="lg:text-xl">{property.beds} Beds</span>
                 </li>
 
-                <li className="flex items-center">
+                <li className="flex items-center lg:me-6 me-4">
                   <LuBath className="lg:text-3xl text-2xl me-2 text-green-600"/>
                   <span className="lg:text-xl">{property.baths} Baths</span>
+                </li>
+
+                <li className="flex items-center">
+                  <i className="mdi mdi-floor-plan text-2xl me-2 text-green-600"></i>
+                  <span className="lg:text-xl">{property.layout}</span>
                 </li>
               </ul>
 
@@ -466,6 +481,64 @@ export default function PropertyDetail() {
                   </div>
                 </div>
               )}
+
+              {/* Floorplans Section */}
+              {property.floorplans && property.floorplans.length > 0 && (
+                <div className="mt-6 rounded-md bg-white dark:bg-slate-900 shadow-sm shadow-gray-200 dark:shadow-gray-700">
+                  <div className="p-6">
+                    <h5 className="text-xl font-medium mb-4">Floorplans</h5>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {property.floorplans.map((floorplan) => (
+                        <div key={floorplan.id} className="rounded-md overflow-hidden">
+                          <h6 className="text-lg font-medium mb-2">{floorplan.name}</h6>
+                          <div 
+                            className="cursor-zoom-in" 
+                            onClick={() => handleImageClick(floorplan.url, floorplan.name)}
+                          >
+                            <Image 
+                              src={floorplan.url} 
+                              width={0} 
+                              height={0} 
+                              sizes='100vw' 
+                              style={{width:'100%', height:'auto'}} 
+                              className="rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700" 
+                              alt={`${floorplan.name} - Floorplan`}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Zoomed Image Modal */}
+              {zoomedImage && (
+                <div 
+                  className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4"
+                  onClick={closeZoomedImage}
+                >
+                  <div className="relative max-w-7xl w-full max-h-[90vh]">
+                    <button
+                      className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+                      onClick={closeZoomedImage}
+                    >
+                      <FiX className="w-8 h-8" />
+                    </button>
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={zoomedImage.url}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto', maxHeight: '90vh', objectFit: 'contain' }}
+                        className="rounded-lg"
+                        alt={`${zoomedImage.name} - Zoomed Floorplan`}
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
           
               <div className="w-full leading-[0] border-0 mt-6">
                 <iframe 
@@ -485,9 +558,9 @@ export default function PropertyDetail() {
                     <h5 className="text-2xl font-medium">Price:</h5>
 
                     <div className="flex justify-between items-center mt-4">
-                      <span className="text-xl font-medium">$ {property.price.toLocaleString()}</span>
+                      <span className="text-xl font-medium"> {property.price.toLocaleString()} Kč</span>
                       {property.discountedPrice && (
-                        <span className="text-xl font-medium line-through text-red-500">$ {property.discountedPrice.toLocaleString()}</span>
+                        <span className="text-xl font-medium line-through text-red-500"> {property.discountedPrice.toLocaleString()} Kč</span>
                       )}
                       <span className="bg-green-600/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
                         {formatValue(property.category)}
@@ -496,19 +569,14 @@ export default function PropertyDetail() {
 
                     <ul className="list-none mt-4">
                       <li className="flex justify-between items-center">
-                        <span className="text-slate-400 text-sm">Price per sq ft</span>
-                        <span className="font-medium text-sm">$ {(property.price / property.size).toFixed(2)}</span>
-                      </li>
-
-                      <li className="flex justify-between items-center mt-2">
-                        <span className="text-slate-400 text-sm">Monthly Payment (estimate)</span>
-                        <span className="font-medium text-sm">$ {(property.price / 360).toFixed(2)}/Monthly</span>
+                        <span className="text-slate-400 text-sm">Price per m²</span>
+                        <span className="font-medium text-sm">{(property.price / property.size).toFixed(2)} Kč</span>
                       </li>
 
                       {property.reservationPrice && (
                         <li className="flex justify-between items-center mt-2">
                           <span className="text-slate-400 text-sm">Reservation Price</span>
-                          <span className="font-medium text-sm">$ {property.reservationPrice.toLocaleString()}</span>
+                          <span className="font-medium text-sm"> {property.reservationPrice.toLocaleString()} Kč</span>
                         </li>
                       )}
                     </ul>
