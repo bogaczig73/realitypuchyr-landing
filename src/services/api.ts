@@ -63,12 +63,6 @@ const api = axios.create({
 // Add request interceptor for logging
 api.interceptors.request.use(
     (config) => {
-        console.log('API Request:', {
-            method: config.method?.toUpperCase(),
-            url: config.url,
-            baseURL: config.baseURL,
-            params: config.params
-        });
         return config;
     },
     (error) => {

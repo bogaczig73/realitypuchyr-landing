@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { User } from 'react-feather';
+import Sidebar from "./sidebar";
 import { usePathname } from "next/navigation";
 
 export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:string, topnavClass:string, tagline:boolean }) {
@@ -29,29 +29,12 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
         }
     }, [current]);
 
-
-    const toggleMenu = (): void => {
+    const toggleSidebar = (e: React.MouseEvent): void => {
+        e.preventDefault();
         setIsOpen(!isOpen);
-    
-        const navigation = document.getElementById("navigation");
-        if (navigation) {
-            const anchorArray = Array.from(navigation.getElementsByTagName("a"));
-    
-            anchorArray.forEach((element) => {
-                element.addEventListener("click", (elem: Event) => {
-                    const target = elem.target as HTMLElement;
-                    if (target) {
-                        const href = target.getAttribute("href");
-                        if (href && href !== "") {
-                            const nextSibling = target.nextElementSibling;
-                            if (nextSibling && nextSibling.nextElementSibling) {
-                                const submenu = nextSibling.nextElementSibling as HTMLElement;
-                                submenu.classList.toggle("open");
-                            }
-                        }
-                    }
-                });
-            });
+        const sidebar = document.getElementById("sidebar");
+        if (sidebar) {
+            sidebar.classList.toggle("open");
         }
     };
     
@@ -67,7 +50,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                             <Image src="/images/logo-dark.png" className="inline-block dark:hidden" alt="" width={98} height={24}/>
                             <Image src="/images/logo-light.png" className="hidden dark:inline-block" alt="" width={98} height={24} />
                         </Link> :
-                        <Link className="logo" href="#">
+                        <Link className="logo" href="/">
                             <span className="inline-block dark:hidden">
                                 <Image src="/images/logo-dark.png" className="l-dark"  alt="" width={98} height={24}/>
                                 <Image src="/images/logo-light.png" className="l-light"  alt="" width={98} height={24}/>
@@ -80,7 +63,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                     {/* <!-- Start Mobile Toggle --> */}
                     <div className="menu-extras">
                         <div className="menu-item">
-                            <Link href="#" className="navbar-toggle" id="isToggle" onClick={toggleMenu}>
+                            <Link href="#" className="navbar-toggle" id="isToggle" onClick={toggleSidebar}>
                                 <div className="lines">
                                     <span></span>
                                     <span></span>
@@ -99,7 +82,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                     </ul>
                     {/* <!--Login button End--> */}
 
-                    <div id="navigation" className={`${isOpen ? 'block' : 'hidden'} lg:block`} >
+                    <div id="navigation" className="lg:block">
                         {/* <!-- Navigation Menu--> */}
                         <ul className={`navigation-menu  ${navClass === '' || navClass === undefined ? '' : 'nav-light'}   ${topnavClass !== '' && topnavClass !== undefined ? '!justify-center' : '!justify-end'}`}>
                             <li className={`has-submenu parent-menu-item ${["/"].includes(manu) ? 'active' : ''}`}><Link href="/">Home</Link></li>
@@ -111,6 +94,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                     </div>
                 </div>
             </nav>
+            <Sidebar/>
             {/* End Navbar  */}
         </React.Fragment>
     );

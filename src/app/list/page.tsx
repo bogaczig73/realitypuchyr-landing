@@ -14,6 +14,7 @@ import { propertyApi, Property, Pagination } from "../../services/api";
 import { LiaCompressArrowsAltSolid } from "react-icons/lia";
 import { LuBath, LuBedDouble } from "react-icons/lu";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import Sidebar from "../components/sidebar";
 
 function ListContent() {
     const searchParams = useSearchParams();

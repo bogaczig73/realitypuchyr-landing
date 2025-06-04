@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './components/navbar'
+import Sidebar from './components/sidebar'
 import HomeBanner from './components/home-banner'
 import { aboutData, blogList, teamData } from './data/data'
 import { FiArrowRight, FiCalendar, FiClock, FiFacebook, FiHexagon, FiInstagram, FiLinkedin } from 'react-icons/fi'
@@ -31,7 +32,8 @@ interface BlogData{
 export default function Page() {
   return (
     <>
-     <Navbar navClass={''} topnavClass={''} tagline={false}/>
+     <Navbar navClass="" topnavClass={''} tagline={false}/>
+     <Sidebar/>
      <HomeBanner/>   
     
      <section className="relative md:pb-24 pb-16" id="services">
@@ -43,7 +45,6 @@ export default function Page() {
                 </div>
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                    
                     {aboutData.map((item:AboutData,index:number)=>{
                     return(
                         <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-transparent overflow-hidden text-center" key={index}>
@@ -65,13 +66,11 @@ export default function Page() {
                         </div>
                         )
                     })}
-                    
                 </div>
             </div>
 
             <AboutOurCooperation/>
             <AboutVideoTour/>
-
         </section>
         <CounterSection/>
 
@@ -86,7 +85,6 @@ export default function Page() {
             <Property/>
 
             <ClientTwo/>
-
 
             <div className="container relative lg:mt-24 mt-16">
                 <div className="grid grid-cols-1 pb-8 text-center">
@@ -123,7 +121,6 @@ export default function Page() {
                             </div>
                         )
                     })}
-                    
                 </div>
             </div>
 

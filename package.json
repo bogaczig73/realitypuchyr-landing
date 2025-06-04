@@ -23,6 +23,7 @@
     "react-scroll": "^1.9.3",
     "react-select": "^5.10.1",
     "react-type-animation": "^3.2.0",
+    "simplebar-react": "^3.3.1",
     "swiper": "^11.2.6",
     "tiny-slider-react": "^0.5.7",
     "yet-another-react-lightbox": "^3.21.9"
