@@ -27,7 +27,7 @@ export default function FormThree(){
     const searchParams = useSearchParams();
     const [activeTabIndex, setActiveTabIndex] = useState<number>(() => {
         const status = searchParams.get('status');
-        return propertyStatuses.findIndex(s => s.value === status) || 0;
+        return status ? propertyStatuses.findIndex(s => s.value === status) : 0;
     });
     const [categories, setCategories] = useState<CategoryOption[]>([]);
     const [searchText, setSearchText] = useState(() => searchParams.get('search') || '');
@@ -143,14 +143,17 @@ export default function FormThree(){
                                 </div>
                             </div>
 
-                            <div className="lg:mt-6">
-                                <button 
-                                    type="submit" 
-                                    className="btn bg-green-600 hover:bg-green-700 border-green-600 hover:border-green-700 text-white searchbtn submit-btn w-full !h-12 rounded"
-                                    disabled={isLoading}
-                                >
-                                    {isLoading ? "Loading..." : "Search"}
-                                </button>
+                            <div>
+                                <label className="form-label text-slate-900 dark:text-white font-medium">Action:</label>
+                                <div className="filter-search-form relative filter-border mt-2">
+                                    <button 
+                                        type="submit" 
+                                        className="btn bg-green-600 hover:bg-green-700 border-green-600 hover:border-green-700 text-white searchbtn submit-btn w-full !h-12 rounded-md lg:rounded-none"
+                                        disabled={isLoading}
+                                    >
+                                        {isLoading ? "Loading..." : "Search"}
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

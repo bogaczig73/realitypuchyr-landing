@@ -34,7 +34,7 @@ export default function Page() {
      <Navbar navClass={''} topnavClass={''} tagline={false}/>
      <HomeBanner/>   
     
-     <section className="relative md:pb-24 pb-16">
+     <section className="relative md:pb-24 pb-16" id="services">
             <div className="container relative">
                 <div className="grid grid-cols-1 pb-8 text-center">
                     <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Do I Do?</h3>

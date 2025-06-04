@@ -160,7 +160,7 @@ export default function VideoTourCarousel() {
                                 <div className="relative group cursor-pointer mx-3">
                                     <div className="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
                                         <Image
-                                            src={property.images[0]?.url || '/images/placeholder.jpg'}
+                                            src={property.images[0]?.url || '/images/property/placeholder.webp'}
                                             alt={property.name}
                                             width={400}
                                             height={225}

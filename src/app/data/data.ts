@@ -381,23 +381,82 @@ export const conatctDetails = [
     },
 ]
 export const accordion = [
-    {
-        title: 'How does it work ?',
-        content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
-    },
-    {
-        title: 'Do I need a designer to use Hously ?',
-        content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
-    },
-    {
-        title: 'What do I need to do to start selling ?',
-        content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
-    },
-    {
-        title: 'What happens when I receive an order ?',
-        content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
-    }
-]
+          {
+            "title": "Can foreigners buy real estate in the Czech Republic?",
+            "content": "Yes, but with some restrictions:\n- EU citizens can buy property freely.\n- Non-EU citizens can buy residential property if they have a long-term residence permit or establish a Czech company to hold the property.\n- Agricultural and forest land has stricter regulations for non-EU buyers.",
+            "type": "general"
+          },
+          {
+            "title": "What are the most popular cities for real estate investment?",
+            "content": "- Prague (highest demand, strong rental market)\n- Brno (growing tech hub, student rentals)\n- Ostrava (lower prices, industrial redevelopment)\n- Karlovy Vary & Český Krumlov (tourist hotspots, short-term rentals)",
+            "type": "general"
+          },
+          {
+            "title": "How is the Czech real estate market performing?",
+            "content": "- Prague remains stable with steady price growth.\n- Regional cities offer better affordability and rental yields.\n- Interest rates have risen, slightly cooling demand.",
+            "type": "general"
+          },
+          {
+            "title": "What are the steps to buying property in the Czech Republic?",
+            "content": "1. Find a property (via real estate agents or online portals like Sreality.cz, Bezrealitky.cz).\n2. Sign a reservation agreement (usually requires a deposit).\n3. Conduct due diligence (check land registry, debts, zoning).\n4. Sign a purchase contract (notarization required).\n5. Register ownership in the Cadastral Register (Katastr nemovitostí).",
+            "type": "buying"
+          },
+          {
+            "title": "What fees and taxes apply when buying property?",
+            "content": "- Property transfer tax (4%) – Paid by the buyer (some exemptions apply).\n- Real estate agent fee (typically 2–6%, paid by seller or buyer depending on agreement).\n- Notary & legal fees (approx. 0.5–1% of property value).\n- Land registry fee (around CZK 1,000–5,000).",
+            "type": "buying"
+          },
+          {
+            "title": "Do I need a lawyer when buying property?",
+            "content": "Highly recommended to:\n- Check legal title & encumbrances.\n- Review contracts.\n- Ensure proper registration.",
+            "type": "buying"
+          },
+          {
+            "title": "Can foreigners get a mortgage in the Czech Republic?",
+            "content": "Yes, but conditions vary:\n- EU citizens can get mortgages more easily.\n- Non-EU citizens may need a higher down payment (30–50%) and proof of income.\n- Interest rates currently range from 4–6%.",
+            "type": "financing"
+          },
+          {
+            "title": "What is the typical down payment for a mortgage?",
+            "content": "- Czech residents: 10–20%. - Foreigners: Often 30–50%.",
+            "type": "financing"
+          },
+          {
+            "title": "What taxes apply when selling property?",
+            "content": "- Capital gains tax (15%) – Applies if sold within 5 years of purchase (exempt if it was your primary residence).\n- No inheritance or gift tax (but income tax may apply).",
+            "type": "selling"
+          },
+          {
+            "title": "How long does it take to sell a property?",
+            "content": "- Prague: 2–6 months (depending on price & location).\n- Smaller towns: May take longer.",
+            "type": "selling"
+          },
+          {
+            "title": "Is renting property a good investment in the Czech Republic?",
+            "content": "- Prague offers 4–6% rental yields.\n- Student cities (Brno, Olomouc) have high demand.\n- Short-term rentals (Airbnb) are profitable in tourist areas but face increasing regulation.",
+            "type": "renting"
+          },
+          {
+            "title": "What are tenant rights in the Czech Republic?",
+            "content": "- Standard lease duration: 1+ year.\n- Landlord can increase rent once per year (with notice).\n- Eviction requires a court order (except for serious violations).",
+            "type": "renting"
+          },
+          {
+            "title": "What is the Cadastral Register (Katastr nemovitostí)?",
+            "content": "The official land registry where property ownership, mortgages, and restrictions are recorded. Always verify details before buying.",
+            "type": "legal"
+          },
+          {
+            "title": "Do I need a residence permit to buy property?",
+            "content": "No, but non-EU buyers may need a company or residency to purchase residential property.",
+            "type": "legal"
+          },
+          {
+            "title": "Are there restrictions on short-term rentals (Airbnb)?",
+            "content": "- Prague requires registration and limits short-term rentals in some areas.\n- Other cities may introduce similar rules.",
+            "type": "legal"
+          }
+        ]
 export const feature = [
     {
         title:'Comfortable',
@@ -493,6 +552,23 @@ export const aboutData = [
         image:'/images/sell.png',
         title:'Sophisticated promotion',
         desc:`Home staging, paid social media promotion and targeted marketing for the luxury real estate segment. We use digital marketing to reach the target group of buyers.`
+    }
+]
+export const servicesData = [
+    {
+        image:'/images/rent.png',
+        title:'Real Estate',
+        desc:`Expert buying and selling guidance in Prague and Central Bohemia, ensuring a smooth and satisfying experience.`
+    },
+    {
+        image:'/images/buy.png',
+        title:'Financial Services',
+        desc:`Tailored advice on investments, mortgages, and financial planning for long-term success.`
+    },
+    {
+        image:'/images/sell.png',
+        title:'Career Opportunities',
+        desc:`We offer a wide range of career opportunities in the real estate and financial sectors.`
     }
 ]
 export const partnerData = [

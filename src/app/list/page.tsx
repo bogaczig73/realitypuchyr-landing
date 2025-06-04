@@ -104,7 +104,7 @@ function ListContent() {
                                             <div className="relative md:shrink-0">
                                                 <img 
                                                     className='h-full w-full object-cover md:w-48' 
-                                                    src={property.images[0]?.url || '/images/placeholder.jpg'} 
+                                                    src={property.images[0]?.url || '/images/property/placeholder.webp'} 
                                                     alt={property.name}
                                                 />
                                                 <div className="absolute top-4 end-4">

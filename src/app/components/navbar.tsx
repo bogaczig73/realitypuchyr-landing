@@ -7,7 +7,7 @@ import { User } from 'react-feather';
 import { usePathname } from "next/navigation";
 
 export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:string, topnavClass:string, tagline:boolean }) {
-    let [isOpen, setIsOpen] = useState(true);
+    let [isOpen, setIsOpen] = useState(false);
     let [topNavbar, setTopNavBar] = useState(false);
 
     let [manu , setManu] = useState('');
@@ -16,7 +16,6 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
     let current = usePathname();
 
     useEffect(() => {
-
         setManu(current)
         setSubManu(current)
 
@@ -24,12 +23,11 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
             setTopNavBar(window.scrollY >= 50)
         }
 
-        window.addEventListener('scroll', windowScroll )
-        window.scrollTo(0, 0)
+        window.addEventListener('scroll', windowScroll)
         return()=>{
-            window.removeEventListener('scroll', windowScroll )
+            window.removeEventListener('scroll', windowScroll)
         }
-      }, []);
+    }, [current]);
 
 
     const toggleMenu = (): void => {
@@ -60,7 +58,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
 
     return (
         <React.Fragment>
-            <nav id="topnav" className={`${topNavbar ? 'nav-sticky': ''} ${tagline ? 'tagline-height' : ''} ${topnavClass ? topnavClass : ''} defaultscroll is-sticky`} >
+            <nav id="topnav" className={`${topNavbar ? 'nav-sticky': ''} ${tagline ? 'tagline-height' : ''} ${topnavClass ? topnavClass : ''} defaultscroll fixed top-0 left-0 right-0 z-50`} >
                
                 <div className={`${topnavClass !== '' && topnavClass !== undefined ? 'container-fluid md:px-8 px-3' : 'container'}`}>
                     {/* <!-- Logo container--> */}
@@ -96,12 +94,12 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                     {/* <!-- Login button Start --> */}
                     <ul className="buy-button list-none mb-0">
                         <li className="sm:inline ps-1 mb-0 hidden">
-                            <Link href="tel:+420725511970" className="btn bg-green-600 hover:bg-green-700 border-green-600 dark:border-green-600 text-white !rounded-full">+420 725 511 970</Link>
+                            <Link href="tel:+420733781696" className="btn bg-green-600 hover:bg-green-700 border-green-600 dark:border-green-600 text-white !rounded-full">+420 733 781 696</Link>
                         </li>
                     </ul>
                     {/* <!--Login button End--> */}
 
-                    <div id="navigation" className={`${isOpen === true ? 'hidden' : 'block'}`} >
+                    <div id="navigation" className={`${isOpen ? 'block' : 'hidden'} lg:block`} >
                         {/* <!-- Navigation Menu--> */}
                         <ul className={`navigation-menu  ${navClass === '' || navClass === undefined ? '' : 'nav-light'}   ${topnavClass !== '' && topnavClass !== undefined ? '!justify-center' : '!justify-end'}`}>
                             <li className={`has-submenu parent-menu-item ${["/"].includes(manu) ? 'active' : ''}`}><Link href="/">Home</Link></li>

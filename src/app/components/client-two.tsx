@@ -94,7 +94,7 @@ export default function ClientTwo() {
         <>
             <div className="container lg:mt-24 mt-16">
                 <div className="grid grid-cols-1 pb-8 text-center">
-                    <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What My Client Say ?</h3>
+                    <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What My Clients Say ?</h3>
 
                     <p className="text-slate-400 max-w-xl mx-auto">I let my clients speak for themselves. I'm proud of the work I do and I'm confident that you will be too.</p>
                 </div>

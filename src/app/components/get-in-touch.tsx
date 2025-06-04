@@ -9,7 +9,7 @@ export default function GetInTuch(){
         <div className="grid grid-cols-1 text-center">
             <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Have Question ? Get in touch!</h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Buying property can be overwhelming — but you don’t have to do it alone. <br />Let’s chat and make it easier!</p>
 
             <div className="mt-6">
                 <Link href="/contact" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md"><FiPhone className="align-middle me-2"/> Contact us</Link>

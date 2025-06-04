@@ -8,7 +8,15 @@ import { LuBath, LuBedDouble } from "react-icons/lu";
 import { propertyApi } from '@/services/api';
 import type { Property } from '@/services/api';
 
-export default function Property() {
+export default function Property({
+    propertiesPerRow = 3,
+    showFeaturedText = true,
+    limit = 6
+}: {
+    propertiesPerRow?: 1 | 2 | 3;
+    showFeaturedText?: boolean;
+    limit?: number;
+}) {
     const [properties, setProperties] = useState<Property[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -19,7 +27,7 @@ export default function Property() {
             try {
                 setLoading(true);
                 setError(null);
-                const response = await propertyApi.getAll(1, 6); // Fetch only 6 featured properties
+                const response = await propertyApi.getAll(1, limit);
                 setProperties(response.properties);
             } catch (error) {
                 setError('Failed to load properties. Please try again later.');
@@ -30,7 +38,7 @@ export default function Property() {
         };
 
         fetchProperties();
-    }, []);
+    }, [limit]);
 
     const handleImageLoad = (id: number) => {
         setImageLoading(prev => ({ ...prev, [id]: false }));
@@ -54,13 +62,15 @@ export default function Property() {
 
     return (
         <>
-            <div className="container lg:mt-24 mt-16">
-                <div className="grid grid-cols-1 pb-8 text-center">
-                    <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Featured Properties</h3>
-                    <p className="text-slate-400 max-w-xl mx-auto">A great platform to buy, sell and rent your properties without any agent or commissions.</p>
-                </div>
+            <div className={`container ${showFeaturedText ? 'lg:mt-24 mt-16' : ''}`}>
+                {showFeaturedText && (
+                    <div className="grid grid-cols-1 pb-8 text-center">
+                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Featured Properties</h3>
+                        <p className="text-slate-400 max-w-xl mx-auto">A great platform to buy, sell and rent your properties without any agent or commissions.</p>
+                    </div>
+                )}
 
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+                <div className={`grid ${propertiesPerRow === 3 ? 'lg:grid-cols-3' : propertiesPerRow === 2 ? 'lg:grid-cols-2' : 'lg:grid-cols-1'} md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]`}>
                     {properties.map((item) => (
                         <div className="group rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl dark:hover:shadow-xl shadow-gray-200 dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500" key={item.id}>
                             <div className="relative">
