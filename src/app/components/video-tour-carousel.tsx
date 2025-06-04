@@ -5,7 +5,7 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { createPortal } from 'react-dom';
 import 'tiny-slider/dist/tiny-slider.css';
-
+import { API_BASE_URL } from '@/services/api';
 const TinySlider = dynamic(() => import("tiny-slider-react"), { ssr: false });
 
 interface VideoTourProperty {
@@ -84,8 +84,7 @@ export default function VideoTourCarousel() {
             try {
                 setLoading(true);
                 setError(null);
-                const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
-                const response = await fetch(`${apiUrl}/properties/video-tours`);
+                const response = await fetch(`${API_BASE_URL}/properties/video-tours`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

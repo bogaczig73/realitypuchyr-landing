@@ -1,14 +1,12 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import CountUp from 'react-countup'
-
+import { API_BASE_URL } from '@/services/api';
 interface Stats {
     activeProperties: number;
     soldProperties: number;
     yearsOfExperience: number;
 }
-
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
 
 export default function CounterSection() {
     const [stats, setStats] = useState<Stats>({

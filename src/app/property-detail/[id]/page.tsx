@@ -10,6 +10,7 @@ import { FiMapPin, FiPhone } from 'react-icons/fi';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Switcher from '../../components/switcher';
+import { API_BASE_URL } from '../../../services/api';
 
 const TinySlider = dynamic(()=>import('tiny-slider-react'),{ssr:false})
 import 'tiny-slider/dist/tiny-slider.css';
@@ -79,6 +80,8 @@ interface Property {
   images: { id: number; url: string }[];
 }
 
+
+
 export default function PropertyDetail() {
   const params = useParams();
   const id = parseInt(String(params?.id || 0));
@@ -108,7 +111,7 @@ export default function PropertyDetail() {
     const fetchProperty = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:3001/api/properties/${id}`);
+        const response = await fetch(`${API_BASE_URL}/properties/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch property');
         }

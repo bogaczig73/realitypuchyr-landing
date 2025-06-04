@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { API_BASE_URL } from '@/services/api';
 interface Category {
     id: number;
     name: string;
@@ -18,16 +18,14 @@ interface CategoryStat {
 
 async function getCategories(): Promise<Category[]> {
     try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
-        console.log(apiUrl);
         const [categoriesRes, statsRes] = await Promise.all([
-            fetch(`${apiUrl}/categories`, {
+            fetch(`${API_BASE_URL}/categories`, {
                 next: { revalidate: 3600 }, // Cache for 1 hour
                 headers: {
                     'Content-Type': 'application/json',
                 },
             }),
-            fetch(`${apiUrl}/properties/category-stats`, {
+            fetch(`${API_BASE_URL}/properties/category-stats`, {
                 next: { revalidate: 3600 }, // Cache for 1 hour
                 headers: {
                     'Content-Type': 'application/json',

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react"
 import { FiSearch, FiHome } from "react-icons/fi";
 import type { SingleValue, ActionMeta } from 'react-select';
 import { useRouter, useSearchParams } from 'next/navigation';
-
+import { API_BASE_URL } from '@/services/api';
 const Select = dynamic(()=>import('react-select'),{ssr:false}) as any;
 
 interface Category {
@@ -44,7 +44,7 @@ export default function FormThree(){
             setIsLoading(true);
             setError(null);
             try {
-                const response = await fetch('http://localhost:3001/api/categories');
+                const response = await fetch(`${API_BASE_URL}/categories`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
