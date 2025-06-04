@@ -7,23 +7,50 @@ interface Category {
     name: string;
     slug: string;
     image: string;
+    count?: number;
+}
+
+interface CategoryStat {
+    categoryId: number;
+    categoryName: string;
+    count: number;
 }
 
 async function getCategories(): Promise<Category[]> {
     try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
-        const res = await fetch(`${apiUrl}/api/categories`, {
-            next: { revalidate: 3600 }, // Cache for 1 hour
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-        
-        if (!res.ok) {
-            throw new Error(`Failed to fetch categories: ${res.status} ${res.statusText}`);
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+        console.log(apiUrl);
+        const [categoriesRes, statsRes] = await Promise.all([
+            fetch(`${apiUrl}/categories`, {
+                next: { revalidate: 3600 }, // Cache for 1 hour
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }),
+            fetch(`${apiUrl}/properties/category-stats`, {
+                next: { revalidate: 3600 }, // Cache for 1 hour
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+        ]);
+
+        if (!categoriesRes.ok) {
+            throw new Error(`Failed to fetch categories: ${categoriesRes.status} ${categoriesRes.statusText}`);
         }
-        
-        return res.json();
+
+        if (!statsRes.ok) {
+            throw new Error(`Failed to fetch category stats: ${statsRes.status} ${statsRes.statusText}`);
+        }
+
+        const categories = await categoriesRes.json();
+        const stats = await statsRes.json();
+
+        // Merge the stats with categories
+        return categories.map((category: Category) => ({
+            ...category,
+            count: stats.find((stat: CategoryStat) => stat.categoryId === category.id)?.count || 0
+        }));
     } catch (error) {
         console.error('Error fetching categories:', error);
         throw new Error('Failed to load categories. Please try again later.');
@@ -57,6 +84,9 @@ export default async function Categories() {
                             >
                                 {category.name}
                             </Link>
+                            <p className="text-gray-600 dark:text-gray-400 mt-1">
+                                {category.count} {category.count === 1 ? 'property' : 'properties'}
+                            </p>
                         </div>
                     </div>
                 ))}

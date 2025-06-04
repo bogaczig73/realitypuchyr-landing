@@ -8,17 +8,19 @@ interface Stats {
     yearsOfExperience: number;
 }
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+
 export default function CounterSection() {
     const [stats, setStats] = useState<Stats>({
         activeProperties: 0,
         soldProperties: 0,
-        yearsOfExperience: 5
+        yearsOfExperience: new Date().getFullYear() - 2019
     });
 
     useEffect(() => {
         const fetchStats = async () => {
             try {
-                const response = await fetch('http://localhost:3001/api/properties/stats');
+                const response = await fetch(`${API_BASE_URL}/properties/stats`);
                 const data = await response.json();
                 setStats(data);
             } catch (error) {
