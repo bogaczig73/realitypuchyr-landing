@@ -1,0 +1,10 @@
+@import 'tiny-slider/dist/tiny-slider.css';
+
+/* Add any custom styles for the carousel here */
+.tinyThreeItem {
+  position: relative;
+}
+
+.tinySlide {
+  padding: 0 6px;
+} 

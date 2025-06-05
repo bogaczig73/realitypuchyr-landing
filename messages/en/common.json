@@ -1,0 +1,279 @@
+{
+  "navigation": {
+    "homeLink": "Home",
+    "aboutLink": "About",
+    "propertiesLink": "Properties",
+    "contactLink": "Contact",
+    "faqLink": "FAQ",
+    "blogLink": "Blog"
+  },
+  "hero": {
+    "title": "Find Your Dream Home",
+    "subtitle": "Discover the perfect property that matches your lifestyle",
+    "search": "Search Properties"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "aboutMe": "About me",
+    "aboutMeText": "With over {years} years of experience in the real estate market, helping clients in Prague and the Central Bohemia region is more than just a job—it's about building trust and delivering results. Honesty, diligence, and responsibility are at the core of every interaction, ensuring smooth transactions where both buyers and sellers feel satisfied and well taken care of.",
+    "aboutMeText2": "Success in real estate starts with mutual trust and a genuine connection. Whether you're buying or selling, the goal is to make the process transparent, efficient, and tailored to your needs. Let's meet in person—I'd love to get to know you and discuss how we can achieve your real estate goals together.",
+    "services": "Services",
+    "myListings": "My Listings",
+    "viewMore": "View More Properties",
+    "broker": "Broker",
+    "of": "of",
+    "contactMe": "Contact me",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "yourQuestion": "Your Question",
+    "yourComment": "Your Comment"
+  },
+  "propertyDetail": {
+    "price": "Price",
+    "forSale": "For Sale",
+    "daysOnHously": "Days on Hously",
+    "pricePerSqFt": "Price per sq ft",
+    "monthlyPayment": "Monthly Payment (estimate)",
+    "bookNow": "Book Now",
+    "offerNow": "Offer Now",
+    "haveQuestion": "Have Question ? Get in touch!",
+    "contactUs": "Contact us",
+    "beds": "Beds",
+    "baths": "Baths",
+    "sqft": "sqft"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "sections": {
+      "general": "General Questions",
+      "buying": "Buying Questions",
+      "financing": "Financing Questions",
+      "selling": "Selling Questions",
+      "renting": "Renting Questions"
+    },
+    "questions": {
+      "foreignersBuy": {
+        "title": "Can foreigners buy real estate in the Czech Republic?",
+        "content": "Yes, but with some restrictions:\n- EU citizens can buy property freely.\n- Non-EU citizens can buy residential property if they have a long-term residence permit or establish a Czech company to hold the property.\n- Agricultural and forest land has stricter regulations for non-EU buyers."
+      },
+      "popularCities": {
+        "title": "What are the most popular cities for real estate investment?",
+        "content": "- Prague (highest demand, strong rental market)\n- Brno (growing tech hub, student rentals)\n- Ostrava (lower prices, industrial redevelopment)\n- Karlovy Vary & Český Krumlov (tourist hotspots, short-term rentals)"
+      },
+      "marketPerformance": {
+        "title": "How is the Czech real estate market performing?",
+        "content": "- Prague remains stable with steady price growth.\n- Regional cities offer better affordability and rental yields.\n- Interest rates have risen, slightly cooling demand."
+      },
+      "buyingSteps": {
+        "title": "What are the steps to buying property in the Czech Republic?",
+        "content": "1. Find a property (via real estate agents or online portals like Sreality.cz, Bezrealitky.cz).\n2. Sign a reservation agreement (usually requires a deposit).\n3. Conduct due diligence (check land registry, debts, zoning).\n4. Sign a purchase contract (notarization required).\n5. Register ownership in the Cadastral Register (Katastr nemovitostí)."
+      },
+      "feesAndTaxes": {
+        "title": "What fees and taxes apply when buying property?",
+        "content": "- Property transfer tax (4%) – Paid by the buyer (some exemptions apply).\n- Real estate agent fee (typically 2–6%, paid by seller or buyer depending on agreement).\n- Notary & legal fees (approx. 0.5–1% of property value).\n- Land registry fee (around CZK 1,000–5,000)."
+      },
+      "needLawyer": {
+        "title": "Do I need a lawyer when buying property?",
+        "content": "Highly recommended to:\n- Check legal title & encumbrances.\n- Review contracts.\n- Ensure proper registration."
+      },
+      "foreignersMortgage": {
+        "title": "Can foreigners get a mortgage in the Czech Republic?",
+        "content": "Yes, but conditions vary:\n- EU citizens can get mortgages more easily.\n- Non-EU citizens may need a higher down payment (30–50%) and proof of income.\n- Interest rates currently range from 4–6%."
+      },
+      "downPayment": {
+        "title": "What is the typical down payment for a mortgage?",
+        "content": "- Czech residents: 10–20%. - Foreigners: Often 30–50%."
+      },
+      "sellingTaxes": {
+        "title": "What taxes apply when selling property?",
+        "content": "- Capital gains tax (15%) – Applies if sold within 5 years of purchase (exempt if it was your primary residence).\n- No inheritance or gift tax (but income tax may apply)."
+      },
+      "sellingTime": {
+        "title": "How long does it take to sell a property?",
+        "content": "- Prague: 2–6 months (depending on price & location).\n- Smaller towns: May take longer."
+      },
+      "rentingInvestment": {
+        "title": "Is renting property a good investment in the Czech Republic?",
+        "content": "- Prague offers 4–6% rental yields.\n- Student cities (Brno, Olomouc) have high demand.\n- Short-term rentals (Airbnb) are profitable in tourist areas but face increasing regulation."
+      },
+      "tenantRights": {
+        "title": "What are tenant rights in the Czech Republic?",
+        "content": "- Standard lease duration: 1+ year.\n- Landlord can increase rent once per year (with notice).\n- Eviction requires a court order (except for serious violations)."
+      },
+      "cadastralRegister": {
+        "title": "What is the Cadastral Register (Katastr nemovitostí)?",
+        "content": "The official land registry where property ownership, mortgages, and restrictions are recorded. Always verify details before buying."
+      },
+      "residencePermit": {
+        "title": "Do I need a residence permit to buy property?",
+        "content": "No, but non-EU buyers may need a company or residency to purchase residential property."
+      },
+      "shortTermRentals": {
+        "title": "Are there restrictions on short-term rentals (Airbnb)?",
+        "content": "- Prague requires registration and limits short-term rentals in some areas.\n- Other cities may introduce similar rules."
+      }
+    }
+  },
+  "homeBanner": {
+    "title": "Rest assured that everything will turn out well!",
+    "learnMore": "Learn More",
+    "quote": "With over 5 years of experience in Prague real estate, I build successful partnerships through honesty, diligence, and mutual trust between buyers and sellers.",
+    "author": "Pavel Puchýř"
+  },
+  "components": {
+    "homeBanner": {
+      "title": "Rest assured that everything will turn out well!",
+      "learnMore": "Learn More",
+      "quote": "With over 5 years of experience in Prague real estate, I build successful partnerships through honesty, diligence, and mutual trust between buyers and sellers.",
+      "author": "Pavel Puchýř"
+    },
+    "footer": {
+      "description": "I take care of my clients' assets — providing expert broker consulting to protect and grow their wealth.",
+      "sitemap": "Sitemap",
+      "listing": "Listing",
+      "services": "Services",
+      "blog": "Blog",
+      "contact": "Contact",
+      "usefulLinks": "Useful Links",
+      "blogPost": "Blog post",
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "contactDetails": "Contact Details",
+      "address": "Šimáčkova 916/13,\n170 00 Praha 7-Holešovice,\nCzechia",
+      "viewOnGoogleMap": "View on Google map"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "aboutMe": "About me",
+      "aboutMeText": "With over {years} years of experience in the real estate market, helping clients in Prague and the Central Bohemia region is more than just a job—it's about building trust and delivering results. Honesty, diligence, and responsibility are at the core of every interaction, ensuring smooth transactions where both buyers and sellers feel satisfied and well taken care of.",
+      "aboutMeText2": "Success in real estate starts with mutual trust and a genuine connection. Whether you're buying or selling, the goal is to make the process transparent, efficient, and tailored to your needs. Let's meet in person—I'd love to get to know you and discuss how we can achieve your real estate goals together.",
+      "services": "Services",
+      "myListings": "My Listings",
+      "viewMore": "View More Properties",
+      "broker": "Broker",
+      "of": "of",
+      "contactMe": "Contact me",
+      "yourName": "Your Name",
+      "yourEmail": "Your Email",
+      "yourQuestion": "Your Question",
+      "yourComment": "Your Comment"
+    },
+    "property": {
+      "featuredProperties": "Featured Properties",
+      "featuredDescription": "A great platform to buy, sell and rent your properties without any agent or commissions.",
+      "price": "Price",
+      "status": "Status",
+      "beds": "Beds",
+      "baths": "Baths",
+      "sqft": "sqft",
+      "forSale": "For Sale",
+      "daysOnHously": "Days on Hously",
+      "pricePerSqFt": "Price per sq ft",
+      "monthlyPayment": "Monthly Payment (estimate)",
+      "bookNow": "Book Now",
+      "offerNow": "Offer Now",
+      "haveQuestion": "Have Question ? Get in touch!",
+      "contactUs": "Contact us"
+    },
+    "getInTouch": {
+      "title": "Have Question ? Get in touch!",
+      "description": "Buying property can be overwhelming — but you don't have to do it alone. Let's chat and make it easier!",
+      "contactButton": "Contact us"
+    },
+    "aboutCooperation": {
+      "title": "How will our cooperation work?",
+      "description": "Quality, range of services, speed and safety - these are the main reasons why clients praise their cooperation with me the most. I will guide you through the entire process of selling or buying a property from the initial consultation to handing over the keys. I will keep you regularly and transparently informed of developments so that you are kept in the loop at all times.",
+      "learnMore": "Learn More",
+      "closeModal": "Close modal"
+    },
+    "aboutVideoTour": {
+      "title": "Quality video tour, more than a thousand photos.",
+      "description": "An engaging video can evoke positive emotions and fully portray the atmosphere of the property on offer. I also like to work with video because it works great when promoting on social media. I really care about the quality, see for yourself.",
+      "learnMore": "Learn More",
+      "closeModal": "Close modal"
+    },
+    "clientTwo": {
+      "title": "What My Clients Say ?",
+      "description": "I let my clients speak for themselves. I'm proud of the work I do and I'm confident that you will be too.",
+      "loading": "Loading...",
+      "readMore": "Read more",
+      "showLess": "Show less"
+    },
+    "counterSection": {
+      "activeProperties": "Active Properties",
+      "soldProperties": "Sold Properties",
+      "yearsOfExperience": "Years of Experience"
+    },
+    "sidebar": {
+      "home": "Home",
+      "listing": "Listing",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "contact": "Contact",
+      "phoneNumber": "+420 733 781 696"
+    },
+    "form": {
+      "status": {
+        "active": "Active",
+        "sold": "Sold"
+      },
+      "allCategories": "All Categories",
+      "error": {
+        "loadingCategories": "Failed to load categories. Please try again later."
+      },
+      "search": {
+        "label": "Search",
+        "placeholder": "Search in title or description"
+      },
+      "category": {
+        "label": "Category",
+        "placeholder": "Select category"
+      },
+      "action": {
+        "label": "Action",
+        "search": "Search"
+      },
+      "loading": "Loading..."
+    }
+  },
+  "aboutMe": {
+    "whatDoIDo": {
+      "title": "What Do I Do?",
+      "description": "I take care of my clients' assets—providing expert broker consulting to protect and grow their wealth."
+    },
+    "services": [
+      {
+        "title": "Property Management",
+        "description": "Professional management of your real estate investments to maximize returns and minimize hassle.",
+        "readMore": "Read More"
+      },
+      {
+        "title": "Investment Consulting",
+        "description": "Expert advice on real estate investment opportunities and market analysis.",
+        "readMore": "Read More"
+      },
+      {
+        "title": "Market Analysis",
+        "description": "In-depth analysis of market trends and property valuations to make informed decisions.",
+        "readMore": "Read More"
+      }
+    ]
+  },
+  "categories": {
+    "title": "Listing Categories"
+  },
+  "blog": {
+    "title": "Latest Blogs & News",
+    "description": "A great platform to buy, sell and rent your properties without any agent or commissions.",
+    "readTime": "5 min read",
+    "readMore": "Read More"
+  }
+}

@@ -14,7 +14,10 @@
     "@tailwindcss/postcss": "^4.0.17",
     "@types/nodemailer": "^6.4.17",
     "axios": "^1.9.0",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "next": "15.2.4",
+    "next-intl": "^4.1.0",
     "react": "^19.1.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
@@ -25,6 +28,7 @@
     "react-type-animation": "^3.2.0",
     "simplebar-react": "^3.3.1",
     "swiper": "^11.2.6",
+    "tiny-slider": "^2.9.4",
     "tiny-slider-react": "^0.5.7",
     "yet-another-react-lightbox": "^3.21.9"
   },

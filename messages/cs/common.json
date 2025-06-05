@@ -1,0 +1,167 @@
+{
+  "navigation": {
+    "home": "Domů",
+    "about": "O nás",
+    "properties": "Nemovitosti",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "search": "Hledat",
+    "searchPlaceholder": "Hledat nemovitosti"
+  },
+  "footer": {
+    "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku.",
+    "sitemap": "Mapa stránek",
+    "listing": "Nabídka nemovitostí",
+    "services": "Služby",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "usefulLinks": "Užitečné odkazy",
+    "blogPost": "Článek na blogu",
+    "termsOfService": "Podmínky použití",
+    "privacyPolicy": "Ochrana osobních údajů",
+    "contactDetails": "Kontaktní údaje",
+    "address": "Šimáčkova 916/13,\n170 00 Praha 7-Holešovice,\nČeská republika",
+    "viewOnGoogleMap": "Zobrazit na Google mapách"
+  },
+  "home": {
+    "whatDoIDo": {
+      "title": "Co nabízím?",
+      "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku."
+    },
+    "services": [
+      {
+        "title": "Správa nemovitostí",
+        "description": "Profesionální správa vašich nemovitostí pro maximalizaci výnosů a minimalizaci starostí."
+      },
+      {
+        "title": "Investiční poradenství",
+        "description": "Odborné poradenství o investičních příležitostech na realitním trhu a analýza trhu."
+      },
+      {
+        "title": "Analýza trhu",
+        "description": "Hloubková analýza tržních trendů a ocenění nemovitostí pro informovaná rozhodnutí."
+      }
+    ],
+    "categories": {
+      "title": "Kategorie nemovitostí"
+    },
+    "blog": {
+      "title": "Nejnovější články a novinky",
+      "description": "Profesionální platforma pro nákup, prodej a pronájem nemovitostí bez zbytečných poplatků.",
+      "readTime": "5 minut čtení"
+    },
+    "readMore": "Číst více"
+  },
+  "hero": {
+    "title": "Najděte si svůj vysněný domov",
+    "subtitle": "Objevte nemovitost, která odpovídá vašemu životnímu stylu",
+    "search": "Hledat nemovitosti"
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "name": "Jméno",
+    "email": "E-mail",
+    "message": "Zpráva",
+    "send": "Odeslat zprávu",
+    "aboutMe": "O mně",
+    "aboutMeText": "S více než {years} lety zkušeností na realitním trhu je pomoc klientům v Praze a Středočeském kraji více než jen práce — je to o budování důvěry a dosahování výsledků. Upřímnost, svědomitost a zodpovědnost jsou základem každého kontaktu, což zajišťuje plynulé transakce, kde se kupující i prodávající cítí spokojeni a dobře postaráni.",
+    "aboutMeText2": "Úspěch v realitách začíná vzájemnou důvěrou a skutečným spojením. Ať už kupujete nebo prodáváte, cílem je udělat proces transparentním, efektivním a přizpůsobeným vašim potřebám. Setkejme se osobně — rád vás poznám a prodiskutujeme, jak můžeme společně dosáhnout vašich cílů v oblasti nemovitostí.",
+    "services": "Služby",
+    "myListings": "Moje nabídka nemovitostí",
+    "viewMore": "Zobrazit více nemovitostí",
+    "broker": "Realitní makléř",
+    "of": "z",
+    "contactMe": "Kontaktujte mě",
+    "yourName": "Vaše jméno",
+    "yourEmail": "Váš e-mail",
+    "yourQuestion": "Vaše otázka",
+    "yourComment": "Váš komentář"
+  },
+  "propertyDetail": {
+    "price": "Cena",
+    "forSale": "Na prodej",
+    "daysOnHously": "Dní v nabídce",
+    "pricePerSqFt": "Cena za m²",
+    "monthlyPayment": "Měsíční splátka (odhad)",
+    "bookNow": "Rezervovat",
+    "offerNow": "Nabídnout",
+    "haveQuestion": "Máte otázku? Kontaktujte nás!",
+    "contactUs": "Kontaktujte nás",
+    "beds": "Ložnice",
+    "baths": "Koupelny",
+    "sqft": "m²"
+  },
+  "faq": {
+    "title": "Často kladené otázky",
+    "sections": {
+      "general": "Obecné otázky",
+      "buying": "Otázky o koupi",
+      "financing": "Otázky o financování",
+      "selling": "Otázky o prodeji",
+      "renting": "Otázky o pronájmu"
+    },
+    "questions": {
+      "foreignersBuy": {
+        "title": "Mohou cizinci koupit nemovitost v České republice?",
+        "content": "Ano, ale s určitými omezeními:\n- Občané EU mohou koupit nemovitost volně.\n- Neobčané EU mohou koupit rezidenční nemovitost, pokud mají dlouhodobý pobyt nebo založí českou společnost pro držbu nemovitosti.\n- Zemědělská a lesní půda má přísnější předpisy pro neobčany EU."
+      },
+      "popularCities": {
+        "title": "Jaká jsou nejpopulárnější města pro investice do nemovitostí?",
+        "content": "- Praha (nejvyšší poptávka, silný trh s pronájmem)\n- Brno (rostoucí technologické centrum, studentské pronájmy)\n- Ostrava (nižší ceny, průmyslová revitalizace)\n- Karlovy Vary & Český Krumlov (turistické destinace, krátkodobé pronájmy)"
+      },
+      "marketPerformance": {
+        "title": "Jak si vede český realitní trh?",
+        "content": "- Praha zůstává stabilní se stabilním růstem cen.\n- Regionální města nabízejí lepší dostupnost a výnosy z pronájmu.\n- Úrokové sazby vzrostly, což mírně ochladilo poptávku."
+      },
+      "buyingSteps": {
+        "title": "Jaké jsou kroky při koupi nemovitosti v České republice?",
+        "content": "1. Najděte nemovitost (přes realitního makléře nebo online portály jako Sreality.cz, Bezrealitky.cz).\n2. Podepište rezervační smlouvu (obvykle vyžaduje zálohu).\n3. Proveďte due diligence (kontrola katastru, dluhů, územního plánu).\n4. Podepište kupní smlouvu (vyžaduje se notářský zápis).\n5. Zaregistrujte vlastnictví v Katastru nemovitostí."
+      },
+      "feesAndTaxes": {
+        "title": "Jaké poplatky a daně se vztahují na koupi nemovitosti?",
+        "content": "- Daň z převodu nemovitosti (4%) – Platí kupující (některé výjimky se vztahují).\n- Poplatek realitního makléře (typicky 2–6%, platí prodávající nebo kupující v závislosti na dohodě).\n- Notářské a právní poplatky (přibližně 0,5–1% z hodnoty nemovitosti).\n- Poplatek za zápis do katastru (přibližně 1 000–5 000 Kč)."
+      },
+      "needLawyer": {
+        "title": "Potřebuji právníka při koupi nemovitosti?",
+        "content": "Důrazně doporučujeme:\n- Zkontrolovat právní titul a zátěže.\n- Prozkoumat smlouvy.\n- Zajistit správnou registraci."
+      },
+      "foreignersMortgage": {
+        "title": "Mohou cizinci získat hypotéku v České republice?",
+        "content": "Ano, ale podmínky se liší:\n- Občané EU mohou získat hypotéky snáze.\n- Neobčané EU mohou potřebovat vyšší zálohu (30–50%) a doklad o příjmu.\n- Úrokové sazby se v současnosti pohybují od 4–6%."
+      },
+      "downPayment": {
+        "title": "Jaká je typická záloha pro hypotéku?",
+        "content": "- Čeští rezidenti: 10–20%\n- Cizinci: Často 30–50%"
+      },
+      "sellingTaxes": {
+        "title": "Jaké daně se vztahují na prodej nemovitosti?",
+        "content": "- Daň z kapitálových výnosů (15%) – Vztahuje se, pokud se prodá do 5 let od koupě (osvobozeno, pokud to byl váš hlavní domov).\n- Žádná daň z dědictví nebo daru (ale může se vztahovat daň z příjmu)."
+      },
+      "sellingTime": {
+        "title": "Jak dlouho trvá prodej nemovitosti?",
+        "content": "- Praha: 2–6 měsíců (v závislosti na ceně a poloze).\n- Menší města: Může to trvat déle."
+      },
+      "rentingInvestment": {
+        "title": "Je pronájem nemovitosti dobrou investicí v České republice?",
+        "content": "- Praha nabízí 4–6% výnosy z pronájmu.\n- Studentská města (Brno, Olomouc) mají vysokou poptávku.\n- Krátkodobé pronájmy (Airbnb) jsou ziskové v turistických oblastech, ale čelí rostoucí regulaci."
+      },
+      "tenantRights": {
+        "title": "Jaká jsou práva nájemníků v České republice?",
+        "content": "- Standardní doba pronájmu: 1+ rok.\n- Vlastník může zvýšit nájemné jednou ročně (s upozorněním).\n- Vystěhování vyžaduje soudní příkaz (kromě závažných porušení)."
+      },
+      "cadastralRegister": {
+        "title": "Co je Katastr nemovitostí?",
+        "content": "Oficiální pozemkový katastr, kde se zaznamenává vlastnictví nemovitostí, hypotéky a omezení. Vždy ověřte detaily před koupí."
+      },
+      "residencePermit": {
+        "title": "Potřebuji povolení k pobytu na koupi nemovitosti?",
+        "content": "Ne, ale neobčané EU mohou potřebovat společnost nebo pobyt na koupi rezidenční nemovitosti."
+      },
+      "shortTermRentals": {
+        "title": "Existují omezení pro krátkodobé pronájmy (Airbnb)?",
+        "content": "- Praha vyžaduje registraci a omezuje krátkodobé pronájmy v některých oblastech.\n- Jiná města mohou zavést podobná pravidla."
+      }
+    }
+  }
+} 
