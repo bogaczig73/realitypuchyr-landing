@@ -23,8 +23,8 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
     const [showCountry, setShowCountry] = useState(false);
     const dropdownRef = useRef<HTMLLIElement>(null);
 
-    let [manu, setManu] = useState('');
-    let [subManu, setSubManu] = useState('');
+    const [manu, setManu] = useState('');
+    const [subManu, setSubManu] = useState('');
 
     useEffect(() => {
         // Extract locale from pathname
@@ -33,8 +33,10 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
             setCurrentLocale(locale);
         }
 
-        setManu(pathname);
-        setSubManu(pathname);
+        // Remove locale prefix and trailing slash for path comparison
+        const pathWithoutLocale = pathname.replace(`/${locale}`, '').replace(/\/$/, '');
+        setManu(pathWithoutLocale);
+        setSubManu(pathWithoutLocale);
 
         function windowScroll() {
             setTopNavBar(window.scrollY >= 50);
@@ -77,6 +79,14 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
     };
 
     const currentLang = languages.find(lang => lang.code === currentLocale) || languages[0];
+
+    // Helper function to check if a path is active
+    const isActive = (path: string) => {
+        if (path === '/') {
+            return manu === '' || manu === '/';
+        }
+        return manu.startsWith(path);
+    };
 
     return (
         <React.Fragment>
@@ -124,15 +134,18 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                     <div id="navigation" className="lg:block">
                         {/* <!-- Navigation Menu--> */}
                         <ul className={`navigation-menu ${navClass === '' || navClass === undefined ? '' : 'nav-light'} ${topnavClass !== '' && topnavClass !== undefined ? '!justify-center' : '!justify-end'}`}>
-                            <li className={`has-submenu parent-menu-item ${["/"].includes(manu) ? 'active' : ''}`}><Link href={`/${currentLocale}`}>{t('homeLink')}</Link></li>
-                            <li className={`has-submenu parent-menu-item ${["/list"].includes(manu) ? 'active' : ''}`}><Link href={`/${currentLocale}/list`}>{t('propertiesLink')}</Link></li>
-                            <li className={manu === "/faq" ? "active" : ''}><Link href={`/${currentLocale}/faq`} className="sub-menu-item">{t('faqLink')}</Link></li>
-                            <li className={manu === "/blog" ? "active" : ''}><Link href={`/${currentLocale}/blog`} className="sub-menu-item">{t('blogLink')}</Link></li>
-                            <li className={manu === "/contact" ? "active" : ''}><Link href={`/${currentLocale}/contact`} className="sub-menu-item">{t('contactLink')}</Link></li>
+                            <li className={`has-submenu parent-menu-item ${isActive('/') ? 'active' : ''}`}><Link href={`/${currentLocale}`}>{t('homeLink')}</Link></li>
+                            <li className={`has-submenu parent-menu-item ${isActive('/list') ? 'active' : ''}`}><Link href={`/${currentLocale}/list`}>{t('propertiesLink')}</Link></li>
+                            <li className={isActive('/faq') ? "active" : ''}><Link href={`/${currentLocale}/faq`} className="sub-menu-item">{t('faqLink')}</Link></li>
+                            <li className={isActive('/blog') ? "active" : ''}><Link href={`/${currentLocale}/blog`} className="sub-menu-item">{t('blogLink')}</Link></li>
+                            <li className={isActive('/contact') ? "active" : ''}><Link href={`/${currentLocale}/contact`} className="sub-menu-item">{t('contactLink')}</Link></li>
                             
                             {/* Language Switcher */}
                             <li className="dropdown inline-block relative flex items-center" ref={dropdownRef}>
-                                <Link href="#" className="flex items-center">
+                                <Link href="#" className="flex items-center" onClick={(e) => {
+                                    e.preventDefault();
+                                    setShowCountry(!showCountry);
+                                }}>
                                     <button 
                                         className="dropdown-toggle h-6 w-6 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[20px] text-center bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-100 dark:border-gray-800 text-slate-900 dark:text-white rounded-md" 
                                         type="button" 
@@ -146,7 +159,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                                             src={currentLang.flag} 
                                             width={20} 
                                             height={20} 
-                                            className="h-5 w-5 rounded-md" 
+                                            className="h-5 w-5 rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700" 
                                             alt={currentLang.label}
                                         />
                                     </button>
@@ -167,7 +180,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                                                         src={lang.flag} 
                                                         width={24} 
                                                         height={24} 
-                                                        className="h-6 w-6 rounded-md me-2 shadow-sm shadow-gray-200 dark:shadow-gray-700" 
+                                                        className="h-6 w-6 rounded-md me-2" 
                                                         alt={lang.label}
                                                     /> 
                                                     {lang.label}

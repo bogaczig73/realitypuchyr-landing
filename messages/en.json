@@ -30,11 +30,41 @@
     "yourName": "Your Name",
     "yourEmail": "Your Email",
     "yourQuestion": "Your Question",
-    "yourComment": "Your Comment"
+    "yourComment": "Your Comment",
+    "rating": "5.00(30)",
+    "phone": "Phone",
+    "socialMedia": {
+      "facebook": "Visit our Facebook page",
+      "instagram": "Visit our Instagram page",
+      "linkedin": "Visit our LinkedIn profile",
+      "email": "Send us an email"
+    },
+    "form": {
+      "namePlaceholder": "Name :",
+      "emailPlaceholder": "Email :",
+      "subjectPlaceholder": "Subject :",
+      "messagePlaceholder": "Message :"
+    },
+    "servicesData": {
+      "realEstate": {
+        "title": "Real Estate",
+        "description": "Expert buying and selling guidance in Prague and Central Bohemia, ensuring a smooth and satisfying experience."
+      },
+      "financialServices": {
+        "title": "Financial Services",
+        "description": "Tailored advice on investments, mortgages, and financial planning for long-term success."
+      },
+      "careerOpportunities": {
+        "title": "Career Opportunities",
+        "description": "We offer a wide range of career opportunities in the real estate and financial sectors."
+      }
+    }
   },
   "propertyDetail": {
     "price": "Price",
     "forSale": "For Sale",
+    "sold": "SOLD",
+    "propertySoldMessage": "This property has been sold. Please contact us for similar properties.",
     "daysOnHously": "Days on Hously",
     "pricePerSqFt": "Price per sq ft",
     "monthlyPayment": "Monthly Payment (estimate)",
@@ -44,7 +74,60 @@
     "contactUs": "Contact us",
     "beds": "Beds",
     "baths": "Baths",
-    "sqft": "sqft"
+    "sqft": "sqft",
+    "basicInformation": "Basic Information",
+    "location": "Location",
+    "buildingDetails": "Building Details",
+    "areas": "Areas",
+    "objectDetails": "Object Details",
+    "additionalInformation": "Additional Information",
+    "virtualTour": "Virtual Tour",
+    "floorplans": "Floorplans",
+    "category": "Category",
+    "status": "Status",
+    "ownershipType": "Ownership Type",
+    "size": "Size",
+    "layout": "Layout",
+    "street": "Street",
+    "city": "City",
+    "country": "Country",
+    "buildingStories": "Building Stories",
+    "buildingCondition": "Building Condition",
+    "apartmentCondition": "Apartment Condition",
+    "aboveGroundFloors": "Above Ground Floors",
+    "totalAboveGroundFloors": "Total Above Ground Floors",
+    "totalUndergroundFloors": "Total Underground Floors",
+    "reconstructionYearApartment": "Reconstruction Year (Apartment)",
+    "reconstructionYearBuilding": "Reconstruction Year (Building)",
+    "floorArea": "Floor Area",
+    "builtUpArea": "Built Up Area",
+    "gardenHouseArea": "Garden House Area",
+    "terraceArea": "Terrace Area",
+    "totalLandArea": "Total Land Area",
+    "gardenArea": "Garden Area",
+    "garageArea": "Garage Area",
+    "balconyArea": "Balcony Area",
+    "pergolaArea": "Pergola Area",
+    "basementArea": "Basement Area",
+    "workshopArea": "Workshop Area",
+    "totalObjectArea": "Total Object Area",
+    "usableArea": "Usable Area",
+    "landArea": "Land Area",
+    "objectType": "Object Type",
+    "objectLocationType": "Object Location Type",
+    "houseEquipment": "House Equipment",
+    "accessRoad": "Access Road",
+    "objectCondition": "Object Condition",
+    "equipmentDescription": "Equipment Description",
+    "additionalSources": "Additional Sources",
+    "buildingPermit": "Building Permit",
+    "buildability": "Buildability",
+    "utilitiesOnLand": "Utilities on Land",
+    "utilitiesOnAdjacentRoad": "Utilities on Adjacent Road",
+    "payments": "Payments",
+    "videoTour": "Video Tour",
+    "reservationPrice": "Reservation Price",
+    "pricePerM2": "Price per m²"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -275,5 +358,54 @@
     "description": "A great platform to buy, sell and rent your properties without any agent or commissions.",
     "readTime": "5 min read",
     "readMore": "Read More"
+  },
+  "list": {
+    "title": "Property Listings",
+    "description": "Professional platform for buying, selling and renting properties without unnecessary fees.",
+    "noResults": "No properties found",
+    "loadMore": "Load more",
+    "sortBy": "Sort by",
+    "filterBy": "Filter by",
+    "viewOptions": {
+      "grid": "Grid",
+      "list": "List"
+    },
+    "status": {
+      "active": "Active",
+      "sold": "Sold",
+      "reserved": "Reserved"
+    },
+    "price": {
+      "asc": "Price: Low to High",
+      "desc": "Price: High to Low"
+    },
+    "date": {
+      "newest": "Newest",
+      "oldest": "Oldest"
+    },
+    "area": {
+      "asc": "Area: Small to Large",
+      "desc": "Area: Large to Small"
+    },
+    "filters": {
+      "priceRange": "Price Range",
+      "propertyType": "Property Type",
+      "area": "Area",
+      "rooms": "Number of Rooms",
+      "features": "Features",
+      "location": "Location",
+      "reset": "Reset Filters",
+      "apply": "Apply Filters"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of"
+    },
+    "listViewLayout": "List View Layout",
+    "loadError": "Failed to load properties. Please try again later.",
+    "noPropertiesFound": "No properties found matching your search criteria.",
+    "tryAdjustingFilters": "Try adjusting your filters or search terms."
   }
 }

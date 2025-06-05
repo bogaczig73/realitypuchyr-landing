@@ -10,7 +10,8 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Form from "../components/form";
 import Switcher from "../components/switcher";
-import { propertyApi, Property, Pagination } from "../../../services/api";
+import { ApiClient } from '@/services/api-client';
+import { Property, Pagination } from '@/types/property';
 
 import { LiaCompressArrowsAltSolid } from "react-icons/lia";
 import { LuBath, LuBedDouble } from "react-icons/lu";
@@ -39,7 +40,15 @@ function ListContent() {
             const search = searchParams.get('search') || undefined;
             const categoryId = searchParams.get('categoryId') || undefined;
             
-            const response = await propertyApi.getAll(page, 12, search, status, categoryId);
+            const apiClient = ApiClient.getInstance();
+            const response = await apiClient.getProperties({
+                page,
+                limit: 12,
+                search,
+                status,
+                categoryId
+            });
+            
             setProperties(response.properties);
             setPagination(response.pagination);
             setError(null);

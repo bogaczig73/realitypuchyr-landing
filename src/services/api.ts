@@ -1,45 +1,5 @@
 import axios from 'axios';
-
-export interface PropertyImage {
-    id: number;
-    url: string;
-    is_featured: boolean;
-}
-
-export interface Property {
-    id: number;
-    name: string;
-    price: number;
-    size: string;
-    beds: string;
-    baths: string;
-    images: PropertyImage[];
-    layout?: string;
-    description?: string;
-    city?: string;
-    street?: string;
-    country?: string;
-    category?: string;
-    status?: string;
-    ownershipType?: string;
-    virtualTour?: string;
-    videoUrl?: string;
-    discountedPrice?: number;
-    createdAt: string;
-    updatedAt: string;
-}
-
-export interface Pagination {
-    total: number;
-    pages: number;
-    currentPage: number;
-    limit: number;
-}
-
-export interface PaginatedResponse {
-    properties: Property[];
-    pagination: Pagination;
-}
+import { Property, PaginatedResponse } from '../types/property';
 
 export interface Review {
     id: number;

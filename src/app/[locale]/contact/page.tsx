@@ -1,8 +1,8 @@
+'use client'
 import React from 'react'
 import Navbar from '../../[locale]/components/navbar'
 import Link from 'next/link'
 import { FiArrowRight, FiFacebook, FiHexagon, FiInstagram, FiLinkedin, FiMail, FiPhone, FiTwitter } from 'react-icons/fi'
-import { properties, servicesData } from '../../data/data'
 import { LiaBathSolid, LiaCompressArrowsAltSolid } from 'react-icons/lia'
 import { BiBed } from 'react-icons/bi'
 import Footer from '../../[locale]/components/footer'
@@ -10,6 +10,24 @@ import Image from 'next/image'
 import Switcher from '../../[locale]/components/switcher'
 import Property from '../../[locale]/components/property'
 import { useTranslations } from 'next-intl'
+
+const servicesData = [
+    {
+        image:'/images/rent.png',
+        titleKey: 'realEstate',
+        descKey: 'realEstate'
+    },
+    {
+        image:'/images/buy.png',
+        titleKey: 'financialServices',
+        descKey: 'financialServices'
+    },
+    {
+        image:'/images/sell.png',
+        titleKey: 'careerOpportunities',
+        descKey: 'careerOpportunities'
+    }
+]
 
 export default function Page() {
     const yearsOfExperience = new Date().getFullYear() - 2019;
@@ -44,18 +62,18 @@ export default function Page() {
                                                     <li className="inline ms-1 rtl:me-1 rtl:ms-0"><i className="mdi mdi-star align-middle"></i></li>
                                                     <li className="inline ms-1 rtl:me-1 rtl:ms-0"><i className="mdi mdi-star align-middle"></i></li>
                                                     <li className="inline ms-1 rtl:me-1 rtl:ms-0"><i className="mdi mdi-star align-middle"></i></li>
-                                                    <li className="inline ms-1 rtl:me-1 rtl:ms-0 text-black dark:text-white">5.00(30)</li>
+                                                    <li className="inline ms-1 rtl:me-1 rtl:ms-0 text-black dark:text-white">{t('rating')}</li>
                                                 </ul>
                                             </li>
 
-                                            <li className="md:inline-flex flex items-center md:mx-2 md:mt-0 mt-2 md:px-2"><FiPhone className="size-4 align-middle text-green-600 me-2" /> +420 733 781 696</li>
+                                            <li className="md:inline-flex flex items-center md:mx-2 md:mt-0 mt-2 md:px-2"><FiPhone className="size-4 align-middle text-green-600 me-2" /> {t('phone')}: +420 733 781 696</li>
 
                                             <li className="md:inline-flex flex items-center md:mx-2 md:mt-0 mt-2 md:px-2">
                                                 <ul className="list-none">
-                                                    <li className="inline me-1 rtl:me-0 ms-0 rtl:ms-1"><Link href="https://www.facebook.com/realitypuchyr" target="_blank" rel="noopener noreferrer" className="btn btn-icon btn-sm border border-gray-300 dark:border-gray-400 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600 dark:hover:border-green-600"><FiFacebook className="size-4" /></Link></li>
-                                                    <li className="inline me-1 rtl:me-0 ms-0 rtl:ms-1"><Link href="https://www.instagram.com/realitypuchyr/" target="_blank" rel="noopener noreferrer" className="btn btn-icon btn-sm border border-gray-300 dark:border-gray-400 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600 dark:hover:border-green-600"><FiInstagram className="size-4" /></Link></li>
-                                                    <li className="inline me-1 rtl:me-0 ms-0 rtl:ms-1"><Link href="https://www.linkedin.com/in/pavel-puch%C3%BD%C5%99-5527aa160/" target="_blank" rel="noopener noreferrer" className="btn btn-icon btn-sm border border-gray-300 dark:border-gray-400 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600 dark:hover:border-green-600"><FiLinkedin className="size-4" /></Link></li>
-                                                    <li className="inline me-1 rtl:me-0 ms-0 rtl:ms-1"><Link href="mailto:pavel.puchyr@bcas.cz" className="btn btn-icon btn-sm border border-gray-300 dark:border-gray-400 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600 dark:hover:border-green-600"><FiMail className="size-4" /></Link></li>
+                                                    <li className="inline me-1 rtl:me-0 ms-0 rtl:ms-1"><Link href="https://www.facebook.com/realitypuchyr" target="_blank" rel="noopener noreferrer" className="btn btn-icon btn-sm border border-gray-300 dark:border-gray-400 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600 dark:hover:border-green-600" aria-label={t('socialMedia.facebook')}><FiFacebook className="size-4" /></Link></li>
+                                                    <li className="inline me-1 rtl:me-0 ms-0 rtl:ms-1"><Link href="https://www.instagram.com/realitypuchyr/" target="_blank" rel="noopener noreferrer" className="btn btn-icon btn-sm border border-gray-300 dark:border-gray-400 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600 dark:hover:border-green-600" aria-label={t('socialMedia.instagram')}><FiInstagram className="size-4" /></Link></li>
+                                                    <li className="inline me-1 rtl:me-0 ms-0 rtl:ms-1"><Link href="https://www.linkedin.com/in/pavel-puch%C3%BD%C5%99-5527aa160/" target="_blank" rel="noopener noreferrer" className="btn btn-icon btn-sm border border-gray-300 dark:border-gray-400 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600 dark:hover:border-green-600" aria-label={t('socialMedia.linkedin')}><FiLinkedin className="size-4" /></Link></li>
+                                                    <li className="inline me-1 rtl:me-0 ms-0 rtl:ms-1"><Link href="mailto:pavel.puchyr@bcas.cz" className="btn btn-icon btn-sm border border-gray-300 dark:border-gray-400 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600 dark:hover:border-green-600" aria-label={t('socialMedia.email')}><FiMail className="size-4" /></Link></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -78,22 +96,22 @@ export default function Page() {
                                     <div className="grid grid-cols-1 gap-3">
                                         <div>
                                             <label htmlFor="name" className="font-medium">{t('yourName')}:</label>
-                                            <input name="name" id="name" type="text" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('name')} />
+                                            <input name="name" id="name" type="text" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('form.namePlaceholder')} />
                                         </div>
 
                                         <div>
                                             <label htmlFor="email" className="font-medium">{t('yourEmail')}:</label>
-                                            <input name="email" id="email" type="email" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('email')} />
+                                            <input name="email" id="email" type="email" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('form.emailPlaceholder')} />
                                         </div>
 
                                         <div>
                                             <label htmlFor="subject" className="font-medium">{t('yourQuestion')}:</label>
-                                            <input name="subject" id="subject" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('message')} />
+                                            <input name="subject" id="subject" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('form.subjectPlaceholder')} />
                                         </div>
 
                                         <div>
                                             <label htmlFor="comments" className="font-medium">{t('yourComment')}:</label>
-                                            <textarea name="comments" id="comments" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2 textarea" placeholder={t('message')}></textarea>
+                                            <textarea name="comments" id="comments" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2 textarea" placeholder={t('form.messagePlaceholder')}></textarea>
                                         </div>
 
                                         <button type="submit" id="submit" name="send" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md">{t('send')}</button>
@@ -110,7 +128,7 @@ export default function Page() {
                             
                             <h5 className="text-xl font-medium mt-6">{t('services')}</h5>
                             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                                {servicesData.map((item: typeof servicesData[number], index: number) => {
+                                {servicesData.map((item, index) => {
                                     return (
                                         <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-transparent overflow-hidden text-center" key={index}>
                                             <div className="relative overflow-hidden text-transparent -m-3">
@@ -121,8 +139,8 @@ export default function Page() {
                                             </div>
 
                                             <div className="mt-6">
-                                                <Link href="" className="text-xl font-medium hover:text-green-600">{item.title}</Link>
-                                                <p className="text-slate-400 mt-3">{item.desc}</p>
+                                                <Link href="" className="text-xl font-medium hover:text-green-600">{t(`servicesData.${item.titleKey}.title`)}</Link>
+                                                <p className="text-slate-400 mt-3">{t(`servicesData.${item.descKey}.description`)}</p>
                                             </div>
                                         </div>
                                     )

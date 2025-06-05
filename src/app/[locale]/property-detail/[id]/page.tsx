@@ -1,131 +1,99 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback, memo } from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { useParams } from 'next/navigation';
 import { LiaCompressArrowsAltSolid } from 'react-icons/lia';
 import { LuBath, LuBedDouble } from 'react-icons/lu';
-import { FiMapPin, FiPhone, FiX } from 'react-icons/fi';
+import { FiMapPin, FiPhone, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Switcher from '../../components/switcher';
 import { API_BASE_URL } from '../../../../services/api';
-
-const TinySlider = dynamic(()=>import('tiny-slider-react'),{ssr:false})
-import 'tiny-slider/dist/tiny-slider.css';
-
-interface Property {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  discountedPrice?: number;
-  size: number;
-  beds: number;
-  baths: number;
-  category: {
-    id: number;
-    name: string;
-    slug: string;
-    image: string;
-  };
-  status: string;
-  ownershipType: string;
-  city: string;
-  street: string;
-  country: string;
-  latitude: number;
-  longitude: number;
-  buildingStoriesNumber: number;
-  buildingCondition: string;
-  apartmentCondition: string;
-  aboveGroundFloors: number;
-  totalAboveGroundFloors: number;
-  totalUndergroundFloors: number;
-  reconstructionYearApartment: number;
-  reconstructionYearBuilding: number;
-  floorArea: number;
-  builtUpArea: number;
-  gardenHouseArea: number;
-  terraceArea: number;
-  totalLandArea: number;
-  gardenArea: number;
-  garageArea: number;
-  balconyArea: number;
-  pergolaArea: number;
-  basementArea: number;
-  workshopArea: number;
-  totalObjectArea: number;
-  usableArea: number;
-  landArea: number;
-  objectType: string;
-  objectLocationType: string;
-  houseEquipment: string;
-  accessRoad: string;
-  objectCondition: string;
-  reservationPrice: number;
-  equipmentDescription: string;
-  additionalSources: string;
-  buildingPermit: string;
-  buildability: string;
-  utilitiesOnLand: string;
-  utilitiesOnAdjacentRoad: string;
-  payments: string;
-  brokerId: number;
-  secondaryAgent: string;
-  virtualTour: string;
-  videoUrl: string;
-  layout: string;
-  images: { id: number; url: string }[];
-  floorplans: { id: number; url: string; name: string }[];
-}
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import { Property } from '@/types/property';
+import { useApiClient } from '@/hooks/useApiClient';
+import { useTranslations } from 'next-intl';
 
 
+const VirtualTour = memo(({ url }: { url: string }) => {
+
+  return (
+    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+      <iframe 
+        width="100%" 
+        height="100%" 
+        src={url}
+        frameBorder="0"
+        allowFullScreen
+        allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }}
+      />
+    </div>
+  );
+});
+
+VirtualTour.displayName = 'VirtualTour';
 
 export default function PropertyDetail() {
   const params = useParams();
   const id = parseInt(String(params?.id || 0));
+  const locale = params?.locale as string;
   const [property, setProperty] = useState<Property | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [zoomedImage, setZoomedImage] = useState<{ url: string; name: string } | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const apiClient = useApiClient();
 
-  const settings = {
-    container: '.tiny-one-item',
-    items: 1,
-    controls: true,
-    mouseDrag: true,
-    loop: true,
-    rewind: true,
-    autoplay: true,
-    autoplayButtonOutput: false,
-    autoplayTimeout: 3000,
-    navPosition: "bottom",
-    controlsText: ['<i class="mdi mdi-chevron-left "></i>', '<i class="mdi mdi-chevron-right"></i>'],
-    nav: false,
-    speed: 400,
-    gutter: 0,
-  };
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      loop: true,
+      align: 'start',
+      slidesToScroll: 1,
+      containScroll: 'trimSnaps',
+    },
+    [Autoplay({ delay: 3000, stopOnInteraction: false })]
+  );
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on('select', onSelect);
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi, onSelect]);
+
+  const t = useTranslations('propertyDetail');
 
   useEffect(() => {
     const fetchProperty = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${API_BASE_URL}/properties/${id}`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch property');
-        }
-        const data = await response.json();
+        const data = await apiClient.getPropertyById(id);
         setProperty(data);
         if (data.images && data.images.length > 0) {
           setSelectedImage(data.images[0].url);
         }
         setError(null);
       } catch (err) {
-        setError('Failed to load property details. Please try again later.');
         console.error('Error fetching property:', err);
+        setError('Failed to load property details. Please try again later.');
       } finally {
         setLoading(false);
       }
@@ -134,7 +102,7 @@ export default function PropertyDetail() {
     if (id) {
       fetchProperty();
     }
-  }, [id]);
+  }, [id, apiClient, locale]);
 
   if (loading) {
     return (
@@ -168,7 +136,6 @@ export default function PropertyDetail() {
     }
     if (typeof value === 'object' && value !== null) {
       if ('name' in value && 'slug' in value && 'image' in value) {
-        console.log('Category object:', value);
         return <span>{String(value.name)}</span>;
       }
       console.log('Unknown object:', value);
@@ -200,22 +167,58 @@ export default function PropertyDetail() {
           <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
             <div className="lg:col-span-8 md:col-span-7">
               <div className="grid grid-cols-1 relative">
-                <div className="tiny-one-item">
-                  <TinySlider settings={settings}>
-                    {property.images.map((image, index) => (
-                      <div className="tiny-slide" key={image.id}>
-                        <Image 
-                          src={image.url} 
-                          width={0} 
-                          height={0} 
-                          sizes='100vw' 
-                          style={{width:'100%', height:'auto'}} 
-                          className="rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700" 
-                          alt={`${property.name} - Image ${index + 1}`}
-                        />
-                      </div>
+                <div className="relative">
+                  <div className="overflow-hidden" ref={emblaRef}>
+                    <div className="flex">
+                      {property.images.map((image, index) => (
+                        <div className="flex-[0_0_100%] min-w-0" key={image.id}>
+                          <div 
+                            className="cursor-zoom-in" 
+                            onClick={() => handleImageClick(image.url, `Image ${index + 1}`)}
+                          >
+                            <Image 
+                              src={image.url} 
+                              width={0} 
+                              height={0} 
+                              sizes='100vw' 
+                              style={{width:'100%', height:'auto'}} 
+                              className="rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700" 
+                              alt={`${property.name} - Image ${index + 1}`}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Navigation Arrows */}
+                  <button
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-md transition-all duration-300 hover:scale-110"
+                    onClick={() => emblaApi?.scrollPrev()}
+                  >
+                    <FiChevronLeft className="w-6 h-6" />
+                  </button>
+                  <button
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-md transition-all duration-300 hover:scale-110"
+                    onClick={() => emblaApi?.scrollNext()}
+                  >
+                    <FiChevronRight className="w-6 h-6" />
+                  </button>
+
+                  {/* Dots Navigation */}
+                  <div className="flex justify-center gap-2 mt-4">
+                    {property.images.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                          index === selectedIndex 
+                            ? 'bg-green-600 scale-125' 
+                            : 'bg-gray-300 hover:bg-gray-400'
+                        }`}
+                        onClick={() => emblaApi?.scrollTo(index)}
+                      />
                     ))}
-                  </TinySlider>
+                  </div>
                 </div>
               </div>
               
@@ -227,17 +230,17 @@ export default function PropertyDetail() {
               <ul className="py-6 flex items-center list-none">
                 <li className="flex items-center lg:me-6 me-4">
                   <LiaCompressArrowsAltSolid className="lg:text-3xl text-2xl me-2 text-green-600"/>
-                  <span className="lg:text-xl">{property.size}</span>
+                  <span className="lg:text-xl">{property.size} {t('sqft')}</span>
                 </li>
 
                 <li className="flex items-center lg:me-6 me-4">
                   <LuBedDouble className="lg:text-3xl text-2xl me-2 text-green-600"/>
-                  <span className="lg:text-xl">{property.beds} Beds</span>
+                  <span className="lg:text-xl">{property.beds} {t('beds')}</span>
                 </li>
 
                 <li className="flex items-center lg:me-6 me-4">
                   <LuBath className="lg:text-3xl text-2xl me-2 text-green-600"/>
-                  <span className="lg:text-xl">{property.baths} Baths</span>
+                  <span className="lg:text-xl">{property.baths} {t('baths')}</span>
                 </li>
 
                 <li className="flex items-center">
@@ -250,48 +253,48 @@ export default function PropertyDetail() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div>
-                  <h5 className="text-lg font-semibold mb-4 text-green-600">Basic Information</h5>
+                  <h5 className="text-lg font-semibold mb-4 text-green-600">{t('basicInformation')}</h5>
                   <ul className="space-y-2">
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Category:</span>
+                      <span className="font-medium">{t('category')}:</span>
                       <span className="text-right">{formatValue(property.category)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Status:</span>
+                      <span className="font-medium">{t('status')}:</span>
                       <span className="text-right">{formatValue(property.status)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Ownership Type:</span>
+                      <span className="font-medium">{t('ownershipType')}:</span>
                       <span className="text-right">{formatValue(property.ownershipType)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Size:</span>
+                      <span className="font-medium">{t('size')}:</span>
                       <span className="text-right">{formatValue(property.size)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Beds:</span>
+                      <span className="font-medium">{t('beds')}:</span>
                       <span className="text-right">{formatValue(property.beds)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Layout:</span>
+                      <span className="font-medium">{t('layout')}:</span>
                       <span className="text-right">{formatValue(property.layout)}</span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <h5 className="text-lg font-semibold mb-4 text-green-600">Location</h5>
+                  <h5 className="text-lg font-semibold mb-4 text-green-600">{t('location')}</h5>
                   <ul className="space-y-2">
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Street:</span>
+                      <span className="font-medium">{t('street')}:</span>
                       <span className="text-right">{formatValue(property.street)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">City:</span>
+                      <span className="font-medium">{t('city')}:</span>
                       <span className="text-right">{formatValue(property.city)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Country:</span>
+                      <span className="font-medium">{t('country')}:</span>
                       <span className="text-right">{formatValue(property.country)}</span>
                     </li>
                   </ul>
@@ -300,100 +303,100 @@ export default function PropertyDetail() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div>
-                  <h5 className="text-lg font-semibold mb-4 text-green-600">Building Details</h5>
+                  <h5 className="text-lg font-semibold mb-4 text-green-600">{t('buildingDetails')}</h5>
                   <ul className="space-y-2">
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Building Stories:</span>
+                      <span className="font-medium">{t('buildingStories')}:</span>
                       <span className="text-right">{formatValue(property.buildingStoriesNumber)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Building Condition:</span>
+                      <span className="font-medium">{t('buildingCondition')}:</span>
                       <span className="text-right">{formatValue(property.buildingCondition)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Apartment Condition:</span>
+                      <span className="font-medium">{t('apartmentCondition')}:</span>
                       <span className="text-right">{formatValue(property.apartmentCondition)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Above Ground Floors:</span>
+                      <span className="font-medium">{t('aboveGroundFloors')}:</span>
                       <span className="text-right">{formatValue(property.aboveGroundFloors)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Total Above Ground Floors:</span>
+                      <span className="font-medium">{t('totalAboveGroundFloors')}:</span>
                       <span className="text-right">{formatValue(property.totalAboveGroundFloors)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Total Underground Floors:</span>
+                      <span className="font-medium">{t('totalUndergroundFloors')}:</span>
                       <span className="text-right">{formatValue(property.totalUndergroundFloors)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Reconstruction Year (Apartment):</span>
+                      <span className="font-medium">{t('reconstructionYearApartment')}:</span>
                       <span className="text-right">{formatValue(property.reconstructionYearApartment)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Reconstruction Year (Building):</span>
+                      <span className="font-medium">{t('reconstructionYearBuilding')}:</span>
                       <span className="text-right">{formatValue(property.reconstructionYearBuilding)}</span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <h5 className="text-lg font-semibold mb-4 text-green-600">Areas</h5>
+                  <h5 className="text-lg font-semibold mb-4 text-green-600">{t('areas')}</h5>
                   <ul className="space-y-2">
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Floor Area:</span>
+                      <span className="font-medium">{t('floorArea')}:</span>
                       <span className="text-right">{formatValue(property.floorArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Built Up Area:</span>
+                      <span className="font-medium">{t('builtUpArea')}:</span>
                       <span className="text-right">{formatValue(property.builtUpArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Garden House Area:</span>
+                      <span className="font-medium">{t('gardenHouseArea')}:</span>
                       <span className="text-right">{formatValue(property.gardenHouseArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Terrace Area:</span>
+                      <span className="font-medium">{t('terraceArea')}:</span>
                       <span className="text-right">{formatValue(property.terraceArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Total Land Area:</span>
+                      <span className="font-medium">{t('totalLandArea')}:</span>
                       <span className="text-right">{formatValue(property.totalLandArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Garden Area:</span>
+                      <span className="font-medium">{t('gardenArea')}:</span>
                       <span className="text-right">{formatValue(property.gardenArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Garage Area:</span>
+                      <span className="font-medium">{t('garageArea')}:</span>
                       <span className="text-right">{formatValue(property.garageArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Balcony Area:</span>
+                      <span className="font-medium">{t('balconyArea')}:</span>
                       <span className="text-right">{formatValue(property.balconyArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Pergola Area:</span>
+                      <span className="font-medium">{t('pergolaArea')}:</span>
                       <span className="text-right">{formatValue(property.pergolaArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Basement Area:</span>
+                      <span className="font-medium">{t('basementArea')}:</span>
                       <span className="text-right">{formatValue(property.basementArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Workshop Area:</span>
+                      <span className="font-medium">{t('workshopArea')}:</span>
                       <span className="text-right">{formatValue(property.workshopArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Total Object Area:</span>
+                      <span className="font-medium">{t('totalObjectArea')}:</span>
                       <span className="text-right">{formatValue(property.totalObjectArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Usable Area:</span>
+                      <span className="font-medium">{t('usableArea')}:</span>
                       <span className="text-right">{formatValue(property.usableArea)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Land Area:</span>
+                      <span className="font-medium">{t('landArea')}:</span>
                       <span className="text-right">{formatValue(property.landArea)}</span>
                     </li>
                   </ul>
@@ -402,91 +405,71 @@ export default function PropertyDetail() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div>
-                  <h5 className="text-lg font-semibold mb-4 text-green-600">Object Details</h5>
+                  <h5 className="text-lg font-semibold mb-4 text-green-600">{t('objectDetails')}</h5>
                   <ul className="space-y-2">
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Object Type:</span>
+                      <span className="font-medium">{t('objectType')}:</span>
                       <span className="text-right">{formatValue(property.objectType)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Object Location Type:</span>
+                      <span className="font-medium">{t('objectLocationType')}:</span>
                       <span className="text-right">{formatValue(property.objectLocationType)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">House Equipment:</span>
+                      <span className="font-medium">{t('houseEquipment')}:</span>
                       <span className="text-right">{formatValue(property.houseEquipment)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Access Road:</span>
+                      <span className="font-medium">{t('accessRoad')}:</span>
                       <span className="text-right">{formatValue(property.accessRoad)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Object Condition:</span>
+                      <span className="font-medium">{t('objectCondition')}:</span>
                       <span className="text-right">{formatValue(property.objectCondition)}</span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <h5 className="text-lg font-semibold mb-4 text-green-600">Additional Information</h5>
+                  <h5 className="text-lg font-semibold mb-4 text-green-600">{t('additionalInformation')}</h5>
                   <ul className="space-y-2">
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Equipment Description:</span>
+                      <span className="font-medium">{t('equipmentDescription')}:</span>
                       <span className="text-right">{formatValue(property.equipmentDescription)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Additional Sources:</span>
+                      <span className="font-medium">{t('additionalSources')}:</span>
                       <span className="text-right">{formatValue(property.additionalSources)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Building Permit:</span>
+                      <span className="font-medium">{t('buildingPermit')}:</span>
                       <span className="text-right">{formatValue(property.buildingPermit)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Buildability:</span>
+                      <span className="font-medium">{t('buildability')}:</span>
                       <span className="text-right">{formatValue(property.buildability)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Utilities on Land:</span>
+                      <span className="font-medium">{t('utilitiesOnLand')}:</span>
                       <span className="text-right">{formatValue(property.utilitiesOnLand)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Utilities on Adjacent Road:</span>
+                      <span className="font-medium">{t('utilitiesOnAdjacentRoad')}:</span>
                       <span className="text-right">{formatValue(property.utilitiesOnAdjacentRoad)}</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span className="font-medium">Payments:</span>
+                      <span className="font-medium">{t('payments')}:</span>
                       <span className="text-right">{formatValue(property.payments)}</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              {/* Virtual Tour Section */}
-              {property.virtualTour && (
-                <div className="mt-6 rounded-md bg-white dark:bg-slate-900 shadow-sm shadow-gray-200 dark:shadow-gray-700">
-                  <div className="p-6">
-                    <h5 className="text-xl font-medium mb-4">Virtual Tour</h5>
-                    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                      <div 
-                        className="absolute inset-0"
-                        dangerouslySetInnerHTML={{ 
-                          __html: property.virtualTour.replace(
-                            /width="\d+" height="\d+"/g, 
-                            'style="width:100%;height:100%;position:absolute;top:0;left:0;"'
-                          )
-                        }} 
-                      />
-                    </div>
-                  </div>
-                </div>
-              )}
-
               {/* Floorplans Section */}
               {property.floorplans && property.floorplans.length > 0 && (
                 <div className="mt-6 rounded-md bg-white dark:bg-slate-900 shadow-sm shadow-gray-200 dark:shadow-gray-700">
                   <div className="p-6">
-                    <h5 className="text-xl font-medium mb-4">Floorplans</h5>
+                    <h5 className="text-xl font-medium mb-4">{t('floorplans')}</h5>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {property.floorplans.map((floorplan) => (
                         <div key={floorplan.id} className="rounded-md overflow-hidden">
@@ -508,6 +491,16 @@ export default function PropertyDetail() {
                         </div>
                       ))}
                     </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Virtual Tour Section */}
+              {property.virtualTour && (
+                <div className="mt-6 rounded-md bg-white dark:bg-slate-900 shadow-sm shadow-gray-200 dark:shadow-gray-700">
+                  <div className="p-6">
+                    <h5 className="text-xl font-medium mb-4">{t('virtualTour')}</h5>
+                    <VirtualTour url={property.virtualTour} />
                   </div>
                 </div>
               )}
@@ -553,68 +546,95 @@ export default function PropertyDetail() {
 
             <div className="lg:col-span-4 md:col-span-5">
               <div className="sticky top-20">
-                <div className="rounded-md bg-slate-50 dark:bg-slate-800 shadow-sm shadow-gray-200 dark:shadow-gray-700">
-                  <div className="p-6">
-                    <h5 className="text-2xl font-medium">Price:</h5>
-
-                    <div className="flex justify-between items-center mt-4">
-                      <span className="text-xl font-medium"> {property.price.toLocaleString()} Kč</span>
-                      {property.discountedPrice && (
-                        <span className="text-xl font-medium line-through text-red-500"> {property.discountedPrice.toLocaleString()} Kč</span>
-                      )}
-                      <span className="bg-green-600/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
-                        {formatValue(property.category)}
-                      </span>
+                {property.status === 'SOLD' ? (
+                  <div className="rounded-md bg-red-50 dark:bg-red-900/20 border-2 border-red-500 dark:border-red-800 shadow-sm shadow-gray-200 dark:shadow-gray-700">
+                    <div className="p-6 text-center">
+                      <h5 className="text-3xl font-bold text-red-600 mb-4">{t('sold')}</h5>
+                      <p className="text-slate-600 dark:text-slate-300 mb-6">{t('propertySoldMessage')}</p>
+                      <div className="mt-6">
+                        <Link href="/contact" className="btn bg-transparent hover:bg-red-600 border border-red-600 text-red-600 hover:text-white rounded-md">
+                          <FiPhone className="align-middle me-2"/> {t('contactUs')}
+                        </Link>
+                      </div>
                     </div>
+                  </div>
+                ) : (
+                  <div className="rounded-md bg-slate-50 dark:bg-slate-800 shadow-sm shadow-gray-200 dark:shadow-gray-700">
+                    <div className="p-6">
+                      <h5 className="text-2xl font-medium">{t('price')}:</h5>
 
-                    <ul className="list-none mt-4">
-                      <li className="flex justify-between items-center">
-                        <span className="text-slate-400 text-sm">Price per m²</span>
-                        <span className="font-medium text-sm">{(property.price / property.size).toFixed(2)} Kč</span>
-                      </li>
+                      <div className="flex justify-between items-center mt-4">
+                        <span className="text-xl font-medium"> {property.price.toLocaleString()} Kč</span>
+                        {property.discountedPrice && (
+                          <span className="text-xl font-medium line-through text-red-500"> {property.discountedPrice.toLocaleString()} Kč</span>
+                        )}
+                        <span className="bg-green-600/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
+                          {formatValue(property.category)}
+                        </span>
+                      </div>
 
-                      {property.reservationPrice && (
-                        <li className="flex justify-between items-center mt-2">
-                          <span className="text-slate-400 text-sm">Reservation Price</span>
-                          <span className="font-medium text-sm"> {property.reservationPrice.toLocaleString()} Kč</span>
+                      <ul className="list-none mt-4">
+                        <li className="flex justify-between items-center">
+                          <span className="text-slate-400 text-sm">{t('pricePerM2')}</span>
+                          <span className="font-medium text-sm">{(property.price / property.size).toFixed(2)} Kč</span>
                         </li>
-                      )}
-                    </ul>
-                  </div>
 
-                  <div className="flex">
-                    <div className="p-1 w-1/2">
-                      <Link href="" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md w-full">Book Now</Link>
+                        {property.reservationPrice && (
+                          <li className="flex justify-between items-center mt-2">
+                            <span className="text-slate-400 text-sm">{t('reservationPrice')}</span>
+                            <span className="font-medium text-sm"> {property.reservationPrice.toLocaleString()} Kč</span>
+                          </li>
+                        )}
+                      </ul>
                     </div>
-                    <div className="p-1 w-1/2">
-                      <Link href="" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md w-full">Offer Now</Link>
+
+                    <div className="flex">
+                      <div className="p-1 w-1/2">
+                        <Link href="" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md w-full">{t('bookNow')}</Link>
+                      </div>
+                      <div className="p-1 w-1/2">
+                        <Link href="" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md w-full">{t('offerNow')}</Link>
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
 
                 {/* Video Section */}
                 {property.videoUrl && (
                   <div className="mt-6 rounded-md bg-slate-50 dark:bg-slate-800 shadow-sm shadow-gray-200 dark:shadow-gray-700">
                     <div className="p-6">
-                      <h5 className="text-xl font-medium mb-4">Video Tour</h5>
+                      <h5 className="text-xl font-medium mb-4">{t('videoTour')}</h5>
                       <div className="aspect-w-16 aspect-h-9">
-                        <iframe
-                          src={property.videoUrl}
-                          title="Property Video Tour"
-                          className="w-full h-full rounded-md"
-                          allowFullScreen
-                        />
+                        {(() => {
+                          let embedUrl = property.videoUrl;
+                          if (property.videoUrl.includes('youtube.com/watch')) {
+                            const videoId = property.videoUrl.split('v=')[1];
+                            embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                          } else if (property.videoUrl.includes('youtu.be/')) {
+                            const videoId = property.videoUrl.split('youtu.be/')[1];
+                            embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                          }
+                          return (
+                            <iframe
+                              src={embedUrl}
+                              title="Property Video Tour"
+                              className="w-full h-full rounded-md"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
+                          );
+                        })()}
                       </div>
                     </div>
                   </div>
                 )}
 
                 <div className="mt-12 text-center">
-                  <h3 className="mb-6 text-xl leading-normal font-medium text-black dark:text-white">Have Question ? Get in touch!</h3>
+                  <h3 className="mb-6 text-xl leading-normal font-medium text-black dark:text-white">{t('haveQuestion')}</h3>
 
                   <div className="mt-6">
                     <Link href="/contact" className="btn bg-transparent hover:bg-green-600 border border-green-600 text-green-600 hover:text-white rounded-md">
-                      <FiPhone className="align-middle me-2"/> Contact us
+                      <FiPhone className="align-middle me-2"/> {t('contactUs')}
                     </Link>
                   </div>
                 </div>

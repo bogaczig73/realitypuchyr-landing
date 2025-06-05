@@ -554,23 +554,6 @@ export const aboutData = [
         desc:`Home staging, paid social media promotion and targeted marketing for the luxury real estate segment. We use digital marketing to reach the target group of buyers.`
     }
 ]
-export const servicesData = [
-    {
-        image:'/images/rent.png',
-        title:'Real Estate',
-        desc:`Expert buying and selling guidance in Prague and Central Bohemia, ensuring a smooth and satisfying experience.`
-    },
-    {
-        image:'/images/buy.png',
-        title:'Financial Services',
-        desc:`Tailored advice on investments, mortgages, and financial planning for long-term success.`
-    },
-    {
-        image:'/images/sell.png',
-        title:'Career Opportunities',
-        desc:`We offer a wide range of career opportunities in the real estate and financial sectors.`
-    }
-]
 export const partnerData = [
     '/images/client/amazon.svg',
     '/images/client/google.svg',

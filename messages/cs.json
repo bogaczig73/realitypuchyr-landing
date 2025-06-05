@@ -1,15 +1,113 @@
 {
   "navigation": {
     "homeLink": "Domů",
-    "aboutLink": "O nás",
+    "aboutLink": "O mě",
     "propertiesLink": "Nemovitosti",
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
     "blogLink": "Blog"
   },
+  "list": {
+    "title": "Seznam nemovitostí",
+    "description": "Profesionální platforma pro nákup, prodej a pronájem nemovitostí bez zbytečných poplatků.",
+    "noResults": "Žádné nemovitosti nenalezeny",
+    "loadMore": "Načíst další",
+    "sortBy": "Řadit podle",
+    "filterBy": "Filtrovat podle",
+    "viewOptions": {
+      "grid": "Mřížka",
+      "list": "Seznam"
+    },
+    "status": {
+      "active": "Aktivní",
+      "sold": "Prodané",
+      "reserved": "Rezervované"
+    },
+    "price": {
+      "asc": "Cena: od nejnižší",
+      "desc": "Cena: od nejvyšší"
+    },
+    "date": {
+      "newest": "Nejnovější",
+      "oldest": "Nejstarší"
+    },
+    "area": {
+      "asc": "Výměra: od nejmenší",
+      "desc": "Výměra: od největší"
+    },
+    "filters": {
+      "priceRange": "Cenové rozpětí",
+      "propertyType": "Typ nemovitosti",
+      "area": "Výměra",
+      "rooms": "Počet pokojů",
+      "features": "Vybavení",
+      "location": "Lokalita",
+      "reset": "Resetovat filtry",
+      "apply": "Použít filtry"
+    },
+    "pagination": {
+      "previous": "Předchozí",
+      "next": "Další",
+      "page": "Stránka",
+      "of": "z"
+    },
+    "listViewLayout": "Seznam nemovitostí",
+    "loadError": "Nepodařilo se načíst nemovitosti. Prosím zkuste to později.",
+    "noPropertiesFound": "Nebyly nalezeny žádné nemovitosti odpovídající vašim kritériím.",
+    "tryAdjustingFilters": "Zkuste upravit filtry nebo vyhledávací výrazy."
+  },
   "common": {
     "search": "Hledat",
-    "searchPlaceholder": "Hledat nemovitosti"
+    "searchPlaceholder": "Hledat nemovitosti",
+    "list": {
+      "title": "Seznam nemovitostí",
+      "description": "Profesionální platforma pro nákup, prodej a pronájem nemovitostí bez zbytečných poplatků.",
+      "noResults": "Žádné nemovitosti nenalezeny",
+      "loadMore": "Načíst další",
+      "sortBy": "Řadit podle",
+      "filterBy": "Filtrovat podle",
+      "viewOptions": {
+        "grid": "Mřížka",
+        "list": "Seznam"
+      },
+      "status": {
+        "active": "Aktivní",
+        "sold": "Prodané",
+        "reserved": "Rezervované"
+      },
+      "price": {
+        "asc": "Cena: od nejnižší",
+        "desc": "Cena: od nejvyšší"
+      },
+      "date": {
+        "newest": "Nejnovější",
+        "oldest": "Nejstarší"
+      },
+      "area": {
+        "asc": "Výměra: od nejmenší",
+        "desc": "Výměra: od největší"
+      },
+      "filters": {
+        "priceRange": "Cenové rozpětí",
+        "propertyType": "Typ nemovitosti",
+        "area": "Výměra",
+        "rooms": "Počet pokojů",
+        "features": "Vybavení",
+        "location": "Lokalita",
+        "reset": "Resetovat filtry",
+        "apply": "Použít filtry"
+      },
+      "pagination": {
+        "previous": "Předchozí",
+        "next": "Další",
+        "page": "Stránka",
+        "of": "z"
+      },
+      "listViewLayout": "Seznam nemovitostí",
+      "loadError": "Nepodařilo se načíst nemovitosti. Prosím zkuste to později.",
+      "noPropertiesFound": "Nebyly nalezeny žádné nemovitosti odpovídající vašim kritériím.",
+      "tryAdjustingFilters": "Zkuste upravit filtry nebo vyhledávací výrazy."
+    }
   },
   "footer": {
     "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku.",
@@ -61,7 +159,7 @@
     "search": "Hledat nemovitosti"
   },
   "contact": {
-    "title": "Kontaktujte nás",
+    "title": "Kontaktujte mě",
     "name": "Jméno",
     "email": "E-mail",
     "message": "Zpráva",
@@ -78,21 +176,104 @@
     "yourName": "Vaše jméno",
     "yourEmail": "Váš e-mail",
     "yourQuestion": "Vaše otázka",
-    "yourComment": "Váš komentář"
+    "yourComment": "Váš komentář",
+    "rating": "5.00(30)",
+    "phone": "Telefon",
+    "socialMedia": {
+      "facebook": "Navštivte naši stránku na Facebooku",
+      "instagram": "Navštivte náš profil na Instagramu",
+      "linkedin": "Navštivte náš profil na LinkedIn",
+      "email": "Napište nám e-mail"
+    },
+    "form": {
+      "namePlaceholder": "Jméno :",
+      "emailPlaceholder": "E-mail :",
+      "subjectPlaceholder": "Předmět :",
+      "messagePlaceholder": "Zpráva :"
+    },
+    "servicesData": {
+      "realEstate": {
+        "title": "Realitní služby",
+        "description": "Odborné poradenství při koupi a prodeji v Praze a Středočeském kraji, zajišťující plynulý a uspokojivý zážitek."
+      },
+      "financialServices": {
+        "title": "Finanční služby",
+        "description": "Šitá poradenství na míru v oblasti investic, hypoték a finančního plánování pro dlouhodobý úspěch."
+      },
+      "careerOpportunities": {
+        "title": "Kariérní příležitosti",
+        "description": "Nabízíme širokou škálu kariérních příležitostí v realitním a finančním sektoru."
+      }
+    }
   },
   "propertyDetail": {
     "price": "Cena",
     "forSale": "Na prodej",
-    "daysOnHously": "Dní v nabídce",
+    "sold": "PRODÁNO",
+    "propertySoldMessage": "Tato nemovitost byla prodána. Kontaktujte mě pro podobné nemovitosti.",
+    "daysOnHously": "Dní na Hously",
     "pricePerSqFt": "Cena za m²",
     "monthlyPayment": "Měsíční splátka (odhad)",
     "bookNow": "Rezervovat",
     "offerNow": "Nabídnout",
-    "haveQuestion": "Máte otázku? Kontaktujte nás!",
-    "contactUs": "Kontaktujte nás",
+    "haveQuestion": "Máte otázku? Kontaktujte mě!",
+    "contactUs": "Kontaktujte mě",
     "beds": "Ložnice",
     "baths": "Koupelny",
-    "sqft": "m²"
+    "sqft": "m²",
+    "basicInformation": "Základní informace",
+    "location": "Lokalita",
+    "buildingDetails": "Detaily budovy",
+    "areas": "Výměry",
+    "objectDetails": "Detaily objektu",
+    "additionalInformation": "Další informace",
+    "virtualTour": "Virtuální prohlídka",
+    "floorplans": "Půdorysy",
+    "category": "Kategorie",
+    "status": "Stav",
+    "ownershipType": "Typ vlastnictví",
+    "size": "Výměra",
+    "layout": "Dispozice",
+    "street": "Ulice",
+    "city": "Město",
+    "country": "Země",
+    "buildingStories": "Počet podlaží budovy",
+    "buildingCondition": "Stav budovy",
+    "apartmentCondition": "Stav bytu",
+    "aboveGroundFloors": "Nadzemní podlaží",
+    "totalAboveGroundFloors": "Celkem nadzemních podlaží",
+    "totalUndergroundFloors": "Celkem podzemních podlaží",
+    "reconstructionYearApartment": "Rok rekonstrukce (byt)",
+    "reconstructionYearBuilding": "Rok rekonstrukce (budova)",
+    "floorArea": "Podlahová plocha",
+    "builtUpArea": "Zastavěná plocha",
+    "gardenHouseArea": "Plocha zahradního domku",
+    "terraceArea": "Plocha terasy",
+    "totalLandArea": "Celková výměra pozemku",
+    "gardenArea": "Výměra zahrady",
+    "garageArea": "Plocha garáže",
+    "balconyArea": "Plocha balkonu",
+    "pergolaArea": "Plocha pergoly",
+    "basementArea": "Plocha sklepa",
+    "workshopArea": "Plocha dílny",
+    "totalObjectArea": "Celková plocha objektu",
+    "usableArea": "Užitná plocha",
+    "landArea": "Výměra pozemku",
+    "objectType": "Typ objektu",
+    "objectLocationType": "Typ lokace objektu",
+    "houseEquipment": "Vybavení domu",
+    "accessRoad": "Přístupová cesta",
+    "objectCondition": "Stav objektu",
+    "equipmentDescription": "Popis vybavení",
+    "additionalSources": "Dodatečné zdroje",
+    "buildingPermit": "Stavební povolení",
+    "buildability": "Zastavitelnost",
+    "utilitiesOnLand": "Inženýrské sítě na pozemku",
+    "utilitiesOnAdjacentRoad": "Inženýrské sítě na přilehlé komunikaci",
+    "payments": "Platby",
+    "videoTour": "Video prohlídka",
+    "reservationPrice": "Rezervační cena",
+    "pricePerM2": "Cena za m²"
   },
   "faq": {
     "title": "Často kladené otázky",
@@ -195,7 +376,7 @@
       "viewOnGoogleMap": "Zobrazit na Google mapách"
     },
     "contact": {
-      "title": "Kontaktujte nás",
+      "title": "Kontaktujte mě",
       "name": "Jméno",
       "email": "E-mail",
       "message": "Zpráva",
@@ -223,18 +404,17 @@
       "baths": "Koupelny",
       "sqft": "m²",
       "forSale": "Na prodej",
-      "daysOnHously": "Dní v nabídce",
       "pricePerSqFt": "Cena za m²",
       "monthlyPayment": "Měsíční splátka (odhad)",
       "bookNow": "Rezervovat",
       "offerNow": "Nabídnout",
-      "haveQuestion": "Máte otázku? Kontaktujte nás!",
-      "contactUs": "Kontaktujte nás"
+      "haveQuestion": "Máte otázku? Kontaktujte mě!",
+      "contactUs": "Kontaktujte mě"
     },
     "getInTouch": {
-      "title": "Máte otázku? Kontaktujte nás!",
+      "title": "Máte otázku? Kontaktujte mě!",
       "description": "Koupě nemovitosti může být náročná — ale nemusíte to dělat sami. Pojďme si popovídat a udělat to jednodušší!",
-      "contactButton": "Kontaktujte nás"
+      "contactButton": "Kontaktujte mě"
     },
     "aboutCooperation": {
       "title": "Jak bude naše spolupráce probíhat?",
