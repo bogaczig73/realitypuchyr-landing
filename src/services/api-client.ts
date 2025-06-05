@@ -1,6 +1,11 @@
 import axios, { AxiosError, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Property, PaginatedResponse } from '../types/property';
 
+interface ErrorResponse {
+    message?: string;
+    [key: string]: any;
+}
+
 export class ApiError extends Error {
     constructor(
         message: string,
@@ -82,7 +87,7 @@ export class ApiClient {
                 }
 
                 const status = error.response.status;
-                const data = error.response.data;
+                const data = error.response.data as ErrorResponse;
 
                 return Promise.reject(new ApiError(
                     data?.message || 'An error occurred',

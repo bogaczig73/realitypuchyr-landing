@@ -6,7 +6,7 @@ import Image from "next/image";
 import { LiaCompressArrowsAltSolid } from "react-icons/lia";
 import { LuBath, LuBedDouble } from "react-icons/lu";
 import { propertyApi } from '@/services/api';
-import type { Property } from '@/services/api';
+import type { Property } from '@/types/property';
 import { useTranslations } from 'next-intl';
 
 export default function Property({
