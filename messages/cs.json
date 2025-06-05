@@ -1,9 +1,11 @@
 {
   "navigation": {
-    "home": "Domů",
-    "about": "O nás",
-    "properties": "Nemovitosti",
-    "contact": "Kontakt"
+    "homeLink": "Domů",
+    "aboutLink": "O nás",
+    "propertiesLink": "Nemovitosti",
+    "contactLink": "Kontakt",
+    "faqLink": "FAQ",
+    "blogLink": "Blog"
   },
   "common": {
     "search": "Hledat",
@@ -163,5 +165,163 @@
         "content": "- Praha vyžaduje registraci a omezuje krátkodobé pronájmy v některých oblastech.\n- Jiná města mohou zavést podobná pravidla."
       }
     }
+  },
+  "homeBanner": {
+    "title": "Buďte si jistí, že vše dopadne dobře!",
+    "learnMore": "Zjistit více",
+    "quote": "S více než 5 lety zkušeností v pražském realitním trhu buduji úspěšná partnerství prostřednictvím upřímnosti, svědomitosti a vzájemné důvěry mezi kupujícími a prodávajícími.",
+    "author": "Pavel Puchýř"
+  },
+  "components": {
+    "homeBanner": {
+      "title": "Buďte si jistí, že vše dopadne dobře!",
+      "learnMore": "Zjistit více",
+      "quote": "S více než 5 lety zkušeností v pražském realitním trhu buduji úspěšná partnerství prostřednictvím upřímnosti, svědomitosti a vzájemné důvěry mezi kupujícími a prodávajícími.",
+      "author": "Pavel Puchýř"
+    },
+    "footer": {
+      "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku.",
+      "sitemap": "Mapa stránek",
+      "listing": "Nabídka nemovitostí",
+      "services": "Služby",
+      "blog": "Blog",
+      "contact": "Kontakt",
+      "usefulLinks": "Užitečné odkazy",
+      "blogPost": "Článek na blogu",
+      "termsOfService": "Podmínky použití",
+      "privacyPolicy": "Ochrana osobních údajů",
+      "contactDetails": "Kontaktní údaje",
+      "address": "Šimáčkova 916/13,\n170 00 Praha 7-Holešovice,\nČeská republika",
+      "viewOnGoogleMap": "Zobrazit na Google mapách"
+    },
+    "contact": {
+      "title": "Kontaktujte nás",
+      "name": "Jméno",
+      "email": "E-mail",
+      "message": "Zpráva",
+      "send": "Odeslat zprávu",
+      "aboutMe": "O mně",
+      "aboutMeText": "S více než {years} lety zkušeností na realitním trhu je pomoc klientům v Praze a Středočeském kraji více než jen práce — je to o budování důvěry a dosahování výsledků. Upřímnost, svědomitost a zodpovědnost jsou základem každého kontaktu, což zajišťuje plynulé transakce, kde se kupující i prodávající cítí spokojeni a dobře postaráni.",
+      "aboutMeText2": "Úspěch v realitách začíná vzájemnou důvěrou a skutečným spojením. Ať už kupujete nebo prodáváte, cílem je udělat proces transparentním, efektivním a přizpůsobeným vašim potřebám. Setkejme se osobně — rád vás poznám a prodiskutujeme, jak můžeme společně dosáhnout vašich cílů v oblasti nemovitostí.",
+      "services": "Služby",
+      "myListings": "Moje nabídka nemovitostí",
+      "viewMore": "Zobrazit více nemovitostí",
+      "broker": "Realitní makléř",
+      "of": "z",
+      "contactMe": "Kontaktujte mě",
+      "yourName": "Vaše jméno",
+      "yourEmail": "Váš e-mail",
+      "yourQuestion": "Vaše otázka",
+      "yourComment": "Váš komentář"
+    },
+    "property": {
+      "featuredProperties": "Vybrané nemovitosti",
+      "featuredDescription": "Skvělá platforma pro nákup, prodej a pronájem nemovitostí bez zprostředkovatele a provizí.",
+      "price": "Cena",
+      "status": "Stav",
+      "beds": "Ložnice",
+      "baths": "Koupelny",
+      "sqft": "m²",
+      "forSale": "Na prodej",
+      "daysOnHously": "Dní v nabídce",
+      "pricePerSqFt": "Cena za m²",
+      "monthlyPayment": "Měsíční splátka (odhad)",
+      "bookNow": "Rezervovat",
+      "offerNow": "Nabídnout",
+      "haveQuestion": "Máte otázku? Kontaktujte nás!",
+      "contactUs": "Kontaktujte nás"
+    },
+    "getInTouch": {
+      "title": "Máte otázku? Kontaktujte nás!",
+      "description": "Koupě nemovitosti může být náročná — ale nemusíte to dělat sami. Pojďme si popovídat a udělat to jednodušší!",
+      "contactButton": "Kontaktujte nás"
+    },
+    "aboutCooperation": {
+      "title": "Jak bude naše spolupráce probíhat?",
+      "description": "Kvalita, rozsah služeb, rychlost a bezpečnost - to jsou hlavní důvody, proč klienti nejvíce oceňují naši spolupráci. Provedu vás celým procesem prodeje nebo koupě nemovitosti od počáteční konzultace až po předání klíčů. Budu vás pravidelně a transparentně informovat o vývoji, abyste byli vždy v obraze.",
+      "learnMore": "Zjistit více",
+      "closeModal": "Zavřít"
+    },
+    "aboutVideoTour": {
+      "title": "Kvalitní video prohlídka, více než tisíc fotografií.",
+      "description": "Poutavé video může vyvolat pozitivní emoce a plně zachytit atmosféru nabízené nemovitosti. Také rád pracuji s videem, protože skvěle funguje při propagaci na sociálních sítích. Opravdu mi záleží na kvalitě, přesvědčte se sami.",
+      "learnMore": "Zjistit více",
+      "closeModal": "Zavřít"
+    },
+    "clientTwo": {
+      "title": "Co říkají moji klienti?",
+      "description": "Nechávám mluvit své klienty. Jsem hrdý na svou práci a jsem přesvědčen, že budete i vy.",
+      "loading": "Načítání...",
+      "readMore": "Číst více",
+      "showLess": "Zobrazit méně"
+    },
+    "counterSection": {
+      "activeProperties": "Aktivní nemovitosti",
+      "soldProperties": "Prodané nemovitosti",
+      "yearsOfExperience": "Let zkušeností"
+    },
+    "sidebar": {
+      "home": "Domů",
+      "listing": "Nabídka",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "contact": "Kontakt",
+      "phoneNumber": "+420 733 781 696"
+    },
+    "form": {
+      "status": {
+        "active": "Aktivní",
+        "sold": "Prodané"
+      },
+      "allCategories": "Všechny kategorie",
+      "error": {
+        "loadingCategories": "Nepodařilo se načíst kategorie. Prosím zkuste to později."
+      },
+      "search": {
+        "label": "Hledat",
+        "placeholder": "Hledat v názvu nebo popisu"
+      },
+      "category": {
+        "label": "Kategorie",
+        "placeholder": "Vyberte kategorii"
+      },
+      "action": {
+        "label": "Akce",
+        "search": "Hledat"
+      },
+      "loading": "Načítání..."
+    }
+  },
+  "aboutMe": {
+    "whatDoIDo": {
+      "title": "Co dělám?",
+      "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku."
+    },
+    "services": [
+      {
+        "title": "Správa nemovitostí",
+        "description": "Profesionální správa vašich nemovitostí pro maximalizaci výnosů a minimalizaci starostí.",
+        "readMore": "Číst více"
+      },
+      {
+        "title": "Investiční poradenství",
+        "description": "Odborné poradenství o investičních příležitostech na realitním trhu a analýza trhu.",
+        "readMore": "Číst více"
+      },
+      {
+        "title": "Analýza trhu",
+        "description": "Hloubková analýza tržních trendů a ocenění nemovitostí pro informovaná rozhodnutí.",
+        "readMore": "Číst více"
+      }
+    ]
+  },
+  "categories": {
+    "title": "Kategorie nemovitostí"
+  },
+  "blog": {
+    "title": "Nejnovější články a novinky",
+    "description": "Skvělá platforma pro nákup, prodej a pronájem nemovitostí bez zprostředkovatele a provizí.",
+    "readTime": "5 minut čtení",
+    "readMore": "Číst více"
   }
 } 

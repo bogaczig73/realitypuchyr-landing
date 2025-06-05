@@ -17,7 +17,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
   let messages;
   try {
-    messages = (await import(`../../../messages/${locale}/common.json`)).default;
+    messages = (await import(`../../../messages/${locale}.json`)).default;
   } catch (error) {
     notFound();
   }
