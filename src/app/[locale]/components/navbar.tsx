@@ -85,11 +85,11 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                 <div className={`${topnavClass !== '' && topnavClass !== undefined ? 'container-fluid md:px-8 px-3' : 'container'}`}>
                     {/* <!-- Logo container--> */}
                     {navClass === '' || navClass === undefined ?
-                        <Link className="logo" href="/">
+                        <Link className="logo" href={`/${currentLocale}`}>
                             <Image src="/images/logo-dark.png" className="inline-block dark:hidden" alt="" width={98} height={24}/>
                             <Image src="/images/logo-light.png" className="hidden dark:inline-block" alt="" width={98} height={24} />
                         </Link> :
-                        <Link className="logo" href="/">
+                        <Link className="logo" href={`/${currentLocale}`}>
                             <span className="inline-block dark:hidden">
                                 <Image src="/images/logo-dark.png" className="l-dark"  alt="" width={98} height={24}/>
                                 <Image src="/images/logo-light.png" className="l-light"  alt="" width={98} height={24}/>
@@ -124,30 +124,33 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                     <div id="navigation" className="lg:block">
                         {/* <!-- Navigation Menu--> */}
                         <ul className={`navigation-menu ${navClass === '' || navClass === undefined ? '' : 'nav-light'} ${topnavClass !== '' && topnavClass !== undefined ? '!justify-center' : '!justify-end'}`}>
-                            <li className={`has-submenu parent-menu-item ${["/"].includes(manu) ? 'active' : ''}`}><Link href="/">{t('homeLink')}</Link></li>
-                            <li className={`has-submenu parent-menu-item ${["/list"].includes(manu) ? 'active' : ''}`}><Link href="/list">{t('propertiesLink')}</Link></li>
-                            <li className={manu === "/faq" ? "active" : ''}><Link href="/faq" className="sub-menu-item">{t('faqLink')}</Link></li>
-                            <li className={manu === "/blog" ? "active" : ''}><Link href="/blog" className="sub-menu-item">{t('blogLink')}</Link></li>
-                            <li className={manu === "/contact" ? "active" : ''}><Link href="/contact" className="sub-menu-item">{t('contactLink')}</Link></li>
+                            <li className={`has-submenu parent-menu-item ${["/"].includes(manu) ? 'active' : ''}`}><Link href={`/${currentLocale}`}>{t('homeLink')}</Link></li>
+                            <li className={`has-submenu parent-menu-item ${["/list"].includes(manu) ? 'active' : ''}`}><Link href={`/${currentLocale}/list`}>{t('propertiesLink')}</Link></li>
+                            <li className={manu === "/faq" ? "active" : ''}><Link href={`/${currentLocale}/faq`} className="sub-menu-item">{t('faqLink')}</Link></li>
+                            <li className={manu === "/blog" ? "active" : ''}><Link href={`/${currentLocale}/blog`} className="sub-menu-item">{t('blogLink')}</Link></li>
+                            <li className={manu === "/contact" ? "active" : ''}><Link href={`/${currentLocale}/contact`} className="sub-menu-item">{t('contactLink')}</Link></li>
                             
                             {/* Language Switcher */}
-                            <li className="dropdown inline-block relative" ref={dropdownRef}>
-                                <button 
-                                    className="dropdown-toggle h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[20px] text-center bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-100 dark:border-gray-800 text-slate-900 dark:text-white rounded-md" 
-                                    type="button" 
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        setShowCountry(!showCountry);
-                                    }}
-                                >
-                                    <Image 
-                                        src={currentLang.flag} 
-                                        width={24} 
-                                        height={24} 
-                                        className="h-6 w-6 rounded-md" 
-                                        alt={currentLang.label}
-                                    />
-                                </button>
+                            <li className="dropdown inline-block relative flex items-center" ref={dropdownRef}>
+                                <Link href="#" className="flex items-center">
+                                    <button 
+                                        className="dropdown-toggle h-6 w-6 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[20px] text-center bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-100 dark:border-gray-800 text-slate-900 dark:text-white rounded-md" 
+                                        type="button" 
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            e.stopPropagation();
+                                            setShowCountry(!showCountry);
+                                        }}
+                                    >
+                                        <Image 
+                                            src={currentLang.flag} 
+                                            width={20} 
+                                            height={20} 
+                                            className="h-5 w-5 rounded-md" 
+                                            alt={currentLang.label}
+                                        />
+                                    </button>
+                                </Link>
                                 
                                 <div className={`${showCountry ? 'block' : 'hidden'} dropdown-menu absolute end-0 m-0 mt-4 z-10 w-36 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm shadow-gray-200 dark:shadow-gray-700`}>
                                     <ul className="list-none py-2 text-start">

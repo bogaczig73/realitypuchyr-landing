@@ -12,10 +12,10 @@ import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 export default function Faq() {
     const t = useTranslations('faq');
-    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    const [activeAccordion, setActiveAccordion] = useState<{section: string, index: number} | null>(null);
 
-    const toggleAccordion = (index: number) => {
-        setActiveIndex(activeIndex === index ? null : index);
+    const toggleAccordion = (section: string, index: number) => {
+        setActiveAccordion(activeAccordion?.section === section && activeAccordion?.index === index ? null : {section, index});
     };
 
     const sections = [
@@ -73,13 +73,21 @@ export default function Faq() {
                         <div className="lg:col-span-4 md:col-span-5">
                             <div className="rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700 p-6 sticky top-20">
                                 <ul className="list-unstyled sidebar-nav mb-0 py-0" id="navmenu-nav">
-                                    <li className="navbar-item p-0"><Link2 to="general" spy={true} activeClass="active"
-                                        smooth={true}
-                                        duration={500} className="text-base font-medium navbar-link">{t('sections.general')}</Link2></li>
-                                    <li className="navbar-item mt-3 p-0"><Link2 spy={true} activeClass="active" smooth={true} duration={500} to="buying" className="text-base font-medium navbar-link">{t('sections.buying')}</Link2></li>
-                                    <li className="navbar-item mt-3 p-0"><Link2 spy={true} activeClass="active" smooth={true} duration={500} to="financing" className="text-base font-medium navbar-link">{t('sections.financing')}</Link2></li>
-                                    <li className="navbar-item mt-3 p-0"><Link2 spy={true} activeClass="active" smooth={true} duration={500} to="selling" className="text-base font-medium navbar-link">{t('sections.selling')}</Link2></li>
-                                    <li className="navbar-item mt-3 p-0"><Link2 spy={true} activeClass="active" smooth={true} duration={500} to="renting" className="text-base font-medium navbar-link">{t('sections.renting')}</Link2></li>
+                                    {sections.map((section) => (
+                                        <li key={section.key} className="navbar-item mt-3 p-0">
+                                            <Link2 
+                                                to={section.key}
+                                                spy={true}
+                                                smooth={true}
+                                                duration={500}
+                                                offset={-100}
+                                                activeClass="active"
+                                                className="text-base font-medium navbar-link"
+                                            >
+                                                {section.title}
+                                            </Link2>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
@@ -89,24 +97,30 @@ export default function Faq() {
                                 <h5 className="text-xl font-semibold mb-4">{t('title')}</h5>
                                 <div className="grid grid-cols-1 gap-4">
                                     {sections.map((section, sectionIndex) => (
-                                        <div key={section.key} className="mb-6">
+                                        <div key={section.key} id={section.key} className="mb-6">
                                             <h6 className="text-lg font-semibold mb-4">{section.title}</h6>
                                             {questions
                                                 .filter(q => q.section === section.key)
                                                 .map((question, index) => (
-                                                    <div key={question.key} className="mb-4">
-                                                        <button
-                                                            onClick={() => toggleAccordion(index)}
-                                                            className="flex justify-between items-center w-full text-left p-4 bg-gray-50 dark:bg-slate-800 rounded-md"
-                                                        >
-                                                            <span className="font-medium">{t(`questions.${question.key}.title`)}</span>
-                                                            {activeIndex === index ? <FiChevronUp /> : <FiChevronDown />}
-                                                        </button>
-                                                        {activeIndex === index && (
-                                                            <div className="p-4 bg-white dark:bg-slate-900 rounded-b-md">
-                                                                <p className="text-gray-600 dark:text-gray-300 whitespace-pre-line">
-                                                                    {t(`questions.${question.key}.content`)}
-                                                                </p>
+                                                    <div key={question.key} className="relative shadow-sm shadow-gray-200 dark:shadow-gray-700 rounded-md overflow-hidden mt-4">
+                                                        <h2 className="text-base font-medium">
+                                                            <button
+                                                                onClick={() => toggleAccordion(section.key, index)}
+                                                                className={`flex justify-between items-center p-5 w-full font-medium text-left ${activeAccordion?.section === section.key && activeAccordion?.index === index ? 'bg-gray-50 dark:bg-slate-800 text-green-600' : ''}`}
+                                                            >
+                                                                <span>{t(`questions.${question.key}.title`)}</span>
+                                                                <svg className={`w-4 h-4 shrink-0 ${activeAccordion?.section === section.key && activeAccordion?.index === index ? 'rotate-0' : 'rotate-180'}`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                                                                </svg>
+                                                            </button>
+                                                        </h2>
+                                                        {activeAccordion?.section === section.key && activeAccordion?.index === index && (
+                                                            <div>
+                                                                <div className="p-5">
+                                                                    <p className="text-slate-400 dark:text-gray-400 whitespace-pre-line">
+                                                                        {t(`questions.${question.key}.content`)}
+                                                                    </p>
+                                                                </div>
                                                             </div>
                                                         )}
                                                     </div>
