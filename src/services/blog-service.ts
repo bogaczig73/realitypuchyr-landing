@@ -20,22 +20,34 @@ export class BlogService {
     private apiClient: ApiClient;
 
     constructor(locale: string = 'cs') {
-        this.apiClient = new ApiClient(locale);
+        this.apiClient = ApiClient.getInstance(locale);
     }
 
     async getAllBlogs(page: number = 1, limit: number = 10): Promise<BlogPost[]> {
-        return this.apiClient.request<BlogPost[]>({
-            method: 'GET',
-            url: 'blogs',
-            params: { page, limit }
-        }, true);
+        try {
+            const response = await this.apiClient.request<BlogPost[]>({
+                method: 'GET',
+                url: 'blogs',
+                params: { page, limit }
+            });
+            return response;
+        } catch (error) {
+            console.error('Error fetching blogs:', error);
+            throw error;
+        }
     }
 
     async getBlogBySlug(slug: string): Promise<BlogPost> {
-        return this.apiClient.request<BlogPost>({
-            method: 'GET',
-            url: `blogs/${slug}`
-        }, true);
+        try {
+            const response = await this.apiClient.request<BlogPost>({
+                method: 'GET',
+                url: `blogs/${slug}`
+            });
+            return response;
+        } catch (error) {
+            console.error('Error fetching blog:', error);
+            throw error;
+        }
     }
 
     async createBlog(blog: Omit<BlogPost, 'id' | 'createdAt' | 'updatedAt'>): Promise<BlogPost> {

@@ -33,7 +33,7 @@ export default function Property({
             try {
                 setLoading(true);
                 setError(null);
-                const response = await propertyApi.getAll(1, limit);
+                const response = await propertyApi.getAll(1, limit, '', 'ACTIVE');
                 setProperties(response.properties);
             } catch (error) {
                 setError('Failed to load properties. Please try again later.');
@@ -149,7 +149,7 @@ export default function Property({
                                         <li>
                                             <span className="text-slate-400">{t('status')}</span>
                                             <p className="text-lg font-medium text-green-600">
-                                                {item.status}
+                                                {item.status === 'ACTIVE' ? t('forSale') : item.status === 'SOLD' ? t('sold') : item.status}
                                             </p>
                                         </li>
                                     )}

@@ -2,17 +2,20 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import QueryProvider from '@/providers/QueryProvider';
 
+type LayoutParams = Promise<{ locale: string }>;
+
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'cs' }];
 }
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: LayoutParams;
 }) {
+  const { locale } = await params;
   let messages;
   try {
     messages = (await import(`../../../messages/${locale}.json`)).default;

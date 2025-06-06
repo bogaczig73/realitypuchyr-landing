@@ -1,22 +1,29 @@
 export interface Blog {
     id: number;
-    title: string;
+    name: string;
     slug: string;
     content: string;
-    excerpt: string;
-    image: string;
+    tags: string[];
     date: string;
-    type: string;
+    pictures: string[];
+    metaTitle?: string;
+    metaDescription?: string;
+    keywords?: string;
+    language: string;
     createdAt: string;
     updatedAt: string;
 }
 
 export interface CreateBlogDto {
-    title: string;
+    name: string;
+    slug: string;
     content: string;
-    excerpt: string;
-    image: string;
-    type: string;
+    tags: string[];
+    pictures: string[];
+    metaTitle?: string;
+    metaDescription?: string;
+    keywords?: string;
+    language?: string;
 }
 
 export interface UpdateBlogDto extends Partial<CreateBlogDto> {
@@ -29,8 +36,7 @@ export interface PaginatedBlogResponse {
     page: number;
     limit: number;
     totalPages: number;
-} 
-
+}
 
 export interface BlogList{
     id: number;

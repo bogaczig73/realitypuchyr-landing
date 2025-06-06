@@ -69,6 +69,10 @@ export default function Sidebar(){
                                 <Link href="/list?status=ACTIVE" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-home-city me-2"></i>{t('listing')}</Link>
                             </li>
 
+                            <li className={`${manu === "/services" ? 'active' : ''} ms-0`}>
+                                <Link href="/services" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-cog me-2"></i>{t('services')}</Link>
+                            </li>
+
                             <li className={`${manu === "/faq" ? 'active' : ''} ms-0`}>
                                 <Link href="/faq" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-help-circle me-2"></i>{t('faq')}</Link>
                             </li>

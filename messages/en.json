@@ -3,6 +3,7 @@
     "homeLink": "Home",
     "aboutLink": "About",
     "propertiesLink": "Properties",
+    "servicesLink": "Services",
     "contactLink": "Contact",
     "faqLink": "FAQ",
     "blogLink": "Blog"
@@ -260,6 +261,7 @@
       "baths": "Baths",
       "sqft": "sqft",
       "forSale": "For Sale",
+      "sold": "SOLD",
       "daysOnHously": "Days on Hously",
       "pricePerSqFt": "Price per sq ft",
       "monthlyPayment": "Monthly Payment (estimate)",
@@ -303,7 +305,8 @@
       "faq": "FAQ",
       "blog": "Blog",
       "contact": "Contact",
-      "phoneNumber": "+420 733 781 696"
+      "phoneNumber": "+420 733 781 696",
+      "services": "Services"
     },
     "form": {
       "status": {
@@ -409,5 +412,71 @@
     "loadError": "Failed to load properties. Please try again later.",
     "noPropertiesFound": "No properties found matching your search criteria.",
     "tryAdjustingFilters": "Try adjusting your filters or search terms."
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Wide range of services tailored to each real estate case",
+    "description": "When working with my clients, I prefer a personal approach and completely individual services, whether we're dealing with selling or buying property. My rich service offering includes everything that the best real estate agencies in the Czech Republic and abroad offer today. I always set the business strategy at the beginning of cooperation, after a thorough discussion with clients.",
+    "selling": {
+      "title": "Property Sale",
+      "description": "Most sellers need to sell their property as quickly as possible and for the highest price. However, this doesn't always have to be the case. Some prioritize speed, others cash payment. Some are not in a hurry, and on the contrary, they care about finding a new solid owner of the property who will continue, for example, in maintaining a long-standing garden.",
+      "features": {
+        "consultation": {
+          "title": "Initial Consultation and Advisory",
+          "description": "At the initial meeting, we will set your goals, based on which I will prepare a sales strategy."
+        },
+        "valuation": {
+          "title": "Qualified Property Valuation",
+          "description": "Proper property valuation is one of the most important steps in the sale process."
+        },
+        "staging": {
+          "title": "Home Staging",
+          "description": "Design modification of the property for maximum attractiveness to potential buyers.",
+          "beforeAfter": {
+        "title": "Home Staging - Before and After",
+        "before": "Before",
+        "after": "After",
+        "dragToCompare": "Drag to compare"
+      }
+        },
+        "presentation": {
+          "title": "Professional Presentation",
+          "description": "Photography, video tours, drone shots, and Matterport 3D virtual tours."
+        },
+        "marketing": {
+          "title": "Marketing and Promotion",
+          "description": "Advertising on 30 major portals and paid promotion on social networks."
+        },
+        "legal": {
+          "title": "Legal Service",
+          "description": "Cooperation with a proven law firm specialized in real estate law."
+        }
+      }
+    },
+    "buying": {
+      "title": "Property Purchase",
+      "description": "Looking for a specific property and still can't find your dream home? You can also turn to me in this case. ARCHER reality Prague a.s., under which I operate, has an extensive database of offered properties.",
+      "description2": "Together we will fill in the parameters of the property you are looking for, and when a similar offer appears in our system, it will be matched. We can contact you even before we go public with it. You will be among the first to learn about the offer."
+    },
+    "staging": {
+      "beforeAfter": {
+        "title": "Home Staging - Before and After",
+        "before": "Before",
+        "after": "After",
+        "dragToCompare": "Drag to compare"
+      }
+    },
+    "financial": {
+      "title": "Financial Services",
+      "description": "Comprehensive financial consulting for mortgages, insurance, and investments tailored to your needs."
+    },
+    "investment": {
+      "title": "Investment",
+      "description": "Consulting and mediation of investment opportunities in real estate and other sectors."
+    },
+    "developer": {
+      "title": "Developer Projects",
+      "description": "Offering and brokering new development projects in attractive locations."
+    }
   }
 }

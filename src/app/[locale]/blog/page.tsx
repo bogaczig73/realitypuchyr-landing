@@ -22,19 +22,18 @@ interface BlogPost {
     updatedAt: string;
 }
 
-export default async function BlogPage({
-    searchParams,
-}: {
-    searchParams: { page?: string };
-}) {
-    const page = Number(searchParams.page) || 1;
+type SearchParams = Promise<{ page?: string }>;
+
+export default async function BlogPage({ searchParams }: { searchParams: SearchParams }) {
+    const { page } = await searchParams;
+    const pageNumber = Number(page) || 1;
     const blogService = new BlogService();
     let blogs: BlogPost[] = [];
     let totalPages = 1;
     let error = null;
 
     try {
-        const response = await blogService.getAllBlogs(page);
+        const response = await blogService.getAllBlogs(pageNumber);
         blogs = response || [];
         totalPages = Math.ceil(blogs.length / 10); // Assuming 10 items per page
     } catch (err) {
@@ -142,8 +141,8 @@ export default async function BlogPage({
                                             <ul className="inline-flex items-center -space-x-px">
                                                 <li>
                                                     <Link 
-                                                        href={`/blog?page=${page > 1 ? page - 1 : 1}`}
-                                                        className={`w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600 ${page === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                                        href={`/blog?page=${pageNumber > 1 ? pageNumber - 1 : 1}`}
+                                                        className={`w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600 ${pageNumber === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
                                                     >
                                                         <FiChevronLeft className="text-[20px]"/>
                                                     </Link>
@@ -153,7 +152,7 @@ export default async function BlogPage({
                                                         <Link 
                                                             href={`/blog?page=${pageNum}`}
                                                             className={`w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full ${
-                                                                pageNum === page 
+                                                                pageNum === pageNumber 
                                                                     ? 'text-white bg-green-600' 
                                                                     : 'text-slate-400 hover:text-white bg-white dark:bg-slate-900 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600'
                                                             } shadow-xs shadow-gray-200 dark:shadow-gray-700`}
@@ -164,8 +163,8 @@ export default async function BlogPage({
                                                 ))}
                                                 <li>
                                                     <Link 
-                                                        href={`/blog?page=${page < totalPages ? page + 1 : totalPages}`}
-                                                        className={`w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600 ${page === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                                        href={`/blog?page=${pageNumber < totalPages ? pageNumber + 1 : totalPages}`}
+                                                        className={`w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600 ${pageNumber === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
                                                     >
                                                         <FiChevronRight className="text-[20px]"/>
                                                     </Link>

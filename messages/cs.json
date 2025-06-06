@@ -3,6 +3,7 @@
     "homeLink": "Domů",
     "aboutLink": "O mě",
     "propertiesLink": "Nemovitosti",
+    "servicesLink": "Služby",
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
     "blogLink": "Blog"
@@ -406,6 +407,8 @@
       "baths": "Koupelny",
       "sqft": "m²",
       "forSale": "Na prodej",
+      "sold": "PRODÁNO",
+      "daysOnHously": "Dní na Hously",
       "pricePerSqFt": "Cena za m²",
       "monthlyPayment": "Měsíční splátka (odhad)",
       "bookNow": "Rezervovat",
@@ -448,6 +451,7 @@
       "faq": "FAQ",
       "blog": "Blog",
       "contact": "Kontakt",
+      "services": "Služby",
       "phoneNumber": "+420 733 781 696"
     },
     "form": {
@@ -505,5 +509,65 @@
     "description": "Skvělá platforma pro nákup, prodej a pronájem nemovitostí bez zprostředkovatele a provizí.",
     "readTime": "5 minut čtení",
     "readMore": "Číst více"
+  },
+  "services": {
+    "title": "Služby",
+    "subtitle": "Široký rozsah služeb na míru každému realitnímu případu",
+    "description": "Při spolupráci se svými klienty preferuji osobní přístup a zcela individuální služby, ať už řešíme prodej či koupi nemovitosti. Má bohatá nabídka služeb obsahuje vše, co v dnešní době nabízejí nejlepší realitní kanceláře v ČR i v zahraničí. Strategii obchodu nastavuji vždy na začátku spolupráce, po zevrubném rozhovoru s klienty.",
+    "selling": {
+      "title": "Prodej nemovitosti",
+      "description": "Většina prodávajících potřebuje nemovitost prodat co nejrychleji a za co nejvyšší cenu. Vždy tomu tak ale být nemusí. Někdo upřednostňuje pouze rychlost, jiný platbu v hotovosti. Někdo nespěchá, a naopak mu záleží na tom, aby našel nového solidního majitele nemovitosti.",
+      "features": {
+        "consultation": {
+          "title": "Úvodní konzultace a poradenství",
+          "description": "Na prvotní schůzce si stanovíme vaše cíle, na základě kterých připravím strategii prodeje."
+        },
+        "valuation": {
+          "title": "Kvalifikované ocenění nemovitosti",
+          "description": "Správné ocenění nemovitosti je jedním z nejdůležitějších kroků prodeje."
+        },
+        "staging": {
+          "title": "Home staging",
+          "description": "Designová úprava nemovitosti pro maximální atraktivitu pro potenciální kupce."
+        },
+        "presentation": {
+          "title": "Profesionální prezentace",
+          "description": "Fotografie, videoprohlídky, záběry z dronu a 3D virtuální prohlídky Matterport."
+        },
+        "marketing": {
+          "title": "Marketing a propagace",
+          "description": "Inzerce na 30 nejvýznamnějších portálech a placená propagace na sociálních sítích."
+        },
+        "legal": {
+          "title": "Právní servis",
+          "description": "Spolupráce s prověřenou advokátní kanceláří specializovanou na realitní právo."
+        }
+      }
+    },
+    "staging": {
+      "beforeAfter": {
+        "title": "Home Staging - Před a po",
+        "before": "Před",
+        "after": "Po",
+        "dragToCompare": "Přetáhnout k porovnání"
+      }
+    },
+    "buying": {
+      "title": "Koupě nemovitosti",
+      "description": "Hledáte specifickou nemovitost a stále se vám nedaří najít bydlení snů? I v tomto případě se na mě můžete obracet. Realitní kancelář ARCHER reality Praha a.s., pod kterou působím, disponuje rozsáhlou databází nabízených nemovitostí.",
+      "description2": "Společně vyplníme parametry vámi hledané nemovitosti a ve chvíli, kdy se podobná nabídka objeví v našem systému, dojde k jejímu spárování. Oslovit vás tak můžeme ještě předtím, než s ní půjdeme na trh veřejně. Budete tak mezi prvními, kdo se o nabídce dozví."
+    },
+    "financial": {
+      "title": "Finanční služby",
+      "description": "Komplexní finanční poradenství v oblasti hypoték, pojištění a investic na míru vašim potřebám."
+    },
+    "investment": {
+      "title": "Investice",
+      "description": "Poradenství a zprostředkování investičních příležitostí v realitách a dalších oblastech."
+    },
+    "developer": {
+      "title": "Developerské projekty",
+      "description": "Nabídka a zprostředkování nových developerských projektů v atraktivních lokalitách."
+    }
   }
 } 

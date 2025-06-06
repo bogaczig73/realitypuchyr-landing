@@ -9,11 +9,10 @@ import { notFound } from "next/navigation";
 import React from "react";
 import {FiFacebook, FiGithub, FiGitlab, FiInstagram, FiLinkedin, FiMail, FiMessageCircle, FiSearch, FiTwitter, FiUser, FiYoutube} from 'react-icons/fi'
 
-export default async function BlogDetailPage({
-    params,
-}: {
-    params: { slug: string };
-}) {
+type Params = Promise<{ slug: string; locale: string }>;
+
+export default async function Page({ params }: { params: Params }) {
+    const { slug, locale } = await params;
     const blogService = new BlogService();
     let blog: BlogPost;
     let otherBlogs: BlogPost[] = [];
@@ -21,12 +20,12 @@ export default async function BlogDetailPage({
     
     try {
         // Get the current blog first
-        blog = await blogService.getBlogBySlug(params.slug);
+        blog = await blogService.getBlogBySlug(slug);
         
         // Then fetch other blogs
         const allBlogs = await blogService.getAllBlogs(1, 3); // Get 3 recent blogs
         // Filter out the current blog from the list
-        otherBlogs = allBlogs.filter(b => b.slug !== params.slug);
+        otherBlogs = allBlogs.filter(b => b.slug !== slug);
     } catch (err) {
         console.error('Error fetching blogs:', err);
         error = err;
