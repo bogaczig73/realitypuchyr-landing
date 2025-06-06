@@ -10,7 +10,7 @@ const ReviewSlide = ({ review, isExpanded, onToggle, t }: { review: Review, isEx
     const shouldTruncate = review.description.length > MAX_LENGTH && !isExpanded;
 
     return (
-        <div className="flex-[0_0_33.333%] min-w-0 px-3">
+        <div className="flex-[0_0_100%] md:flex-[0_0_33.333%] min-w-0 px-3">
             <div className="text-center mx-3">
                 <p className="text-lg text-slate-400 italic">
                     {shouldTruncate 
@@ -56,6 +56,9 @@ export default function ClientTwo() {
             align: 'start',
             slidesToScroll: 1,
             containScroll: 'trimSnaps',
+            breakpoints: {
+                '(min-width: 768px)': { slidesToScroll: 3 }
+            }
         },
         [Autoplay({ delay: 3000, stopOnInteraction: false })]
     );
