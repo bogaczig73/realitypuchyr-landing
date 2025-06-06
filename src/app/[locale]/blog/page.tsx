@@ -1,26 +1,51 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { BlogService } from "@/services/blog-service";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-
-import {blogList} from "../../data/data"
 import { FiArrowRight, FiCalendar, FiChevronLeft, FiChevronRight, FiClock } from "react-icons/fi";
 import Switcher from "../components/switcher";
 
-interface BlogData{
+interface BlogPost {
     id: number;
-    title: string;
+    name: string;
+    slug: string;
+    content: string;
+    tags: string[];
     date: string;
-    type: string;
-    image: string;
+    pictures: string[];
+    metaTitle: string;
+    metaDescription: string;
+    keywords: string;
+    language: string;
+    createdAt: string;
+    updatedAt: string;
 }
 
-export default function Sell(){
-    return(
+export default async function BlogPage({
+    searchParams,
+}: {
+    searchParams: { page?: string };
+}) {
+    const page = Number(searchParams.page) || 1;
+    const blogService = new BlogService();
+    let blogs: BlogPost[] = [];
+    let totalPages = 1;
+    let error = null;
+
+    try {
+        const response = await blogService.getAllBlogs(page);
+        blogs = response || [];
+        totalPages = Math.ceil(blogs.length / 10); // Assuming 10 items per page
+    } catch (err) {
+        console.error('Error fetching blogs:', err);
+        error = err;
+    }
+
+    return (
         <>
-          <Navbar navClass="navbar-white" topnavClass={""} tagline={false} />
-          <section
+            <Navbar navClass="navbar-white" topnavClass={""} tagline={false} />
+            <section
                 style={{ backgroundImage: "url('/images/bg/01.jpg')" }}
                 className="relative table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
                 <div className="absolute inset-0 bg-slate-900/80"></div>
@@ -37,71 +62,125 @@ export default function Sell(){
                     </svg>
                 </div>
             </div>
-            <section className="relative md:py-24 py-16" >
+            <section className="relative md:py-24 py-16">
                 <div className="container">
-
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]" >
-                        {blogList.map((item:BlogData, index:number) => (
-                            <div key={index} className="group relative h-fit hover:-mt-[5px] overflow-hidden bg-white dark:bg-slate-900 rounded-xl shadow-sm shadow-gray-200 dark:shadow-gray-700 transition-all duration-500">
-                                <div className="relative overflow-hidden">
-                                    <Image src={item.image} className="" alt="" width={0} height={0} sizes="100vw" style={{width:"100%", height:"auto"}} />
-                                    <div className="absolute end-4 top-4">
-                                        <span className="bg-green-600 text-white text-[14px] px-2.5 py-1 font-medium !rounded-full h-5">{item.type}</span>
-                                    </div>
-                                </div>
-
-                                <div className="relative p-6">
-                                    <div className="">
-                                        <div className="flex justify-between mb-4">
-                                            <span className="text-slate-400 text-sm flex items-center"><FiCalendar className="text-slate-900 dark:text-white me-2"/><span>{item.date}</span></span>
-                                            <span className="text-slate-400 text-sm ms-3 flex items-center"><FiClock className="text-slate-900 dark:text-white me-2"/><span>5 min read</span></span>
-                                        </div>
-
-                                        <Link href={`/blog-detail/${item.id}`} className="title text-xl font-medium hover:text-green-600 duration-500 ease-in-out">{item.title}</Link>
-
-                                        <div className="mt-3">
-                                            <Link href={`/blog-detail/${item.id}`} className="btn btn-link hover:text-green-600 after:bg-green-600 duration-500 ease-in-out inline-flex items-center"><span>Read More</span><FiArrowRight /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
-                        <div className="md:col-span-12 text-center">
-                            <nav>
-                                <ul className="inline-flex items-center -space-x-px">
-                                    <li>
-                                        <Link href="#" className="w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">
-                                            <FiChevronLeft className="text-[20px]"/>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#" className="w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">1</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#" className="w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">2</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#" aria-current="page" className="z-10 w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-white bg-green-600 shadow-xs shadow-gray-200 dark:shadow-gray-700">3</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#" className="w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">4</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#" className="w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600">
-                                            <FiChevronRight className="text-[20px]"/>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </nav>
+                    {error ? (
+                        <div className="text-center py-12">
+                            <h2 className="text-2xl font-medium text-slate-900 dark:text-white mb-4">Unable to load blogs</h2>
+                            <p className="text-slate-400 mb-6">We're having trouble connecting to our servers. Please try again later.</p>
+                            <button 
+                                onClick={() => window.location.reload()} 
+                                className="btn bg-green-600 hover:bg-green-700 text-white rounded-md"
+                            >
+                                Try Again
+                            </button>
                         </div>
-                    </div>
+                    ) : !blogs || blogs.length === 0 ? (
+                        <div className="text-center py-12">
+                            <h2 className="text-2xl font-medium text-slate-900 dark:text-white mb-4">No blogs found</h2>
+                            <p className="text-slate-400">Check back later for new content.</p>
+                        </div>
+                    ) : (
+                        <>
+                            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+                                {blogs.map((item: BlogPost) => (
+                                    <div key={item.id} className="group relative h-fit hover:-mt-[5px] overflow-hidden bg-white dark:bg-slate-900 rounded-xl shadow-sm shadow-gray-200 dark:shadow-gray-700 transition-all duration-500">
+                                        <div className="relative overflow-hidden">
+                                            <Image 
+                                                src={item.pictures[0]} 
+                                                className="" 
+                                                alt={item.name} 
+                                                width={0} 
+                                                height={0} 
+                                                sizes="100vw" 
+                                                style={{width:"100%", height:"auto"}} 
+                                            />
+                                            <div className="absolute end-4 top-4">
+                                                <span className="bg-green-600 text-white text-[14px] px-2.5 py-1 font-medium !rounded-full h-5">
+                                                    {item.tags[0]}
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div className="relative p-6">
+                                            <div className="">
+                                                <div className="flex justify-between mb-4">
+                                                    <span className="text-slate-400 text-sm flex items-center">
+                                                        <FiCalendar className="text-slate-900 dark:text-white me-2"/>
+                                                        <span>{new Date(item.date).toLocaleDateString()}</span>
+                                                    </span>
+                                                    <span className="text-slate-400 text-sm ms-3 flex items-center">
+                                                        <FiClock className="text-slate-900 dark:text-white me-2"/>
+                                                        <span>5 min read</span>
+                                                    </span>
+                                                </div>
+
+                                                <Link href={`/blog/${item.slug}`} className="title text-xl font-medium hover:text-green-600 duration-500 ease-in-out">
+                                                    {item.name}
+                                                </Link>
+
+                                                <p className="text-slate-400 mt-2 line-clamp-2">
+                                                    {item.metaDescription}
+                                                </p>
+
+                                                <div className="mt-3">
+                                                    <Link href={`/blog/${item.slug}`} className="btn btn-link hover:text-green-600 after:bg-green-600 duration-500 ease-in-out inline-flex items-center">
+                                                        <span>Read More</span>
+                                                        <FiArrowRight />
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {totalPages > 1 && (
+                                <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
+                                    <div className="md:col-span-12 text-center">
+                                        <nav>
+                                            <ul className="inline-flex items-center -space-x-px">
+                                                <li>
+                                                    <Link 
+                                                        href={`/blog?page=${page > 1 ? page - 1 : 1}`}
+                                                        className={`w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600 ${page === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                                    >
+                                                        <FiChevronLeft className="text-[20px]"/>
+                                                    </Link>
+                                                </li>
+                                                {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                                                    <li key={pageNum}>
+                                                        <Link 
+                                                            href={`/blog?page=${pageNum}`}
+                                                            className={`w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full ${
+                                                                pageNum === page 
+                                                                    ? 'text-white bg-green-600' 
+                                                                    : 'text-slate-400 hover:text-white bg-white dark:bg-slate-900 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600'
+                                                            } shadow-xs shadow-gray-200 dark:shadow-gray-700`}
+                                                        >
+                                                            {pageNum}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                                <li>
+                                                    <Link 
+                                                        href={`/blog?page=${page < totalPages ? page + 1 : totalPages}`}
+                                                        className={`w-10 h-10 inline-flex justify-center items-center mx-1 !rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-xs shadow-gray-200 dark:shadow-gray-700 hover:border-green-600 dark:hover:border-green-600 hover:bg-green-600 dark:hover:bg-green-600 ${page === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                                    >
+                                                        <FiChevronRight className="text-[20px]"/>
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            )}
+                        </>
+                    )}
                 </div>
             </section>
             <Footer />
             <Switcher/>
         </>
-    )
+    );
 }

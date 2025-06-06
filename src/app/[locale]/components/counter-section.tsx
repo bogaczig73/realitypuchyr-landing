@@ -1,8 +1,13 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import CountUp from 'react-countup'
+import dynamic from 'next/dynamic'
 import { API_BASE_URL } from '@/services/api';
 import { useTranslations } from 'next-intl';
+
+const CountUp = dynamic(() => import('react-countup'), {
+  ssr: false,
+  loading: () => <span className="animate-pulse">...</span>
+});
 
 interface Stats {
     activeProperties: number;

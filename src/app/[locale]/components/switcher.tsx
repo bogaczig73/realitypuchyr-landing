@@ -1,30 +1,27 @@
 "use client"; // This is a client component 👈🏽
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-
-
-import * as Scroll from 'react-scroll';
 import { FiArrowUp, FiMoon, FiSun } from "react-icons/fi";
-
-var scroll = Scroll.animateScroll;
 
 export default function Switcher() {
     let [scrollToTops, setScrollToTops] = useState(false); 
 
-  useEffect(()=>{
-    if (typeof window !== "undefined") {
-        window.addEventListener("scroll", ()=>{
-            setScrollToTops(window.scrollY >= 500)
-        });
-      }
-      window.scrollTo(0, 0)
-  },[])
+    useEffect(()=>{
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", ()=>{
+                setScrollToTops(window.scrollY >= 500)
+            });
+        }
+        window.scrollTo(0, 0)
+    },[])
+
     const scrollToTop = () => {
-        scroll.scrollToTop({
-            duration: 500,
-            smooth: true,
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
     }
+
 const changeMode = (mode:'mode' | 'layout', event:React.MouseEvent<HTMLElement>) => {
     switch (mode) {
         case 'mode':

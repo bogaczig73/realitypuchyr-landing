@@ -4,6 +4,10 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { createPortal } from 'react-dom';
 import { API_BASE_URL } from '@/services/api';
+import dynamic from 'next/dynamic';
+import { useTranslations } from 'next-intl';
+
+// Import the hook directly since it's a hook and not a component
 import useEmblaCarousel from 'embla-carousel-react';
 
 interface VideoTourProperty {

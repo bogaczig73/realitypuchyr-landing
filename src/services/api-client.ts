@@ -25,11 +25,15 @@ export class ApiClient {
     private readonly CACHE_TTL = 5 * 60 * 1000; // 5 minutes
     private locale: string;
 
-    private constructor(locale: string = 'cs') {
+    constructor(locale: string = 'cs') {
         this.locale = locale;
         this.cache = new Map();
+        
+        const baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+        console.log('API Base URL:', baseURL); // Debug log
+        
         this.api = axios.create({
-            baseURL: `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api'}/${this.locale}`,
+            baseURL: `${baseURL}/${this.locale}`,
             timeout: 10000,
             headers: {
                 'Content-Type': 'application/json',
@@ -61,10 +65,12 @@ export class ApiClient {
         // Request interceptor
         this.api.interceptors.request.use(
             (config) => {
-                // Add auth token if available
-                const token = localStorage.getItem('auth_token');
-                if (token) {
-                    config.headers.Authorization = `Bearer ${token}`;
+                // Only try to access localStorage in browser environment
+                if (typeof window !== 'undefined') {
+                    const token = localStorage.getItem('auth_token');
+                    if (token) {
+                        config.headers.Authorization = `Bearer ${token}`;
+                    }
                 }
                 return config;
             },
@@ -78,12 +84,15 @@ export class ApiClient {
         this.api.interceptors.response.use(
             (response) => response,
             (error: AxiosError) => {
+                console.error('API Error:', error); // Debug log
+
                 if (error.code === 'ECONNABORTED') {
                     return Promise.reject(new ApiError('Request timeout'));
                 }
 
                 if (!error.response) {
-                    return Promise.reject(new ApiError('Network error'));
+                    console.error('Network Error - No response:', error);
+                    return Promise.reject(new ApiError('Network error - Unable to connect to the server'));
                 }
 
                 const status = error.response.status;
@@ -103,7 +112,7 @@ export class ApiClient {
         return `${config.method}-${config.url}-${JSON.stringify(config.params)}`;
     }
 
-    private async request<T>(config: AxiosRequestConfig, useCache = false): Promise<T> {
+    public async request<T>(config: AxiosRequestConfig, useCache = false): Promise<T> {
         if (useCache) {
             const cacheKey = this.getCacheKey(config);
             const cached = this.cache.get(cacheKey);
@@ -114,7 +123,9 @@ export class ApiClient {
         }
 
         try {
+            console.log('Making API request:', config); // Debug log
             const response = await this.api.request<T>(config);
+            // console.log('API response:', response.data); // Debug log
             
             if (useCache) {
                 const cacheKey = this.getCacheKey(config);
@@ -126,6 +137,7 @@ export class ApiClient {
 
             return response.data;
         } catch (error) {
+            console.error('Request failed:', error); // Debug log
             if (error instanceof ApiError) {
                 throw error;
             }
