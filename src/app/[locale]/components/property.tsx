@@ -24,6 +24,10 @@ export default function Property({
     const [error, setError] = useState<string | null>(null);
     const [imageLoading, setImageLoading] = useState<{ [key: number]: boolean }>({});
 
+    const formatPrice = (price: number) => {
+        return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    };
+
     useEffect(() => {
         const fetchProperties = async () => {
             try {
@@ -132,10 +136,10 @@ export default function Property({
                                     <li>
                                         <span className="text-slate-400">{t('price')}</span>
                                         <p className="text-lg font-medium">
-                                            ${parseFloat(String(item.price || '0')).toLocaleString()}
+                                            {formatPrice(parseFloat(String(item.price || '0')))} Kč
                                             {item.discountedPrice && (
                                                 <span className="text-sm text-red-500 ml-2 line-through">
-                                                    ${parseFloat(String(item.discountedPrice)).toLocaleString()}
+                                                    {formatPrice(parseFloat(String(item.discountedPrice)))} Kč
                                                 </span>
                                             )}
                                         </p>

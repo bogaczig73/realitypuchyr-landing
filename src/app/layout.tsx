@@ -22,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light scroll-smooth" dir="ltr">
+      <link rel="preload" href="/images/agency/pavel.webp" as="image" fetchPriority="high" />
       <body className={`${league_Spartan.className} dark:bg-slate-900`}>{children}</body>
     </html>
   );

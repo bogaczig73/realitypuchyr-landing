@@ -33,6 +33,7 @@
     "yet-another-react-lightbox": "^3.21.9"
   },
   "devDependencies": {
+    "@types/google.maps": "^3.58.1",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",

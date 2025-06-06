@@ -33,6 +33,10 @@ function ListContent() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
+    const formatPrice = (price: number) => {
+        return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    };
+
     const fetchProperties = async (page: number) => {
         try {
             setLoading(true);
@@ -154,7 +158,7 @@ function ListContent() {
                                                 <ul className="md:pt-4 pt-6 flex justify-between items-center list-none">
                                                     <li>
                                                         <span className="text-slate-400">{t('price')}</span>
-                                                        <p className="text-lg font-medium">${property.price.toLocaleString()}</p>
+                                                        <p className="text-lg font-medium">{formatPrice(property.price)} Kč</p>
                                                     </li>
                                                 </ul>
                                             </div>

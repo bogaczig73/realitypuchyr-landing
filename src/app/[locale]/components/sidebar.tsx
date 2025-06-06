@@ -66,7 +66,7 @@ export default function Sidebar(){
                             </li>
 
                             <li className={`${manu === "/list" ? 'active' : ''} ms-0`}>
-                                <Link href="/list" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-home-city me-2"></i>{t('listing')}</Link>
+                                <Link href="/list?status=ACTIVE" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-home-city me-2"></i>{t('listing')}</Link>
                             </li>
 
                             <li className={`${manu === "/faq" ? 'active' : ''} ms-0`}>

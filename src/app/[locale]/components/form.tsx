@@ -22,6 +22,12 @@ export default function FormThree(){
     const t = useTranslations('components.form');
     const router = useRouter();
     const searchParams = useSearchParams();
+
+    const propertyStatuses = [
+        { value: 'ACTIVE', label: t('status.active') },
+        { value: 'SOLD', label: t('status.sold') },
+    ];
+
     const [activeTabIndex, setActiveTabIndex] = useState<number>(() => {
         const status = searchParams.get('status');
         return status ? propertyStatuses.findIndex(s => s.value === status) : 0;
@@ -34,11 +40,6 @@ export default function FormThree(){
     });
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
-
-    const propertyStatuses = [
-        { value: 'ACTIVE', label: t('status.active') },
-        { value: 'SOLD', label: t('status.sold') },
-    ];
 
     useEffect(() => {
         // Fetch categories from API

@@ -10,6 +10,14 @@ export interface PropertyFloorplan {
     name: string;
 }
 
+export interface PropertyFile {
+    id: number;
+    url: string;
+    name: string;
+    type: string;
+    size: number;
+}
+
 export interface PropertyCategory {
     id: number;
     name: string;
@@ -91,6 +99,7 @@ export interface Property {
     layout?: string;
     images: PropertyImage[];
     floorplans: PropertyFloorplan[];
+    files: PropertyFile[];
     
     // Timestamps
     createdAt: string;

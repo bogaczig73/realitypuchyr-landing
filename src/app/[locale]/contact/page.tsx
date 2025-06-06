@@ -10,6 +10,7 @@ import Image from 'next/image'
 import Switcher from '../../[locale]/components/switcher'
 import Property from '../../[locale]/components/property'
 import { useTranslations } from 'next-intl'
+import GoogleMap from '../components/GoogleMap'
 
 const servicesData = [
     {
@@ -39,7 +40,12 @@ export default function Page() {
             <div className="container-fluid relative mt-20">
                 <div className="grid grid-cols-1">
                     <div className="w-full leading-[0] border-0">
-                        <iframe title="contact-iframe" src="https://maps.app.goo.gl/QRhp383hsunG8P3Z8" style={{ border: '0' }} className="w-full h-[500px]" allowFullScreen></iframe>
+                        <GoogleMap 
+                            latitude={50.10334373610132} 
+                            longitude={14.434238320049817} 
+                            height="500px"
+                            showPlaces={false}
+                        />
                     </div>
                 </div>
             </div>

@@ -47,7 +47,7 @@ export default function HomeBanner() {
                         <div className="grid grid-cols-1 relative">
                             <div className="tiny-single">
                                 <div className="tiny-slide">
-                                    <img src={heroimage} className="object-cover w-full lg:h-[600px] md:h-[500px]" alt="" fetchPriority="high"/>
+                                    <img src={heroimage} className="object-cover w-full lg:h-[600px] md:h-[500px]" alt=""/>
                                 </div>
                             </div>
                         </div>
