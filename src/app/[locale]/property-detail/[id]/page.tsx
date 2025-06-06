@@ -803,7 +803,7 @@ export default function PropertyDetail() {
                 )}
 
                 {/* Files Section in Sidebar */}
-                {property.files && property.files.length > 0 && (
+                {property?.files && Array.isArray(property.files) && property.files.length > 0 && (
                   <div className="mt-6 rounded-md bg-slate-50 dark:bg-slate-800 shadow-sm shadow-gray-200 dark:shadow-gray-700">
                     <div className="p-6">
                       <h5 className="text-xl font-medium mb-4">{t('files')}</h5>

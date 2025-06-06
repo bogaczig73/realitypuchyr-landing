@@ -21,23 +21,19 @@ export class ApiError extends Error {
 export class ApiClient {
     private static instance: ApiClient;
     private api: AxiosInstance;
-    private cache: Map<string, { data: any; timestamp: number }>;
-    private readonly CACHE_TTL = 5 * 60 * 1000; // 5 minutes
     private locale: string;
 
-    constructor(locale: string = 'cs') {
+    private constructor(locale: string = 'cs') {
         this.locale = locale;
-        this.cache = new Map();
         
         const baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
-        console.log('API Base URL:', baseURL); // Debug log
         
         this.api = axios.create({
             baseURL: `${baseURL}/${this.locale}`,
             timeout: 10000,
             headers: {
                 'Content-Type': 'application/json',
-            }
+            },
         });
 
         this.setupInterceptors();
@@ -46,15 +42,14 @@ export class ApiClient {
     public static getInstance(locale?: string): ApiClient {
         if (!ApiClient.instance) {
             ApiClient.instance = new ApiClient(locale);
-        } else if (locale && ApiClient.instance.locale !== locale) {
-            ApiClient.instance.setLocale(locale);
         }
         return ApiClient.instance;
     }
 
     public setLocale(locale: string) {
         this.locale = locale;
-        this.api.defaults.baseURL = `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api'}/${locale}`;
+        const baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+        this.api.defaults.baseURL = `${baseURL}/${this.locale}`;
     }
 
     public getLocale(): string {
@@ -62,16 +57,8 @@ export class ApiClient {
     }
 
     private setupInterceptors() {
-        // Request interceptor
         this.api.interceptors.request.use(
             (config) => {
-                // Only try to access localStorage in browser environment
-                if (typeof window !== 'undefined') {
-                    const token = localStorage.getItem('auth_token');
-                    if (token) {
-                        config.headers.Authorization = `Bearer ${token}`;
-                    }
-                }
                 return config;
             },
             (error) => {
@@ -80,68 +67,31 @@ export class ApiClient {
             }
         );
 
-        // Response interceptor
         this.api.interceptors.response.use(
             (response) => response,
-            (error: AxiosError) => {
-                console.error('API Error:', error); // Debug log
-
-                if (error.code === 'ECONNABORTED') {
-                    return Promise.reject(new ApiError('Request timeout'));
+            (error: AxiosError<ErrorResponse>) => {
+                if (error.response) {
+                    throw new ApiError(
+                        error.response.data?.message || 'API request failed',
+                        error.response.status,
+                        error.code,
+                        error.response.data
+                    );
                 }
-
-                if (!error.response) {
-                    console.error('Network Error - No response:', error);
-                    return Promise.reject(new ApiError('Network error - Unable to connect to the server'));
-                }
-
-                const status = error.response.status;
-                const data = error.response.data as ErrorResponse;
-
-                return Promise.reject(new ApiError(
-                    data?.message || 'An error occurred',
-                    status,
-                    error.code,
-                    data
-                ));
+                throw new ApiError('Network error');
             }
         );
     }
 
-    private getCacheKey(config: AxiosRequestConfig): string {
-        return `${config.method}-${config.url}-${JSON.stringify(config.params)}`;
-    }
-
-    public async request<T>(config: AxiosRequestConfig, useCache = false): Promise<T> {
-        if (useCache) {
-            const cacheKey = this.getCacheKey(config);
-            const cached = this.cache.get(cacheKey);
-            
-            if (cached && Date.now() - cached.timestamp < this.CACHE_TTL) {
-                return cached.data;
-            }
-        }
-
+    public async request<T>(config: AxiosRequestConfig): Promise<T> {
         try {
-            console.log('Making API request:', config); // Debug log
             const response = await this.api.request<T>(config);
-            // console.log('API response:', response.data); // Debug log
-            
-            if (useCache) {
-                const cacheKey = this.getCacheKey(config);
-                this.cache.set(cacheKey, {
-                    data: response.data,
-                    timestamp: Date.now()
-                });
-            }
-
             return response.data;
         } catch (error) {
-            console.error('Request failed:', error); // Debug log
             if (error instanceof ApiError) {
                 throw error;
             }
-            throw new ApiError('Request failed');
+            throw new ApiError('Unknown error occurred');
         }
     }
 
@@ -157,14 +107,14 @@ export class ApiClient {
             method: 'GET',
             url: 'properties',
             params
-        }, true); // Enable caching for property list
+        });
     }
 
     public async getPropertyById(id: number): Promise<Property> {
         return this.request<Property>({
             method: 'GET',
             url: `properties/${id}`
-        }, true); // Enable caching for property details
+        });
     }
 
     // Category API methods
@@ -172,27 +122,13 @@ export class ApiClient {
         return this.request<any[]>({
             method: 'GET',
             url: 'categories'
-        }, true); // Enable caching for categories
+        });
     }
 
     public async getCategoryStats(): Promise<any[]> {
         return this.request<any[]>({
             method: 'GET',
             url: 'properties/category-stats'
-        }, true); // Enable caching for category stats
-    }
-
-    // Clear cache for specific endpoint
-    public clearCache(endpoint: string) {
-        for (const [key] of this.cache) {
-            if (key.includes(endpoint)) {
-                this.cache.delete(key);
-            }
-        }
-    }
-
-    // Clear all cache
-    public clearAllCache() {
-        this.cache.clear();
+        });
     }
 } 

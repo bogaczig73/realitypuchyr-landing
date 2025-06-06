@@ -12,6 +12,8 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/postcss": "^4.0.17",
+    "@tanstack/react-query": "^5.80.6",
+    "@tanstack/react-query-devtools": "^5.80.6",
     "@types/nodemailer": "^6.4.17",
     "axios": "^1.9.0",
     "embla-carousel-autoplay": "^8.6.0",
