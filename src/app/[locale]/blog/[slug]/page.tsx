@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import { BlogService, BlogPost } from "@/services/blog-service";
@@ -6,32 +7,53 @@ import Footer from "../../components/footer";
 import { FiArrowLeft, FiCalendar, FiClock } from "react-icons/fi";
 import Switcher from "../../components/switcher";
 import { notFound } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {FiFacebook, FiGithub, FiGitlab, FiInstagram, FiLinkedin, FiMail, FiMessageCircle, FiSearch, FiTwitter, FiUser, FiYoutube} from 'react-icons/fi'
 import { useTranslations } from 'next-intl';
 
 type Params = Promise<{ slug: string; locale: string }>;
 
-export default async function Page({ params }: { params: Params }) {
-    const { slug, locale } = await params;
-    const blogService = new BlogService();
-    let blog: BlogPost;
-    let otherBlogs: BlogPost[] = [];
-    let error = null;
+export default function Page({ params }: { params: Params }) {
+    const resolvedParams = React.use(params);
+    const { slug, locale } = resolvedParams;
+    const [blog, setBlog] = useState<BlogPost | null>(null);
+    const [otherBlogs, setOtherBlogs] = useState<BlogPost[]>([]);
+    const [error, setError] = useState<Error | null>(null);
     const t = useTranslations('blog');
     
-    try {
-        // Get the current blog first
-        blog = await blogService.getBlogBySlug(slug);
-        
-        // Then fetch other blogs
-        const allBlogs = await blogService.getAllBlogs(1, 3); // Get 3 recent blogs
-        // Filter out the current blog from the list
-        otherBlogs = allBlogs.filter(b => b.slug !== slug);
-    } catch (err) {
-        console.error('Error fetching blogs:', err);
-        error = err;
-        notFound();
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const blogService = new BlogService();
+                // Get the current blog first
+                const currentBlog = await blogService.getBlogBySlug(slug);
+                setBlog(currentBlog);
+                
+                // Then fetch other blogs
+                const allBlogs = await blogService.getAllBlogs(1, 3); // Get 3 recent blogs
+                // Filter out the current blog from the list
+                setOtherBlogs(allBlogs.filter(b => b.slug !== slug));
+            } catch (err) {
+                console.error('Error fetching blogs:', err);
+                setError(err as Error);
+                notFound();
+            }
+        };
+
+        fetchData();
+    }, [slug]);
+
+    if (error || !blog) {
+        return (
+            <>
+                <Navbar navClass="navbar-white" topnavClass={""} tagline={false} />
+                <div className="flex items-center justify-center min-h-screen">
+                    <div className="text-red-500">{error?.message || 'Blog not found'}</div>
+                </div>
+                <Footer />
+                <Switcher />
+            </>
+        );
     }
    
     return(
