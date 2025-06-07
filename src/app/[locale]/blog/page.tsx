@@ -84,15 +84,15 @@ export default async function BlogPage({ searchParams }: { searchParams: SearchP
                             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
                                 {blogs.map((item: BlogPost) => (
                                     <div key={item.id} className="group relative h-fit hover:-mt-[5px] overflow-hidden bg-white dark:bg-slate-900 rounded-xl shadow-sm shadow-gray-200 dark:shadow-gray-700 transition-all duration-500">
-                                        <div className="relative overflow-hidden">
+                                        <div className="relative overflow-hidden aspect-[16/9]">
                                             <Image 
                                                 src={item.pictures[0]} 
-                                                className="" 
+                                                className="object-cover w-full h-full" 
                                                 alt={item.name} 
                                                 width={0} 
                                                 height={0} 
                                                 sizes="100vw" 
-                                                style={{width:"100%", height:"auto"}} 
+                                                style={{width:"100%", height:"100%"}} 
                                             />
                                             <div className="absolute end-4 top-4">
                                                 <span className="bg-green-600 text-white text-[14px] px-2.5 py-1 font-medium !rounded-full h-5">

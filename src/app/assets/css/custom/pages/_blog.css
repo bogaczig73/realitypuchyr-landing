@@ -1,0 +1,43 @@
+/* Blog Post Styles */
+.blog-content {
+    @apply text-slate-400;
+}
+
+.blog-content p {
+    @apply mb-4;
+}
+
+/* Headings should be black */
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+    @apply text-slate-900 dark:text-white;
+}
+
+/* Only bold text should be green */
+.blog-content strong,
+.blog-content b {
+    @apply text-green-600 font-semibold;
+}
+
+/* Link styles */
+.blog-content a {
+    @apply text-green-600 no-underline border-b border-green-600/30 hover:border-green-600 transition-all duration-300;
+}
+
+/* Dark mode styles */
+.dark .blog-content {
+    @apply text-slate-400;
+}
+
+.dark .blog-content strong,
+.dark .blog-content b {
+    @apply text-green-500;
+}
+
+.dark .blog-content a {
+    @apply text-green-500 border-green-500/30 hover:border-green-500;
+} 

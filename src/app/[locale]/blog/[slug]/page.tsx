@@ -74,7 +74,7 @@ export default async function Page({ params }: { params: Params }) {
 
                                 <div className="p-6">
                                     <div 
-                                        className="prose dark:prose-invert max-w-none"
+                                        className="blog-content prose dark:prose-invert max-w-none"
                                         dangerouslySetInnerHTML={{ 
                                             __html: blog.content.replace(/\n/g, '<br>') 
                                         }}
