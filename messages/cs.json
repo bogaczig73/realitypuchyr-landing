@@ -179,6 +179,7 @@
     "yourQuestion": "Vaše otázka",
     "yourComment": "Váš komentář",
     "rating": "5.00(30)",
+    "yourPhone": "Vaše telefonní číslo",
     "phone": "Telefon",
     "socialMedia": {
       "facebook": "Navštivte naši stránku na Facebooku",
@@ -190,7 +191,10 @@
       "namePlaceholder": "Jméno :",
       "emailPlaceholder": "E-mail :",
       "subjectPlaceholder": "Předmět :",
-      "messagePlaceholder": "Zpráva :"
+      "messagePlaceholder": "Zpráva :",
+      "phonePlaceholder": "Telefon :",
+      "successMessage": "Zpráva byla úspěšně odeslána.",
+      "errorMessage": "Něco se pokazilo. Zkuste to prosím znovu."
     },
     "servicesData": {
       "realEstate": {

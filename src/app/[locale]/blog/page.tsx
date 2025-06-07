@@ -110,7 +110,7 @@ export default async function BlogPage({ searchParams }: { searchParams: SearchP
                                                     </span>
                                                     <span className="text-slate-400 text-sm ms-3 flex items-center">
                                                         <FiClock className="text-slate-900 dark:text-white me-2"/>
-                                                        <span>5 min read</span>
+                                                        <span>{Math.ceil(item.content.split(/\s+/).length / 250)} min read</span>
                                                     </span>
                                                 </div>
 

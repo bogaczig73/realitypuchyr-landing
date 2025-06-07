@@ -38,7 +38,7 @@ export default function AboutMe() {
                                     <p className="text-slate-400 mt-3">{t(`services.${index}.description`)}</p>
 
                                     <div className="mt-4">
-                                        <Link href="" className="btn btn-link text-green-600 hover:text-green-600 after:bg-green-600 transition duration-500">{t(`services.${index}.readMore`)} <FiArrowRight className="ms-1" /></Link>
+                                        <Link href="/services" className="btn btn-link text-green-600 hover:text-green-600 after:bg-green-600 transition duration-500">{t(`services.${index}.readMore`)} <FiArrowRight className="ms-1" /></Link>
                                     </div>
                                 </div>
                             </div>

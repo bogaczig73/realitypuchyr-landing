@@ -30,6 +30,7 @@
     "contactMe": "Contact me",
     "yourName": "Your Name",
     "yourEmail": "Your Email",
+    "yourPhone": "Your Phone",
     "yourQuestion": "Your Question",
     "yourComment": "Your Comment",
     "rating": "5.00(30)",
@@ -44,7 +45,11 @@
       "namePlaceholder": "Name :",
       "emailPlaceholder": "Email :",
       "subjectPlaceholder": "Subject :",
-      "messagePlaceholder": "Message :"
+      "messagePlaceholder": "Message :",
+      "phonePlaceholder": "Phone :",
+      "yourPhone": "Your Phone",
+      "successMessage": "Message sent successfully.",
+      "errorMessage": "Something went wrong. Please try again."
     },
     "servicesData": {
       "realEstate": {

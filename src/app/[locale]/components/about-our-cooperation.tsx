@@ -24,7 +24,7 @@ export default function AboutOurCooperation() {
                             <p className="text-slate-400 max-w-xl">{t('description')}</p>
 
                             <div className="mt-4">
-                                <Link href="#" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-3">{t('learnMore')}</Link>
+                                <Link href="/blog/jak-bude-prodej-probihat" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-3">{t('learnMore')}</Link>
                             </div>
                         </div>
                     </div>

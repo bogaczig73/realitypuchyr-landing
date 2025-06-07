@@ -37,7 +37,7 @@ export default function HomeBanner() {
                         <h1 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl">{t('title')}</h1>
 
                         <div className="mt-4">
-                            <Link href="#" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md md:mt-20">{t('learnMore')} <i className="mdi mdi-arrow-right ms-1 align-middle"></i></Link>
+                            <Link href="#services" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md md:mt-20">{t('learnMore')} <i className="mdi mdi-arrow-right ms-1 align-middle"></i></Link>
                         </div>
                     </div>
                 </div>

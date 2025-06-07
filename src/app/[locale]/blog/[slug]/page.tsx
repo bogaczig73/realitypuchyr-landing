@@ -44,9 +44,9 @@ export default async function Page({ params }: { params: Params }) {
                         <h3 className="md:text-3xl text-2xl md:leading-snug tracking-wide leading-snug font-medium text-white mb-3">{blog.name}</h3>
 
                         <ul className="list-none mt-6">
-                            <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Author :</span> <span className="block">Calvin Carlo</span></li>
+                            <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Author :</span> <span className="block">Pavel Puchýř</span></li>
                             <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Date :</span> <span className="block">{new Date(blog.date).toLocaleDateString()}</span></li>
-                            <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Time :</span> <span className="block">8 Min Read</span></li>
+                            <li className="inline-block text-white/50 mx-5"> <span className="text-white block">Time :</span> <span className="block">{Math.ceil(blog.content.split(/\s+/).length / 250)} Min Read</span></li>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +73,12 @@ export default async function Page({ params }: { params: Params }) {
                                 />
 
                                 <div className="p-6">
-                                    <p className="text-slate-400">{blog.content}</p>
+                                    <div 
+                                        className="prose dark:prose-invert max-w-none"
+                                        dangerouslySetInnerHTML={{ 
+                                            __html: blog.content.replace(/\n/g, '<br>') 
+                                        }}
+                                    />
                                 </div>
                             </div>
 

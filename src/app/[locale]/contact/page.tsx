@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../[locale]/components/navbar'
 import Link from 'next/link'
 import { FiArrowRight, FiFacebook, FiHexagon, FiInstagram, FiLinkedin, FiMail, FiPhone, FiTwitter } from 'react-icons/fi'
@@ -11,6 +11,7 @@ import Switcher from '../../[locale]/components/switcher'
 import Property from '../../[locale]/components/property'
 import { useTranslations } from 'next-intl'
 import GoogleMap from '../components/GoogleMap'
+import { ContactFormService } from '../../../services/contact-form'
 
 const servicesData = [
     {
@@ -33,6 +34,37 @@ const servicesData = [
 export default function Page() {
     const yearsOfExperience = new Date().getFullYear() - 2019;
     const t = useTranslations('contact');
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+        phoneNumber: ''
+    });
+    const [status, setStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus({ type: null, message: '' });
+
+        try {
+            const contactFormService = ContactFormService.getInstance();
+            await contactFormService.submitForm(formData);
+            
+            setStatus({ type: 'success', message: t('form.successMessage') });
+            setFormData({ name: '', email: '', subject: '', message: '', phoneNumber: '' });
+        } catch (error) {
+            setStatus({ 
+                type: 'error', 
+                message: error instanceof Error ? error.message : t('form.errorMessage') 
+            });
+        }
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
 
     return (
         <>
@@ -96,31 +128,83 @@ export default function Page() {
                             <div className="p-6 rounded shadow-sm shadow-gray-200 dark:shadow-gray-700 sticky top-20">
                                 <h5 className="text-xl font-medium mb-4">{t('contactMe')}</h5>
 
-                                <form>
+                                <form onSubmit={handleSubmit}>
                                     <p className="mb-0" id="error-msg"></p>
                                     <div id="simple-msg"></div>
+                                    {status.type && (
+                                        <div className={`p-4 mb-4 rounded-md ${status.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                                            {status.message}
+                                        </div>
+                                    )}
                                     <div className="grid grid-cols-1 gap-3">
                                         <div>
                                             <label htmlFor="name" className="font-medium">{t('yourName')}:</label>
-                                            <input name="name" id="name" type="text" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('form.namePlaceholder')} />
+                                            <input 
+                                                name="name" 
+                                                id="name" 
+                                                type="text" 
+                                                className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" 
+                                                placeholder={t('form.namePlaceholder')}
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
 
                                         <div>
                                             <label htmlFor="email" className="font-medium">{t('yourEmail')}:</label>
-                                            <input name="email" id="email" type="email" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('form.emailPlaceholder')} />
+                                            <input 
+                                                name="email" 
+                                                id="email" 
+                                                type="email" 
+                                                className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" 
+                                                placeholder={t('form.emailPlaceholder')}
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+
+                                        <div>
+                                            <label htmlFor="phoneNumber" className="font-medium">{t('yourPhone')}:</label>
+                                            <input 
+                                                name="phoneNumber" 
+                                                id="phoneNumber" 
+                                                type="tel" 
+                                                className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" 
+                                                placeholder={t('form.phonePlaceholder')}
+                                                value={formData.phoneNumber}
+                                                onChange={handleChange}
+                                            />
                                         </div>
 
                                         <div>
                                             <label htmlFor="subject" className="font-medium">{t('yourQuestion')}:</label>
-                                            <input name="subject" id="subject" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" placeholder={t('form.subjectPlaceholder')} />
+                                            <input 
+                                                name="subject" 
+                                                id="subject" 
+                                                className="form-input border !border-gray-200 dark:!border-gray-800 mt-2" 
+                                                placeholder={t('form.subjectPlaceholder')}
+                                                value={formData.subject}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
 
                                         <div>
-                                            <label htmlFor="comments" className="font-medium">{t('yourComment')}:</label>
-                                            <textarea name="comments" id="comments" className="form-input border !border-gray-200 dark:!border-gray-800 mt-2 textarea" placeholder={t('form.messagePlaceholder')}></textarea>
+                                            <label htmlFor="message" className="font-medium">{t('yourComment')}:</label>
+                                            <textarea 
+                                                name="message" 
+                                                id="message" 
+                                                className="form-input border !border-gray-200 dark:!border-gray-800 mt-2 textarea" 
+                                                placeholder={t('form.messagePlaceholder')}
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                                required
+                                            ></textarea>
                                         </div>
 
-                                        <button type="submit" id="submit" name="send" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md">{t('send')}</button>
+                                        <button type="submit" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md">{t('send')}</button>
                                     </div>
                                 </form>
                             </div>
