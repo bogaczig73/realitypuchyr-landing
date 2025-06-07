@@ -513,7 +513,13 @@
     "description": "Zůstaňte informováni o nejnovějších trendech a poznatcích z realitního trhu.",
     "readMore": "Číst více",
     "readTime": "min čtení",
-    "viewAllBlogs": "Zobrazit všechny články"
+    "viewAllBlogs": "Zobrazit všechny články",
+    "author": "Autor",
+    "date": "Datum",
+    "time": "Čas",
+    "searchProperties": "Hledat nemovitosti",
+    "recentPosts": "Nejnovější články",
+    "socialSites": "Sociální sítě"
   },
   "services": {
     "title": "Služby",

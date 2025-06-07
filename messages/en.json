@@ -368,7 +368,13 @@
     "description": "Stay updated with the latest real estate trends and insights.",
     "readMore": "Read More",
     "readTime": "min read",
-    "viewAllBlogs": "View All Blogs"
+    "viewAllBlogs": "View All Blogs",
+    "author": "Author",
+    "date": "Date",
+    "time": "Time",
+    "searchProperties": "Search Properties",
+    "recentPosts": "Recent posts",
+    "socialSites": "Social sites"
   },
   "list": {
     "title": "Property Listings",
