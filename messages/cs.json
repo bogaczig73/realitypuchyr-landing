@@ -428,13 +428,13 @@
     "aboutCooperation": {
       "title": "Jak bude naše spolupráce probíhat?",
       "description": "Kvalita, rozsah služeb, rychlost a bezpečnost - to jsou hlavní důvody, proč klienti nejvíce oceňují naši spolupráci. Provedu vás celým procesem prodeje nebo koupě nemovitosti od počáteční konzultace až po předání klíčů. Budu vás pravidelně a transparentně informovat o vývoji, abyste byli vždy v obraze.",
-      "learnMore": "Zjistit více",
+      "moreAboutOurCooperation": "Více o naší spolupráci",
       "closeModal": "Zavřít"
     },
     "aboutVideoTour": {
       "title": "Kvalitní video prohlídka, více než tisíc fotografií.",
       "description": "Poutavé video může vyvolat pozitivní emoce a plně zachytit atmosféru nabízené nemovitosti. Také rád pracuji s videem, protože skvěle funguje při propagaci na sociálních sítích. Opravdu mi záleží na kvalitě, přesvědčte se sami.",
-      "learnMore": "Zjistit více",
+      "learnMore": "Více o video prohlídce",
       "closeModal": "Zavřít"
     },
     "clientTwo": {
@@ -510,9 +510,10 @@
   },
   "blog": {
     "title": "Nejnovější články a novinky",
-    "description": "Skvělá platforma pro nákup, prodej a pronájem nemovitostí bez zprostředkovatele a provizí.",
-    "readTime": "5 minut čtení",
-    "readMore": "Číst více"
+    "description": "Zůstaňte informováni o nejnovějších trendech a poznatcích z realitního trhu.",
+    "readMore": "Číst více",
+    "readTime": "min čtení",
+    "viewAllBlogs": "Zobrazit všechny články"
   },
   "services": {
     "title": "Služby",

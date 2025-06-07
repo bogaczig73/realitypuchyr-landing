@@ -23,12 +23,12 @@ export class BlogService {
         this.apiClient = ApiClient.getInstance(locale);
     }
 
-    async getAllBlogs(page: number = 1, limit: number = 10): Promise<BlogPost[]> {
+    async getAllBlogs(pages: number = 1,limit: number = 10,currentPage: number = 1, truncate: number = 100): Promise<BlogPost[]> {
         try {
             const response = await this.apiClient.request<BlogPost[]>({
                 method: 'GET',
                 url: 'blogs',
-                params: { page, limit }
+                params: { pages, limit, currentPage, truncate }
             });
             return response;
         } catch (error) {

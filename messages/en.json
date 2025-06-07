@@ -283,13 +283,13 @@
     "aboutCooperation": {
       "title": "How will our cooperation work?",
       "description": "Quality, range of services, speed and safety - these are the main reasons why clients praise their cooperation with me the most. I will guide you through the entire process of selling or buying a property from the initial consultation to handing over the keys. I will keep you regularly and transparently informed of developments so that you are kept in the loop at all times.",
-      "learnMore": "Learn More",
+      "moreAboutOurCooperation": "More about our cooperation",
       "closeModal": "Close modal"
     },
     "aboutVideoTour": {
       "title": "Quality video tour, more than a thousand photos.",
       "description": "An engaging video can evoke positive emotions and fully portray the atmosphere of the property on offer. I also like to work with video because it works great when promoting on social media. I really care about the quality, see for yourself.",
-      "learnMore": "Learn More",
+      "learnMore": "More about video tour",
       "closeModal": "Close modal"
     },
     "clientTwo": {
@@ -364,10 +364,11 @@
     "title": "Listing Categories"
   },
   "blog": {
-    "title": "Latest Blogs & News",
-    "description": "A great platform to buy, sell and rent your properties without any agent or commissions.",
-    "readTime": "5 min read",
-    "readMore": "Read More"
+    "title": "Latest Articles & News",
+    "description": "Stay updated with the latest real estate trends and insights.",
+    "readMore": "Read More",
+    "readTime": "min read",
+    "viewAllBlogs": "View All Blogs"
   },
   "list": {
     "title": "Property Listings",
