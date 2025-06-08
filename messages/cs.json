@@ -489,18 +489,18 @@
     },
     "services": [
       {
-        "title": "Správa nemovitostí",
-        "description": "Profesionální správa vašich nemovitostí pro maximalizaci výnosů a minimalizaci starostí.",
+        "title": "Nemovitost",
+        "description": "Prodej nebo koupě – se mnou najdete ideální nemovitost nebo kupce rychle a za férových podmínek, ať už hledáte byt, dům nebo investiční příležitost.",
         "readMore": "Číst více"
       },
       {
-        "title": "Investiční poradenství",
-        "description": "Odborné poradenství o investičních příležitostech na realitním trhu a analýza trhu.",
+        "title": "Finanční poradenství",
+        "description": "Nabízím komplexní finanční řešení na míru – od hypoték a refinancování po investiční poradenství – abyste dosáhli svých cílů s jistotou a výhodnými podmínkami.",
         "readMore": "Číst více"
       },
       {
-        "title": "Analýza trhu",
-        "description": "Hloubková analýza tržních trendů a ocenění nemovitostí pro informovaná rozhodnutí.",
+        "title": "Developerské projekty",
+        "description": "Objevte exkluzivní novostavby v atraktivních lokalitách – moderní bydlení s nadstandardním vybavením a individuálním přístupem od ověřených developerů.",
         "readMore": "Číst více"
       }
     ]

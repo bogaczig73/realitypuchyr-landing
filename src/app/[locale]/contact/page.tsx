@@ -12,6 +12,7 @@ import Property from '../components/property'
 import { useTranslations } from 'next-intl'
 import GoogleMap from '../components/GoogleMap'
 import { ContactFormService } from '../../../services/contact-form'
+import InstagramEmbed from '../components/instagram-embed'
 
 const servicesData = [
     {
@@ -215,7 +216,7 @@ export default function Page() {
 
                             <p className="text-slate-400 mt-3">{t('aboutMeText', { years: yearsOfExperience })}</p>
                             <p className="text-slate-400 mt-3">{t('aboutMeText2')}</p>
-                            
+                            <InstagramEmbed/>
                             <h5 className="text-xl font-medium mt-6">{t('services')}</h5>
                             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
                                 {servicesData.map((item, index) => {

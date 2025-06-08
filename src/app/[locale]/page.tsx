@@ -18,12 +18,7 @@ import CounterSection from './components/counter-section'
 import AboutOurCooperation from './components/about-our-cooperation'
 import AboutMe from './components/about-me'
 import BlogSection from './components/blog-section'
-
-interface AboutData{
-    image: string;
-    title: string;
-    desc: string;
-}
+import InstagramEmbed from './components/instagram-embed'
 
 export default function Page() {
   return (
@@ -44,6 +39,7 @@ export default function Page() {
      <BlogSection/>
 
      <GetInTuch/>
+     <InstagramEmbed/>
      <Footer/>
      <Switcher/>
     </>

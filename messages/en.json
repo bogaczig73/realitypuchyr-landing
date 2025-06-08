@@ -345,17 +345,17 @@
     "services": [
       {
         "title": "Property Management",
-        "description": "Professional management of your real estate investments to maximize returns and minimize hassle.",
+        "description": "Sale or purchase – with us, you'll find the perfect property or a buyer quickly and under fair conditions, whether you're looking for an apartment, house, or investment opportunity.",
         "readMore": "Read More"
       },
       {
-        "title": "Investment Consulting",
-        "description": "Expert advice on real estate investment opportunities and market analysis.",
+        "title": "Financial Services",
+        "description": "I offer tailored financial solutions – from mortgages and refinancing to investment advisory – so you can achieve your goals with confidence and favorable terms.",
         "readMore": "Read More"
       },
       {
-        "title": "Market Analysis",
-        "description": "In-depth analysis of market trends and property valuations to make informed decisions.",
+        "title": "Developer Projects",
+        "description": "Discover exclusive new developments in prime locations – modern living with premium amenities and personalized service from trusted developers.",
         "readMore": "Read More"
       }
     ]
