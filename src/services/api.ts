@@ -15,7 +15,6 @@ const apiClient = ApiClient.getInstance();
 export const propertyApi = {
     getAll: async (page = 1, limit = 12, search = '', status?: string, categoryId?: string): Promise<PaginatedResponse> => {
         try {
-            console.log('Fetching properties with params:', { page, limit, search, status, categoryId });
             return await apiClient.getProperties({ page, limit, search, status, categoryId });
         } catch (error) {
             console.error('Error fetching properties:', error);

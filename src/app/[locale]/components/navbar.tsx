@@ -96,15 +96,15 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                     {/* <!-- Logo container--> */}
                     {navClass === '' || navClass === undefined ?
                         <Link className="logo" href={`/${currentLocale}`}>
-                            <Image src="/images/logo-dark.png" className="inline-block dark:hidden" alt="Reality Puchýř Logo - Dark Version" width={85} height={57} />
-                            <Image src="/images/logo-light.png" className="hidden dark:inline-block" alt="Reality Puchýř Logo - Light Version" width={85} height={57}/>
+                            <Image src="/images/logo-dark.png" className="inline-block dark:hidden" alt="Reality Puchýř Logo - Dark Version" width={120} height={80} />
+                            <Image src="/images/logo-light.png" className="hidden dark:inline-block" alt="Reality Puchýř Logo - Light Version" width={120} height={80}/>
                         </Link> :
                         <Link className="logo" href={`/${currentLocale}`}>
                             <span className="inline-block dark:hidden">
-                                <Image src="/images/logo-dark.png" className="l-dark"  alt="Reality Puchýř Logo - Dark Version" width={85} height={57}/>
-                                <Image src="/images/logo-light.png" className="l-light"  alt="Reality Puchýř Logo - Light Version" width={85} height={57}/>
+                                <Image src="/images/logo-dark.png" className="l-dark"  alt="Reality Puchýř Logo - Dark Version" width={120} height={80}/>
+                                <Image src="/images/logo-light.png" className="l-light"  alt="Reality Puchýř Logo - Light Version" width={120} height={80}/>
                             </span>
-                            <Image src="/images/logo-light.png"  className="hidden dark:inline-block" alt="Reality Puchýř Logo - Light Version" width={85} height={57}/>
+                            <Image src="/images/logo-light.png"  className="hidden dark:inline-block" alt="Reality Puchýř Logo - Light Version" width={120} height={80}/>
                         </Link>
                     }
                     {/* <!-- End Logo container--> */}

@@ -16,9 +16,6 @@ export default function BlogSection() {
         queryKey: ['blogs'],
         queryFn: async () => {
             const response = await blogService.getAllBlogs(1, 3, 1, 100);
-            console.log('Blog API Response:', response);
-            console.log('Response type:', typeof response);
-            console.log('Is Array?', Array.isArray(response));
             return Array.isArray(response) ? response : [];
         },
         staleTime: 1000 * 60 * 5, // Data stays fresh for 5 minutes

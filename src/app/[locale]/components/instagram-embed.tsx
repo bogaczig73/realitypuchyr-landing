@@ -10,6 +10,8 @@ const InstagramEmbed = () => {
           style={{ height: '581px' }}
           allow="encrypted-media"
           allowFullScreen
+          data-instagram-disable-cookie
+          sandbox="allow-scripts allow-same-origin"
         ></iframe>
       </div>
     </div>
