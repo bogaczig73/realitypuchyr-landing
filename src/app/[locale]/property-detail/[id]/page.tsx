@@ -10,7 +10,6 @@ import { FiMapPin, FiPhone, FiX, FiChevronLeft, FiChevronRight } from 'react-ico
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Switcher from '../../components/switcher';
-import { API_BASE_URL } from '../../../../services/api';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Property } from '@/types/property';

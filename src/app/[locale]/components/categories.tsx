@@ -1,5 +1,5 @@
 import React from "react";
-import { API_BASE_URL } from '@/services/api';
+import { ApiClient } from '@/services/api-client';
 import CategoriesClient from './categories-client';
 
 interface Category {
@@ -18,31 +18,10 @@ interface CategoryStat {
 
 async function getCategories(): Promise<Category[]> {
     try {
-        const [categoriesRes, statsRes] = await Promise.all([
-            fetch(`${API_BASE_URL}/categories`, {
-                next: { revalidate: 3600 }, // Cache for 1 hour
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }),
-            fetch(`${API_BASE_URL}/properties/category-stats`, {
-                next: { revalidate: 3600 }, // Cache for 1 hour
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            })
+        const [categories, stats] = await Promise.all([
+            ApiClient.getInstance().getCategories(),
+            ApiClient.getInstance().getCategoryStats()
         ]);
-
-        if (!categoriesRes.ok) {
-            throw new Error(`Failed to fetch categories: ${categoriesRes.status} ${categoriesRes.statusText}`);
-        }
-
-        if (!statsRes.ok) {
-            throw new Error(`Failed to fetch category stats: ${statsRes.status} ${statsRes.statusText}`);
-        }
-
-        const categories = await categoriesRes.json();
-        const stats = await statsRes.json();
 
         // Merge the stats with categories
         return categories.map((category: Category) => ({
