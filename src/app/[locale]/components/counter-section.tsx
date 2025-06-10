@@ -57,7 +57,7 @@ export default function CounterSection() {
 
     return (
         <section
-            style={{ backgroundImage: "url('/images/bg/01.jpg')" }}
+            style={{ backgroundImage: "url('/images/bg/bg3.webp')" }}
             className="relative py-24 bg-no-repeat bg-center bg-fixed bg-cover">
             <div className="absolute inset-0 bg-slate-900/60"></div>
             <div className="container relative">

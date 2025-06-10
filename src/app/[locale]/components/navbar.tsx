@@ -96,15 +96,15 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                     {/* <!-- Logo container--> */}
                     {navClass === '' || navClass === undefined ?
                         <Link className="logo" href={`/${currentLocale}`}>
-                            <Image src="/images/logo-dark.png" className="inline-block dark:hidden" alt="" width={98} height={24}/>
-                            <Image src="/images/logo-light.png" className="hidden dark:inline-block" alt="" width={98} height={24} />
+                            <Image src="/images/logo-dark.png" className="inline-block dark:hidden" alt="Reality Puchýř Logo - Dark Version" width={85} height={57} />
+                            <Image src="/images/logo-light.png" className="hidden dark:inline-block" alt="Reality Puchýř Logo - Light Version" width={85} height={57}/>
                         </Link> :
                         <Link className="logo" href={`/${currentLocale}`}>
                             <span className="inline-block dark:hidden">
-                                <Image src="/images/logo-dark.png" className="l-dark"  alt="" width={98} height={24}/>
-                                <Image src="/images/logo-light.png" className="l-light"  alt="" width={98} height={24}/>
+                                <Image src="/images/logo-dark.png" className="l-dark"  alt="Reality Puchýř Logo - Dark Version" width={85} height={57}/>
+                                <Image src="/images/logo-light.png" className="l-light"  alt="Reality Puchýř Logo - Light Version" width={85} height={57}/>
                             </span>
-                            <Image src="/images/logo-light.png"  className="hidden dark:inline-block" alt="" width={98} height={24}/>
+                            <Image src="/images/logo-light.png"  className="hidden dark:inline-block" alt="Reality Puchýř Logo - Light Version" width={85} height={57}/>
                         </Link>
                     }
                     {/* <!-- End Logo container--> */}
@@ -161,7 +161,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                                             width={20} 
                                             height={20} 
                                             className="h-5 w-5 rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700" 
-                                            alt={currentLang.label}
+                                            alt={`${currentLang.label} flag`}
                                         />
                                     </button>
                                 </Link>
@@ -182,7 +182,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                                                         width={24} 
                                                         height={24} 
                                                         className="h-6 w-6 rounded-md me-2" 
-                                                        alt={lang.label}
+                                                        alt={`${lang.label} flag`}
                                                     /> 
                                                     {lang.label}
                                                 </button>
