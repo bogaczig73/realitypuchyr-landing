@@ -16,6 +16,7 @@ interface Category {
 interface CategoryOption {
     value: number;
     label: string;
+    originalName?: string;
 }
 
 export default function FormThree(){
@@ -53,7 +54,8 @@ export default function FormThree(){
                     { value: 0, label: t('allCategories') },
                     ...categoriesData.map((cat: Category) => ({
                         value: cat.id,
-                        label: cat.name
+                        label: t(`categories.${cat.name.toLowerCase()}`),
+                        originalName: cat.name
                     }))
                 ]);
             } catch (error) {
@@ -84,6 +86,7 @@ export default function FormThree(){
         
         if (selectedCategory && selectedCategory.value !== 0) {
             params.set('categoryId', selectedCategory.value.toString());
+            params.set('category', (selectedCategory as any).originalName);
         }
 
         router.push(`/list?${params.toString()}`);

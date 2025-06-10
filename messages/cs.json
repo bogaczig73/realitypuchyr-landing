@@ -464,6 +464,14 @@
         "sold": "Prodané"
       },
       "allCategories": "Všechny kategorie",
+      "categories": {
+        "cottages": "Chaty",
+        "flats": "Byty",
+        "houses": "Domy",
+        "land": "Pozemky",
+        "projects": "Projekty",
+        "villas": "Vily"
+      },
       "error": {
         "loadingCategories": "Nepodařilo se načíst kategorie. Prosím zkuste to později."
       },

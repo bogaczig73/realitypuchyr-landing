@@ -319,6 +319,14 @@
         "sold": "Sold"
       },
       "allCategories": "All Categories",
+      "categories": {
+        "cottages": "Cottages",
+        "flats": "Flats",
+        "houses": "Houses",
+        "land": "Land",
+        "projects": "Projects",
+        "villas": "Villas"
+      },
       "error": {
         "loadingCategories": "Failed to load categories. Please try again later."
       },
