@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
-import { API_BASE_URL } from '@/services/api';
+import { ApiClient } from '@/services/api-client';
 import { useTranslations } from 'next-intl';
 
 const CountUp = dynamic(() => import('react-countup'), {
@@ -22,15 +22,18 @@ export default function CounterSection() {
         soldProperties: 0,
         yearsOfExperience: new Date().getFullYear() - 2019
     });
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchStats = async () => {
             try {
-                const response = await fetch(`${API_BASE_URL}/properties/stats`);
-                const data = await response.json();
+                const apiClient = ApiClient.getInstance();
+                const data = await apiClient.getPropertyStats();
                 setStats(data);
             } catch (error) {
                 console.error('Error fetching stats:', error);
+            } finally {
+                setIsLoading(false);
             }
         };
 
@@ -64,13 +67,19 @@ export default function CounterSection() {
                             {counterData.map((item, index) => (
                                 <div className="counter-box text-center" key={index}>
                                     <h1 className="text-white lg:text-5xl text-4xl font-semibold mb-2">
-                                        <CountUp
-                                            start={0}
-                                            end={item.target}
-                                            duration={2.5}
-                                            className="counter-value"
-                                        />
-                                        {item.title === t('yearsOfExperience') ? "+" : ""}
+                                        {isLoading ? (
+                                            <span className="animate-pulse">...</span>
+                                        ) : (
+                                            <>
+                                                <CountUp
+                                                    start={0}
+                                                    end={item.target}
+                                                    duration={2.5}
+                                                    className="counter-value"
+                                                />
+                                                {item.title === t('yearsOfExperience') ? "+" : ""}
+                                            </>
+                                        )}
                                     </h1>
                                     <h5 className="counter-head text-white text-lg font-medium">{item.title}</h5>
                                 </div>

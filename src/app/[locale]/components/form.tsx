@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react"
 import { FiSearch, FiHome } from "react-icons/fi";
 import type { SingleValue, ActionMeta } from 'react-select';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { API_BASE_URL } from '@/services/api';
+import { ApiClient } from '@/services/api-client';
 import { useTranslations } from 'next-intl';
 const Select = dynamic(()=>import('react-select'),{ssr:false}) as any;
 
@@ -47,14 +47,11 @@ export default function FormThree(){
             setIsLoading(true);
             setError(null);
             try {
-                const response = await fetch(`${API_BASE_URL}/categories`);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
+                const apiClient = ApiClient.getInstance();
+                const categoriesData = await apiClient.getCategories();
                 setCategories([
                     { value: 0, label: t('allCategories') },
-                    ...data.map((cat: Category) => ({
+                    ...categoriesData.map((cat: Category) => ({
                         value: cat.id,
                         label: cat.name
                     }))
@@ -67,7 +64,7 @@ export default function FormThree(){
             }
         };
         fetchCategories();
-    }, []);
+    }, [t]);
 
     const handleTabClick = (tabIndex: number) => {
         setActiveTabIndex(tabIndex);

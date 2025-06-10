@@ -33,6 +33,7 @@ export class ApiClient {
             timeout: 10000,
             headers: {
                 'Content-Type': 'application/json',
+                'X-API-Key': process.env.NEXT_PUBLIC_API_KEY || '',
             },
         });
 
@@ -129,6 +130,25 @@ export class ApiClient {
         return this.request<any[]>({
             method: 'GET',
             url: 'properties/category-stats'
+        });
+    }
+
+    public async getPropertyStats(): Promise<{
+        activeProperties: number;
+        soldProperties: number;
+        yearsOfExperience: number;
+    }> {
+        return this.request({
+            method: 'GET',
+            url: 'properties/stats'
+        });
+    }
+
+    // Video Tours API method
+    public async getVideoTours(): Promise<any[]> {
+        return this.request<any[]>({
+            method: 'GET',
+            url: 'properties/video-tours'
         });
     }
 } 

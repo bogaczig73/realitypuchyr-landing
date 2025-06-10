@@ -8,10 +8,8 @@ const InstagramEmbed = () => {
           src="https://www.instagram.com/realitypuchyr/embed"
           className="w-full"
           style={{ height: '581px' }}
-          frameBorder="0"
-          scrolling="no"
-          allowTransparency
           allow="encrypted-media"
+          allowFullScreen
         ></iframe>
       </div>
     </div>

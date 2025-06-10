@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { createPortal } from 'react-dom';
-import { API_BASE_URL } from '@/services/api';
+import { ApiClient } from '@/services/api-client';
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 
@@ -110,18 +110,8 @@ export default function VideoTourCarousel() {
             try {
                 setLoading(true);
                 setError(null);
-                const response = await fetch(`${API_BASE_URL}/properties/video-tours`);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                const contentType = response.headers.get("content-type");
-                if (!contentType || !contentType.includes("application/json")) {
-                    throw new TypeError("Oops, we haven't got JSON!");
-                }
-
-                const data = await response.json();
+                const apiClient = ApiClient.getInstance();
+                const data = await apiClient.getVideoTours();
                 setProperties(data);
             } catch (error) {
                 console.error('Error fetching video tours:', error);
