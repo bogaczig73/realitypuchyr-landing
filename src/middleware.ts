@@ -2,13 +2,16 @@ import createMiddleware from 'next-intl/middleware';
 
 export default createMiddleware({
   // A list of all locales that are supported
-  locales: ['cs', 'de', 'en'],
+  locales: ['cs', 'en'],
 
   // If this locale is matched, pathnames work without a prefix (e.g. `/about`)
-  defaultLocale: 'cs',
+  defaultLocale: 'en',
   
   // Always use the default locale for the root path
-  localePrefix: 'always'
+  localePrefix: 'always',
+
+  // Detect browser language and redirect accordingly
+  localeDetection: true
 });
 
 export const config = {
