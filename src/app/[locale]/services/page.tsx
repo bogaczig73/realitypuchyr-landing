@@ -8,11 +8,10 @@ import Footer from "../components/footer";
 import GetInTuch from "../components/get-in-touch";
 import BeforeAfterSlider from "../components/before-after-slider";
 
-import { feature } from "../data/data";
 import { FiHexagon } from "react-icons/fi";
 import Switcher from "../components/switcher";
 
-interface Service {
+export interface Feature {
     title: string;
     description: string;
     icon: string;
@@ -21,6 +20,63 @@ interface Service {
 
 export default function Services() {
     const t = useTranslations('services');
+
+    const feature: Feature[] = [
+        {
+            title: t('features.propertySale.title'),
+            description: t('features.propertySale.description'),
+            icon: "uil uil-home",
+            emoji: "🏠"
+        },
+        {
+            title: t('features.propertyPurchase.title'),
+            description: t('features.propertyPurchase.description'),
+            icon: "uil uil-search",
+            emoji: "🔍"
+        },
+        {
+            title: t('features.propertyValuation.title'),
+            description: t('features.propertyValuation.description'),
+            icon: "uil uil-chart-line",
+            emoji: "💰"
+        },
+        {
+            title: t('features.homeStaging.title'),
+            description: t('features.homeStaging.description'),
+            icon: "uil uil-paint-tool",
+            emoji: "✨"
+        },
+        {
+            title: t('features.professionalPresentation.title'),
+            description: t('features.professionalPresentation.description'),
+            icon: "uil uil-camera",
+            emoji: "📸"
+        },
+        {
+            title: t('features.legalService.title'),
+            description: t('features.legalService.description'),
+            icon: "uil uil-balance-scale",
+            emoji: "⚖️"
+        },
+        {
+            title: t('features.financialServices.title'),
+            description: t('features.financialServices.description'),
+            icon: '',
+            emoji: '💳',
+        },
+        {
+            title: t('features.investment.title'),
+            description: t('features.investment.description'),
+            icon: '',
+            emoji: '📈',
+        },
+        {
+            title: t('features.developmentProjects.title'),
+            description: t('features.developmentProjects.description'),
+            icon: '',
+            emoji: '🏗️',
+        },
+    ];
 
     return (
         <>
@@ -57,7 +113,7 @@ export default function Services() {
                     </div>
 
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[50px]">
-                        {feature.map((item: Service, index: number) => (
+                        {feature.map((item: Feature, index: number) => (
                             <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden" key={index}>
                                 <div className="relative overflow-hidden text-transparent -m-3">
                                     <FiHexagon className="h-32 w-32 fill-green-600/5"></FiHexagon>

@@ -1,0 +1,539 @@
+{
+  "navigation": {
+    "homeLink": "Startseite",
+    "aboutLink": "Über mich",
+    "propertiesLink": "Immobilien",
+    "servicesLink": "Dienstleistungen",
+    "contactLink": "Kontakt",
+    "faqLink": "FAQ",
+    "blogLink": "Blog"
+  },
+  "hero": {
+    "title": "Finden Sie Ihr Traumhaus",
+    "subtitle": "Entdecken Sie die perfekte Immobilie, die zu Ihrem Lebensstil passt",
+    "search": "Immobilien suchen"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "aboutMe": "Über mich",
+    "aboutMeText": "Mit über {years} Jahren Erfahrung auf dem Immobilienmarkt ist die Unterstützung von Kunden in Prag und der Region Mittelböhmen mehr als nur ein Job — es geht um Vertrauensaufbau und Ergebnisse. Ehrlichkeit, Gewissenhaftigkeit und Verantwortung sind der Kern jeder Interaktion und gewährleisten reibungslose Transaktionen, bei denen sich Käufer und Verkäufer zufrieden und gut betreut fühlen.",
+    "aboutMeText2": "Erfolg im Immobilienbereich beginnt mit gegenseitigem Vertrauen und einer echten Verbindung. Ob Sie kaufen oder verkaufen, das Ziel ist es, den Prozess transparent, effizient und auf Ihre Bedürfnisse zugeschnitten zu gestalten. Lassen Sie uns persönlich treffen — ich freue mich darauf, Sie kennenzulernen und zu besprechen, wie wir gemeinsam Ihre Immobilienziele erreichen können.",
+    "services": "Dienstleistungen",
+    "myListings": "Meine Immobilienangebote",
+    "viewMore": "Weitere Immobilien anzeigen",
+    "broker": "Immobilienmakler",
+    "of": "von",
+    "contactMe": "Kontaktieren Sie mich",
+    "yourName": "Ihr Name",
+    "yourEmail": "Ihre E-Mail",
+    "yourPhone": "Ihre Telefonnummer",
+    "yourQuestion": "Ihre Frage",
+    "yourComment": "Ihr Kommentar",
+    "rating": "5.00(30)",
+    "phone": "Telefon",
+    "socialMedia": {
+      "facebook": "Besuchen Sie unsere Facebook-Seite",
+      "instagram": "Besuchen Sie unsere Instagram-Seite",
+      "linkedin": "Besuchen Sie unser LinkedIn-Profil",
+      "email": "Senden Sie uns eine E-Mail"
+    },
+    "form": {
+      "namePlaceholder": "Name :",
+      "emailPlaceholder": "E-Mail :",
+      "subjectPlaceholder": "Betreff :",
+      "messagePlaceholder": "Nachricht :",
+      "phonePlaceholder": "Telefon :",
+      "successMessage": "Nachricht erfolgreich gesendet.",
+      "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    },
+    "servicesData": {
+      "realEstate": {
+        "title": "Immobiliendienstleistungen",
+        "description": "Expertenberatung für Kauf und Verkauf in Prag und Mittelböhmen, die einen reibungslosen und zufriedenstellenden Prozess gewährleistet."
+      },
+      "financialServices": {
+        "title": "Finanzdienstleistungen",
+        "description": "Maßgeschneiderte Beratung zu Investitionen, Hypotheken und Finanzplanung für langfristigen Erfolg."
+      },
+      "careerOpportunities": {
+        "title": "Karrieremöglichkeiten",
+        "description": "Wir bieten eine breite Palette an Karrieremöglichkeiten im Immobilien- und Finanzsektor."
+      }
+    }
+  },
+  "propertyDetail": {
+    "price": "Preis",
+    "forSale": "Zu verkaufen",
+    "sold": "VERKAUFT",
+    "propertySoldMessage": "Diese Immobilie wurde verkauft. Kontaktieren Sie mich für ähnliche Immobilien.",
+    "daysOnHously": "Tage auf Hously",
+    "pricePerSqFt": "Preis pro m²",
+    "monthlyPayment": "Monatliche Rate (Schätzung)",
+    "bookNow": "Jetzt buchen",
+    "offerNow": "Jetzt anbieten",
+    "haveQuestion": "Haben Sie eine Frage? Kontaktieren Sie uns!",
+    "contactUs": "Kontaktieren Sie uns",
+    "beds": "Schlafzimmer",
+    "baths": "Badezimmer",
+    "sqft": "m²",
+    "basicInformation": "Grundinformationen",
+    "location": "Standort",
+    "buildingDetails": "Gebäudedetails",
+    "areas": "Flächen",
+    "objectDetails": "Objektdetails",
+    "additionalInformation": "Zusätzliche Informationen",
+    "virtualTour": "Virtueller Rundgang",
+    "floorplans": "Grundrisse",
+    "files": "Dokumente",
+    "noFilesAvailable": "Keine Dokumente verfügbar",
+    "category": "Kategorie",
+    "status": "Status",
+    "ownershipType": "Eigentumsart",
+    "size": "Größe",
+    "layout": "Grundriss",
+    "street": "Straße",
+    "city": "Stadt",
+    "country": "Land",
+    "buildingStories": "Geschosse",
+    "buildingCondition": "Gebäudezustand",
+    "apartmentCondition": "Wohnungszustand",
+    "aboveGroundFloors": "Oberirdische Geschosse",
+    "totalAboveGroundFloors": "Gesamtzahl oberirdischer Geschosse",
+    "totalUndergroundFloors": "Gesamtzahl unterirdischer Geschosse",
+    "reconstructionYearApartment": "Renovierungsjahr (Wohnung)",
+    "reconstructionYearBuilding": "Renovierungsjahr (Gebäude)",
+    "floorArea": "Grundfläche",
+    "builtUpArea": "Bebaute Fläche",
+    "gardenHouseArea": "Gartenhausfläche",
+    "terraceArea": "Terassenfläche",
+    "totalLandArea": "Gesamtgrundstücksfläche",
+    "gardenArea": "Gartenfläche",
+    "garageArea": "Garagenfläche",
+    "balconyArea": "Balkonfläche",
+    "pergolaArea": "Pergolafläche",
+    "basementArea": "Kellerfläche",
+    "workshopArea": "Werkstattfläche",
+    "totalObjectArea": "Gesamtobjektfläche",
+    "usableArea": "Nutzfläche",
+    "landArea": "Grundstücksfläche",
+    "objectType": "Objekttyp",
+    "objectLocationType": "Objektstandorttyp",
+    "houseEquipment": "Hausausstattung",
+    "accessRoad": "Zufahrtsstraße",
+    "objectCondition": "Objektzustand",
+    "equipmentDescription": "Ausstattungsbeschreibung",
+    "additionalSources": "Zusätzliche Quellen",
+    "buildingPermit": "Baugenehmigung",
+    "buildability": "Bebaubarkeit",
+    "utilitiesOnLand": "Versorgungsleitungen auf dem Grundstück",
+    "utilitiesOnAdjacentRoad": "Versorgungsleitungen auf der angrenzenden Straße",
+    "payments": "Zahlungen",
+    "videoTour": "Video-Rundgang",
+    "reservationPrice": "Reservierungspreis",
+    "pricePerM2": "Preis pro m²"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "sections": {
+      "general": "Allgemeine Fragen",
+      "buying": "Fragen zum Kauf",
+      "financing": "Fragen zur Finanzierung",
+      "selling": "Fragen zum Verkauf",
+      "renting": "Fragen zur Miete"
+    },
+    "questions": {
+      "foreignersBuy": {
+        "title": "Können Ausländer Immobilien in der Tschechischen Republik kaufen?",
+        "content": "Ja, aber mit einigen Einschränkungen:\n- EU-Bürger können Immobilien frei kaufen.\n- Nicht-EU-Bürger können Wohnimmobilien kaufen, wenn sie eine langfristige Aufenthaltserlaubnis haben oder eine tschechische Gesellschaft zur Immobilienhaltung gründen.\n- Landwirtschaftliche und Forstflächen unterliegen für Nicht-EU-Käufer strengeren Vorschriften."
+      },
+      "popularCities": {
+        "title": "Welche sind die beliebtesten Städte für Immobilieninvestitionen?",
+        "content": "- Prag (höchste Nachfrage, starker Mietmarkt)\n- Brünn (wachsendes Technologiezentrum, Studentenmieten)\n- Ostrau (niedrigere Preise, industrielle Umgestaltung)\n- Karlsbad & Český Krumlov (Touristenhotspots, Kurzzeitmieten)"
+      },
+      "marketPerformance": {
+        "title": "Wie entwickelt sich der tschechische Immobilienmarkt?",
+        "content": "- Prag bleibt stabil mit stetigem Preiswachstum.\n- Regionale Städte bieten bessere Erschwinglichkeit und Mietrenditen.\n- Die Zinssätze sind gestiegen, was die Nachfrage leicht gedämpft hat."
+      },
+      "buyingSteps": {
+        "title": "Welche Schritte sind beim Kauf einer Immobilie in der Tschechischen Republik erforderlich?",
+        "content": "1. Immobilie finden (über Immobilienmakler oder Online-Portale wie Sreality.cz, Bezrealitky.cz).\n2. Reservierungsvereinbarung unterzeichnen (in der Regel mit Anzahlung).\n3. Due Diligence durchführen (Überprüfung des Grundbuchs, Schulden, Bebauungsplan).\n4. Kaufvertrag unterzeichnen (notarielle Beurkundung erforderlich).\n5. Eigentum im Grundbuch (Katastr nemovitostí) registrieren."
+      },
+      "feesAndTaxes": {
+        "title": "Welche Gebühren und Steuern fallen beim Immobilienkauf an?",
+        "content": "- Immobilientransfersteuer (4%) – Vom Käufer zu zahlen (einige Ausnahmen gelten).\n- Immobilienmaklergebühr (typischerweise 2–6%, je nach Vereinbarung vom Verkäufer oder Käufer zu zahlen).\n- Notar- und Anwaltsgebühren (ca. 0,5–1% des Immobilienwerts).\n- Grundbuchgebühr (ca. 1.000–5.000 CZK)."
+      },
+      "needLawyer": {
+        "title": "Benötige ich einen Anwalt beim Immobilienkauf?",
+        "content": "Dringend empfohlen für:\n- Überprüfung des rechtlichen Titels und Belastungen.\n- Überprüfung der Verträge.\n- Sicherstellung der ordnungsgemäßen Registrierung."
+      },
+      "foreignersMortgage": {
+        "title": "Können Ausländer eine Hypothek in der Tschechischen Republik erhalten?",
+        "content": "Ja, aber die Bedingungen variieren:\n- EU-Bürger können leichter Hypotheken erhalten.\n- Nicht-EU-Bürger benötigen möglicherweise eine höhere Anzahlung (30–50%) und Einkommensnachweise.\n- Die Zinssätze liegen derzeit zwischen 4–6%."
+      },
+      "downPayment": {
+        "title": "Wie hoch ist die typische Anzahlung für eine Hypothek?",
+        "content": "- Tschechische Einwohner: 10–20%\n- Ausländer: Oft 30–50%"
+      },
+      "sellingTaxes": {
+        "title": "Welche Steuern fallen beim Verkauf einer Immobilie an?",
+        "content": "- Kapitalertragssteuer (15%) – Gilt bei Verkauf innerhalb von 5 Jahren nach Kauf (befreit, wenn es Ihr Hauptwohnsitz war).\n- Keine Erbschafts- oder Schenkungssteuer (aber Einkommensteuer kann anfallen)."
+      },
+      "sellingTime": {
+        "title": "Wie lange dauert der Verkauf einer Immobilie?",
+        "content": "- Prag: 2–6 Monate (abhängig von Preis und Lage).\n- Kleinere Städte: Kann länger dauern."
+      },
+      "rentingInvestment": {
+        "title": "Ist die Vermietung von Immobilien eine gute Investition in der Tschechischen Republik?",
+        "content": "- Prag bietet 4–6% Mietrenditen.\n- Studentenstädte (Brünn, Olmütz) haben eine hohe Nachfrage.\n- Kurzzeitvermietungen (Airbnb) sind in Touristenregionen profitabel, unterliegen aber zunehmender Regulierung."
+      },
+      "tenantRights": {
+        "title": "Welche Rechte haben Mieter in der Tschechischen Republik?",
+        "content": "- Standardmietdauer: 1+ Jahr.\n- Vermieter können die Miete einmal pro Jahr erhöhen (mit Kündigungsfrist).\n- Räumung erfordert eine gerichtliche Anordnung (außer bei schweren Verstößen)."
+      },
+      "cadastralRegister": {
+        "title": "Was ist das Grundbuch (Katastr nemovitostí)?",
+        "content": "Das offizielle Grundbuch, in dem Immobilieneigentum, Hypotheken und Beschränkungen eingetragen werden. Überprüfen Sie immer die Details vor dem Kauf."
+      },
+      "residencePermit": {
+        "title": "Benötige ich eine Aufenthaltserlaubnis zum Kauf einer Immobilie?",
+        "content": "Nein, aber Nicht-EU-Käufer benötigen möglicherweise eine Gesellschaft oder Aufenthaltserlaubnis zum Kauf von Wohnimmobilien."
+      },
+      "shortTermRentals": {
+        "title": "Gibt es Einschränkungen für Kurzzeitvermietungen (Airbnb)?",
+        "content": "- Prag erfordert eine Registrierung und begrenzt Kurzzeitvermietungen in einigen Gebieten.\n- Andere Städte können ähnliche Regeln einführen."
+      }
+    }
+  },
+  "homeBanner": {
+    "title": "Seien Sie sicher, dass alles gut wird!",
+    "learnMore": "Mehr erfahren",
+    "quote": "Mit über 5 Jahren Erfahrung im Prager Immobilienmarkt baue ich erfolgreiche Partnerschaften durch Ehrlichkeit, Gewissenhaftigkeit und gegenseitiges Vertrauen zwischen Käufern und Verkäufern auf.",
+    "author": "Pavel Puchýř"
+  },
+  "components": {
+    "homeBanner": {
+      "title": "Seien Sie sicher, dass alles gut wird!",
+      "learnMore": "Mehr erfahren",
+      "quote": "Mit über 5 Jahren Erfahrung im Prager Immobilienmarkt baue ich erfolgreiche Partnerschaften durch Ehrlichkeit, Gewissenhaftigkeit und gegenseitiges Vertrauen zwischen Käufern und Verkäufern auf.",
+      "author": "Pavel Puchýř"
+    },
+    "footer": {
+      "description": "Ich kümmere mich um das Vermögen meiner Kunden — durch professionelle Maklerberatung zum Schutz und Wachstum ihres Vermögens.",
+      "sitemap": "Sitemap",
+      "listing": "Immobilienangebote",
+      "services": "Dienstleistungen",
+      "blog": "Blog",
+      "contact": "Kontakt",
+      "usefulLinks": "Nützliche Links",
+      "blogPost": "Blogbeitrag",
+      "termsOfService": "Nutzungsbedingungen",
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "contactDetails": "Kontaktdetails",
+      "address": "Šimáčkova 916/13,\n170 00 Praha 7-Holešovice,\nTschechische Republik",
+      "viewOnGoogleMap": "Auf Google Maps anzeigen"
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Nachricht senden",
+      "aboutMe": "Über mich",
+      "aboutMeText": "Mit über {years} Jahren Erfahrung auf dem Immobilienmarkt ist die Unterstützung von Kunden in Prag und der Region Mittelböhmen mehr als nur ein Job — es geht um Vertrauensaufbau und Ergebnisse. Ehrlichkeit, Gewissenhaftigkeit und Verantwortung sind der Kern jeder Interaktion und gewährleisten reibungslose Transaktionen, bei denen sich Käufer und Verkäufer zufrieden und gut betreut fühlen.",
+      "aboutMeText2": "Erfolg im Immobilienbereich beginnt mit gegenseitigem Vertrauen und einer echten Verbindung. Ob Sie kaufen oder verkaufen, das Ziel ist es, den Prozess transparent, effizient und auf Ihre Bedürfnisse zugeschnitten zu gestalten. Lassen Sie uns persönlich treffen — ich freue mich darauf, Sie kennenzulernen und zu besprechen, wie wir gemeinsam Ihre Immobilienziele erreichen können.",
+      "services": "Dienstleistungen",
+      "myListings": "Meine Immobilienangebote",
+      "viewMore": "Weitere Immobilien anzeigen",
+      "broker": "Immobilienmakler",
+      "of": "von",
+      "contactMe": "Kontaktieren Sie mich",
+      "yourName": "Ihr Name",
+      "yourEmail": "Ihre E-Mail",
+      "yourQuestion": "Ihre Frage",
+      "yourComment": "Ihr Kommentar"
+    },
+    "property": {
+      "featuredProperties": "Ausgewählte Immobilien",
+      "featuredDescription": "Eine großartige Plattform zum Kauf, Verkauf und zur Vermietung von Immobilien ohne Makler oder Provisionen.",
+      "price": "Preis",
+      "status": "Status",
+      "beds": "Schlafzimmer",
+      "baths": "Badezimmer",
+      "sqft": "m²",
+      "forSale": "Zu verkaufen",
+      "sold": "VERKAUFT",
+      "daysOnHously": "Tage auf Hously",
+      "pricePerSqFt": "Preis pro m²",
+      "monthlyPayment": "Monatliche Rate (Schätzung)",
+      "bookNow": "Jetzt buchen",
+      "offerNow": "Jetzt anbieten",
+      "haveQuestion": "Haben Sie eine Frage? Kontaktieren Sie uns!",
+      "contactUs": "Kontaktieren Sie uns"
+    },
+    "getInTouch": {
+      "title": "Haben Sie eine Frage? Kontaktieren Sie uns!",
+      "description": "Der Kauf einer Immobilie kann überwältigend sein — aber Sie müssen es nicht alleine machen. Lassen Sie uns sprechen und es einfacher machen!",
+      "contactButton": "Kontaktieren Sie uns"
+    },
+    "aboutCooperation": {
+      "title": "Wie wird unsere Zusammenarbeit ablaufen?",
+      "description": "Qualität, Umfang der Dienstleistungen, Geschwindigkeit und Sicherheit - das sind die Hauptgründe, warum Kunden unsere Zusammenarbeit am meisten schätzen. Ich führe Sie durch den gesamten Prozess des Verkaufs oder Kaufs einer Immobilie von der ersten Beratung bis zur Schlüsselübergabe. Ich halte Sie regelmäßig und transparent über die Entwicklungen auf dem Laufenden, damit Sie immer informiert sind.",
+      "moreAboutOurCooperation": "Mehr über unsere Zusammenarbeit",
+      "closeModal": "Modal schließen"
+    },
+    "aboutVideoTour": {
+      "title": "Qualitativ hochwertiger Video-Rundgang, mehr als tausend Fotos.",
+      "description": "Ein ansprechendes Video kann positive Emotionen wecken und die Atmosphäre der angebotenen Immobilie vollständig einfangen. Ich arbeite auch gerne mit Video, weil es bei der Bewerbung in sozialen Medien hervorragend funktioniert. Mir liegt die Qualität wirklich am Herzen, überzeugen Sie sich selbst.",
+      "learnMore": "Mehr über Video-Rundgang",
+      "closeModal": "Modal schließen"
+    },
+    "clientTwo": {
+      "title": "Was sagen meine Kunden?",
+      "description": "Ich lasse meine Kunden für sich sprechen. Ich bin stolz auf meine Arbeit und bin überzeugt, dass Sie es auch sein werden.",
+      "loading": "Laden...",
+      "readMore": "Weiterlesen",
+      "showLess": "Weniger anzeigen"
+    },
+    "counterSection": {
+      "activeProperties": "Aktive Immobilien",
+      "soldProperties": "Verkaufte Immobilien",
+      "yearsOfExperience": "Jahre Erfahrung"
+    },
+    "sidebar": {
+      "home": "Startseite",
+      "listing": "Angebote",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "contact": "Kontakt",
+      "phoneNumber": "+420 733 781 696",
+      "services": "Dienstleistungen"
+    },
+    "form": {
+      "status": {
+        "active": "Aktiv",
+        "sold": "Verkauft"
+      },
+      "allCategories": "Alle Kategorien",
+      "categories": {
+        "cottages": "Ferienhäuser",
+        "flats": "Wohnungen",
+        "houses": "Häuser",
+        "land": "Grundstücke",
+        "projects": "Projekte",
+        "villas": "Villen"
+      },
+      "error": {
+        "loadingCategories": "Kategorien konnten nicht geladen werden. Bitte versuchen Sie es später erneut."
+      },
+      "search": {
+        "label": "Suchen",
+        "placeholder": "In Titel oder Beschreibung suchen"
+      },
+      "category": {
+        "label": "Kategorie",
+        "placeholder": "Kategorie auswählen"
+      },
+      "action": {
+        "label": "Aktion",
+        "search": "Suchen"
+      },
+      "loading": "Laden..."
+    }
+  },
+  "aboutMe": {
+    "whatDoIDo": {
+      "title": "Was mache ich?",
+      "description": "Ich kümmere mich um das Vermögen meiner Kunden — durch professionelle Maklerberatung zum Schutz und Wachstum ihres Vermögens."
+    },
+    "services": [
+      {
+        "title": "Immobilienverwaltung",
+        "description": "Verkauf oder Kauf – mit uns finden Sie schnell und unter fairen Bedingungen die perfekte Immobilie oder einen Käufer, ob Sie eine Wohnung, ein Haus oder eine Investitionsmöglichkeit suchen.",
+        "readMore": "Weiterlesen"
+      },
+      {
+        "title": "Finanzdienstleistungen",
+        "description": "Ich biete maßgeschneiderte Finanzlösungen – von Hypotheken und Refinanzierung bis hin zu Anlageberatung – damit Sie Ihre Ziele mit Zuversicht und günstigen Bedingungen erreichen können.",
+        "readMore": "Weiterlesen"
+      },
+      {
+        "title": "Entwicklerprojekte",
+        "description": "Entdecken Sie exklusive Neubauprojekte an erstklassigen Standorten in der Tschechischen Republik und im Ausland – modernes Wohnen mit Premium-Ausstattung und persönlichem Service von vertrauenswürdigen Entwicklern.",
+        "readMore": "Weiterlesen"
+      }
+    ]
+  },
+  "categories": {
+    "title": "Immobilienkategorien"
+  },
+  "blog": {
+    "title": "Neueste Artikel & Nachrichten",
+    "description": "Bleiben Sie über die neuesten Immobilientrends und Erkenntnisse informiert.",
+    "readMore": "Weiterlesen",
+    "readTime": "Min. Lesezeit",
+    "viewAllBlogs": "Alle Blogs anzeigen",
+    "author": "Autor",
+    "date": "Datum",
+    "time": "Zeit",
+    "searchProperties": "Immobilien suchen",
+    "recentPosts": "Neueste Beiträge",
+    "socialSites": "Soziale Medien"
+  },
+  "list": {
+    "title": "Immobilienangebote",
+    "description": "Professionelle Plattform für Kauf, Verkauf und Vermietung von Immobilien ohne unnötige Gebühren.",
+    "noResults": "Keine Immobilien gefunden",
+    "loadMore": "Mehr laden",
+    "sortBy": "Sortieren nach",
+    "filterBy": "Filtern nach",
+    "viewOptions": {
+      "grid": "Raster",
+      "list": "Liste"
+    },
+    "status": {
+      "active": "Aktiv",
+      "sold": "Verkauft",
+      "reserved": "Reserviert"
+    },
+    "price": {
+      "asc": "Preis: Niedrig zu Hoch",
+      "desc": "Preis: Hoch zu Niedrig"
+    },
+    "date": {
+      "newest": "Neueste",
+      "oldest": "Älteste"
+    },
+    "area": {
+      "asc": "Fläche: Klein zu Groß",
+      "desc": "Fläche: Groß zu Klein"
+    },
+    "filters": {
+      "priceRange": "Preisspanne",
+      "propertyType": "Immobilientyp",
+      "area": "Fläche",
+      "rooms": "Anzahl der Zimmer",
+      "features": "Ausstattung",
+      "location": "Standort",
+      "reset": "Filter zurücksetzen",
+      "apply": "Filter anwenden"
+    },
+    "pagination": {
+      "previous": "Zurück",
+      "next": "Weiter",
+      "page": "Seite",
+      "of": "von"
+    },
+    "listViewLayout": "Listenansicht",
+    "loadError": "Immobilien konnten nicht geladen werden. Bitte versuchen Sie es später erneut.",
+    "noPropertiesFound": "Keine Immobilien gefunden, die Ihren Suchkriterien entsprechen.",
+    "tryAdjustingFilters": "Versuchen Sie, Ihre Filter oder Suchbegriffe anzupassen."
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "subtitle": "Breites Spektrum an Dienstleistungen, die auf jeden Immobilienfall zugeschnitten sind",
+    "description": "Bei der Arbeit mit meinen Kunden bevorzuge ich einen persönlichen Ansatz und völlig individuelle Dienstleistungen, ob wir mit dem Verkauf oder Kauf von Immobilien zu tun haben. Mein umfangreiches Dienstleistungsangebot umfasst alles, was die besten Immobilienagenturen in der Tschechischen Republik und im Ausland heute anbieten. Ich lege die Geschäftsstrategie immer zu Beginn der Zusammenarbeit fest, nach einem gründlichen Gespräch mit den Kunden.",
+    "selling": {
+      "title": "Immobilienverkauf",
+      "description": "Die meisten Verkäufer müssen ihre Immobilie so schnell wie möglich und zum höchsten Preis verkaufen. Das muss aber nicht immer der Fall sein. Einige priorisieren Geschwindigkeit, andere Barzahlung. Einige haben es nicht eilig und legen im Gegenteil Wert darauf, einen neuen soliden Eigentümer für die Immobilie zu finden.",
+      "features": {
+        "consultation": {
+          "title": "Erstberatung und Beratung",
+          "description": "Beim ersten Treffen legen wir Ihre Ziele fest, auf deren Grundlage ich eine Verkaufsstrategie erstelle."
+        },
+        "valuation": {
+          "title": "Qualifizierte Immobilienbewertung",
+          "description": "Die richtige Immobilienbewertung ist einer der wichtigsten Schritte im Verkaufsprozess."
+        },
+        "staging": {
+          "title": "Home Staging",
+          "description": "Designmodifikation der Immobilie für maximale Attraktivität für potenzielle Käufer.",
+          "beforeAfter": {
+            "title": "Home Staging - Vorher und Nachher",
+            "before": "Vorher",
+            "after": "Nachher",
+            "dragToCompare": "Zum Vergleichen ziehen"
+          }
+        },
+        "presentation": {
+          "title": "Professionelle Präsentation",
+          "description": "Fotografie, Video-Rundgänge, Drohnenaufnahmen und Matterport 3D-Virtual-Tours."
+        },
+        "marketing": {
+          "title": "Marketing und Werbung",
+          "description": "Werbung auf 30 wichtigen Portalen und bezahlte Werbung in sozialen Netzwerken."
+        },
+        "legal": {
+          "title": "Rechtlicher Service",
+          "description": "Zusammenarbeit mit einer bewährten Anwaltskanzlei, die auf Immobilienrecht spezialisiert ist."
+        }
+      }
+    },
+    "buying": {
+      "title": "Immobilienkauf",
+      "description": "Suchen Sie eine bestimmte Immobilie und können Ihr Traumhaus immer noch nicht finden? In diesem Fall können Sie sich auch an mich wenden. ARCHER reality Prag a.s., unter der ich tätig bin, verfügt über eine umfangreiche Datenbank angebotener Immobilien.",
+      "description2": "Gemeinsam füllen wir die Parameter der von Ihnen gesuchten Immobilie aus, und wenn ein ähnliches Angebot in unserem System erscheint, wird es gematcht. Wir können Sie kontaktieren, noch bevor wir es öffentlich anbieten. Sie werden zu den Ersten gehören, die von dem Angebot erfahren."
+    },
+    "staging": {
+      "beforeAfter": {
+        "title": "Home Staging - Vorher und Nachher",
+        "before": "Vorher",
+        "after": "Nachher",
+        "dragToCompare": "Zum Vergleichen ziehen"
+      }
+    },
+    "financial": {
+      "title": "Finanzdienstleistungen",
+      "description": "Umfassende Finanzberatung für Hypotheken, Versicherungen und Investitionen, die auf Ihre Bedürfnisse zugeschnitten ist."
+    },
+    "investment": {
+      "title": "Investition",
+      "description": "Beratung und Vermittlung von Investitionsmöglichkeiten in Immobilien und anderen Sektoren."
+    },
+    "developer": {
+      "title": "Entwicklerprojekte",
+      "description": "Angebot und Vermittlung neuer Entwicklungsprojekte an attraktiven Standorten."
+    },
+    "features": {
+      "propertySale": {
+        "title": "Immobilienverkauf",
+        "description": "Komplettservice für den Verkauf Ihrer Immobilie - von der Beratung bis zum erfolgreichen Abschluss."
+      },
+      "propertyPurchase": {
+        "title": "Immobilienkauf",
+        "description": "Wir helfen Ihnen, Ihre Traumimmobilie mit Hilfe unserer umfangreichen Immobiliendatenbank zu finden."
+      },
+      "propertyValuation": {
+        "title": "Immobilienbewertung",
+        "description": "Professionelle Immobilienbewertung für die optimale Festlegung des Verkaufspreises."
+      },
+      "homeStaging": {
+        "title": "Home Staging",
+        "description": "Designanpassung der Immobilie für maximale Attraktivität bei potenziellen Käufern."
+      },
+      "professionalPresentation": {
+        "title": "Professionelle Präsentation",
+        "description": "Fotografie, Video-Touren, Drohnenaufnahmen und Matterport 3D-Virtual-Touren."
+      },
+      "legalService": {
+        "title": "Rechtlicher Service",
+        "description": "Zusammenarbeit mit einer verifizierten Anwaltskanzlei, die auf Immobilienrecht spezialisiert ist."
+      },
+      "financialServices": {
+        "title": "Finanzdienstleistungen",
+        "description": "Umfassende Finanzberatung für Hypotheken, Versicherungen und Investitionen, maßgeschneidert auf Ihre Bedürfnisse."
+      },
+      "investment": {
+        "title": "Investition",
+        "description": "Beratung und Vermittlung von Investitionsmöglichkeiten in Immobilien und anderen Bereichen."
+      },
+      "developmentProjects": {
+        "title": "Entwicklungsprojekte",
+        "description": "Angebot und Vermittlung neuer Entwicklungsprojekte in attraktiven Lagen."
+      }
+    }
+  }
+} 

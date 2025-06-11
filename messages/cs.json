@@ -588,6 +588,44 @@
     "developer": {
       "title": "Developerské projekty",
       "description": "Nabídka a zprostředkování nových developerských projektů v atraktivních lokalitách."
+    },
+    "features": {
+      "propertySale": {
+        "title": "Prodej nemovitosti",
+        "description": "Kompletní služby pro prodej vaší nemovitosti - od konzultace až po úspěšné dokončení prodeje."
+      },
+      "propertyPurchase": {
+        "title": "Koupě nemovitosti",
+        "description": "Pomůžeme vám najít vaše vysněné bydlení s využitím naší rozsáhlé databáze nemovitostí."
+      },
+      "propertyValuation": {
+        "title": "Ocenění nemovitosti",
+        "description": "Profesionální ocenění nemovitosti pro optimální nastavení prodejní ceny."
+      },
+      "homeStaging": {
+        "title": "Home Staging",
+        "description": "Designová úprava nemovitosti pro maximální atraktivitu pro potenciální kupce."
+      },
+      "professionalPresentation": {
+        "title": "Profesionální prezentace",
+        "description": "Fotografie, videoprohlídky, záběry z dronu a 3D virtuální prohlídky Matterport."
+      },
+      "legalService": {
+        "title": "Právní servis",
+        "description": "Spolupráce s prověřenou advokátní kanceláří specializovanou na realitní právo."
+      },
+      "financialServices": {
+        "title": "Finanční služby",
+        "description": "Komplexní finanční poradenství v oblasti hypoték, pojištění a investic na míru vašim potřebám."
+      },
+      "investment": {
+        "title": "Investice",
+        "description": "Poradenství a zprostředkování investičních příležitostí v realitách a dalších oblastech."
+      },
+      "developmentProjects": {
+        "title": "Developerské projekty",
+        "description": "Nabídka a zprostředkování nových developerských projektů v atraktivních lokalitách."
+      }
     }
   }
 } 

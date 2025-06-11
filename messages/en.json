@@ -497,6 +497,44 @@
     "developer": {
       "title": "Developer Projects",
       "description": "Offering and brokering new development projects in attractive locations."
+    },
+    "features": {
+      "propertySale": {
+        "title": "Property Sale",
+        "description": "Complete services for selling your property - from consultation to successful completion of the sale."
+      },
+      "propertyPurchase": {
+        "title": "Property Purchase",
+        "description": "We help you find your dream home using our extensive property database."
+      },
+      "propertyValuation": {
+        "title": "Property Valuation",
+        "description": "Professional property valuation for optimal sale price setting."
+      },
+      "homeStaging": {
+        "title": "Home Staging",
+        "description": "Design modification of the property for maximum appeal to potential buyers."
+      },
+      "professionalPresentation": {
+        "title": "Professional Presentation",
+        "description": "Photography, video tours, drone shots, and Matterport 3D virtual tours."
+      },
+      "legalService": {
+        "title": "Legal Service",
+        "description": "Cooperation with a verified law firm specialized in real estate law."
+      },
+      "financialServices": {
+        "title": "Financial Services",
+        "description": "Comprehensive financial advice in mortgages, insurance, and investments tailored to your needs."
+      },
+      "investment": {
+        "title": "Investment",
+        "description": "Advice and mediation of investment opportunities in real estate and other areas."
+      },
+      "developmentProjects": {
+        "title": "Development Projects",
+        "description": "Offer and mediation of new development projects in attractive locations."
+      }
     }
   }
 }

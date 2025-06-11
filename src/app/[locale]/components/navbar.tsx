@@ -4,13 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
+import { languages } from '@/config/languages';
 
 import Sidebar from "./sidebar";
-
-const languages = [
-    { code: 'en', label: 'English', flag: '/images/flags/en.png' },
-    { code: 'cs', label: 'Čeština', flag: '/images/flags/cs.png' }
-];
 
 export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:string, topnavClass:string, tagline:boolean }) {
     const t = useTranslations('navigation');

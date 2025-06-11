@@ -392,7 +392,12 @@ export default function PropertyDetail() {
                               width={0} 
                               height={0} 
                               sizes='100vw' 
-                              style={{width:'100%', height:'auto'}} 
+                              style={{
+                                width: '100%', 
+                                height: 'auto',
+                                maxHeight: '600px',
+                                objectFit: 'contain'
+                              }} 
                               className="rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700" 
                               alt={`${property.name} - Image ${index + 1}`}
                             />
@@ -694,7 +699,12 @@ export default function PropertyDetail() {
                               width={0} 
                               height={0} 
                               sizes='100vw' 
-                              style={{width:'100%', height:'auto'}} 
+                              style={{
+                                width: '100%', 
+                                height: 'auto',
+                                maxHeight: '600px',
+                                objectFit: 'contain'
+                              }} 
                               className="rounded-md shadow-sm shadow-gray-200 dark:shadow-gray-700" 
                               alt={`${floorplan.name} - Floorplan`}
                             />
@@ -735,7 +745,12 @@ export default function PropertyDetail() {
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{ width: '100%', height: 'auto', maxHeight: '90vh', objectFit: 'contain' }}
+                        style={{ 
+                          width: '100%', 
+                          height: 'auto', 
+                          maxHeight: '90vh', 
+                          objectFit: 'contain' 
+                        }}
                         className="rounded-lg"
                         alt={`${zoomedImage.name} - Zoomed Floorplan`}
                       />
@@ -776,13 +791,10 @@ export default function PropertyDetail() {
 
                       <div className="flex flex-col items-start mt-4">
                         {property.discountedPrice && (
-                          <span className="text-l font-medium line-through text-red-500">{formatPrice(property.discountedPrice)} Kč</span>
+                          <span className="text-lg font-medium line-through text-red-500">{formatPrice(property.discountedPrice)} Kč</span>
                         )}
                         <div className="flex items-center gap-2">
-                          <span className="text-l font-medium">{formatPrice(property.price)} Kč</span>
-                          <span className="bg-green-600/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
-                            {formatValue(property.category)}
-                          </span>
+                          <span className="text-xl font-medium">{formatPrice(property.price)} Kč</span>
                         </div>
                       </div>
 

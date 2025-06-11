@@ -7,11 +7,7 @@ import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 import { FiMenu } from "react-icons/fi";
 import { useTranslations, useLocale } from 'next-intl';
-
-const languages = [
-    { code: 'en', label: 'English', flag: '/images/flags/en.png' },
-    { code: 'cs', label: 'Čeština', flag: '/images/flags/cs.png' }
-];
+import { languages } from '@/config/languages';
 
 export default function Sidebar(){
     const t = useTranslations('components.sidebar');
