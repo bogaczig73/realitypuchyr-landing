@@ -84,17 +84,31 @@ export default function Property({
                                     <div className="absolute inset-0 bg-gray-200 animate-pulse"></div>
                                 )}
                                 <Link href={`/property-detail/${item.id}`}>
-                                    <Image 
-                                        src={item.images.find(img => img.isMain)?.url || item.images[0]?.url || '/images/property/placeholder.webp'} 
-                                        alt={item.name}
-                                        width={0} 
-                                        height={0} 
-                                        sizes="100vw" 
-                                        style={{width:"100%", height:"auto"}} 
-                                        priority
-                                        onLoad={() => handleImageLoad(item.id)}
-                                        className={`${imageLoading[item.id] !== false ? 'opacity-0' : 'opacity-100'} cursor-pointer transition-transform duration-300 group-hover:scale-105`}
-                                    />
+                                    {(() => {
+                                        const mainImage = item.images.find(img => img.isMain);
+                                        const fallbackImage = item.images[0];
+                                        const finalImage = mainImage || fallbackImage;
+                                        console.log('Property Card Image:', {
+                                            propertyId: item.id,
+                                            propertyName: item.name,
+                                            mainImage: mainImage?.url,
+                                            fallbackImage: fallbackImage?.url,
+                                            finalImage: finalImage?.url
+                                        });
+                                        return (
+                                            <Image 
+                                                src={finalImage?.url || '/images/property/placeholder.webp'} 
+                                                alt={item.name}
+                                                width={0} 
+                                                height={0} 
+                                                sizes="100vw" 
+                                                style={{width:"100%", height:"auto"}} 
+                                                priority
+                                                onLoad={() => handleImageLoad(item.id)}
+                                                className={`${imageLoading[item.id] !== false ? 'opacity-0' : 'opacity-100'} cursor-pointer transition-transform duration-300 group-hover:scale-105`}
+                                            />
+                                        );
+                                    })()}
                                 </Link>
 
                                 <div className="absolute top-4 end-4">
