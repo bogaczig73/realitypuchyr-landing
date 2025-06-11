@@ -379,7 +379,9 @@ export default function PropertyDetail() {
                 <div className="relative">
                   <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex">
-                      {property.images.map((image, index) => (
+                      {property.images
+                        .sort((a, b) => a.order - b.order)
+                        .map((image, index) => (
                         <div className="flex-[0_0_100%] min-w-0" key={image.id}>
                           <div 
                             className="cursor-zoom-in" 
@@ -772,14 +774,16 @@ export default function PropertyDetail() {
                     <div className="p-6">
                       <h5 className="text-2xl font-medium">{t('price')}:</h5>
 
-                      <div className="flex justify-between items-center mt-4">
-                        <span className="text-xl font-medium">{formatPrice(property.price)} Kč</span>
+                      <div className="flex flex-col items-start mt-4">
                         {property.discountedPrice && (
-                          <span className="text-xl font-medium line-through text-red-500">{formatPrice(property.discountedPrice)} Kč</span>
+                          <span className="text-l font-medium line-through text-red-500">{formatPrice(property.discountedPrice)} Kč</span>
                         )}
-                        <span className="bg-green-600/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
-                          {formatValue(property.category)}
-                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className="text-l font-medium">{formatPrice(property.price)} Kč</span>
+                          <span className="bg-green-600/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
+                            {formatValue(property.category)}
+                          </span>
+                        </div>
                       </div>
 
                       <ul className="list-none mt-4">

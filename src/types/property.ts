@@ -1,7 +1,10 @@
 export interface PropertyImage {
     id: number;
     url: string;
-    is_featured: boolean;
+    isMain: boolean;
+    order: number;
+    propertyId: number;
+    createdAt: string;
 }
 
 export interface PropertyFloorplan {

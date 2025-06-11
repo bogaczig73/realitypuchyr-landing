@@ -119,14 +119,14 @@ function ListContent() {
                                 {properties.map((property) => (
                                     <div key={property.id} className="group rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-xl dark:hover:shadow-xl shadow-gray-200 dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500 w-full mx-auto xl:max-w-4xl">
                                         <div className="md:flex">
-                                            <div className="relative md:shrink-0">
+                                            <div className="relative md:w-1/3">
                                                 <Image 
-                                                    className='h-full w-full object-cover md:w-48' 
-                                                    src={property.images[0]?.url || '/images/property/placeholder.webp'} 
+                                                    className='h-full w-full object-cover' 
+                                                    src={property.images.find(img => img.isMain)?.url || property.images[0]?.url || '/images/property/placeholder.webp'} 
                                                     alt={property.name}
                                                     width={400}
                                                     height={300}
-                                                    style={{ width: '100%', height: 'auto' }}
+                                                    style={{ width: '100%', height: '100%' }}
                                                 />
                                                 <div className="absolute top-4 end-4">
                                                     <Link href="#" className="btn btn-icon bg-white dark:bg-slate-900 shadow-sm shadow-gray-200 dark:shadow-gray-700 !rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600">
@@ -134,7 +134,7 @@ function ListContent() {
                                                     </Link>
                                                 </div>
                                             </div>
-                                            <div className="p-6">
+                                            <div className="p-6 md:w-2/3">
                                                 <div className="md:pb-4 pb-6">
                                                     <Link href={`/property-detail/${property.id}`} className="text-lg hover:text-green-600 font-medium ease-in-out duration-500">
                                                         {property.name}

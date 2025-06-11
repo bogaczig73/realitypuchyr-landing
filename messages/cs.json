@@ -280,7 +280,8 @@
     "payments": "Platby",
     "videoTour": "Video prohlídka",
     "reservationPrice": "Rezervační cena",
-    "pricePerM2": "Cena za m²"
+    "pricePerM2": "Cena za m²",
+    "noLocationAvailable": "Žádná lokalita nejsou k dispozici"
   },
   "faq": {
     "title": "Často kladené otázky",
@@ -508,7 +509,7 @@
       },
       {
         "title": "Developerské projekty",
-        "description": "Objevte exkluzivní novostavby v atraktivních lokalitách – moderní bydlení s nadstandardním vybavením a individuálním přístupem od ověřených developerů.",
+        "description": "Objevte exkluzivní novostavby v atraktivních lokalitách v ČR i v zahraničí – moderní bydlení s nadstandardním vybavením a individuálním přístupem od ověřených developerů.",
         "readMore": "Číst více"
       }
     ]

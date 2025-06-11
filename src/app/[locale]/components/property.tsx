@@ -85,7 +85,7 @@ export default function Property({
                                 )}
                                 <Link href={`/property-detail/${item.id}`}>
                                     <Image 
-                                        src={item.images[0]?.url || '/images/property/placeholder.webp'} 
+                                        src={item.images.find(img => img.isMain)?.url || item.images[0]?.url || '/images/property/placeholder.webp'} 
                                         alt={item.name}
                                         width={0} 
                                         height={0} 
