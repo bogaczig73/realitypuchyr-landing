@@ -6,10 +6,23 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Switcher from '../components/switcher';
 import PropertyMap from '../components/PropertyMap';
+import PropertyDescriptionGenerator from '../components/property-description-generator';
 
 interface AutocompletePrediction {
   description: string;
   place_id: string;
+}
+
+interface Landmark {
+  id: string;
+  name: string;
+  type: string;
+  distance: number;
+  rating?: number;
+  userRatingCount?: number;
+  businessStatus?: string;
+  formattedAddress?: string;
+  location?: google.maps.LatLng;
 }
 
 export default function NeighborhoodExplorer() {
@@ -20,6 +33,7 @@ export default function NeighborhoodExplorer() {
   const [predictions, setPredictions] = useState<AutocompletePrediction[]>([]);
   const [showPredictions, setShowPredictions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [landmarks, setLandmarks] = useState<{ [key: string]: Landmark[] }>({});
   const inputRef = useRef<HTMLInputElement>(null);
   const predictionsRef = useRef<HTMLDivElement>(null);
   const t = useTranslations('neighborhoodExplorer');
@@ -28,7 +42,7 @@ export default function NeighborhoodExplorer() {
   useEffect(() => {
     if (!document.querySelector('script[src*="maps.googleapis.com/maps/api/js"]')) {
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places,geocoding`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`;
       script.async = true;
       script.defer = true;
       document.head.appendChild(script);
@@ -58,24 +72,30 @@ export default function NeighborhoodExplorer() {
     }
 
     try {
-      const { AutocompleteService } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
-      const service = new AutocompleteService();
+      const { Place } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
+      
+      const request = {
+        textQuery: input,
+        language: 'cs',
+        maxResultCount: 5,
+        fields: ['displayName', 'id', 'location', 'formattedAddress']
+      };
 
-      service.getPlacePredictions({
-        input: input,
-        componentRestrictions: { country: 'cz' }, // Restrict to Czech Republic
-        types: ['geocode', 'establishment'], // Include addresses and establishments
-        language: 'cs'
-      }, (predictions, status) => {
-        if (status === 'OK' && predictions) {
-          setPredictions(predictions);
-          setShowPredictions(true);
-          setSelectedIndex(-1);
-        } else {
-          setPredictions([]);
-          setShowPredictions(false);
-        }
-      });
+      const { places } = await Place.searchByText(request);
+      
+      if (places && places.length > 0) {
+        const predictions = places.map(place => ({
+          description: place.displayName || 'Unknown',
+          place_id: place.id || `place_${Math.random()}`
+        }));
+        
+        setPredictions(predictions);
+        setShowPredictions(true);
+        setSelectedIndex(-1);
+      } else {
+        setPredictions([]);
+        setShowPredictions(false);
+      }
     } catch (error) {
       console.error('Error getting predictions:', error);
       setPredictions([]);
@@ -112,30 +132,29 @@ export default function NeighborhoodExplorer() {
     setError(null);
 
     try {
-      const { Geocoder } = await google.maps.importLibrary('geocoding') as google.maps.GeocodingLibrary;
-      const geocoder = new Geocoder();
+      const { Place } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
 
-      const geocodeRequest = placeId 
-        ? { placeId: placeId }
-        : { 
-            address: address,
-            region: 'cz',
-            language: 'cs'
-          };
+      // Search by text
+      const { places } = await Place.searchByText({
+        textQuery: address,
+        fields: ['displayName', 'location', 'formattedAddress'],
+        language: 'cs',
+        maxResultCount: 1
+      });
 
-      const result = await geocoder.geocode(geocodeRequest);
+      const place = places[0];
 
-      if (result.results.length > 0) {
-        const location = result.results[0].geometry.location;
+      if (place && place.location) {
         setCoordinates({
-          lat: location.lat(),
-          lng: location.lng()
+          lat: (place.location as google.maps.LatLng).lat(),
+          lng: (place.location as google.maps.LatLng).lng()
         });
         setError(null);
       } else {
         setError('Adresa nebyla nalezena. Zkuste zadat přesnější adresu.');
       }
     } catch (err) {
+      console.error('Geocoding error:', err);
       setError('Nepodařilo se najít adresu. Zkuste to prosím znovu.');
     } finally {
       setLoading(false);
@@ -145,6 +164,10 @@ export default function NeighborhoodExplorer() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     geocodeAddress(address);
+  };
+
+  const handleLandmarksLoaded = (landmarksData: { [key: string]: Landmark[] }) => {
+    setLandmarks(landmarksData);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -278,8 +301,18 @@ export default function NeighborhoodExplorer() {
 
             {/* Map and Landmarks */}
             {coordinates && (
-              <div className="mt-8">
-                <PropertyMap latitude={coordinates.lat} longitude={coordinates.lng} />
+              <div className="mt-8 space-y-8">
+                <PropertyMap 
+                  latitude={coordinates.lat} 
+                  longitude={coordinates.lng} 
+                  onLandmarksLoaded={handleLandmarksLoaded}
+                />
+                
+                {/* Property Description Generator */}
+                <PropertyDescriptionGenerator 
+                  landmarks={landmarks}
+                  address={address}
+                />
               </div>
             )}
 

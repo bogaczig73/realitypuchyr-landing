@@ -5,6 +5,7 @@ import { FiX, FiMapPin, FiStar, FiClock, FiNavigation } from 'react-icons/fi';
 interface PropertyMapProps {
   latitude: number;
   longitude: number;
+  onLandmarksLoaded?: (landmarks: { [key: string]: Landmark[] }) => void;
 }
 
 interface Landmark {
@@ -51,7 +52,7 @@ const landmarkCategories: LandmarkCategory[] = [
   { key: 'metro', label: 'Metro', icon: '🚇', color: 'bg-amber-100 text-amber-600', placeTypes: ['subway_station'] },
 ];
 
-const PropertyMap = memo(({ latitude, longitude }: PropertyMapProps) => {
+const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMapProps) => {
   const [mapLoaded, setMapLoaded] = useState(false);
   const [landmarks, setLandmarks] = useState<{ [key: string]: Landmark[] }>({});
   const [selectedLandmark, setSelectedLandmark] = useState<Landmark | null>(null);
@@ -227,6 +228,10 @@ const PropertyMap = memo(({ latitude, longitude }: PropertyMapProps) => {
     }
 
     setLoading(false);
+
+    if (onLandmarksLoaded) {
+      onLandmarksLoaded(allLandmarks);
+    }
   };
 
   const handleLandmarkClick = (landmark: Landmark) => {

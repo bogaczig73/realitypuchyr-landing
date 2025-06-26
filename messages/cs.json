@@ -649,6 +649,16 @@
     "step2Title": "Klikněte na vyhledat",
     "step2Description": "Po zadání adresy klikněte na tlačítko vyhledat nebo stiskněte Enter. Systém najde přesnou polohu.",
     "step3Title": "Prozkoumejte okolí",
-    "step3Description": "Prohlédněte si mapu s vyznačenými zajímavými místy a seznam služeb v okolí 2 km od zadané adresy."
+    "step3Description": "Prohlédněte si mapu s vyznačenými zajímavými místy a seznam služeb v okolí 2 km od zadané adresy.",
+    "propertyDescription": {
+      "title": "Popis nemovitosti",
+      "subtitle": "Automaticky vygenerovaný popis lokality pro inzerci nemovitosti",
+      "generateButton": "Vygenerovat popis",
+      "generating": "Generuji popis...",
+      "copyButton": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "noLandmarks": "Pro vygenerování popisu je potřeba nejprve najít zajímavá místa v okolí.",
+      "description": "Tento popis můžete použít jako základ pro popis nemovitosti v inzerci. Obsahuje informace o dopravní dostupnosti a občanské vybavenosti v okolí."
+    }
   }
 } 

@@ -559,6 +559,16 @@
     "step2Title": "Click search",
     "step2Description": "After entering the address, click the search button or press Enter. The system will find the exact location.",
     "step3Title": "Explore the area",
-    "step3Description": "View the map with marked interesting places and a list of services within 2 km of the entered address."
+    "step3Description": "View the map with marked interesting places and a list of services within 2 km of the entered address.",
+    "propertyDescription": {
+      "title": "Property Description",
+      "subtitle": "Automatically generated location description for property listing",
+      "generateButton": "Generate Description",
+      "generating": "Generating description...",
+      "copyButton": "Copy",
+      "copied": "Copied!",
+      "noLandmarks": "To generate a description, you need to first find interesting places in the area.",
+      "description": "You can use this description as a basis for your property listing. It contains information about transportation accessibility and local amenities."
+    }
   }
 }

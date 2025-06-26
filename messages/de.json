@@ -558,6 +558,16 @@
     "step2Title": "Auf Suche klicken",
     "step2Description": "Nach Eingabe der Adresse klicken Sie auf die Schaltfläche Suche oder drücken Sie Enter. Das System findet den genauen Standort.",
     "step3Title": "Gegend erkunden",
-    "step3Description": "Betrachten Sie die Karte mit markierten interessanten Orten und eine Liste von Dienstleistungen innerhalb von 2 km von der eingegebenen Adresse."
+    "step3Description": "Betrachten Sie die Karte mit markierten interessanten Orten und eine Liste von Dienstleistungen innerhalb von 2 km von der eingegebenen Adresse.",
+    "propertyDescription": {
+      "title": "Immobilienbeschreibung",
+      "subtitle": "Automatisch generierte Standortbeschreibung für Immobilienanzeigen",
+      "generateButton": "Beschreibung generieren",
+      "generating": "Beschreibung wird generiert...",
+      "copyButton": "Kopieren",
+      "copied": "Kopiert!",
+      "noLandmarks": "Um eine Beschreibung zu generieren, müssen Sie zuerst interessante Orte in der Gegend finden.",
+      "description": "Sie können diese Beschreibung als Grundlage für Ihre Immobilienanzeige verwenden. Sie enthält Informationen über die Verkehrsanbindung und lokale Einrichtungen."
+    }
   }
 } 

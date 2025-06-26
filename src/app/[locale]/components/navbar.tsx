@@ -151,10 +151,15 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                                             {t('neighborhoodExplorer')}
                                         </Link>
                                     </li>
+
+                                    <li className={isActive('/faq') ? 'active' : ''}>
+                                        <Link href={`/${currentLocale}/faq`} className="sub-menu-item">
+                                            {t('faqLink')}
+                                        </Link>
+                                    </li>
                                 </ul>
                             </li>
                             
-                            <li className={isActive('/faq') ? "active" : ''}><Link href={`/${currentLocale}/faq`} className="sub-menu-item">{t('faqLink')}</Link></li>
                             <li className={isActive('/blog') ? "active" : ''}><Link href={`/${currentLocale}/blog`} className="sub-menu-item">{t('blogLink')}</Link></li>
                             <li className={isActive('/contact') ? "active" : ''}><Link href={`/${currentLocale}/contact`} className="sub-menu-item">{t('contactLink')}</Link></li>
                             
