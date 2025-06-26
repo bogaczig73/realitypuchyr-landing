@@ -4,6 +4,8 @@
     "aboutLink": "O mě",
     "propertiesLink": "Nemovitosti",
     "servicesLink": "Služby",
+    "allServices": "Všechny služby",
+    "neighborhoodExplorer": "Průzkumník okolí",
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
     "blogLink": "Blog"
@@ -281,7 +283,14 @@
     "videoTour": "Video prohlídka",
     "reservationPrice": "Rezervační cena",
     "pricePerM2": "Cena za m²",
-    "noLocationAvailable": "Žádná lokalita nejsou k dispozici"
+    "noLocationAvailable": "Žádná lokalita nejsou k dispozici",
+    "nearbyPlaces": "Zajímavá místa v okolí",
+    "searchingPlaces": "Hledám zajímavá místa...",
+    "noPlacesFound": "Žádné místo nenalezeno",
+    "open": "Otevřeno",
+    "closed": "Zavřeno",
+    "reviews": "hodnocení",
+    "distance": "vzdálenost"
   },
   "faq": {
     "title": "Často kladené otázky",
@@ -627,5 +636,19 @@
         "description": "Nabídka a zprostředkování nových developerských projektů v atraktivních lokalitách."
       }
     }
+  },
+  "neighborhoodExplorer": {
+    "title": "Průzkumník okolí",
+    "description": "Objevte zajímavá místa v okolí jakékoliv adresy. Zadejte adresu a zjistěte, jaké školy, obchody, restaurace a další služby jsou v okolí.",
+    "addressPlaceholder": "Zadejte adresu (např. Václavské náměstí, Praha)",
+    "exampleAddresses": "Příklady adres",
+    "howToUse": "Jak používat průzkumník okolí",
+    "howToUseDescription": "Jednoduchý způsob, jak zjistit, co se nachází v okolí jakékoliv adresy v České republice.",
+    "step1Title": "Zadejte adresu",
+    "step1Description": "Napište adresu, kterou chcete prozkoumat. Může to být ulice, náměstí nebo jakékoliv místo v České republice.",
+    "step2Title": "Klikněte na vyhledat",
+    "step2Description": "Po zadání adresy klikněte na tlačítko vyhledat nebo stiskněte Enter. Systém najde přesnou polohu.",
+    "step3Title": "Prozkoumejte okolí",
+    "step3Description": "Prohlédněte si mapu s vyznačenými zajímavými místy a seznam služeb v okolí 2 km od zadané adresy."
   }
 } 

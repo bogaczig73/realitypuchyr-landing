@@ -4,6 +4,8 @@
     "aboutLink": "About",
     "propertiesLink": "Properties",
     "servicesLink": "Services",
+    "allServices": "All Services",
+    "neighborhoodExplorer": "Neighborhood Explorer",
     "contactLink": "Contact",
     "faqLink": "FAQ",
     "blogLink": "Blog"
@@ -135,7 +137,15 @@
     "payments": "Payments",
     "videoTour": "Video Tour",
     "reservationPrice": "Reservation Price",
-    "pricePerM2": "Price per m²"
+    "pricePerM2": "Price per m²",
+    "noLocationAvailable": "No location available",
+    "nearbyPlaces": "Nearby Places",
+    "searchingPlaces": "Searching for interesting places...",
+    "noPlacesFound": "No places found",
+    "open": "Open",
+    "closed": "Closed",
+    "reviews": "reviews",
+    "distance": "distance"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -536,5 +546,19 @@
         "description": "Offer and mediation of new development projects in attractive locations."
       }
     }
+  },
+  "neighborhoodExplorer": {
+    "title": "Neighborhood Explorer",
+    "description": "Discover interesting places around any address. Enter an address and find out what schools, shops, restaurants, and other services are nearby.",
+    "addressPlaceholder": "Enter an address (e.g., Wenceslas Square, Prague)",
+    "exampleAddresses": "Example addresses",
+    "howToUse": "How to use the neighborhood explorer",
+    "howToUseDescription": "A simple way to find out what's around any address in the Czech Republic.",
+    "step1Title": "Enter an address",
+    "step1Description": "Type the address you want to explore. It can be a street, square, or any place in the Czech Republic.",
+    "step2Title": "Click search",
+    "step2Description": "After entering the address, click the search button or press Enter. The system will find the exact location.",
+    "step3Title": "Explore the area",
+    "step3Description": "View the map with marked interesting places and a list of services within 2 km of the entered address."
   }
 }

@@ -4,6 +4,8 @@
     "aboutLink": "Über mich",
     "propertiesLink": "Immobilien",
     "servicesLink": "Dienstleistungen",
+    "allServices": "Alle Dienstleistungen",
+    "neighborhoodExplorer": "Nachbarschafts-Explorer",
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
     "blogLink": "Blog"
@@ -86,7 +88,7 @@
     "areas": "Flächen",
     "objectDetails": "Objektdetails",
     "additionalInformation": "Zusätzliche Informationen",
-    "virtualTour": "Virtueller Rundgang",
+    "virtualTour": "Video-Tour",
     "floorplans": "Grundrisse",
     "files": "Dokumente",
     "noFilesAvailable": "Keine Dokumente verfügbar",
@@ -132,9 +134,17 @@
     "utilitiesOnLand": "Versorgungsleitungen auf dem Grundstück",
     "utilitiesOnAdjacentRoad": "Versorgungsleitungen auf der angrenzenden Straße",
     "payments": "Zahlungen",
-    "videoTour": "Video-Rundgang",
+    "videoTour": "Video-Tour",
     "reservationPrice": "Reservierungspreis",
-    "pricePerM2": "Preis pro m²"
+    "pricePerM2": "Preis pro m²",
+    "noLocationAvailable": "Kein Standort verfügbar",
+    "nearbyPlaces": "Interessante Orte in der Nähe",
+    "searchingPlaces": "Suche nach interessanten Orten...",
+    "noPlacesFound": "Keine Orte gefunden",
+    "open": "Geöffnet",
+    "closed": "Geschlossen",
+    "reviews": "Bewertungen",
+    "distance": "Entfernung"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
@@ -535,5 +545,19 @@
         "description": "Angebot und Vermittlung neuer Entwicklungsprojekte in attraktiven Lagen."
       }
     }
+  },
+  "neighborhoodExplorer": {
+    "title": "Nachbarschafts-Explorer",
+    "description": "Entdecken Sie interessante Orte rund um jede Adresse. Geben Sie eine Adresse ein und finden Sie heraus, welche Schulen, Geschäfte, Restaurants und andere Dienstleistungen in der Nähe sind.",
+    "addressPlaceholder": "Adresse eingeben (z.B. Wenzelsplatz, Prag)",
+    "exampleAddresses": "Beispieladressen",
+    "howToUse": "Wie man den Nachbarschafts-Explorer verwendet",
+    "howToUseDescription": "Eine einfache Möglichkeit herauszufinden, was sich rund um jede Adresse in der Tschechischen Republik befindet.",
+    "step1Title": "Adresse eingeben",
+    "step1Description": "Geben Sie die Adresse ein, die Sie erkunden möchten. Es kann eine Straße, ein Platz oder ein beliebiger Ort in der Tschechischen Republik sein.",
+    "step2Title": "Auf Suche klicken",
+    "step2Description": "Nach Eingabe der Adresse klicken Sie auf die Schaltfläche Suche oder drücken Sie Enter. Das System findet den genauen Standort.",
+    "step3Title": "Gegend erkunden",
+    "step3Description": "Betrachten Sie die Karte mit markierten interessanten Orten und eine Liste von Dienstleistungen innerhalb von 2 km von der eingegebenen Adresse."
   }
 } 

@@ -5,24 +5,31 @@ import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiChevronDown, FiChevronRight } from "react-icons/fi";
 import { useTranslations, useLocale } from 'next-intl';
 import { languages } from '@/config/languages';
 
 export default function Sidebar(){
     const t = useTranslations('components.sidebar');
+    const navigationT = useTranslations('navigation');
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
     let [ manu, setmanu ] = useState<string>('');
     let [ submanu, setSubManu ] = useState<string>('');
     let [isOpen, setIsOpen] = useState(false);
+    let [showServices, setShowServices] = useState(false);
     let current = usePathname();
     const [currentLocale, setCurrentLocale] = useState(locale);
 
     useEffect(()=>{
         setSubManu(current);
-        setmanu(current)
+        setmanu(current);
+        
+        // Auto-expand services if on services or neighborhood-explorer page
+        if (current.includes('/services') || current.includes('/neighborhood-explorer')) {
+            setShowServices(true);
+        }
     },[current])
 
     useEffect(() => {
@@ -35,6 +42,10 @@ export default function Sidebar(){
 
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
+    }
+
+    const toggleServices = () => {
+        setShowServices(!showServices);
     }
 
     const handleLanguageChange = (locale: string) => {
@@ -65,8 +76,30 @@ export default function Sidebar(){
                                 <Link href="/list?status=ACTIVE" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-home-city me-2"></i>{t('listing')}</Link>
                             </li>
 
-                            <li className={`${manu === "/services" ? 'active' : ''} ms-0`}>
-                                <Link href="/services" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-cog me-2"></i>{t('services')}</Link>
+                            {/* Services Section with Submenu */}
+                            <li className={`${manu.includes("/services") || manu.includes("/neighborhood-explorer") ? 'active' : ''} ms-0`}>
+                                <button 
+                                    onClick={toggleServices}
+                                    className="w-full text-left flex items-center justify-between py-2 px-4 hover:bg-white/10 transition-colors duration-200"
+                                >
+                                    <span><i className="mdi mdi-cog me-2"></i>{t('services')}</span>
+                                    {showServices ? <FiChevronDown className="h-4 w-4" /> : <FiChevronRight className="h-4 w-4" />}
+                                </button>
+                                
+                                {showServices && (
+                                    <ul className="submenu bg-slate-800/50">
+                                        <li className={`${manu === "/services" ? 'active' : ''} ms-4`}>
+                                            <Link href="/services" onClick={toggleSidebar} scroll={false}>
+                                                <i className="mdi mdi-view-list me-2"></i>{navigationT('allServices')}
+                                            </Link>
+                                        </li>
+                                        <li className={`${manu === "/neighborhood-explorer" ? 'active' : ''} ms-4`}>
+                                            <Link href="/neighborhood-explorer" onClick={toggleSidebar} scroll={false}>
+                                                <i className="mdi mdi-map-marker me-2"></i>{navigationT('neighborhoodExplorer')}
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                )}
                             </li>
 
                             <li className={`${manu === "/faq" ? 'active' : ''} ms-0`}>
