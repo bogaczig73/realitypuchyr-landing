@@ -228,10 +228,6 @@ const PropertyDescriptionGenerator: React.FC<PropertyDescriptionGeneratorProps> 
         </div>
       </div>
 
-      <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-        {t('description')}
-      </p>
-
       {!hasLandmarks ? (
         <div className="text-center py-8">
           <FiFileText className="h-12 w-12 text-gray-400 mx-auto mb-3" />

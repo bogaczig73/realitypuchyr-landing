@@ -657,8 +657,7 @@
       "generating": "Generuji popis...",
       "copyButton": "Kopírovat",
       "copied": "Zkopírováno!",
-      "noLandmarks": "Pro vygenerování popisu je potřeba nejprve najít zajímavá místa v okolí.",
-      "description": "Tento popis můžete použít jako základ pro popis nemovitosti v inzerci. Obsahuje informace o dopravní dostupnosti a občanské vybavenosti v okolí."
+      "noLandmarks": "Pro vygenerování popisu je potřeba nejprve najít zajímavá místa v okolí."
     }
   }
 } 

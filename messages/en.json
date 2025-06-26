@@ -567,8 +567,7 @@
       "generating": "Generating description...",
       "copyButton": "Copy",
       "copied": "Copied!",
-      "noLandmarks": "To generate a description, you need to first find interesting places in the area.",
-      "description": "You can use this description as a basis for your property listing. It contains information about transportation accessibility and local amenities."
+      "noLandmarks": "To generate a description, you need to first find interesting places in the area."
     }
   }
 }
