@@ -29,28 +29,165 @@ interface LandmarkCategory {
 }
 
 const landmarkCategories: LandmarkCategory[] = [
-  { key: 'vecerka', label: 'Večerka', icon: '🛒', color: 'bg-blue-100 text-blue-600', placeTypes: ['convenience_store'] },
-  { key: 'hospoda', label: 'Hospoda', icon: '🍺', color: 'bg-amber-100 text-amber-600', placeTypes: ['bar'] },
-  { key: 'cukrarna', label: 'Cukrárna', icon: '🍰', color: 'bg-pink-100 text-pink-600', placeTypes: ['bakery', 'cafe'] },
-  { key: 'veterinar', label: 'Veterinář', icon: '🐾', color: 'bg-purple-100 text-purple-600', placeTypes: ['veterinary_care'] },
-  { key: 'divadlo', label: 'Divadlo', icon: '🎭', color: 'bg-indigo-100 text-indigo-600', placeTypes: ['movie_theater', 'performing_arts'] },
-  { key: 'hriste', label: 'Hřiště', icon: '⚽', color: 'bg-green-100 text-green-600', placeTypes: ['park'] },
-  { key: 'kino', label: 'Kino', icon: '🎬', color: 'bg-red-100 text-red-600', placeTypes: ['movie_theater'] },
-  { key: 'prirodni', label: 'Přírodní zajímavost', icon: '🌳', color: 'bg-emerald-100 text-emerald-600', placeTypes: ['natural_feature', 'park'] },
-  { key: 'lekarna', label: 'Lékárna', icon: '💊', color: 'bg-cyan-100 text-cyan-600', placeTypes: ['pharmacy'] },
-  { key: 'bus', label: 'Bus MHD', icon: '🚌', color: 'bg-orange-100 text-orange-600', placeTypes: ['bus_station', 'transit_station'] },
-  { key: 'skolka', label: 'Školka', icon: '👶', color: 'bg-yellow-100 text-yellow-600', placeTypes: ['preschool'] },
-  { key: 'restaurace', label: 'Restaurace', icon: '🍽️', color: 'bg-rose-100 text-rose-600', placeTypes: ['restaurant'] },
-  { key: 'bankomat', label: 'Bankomat', icon: '🏧', color: 'bg-gray-100 text-gray-600', placeTypes: ['atm'] },
-  { key: 'lekar', label: 'Lékař', icon: '👨‍⚕️', color: 'bg-teal-100 text-teal-600', placeTypes: ['doctor', 'health'] },
-  { key: 'vlak', label: 'Vlak', icon: '🚂', color: 'bg-blue-100 text-blue-600', placeTypes: ['train_station'] },
-  { key: 'skola', label: 'Škola', icon: '🎓', color: 'bg-violet-100 text-violet-600', placeTypes: ['school'] },
-  { key: 'tram', label: 'Tram', icon: '🚊', color: 'bg-lime-100 text-lime-600', placeTypes: ['transit_station'] },
-  { key: 'obchod', label: 'Obchod', icon: '🛍️', color: 'bg-sky-100 text-sky-600', placeTypes: ['store', 'shopping_mall', 'supermarket'] },
-  { key: 'posta', label: 'Pošta', icon: '📮', color: 'bg-slate-100 text-slate-600', placeTypes: ['post_office'] },
-  { key: 'sportoviste', label: 'Sportoviště', icon: '🏃', color: 'bg-fuchsia-100 text-fuchsia-600', placeTypes: ['gym', 'stadium'] },
-  { key: 'metro', label: 'Metro', icon: '🚇', color: 'bg-amber-100 text-amber-600', placeTypes: ['subway_station'] },
+  { key: 'vecerka', label: 'Večerka', icon: '🏪', color: 'bg-blue-600 text-white', placeTypes: ['convenience_store'] },
+  { key: 'hospoda', label: 'Hospoda', icon: '🍺', color: 'bg-orange-600 text-white', placeTypes: ['bar'] },
+  { key: 'cukrarna', label: 'Cukrárna', icon: '🍰', color: 'bg-pink-600 text-white', placeTypes: ['bakery', 'cafe'] },
+  { key: 'veterinar', label: 'Veterinář', icon: '🐾', color: 'bg-purple-600 text-white', placeTypes: ['veterinary_care'] },
+  { key: 'divadlo', label: 'Divadlo', icon: '🎭', color: 'bg-indigo-600 text-white', placeTypes: ['movie_theater'] },
+  { key: 'hriste', label: 'Hřiště', icon: '⚽', color: 'bg-green-600 text-white', placeTypes: ['park'] },
+  { key: 'kino', label: 'Kino', icon: '🎬', color: 'bg-red-600 text-white', placeTypes: ['movie_theater'] },
+  { key: 'prirodni', label: 'Přírodní zajímavost', icon: '🌳', color: 'bg-emerald-600 text-white', placeTypes: ['park'] },
+  { key: 'lekarna', label: 'Lékárna', icon: '💊', color: 'bg-cyan-600 text-white', placeTypes: ['pharmacy'] },
+  { key: 'bus', label: 'Bus MHD', icon: '🚌', color: 'bg-amber-600 text-white', placeTypes: ['bus_station', 'transit_station'] },
+  { key: 'skolka', label: 'Školka', icon: '👶', color: 'bg-yellow-600 text-white', placeTypes: ['preschool'] },
+  { key: 'restaurace', label: 'Restaurace', icon: '🍽️', color: 'bg-rose-600 text-white', placeTypes: ['restaurant'] },
+  { key: 'bankomat', label: 'Bankomat', icon: '🏧', color: 'bg-gray-600 text-white', placeTypes: ['atm'] },
+  { key: 'lekar', label: 'Lékař', icon: '👨‍⚕️', color: 'bg-teal-600 text-white', placeTypes: ['doctor'] },
+  { key: 'vlak', label: 'Vlak', icon: '🚂', color: 'bg-blue-700 text-white', placeTypes: ['train_station'] },
+  { key: 'skola', label: 'Škola', icon: '🎓', color: 'bg-violet-600 text-white', placeTypes: ['school'] },
+  { key: 'tram', label: 'Tram', icon: '🚊', color: 'bg-lime-600 text-white', placeTypes: ['transit_station'] },
+  { key: 'obchod', label: 'Obchod', icon: '🛍️', color: 'bg-sky-600 text-white', placeTypes: ['store', 'shopping_mall', 'supermarket'] },
+  { key: 'posta', label: 'Pošta', icon: '📮', color: 'bg-slate-600 text-white', placeTypes: ['post_office'] },
+  { key: 'sportoviste', label: 'Sportoviště', icon: '🏃', color: 'bg-fuchsia-600 text-white', placeTypes: ['gym', 'stadium'] },
+  { key: 'metro', label: 'Metro', icon: '🚇', color: 'bg-amber-700 text-white', placeTypes: ['subway_station'] },
 ];
+
+// Custom icon SVGs for map markers
+const getCustomIcon = (categoryKey: string): string => {
+  const icons: { [key: string]: string } = {
+    vecerka: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#3B82F6" stroke="white" stroke-width="2"/>
+      <path d="M8 8h8v8H8z" fill="white"/>
+      <path d="M10 10h4v4h-4z" fill="#3B82F6"/>
+    </svg>`,
+    hospoda: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#F59E0B" stroke="white" stroke-width="2"/>
+      <path d="M7 9h10v6H7z" fill="white"/>
+      <path d="M9 11h6v2H9z" fill="#F59E0B"/>
+    </svg>`,
+    cukrarna: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#EC4899" stroke="white" stroke-width="2"/>
+      <path d="M8 10h8v6H8z" fill="white"/>
+      <path d="M10 12h4v2h-4z" fill="#EC4899"/>
+    </svg>`,
+    veterinar: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#8B5CF6" stroke="white" stroke-width="2"/>
+      <path d="M9 9h6v6H9z" fill="white"/>
+      <path d="M11 11h2v2h-2z" fill="#8B5CF6"/>
+    </svg>`,
+    divadlo: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#6366F1" stroke="white" stroke-width="2"/>
+      <path d="M6 8h12v8H6z" fill="white"/>
+      <path d="M8 10h8v4H8z" fill="#6366F1"/>
+    </svg>`,
+    hriste: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#10B981" stroke="white" stroke-width="2"/>
+      <path d="M8 8h8v8H8z" fill="white"/>
+      <circle cx="12" cy="12" r="3" fill="#10B981"/>
+    </svg>`,
+    kino: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#EF4444" stroke="white" stroke-width="2"/>
+      <path d="M7 8h10v8H7z" fill="white"/>
+      <path d="M9 10h6v4H9z" fill="#EF4444"/>
+    </svg>`,
+    prirodni: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#059669" stroke="white" stroke-width="2"/>
+      <path d="M12 6l3 6-3 6-3-6z" fill="white"/>
+      <path d="M12 8l2 4-2 4-2-4z" fill="#059669"/>
+    </svg>`,
+    lekarna: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#06B6D4" stroke="white" stroke-width="2"/>
+      <path d="M9 8h6v8H9z" fill="white"/>
+      <path d="M11 10h2v4h-2z" fill="#06B6D4"/>
+    </svg>`,
+    bus: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#F97316" stroke="white" stroke-width="2"/>
+      <path d="M6 8h12v8H6z" fill="white"/>
+      <path d="M8 10h8v4H8z" fill="#F97316"/>
+    </svg>`,
+    skolka: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#EAB308" stroke="white" stroke-width="2"/>
+      <path d="M10 8h4v8h-4z" fill="white"/>
+      <circle cx="12" cy="12" r="2" fill="#EAB308"/>
+    </svg>`,
+    restaurace: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#E11D48" stroke="white" stroke-width="2"/>
+      <path d="M8 8h8v8H8z" fill="white"/>
+      <path d="M10 10h4v4h-4z" fill="#E11D48"/>
+    </svg>`,
+    bankomat: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#6B7280" stroke="white" stroke-width="2"/>
+      <path d="M8 8h8v8H8z" fill="white"/>
+      <path d="M10 10h4v4h-4z" fill="#6B7280"/>
+    </svg>`,
+    lekar: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#14B8A6" stroke="white" stroke-width="2"/>
+      <path d="M9 8h6v8H9z" fill="white"/>
+      <path d="M11 10h2v4h-2z" fill="#14B8A6"/>
+    </svg>`,
+    vlak: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#3B82F6" stroke="white" stroke-width="2"/>
+      <path d="M6 8h12v8H6z" fill="white"/>
+      <path d="M8 10h8v4H8z" fill="#3B82F6"/>
+    </svg>`,
+    skola: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#8B5CF6" stroke="white" stroke-width="2"/>
+      <path d="M8 6h8v10H8z" fill="white"/>
+      <path d="M10 8h4v6h-4z" fill="#8B5CF6"/>
+    </svg>`,
+    tram: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#84CC16" stroke="white" stroke-width="2"/>
+      <path d="M6 8h12v8H6z" fill="white"/>
+      <path d="M8 10h8v4H8z" fill="#84CC16"/>
+    </svg>`,
+    obchod: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#0EA5E9" stroke="white" stroke-width="2"/>
+      <path d="M8 8h8v8H8z" fill="white"/>
+      <path d="M10 10h4v4h-4z" fill="#0EA5E9"/>
+    </svg>`,
+    posta: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#64748B" stroke="white" stroke-width="2"/>
+      <path d="M8 8h8v8H8z" fill="white"/>
+      <path d="M10 10h4v4h-4z" fill="#64748B"/>
+    </svg>`,
+    sportoviste: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#D946EF" stroke="white" stroke-width="2"/>
+      <path d="M9 9h6v6H9z" fill="white"/>
+      <path d="M11 11h2v2h-2z" fill="#D946EF"/>
+    </svg>`,
+    metro: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#F59E0B" stroke="white" stroke-width="2"/>
+      <path d="M6 8h12v8H6z" fill="white"/>
+      <path d="M8 10h8v4H8z" fill="#F59E0B"/>
+    </svg>`,
+  };
+  
+  return icons[categoryKey] || icons.obchod; // Default to obchod icon if category not found
+};
+
+const createCustomIcon = (categoryKey: string) => {
+  const colors: { [key: string]: string } = {
+    vecerka: '#3B82F6', hospoda: '#F59E0B', cukrarna: '#EC4899', veterinar: '#8B5CF6',
+    divadlo: '#6366F1', hriste: '#10B981', kino: '#EF4444', prirodni: '#059669',
+    lekarna: '#06B6D4', bus: '#F97316', skolka: '#EAB308', restaurace: '#E11D48',
+    bankomat: '#6B7280', lekar: '#14B8A6', vlak: '#3B82F6', skola: '#8B5CF6',
+    tram: '#84CC16', obchod: '#0EA5E9', posta: '#64748B', sportoviste: '#D946EF', metro: '#F59E0B'
+  };
+  
+  const color = colors[categoryKey] || '#0EA5E9';
+  
+  return {
+    url: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="${color}" stroke="white" stroke-width="2"/>
+        <path d="M8 8h8v8H8z" fill="white"/>
+        <path d="M10 10h4v4h-4z" fill="${color}"/>
+      </svg>
+    `)}`,
+    scaledSize: new google.maps.Size(24, 24),
+    anchor: new google.maps.Point(12, 12)
+  };
+};
 
 const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMapProps) => {
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -117,6 +254,12 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMa
         map: mapRef.current,
         position: center,
         title: 'Property Location',
+        content: new google.maps.marker.PinElement({
+          background: '#FF6B35',
+          borderColor: '#00a63e',
+          glyph: '⭐',
+          scale: 1.5
+        }).element
       });
 
       // Add property marker to markers ref
@@ -141,12 +284,19 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMa
     const bounds = new LatLngBounds();
     const allLandmarks: { [key: string]: Landmark[] } = {};
 
-    // Clear existing markers
-    Object.values(markersRef.current).flat().forEach(marker => marker.map = null);
-    markersRef.current = {};
+    // Clear existing markers (except property marker)
+    Object.entries(markersRef.current).forEach(([key, markers]) => {
+      if (key !== 'property') {
+        markers.forEach(marker => marker.map = null);
+      }
+    });
+    // Keep property marker but clear other categories
+    const propertyMarkers = markersRef.current['property'] || [];
+    markersRef.current = { property: propertyMarkers };
 
     for (const category of landmarkCategories) {
       const categoryLandmarks: Landmark[] = [];
+      let landmarkCounter = 0;
 
       for (const placeType of category.placeTypes) {
         const request = {
@@ -175,7 +325,7 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMa
                 );
 
                 const landmark: Landmark = {
-                  id: `${category.key}-${place.displayName || 'Unknown'}`,
+                  id: `${category.key}-${place.displayName || 'Unknown'}-${landmarkCounter++}`,
                   name: place.displayName || 'Unknown',
                   type: category.key,
                   distance: distance,
@@ -193,6 +343,12 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMa
                   map: mapRef.current,
                   position: place.location,
                   title: place.displayName || 'Unknown',
+                  content: new google.maps.marker.PinElement({
+                    background: getCategoryInfo(category.key).color.split(' ')[0].replace('bg-', '#'),
+                    borderColor: '#00a63e',
+                    glyph: category.icon,
+                    scale: 1.2
+                  }).element
                 });
 
                 // Add click listener

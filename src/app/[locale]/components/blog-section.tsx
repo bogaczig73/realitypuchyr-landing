@@ -3,19 +3,23 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { FiArrowRight } from 'react-icons/fi'
-import { BlogService } from '@/services/blog-service'
 import { Blog } from '@/types/blog'
 import { useQuery } from '@tanstack/react-query'
 import BlogCard from './blog-card'
+import { useApiClient } from '@/hooks/useApiClient'
 
 export default function BlogSection() {
     const t = useTranslations('blog');
-    const blogService = new BlogService();
+    const apiClient = useApiClient();
 
     const { data: blogs, isLoading } = useQuery({
-        queryKey: ['blogs'],
+        queryKey: ['blogs', apiClient.getLocale()],
         queryFn: async () => {
-            const response = await blogService.getAllBlogs(1, 3, 1, 100);
+            const response = await apiClient.request<Blog[]>({
+                method: 'GET',
+                url: 'blogs',
+                params: { pages: 1, limit: 3, currentPage: 1, truncate: 100 }
+            });
             return Array.isArray(response) ? response : [];
         },
         staleTime: 1000 * 60 * 5, // Data stays fresh for 5 minutes

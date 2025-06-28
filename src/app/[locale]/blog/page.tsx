@@ -23,11 +23,19 @@ interface BlogPost {
 }
 
 type SearchParams = Promise<{ page?: string }>;
+type Params = Promise<{ locale: string }>;
 
-export default async function BlogPage({ searchParams }: { searchParams: SearchParams }) {
+export default async function BlogPage({ 
+    searchParams, 
+    params 
+}: { 
+    searchParams: SearchParams;
+    params: Params;
+}) {
     const { page } = await searchParams;
+    const { locale } = await params;
     const pageNumber = Number(page) || 1;
-    const blogService = new BlogService();
+    const blogService = new BlogService(locale);
     let blogs: BlogPost[] = [];
     let totalPages = 1;
     let error = null;

@@ -24,7 +24,7 @@ export default function Page({ params }: { params: Params }) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const blogService = new BlogService();
+                const blogService = new BlogService(locale);
                 // Get the current blog first
                 const currentBlog = await blogService.getBlogBySlug(slug);
                 setBlog(currentBlog);
@@ -41,7 +41,7 @@ export default function Page({ params }: { params: Params }) {
         };
 
         fetchData();
-    }, [slug]);
+    }, [slug, locale]);
 
     if (error || !blog) {
         return (

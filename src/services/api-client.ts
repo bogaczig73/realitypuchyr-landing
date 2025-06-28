@@ -43,6 +43,9 @@ export class ApiClient {
     public static getInstance(locale?: string): ApiClient {
         if (!ApiClient.instance) {
             ApiClient.instance = new ApiClient(locale);
+        } else if (locale && ApiClient.instance.locale !== locale) {
+            // Update locale if it's different from the current instance
+            ApiClient.instance.setLocale(locale);
         }
         return ApiClient.instance;
     }

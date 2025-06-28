@@ -105,6 +105,11 @@ export default function NeighborhoodExplorer() {
 
   const handleAddressChange = (value: string) => {
     setAddress(value);
+    // Clear previous results when user starts typing
+    if (coordinates) {
+      setCoordinates(null);
+      setLandmarks({});
+    }
     if (value.trim()) {
       getPlacePredictions(value);
     } else {
@@ -117,6 +122,10 @@ export default function NeighborhoodExplorer() {
     setAddress(prediction.description);
     setShowPredictions(false);
     setSelectedIndex(-1);
+    
+    // Clear previous results
+    setCoordinates(null);
+    setLandmarks({});
     
     // Geocode the selected prediction
     await geocodeAddress(prediction.description, prediction.place_id);
@@ -163,6 +172,9 @@ export default function NeighborhoodExplorer() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // Clear previous results
+    setCoordinates(null);
+    setLandmarks({});
     geocodeAddress(address);
   };
 
@@ -313,59 +325,6 @@ export default function NeighborhoodExplorer() {
                   landmarks={landmarks}
                   address={address}
                 />
-              </div>
-            )}
-
-            {/* Instructions */}
-            {!coordinates && !loading && (
-              <div className="max-w-4xl mx-auto text-center">
-                <div className="bg-gray-50 dark:bg-slate-800 rounded-lg p-8">
-                  <FiMapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-2">
-                    {t('howToUse')}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-6">
-                    {t('howToUseDescription')}
-                  </p>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                    <div className="text-center">
-                      <div className="bg-green-100 dark:bg-green-900/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <span className="text-green-600 dark:text-green-400 font-bold">1</span>
-                      </div>
-                      <h4 className="font-medium text-gray-900 dark:text-white mb-2">
-                        {t('step1Title')}
-                      </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        {t('step1Description')}
-                      </p>
-                    </div>
-                    
-                    <div className="text-center">
-                      <div className="bg-green-100 dark:bg-green-900/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <span className="text-green-600 dark:text-green-400 font-bold">2</span>
-                      </div>
-                      <h4 className="font-medium text-gray-900 dark:text-white mb-2">
-                        {t('step2Title')}
-                      </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        {t('step2Description')}
-                      </p>
-                    </div>
-                    
-                    <div className="text-center">
-                      <div className="bg-green-100 dark:bg-green-900/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <span className="text-green-600 dark:text-green-400 font-bold">3</span>
-                      </div>
-                      <h4 className="font-medium text-gray-900 dark:text-white mb-2">
-                        {t('step3Title')}
-                      </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        {t('step3Description')}
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             )}
           </div>
