@@ -135,20 +135,22 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                             <li className={`has-submenu parent-menu-item ${isActive('/list') ? 'active' : ''}`}><Link href={`/${currentLocale}/list?status=ACTIVE`}>{t('propertiesLink')}</Link></li>
                             
                             {/* Services Dropdown */}
-                            <li className={`has-submenu parent-menu-item ${isActive('/services') || isActive('/neighborhood-explorer') ? 'active' : ''}`}>
+                            <li className={`has-submenu parent-menu-item ${isActive('/services') ? 'active' : ''}`}>
                                 <Link href="#" onClick={(e) => {e.preventDefault(); setSubManu(subManu === "/services-item" ? "" : "/services-item")}}>
                                     {t('servicesLink')}
                                 </Link>
                                 <span className="menu-arrow"></span>
-                                <ul className={`submenu ${["/services", "/neighborhood-explorer", "/services-item"].includes(subManu) ? 'open' : ''}`}>
+                                <ul className={`submenu ${["/services", "/services-item"].includes(subManu) ? 'open' : ''}`}>
                                     <li className={isActive('/services') ? 'active' : ''}>
                                         <Link href={`/${currentLocale}/services`} className="sub-menu-item">
                                             {t('allServices')}
                                         </Link>
                                     </li>
-                                    <li className={isActive('/neighborhood-explorer') ? 'active' : ''}>
-                                        <Link href={`/${currentLocale}/neighborhood-explorer`} className="sub-menu-item">
-                                            {t('neighborhoodExplorer')}
+
+                                    {/* Spain link */}
+                                    <li className={isActive('/spain') ? 'active' : ''}>
+                                        <Link href={`/${currentLocale}/spain`} className="sub-menu-item">
+                                            {t('spain')}
                                         </Link>
                                     </li>
 

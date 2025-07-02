@@ -8,13 +8,25 @@
     "neighborhoodExplorer": "Neighborhood Explorer",
     "contactLink": "Contact",
     "faqLink": "FAQ",
-    "blogLink": "Blog"
+    "blogLink": "Blog",
+    "spain": "Spain"
   },
   "hero": {
     "title": "Find Your Dream Home",
     "subtitle": "Discover the perfect property that matches your lifestyle",
     "search": "Search Properties"
   },
+  "sidebar": {
+    "home": "Home",
+    "listing": "Properties",
+    "services": "Services",
+    "spain": "Spain",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contact",
+    "phoneNumber": "+420 733 781 696"
+  },
+
   "contact": {
     "title": "Contact Us",
     "name": "Name",
@@ -146,6 +158,45 @@
     "closed": "Closed",
     "reviews": "reviews",
     "distance": "distance"
+  },
+  "spainSection": {
+    "title": "Foreign Real Estate",
+    "subtitle": "Spain: Costa del Sol 🇪🇸",
+    "description": "We'll safely guide you through buying property on the Costa del Sol from A to Z – clearly, understandably and without worries.",
+    "features": {
+      "costaDelSol": {
+        "title": "Costa del Sol",
+        "description": "Sunny coast with more than 300 sunny days per year and year-round tourist season",
+        "statValue": "160+",
+        "statLabel": "satisfied clients"
+      },
+      "developmentProjects": {
+        "title": "Development Projects",
+        "description": "New residential and recreational projects under construction or recently completed",
+        "statValue": "70+",
+        "statLabel": "development projects"
+      },
+      "propertiesForSale": {
+        "title": "Properties for Sale",
+        "description": "Apartments and houses on Costa del Sol for sale, usually ready to move in immediately",
+        "statValue": "4563",
+        "statLabel": "properties"
+      }
+    },
+    "whyCostaDelSol": {
+      "title": "Why Costa del Sol?",
+      "benefits": {
+        "sunnyDays": "300+ sunny days",
+        "flightTime": "3 hours from Prague",
+        "yearRoundSeason": "Year-round season",
+        "mostDesiredLocation": "Most desired location"
+      }
+    },
+    "cta": {
+      "title": "Interested in learning more about properties in Spain?",
+      "description": "Discover the complete offer of properties on Costa del Sol, information about the purchase process and why Spain is the ideal choice for your second home.",
+      "button": "I'm interested in more"
+    }
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -288,7 +339,27 @@
     "getInTouch": {
       "title": "Have Question ? Get in touch!",
       "description": "Buying property can be overwhelming — but you don't have to do it alone. Let's chat and make it easier!",
-      "contactButton": "Contact us"
+      "contactButton": "Contact us",
+      "contactMe": "Contact me",
+      "contactDescription": "Interested in properties in Spain? Don't hesitate to contact me. I'll be happy to help you choose your dream property on the Costa del Sol.",
+      "phone": "Phone",
+      "email": "Email",
+      "office": "Office",
+      "officeLocation": "Prague, Czech Republic",
+      "writeToMe": "Write to me",
+      "nameLabel": "Name *",
+      "emailLabel": "Email *",
+      "phoneLabel": "Phone",
+      "subjectLabel": "Subject *",
+      "messageLabel": "Message *",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "phonePlaceholder": "+420 123 456 789",
+      "subjectPlaceholder": "What would you like to know about?",
+      "messagePlaceholder": "Write me your message...",
+      "sendMessage": "Send message",
+      "successMessage": "Message sent successfully!",
+      "errorMessage": "An error occurred while sending the message."
     },
     "aboutCooperation": {
       "title": "How will our cooperation work?",
@@ -568,6 +639,118 @@
       "copyButton": "Copy",
       "copied": "Copied!",
       "noLandmarks": "To generate a description, you need to first find interesting places in the area."
+    }
+  },
+  "spain": {
+    "hero": {
+      "title": "SPAIN: COSTA DEL SOL",
+      "subtitle": "I'll safely guide you through buying property on the Costa del Sol from A to Z – clearly, understandably and without worries.",
+      "cta": "Explore Offer"
+    },
+    "properties": {
+      "title": "Current Property Offerings in Spain",
+      "developerProjects": {
+        "title": "Developer Projects",
+        "description": "New projects for living and recreation under construction or just completed",
+        "cta": "Learn More"
+      },
+      "properties": {
+        "title": "Properties",
+        "description": "Apartments and houses on Costa del Sol for sale, usually ready to move in",
+        "cta": "View Offer"
+      }
+    },
+    "benefits": {
+      "sunnyDays": "more than 300 sunny days per year",
+      "flightTime": "only 3 hours flight from Prague",
+      "touristSeason": "year-round tourist season",
+      "popularLocation": "one of the most sought-after locations in the world"
+    },
+    "whyCosta": {
+      "title": "Why consider buying property on Costa del Sol?",
+      "reasons": [
+        "Year-round tourist season - year-round opportunity to generate cash flow",
+        "Opportunity to purchase a property by the sea for rental periods",
+        "Possibility to diversify real estate portfolio",
+        "Official language is Spanish, but you can communicate in English without problems",
+        "Beautiful location, safety, peace and comfortable facilities"
+      ]
+    },
+    "location": {
+      "title1": "Costa del Sol is basically paradise on earth 🌴",
+      "description1": "Sun, pleasant year-round climate, sea, mountains, great food and drink, rich culture, high-level civic amenities and services, peace and safety.",
+      "cta1": "More about location",
+      "title2": "Second home? Spain is a clear choice! 🏡",
+      "description2": "Czechs most often consider these locations when buying property abroad:",
+      "spain": "Spain",
+      "croatia": "Croatia",
+      "italy": "Italy",
+      "bali": "Bali",
+      "source": "Data comes from an Ipsos survey conducted for Broker Consulting in May 2024, focusing on the attractiveness of domestic and foreign properties."
+    },
+    "stats": {
+      "developerProjects": "developer projects",
+      "properties": "properties",
+      "satisfiedClients": "satisfied clients"
+    },
+    "whyUs": {
+      "badge": "Why choose",
+      "title": "Costa del Sol 🌊",
+      "subtitle": "We have rich experience in the Spanish real estate market, specifically on the Costa del Sol. We work exclusively with local developers with years of practice.",
+      "whyMe": "Why with me 💼",
+      "verifiedQuality": {
+        "title": "Verified Quality",
+        "description": "We work only with verified developers and real estate agencies with years of practice on the Costa del Sol."
+      },
+      "localKnowledge": {
+        "title": "Local Knowledge",
+        "description": "We have detailed knowledge of all locations, market prices and legal aspects of buying property in Spain."
+      },
+      "completeService": {
+        "title": "Complete Service",
+        "description": "From property selection to key handover - I'll take care of everything you need."
+      },
+      "turnover": "Our turnover for 2023 was 2.9 billion CZK",
+      "clients": "We have already helped more than 700,000 clients with finances and properties",
+      "established": "We are a Czech company that has had its place in the market since 1998",
+      "locations": "We have over 100 business locations across the Czech Republic"
+    },
+    "process": {
+      "title": "How will the entire process work?",
+      "steps": [
+        {
+          "title": "I'll arrange all real estate services",
+          "description": "I'll help with property selection and arrange viewings."
+        },
+        {
+          "title": "I'll accompany you everywhere",
+          "description": "I'll pick you up at the airport, introduce you to locations and interesting places in the area, and show you selected real estate projects."
+        },
+        {
+          "title": "I'll arrange interpretation and translations",
+          "description": "I provide all services in Czech. I want all information to be accessible and clear for you."
+        },
+        {
+          "title": "I'll handle administrative and legal matters",
+          "description": "I'll mediate local lawyer services, arrange necessary registrations for you, ensure Spanish tax number (NIE) processing and insurance for your property."
+        },
+        {
+          "title": "I'll help secure financing",
+          "description": "Financing the purchase of Spanish property is possible with a mortgage even for Czech citizens, or it's possible to obtain a mortgage loan in the Czech Republic as well (e.g., American mortgage)."
+        },
+        {
+          "title": "I'll hand you the keys to your new home",
+          "description": "Your story is also mine. I stand by you throughout the entire process of buying your dream property by the sea."
+        }
+      ]
+    },
+    "instagram": {
+      "title": "Follow news on Instagram",
+      "description": "Join us and let yourself be captivated by the atmosphere of sunny Spain! We share tips and everything about the location, local cuisine and customs that will make you fall in love with the Spanish lifestyle.",
+      "cta": "Start Following"
+    },
+    "video": {
+      "description": "Dream of living in Spain can become reality! Let yourself be enchanted by the beauties of Costa del Sol. ✨"
     }
   }
 }

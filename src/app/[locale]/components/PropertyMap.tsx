@@ -6,6 +6,7 @@ interface PropertyMapProps {
   latitude: number;
   longitude: number;
   onLandmarksLoaded?: (landmarks: { [key: string]: Landmark[] }) => void;
+  enablePlacesSearch?: boolean;
 }
 
 interface Landmark {
@@ -189,7 +190,7 @@ const createCustomIcon = (categoryKey: string) => {
   };
 };
 
-const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMapProps) => {
+const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded, enablePlacesSearch = false }: PropertyMapProps) => {
   const [mapLoaded, setMapLoaded] = useState(false);
   const [landmarks, setLandmarks] = useState<{ [key: string]: Landmark[] }>({});
   const [selectedLandmark, setSelectedLandmark] = useState<Landmark | null>(null);
@@ -204,9 +205,10 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMa
       return;
     }
 
-    // Load Google Maps script
+    // Load Google Maps script (without places library if not needed)
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`;
+    const libraries = enablePlacesSearch ? 'places' : '';
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}${libraries ? `&libraries=${libraries}` : ''}`;
     script.async = true;
     script.defer = true;
     script.onload = () => setMapLoaded(true);
@@ -215,7 +217,7 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMa
     return () => {
       setMapLoaded(false);
     };
-  }, []);
+  }, [enablePlacesSearch]);
 
   const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
     const R = 6371; // Earth's radius in kilometers
@@ -265,8 +267,10 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMa
       // Add property marker to markers ref
       markersRef.current['property'] = [propertyMarker];
 
-      // Start searching for landmarks
-      searchLandmarks();
+      // Start searching for landmarks only if enabled
+      if (enablePlacesSearch) {
+        searchLandmarks();
+      }
     } catch (error) {
       console.error('Error initializing map:', error);
     }
@@ -474,57 +478,59 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded }: PropertyMa
         )}
       </div>
 
-      {/* Landmarks List */}
-      <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-4 text-green-600 flex items-center">
-          <FiMapPin className="mr-2" />
-          Zajímavá místa v okolí
-        </h3>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {landmarkCategories.map((category) => {
-            const categoryLandmarks = landmarks[category.key] || [];
-            
-            return (
-              <div key={category.key} className="border border-gray-200 dark:border-slate-700 rounded-lg p-4">
-                <div className="flex items-center mb-3">
-                  <span className="text-2xl mr-2">{category.icon}</span>
-                  <h4 className="font-medium text-gray-900 dark:text-white">{category.label}</h4>
-                </div>
-                
-                <div className="space-y-2">
-                  {categoryLandmarks.length > 0 ? (
-                    categoryLandmarks.map((landmark) => (
-                      <div
-                        key={landmark.id}
-                        className="p-2 hover:bg-gray-50 dark:hover:bg-slate-700 rounded cursor-pointer transition-colors duration-200"
-                        onClick={() => handleLandmarkClick(landmark)}
-                      >
-                        <div className="font-medium text-sm text-gray-900 dark:text-white">
-                          {landmark.name}
+      {/* Landmarks List - Only show if places search is enabled */}
+      {enablePlacesSearch && (
+        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-6">
+          <h3 className="text-xl font-semibold mb-4 text-green-600 flex items-center">
+            <FiMapPin className="mr-2" />
+            Zajímavá místa v okolí
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {landmarkCategories.map((category) => {
+              const categoryLandmarks = landmarks[category.key] || [];
+              
+              return (
+                <div key={category.key} className="border border-gray-200 dark:border-slate-700 rounded-lg p-4">
+                  <div className="flex items-center mb-3">
+                    <span className="text-2xl mr-2">{category.icon}</span>
+                    <h4 className="font-medium text-gray-900 dark:text-white">{category.label}</h4>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    {categoryLandmarks.length > 0 ? (
+                      categoryLandmarks.map((landmark) => (
+                        <div
+                          key={landmark.id}
+                          className="p-2 hover:bg-gray-50 dark:hover:bg-slate-700 rounded cursor-pointer transition-colors duration-200"
+                          onClick={() => handleLandmarkClick(landmark)}
+                        >
+                          <div className="font-medium text-sm text-gray-900 dark:text-white">
+                            {landmark.name}
+                          </div>
+                          <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mt-1">
+                            <span>{landmark.distance.toFixed(1)} km</span>
+                            {landmark.rating && (
+                              <div className="flex items-center">
+                                <FiStar className="text-yellow-400 w-3 h-3 mr-1" />
+                                <span>{landmark.rating}</span>
+                              </div>
+                            )}
+                          </div>
                         </div>
-                        <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mt-1">
-                          <span>{landmark.distance.toFixed(1)} km</span>
-                          {landmark.rating && (
-                            <div className="flex items-center">
-                              <FiStar className="text-yellow-400 w-3 h-3 mr-1" />
-                              <span>{landmark.rating}</span>
-                            </div>
-                          )}
-                        </div>
+                      ))
+                    ) : (
+                      <div className="text-sm text-gray-400 dark:text-gray-500 italic">
+                        Žádné místo nenalezeno
                       </div>
-                    ))
-                  ) : (
-                    <div className="text-sm text-gray-400 dark:text-gray-500 italic">
-                      Žádné místo nenalezeno
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 });

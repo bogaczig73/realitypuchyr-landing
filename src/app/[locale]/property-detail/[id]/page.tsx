@@ -561,7 +561,11 @@ export default function PropertyDetail() {
           
               <div className="w-full leading-[0] border-0 mt-6">
                 {property.latitude && property.longitude ? (
-                  <PropertyMap latitude={property.latitude} longitude={property.longitude} />
+                  <PropertyMap 
+                    latitude={property.latitude} 
+                    longitude={property.longitude} 
+                    enablePlacesSearch={false}
+                  />
                 ) : (
                   <div className="w-full h-[500px] bg-gray-100 flex items-center justify-center rounded-md">
                     <span className="text-gray-500">{t('noLocationAvailable')}</span>

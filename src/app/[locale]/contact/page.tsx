@@ -78,6 +78,7 @@ export default function Page() {
                             longitude={14.434238320049817} 
                             height="500px"
                             showPlaces={false}
+                            enablePlacesSearch={false}
                         />
                     </div>
                 </div>

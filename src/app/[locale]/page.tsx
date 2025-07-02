@@ -19,6 +19,7 @@ import AboutOurCooperation from './components/about-our-cooperation'
 import AboutMe from './components/about-me'
 import BlogSection from './components/blog-section'
 import InstagramEmbed from './components/instagram-embed'
+import SpainSection from './components/spain-section'
 
 export default function Page() {
   return (
@@ -33,6 +34,8 @@ export default function Page() {
 
      {/* <CategoriesSection /> */}
      <Property/>
+
+     <SpainSection/>
 
      <ClientTwo/>
 

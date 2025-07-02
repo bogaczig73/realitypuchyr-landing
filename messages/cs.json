@@ -8,7 +8,8 @@
     "neighborhoodExplorer": "Průzkumník okolí",
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
-    "blogLink": "Blog"
+    "blogLink": "Blog",
+    "spain": "Španělsko"
   },
   "list": {
     "title": "Seznam nemovitostí",
@@ -156,6 +157,16 @@
     },
     "readMore": "Číst více"
   },
+  "sidebar": {
+    "home": "Domů",
+    "listing": "Nemovitosti",
+    "services": "Služby",
+    "spain": "Španělsko",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "phoneNumber": "+420 733 781 696"
+  },
   "hero": {
     "title": "Najděte si svůj vysněný domov",
     "subtitle": "Objevte nemovitost, která odpovídá vašemu životnímu stylu",
@@ -291,6 +302,45 @@
     "closed": "Zavřeno",
     "reviews": "hodnocení",
     "distance": "vzdálenost"
+  },
+  "spainSection": {
+    "title": "Zahraniční nemovitosti",
+    "subtitle": "Španělsko: Costa del Sol 🇪🇸",
+    "description": "Bezpečně vás provedeme koupí nemovitosti na Costa del Sol od A do Z – jasně, srozumitelně a bez starostí.",
+    "features": {
+      "costaDelSol": {
+        "title": "Costa del Sol",
+        "description": "Slunné pobřeží s více než 300 slunečnými dny v roce a celoroční turistickou sezónou",
+        "statValue": "160+",
+        "statLabel": "spokojených klientů"
+      },
+      "developmentProjects": {
+        "title": "Developerské projekty",
+        "description": "Nové projekty k bydlení i pro rekreaci ve výstavbě nebo těsně po dokončení",
+        "statValue": "70+",
+        "statLabel": "developerských projektů"
+      },
+      "propertiesForSale": {
+        "title": "Nemovitosti k prodeji",
+        "description": "Byty a domy na Costa del Sol k prodeji, obvykle ihned k nastěhování",
+        "statValue": "4563",
+        "statLabel": "nemovitostí"
+      }
+    },
+    "whyCostaDelSol": {
+      "title": "Proč Costa del Sol?",
+      "benefits": {
+        "sunnyDays": "300+ slunečných dní",
+        "flightTime": "3 hodiny z Prahy",
+        "yearRoundSeason": "Celoroční sezóna",
+        "mostDesiredLocation": "Nejžádanější lokalita"
+      }
+    },
+    "cta": {
+      "title": "Zajímá vás více o nemovitostech ve Španělsku?",
+      "description": "Objevte kompletní nabídku nemovitostí na Costa del Sol, informace o procesu nákupu a proč je Španělsko ideální volbou pro váš druhý domov.",
+      "button": "Zajímá mě více"
+    }
   },
   "faq": {
     "title": "Často kladené otázky",
@@ -433,7 +483,27 @@
     "getInTouch": {
       "title": "Máte otázku? Kontaktujte mě!",
       "description": "Koupě nemovitosti může být náročná — ale nemusíte to dělat sami. Pojďme si popovídat a udělat to jednodušší!",
-      "contactButton": "Kontaktujte mě"
+      "contactButton": "Kontaktujte mě",
+      "contactMe": "Kontaktujte mě",
+      "contactDescription": "Máte zájem o nemovitosti ve Španělsku? Neváhejte mě kontaktovat. Rád vám pomůžu s výběrem vaší vysněné nemovitosti na Costa del Sol.",
+      "phone": "Telefon",
+      "email": "Email",
+      "office": "Kancelář",
+      "officeLocation": "Praha, Česká republika",
+      "writeToMe": "Napište mi",
+      "nameLabel": "Jméno *",
+      "emailLabel": "Email *",
+      "phoneLabel": "Telefon",
+      "subjectLabel": "Předmět *",
+      "messageLabel": "Zpráva *",
+      "namePlaceholder": "Vaše jméno",
+      "emailPlaceholder": "vas@email.cz",
+      "phonePlaceholder": "+420 123 456 789",
+      "subjectPlaceholder": "O čem se chcete informovat?",
+      "messagePlaceholder": "Napište mi vaši zprávu...",
+      "sendMessage": "Odeslat zprávu",
+      "successMessage": "Zpráva byla úspěšně odeslána!",
+      "errorMessage": "Došlo k chybě při odesílání zprávy."
     },
     "aboutCooperation": {
       "title": "Jak bude naše spolupráce probíhat?",
@@ -658,6 +728,118 @@
       "copyButton": "Kopírovat",
       "copied": "Zkopírováno!",
       "noLandmarks": "Pro vygenerování popisu je potřeba nejprve najít zajímavá místa v okolí."
+    }
+  },
+  "spain": {
+    "hero": {
+      "title": "ŠPANĚLSKO: COSTA DEL SOL",
+      "subtitle": "Bezpečně vás provedu koupí nemovitosti na Costa del Sol od A do Z – jasně, srozumitelně a bez starostí.",
+      "cta": "Prozkoumat nabídku"
+    },
+    "properties": {
+      "title": "Aktuální nabídka nemovitostí ve Španělsku",
+      "developerProjects": {
+        "title": "Developerské projekty",
+        "description": "Nové projekty k bydlení i pro rekreaci ve výstavbě nebo těsně po dokončení",
+        "cta": "Zjistit více"
+      },
+      "properties": {
+        "title": "Nemovitosti",
+        "description": "Byty a domy na Costa del Sol k prodeji, obvykle ihned k nastěhování",
+        "cta": "Zobrazit nabídku"
+      }
+    },
+    "benefits": {
+      "sunnyDays": "více než 300 slunečných dní v roce",
+      "flightTime": "jen 3 hodiny letu z Prahy",
+      "touristSeason": "celoroční turistická sezóna",
+      "popularLocation": "jedna z nejžádanějších lokalit na světě"
+    },
+    "whyCosta": {
+      "title": "Proč uvažovat o koupi nemovitosti na Costa del Sol?",
+      "reasons": [
+        "Celoroční turistická sezóna - celoroční možnost generování cash-flow",
+        "Příležitost pořídit si na období renty nemovitost u moře",
+        "Možnost diverzifikace realitního portfolia",
+        "Úřední jazyk je španělština, ale bez problémů se domluvíte anglicky",
+        "Krásná lokalita, bezpečí, klid a komfortní zázemí"
+      ]
+    },
+    "location": {
+      "title1": "Costa del Sol je v podstatě rájem na zemi 🌴",
+      "description1": "Slunce, příjemné celoroční klima, moře, hory, skvělé jídlo i pití, bohatá kultura, občanská vybavenost a služby na vysoké úrovni, klid a bezpečí.",
+      "cta1": "Více o lokalitě",
+      "title2": "Druhý domov? Španělsko je jasná volba! 🏡",
+      "description2": "Češi při koupi nemovitosti v zahraničí uvažují nejčastěji o těchto lokalitách:",
+      "spain": "Španělsko",
+      "croatia": "Chorvatsko",
+      "italy": "Itálie",
+      "bali": "Bali",
+      "source": "Údaje vycházejí z průzkumu Ipsos, který byl realizován pro Broker Consulting v květnu 2024 a zaměřil se na atraktivnost tuzemských a zahraničních nemovitostí."
+    },
+    "stats": {
+      "developerProjects": "developerských projektů",
+      "properties": "nemovitostí",
+      "satisfiedClients": "spokojených klientů"
+    },
+    "whyUs": {
+      "badge": "Proč si vybrat",
+      "title": "Costa del Sol 🌊",
+      "subtitle": "Na španělském realitním trhu, speciálně na Costa del Sol, máme bohaté zkušenosti. Spolupracujeme výhradně s místními developery s dlouholetou praxí.",
+      "whyMe": "Proč se mnou 💼",
+      "verifiedQuality": {
+        "title": "Ověřená kvalita",
+        "description": "Spolupracujeme pouze s prověřenými developery a realitními kancelářemi s dlouholetou praxí na Costa del Sol."
+      },
+      "localKnowledge": {
+        "title": "Lokální znalosti",
+        "description": "Máme detailní znalosti všech lokalit, tržních cen a právních aspektů nákupu nemovitostí ve Španělsku."
+      },
+      "completeService": {
+        "title": "Kompletní servis",
+        "description": "Od výběru nemovitosti až po předání klíčů - postarám se o vše, co potřebujete."
+      },
+      "turnover": "Náš obrat za rok 2023 činil 2,9 mld. Kč",
+      "clients": "Už více než 700 000 klientům jsme pomohli s financemi a nemovitostmi",
+      "established": "Jsme česká společnost, která má své místo na trhu již od roku 1998",
+      "locations": "Na území ČR máme přes 100 obchodních míst"
+    },
+    "process": {
+      "title": "Jak bude celý proces probíhat?",
+      "steps": [
+        {
+          "title": "Zajistím veškeré realitní služby",
+          "description": "Pomůžu s výběrem nemovitosti a domluvíme prohlídky."
+        },
+        {
+          "title": "Všude vás doprovodím",
+          "description": "Vyzvednu vás na letišti, seznámím s lokalitami i zajímavými místy v okolí a ukážu vám vybrané realitní projekty."
+        },
+        {
+          "title": "Zajistím tlumočení a překlady",
+          "description": "Veškeré služby poskytuji v českém jazyce. Chci, aby pro vás byly všechny informace dostupné a jasné."
+        },
+        {
+          "title": "Vyřídím administrativní a právní záležitosti",
+          "description": "Zprostředkuji služby místního advokáta, vyřídím za vás potřebné registrace, zajistím vyřízení španělského daňového čísla (NIE) i pojištění vaší nemovitosti."
+        },
+        {
+          "title": "Pomůžu se zajištěním financování",
+          "description": "Financování nákupu španělské nemovitosti je možné hypotékou i pro české občany, případně je možné získat hypoteční úvěr i v České republice (např. americká hypotéka)."
+        },
+        {
+          "title": "Předám vám klíče k novému domovu",
+          "description": "Váš příběh je i mým. Stojím při vás během celého procesu koupě vaší vysněné nemovitosti u moře."
+        }
+      ]
+    },
+    "instagram": {
+      "title": "Sledujte novinky na Instagramu",
+      "description": "Připojte se k nám a nechte se pohltit atmosférou slunného Španělska! Sdílíme tipy a vše o lokalitě i místní kuchyni či zvyklostech, díky kterým si španělský životní styl zamilujete.",
+      "cta": "Začít sledovat"
+    },
+    "video": {
+      "description": "Sen o bydlení ve Španělsku může být realitou! Nechte se okouzlit krásami Costa del Sol. ✨"
     }
   }
 } 

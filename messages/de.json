@@ -8,8 +8,19 @@
     "neighborhoodExplorer": "Nachbarschafts-Explorer",
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
-    "blogLink": "Blog"
+    "blogLink": "Blog",
+    "spain": "Spanien"
   },
+    "sidebar": {
+      "home": "Startseite",
+      "listing": "Immobilien",
+      "services": "Dienstleistungen",
+      "spain": "Spanien",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "contact": "Kontakt",
+      "phoneNumber": "+420 733 781 696"
+    },
   "hero": {
     "title": "Finden Sie Ihr Traumhaus",
     "subtitle": "Entdecken Sie die perfekte Immobilie, die zu Ihrem Lebensstil passt",
@@ -145,6 +156,45 @@
     "closed": "Geschlossen",
     "reviews": "Bewertungen",
     "distance": "Entfernung"
+  },
+  "spainSection": {
+    "title": "Ausländische Immobilien",
+    "subtitle": "Spanien: Costa del Sol 🇪🇸",
+    "description": "Wir führen Sie sicher durch den Kauf von Immobilien an der Costa del Sol von A bis Z – klar, verständlich und ohne Sorgen.",
+    "features": {
+      "costaDelSol": {
+        "title": "Costa del Sol",
+        "description": "Sonnige Küste mit mehr als 300 Sonnentagen pro Jahr und ganzjähriger Touristensaison",
+        "statValue": "160+",
+        "statLabel": "zufriedene Kunden"
+      },
+      "developmentProjects": {
+        "title": "Entwicklungsprojekte",
+        "description": "Neue Wohn- und Freizeitprojekte im Bau oder kürzlich fertiggestellt",
+        "statValue": "70+",
+        "statLabel": "Entwicklungsprojekte"
+      },
+      "propertiesForSale": {
+        "title": "Immobilien zum Verkauf",
+        "description": "Wohnungen und Häuser an der Costa del Sol zum Verkauf, meist sofort bezugsfertig",
+        "statValue": "4563",
+        "statLabel": "Immobilien"
+      }
+    },
+    "whyCostaDelSol": {
+      "title": "Warum Costa del Sol?",
+      "benefits": {
+        "sunnyDays": "300+ Sonnentage",
+        "flightTime": "3 Stunden von Prag",
+        "yearRoundSeason": "Ganzjährige Saison",
+        "mostDesiredLocation": "Gefragteste Lage"
+      }
+    },
+    "cta": {
+      "title": "Interessiert an mehr über Immobilien in Spanien?",
+      "description": "Entdecken Sie das komplette Angebot an Immobilien an der Costa del Sol, Informationen über den Kaufprozess und warum Spanien die ideale Wahl für Ihr zweites Zuhause ist.",
+      "button": "Ich interessiere mich für mehr"
+    }
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
@@ -287,7 +337,27 @@
     "getInTouch": {
       "title": "Haben Sie eine Frage? Kontaktieren Sie uns!",
       "description": "Der Kauf einer Immobilie kann überwältigend sein — aber Sie müssen es nicht alleine machen. Lassen Sie uns sprechen und es einfacher machen!",
-      "contactButton": "Kontaktieren Sie uns"
+      "contactButton": "Kontaktieren Sie uns",
+      "contactMe": "Kontaktieren Sie mich",
+      "contactDescription": "Interessieren Sie sich für Immobilien in Spanien? Zögern Sie nicht, mich zu kontaktieren. Ich helfe Ihnen gerne bei der Auswahl Ihrer Traumimmobilie an der Costa del Sol.",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "office": "Büro",
+      "officeLocation": "Prag, Tschechische Republik",
+      "writeToMe": "Schreiben Sie mir",
+      "nameLabel": "Name *",
+      "emailLabel": "E-Mail *",
+      "phoneLabel": "Telefon",
+      "subjectLabel": "Betreff *",
+      "messageLabel": "Nachricht *",
+      "namePlaceholder": "Ihr Name",
+      "emailPlaceholder": "ihre@email.de",
+      "phonePlaceholder": "+420 123 456 789",
+      "subjectPlaceholder": "Worüber möchten Sie sich informieren?",
+      "messagePlaceholder": "Schreiben Sie mir Ihre Nachricht...",
+      "sendMessage": "Nachricht senden",
+      "successMessage": "Nachricht erfolgreich gesendet!",
+      "errorMessage": "Beim Senden der Nachricht ist ein Fehler aufgetreten."
     },
     "aboutCooperation": {
       "title": "Wie wird unsere Zusammenarbeit ablaufen?",
@@ -567,6 +637,118 @@
       "copyButton": "Kopieren",
       "copied": "Kopiert!",
       "noLandmarks": "Um eine Beschreibung zu generieren, müssen Sie zuerst interessante Orte in der Gegend finden."
+    }
+  },
+  "spain": {
+    "hero": {
+      "title": "SPANIEN: COSTA DEL SOL",
+      "subtitle": "Ich führe Sie sicher durch den Kauf einer Immobilie an der Costa del Sol von A bis Z – klar, verständlich und sorgenfrei.",
+      "cta": "Angebot erkunden"
+    },
+    "properties": {
+      "title": "Aktuelle Immobilienangebote in Spanien",
+      "developerProjects": {
+        "title": "Entwicklerprojekte",
+        "description": "Neue Projekte zum Wohnen und zur Erholung im Bau oder kurz nach Fertigstellung",
+        "cta": "Mehr erfahren"
+      },
+      "properties": {
+        "title": "Immobilien",
+        "description": "Wohnungen und Häuser an der Costa del Sol zum Verkauf, meist sofort bezugsfertig",
+        "cta": "Angebot anzeigen"
+      }
+    },
+    "benefits": {
+      "sunnyDays": "mehr als 300 sonnige Tage im Jahr",
+      "flightTime": "nur 3 Stunden Flug von Prag",
+      "touristSeason": "ganzjährige Touristensaison",
+      "popularLocation": "einer der begehrtesten Standorte der Welt"
+    },
+    "whyCosta": {
+      "title": "Warum den Kauf einer Immobilie an der Costa del Sol in Betracht ziehen?",
+      "reasons": [
+        "Ganzjährige Touristensaison - ganzjährige Möglichkeit zur Cashflow-Generierung",
+        "Möglichkeit, eine Immobilie am Meer für Mietperioden zu erwerben",
+        "Möglichkeit zur Diversifizierung des Immobilienportfolios",
+        "Amtssprache ist Spanisch, aber Sie können problemlos auf Englisch kommunizieren",
+        "Schöne Lage, Sicherheit, Ruhe und komfortable Einrichtungen"
+      ]
+    },
+    "location": {
+      "title1": "Costa del Sol ist im Grunde das Paradies auf Erden 🌴",
+      "description1": "Sonne, angenehmes ganzjähriges Klima, Meer, Berge, großartiges Essen und Trinken, reiche Kultur, hochwertige öffentliche Einrichtungen und Dienstleistungen, Ruhe und Sicherheit.",
+      "cta1": "Mehr über den Standort",
+      "title2": "Zweites Zuhause? Spanien ist eine klare Wahl! 🏡",
+      "description2": "Tschechen erwägen beim Kauf von Immobilien im Ausland am häufigsten diese Standorte:",
+      "spain": "Spanien",
+      "croatia": "Kroatien",
+      "italy": "Italien",
+      "bali": "Bali",
+      "source": "Daten stammen aus einer Ipsos-Umfrage, die im Mai 2024 für Broker Consulting durchgeführt wurde und sich auf die Attraktivität in- und ausländischer Immobilien konzentrierte."
+    },
+    "stats": {
+      "developerProjects": "Entwicklerprojekte",
+      "properties": "Immobilien",
+      "satisfiedClients": "zufriedene Kunden"
+    },
+    "whyUs": {
+      "badge": "Warum wählen",
+      "title": "Costa del Sol 🌊",
+      "subtitle": "Wir haben reiche Erfahrung im spanischen Immobilienmarkt, insbesondere an der Costa del Sol. Wir arbeiten ausschließlich mit lokalen Entwicklern mit langjähriger Praxis.",
+      "whyMe": "Warum mit mir 💼",
+      "verifiedQuality": {
+        "title": "Verifizierte Qualität",
+        "description": "Wir arbeiten nur mit verifizierten Entwicklern und Immobilienagenturen mit langjähriger Praxis an der Costa del Sol."
+      },
+      "localKnowledge": {
+        "title": "Lokales Wissen",
+        "description": "Wir haben detaillierte Kenntnisse aller Standorte, Marktpreise und rechtlicher Aspekte des Immobilienkaufs in Spanien."
+      },
+      "completeService": {
+        "title": "Komplettservice",
+        "description": "Von der Immobilienauswahl bis zur Schlüsselübergabe - ich kümmere mich um alles, was Sie brauchen."
+      },
+      "turnover": "Unser Umsatz für 2023 betrug 2,9 Mrd. CZK",
+      "clients": "Wir haben bereits mehr als 700.000 Kunden bei Finanzen und Immobilien geholfen",
+      "established": "Wir sind ein tschechisches Unternehmen, das seit 1998 seinen Platz im Markt hat",
+      "locations": "Wir haben über 100 Geschäftsstandorte in der Tschechischen Republik"
+    },
+    "process": {
+      "title": "Wie wird der gesamte Prozess ablaufen?",
+      "steps": [
+        {
+          "title": "Ich organisiere alle Immobiliendienstleistungen",
+          "description": "Ich helfe bei der Immobilienauswahl und organisiere Besichtigungen."
+        },
+        {
+          "title": "Ich begleite Sie überall hin",
+          "description": "Ich hole Sie vom Flughafen ab, stelle Ihnen Standorte und interessante Orte in der Gegend vor und zeige Ihnen ausgewählte Immobilienprojekte."
+        },
+        {
+          "title": "Ich organisiere Dolmetschen und Übersetzungen",
+          "description": "Ich biete alle Dienstleistungen auf Tschechisch an. Ich möchte, dass alle Informationen für Sie zugänglich und klar sind."
+        },
+        {
+          "title": "Ich kümmere mich um administrative und rechtliche Angelegenheiten",
+          "description": "Ich vermittle lokale Anwaltsdienstleistungen, organisiere notwendige Registrierungen für Sie, stelle sicher, dass die spanische Steuernummer (NIE) bearbeitet wird und Versicherung für Ihre Immobilie."
+        },
+        {
+          "title": "Ich helfe bei der Finanzierungssicherung",
+          "description": "Die Finanzierung des Kaufs spanischer Immobilien ist auch für tschechische Staatsbürger mit einer Hypothek möglich, oder es ist möglich, einen Hypothekarkredit auch in der Tschechischen Republik zu erhalten (z.B. amerikanische Hypothek)."
+        },
+        {
+          "title": "Ich übergebe Ihnen die Schlüssel zu Ihrem neuen Zuhause",
+          "description": "Ihre Geschichte ist auch meine. Ich stehe an Ihrer Seite während des gesamten Prozesses des Kaufs Ihrer Traumimmobilie am Meer."
+        }
+      ]
+    },
+    "instagram": {
+      "title": "Folgen Sie den Neuigkeiten auf Instagram",
+      "description": "Schließen Sie sich uns an und lassen Sie sich von der Atmosphäre des sonnigen Spaniens verzaubern! Wir teilen Tipps und alles über den Standort, die lokale Küche und Bräuche, die Sie in den spanischen Lebensstil verlieben werden.",
+      "cta": "Anfangen zu folgen"
+    },
+    "video": {
+      "description": "Der Traum vom Leben in Spanien kann Realität werden! Lassen Sie sich von den Schönheiten der Costa del Sol verzaubern. ✨"
     }
   }
 } 

@@ -60,7 +60,7 @@ export default function ClientTwo() {
                 '(min-width: 768px)': { slidesToScroll: 3 }
             }
         },
-        [Autoplay({ delay: 3000, stopOnInteraction: false })]
+        [Autoplay({ delay: 5000, stopOnInteraction: false })]
     );
 
     const onSelect = useCallback(() => {

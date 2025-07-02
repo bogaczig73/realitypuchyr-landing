@@ -7,13 +7,15 @@ interface GoogleMapProps {
   longitude: number;
   height?: string;
   showPlaces?: boolean;
+  enablePlacesSearch?: boolean;
 }
 
 const GoogleMap: React.FC<GoogleMapProps> = ({ 
   latitude, 
   longitude, 
   height = '500px',
-  showPlaces = false 
+  showPlaces = false,
+  enablePlacesSearch = false
 }) => {
   const [mapLoaded, setMapLoaded] = useState(false);
   const [places, setPlaces] = useState<any[]>([]);
@@ -61,7 +63,7 @@ const GoogleMap: React.FC<GoogleMapProps> = ({
         title: 'Location',
       });
 
-      if (showPlaces) {
+      if (showPlaces && enablePlacesSearch) {
         nearbySearch();
       }
     } catch (error) {
@@ -143,7 +145,7 @@ const GoogleMap: React.FC<GoogleMapProps> = ({
     <div className="relative">
       <div id="map" className={`w-full rounded-md`} style={{ height }} />
       
-      {showPlaces && (
+      {showPlaces && enablePlacesSearch && (
         <>
           {/* Places List */}
           <div className="absolute top-4 right-4 bg-white dark:bg-slate-800 rounded-md shadow-lg p-4 max-h-[calc(100%-2rem)] overflow-y-auto w-72 z-10">

@@ -171,7 +171,11 @@ export default function NeighborhoodExplorer() {
             {/* Map and Landmarks */}
             {coordinates && (
               <div className="mt-8">
-                <PropertyMap latitude={coordinates.lat} longitude={coordinates.lng} />
+                <PropertyMap 
+                  latitude={coordinates.lat} 
+                  longitude={coordinates.lng} 
+                  enablePlacesSearch={false}
+                />
               </div>
             )}
 

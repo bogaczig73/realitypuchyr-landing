@@ -318,6 +318,7 @@ export default function NeighborhoodExplorer() {
                   latitude={coordinates.lat} 
                   longitude={coordinates.lng} 
                   onLandmarksLoaded={handleLandmarksLoaded}
+                  enablePlacesSearch={false}
                 />
                 
                 {/* Property Description Generator */}
