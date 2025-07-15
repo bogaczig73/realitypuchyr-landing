@@ -88,13 +88,6 @@ export default function Property({
                                         const mainImage = item.images.find(img => img.isMain);
                                         const fallbackImage = item.images[0];
                                         const finalImage = mainImage || fallbackImage;
-                                        console.log('Property Card Image:', {
-                                            propertyId: item.id,
-                                            propertyName: item.name,
-                                            mainImage: mainImage?.url,
-                                            fallbackImage: fallbackImage?.url,
-                                            finalImage: finalImage?.url
-                                        });
                                         return (
                                             <Image 
                                                 src={finalImage?.url || '/images/property/placeholder.webp'} 
