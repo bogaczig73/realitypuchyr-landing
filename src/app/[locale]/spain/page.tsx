@@ -223,7 +223,7 @@ export default function Spain() {
                             <p className="text-lg mb-8">
                                 {t('location.description1')}
                             </p>
-                            <Link href="/location" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md">
+                            <Link href="https://zahranicni.realityspolu.cz/lokalita/" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md">
                                 {t('location.cta1')}
                             </Link>
                         </div>
@@ -336,14 +336,14 @@ export default function Spain() {
                                 <div className="text-center mb-4">
                                     <span className="text-4xl">💰</span>
                                 </div>
-                                <h4 className="text-3xl font-bold text-green-600 mb-3 text-center">2,9+ mld.</h4>
+                                <h4 className="text-3xl font-bold text-green-600 mb-3 text-center">4+ mld.</h4>
                                 <p className="text-slate-600 text-center leading-relaxed">{t('whyUs.turnover')}</p>
                             </div>
                             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                                 <div className="text-center mb-4">
                                     <span className="text-4xl">👥</span>
                                 </div>
-                                <h4 className="text-3xl font-bold text-green-600 mb-3 text-center">700+ tis.</h4>
+                                <h4 className="text-3xl font-bold text-green-600 mb-3 text-center">800 000+</h4>
                                 <p className="text-slate-600 text-center leading-relaxed">{t('whyUs.clients')}</p>
                             </div>
                             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">

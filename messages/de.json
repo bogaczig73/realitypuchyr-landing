@@ -155,7 +155,8 @@
     "open": "Geöffnet",
     "closed": "Geschlossen",
     "reviews": "Bewertungen",
-    "distance": "Entfernung"
+    "distance": "Entfernung",
+    "contactForInfo": "Informationen auf Anfrage"
   },
   "spainSection": {
     "title": "Ausländische Immobilien",
@@ -271,14 +272,14 @@
   "homeBanner": {
     "title": "Seien Sie sicher, dass alles gut wird!",
     "learnMore": "Mehr erfahren",
-    "quote": "Mit über 5 Jahren Erfahrung im Prager Immobilienmarkt baue ich erfolgreiche Partnerschaften durch Ehrlichkeit, Gewissenhaftigkeit und gegenseitiges Vertrauen zwischen Käufern und Verkäufern auf.",
+    "quote": "Mit über 5 Jahren Erfahrung im Prager und Mittelböhmischen Immobilienmarkt baue ich erfolgreiche Partnerschaften durch Ehrlichkeit, Gewissenhaftigkeit und gegenseitiges Vertrauen zwischen Käufern und Verkäufern auf.",
     "author": "Pavel Puchýř"
   },
   "components": {
     "homeBanner": {
       "title": "Seien Sie sicher, dass alles gut wird!",
       "learnMore": "Mehr erfahren",
-      "quote": "Mit über 5 Jahren Erfahrung im Prager Immobilienmarkt baue ich erfolgreiche Partnerschaften durch Ehrlichkeit, Gewissenhaftigkeit und gegenseitiges Vertrauen zwischen Käufern und Verkäufern auf.",
+      "quote": "Mit über 5 Jahren Erfahrung im Prager und Mittelböhmischen Immobilienmarkt baue ich erfolgreiche Partnerschaften durch Ehrlichkeit, Gewissenhaftigkeit und gegenseitiges Vertrauen zwischen Käufern und Verkäufern auf.",
       "author": "Pavel Puchýř"
     },
     "footer": {
@@ -314,7 +315,8 @@
       "yourName": "Ihr Name",
       "yourEmail": "Ihre E-Mail",
       "yourQuestion": "Ihre Frage",
-      "yourComment": "Ihr Kommentar"
+      "yourComment": "Ihr Kommentar",
+      "contactForInfo": "Kontaktieren Sie mich für Informationen"
     },
     "property": {
       "featuredProperties": "Ausgewählte Immobilien",
@@ -332,7 +334,8 @@
       "bookNow": "Jetzt buchen",
       "offerNow": "Jetzt anbieten",
       "haveQuestion": "Haben Sie eine Frage? Kontaktieren Sie uns!",
-      "contactUs": "Kontaktieren Sie uns"
+      "contactUs": "Kontaktieren Sie uns",
+      "contactForInfo": "Informationen auf Anfrage"
     },
     "getInTouch": {
       "title": "Haben Sie eine Frage? Kontaktieren Sie uns!",
@@ -708,8 +711,8 @@
         "title": "Komplettservice",
         "description": "Von der Immobilienauswahl bis zur Schlüsselübergabe - ich kümmere mich um alles, was Sie brauchen."
       },
-      "turnover": "Unser Umsatz für 2023 betrug 2,9 Mrd. CZK",
-      "clients": "Wir haben bereits mehr als 700.000 Kunden bei Finanzen und Immobilien geholfen",
+      "turnover": "Unser Umsatz für 2023 betrug 4 Mrd. CZK",
+      "clients": "Wir haben bereits mehr als 800.000 Kunden bei Finanzen und Immobilien geholfen",
       "established": "Wir sind ein tschechisches Unternehmen, das seit 1998 seinen Platz im Markt hat",
       "locations": "Wir haben über 100 Geschäftsstandorte in der Tschechischen Republik"
     },

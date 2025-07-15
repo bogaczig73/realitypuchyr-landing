@@ -157,7 +157,8 @@
     "open": "Open",
     "closed": "Closed",
     "reviews": "reviews",
-    "distance": "distance"
+    "distance": "distance",
+    "contactForInfo": "Information on request"
   },
   "spainSection": {
     "title": "Foreign Real Estate",
@@ -273,14 +274,14 @@
   "homeBanner": {
     "title": "Rest assured that everything will turn out well!",
     "learnMore": "Learn More",
-    "quote": "With over 5 years of experience in Prague real estate, I build successful partnerships through honesty, diligence, and mutual trust between buyers and sellers.",
+    "quote": "With over 5 years of experience in Prague and Central Bohemia real estate, I build successful partnerships through honesty, diligence, and mutual trust between buyers and sellers.",
     "author": "Pavel Puchýř"
   },
   "components": {
     "homeBanner": {
       "title": "Rest assured that everything will turn out well!",
       "learnMore": "Learn More",
-      "quote": "With over 5 years of experience in Prague real estate, I build successful partnerships through honesty, diligence, and mutual trust between buyers and sellers.",
+      "quote": "With over 5 years of experience in Prague and Central Bohemia real estate, I build successful partnerships through honesty, diligence, and mutual trust between buyers and sellers.",
       "author": "Pavel Puchýř"
     },
     "footer": {
@@ -316,7 +317,8 @@
       "yourName": "Your Name",
       "yourEmail": "Your Email",
       "yourQuestion": "Your Question",
-      "yourComment": "Your Comment"
+      "yourComment": "Your Comment",
+      "contactForInfo": "Information on request"
     },
     "property": {
       "featuredProperties": "Featured Properties",
@@ -334,7 +336,8 @@
       "bookNow": "Book Now",
       "offerNow": "Offer Now",
       "haveQuestion": "Have Question ? Get in touch!",
-      "contactUs": "Contact us"
+      "contactUs": "Contact us",
+      "contactForInfo": "Information on request"
     },
     "getInTouch": {
       "title": "Have Question ? Get in touch!",
@@ -710,8 +713,8 @@
         "title": "Complete Service",
         "description": "From property selection to key handover - I'll take care of everything you need."
       },
-      "turnover": "Our turnover for 2023 was 2.9 billion CZK",
-      "clients": "We have already helped more than 700,000 clients with finances and properties",
+      "turnover": "Our turnover for 2023 was 4 billion CZK",
+      "clients": "We have already helped more than 800,000 clients with finances and properties",
       "established": "We are a Czech company that has had its place in the market since 1998",
       "locations": "We have over 100 business locations across the Czech Republic"
     },

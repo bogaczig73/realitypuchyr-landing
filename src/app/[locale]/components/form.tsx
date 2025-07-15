@@ -68,27 +68,31 @@ export default function FormThree(){
         fetchCategories();
     }, [t]);
 
+    // Helper to build search params
+    const buildSearchParams = (statusIndex: number, searchTextValue: string, selectedCategoryValue: CategoryOption | null) => {
+        const params = new URLSearchParams();
+        if (propertyStatuses[statusIndex].value) {
+            params.set('status', propertyStatuses[statusIndex].value);
+        }
+        if (searchTextValue) {
+            params.set('search', searchTextValue);
+        }
+        if (selectedCategoryValue && selectedCategoryValue.value !== 0) {
+            params.set('categoryId', selectedCategoryValue.value.toString());
+            params.set('category', (selectedCategoryValue as any).originalName);
+        }
+        return params;
+    };
+
     const handleTabClick = (tabIndex: number) => {
         setActiveTabIndex(tabIndex);
+        const params = buildSearchParams(tabIndex, searchText, selectedCategory);
+        router.push(`/list?${params.toString()}`);
     };
 
     const handleSearch = (e: React.FormEvent) => {
         e.preventDefault();
-        const params = new URLSearchParams();
-        
-        if (propertyStatuses[activeTabIndex].value) {
-            params.set('status', propertyStatuses[activeTabIndex].value);
-        }
-        
-        if (searchText) {
-            params.set('search', searchText);
-        }
-        
-        if (selectedCategory && selectedCategory.value !== 0) {
-            params.set('categoryId', selectedCategory.value.toString());
-            params.set('category', (selectedCategory as any).originalName);
-        }
-
+        const params = buildSearchParams(activeTabIndex, searchText, selectedCategory);
         router.push(`/list?${params.toString()}`);
     };
 

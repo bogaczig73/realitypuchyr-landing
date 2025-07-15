@@ -150,11 +150,17 @@ export default function Property({
                                     <li>
                                         <span className="text-slate-400">{t('price')}</span>
                                         <p className="text-lg font-medium">
-                                            {formatPrice(parseFloat(String(item.price || '0')))} Kč
-                                            {item.discountedPrice && (
-                                                <span className="text-sm text-red-500 ml-2 line-through">
-                                                    {formatPrice(parseFloat(String(item.discountedPrice)))} Kč
-                                                </span>
+                                            {item.priceHidden ? (
+                                                <span className="text-green-600">{t('contactForInfo')}</span>
+                                            ) : (
+                                                <>
+                                                    {formatPrice(parseFloat(String(item.price || '0')))} Kč
+                                                    {item.discountedPrice && (
+                                                        <span className="text-sm text-red-500 ml-2 line-through">
+                                                            {formatPrice(parseFloat(String(item.discountedPrice)))} Kč
+                                                        </span>
+                                                    )}
+                                                </>
                                             )}
                                         </p>
                                     </li>

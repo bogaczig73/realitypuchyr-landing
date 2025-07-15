@@ -301,7 +301,8 @@
     "open": "Otevřeno",
     "closed": "Zavřeno",
     "reviews": "hodnocení",
-    "distance": "vzdálenost"
+    "distance": "vzdálenost",
+    "contactForInfo": "Informace na vyžádání"
   },
   "spainSection": {
     "title": "Zahraniční nemovitosti",
@@ -417,14 +418,14 @@
   "homeBanner": {
     "title": "Buďte si jistí, že vše dopadne dobře!",
     "learnMore": "Zjistit více",
-    "quote": "S více než 5 lety zkušeností v pražském realitním trhu buduji úspěšná partnerství prostřednictvím upřímnosti, svědomitosti a vzájemné důvěry mezi kupujícími a prodávajícími.",
+    "quote": "S více než 5 lety zkušeností v pražském a středočeském realitním trhu buduji úspěšná partnerství prostřednictvím upřímnosti, svědomitosti a vzájemné důvěry mezi kupujícími a prodávajícími.",
     "author": "Pavel Puchýř"
   },
   "components": {
     "homeBanner": {
       "title": "Buďte si jistí, že vše dopadne dobře!",
       "learnMore": "Zjistit více",
-      "quote": "S více než 5 lety zkušeností v pražském realitním trhu buduji úspěšná partnerství prostřednictvím upřímnosti, svědomitosti a vzájemné důvěry mezi kupujícími a prodávajícími.",
+      "quote": "S více než 5 lety zkušeností v pražském a středočeském realitním trhu buduji úspěšná partnerství prostřednictvím upřímnosti, svědomitosti a vzájemné důvěry mezi kupujícími a prodávajícími.",
       "author": "Pavel Puchýř"
     },
     "footer": {
@@ -478,7 +479,8 @@
       "bookNow": "Rezervovat",
       "offerNow": "Nabídnout",
       "haveQuestion": "Máte otázku? Kontaktujte mě!",
-      "contactUs": "Kontaktujte mě"
+      "contactUs": "Kontaktujte mě",
+      "contactForInfo": "Informace na vyžádání"
     },
     "getInTouch": {
       "title": "Máte otázku? Kontaktujte mě!",
@@ -799,8 +801,8 @@
         "title": "Kompletní servis",
         "description": "Od výběru nemovitosti až po předání klíčů - postarám se o vše, co potřebujete."
       },
-      "turnover": "Náš obrat za rok 2023 činil 2,9 mld. Kč",
-      "clients": "Už více než 700 000 klientům jsme pomohli s financemi a nemovitostmi",
+      "turnover": "Náš obrat za rok 2023 činil 4 mld. Kč",
+      "clients": "Už více než 800 000 klientům jsme pomohli s financemi a nemovitostmi",
       "established": "Jsme česká společnost, která má své místo na trhu již od roku 1998",
       "locations": "Na území ČR máme přes 100 obchodních míst"
     },
@@ -840,6 +842,7 @@
     },
     "video": {
       "description": "Sen o bydlení ve Španělsku může být realitou! Nechte se okouzlit krásami Costa del Sol. ✨"
-    }
+    },
+    "contactForInfo": "Informace na vyžádání"
   }
 } 

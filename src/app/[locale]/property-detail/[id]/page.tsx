@@ -594,20 +594,28 @@ export default function PropertyDetail() {
                       <h5 className="text-2xl font-medium">{t('price')}:</h5>
 
                       <div className="flex flex-col items-start mt-4">
-                        {property.discountedPrice && (
-                          <span className="text-lg font-medium line-through text-red-500">{formatPrice(property.discountedPrice)} Kč</span>
+                        {property.priceHidden ? (
+                          <span className="text-xl font-medium text-green-600">{t('contactForInfo')}</span>
+                        ) : (
+                          <>
+                            {property.discountedPrice && (
+                              <span className="text-lg font-medium line-through text-red-500">{formatPrice(property.discountedPrice)} Kč</span>
+                            )}
+                            <div className="flex items-center gap-2">
+                              <span className="text-xl font-medium">{formatPrice(property.price)} Kč</span>
+                            </div>
+                          </>
                         )}
-                        <div className="flex items-center gap-2">
-                          <span className="text-xl font-medium">{formatPrice(property.price)} Kč</span>
-                        </div>
                       </div>
 
-                      <ul className="list-none mt-4">
-                        <li className="flex justify-between items-center">
-                          <span className="text-slate-400 text-sm">{t('pricePerM2')}</span>
-                          <span className="font-medium text-sm">{formatPrice(Math.round(property.price / property.size))} Kč</span>
-                        </li>
-                      </ul>
+                      {!property.priceHidden && (
+                        <ul className="list-none mt-4">
+                          <li className="flex justify-between items-center">
+                            <span className="text-slate-400 text-sm">{t('pricePerM2')}</span>
+                            <span className="font-medium text-sm">{formatPrice(Math.round(property.price / property.size))} Kč</span>
+                          </li>
+                        </ul>
+                      )}
                     </div>
 
                     <div className="p-1">

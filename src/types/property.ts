@@ -103,6 +103,9 @@ export interface Property {
     images: PropertyImage[];
     floorplans: PropertyFloorplan[];
     files: PropertyFile[];
+
+    // Price visibility
+    priceHidden?: boolean;
     
     // Timestamps
     createdAt: string;
