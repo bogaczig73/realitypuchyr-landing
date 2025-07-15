@@ -124,14 +124,6 @@ function ListContent() {
                                                     const mainImage = property.images.find(img => img.isMain);
                                                     const fallbackImage = property.images[0];
                                                     const finalImage = mainImage || fallbackImage;
-                                                    console.log(property.images);
-                                                    console.log('Property List Image:', {
-                                                        propertyId: property.id,
-                                                        propertyName: property.name,
-                                                        mainImage: mainImage?.url,
-                                                        fallbackImage: fallbackImage?.url,
-                                                        finalImage: finalImage?.url
-                                                    });
                                                     return (
                                                         <Image 
                                                             className='h-full w-full object-cover' 

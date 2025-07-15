@@ -198,26 +198,44 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded, enablePlaces
   const mapRef = useRef<google.maps.Map | null>(null);
   const markersRef = useRef<{ [key: string]: google.maps.marker.AdvancedMarkerElement[] }>({});
 
+  // useEffect(() => {
+  //   // Check if script is already loaded
+  //   if (document.querySelector('script[src*="maps.googleapis.com/maps/api/js"]')) {
+  //     setMapLoaded(true);
+  //     return;
+  //   }
+
+  //   // Load Google Maps script (without places library if not needed)
+  //   const script = document.createElement('script');
+  //   const libraries = enablePlacesSearch ? 'places' : '';
+  //   script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}${libraries ? `&libraries=${libraries}` : ''}`;
+  //   script.async = true;
+  //   script.defer = true;
+  //   script.onload = () => setMapLoaded(true);
+  //   document.head.appendChild(script);
+
+  //   return () => {
+  //     setMapLoaded(false);
+  //   };
+  // }, [enablePlacesSearch]);
+  //
+  // Commented out above useEffect to disable dynamic loading of Places API for billing reasons. Only regular map will load.
   useEffect(() => {
-    // Check if script is already loaded
+    // Always load Google Maps script without Places library
     if (document.querySelector('script[src*="maps.googleapis.com/maps/api/js"]')) {
       setMapLoaded(true);
       return;
     }
-
-    // Load Google Maps script (without places library if not needed)
     const script = document.createElement('script');
-    const libraries = enablePlacesSearch ? 'places' : '';
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}${libraries ? `&libraries=${libraries}` : ''}`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`;
     script.async = true;
     script.defer = true;
     script.onload = () => setMapLoaded(true);
     document.head.appendChild(script);
-
     return () => {
       setMapLoaded(false);
     };
-  }, [enablePlacesSearch]);
+  }, []);
 
   const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
     const R = 6371; // Earth's radius in kilometers
@@ -268,131 +286,115 @@ const PropertyMap = memo(({ latitude, longitude, onLandmarksLoaded, enablePlaces
       markersRef.current['property'] = [propertyMarker];
 
       // Start searching for landmarks only if enabled
-      if (enablePlacesSearch) {
-        searchLandmarks();
-      }
+      // if (enablePlacesSearch) {
+      //   searchLandmarks();
+      // }
+      // Commented out above to disable Places API search for billing reasons.
     } catch (error) {
       console.error('Error initializing map:', error);
     }
   };
 
-  const searchLandmarks = async () => {
-    if (!mapRef.current) return;
-
-    setLoading(true);
-    const { Place, SearchNearbyRankPreference } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
-    const { LatLngBounds } = await google.maps.importLibrary("core") as google.maps.CoreLibrary;
-
-    const center = new google.maps.LatLng(latitude, longitude);
-    const bounds = new LatLngBounds();
-    const allLandmarks: { [key: string]: Landmark[] } = {};
-
-    // Clear existing markers (except property marker)
-    Object.entries(markersRef.current).forEach(([key, markers]) => {
-      if (key !== 'property') {
-        markers.forEach(marker => marker.map = null);
-      }
-    });
-    // Keep property marker but clear other categories
-    const propertyMarkers = markersRef.current['property'] || [];
-    markersRef.current = { property: propertyMarkers };
-
-    for (const category of landmarkCategories) {
-      const categoryLandmarks: Landmark[] = [];
-      let landmarkCounter = 0;
-
-      for (const placeType of category.placeTypes) {
-        const request = {
-          fields: ['displayName', 'location', 'businessStatus', 'rating', 'userRatingCount', 'formattedAddress'],
-          locationRestriction: {
-            center: center,
-            radius: 2000, // 2km radius
-          },
-          includedPrimaryTypes: [placeType],
-          maxResultCount: 3,
-          rankPreference: SearchNearbyRankPreference.POPULARITY,
-          language: 'cs-CZ',
-        };
-
-        try {
-          const { places } = await Place.searchNearby(request);
-          
-          if (places.length) {
-            places.forEach((place) => {
-              if (place.location) {
-                const distance = calculateDistance(
-                  latitude, 
-                  longitude, 
-                  (place.location as google.maps.LatLng).lat(), 
-                  (place.location as google.maps.LatLng).lng()
-                );
-
-                const landmark: Landmark = {
-                  id: `${category.key}-${place.displayName || 'Unknown'}-${landmarkCounter++}`,
-                  name: place.displayName || 'Unknown',
-                  type: category.key,
-                  distance: distance,
-                  rating: place.rating || undefined,
-                  userRatingCount: place.userRatingCount || undefined,
-                  businessStatus: place.businessStatus || undefined,
-                  formattedAddress: place.formattedAddress || undefined,
-                  location: place.location,
-                };
-
-                categoryLandmarks.push(landmark);
-
-                // Create marker
-                const marker = new AdvancedMarkerElement({
-                  map: mapRef.current,
-                  position: place.location,
-                  title: place.displayName || 'Unknown',
-                  content: new google.maps.marker.PinElement({
-                    background: getCategoryInfo(category.key).color.split(' ')[0].replace('bg-', '#'),
-                    borderColor: '#00a63e',
-                    glyph: category.icon,
-                    scale: 1.2
-                  }).element
-                });
-
-                // Add click listener
-                marker.addListener('click', () => {
-                  setSelectedLandmark(landmark);
-                });
-
-                // Store marker reference
-                if (!markersRef.current[category.key]) {
-                  markersRef.current[category.key] = [];
-                }
-                markersRef.current[category.key].push(marker);
-
-                bounds.extend(place.location as google.maps.LatLng);
-              }
-            });
-          }
-        } catch (error) {
-          console.error(`Error searching for ${placeType}:`, error);
-        }
-      }
-
-      // Sort by distance and take closest 2
-      categoryLandmarks.sort((a, b) => a.distance - b.distance);
-      allLandmarks[category.key] = categoryLandmarks.slice(0, 2);
-    }
-
-    setLandmarks(allLandmarks);
-    
-    // Fit map to show all markers
-    if (Object.values(allLandmarks).flat().length > 0) {
-      mapRef.current.fitBounds(bounds);
-    }
-
-    setLoading(false);
-
-    if (onLandmarksLoaded) {
-      onLandmarksLoaded(allLandmarks);
-    }
-  };
+  // const searchLandmarks = async () => {
+  //   if (!mapRef.current) return;
+  //   setLoading(true);
+  //   const { Place, SearchNearbyRankPreference } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
+  //   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
+  //   const { LatLngBounds } = await google.maps.importLibrary("core") as google.maps.CoreLibrary;
+  //   const center = new google.maps.LatLng(latitude, longitude);
+  //   const bounds = new LatLngBounds();
+  //   const allLandmarks: { [key: string]: Landmark[] } = {};
+  //   // Clear existing markers (except property marker)
+  //   Object.entries(markersRef.current).forEach(([key, markers]) => {
+  //     if (key !== 'property') {
+  //       markers.forEach(marker => marker.map = null);
+  //     }
+  //   });
+  //   // Keep property marker but clear other categories
+  //   const propertyMarkers = markersRef.current['property'] || [];
+  //   markersRef.current = { property: propertyMarkers };
+  //   for (const category of landmarkCategories) {
+  //     const categoryLandmarks: Landmark[] = [];
+  //     let landmarkCounter = 0;
+  //     for (const placeType of category.placeTypes) {
+  //       const request = {
+  //         fields: ['displayName', 'location', 'businessStatus', 'rating', 'userRatingCount', 'formattedAddress'],
+  //         locationRestriction: {
+  //           center: center,
+  //           radius: 2000, // 2km radius
+  //         },
+  //         includedPrimaryTypes: [placeType],
+  //         maxResultCount: 3,
+  //         rankPreference: SearchNearbyRankPreference.POPULARITY,
+  //         language: 'cs-CZ',
+  //       };
+  //       try {
+  //         const { places } = await Place.searchNearby(request);
+  //         if (places.length) {
+  //           places.forEach((place) => {
+  //             if (place.location) {
+  //               const distance = calculateDistance(
+  //                 latitude, 
+  //                 longitude, 
+  //                 (place.location as google.maps.LatLng).lat(), 
+  //                 (place.location as google.maps.LatLng).lng()
+  //               );
+  //               const landmark: Landmark = {
+  //                 id: `${category.key}-${place.displayName || 'Unknown'}-${landmarkCounter++}`,
+  //                 name: place.displayName || 'Unknown',
+  //                 type: category.key,
+  //                 distance: distance,
+  //                 rating: place.rating || undefined,
+  //                 userRatingCount: place.userRatingCount || undefined,
+  //                 businessStatus: place.businessStatus || undefined,
+  //                 formattedAddress: place.formattedAddress || undefined,
+  //                 location: place.location,
+  //               };
+  //               categoryLandmarks.push(landmark);
+  //               // Create marker
+  //               const marker = new AdvancedMarkerElement({
+  //                 map: mapRef.current,
+  //                 position: place.location,
+  //                 title: place.displayName || 'Unknown',
+  //                 content: new google.maps.marker.PinElement({
+  //                   background: getCategoryInfo(category.key).color.split(' ')[0].replace('bg-', '#'),
+  //                   borderColor: '#00a63e',
+  //                   glyph: category.icon,
+  //                   scale: 1.2
+  //                 }).element
+  //               });
+  //               // Add click listener
+  //               marker.addListener('click', () => {
+  //                 setSelectedLandmark(landmark);
+  //               });
+  //               // Store marker reference
+  //               if (!markersRef.current[category.key]) {
+  //                 markersRef.current[category.key] = [];
+  //               }
+  //               markersRef.current[category.key].push(marker);
+  //               bounds.extend(place.location as google.maps.LatLng);
+  //             }
+  //           });
+  //         }
+  //       } catch (error) {
+  //         console.error(`Error searching for ${placeType}:`, error);
+  //       }
+  //     }
+  //     // Sort by distance and take closest 2
+  //     categoryLandmarks.sort((a, b) => a.distance - b.distance);
+  //     allLandmarks[category.key] = categoryLandmarks.slice(0, 2);
+  //   }
+  //   setLandmarks(allLandmarks);
+  //   // Fit map to show all markers
+  //   if (Object.values(allLandmarks).flat().length > 0) {
+  //     mapRef.current.fitBounds(bounds);
+  //   }
+  //   setLoading(false);
+  //   if (onLandmarksLoaded) {
+  //     onLandmarksLoaded(allLandmarks);
+  //   }
+  // };
+  // Commented out entire searchLandmarks function to disable Places API for billing reasons.
 
   const handleLandmarkClick = (landmark: Landmark) => {
     setSelectedLandmark(landmark);

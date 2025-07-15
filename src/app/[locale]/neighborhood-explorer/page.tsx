@@ -39,15 +39,16 @@ export default function NeighborhoodExplorer() {
   const t = useTranslations('neighborhoodExplorer');
 
   // Load Google Maps script with Places library
-  useEffect(() => {
-    if (!document.querySelector('script[src*="maps.googleapis.com/maps/api/js"]')) {
-      const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`;
-      script.async = true;
-      script.defer = true;
-      document.head.appendChild(script);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!document.querySelector('script[src*="maps.googleapis.com/maps/api/js"]')) {
+  //     const script = document.createElement('script');
+  //     script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`;
+  //     script.async = true;
+  //     script.defer = true;
+  //     document.head.appendChild(script);
+  //   }
+  // }, []);
+  // Commented out above useEffect to prevent loading Google Maps Places API and avoid billing errors.
 
   // Handle clicks outside of predictions dropdown
   useEffect(() => {
@@ -64,44 +65,40 @@ export default function NeighborhoodExplorer() {
     };
   }, []);
 
-  const getPlacePredictions = async (input: string) => {
-    if (!input.trim() || !window.google) {
-      setPredictions([]);
-      setShowPredictions(false);
-      return;
-    }
-
-    try {
-      const { Place } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
-      
-      const request = {
-        textQuery: input,
-        language: 'cs',
-        maxResultCount: 5,
-        fields: ['displayName', 'id', 'location', 'formattedAddress']
-      };
-
-      const { places } = await Place.searchByText(request);
-      
-      if (places && places.length > 0) {
-        const predictions = places.map(place => ({
-          description: place.displayName || 'Unknown',
-          place_id: place.id || `place_${Math.random()}`
-        }));
-        
-        setPredictions(predictions);
-        setShowPredictions(true);
-        setSelectedIndex(-1);
-      } else {
-        setPredictions([]);
-        setShowPredictions(false);
-      }
-    } catch (error) {
-      console.error('Error getting predictions:', error);
-      setPredictions([]);
-      setShowPredictions(false);
-    }
-  };
+  // Comment out all code that uses the Places API for predictions and geocoding
+  // const getPlacePredictions = async (input: string) => {
+  //   if (!input.trim() || !window.google) {
+  //     setPredictions([]);
+  //     setShowPredictions(false);
+  //     return;
+  //   }
+  //   try {
+  //     const { Place } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
+  //     const request = {
+  //       textQuery: input,
+  //       language: 'cs',
+  //       maxResultCount: 5,
+  //       fields: ['displayName', 'id', 'location', 'formattedAddress']
+  //     };
+  //     const { places } = await Place.searchByText(request);
+  //     if (places && places.length > 0) {
+  //       const predictions = places.map(place => ({
+  //         description: place.displayName || 'Unknown',
+  //         place_id: place.id || `place_${Math.random()}`
+  //       }));
+  //       setPredictions(predictions);
+  //       setShowPredictions(true);
+  //       setSelectedIndex(-1);
+  //     } else {
+  //       setPredictions([]);
+  //       setShowPredictions(false);
+  //     }
+  //   } catch (error) {
+  //     console.error('Error getting predictions:', error);
+  //     setPredictions([]);
+  //     setShowPredictions(false);
+  //   }
+  // };
 
   const handleAddressChange = (value: string) => {
     setAddress(value);
@@ -111,7 +108,7 @@ export default function NeighborhoodExplorer() {
       setLandmarks({});
     }
     if (value.trim()) {
-      getPlacePredictions(value);
+      // getPlacePredictions(value); // This line is commented out
     } else {
       setPredictions([]);
       setShowPredictions(false);
@@ -128,54 +125,50 @@ export default function NeighborhoodExplorer() {
     setLandmarks({});
     
     // Geocode the selected prediction
-    await geocodeAddress(prediction.description, prediction.place_id);
+    // await geocodeAddress(prediction.description, prediction.place_id); // This line is commented out
   };
 
-  const geocodeAddress = async (address: string, placeId?: string) => {
-    if (!address.trim()) {
-      setError('Prosím zadejte adresu');
-      return;
-    }
-
-    setLoading(true);
-    setError(null);
-
-    try {
-      const { Place } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
-
-      // Search by text
-      const { places } = await Place.searchByText({
-        textQuery: address,
-        fields: ['displayName', 'location', 'formattedAddress'],
-        language: 'cs',
-        maxResultCount: 1
-      });
-
-      const place = places[0];
-
-      if (place && place.location) {
-        setCoordinates({
-          lat: (place.location as google.maps.LatLng).lat(),
-          lng: (place.location as google.maps.LatLng).lng()
-        });
-        setError(null);
-      } else {
-        setError('Adresa nebyla nalezena. Zkuste zadat přesnější adresu.');
-      }
-    } catch (err) {
-      console.error('Geocoding error:', err);
-      setError('Nepodařilo se najít adresu. Zkuste to prosím znovu.');
-    } finally {
-      setLoading(false);
-    }
-  };
+  // Comment out all code that uses the Places API for predictions and geocoding
+  // const geocodeAddress = async (address: string, placeId?: string) => {
+  //   if (!address.trim()) {
+  //     setError('Prosím zadejte adresu');
+  //     return;
+  //   }
+  //   setLoading(true);
+  //   setError(null);
+  //   try {
+  //     const { Place } = await google.maps.importLibrary('places') as google.maps.PlacesLibrary;
+  //     // Search by text
+  //     const { places } = await Place.searchByText({
+  //       textQuery: address,
+  //       fields: ['displayName', 'location', 'formattedAddress'],
+  //       language: 'cs',
+  //       maxResultCount: 1
+  //     });
+  //     const place = places[0];
+  //     if (place && place.location) {
+  //       setCoordinates({
+  //         lat: (place.location as google.maps.LatLng).lat(),
+  //         lng: (place.location as google.maps.LatLng).lng()
+  //       });
+  //       setError(null);
+  //     } else {
+  //       setError('Adresa nebyla nalezena. Zkuste zadat přesnější adresu.');
+  //     }
+  //   } catch (err) {
+  //     console.error('Geocoding error:', err);
+  //     setError('Nepodařilo se najít adresu. Zkuste to prosím znovu.');
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Clear previous results
     setCoordinates(null);
     setLandmarks({});
-    geocodeAddress(address);
+    // geocodeAddress(address); // This line is commented out
   };
 
   const handleLandmarksLoaded = (landmarksData: { [key: string]: Landmark[] }) => {
@@ -188,7 +181,7 @@ export default function NeighborhoodExplorer() {
       if (selectedIndex >= 0 && predictions[selectedIndex]) {
         selectPrediction(predictions[selectedIndex]);
       } else {
-        geocodeAddress(address);
+        // geocodeAddress(address); // This line is commented out
       }
     } else if (e.key === 'ArrowDown') {
       e.preventDefault();
@@ -300,7 +293,7 @@ export default function NeighborhoodExplorer() {
                       key={index}
                       onClick={() => {
                         setAddress(example);
-                        geocodeAddress(example);
+                        // geocodeAddress(example); // This line is commented out
                       }}
                       className="px-3 py-1 text-sm bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors duration-200"
                     >
