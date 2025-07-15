@@ -5,7 +5,7 @@ import QueryProvider from '@/providers/QueryProvider';
 type LayoutParams = Promise<{ locale: string }>;
 
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'cs' }, { locale: 'de' }, { locale: 'ru' }, { locale: 'ua' }];
+  return [{ locale: 'en' }, { locale: 'cs' }, { locale: 'de' }, { locale: 'ru' }, { locale: 'uk' }];
 }
 
 export default async function LocaleLayout({
