@@ -87,6 +87,10 @@ export default function Sidebar(){
                                 <Link href="/blog" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-post-outline me-2"></i>{t('blog')}</Link>
                             </li>
 
+                            <li className={`${manu === "/reviews" ? 'active' : ''} ms-0`}>
+                                <Link href="/reviews" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-star me-2"></i>{navigationT('reviewsLink')}</Link>
+                            </li>
+
                             <li className={`${manu === "/contact" ? 'active' : ''} ms-0`}>
                                 <Link href="/contact" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-email me-2"></i>{t('contact')}</Link>
                             </li>

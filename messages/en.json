@@ -9,7 +9,8 @@
     "contactLink": "Contact",
     "faqLink": "FAQ",
     "blogLink": "Blog",
-    "spain": "Spain"
+    "spain": "Spain",
+    "reviewsLink": "Reviews"
   },
   "hero": {
     "title": "Find Your Dream Home",
@@ -754,6 +755,25 @@
     },
     "video": {
       "description": "Dream of living in Spain can become reality! Let yourself be enchanted by the beauties of Costa del Sol. ✨"
+    }
+  },
+  "reviews": {
+    "title": "Client Reviews & Testimonials",
+    "description": "Discover what my clients say about me. Real stories from real people who found their dream properties.",
+    "totalReviews": "Total Reviews",
+    "averageRating": "Average Rating",
+    "highestRating": "Highest Rating",
+    "loading": "Loading reviews...",
+    "noReviews": "No reviews available at the moment.",
+    "tryAgain": "Try Again",
+    "readMore": "Read more",
+    "showLess": "Show less",
+    "loadMore": "Load More Reviews",
+    "cta": {
+      "title": "Ready to Start Your Journey?",
+      "description": "Join hundreds of satisfied clients who found their perfect property with our expert guidance.",
+      "contactButton": "Contact Us",
+      "viewProperties": "View Properties"
     }
   }
 }

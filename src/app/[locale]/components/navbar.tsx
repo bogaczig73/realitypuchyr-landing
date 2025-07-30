@@ -133,6 +133,7 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                         <ul className={`navigation-menu ${navClass === '' || navClass === undefined ? '' : 'nav-light'} ${topnavClass !== '' && topnavClass !== undefined ? '!justify-center' : '!justify-end'}`}>
                             <li className={`has-submenu parent-menu-item ${isActive('/') ? 'active' : ''}`}><Link href={`/${currentLocale}`}>{t('homeLink')}</Link></li>
                             <li className={`has-submenu parent-menu-item ${isActive('/list') ? 'active' : ''}`}><Link href={`/${currentLocale}/list?status=ACTIVE`}>{t('propertiesLink')}</Link></li>
+                            <li className={`has-submenu parent-menu-item ${isActive('/reviews') ? 'active' : ''}`}><Link href={`/${currentLocale}/reviews`}>{t('reviewsLink')}</Link></li>
                             
                             {/* Services Dropdown */}
                             <li className={`has-submenu parent-menu-item ${isActive('/services') ? 'active' : ''}`}>

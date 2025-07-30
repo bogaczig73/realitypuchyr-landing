@@ -9,7 +9,8 @@
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
     "blogLink": "Blog",
-    "spain": "Spanien"
+    "spain": "Spanien",
+    "reviewsLink": "Bewertungen"
   },
     "sidebar": {
       "home": "Startseite",
@@ -752,6 +753,25 @@
     },
     "video": {
       "description": "Der Traum vom Leben in Spanien kann Realität werden! Lassen Sie sich von den Schönheiten der Costa del Sol verzaubern. ✨"
+    }
+  },
+  "reviews": {
+    "title": "Kundenbewertungen & Testimonials",
+    "description": "Entdecken Sie, was meine Kunden über mich sagen. Echte Geschichten von echten Menschen, die ihre Traumimmobilien gefunden haben.",
+    "totalReviews": "Gesamtbewertungen",
+    "averageRating": "Durchschnittsbewertung",
+    "highestRating": "Höchste Bewertung",
+    "loading": "Bewertungen werden geladen...",
+    "noReviews": "Derzeit sind keine Bewertungen verfügbar.",
+    "tryAgain": "Erneut versuchen",
+    "readMore": "Mehr lesen",
+    "showLess": "Weniger anzeigen",
+    "loadMore": "Weitere Bewertungen laden",
+    "cta": {
+      "title": "Bereit für Ihre Reise?",
+      "description": "Schließen Sie sich Hunderten zufriedener Kunden an, die ihre perfekte Immobilie mit unserer fachkundigen Beratung gefunden haben.",
+      "contactButton": "Kontaktieren Sie uns",
+      "viewProperties": "Immobilien anzeigen"
     }
   }
 } 

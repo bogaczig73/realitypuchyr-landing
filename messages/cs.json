@@ -9,7 +9,8 @@
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
     "blogLink": "Blog",
-    "spain": "Španělsko"
+    "spain": "Španělsko",
+    "reviewsLink": "Recenze"
   },
   "list": {
     "title": "Seznam nemovitostí",
@@ -844,5 +845,24 @@
       "description": "Sen o bydlení ve Španělsku může být realitou! Nechte se okouzlit krásami Costa del Sol. ✨"
     },
     "contactForInfo": "Informace na vyžádání"
+  },
+  "reviews": {
+    "title": "Recenze a hodnocení klientů",
+    "description": "Objevte, co o mně říkají moji klienti. Příběhy lidí, kteří našli své vysněné nemovitosti.",
+    "totalReviews": "Celkem recenzí",
+    "averageRating": "Průměrné hodnocení",
+    "highestRating": "Nejvyšší hodnocení",
+    "loading": "Načítání recenzí...",
+    "noReviews": "Momentálně nejsou k dispozici žádné recenze.",
+    "tryAgain": "Zkusit znovu",
+    "readMore": "Číst více",
+    "showLess": "Zobrazit méně",
+    "loadMore": "Načíst další recenze",
+    "cta": {
+      "title": "Připraveni začít svou cestu?",
+      "description": "Připojte se k stovkám spokojených klientů, kteří našli svou dokonalou nemovitost s naším odborným vedením.",
+      "contactButton": "Kontaktujte nás",
+      "viewProperties": "Zobrazit nemovitosti"
+    }
   }
 } 
