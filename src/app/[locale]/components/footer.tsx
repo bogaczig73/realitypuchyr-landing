@@ -40,8 +40,7 @@ export default function Footer(){
                                     <div className="lg:col-span-3 md:col-span-4">
                                         <h5 className="tracking-[1px] text-gray-100 font-semibold">{t('usefulLinks')}</h5>
                                         <ul className="list-none footer-list mt-6">
-                                              <li><Link href="/blog/1" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out flex items-center"><FiChevronRight width={18} className="me-1"/> <span>{t('blogPost')}</span> </Link></li>
-                                              <li className="mt-[10px]"><Link href="/blog/2" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out flex items-center"><FiChevronRight width={18} className="me-1"/> <span>{t('blogPost')}</span> </Link></li>
+                                              <li><Link href="/blog" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out flex items-center"><FiChevronRight width={18} className="me-1"/> <span>{t('blogPost')}</span> </Link></li>
                                               <li className="mt-[10px]"><Link href="/terms" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out flex items-center"><FiChevronRight width={18} className="me-1"/> <span>{t('termsOfService')}</span> </Link></li>
                                               <li className="mt-[10px]"><Link href="/privacy" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out flex items-center"><FiChevronRight width={18} className="me-1"/> <span>{t('privacyPolicy')}</span> </Link></li>
                                         </ul>
