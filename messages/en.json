@@ -351,6 +351,7 @@
       "office": "Office",
       "officeLocation": "Prague, Czech Republic",
       "writeToMe": "Write to me",
+      "doYouWantToKnowMore": "Do you want to know more?",
       "nameLabel": "Name *",
       "emailLabel": "Email *",
       "phoneLabel": "Phone",
@@ -755,6 +756,638 @@
     },
     "video": {
       "description": "Dream of living in Spain can become reality! Let yourself be enchanted by the beauties of Costa del Sol. ✨"
+    },
+    "developerProjects": {
+      "hero": {
+        "title": "Developer Projects",
+        "subtitle": "Discover exclusive new construction projects on the Costa del Sol"
+      },
+      "categories": {
+        "badge": "Categories",
+        "subtitle": "Explore our comprehensive selection of developer projects across different property types",
+        "title": "Property Categories",
+        "backToCategories": "Back to categories",
+        "apartments": {
+          "title": "Apartments",
+          "description": "Stylish apartments of various sizes and layouts, ideal for couples, families and individuals. Each apartment offers modern design, plenty of natural light and often a terrace or balcony with sea views."
+        },
+        "penthouses": {
+          "title": "Penthouses",
+          "description": "Luxury penthouses in the highest floors, often with panoramic views of the coast and private rooftop terrace. Some units include private pool or hot tub."
+        },
+        "familyHouses": {
+          "title": "Family, Terraced Houses & Semi-Detached",
+          "description": "Spacious houses suitable for family living, surrounded by peace and greenery. They offer private garden, often with pool, and plenty of space for everyday life and relaxation."
+        },
+        "villas": {
+          "title": "Villas",
+          "description": "Standalone villas with premium amenities and emphasis on maximum privacy. Ideal choice for demanding clients looking for luxury retreat with breathtaking views and premium location."
+        },
+        "residentialComplexes": {
+          "title": "Properties in Residential Complex",
+          "description": "Living in secure and prestigious complexes that offer shared spaces such as pools, wellness, gyms, gardens or coworking centers. Ideal for those looking for community lifestyle."
+        },
+        "hotelServices": {
+          "title": "Properties with Hotel Services",
+          "description": "Residences with access to hotel services such as cleaning, concierge, catering or property management. Perfect choice for comfortable and carefree stay."
+        },
+        "golfProperties": {
+          "title": "Golf Properties",
+          "description": "Properties located near top golf courses. Ideal for golf enthusiasts who want to combine their passion with living in a prestigious location."
+        },
+        "smartHomes": {
+          "title": "Smart & Green Living",
+          "description": "Modern projects with emphasis on sustainability, low energy consumption and ecological materials. Perfect for those looking for harmony with nature."
+        }
+      },
+      "whyChoose": {
+        "title": "Why Choose Our Developer Projects",
+        "subtitle": "We work exclusively with verified developers and offer comprehensive support throughout the entire purchase process",
+        "experience": {
+          "title": "Proven Experience",
+          "description": "Years of experience in the Spanish real estate market with focus on Costa del Sol developer projects."
+        },
+        "location": {
+          "title": "Prime Locations",
+          "description": "All projects are located in the most sought-after areas of Costa del Sol with excellent infrastructure."
+        },
+        "quality": {
+          "title": "Quality Guarantee",
+          "description": "We work only with verified developers who guarantee high quality construction and materials."
+        }
+      },
+      "apartments": {
+        "hero": {
+          "title": "Apartments",
+          "subtitle": "Modern apartments in the most beautiful locations on Costa del Sol"
+        },
+        "description": {
+          "title": "Stylish Apartments for Every Need",
+          "content": "Our apartment projects offer the perfect combination of comfort, style and location. Each apartment is designed with attention to detail, using quality materials and modern technologies. Whether you're looking for a cozy studio for two or a spacious family apartment, we have the right option for you."
+        },
+        "features": {
+          "modernDesign": "Modern design and amenities",
+          "naturalLight": "Plenty of natural light",
+          "terraceBalcony": "Terrace or balcony with view",
+          "variousSizes": "Various sizes and layouts",
+          "idealForAll": "Ideal for couples, families and individuals",
+          "excellentLocation": "Excellent location in Costa del Sol"
+        },
+        "projects": {
+          "title": "Featured Projects",
+          "subtitle": "Discover our selection of the best apartment projects"
+        },
+        "whyChoose": {
+          "title": "Why Choose This Type of Property",
+          "flexibleLayout": {
+            "title": "Flexible Layout",
+            "description": "Choice of various sizes and apartment arrangements according to your needs."
+          },
+          "modernInteriors": {
+            "title": "Modern Interiors",
+            "description": "Amenities and design correspond to the latest trends in housing."
+          },
+          "plentyOfLight": {
+            "title": "Plenty of Light",
+            "description": "Large windows and open spaces ensure a pleasant environment."
+          },
+          "comfortableRelaxation": {
+            "title": "Comfortable Relaxation",
+            "description": "Balconies, terraces or gardens provide ideal place for relaxation."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Key Advantages",
+          "content": "Apartments offer flexible layout options to suit various needs, from individuals to larger families. Thanks to modern design and quality workmanship, you can enjoy comfortable living full of light, complemented by outdoor space for relaxation."
+        },
+        "whoAppreciates": {
+          "title": "Who Will Appreciate This Type of Property",
+          "modernCouples": {
+            "title": "Couples looking for modern and practical housing"
+          },
+          "flexibleFamilies": {
+            "title": "Families who need flexible layouts"
+          },
+          "styleIndividuals": {
+            "title": "Individuals preferring comfort and stylish environment"
+          }
+        },
+        "benefits": {
+          "title": "Benefits of Our Apartments",
+          "subtitle": "Why choose our apartment projects",
+          "modern": {
+            "title": "Modern Design",
+            "description": "Contemporary design with quality materials and smart home technologies."
+          },
+          "location": {
+            "title": "Prime Location",
+            "description": "Excellent locations with easy access to beaches, shops and amenities."
+          },
+          "quality": {
+            "title": "Quality Construction",
+            "description": "Built by verified developers with years of experience in the market."
+          }
+        },
+        "gallery": {
+          "title": "Gallery of Selected Views",
+          "subtitle": "Discover our apartments projects"
+        }
+      },
+      "penthouses": {
+        "hero": {
+          "title": "Penthouses",
+          "subtitle": "Exclusive penthouses with panoramic views"
+        },
+        "description": {
+          "title": "Luxury Living at Its Finest",
+          "content": "Our penthouse projects represent the pinnacle of luxury living on Costa del Sol. These exclusive properties offer not only breathtaking panoramic views but also the highest level of privacy and comfort. Each penthouse is unique and designed for the most demanding clients."
+        },
+        "features": {
+          "panoramicViews": "Panoramic views of the coast",
+          "privateTerraces": "Private rooftop terrace",
+          "privatePool": "Private pool or hot tub",
+          "luxuryAmenities": "Luxury amenities and materials",
+          "maximumPrivacy": "Maximum privacy and tranquility",
+          "prestigiousLocation": "Prestigious location in the highest floors"
+        },
+        "projects": {
+          "title": "Featured Penthouses",
+          "subtitle": "Discover our exclusive penthouse projects"
+        },
+        "whyChoose": {
+          "title": "Why Choose This Type of Property",
+          "exclusiveViews": {
+            "title": "Exclusive Views",
+            "description": "Panoramic views of the surrounding landscape guarantee a unique experience."
+          },
+          "privateTerraces": {
+            "title": "Private Terraces",
+            "description": "Space for relaxation, meeting with friends or sunbathing."
+          },
+          "luxuryAmenities": {
+            "title": "Luxury Amenities",
+            "description": "Premium materials, hot tubs and other elements for maximum comfort."
+          },
+          "peacefulEnvironment": {
+            "title": "Peaceful Environment",
+            "description": "Top floors of buildings ensure minimal noise and maximum privacy."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Key Advantages",
+          "content": "Penthouses represent a combination of luxury and privacy, complemented by unique views and premium amenities. They offer ideal space for relaxation on private terraces, while quality materials and design ensure maximum comfort."
+        },
+        "whoAppreciates": {
+          "title": "Who Will Appreciate This Type of Property",
+          "demandingCouples": {
+            "title": "Demanding couples and individuals who want luxury living"
+          },
+          "exclusiveFamilies": {
+            "title": "Families looking for exclusivity and space"
+          },
+          "panoramicViews": {
+            "title": "Lovers of panoramic views and privacy"
+          }
+        },
+        "benefits": {
+          "title": "Benefits of Our Penthouses",
+          "subtitle": "Why choose our penthouse projects",
+          "luxury": {
+            "title": "Ultimate Luxury",
+            "description": "Premium materials, exclusive design and highest quality finishes."
+          },
+          "view": {
+            "title": "Panoramic Views",
+            "description": "Breathtaking views of the Mediterranean Sea and Costa del Sol coastline."
+          },
+          "privacy": {
+            "title": "Maximum Privacy",
+            "description": "Private terraces and exclusive access ensure complete privacy."
+          }
+        },
+        "gallery": {
+          "title": "Gallery of Selected Views",
+          "subtitle": "Discover our penthouses projects"
+        }
+      },
+      "familyHouses": {
+        "hero": {
+          "title": "Family, Terraced Houses and Semi-Detached Houses",
+          "subtitle": "Spacious family homes in peaceful locations"
+        },
+        "description": {
+          "title": "Family, Terraced Houses and Semi-Detached Houses",
+          "content": "Spacious houses ideal for family living, surrounded by peaceful nature. Each house offers its own garden, often with a pool, and plenty of space for everyday life and relaxation, including multi-generational living."
+        },
+        "whyChoose": {
+          "title": "Why Choose This Type of Property",
+          "ampleSpace": {
+            "title": "Ample Space",
+            "description": "Ideal for family life and greater comfort."
+          },
+          "privateGardens": {
+            "title": "Private Gardens",
+            "description": "Great space for relaxation, children or gardening."
+          },
+          "peacefulEnvironment": {
+            "title": "Peaceful Environment",
+            "description": "Location surrounded by greenery offers escape from urban hustle."
+          },
+          "practicalLayout": {
+            "title": "Practical Layout",
+            "description": "Thoughtful arrangement allows efficient use of space."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Key Advantages",
+          "content": "Family houses offer spacious interiors and outdoor gardens for everyday life and relaxation. Location in a peaceful environment with plenty of privacy and quality amenities ensure comfortable living for families and multiple generations."
+        },
+        "whoAppreciates": {
+          "title": "Who Will Appreciate This Type of Property",
+          "familiesSpace": {
+            "title": "Families looking for comfortable housing with plenty of space"
+          },
+          "couplesPlanning": {
+            "title": "Couples planning a family who want a peaceful environment"
+          },
+          "multiGenerational": {
+            "title": "Multi-generational households with need for spacious layouts"
+          }
+        },
+        "projects": {
+          "title": "Gallery of Selected Houses",
+          "subtitle": "Discover our family house projects"
+        },
+        "benefits": {
+          "title": "Benefits of Our Family Houses",
+          "subtitle": "Why choose our family house projects",
+          "space": {
+            "title": "Generous Space",
+            "description": "Spacious layouts with multiple bedrooms and living areas for comfortable family living."
+          },
+          "garden": {
+            "title": "Private Gardens",
+            "description": "Private gardens with swimming pools and outdoor living spaces."
+          },
+          "family": {
+            "title": "Family-Friendly",
+            "description": "Located in safe, quiet areas with excellent schools and family amenities."
+          }
+        },
+        "gallery": {
+          "title": "Gallery of Selected Views",
+          "subtitle": "Discover our family house projects"
+        }
+      },
+      "villas": {
+        "hero": {
+          "title": "Luxury Villas",
+          "subtitle": "Luxury villas for the most demanding clients"
+        },
+        "description": {
+          "title": "Luxury Villas",
+          "content": "Standalone villas with premium amenities and emphasis on maximum privacy. Ideal choice for those looking for a luxury retreat in a premium location with breathtaking views and spacious interiors."
+        },
+        "whyChoose": {
+          "title": "Why Choose This Type of Property",
+          "maximumPrivacy": {
+            "title": "Maximum Privacy",
+            "description": "Standalone properties offer peace and undisturbed environment."
+          },
+          "luxuryAmenities": {
+            "title": "Luxury Amenities",
+            "description": "Premium materials, modern technology and first-class design."
+          },
+          "generousSpaces": {
+            "title": "Generous Spaces",
+            "description": "Indoor and outdoor spaces provide comfortable living."
+          },
+          "attractiveLocation": {
+            "title": "Attractive Location",
+            "description": "Located in prestigious areas with beautiful views."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Key Advantages",
+          "content": "Villas combine luxury, privacy and generous spaces, meeting the expectations of the most demanding. Thanks to premium amenities, modern technology, attractive locations and often collaboration with leading architects, they represent an ideal choice for comfortable and stylish living."
+        },
+        "whoAppreciates": {
+          "title": "Who Will Appreciate This Type of Property",
+          "prestigiousFamilies": {
+            "title": "Families who seek prestigious and quiet housing"
+          },
+          "elegantCouples": {
+            "title": "Couples who value elegant style and excellent facilities"
+          },
+          "privateIndividuals": {
+            "title": "Individuals who appreciate privacy and luxury environment"
+          },
+          "demandingExclusivity": {
+            "title": "Demanding people looking for exclusivity and maximum comfort"
+          }
+        },
+        "projects": {
+          "title": "Gallery of Selected Villas",
+          "subtitle": "Discover our exclusive villa projects"
+        },
+        "benefits": {
+          "title": "Benefits of Our Villas",
+          "subtitle": "Why choose our villa projects",
+          "luxury": {
+            "title": "Ultimate Luxury",
+            "description": "Premium materials, exclusive design and highest quality construction."
+          },
+          "privacy": {
+            "title": "Maximum Privacy",
+            "description": "Standalone properties with private gardens and exclusive access."
+          },
+          "location": {
+            "title": "Premium Location",
+            "description": "Located in the most prestigious areas of Costa del Sol."
+          }
+        },
+        "gallery": {
+          "title": "Gallery of Selected Views",
+          "subtitle": "Discover our villa projects"
+        }
+      },
+      "residentialComplexes": {
+        "hero": {
+          "title": "Properties in Residential Complexes",
+          "subtitle": "Secure and prestigious residential communities"
+        },
+        "description": {
+          "title": "Properties in Residential Complexes",
+          "content": "Closed residential complexes offer safe and prestigious housing with a wide range of services and shared spaces. Pools, wellness, gardens or coworking centers create a pleasant environment for a comfortable lifestyle."
+        },
+        "whyChoose": {
+          "title": "Why Choose This Type of Property",
+          "secureEnvironment": {
+            "title": "Secure Environment with Surveillance",
+            "description": "Closed complexes provide controlled access and high level of security."
+          },
+          "modernFacilities": {
+            "title": "Modern Facilities",
+            "description": "Offers luxury amenities such as wellness centers, fitness or coworking spaces."
+          },
+          "friendlyCommunity": {
+            "title": "Friendly Community",
+            "description": "Opportunity to build relationships with other residents through shared spaces."
+          },
+          "greatLocation": {
+            "title": "Great Location",
+            "description": "Often located near nature and urban infrastructure."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Key Advantages",
+          "content": "Closed residential complexes ensure a high level of security and comfort. Thanks to shared spaces such as pools or coworking centers, they offer not only housing but also space for relaxation and meeting with other residents. The peaceful environment and modern facilities meet the needs of demanding users."
+        },
+        "whoAppreciates": {
+          "title": "Who Will Appreciate This Type of Property",
+          "familiesChildren": {
+            "title": "Families with children looking for a safe home"
+          },
+          "individualsServices": {
+            "title": "Individuals looking for a wide range of services"
+          },
+          "couplesComfort": {
+            "title": "Couples who appreciate modern amenities and comfort"
+          },
+          "communityLiving": {
+            "title": "People who want community living with added value"
+          }
+        },
+        "benefits": {
+          "title": "Benefits of Our Complexes",
+          "subtitle": "Why choose our residential complex projects",
+          "community": {
+            "title": "Community Living",
+            "description": "Safe environment with like-minded neighbors and shared amenities."
+          },
+          "amenities": {
+            "title": "Premium Amenities",
+            "description": "Pools, gyms, gardens and coworking spaces for residents."
+          },
+          "security": {
+            "title": "24/7 Security",
+            "description": "Round-the-clock security and surveillance for peace of mind."
+          }
+        },
+        "gallery": {
+          "title": "Gallery of Selected Properties in Closed Complexes",
+          "subtitle": "Explore our secure residential complexes with premium amenities"
+        }
+      },
+      "hotelServices": {
+        "hero": {
+          "title": "Properties with Hotel Services",
+          "subtitle": "Luxury residences with hotel amenities"
+        },
+        "description": {
+          "title": "Properties with Hotel Services",
+          "content": "Properties with hotel services combine the comfort of living with the advantages of professional care. Residents can use services such as cleaning, catering or concierge, which allows them a carefree and comfortable stay."
+        },
+        "whyChoose": {
+          "title": "Why Choose This Type of Property",
+          "carefreeStay": {
+            "title": "Carefree Stay",
+            "description": "Services such as cleaning or concierge ensure maximum comfort."
+          },
+          "professionalManagement": {
+            "title": "Professional Property Management",
+            "description": "Takes care of everything from maintenance to administration."
+          },
+          "luxuryAmenities": {
+            "title": "Luxury Amenities",
+            "description": "Premium materials and modern design meet the expectations of demanding users."
+          },
+          "idealRecreation": {
+            "title": "Ideal for Recreation",
+            "description": "Perfect choice for relaxing stays without worries."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Key Advantages",
+          "content": "This type of property ensures comfort at the level of luxury hotels while offering the privacy of your own home. Thanks to the wide range of services, residents can enjoy a carefree life while property care is in the hands of professionals."
+        },
+        "whoAppreciates": {
+          "title": "Who Will Appreciate This Type of Property",
+          "individualsRelaxation": {
+            "title": "Individuals looking for comfort and relaxation"
+          },
+          "couplesTime": {
+            "title": "Couples who want to have maximum time for themselves"
+          },
+          "carefreeManagement": {
+            "title": "People who prefer carefree management of their housing"
+          },
+          "premiumLocation": {
+            "title": "Those who appreciate premium location and quality services"
+          }
+        },
+        "projects": {
+          "title": "Gallery of Selected Properties with Hotel Services",
+          "subtitle": "Discover our hotel service projects"
+        },
+        "benefits": {
+          "title": "Benefits of Hotel Services",
+          "subtitle": "Why choose our hotel service projects",
+          "convenience": {
+            "title": "Ultimate Convenience",
+            "description": "All hotel services available without leaving your home."
+          },
+          "services": {
+            "title": "Comprehensive Services",
+            "description": "Cleaning, concierge, catering and property management included."
+          },
+          "management": {
+            "title": "Professional Management",
+            "description": "Professional property management ensures worry-free ownership."
+          }
+        },
+        "gallery": {
+          "title": "Gallery of Selected Views",
+          "subtitle": "Discover our hotel service projects"
+        }
+      },
+      "golfProperties": {
+        "hero": {
+          "title": "Golf Properties",
+          "subtitle": "Properties near top golf courses"
+        },
+        "description": {
+          "title": "Golf Properties",
+          "content": "Properties near top golf courses. These properties offer exclusive living in prestigious locations with views of the green. They combine passion for golf with the opportunity to spend time in beautiful and peaceful surroundings."
+        },
+        "whyChoose": {
+          "title": "Why Choose This Type of Property",
+          "golfProximity": {
+            "title": "Golf Course Proximity",
+            "description": "Perfect for golf lovers and relaxed lifestyle enthusiasts."
+          },
+          "luxuryLocation": {
+            "title": "Luxury Location",
+            "description": "Peaceful environment with beautiful views of nature."
+          },
+          "socialFacilities": {
+            "title": "Social Facilities",
+            "description": "Ideal for meeting like-minded neighbors."
+          },
+          "activeRecreation": {
+            "title": "Active Recreation",
+            "description": "Opportunity to combine sport and relaxation."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Key Advantages",
+          "content": "Golf properties are synonymous with prestige and comfort. They are located in peaceful areas with beautiful views and offer top services and facilities. They are an ideal choice for those who want to combine relaxation with an active lifestyle."
+        },
+        "whoAppreciates": {
+          "title": "Who Will Appreciate This Type of Property",
+          "golfEnthusiasts": {
+            "title": "Golf enthusiasts looking for housing near courses"
+          },
+          "prestigiousCouples": {
+            "title": "Couples looking for prestigious housing"
+          },
+          "exclusiveFamilies": {
+            "title": "Families who prefer quiet and exclusive locations"
+          },
+          "activeRecreation": {
+            "title": "People who want to combine recreation with active rest"
+          }
+        },
+        "gallery": {
+          "title": "Gallery of Selected Views",
+          "subtitle": "Discover our golf property projects"
+        },
+        "benefits": {
+          "title": "Benefits of Golf Properties",
+          "subtitle": "Why choose our golf property projects",
+          "golf": {
+            "title": "Golf Access",
+            "description": "Easy access to world-class golf courses and facilities."
+          },
+          "luxury": {
+            "title": "Luxury Living",
+            "description": "Premium properties in prestigious golf communities."
+          },
+          "lifestyle": {
+            "title": "Active Lifestyle",
+            "description": "Perfect for active lifestyle with excellent sports facilities."
+          }
+        }
+      },
+      "smartHomes": {
+        "hero": {
+          "title": "Smart & Green Living",
+          "subtitle": "Modern living with emphasis on sustainability and environmental friendliness"
+        },
+        "description": {
+          "title": "Smart and Green Living",
+          "content": "Modern living with emphasis on sustainability and environmental friendliness. These properties use ecological materials, low-energy technologies and offer harmonious connection with nature."
+        },
+        "whyChoose": {
+          "title": "Why Choose This Type of Property",
+          "ecoLiving": {
+            "title": "Eco-Friendly Living",
+            "description": "Sustainable materials and low energy consumption save nature and costs."
+          },
+          "modernTech": {
+            "title": "Modern Technology",
+            "description": "Intelligent systems make everyday life easier."
+          },
+          "healthyEnvironment": {
+            "title": "Healthy Environment",
+            "description": "Quality air, proximity to nature and relaxation zones."
+          },
+          "designFocus": {
+            "title": "Design Focus",
+            "description": "Architecturally thoughtful projects with modern appearance."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Key Advantages",
+          "content": "Smart and green living brings a combination of modern comfort and environmental friendliness. Energy efficiency, ecological materials and quality technology make these projects an attractive choice for anyone who wants to live in harmony with nature."
+        },
+        "whoAppreciates": {
+          "title": "Who Will Appreciate This Type of Property",
+          "ecoConscious": {
+            "title": "Individuals and families interested in ecology"
+          },
+          "energyEfficient": {
+            "title": "People looking for energy-efficient and modern housing"
+          },
+          "natureLovers": {
+            "title": "Nature lovers and healthy lifestyle enthusiasts"
+          }
+        },
+        "projects": {
+          "title": "Gallery of Selected Ecological Properties",
+          "subtitle": "Discover our smart and green living projects"
+        },
+        "benefits": {
+          "title": "Benefits of Smart Living",
+          "subtitle": "Why choose our smart living projects",
+          "sustainability": {
+            "title": "Eco-Friendly",
+            "description": "Sustainable construction with eco-friendly materials and technologies."
+          },
+          "energy": {
+            "title": "Energy Efficient",
+            "description": "Low energy consumption with renewable energy sources."
+          },
+          "technology": {
+            "title": "Smart Technology",
+            "description": "Modern smart home technologies for comfortable living."
+          }
+        },
+        "gallery": {
+          "title": "Gallery of Selected Views",
+          "subtitle": "Discover our smart and green living projects"
+        }
+      }
     }
   },
   "reviews": {

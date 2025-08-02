@@ -67,6 +67,7 @@ export default function GetInTuch({ prefilledSubject, id }: GetInTuchProps) {
     return (
         <section id={id} className="relative lg:py-24 py-16 bg-slate-50 dark:bg-slate-800">
             <div className="container">
+                    <h2 className="text-4xl font-bold mb-8 text-center">{t('doYouWantToKnowMore')}</h2>
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Contact Information */}
                     <div>

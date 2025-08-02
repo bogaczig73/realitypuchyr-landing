@@ -128,21 +128,30 @@ export default function Spain() {
                                 <div className="mt-6">
                                     <h3 className="text-xl hover:text-green-600 font-medium">{t(feature.titleKey)}</h3>
                                     <p className="text-slate-400 mt-3">{t(feature.descriptionKey)}</p>
-                                    <button 
-                                        onClick={() => {
-                                            const contactSection = document.getElementById('contact');
-                                            if (contactSection) {
-                                                contactSection.scrollIntoView({ behavior: 'smooth' });
-                                                // Update the subject using the global function
-                                                if ((window as any).updateContactSubject) {
-                                                    (window as any).updateContactSubject(feature.subject);
+                                    {feature.titleKey === "properties.developerProjects.title" ? (
+                                        <Link 
+                                            href="/spain/developer-projects"
+                                            className="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-4"
+                                        >
+                                            {t(feature.ctaKey)}
+                                        </Link>
+                                    ) : (
+                                        <button 
+                                            onClick={() => {
+                                                const contactSection = document.getElementById('contact');
+                                                if (contactSection) {
+                                                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                                                    // Update the subject using the global function
+                                                    if ((window as any).updateContactSubject) {
+                                                        (window as any).updateContactSubject(feature.subject);
+                                                    }
                                                 }
-                                            }
-                                        }}
-                                        className="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-4"
-                                    >
-                                        {t(feature.ctaKey)}
-                                    </button>
+                                            }}
+                                            className="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-4"
+                                        >
+                                            {t(feature.ctaKey)}
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         ))}
