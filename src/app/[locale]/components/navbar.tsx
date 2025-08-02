@@ -154,6 +154,11 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                                             {t('spain')}
                                         </Link>
                                     </li>
+                                    <li className={isActive('/spain/developer-projects') ? 'active' : ''}>
+                                        <Link href={`/${currentLocale}/spain/developer-projects`} className="sub-menu-item">
+                                            {t('developerProjects')}
+                                        </Link>
+                                    </li>
 
                                     <li className={isActive('/faq') ? 'active' : ''}>
                                         <Link href={`/${currentLocale}/faq`} className="sub-menu-item">
