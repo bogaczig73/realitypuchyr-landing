@@ -10,8 +10,801 @@
     "faqLink": "FAQ",
     "blogLink": "Blog",
     "spain": "Španělsko",
-    "developerProjects": "Španělsko - Developerské projekty",
+    "developerProjects": "Developerské projekty",
     "reviewsLink": "Recenze"
+  },
+  "developerProjects": {
+    "hero": {
+      "title": "Developerské projekty",
+      "subtitle": "Objevte exkluzivní novostavby v České republice a Španělsku"
+    },
+    "regions": {
+      "badge": "Regiony",
+      "title": "Naše developerské projekty",
+      "subtitle": "Prozkoumejte naše developerské projekty v různých regionech",
+      "categoriesTitle": "Dostupné kategorie",
+      "spain": {
+        "title": "Španělsko - Costa del Sol",
+        "description": "Luxusní developerské projekty na slunném pobřeží Španělska"
+      },
+      "czechRepublic": {
+        "title": "Česká republika",
+        "description": "Kvalitní developerské projekty v srdci Evropy"
+      }
+    },
+    "categories": {
+        "badge": "Kategorie",
+        "subtitle": "Prozkoumejte náš komplexní výběr developerských projektů napříč různými typy nemovitostí",
+        "title": "Kategorie nemovitostí",
+        "backToCategories": "Zpět ke kategoriím",
+        "backToRegions": "Zpět ke regionům",
+        "apartments": {
+          "title": "Byty",
+          "description": "Stylové byty různých velikostí a dispozic, ideální pro páry, rodiny a jednotlivce. Každý byt nabízí moderní design, dostatek přirozeného světla a často terasu nebo balkon s výhledem na moře."
+        },
+        "penthouses": {
+          "title": "Penthousy",
+          "description": "Luxusní penthousy v nejvyšších patrech, často s panoramatickým výhledem na pobřeží a soukromou střešní terasou. Některé jednotky zahrnují soukromý bazén nebo vířivku."
+        },
+        "familyHouses": {
+          "title": "Rodinné, řadové domy a dvojdomy",
+          "description": "Prostorné domy vhodné pro rodinné bydlení, obklopené klidem a zelení. Nabízejí soukromou zahradu, často s bazénem, a dostatek prostoru pro každodenní život a relaxaci."
+        },
+        "villas": {
+          "title": "Vily",
+          "description": "Samostatně stojící vily s prémiovým vybavením a důrazem na maximální soukromí. Ideální volba pro náročné klienty hledající luxusní útočiště s dechberoucími výhledy a prémiovou lokalitou."
+        },
+        "residentialComplexes": {
+          "title": "Nemovitosti v rezidenčních komplexech",
+          "description": "Bydlení v bezpečných a prestižních komplexech, které nabízejí sdílené prostory jako bazény, wellness, posilovny, zahrady nebo coworking centra. Ideální pro ty, kteří hledají komunitní životní styl."
+        },
+        "hotelServices": {
+          "title": "Nemovitosti s hotelovými službami",
+          "description": "Rezidence s přístupem k hotelovým službám jako úklid, concierge, stravování nebo správa nemovitostí. Perfektní volba pro pohodlný a bezstarostný pobyt."
+        },
+        "golfProperties": {
+          "title": "Golfové nemovitosti",
+          "description": "Nemovitosti umístěné poblíž špičkových golfových hřišť. Ideální pro golfové nadšence, kteří chtějí spojit svou vášeň s bydlením v prestižní lokalitě."
+        },
+        "smartHomes": {
+          "title": "Smart & Green Living",
+          "description": "Moderní projekty s důrazem na udržitelnost, nízkou spotřebu energie a ekologické materiály. Perfektní pro ty, kteří hledají harmonii s přírodou."
+        }
+      },
+    "spain": {
+      "apartments": {
+        "hero": {
+          "title": "Byty",
+          "subtitle": "Moderní byty v nejkrásnějších lokalitách na Costa del Sol"
+        },
+        "description": {
+          "title": "Stylové byty pro každou potřebu",
+          "content": "Naše bytové projekty nabízejí dokonalou kombinaci pohodlí, stylu a lokace. Každý byt je navržen s důrazem na detail, používá kvalitní materiály a moderní technologie. Ať už hledáte útulný studio pro dva nebo prostorný rodinný byt, máme pro vás tu správnou volbu."
+        },
+        "features": {
+          "modernDesign": "Moderní design a vybavení",
+          "naturalLight": "Dostatek přirozeného světla",
+          "terraceBalcony": "Terasa nebo balkon s výhledem",
+          "variousSizes": "Různé velikosti a dispozice",
+          "idealForAll": "Ideální pro páry, rodiny a jednotlivce",
+          "excellentLocation": "Vynikající lokace na Costa del Sol"
+        },
+        "projects": {
+          "title": "Vybrané projekty",
+          "subtitle": "Objevte náš výběr nejlepších bytových projektů"
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat tento typ nemovitosti",
+          "flexibleLayout": {
+            "title": "Flexibilní dispozice",
+            "description": "Výběr různých velikostí a uspořádání bytů podle vašich potřeb."
+          },
+          "modernInteriors": {
+            "title": "Moderní interiéry",
+            "description": "Vybavení a design odpovídají nejnovějším trendům v bydlení."
+          },
+          "plentyOfLight": {
+            "title": "Dostatek světla",
+            "description": "Velká okna a otevřené prostory zajišťují příjemné prostředí."
+          },
+          "comfortableRelaxation": {
+            "title": "Pohodlná relaxace",
+            "description": "Balkony, terasy nebo zahrady poskytují ideální místo pro relaxaci."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Byty nabízejí flexibilní možnosti dispozic, které vyhovují různým potřebám, od jednotlivců po větší rodiny. Díky modernímu designu a kvalitnímu zpracování si můžete užívat pohodlné bydlení plné světla, doplněné venkovním prostorem pro relaxaci."
+        },
+        "whoAppreciates": {
+          "title": "Kdo ocení tento typ nemovitosti",
+          "modernCouples": {
+            "title": "Páry hledající moderní a praktické bydlení"
+          },
+          "flexibleFamilies": {
+            "title": "Rodiny, které potřebují flexibilní dispozice"
+          },
+          "styleIndividuals": {
+            "title": "Jednotlivci preferující pohodlí a stylové prostředí"
+          }
+        },
+        "benefits": {
+          "title": "Výhody našich bytů",
+          "subtitle": "Proč si vybrat naše bytové projekty",
+          "modern": {
+            "title": "Moderní design",
+            "description": "Současný design s kvalitními materiály a smart home technologiemi."
+          },
+          "location": {
+            "title": "Prémiová lokace",
+            "description": "Vynikající lokace s snadným přístupem k plážím, obchodům a vybavení."
+          },
+          "quality": {
+            "title": "Kvalitní stavba",
+            "description": "Postaveno ověřenými developery s léty zkušeností na trhu."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných pohledů",
+          "subtitle": "Objevte naše bytové projekty"
+        }
+      },
+      "penthouses": {
+        "hero": {
+          "title": "Penthousy",
+          "subtitle": "Exkluzivní penthousy s panoramatickými výhledy"
+        },
+        "description": {
+          "title": "Luxusní bydlení v nejvyšší kvalitě",
+          "content": "Naše projekty penthousů představují vrchol luxusního bydlení na Costa del Sol. Tyto exkluzivní nemovitosti nabízejí nejen dechberoucí panoramatické výhledy, ale také nejvyšší úroveň soukromí a pohodlí. Každý penthous je jedinečný a navržen pro nejnáročnější klienty."
+        },
+        "features": {
+          "panoramicViews": "Panoramatické výhledy na pobřeží",
+          "privateTerraces": "Soukromá střešní terasa",
+          "privatePool": "Soukromý bazén nebo vířivka",
+          "luxuryAmenities": "Luxusní vybavení a materiály",
+          "maximumPrivacy": "Maximální soukromí a klid",
+          "prestigiousLocation": "Prestižní lokace v nejvyšších patrech"
+        },
+        "projects": {
+          "title": "Vybrané penthousy",
+          "subtitle": "Objevte naše exkluzivní projekty penthousů"
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat tento typ nemovitosti",
+          "exclusiveViews": {
+            "title": "Exkluzivní výhledy",
+            "description": "Panoramatické výhledy na okolní krajinu garantují jedinečný zážitek."
+          },
+          "privateTerraces": {
+            "title": "Soukromé terasy",
+            "description": "Prostor pro relaxaci, setkávání s přáteli nebo opalování."
+          },
+          "luxuryAmenities": {
+            "title": "Luxusní vybavení",
+            "description": "Prémiové materiály, vířivky a další prvky pro maximální pohodlí."
+          },
+          "peacefulEnvironment": {
+            "title": "Klidné prostředí",
+            "description": "Nejvyšší patra budov zajišťují minimální hluk a maximální soukromí."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Penthousy představují kombinaci luxusu a soukromí, doplněnou jedinečnými výhledy a prémiovým vybavením. Nabízejí ideální prostor pro relaxaci na soukromých terasách, zatímco kvalitní materiály a design zajišťují maximální pohodlí."
+        },
+        "whoAppreciates": {
+          "title": "Kdo ocení tento typ nemovitosti",
+          "demandingCouples": {
+            "title": "Náročné páry a jednotlivci, kteří chtějí luxusní bydlení"
+          },
+          "exclusiveFamilies": {
+            "title": "Rodiny hledající exkluzivitu a prostor"
+          },
+          "panoramicViews": {
+            "title": "Milovníci panoramatických výhledů a soukromí"
+          }
+        },
+        "benefits": {
+          "title": "Výhody našich penthousů",
+          "subtitle": "Proč si vybrat naše projekty penthousů",
+          "luxury": {
+            "title": "Ultimátní luxus",
+            "description": "Prémiové materiály, exkluzivní design a nejvyšší kvalita dokončení."
+          },
+          "view": {
+            "title": "Panoramatické výhledy",
+            "description": "Dechberoucí výhledy na Středozemní moře a pobřeží Costa del Sol."
+          },
+          "privacy": {
+            "title": "Maximální soukromí",
+            "description": "Soukromé terasy a exkluzivní přístup zajišťují úplné soukromí."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných pohledů",
+          "subtitle": "Objevte naše projekty penthousů"
+        }
+      },
+      "familyHouses": {
+        "hero": {
+          "title": "Rodinné, řadové domy a dvojdomy",
+          "subtitle": "Prostorné rodinné domy v klidných lokalitách"
+        },
+        "description": {
+          "title": "Rodinné, řadové domy a dvojdomy",
+          "content": "Prostorné domy ideální pro rodinné bydlení, obklopené klidnou přírodou. Každý dům nabízí vlastní zahradu, často s bazénem, a dostatek prostoru pro každodenní život a relaxaci, včetně vícegeneračního bydlení."
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat tento typ nemovitosti",
+          "ampleSpace": {
+            "title": "Dostatek prostoru",
+            "description": "Ideální pro rodinný život a větší pohodlí."
+          },
+          "privateGardens": {
+            "title": "Soukromé zahrady",
+            "description": "Skvělý prostor pro relaxaci, děti nebo zahradničení."
+          },
+          "peacefulEnvironment": {
+            "title": "Klidné prostředí",
+            "description": "Lokace obklopená zelení nabízí únik od městského ruchu."
+          },
+          "practicalLayout": {
+            "title": "Praktické uspořádání",
+            "description": "Promyšlené uspořádání umožňuje efektivní využití prostoru."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Rodinné domy nabízejí prostorné interiéry a venkovní zahrady pro každodenní život a relaxaci. Lokace v klidném prostředí s dostatkem soukromí a kvalitním vybavením zajišťuje pohodlné bydlení pro rodiny a více generací."
+        },
+        "whoAppreciates": {
+          "title": "Kdo ocení tento typ nemovitosti",
+          "familiesSpace": {
+            "title": "Rodiny hledající pohodlné bydlení s dostatkem prostoru"
+          },
+          "couplesPlanning": {
+            "title": "Páry plánující rodinu, které chtějí klidné prostředí"
+          },
+          "multiGenerational": {
+            "title": "Vícegenerační domácnosti s potřebou prostorných dispozic"
+          }
+        },
+        "projects": {
+          "title": "Galerie vybraných domů",
+          "subtitle": "Objevte naše projekty rodinných domů"
+        },
+        "benefits": {
+          "title": "Výhody našich rodinných domů",
+          "subtitle": "Proč si vybrat naše projekty rodinných domů",
+          "space": {
+            "title": "Štědrý prostor",
+            "description": "Prostorné dispozice s více ložnicemi a obytnými prostory pro pohodlné rodinné bydlení."
+          },
+          "garden": {
+            "title": "Soukromé zahrady",
+            "description": "Soukromé zahrady s bazény a venkovními obytnými prostory."
+          },
+          "family": {
+            "title": "Rodinné prostředí",
+            "description": "Umístěny v bezpečných, klidných oblastech s vynikajícími školami a rodinným vybavením."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných pohledů",
+          "subtitle": "Objevte naše projekty rodinných domů"
+        }
+      },
+      "villas": {
+        "hero": {
+          "title": "Luxusní vily",
+          "subtitle": "Luxusní vily pro nejnáročnější klienty"
+        },
+        "description": {
+          "title": "Luxusní vily",
+          "content": "Samostatně stojící vily s prémiovým vybavením a důrazem na maximální soukromí. Ideální volba pro ty, kteří hledají luxusní útočiště v prémiové lokalitě s dechberoucími výhledy a prostornými interiéry."
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat tento typ nemovitosti",
+          "maximumPrivacy": {
+            "title": "Maximální soukromí",
+            "description": "Samostatně stojící nemovitosti nabízejí klid a nerušené prostředí."
+          },
+          "luxuryAmenities": {
+            "title": "Luxusní vybavení",
+            "description": "Prémiové materiály, moderní technologie a prvotřídní design."
+          },
+          "generousSpaces": {
+            "title": "Štědré prostory",
+            "description": "Vnitřní a venkovní prostory poskytují pohodlné bydlení."
+          },
+          "attractiveLocation": {
+            "title": "Atraktivní lokace",
+            "description": "Umístěny v prestižních oblastech s krásnými výhledy."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Vily kombinují luxus, soukromí a štědré prostory, které splňují očekávání nejnáročnějších. Díky prémiovému vybavení, moderní technologii, atraktivním lokalitám a často spolupráci s předními architekty představují ideální volbu pro pohodlné a stylové bydlení."
+        },
+        "whoAppreciates": {
+          "title": "Kdo ocení tento typ nemovitosti",
+          "prestigiousFamilies": {
+            "title": "Rodiny, které hledají prestižní a klidné bydlení"
+          },
+          "elegantCouples": {
+            "title": "Páry, které si cení elegantního stylu a vynikajícího vybavení"
+          },
+          "privateIndividuals": {
+            "title": "Jednotlivci, kteří si cení soukromí a luxusního prostředí"
+          },
+          "demandingExclusivity": {
+            "title": "Nároční lidé hledající exkluzivitu a maximální pohodlí"
+          }
+        },
+        "projects": {
+          "title": "Galerie vybraných vil",
+          "subtitle": "Objevte naše exkluzivní projekty vil"
+        },
+        "benefits": {
+          "title": "Výhody našich vil",
+          "subtitle": "Proč si vybrat naše projekty vil",
+          "luxury": {
+            "title": "Ultimátní luxus",
+            "description": "Prémiové materiály, exkluzivní design a nejvyšší kvalita stavby."
+          },
+          "privacy": {
+            "title": "Maximální soukromí",
+            "description": "Samostatně stojící nemovitosti se soukromými zahradami a exkluzivním přístupem."
+          },
+          "location": {
+            "title": "Prémiová lokace",
+            "description": "Umístěny v nejprestižnějších oblastech Costa del Sol."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných pohledů",
+          "subtitle": "Objevte naše projekty vil"
+        }
+      },
+      "residentialComplexes": {
+        "hero": {
+          "title": "Nemovitosti v rezidenčních komplexech",
+          "subtitle": "Bezpečné a prestižní rezidenční komunity"
+        },
+        "description": {
+          "title": "Nemovitosti v rezidenčních komplexech",
+          "content": "Uzavřené rezidenční komplexy nabízejí bezpečné a prestižní bydlení se širokou škálou služeb a sdílených prostor. Bazény, wellness, zahrady nebo coworking centra vytvářejí příjemné prostředí pro pohodlný životní styl."
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat tento typ nemovitosti",
+          "secureEnvironment": {
+            "title": "Bezpečné prostředí s dohledem",
+            "description": "Uzavřené komplexy poskytují kontrolovaný přístup a vysokou úroveň bezpečnosti."
+          },
+          "modernFacilities": {
+            "title": "Moderní vybavení",
+            "description": "Nabízí luxusní vybavení jako wellness centra, fitness nebo coworking prostory."
+          },
+          "friendlyCommunity": {
+            "title": "Přátelská komunita",
+            "description": "Možnost budovat vztahy s ostatními obyvateli prostřednictvím sdílených prostor."
+          },
+          "greatLocation": {
+            "title": "Skvělá lokace",
+            "description": "Často umístěny poblíž přírody a městské infrastruktury."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Uzavřené rezidenční komplexy zajišťují vysokou úroveň bezpečnosti a pohodlí. Díky sdíleným prostorům jako bazény nebo coworking centra nabízejí nejen bydlení, ale také prostor pro relaxaci a setkávání s ostatními obyvateli. Klidné prostředí a moderní vybavení splňují potřeby náročných uživatelů."
+        },
+        "whoAppreciates": {
+          "title": "Kdo ocení tento typ nemovitosti",
+          "familiesChildren": {
+            "title": "Rodiny s dětmi hledající bezpečný domov"
+          },
+          "individualsServices": {
+            "title": "Jednotlivci hledající širokou škálu služeb"
+          },
+          "couplesComfort": {
+            "title": "Páry, které si cení moderního vybavení a pohodlí"
+          },
+          "communityLiving": {
+            "title": "Lidé, kteří chtějí komunitní bydlení s přidanou hodnotou"
+          }
+        },
+        "projects": {
+          "title": "Galerie vybraných nemovitostí v uzavřených komplexech",
+          "subtitle": "Prozkoumejte naše bezpečné rezidenční komplexy s prémiovým vybavením"
+        },
+        "benefits": {
+          "title": "Výhody našich komplexů",
+          "subtitle": "Proč si vybrat naše projekty rezidenčních komplexů",
+          "community": {
+            "title": "Komunitní bydlení",
+            "description": "Bezpečné prostředí s podobně smýšlejícími sousedy a sdíleným vybavením."
+          },
+          "amenities": {
+            "title": "Prémiové vybavení",
+            "description": "Bazény, fitness centra, zahrady a coworking prostory pro obyvatele."
+          },
+          "security": {
+            "title": "24/7 bezpečnost",
+            "description": "Nepřetržitá bezpečnost a dohled pro klid duše."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných nemovitostí v uzavřených komplexech",
+          "subtitle": "Prozkoumejte naše bezpečné rezidenční komplexy s prémiovým vybavením"
+        }
+      },
+      "hotelServices": {
+        "hero": {
+          "title": "Nemovitosti s hotelovými službami",
+          "subtitle": "Luxusní rezidence s hotelovým vybavením"
+        },
+        "description": {
+          "title": "Nemovitosti s hotelovými službami",
+          "content": "Nemovitosti s hotelovými službami kombinují pohodlí bydlení s výhodami profesionální péče. Obyvatelé mohou využívat služby jako úklid, stravování nebo concierge, což jim umožňuje bezstarostný a pohodlný pobyt."
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat tento typ nemovitosti",
+          "carefreeStay": {
+            "title": "Bezstarostný pobyt",
+            "description": "Služby jako úklid nebo concierge zajišťují maximální pohodlí."
+          },
+          "professionalManagement": {
+            "title": "Profesionální správa nemovitostí",
+            "description": "Stará se o vše od údržby po administrativu."
+          },
+          "luxuryAmenities": {
+            "title": "Luxusní vybavení",
+            "description": "Prémiové materiály a moderní design splňují očekávání náročných uživatelů."
+          },
+          "idealRecreation": {
+            "title": "Ideální pro rekreaci",
+            "description": "Perfektní volba pro relaxační pobyty bez starostí."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Tento typ nemovitosti zajišťuje pohodlí na úrovni luxusních hotelů, přičemž nabízí soukromí vlastního domova. Díky široké škále služeb si obyvatelé mohou užívat bezstarostný život, zatímco péče o nemovitost je v rukou profesionálů."
+        },
+        "whoAppreciates": {
+          "title": "Kdo ocení tento typ nemovitosti",
+          "individualsRelaxation": {
+            "title": "Jednotlivci hledající pohodlí a relaxaci"
+          },
+          "couplesTime": {
+            "title": "Páry, které chtějí mít maximální čas pro sebe"
+          },
+          "carefreeManagement": {
+            "title": "Lidé, kteří preferují bezstarostnou správu svého bydlení"
+          },
+          "premiumLocation": {
+            "title": "Ti, kteří si cení prémiové lokace a kvalitních služeb"
+          }
+        },
+        "projects": {
+          "title": "Galerie vybraných nemovitostí s hotelovými službami",
+          "subtitle": "Objevte naše projekty hotelových služeb"
+        },
+        "benefits": {
+          "title": "Výhody hotelových služeb",
+          "subtitle": "Proč si vybrat naše projekty hotelových služeb",
+          "convenience": {
+            "title": "Ultimátní pohodlí",
+            "description": "Všechny hotelové služby dostupné bez opuštění vašeho domova."
+          },
+          "services": {
+            "title": "Komplexní služby",
+            "description": "Úklid, concierge, stravování a správa nemovitostí v ceně."
+          },
+          "management": {
+            "title": "Profesionální správa",
+            "description": "Profesionální správa nemovitostí zajišťuje bezstarostné vlastnictví."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných pohledů",
+          "subtitle": "Objevte naše projekty hotelových služeb"
+        }
+      },
+      "golfProperties": {
+        "hero": {
+          "title": "Golfové nemovitosti",
+          "subtitle": "Nemovitosti poblíž špičkových golfových hřišť"
+        },
+        "description": {
+          "title": "Golfové nemovitosti",
+          "content": "Nemovitosti poblíž špičkových golfových hřišť. Tyto nemovitosti nabízejí exkluzivní bydlení v prestižních lokalitách s výhledem na zeleň. Kombinují vášeň pro golf s možností trávit čas v krásném a klidném prostředí."
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat tento typ nemovitosti",
+          "golfProximity": {
+            "title": "Blízkost golfového hřiště",
+            "description": "Perfektní pro milovníky golfu a nadšence uvolněného životního stylu."
+          },
+          "luxuryLocation": {
+            "title": "Luxusní lokace",
+            "description": "Klidné prostředí s krásnými výhledy na přírodu."
+          },
+          "socialFacilities": {
+            "title": "Společenské vybavení",
+            "description": "Ideální pro setkávání s podobně smýšlejícími sousedy."
+          },
+          "activeRecreation": {
+            "title": "Aktivní rekreace",
+            "description": "Možnost kombinovat sport a relaxaci."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Golfové nemovitosti jsou synonymem prestiže a pohodlí. Jsou umístěny v klidných oblastech s krásnými výhledy a nabízejí špičkové služby a vybavení. Jsou ideální volbou pro ty, kteří chtějí kombinovat relaxaci s aktivním životním stylem."
+        },
+        "whoAppreciates": {
+          "title": "Kdo ocení tento typ nemovitosti",
+          "golfEnthusiasts": {
+            "title": "Golfoví nadšenci hledající bydlení poblíž hřišť"
+          },
+          "prestigiousCouples": {
+            "title": "Páry hledající prestižní bydlení"
+          },
+          "exclusiveFamilies": {
+            "title": "Rodiny, které preferují klidné a exkluzivní lokace"
+          },
+          "activeRecreation": {
+            "title": "Lidé, kteří chtějí kombinovat rekreaci s aktivním odpočinkem"
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných pohledů",
+          "subtitle": "Objevte naše projekty golfových nemovitostí"
+        },
+        "benefits": {
+          "title": "Výhody golfových nemovitostí",
+          "subtitle": "Proč si vybrat naše projekty golfových nemovitostí",
+          "golf": {
+            "title": "Přístup k golfu",
+            "description": "Snadný přístup ke světovým golfovým hřištím a vybavení."
+          },
+          "luxury": {
+            "title": "Luxusní bydlení",
+            "description": "Prémiové nemovitosti v prestižních golfových komunitách."
+          },
+          "lifestyle": {
+            "title": "Aktivní životní styl",
+            "description": "Perfektní pro aktivní životní styl s vynikajícími sportovními vybaveními."
+          }
+        }
+      },
+      "smartHomes": {
+        "hero": {
+          "title": "Smart & Green Living",
+          "subtitle": "Moderní bydlení s důrazem na udržitelnost a ekologickou šetrnost"
+        },
+        "description": {
+          "title": "Smart a Green Living",
+          "content": "Moderní bydlení s důrazem na udržitelnost a ekologickou šetrnost. Tyto nemovitosti používají ekologické materiály, nízkoenergetické technologie a nabízejí harmonické spojení s přírodou."
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat tento typ nemovitosti",
+          "ecoLiving": {
+            "title": "Ekologické bydlení",
+            "description": "Udržitelné materiály a nízká spotřeba energie šetří přírodu a náklady."
+          },
+          "modernTech": {
+            "title": "Moderní technologie",
+            "description": "Inteligentní systémy usnadňují každodenní život."
+          },
+          "healthyEnvironment": {
+            "title": "Zdravé prostředí",
+            "description": "Kvalitní vzduch, blízkost přírody a relaxační zóny."
+          },
+          "designFocus": {
+            "title": "Důraz na design",
+            "description": "Architektonicky promyšlené projekty s moderním vzhledem."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Smart a green living přináší kombinaci moderního pohodlí a ekologické šetrnosti. Energetická účinnost, ekologické materiály a kvalitní technologie činí tyto projekty atraktivní volbou pro každého, kdo chce žít v harmonii s přírodou."
+        },
+        "whoAppreciates": {
+          "title": "Kdo ocení tento typ nemovitosti",
+          "ecoConscious": {
+            "title": "Jednotlivci a rodiny zajímající se o ekologii"
+          },
+          "energyEfficient": {
+            "title": "Lidé hledající energeticky účinné a moderní bydlení"
+          },
+          "natureLovers": {
+            "title": "Milovníci přírody a nadšenci zdravého životního stylu"
+          }
+        },
+        "projects": {
+          "title": "Galerie vybraných ekologických nemovitostí",
+          "subtitle": "Objevte naše projekty smart a green living"
+        },
+        "benefits": {
+          "title": "Výhody smart living",
+          "subtitle": "Proč si vybrat naše projekty smart living",
+          "sustainability": {
+            "title": "Ekologicky šetrné",
+            "description": "Udržitelná stavba s ekologicky šetrnými materiály a technologiemi."
+          },
+          "energy": {
+            "title": "Energeticky účinné",
+            "description": "Nízká spotřeba energie s obnovitelnými zdroji energie."
+          },
+          "technology": {
+            "title": "Smart technologie",
+            "description": "Moderní smart home technologie pro pohodlné bydlení."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných pohledů",
+          "subtitle": "Objevte naše projekty smart a green living"
+        }
+      }
+    },
+    "czechRepublic": {
+      "apartments": {
+        "hero": {
+          "title": "Byty v České republice",
+          "subtitle": "Moderní byty v srdci Evropy"
+        },
+        "description": {
+          "title": "Kvalitní byty pro každý životní styl",
+          "content": "Naše byty v České republice nabízejí moderní design, funkční dispozice a výbornou lokalitu. Každý byt je navržen s ohledem na pohodlí a praktičnost."
+        },
+        "features": {
+          "modernDesign": "Moderní design a kvalitní materiály",
+          "naturalLight": "Dostatek přirozeného světla",
+          "terraceBalcony": "Terasa nebo balkon",
+          "variousSizes": "Různé velikosti a dispozice",
+          "idealForAll": "Ideální pro páry, rodiny i jednotlivce",
+          "excellentLocation": "Výborná lokalita s dostupností"
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat naše byty?",
+          "flexibleLayout": {
+            "title": "Flexibilní dispozice",
+            "description": "Bytové jednotky různých velikostí od 1+1 až po 4+1, které se přizpůsobí vašim potřebám."
+          },
+          "modernInteriors": {
+            "title": "Moderní interiéry",
+            "description": "Kvalitní materiály, funkční kuchyně a koupelny s nejnovějšími trendy."
+          },
+          "plentyOfLight": {
+            "title": "Dostatek světla",
+            "description": "Velká okna a balkony zajišťují dostatek přirozeného světla po celý den."
+          },
+          "comfortableRelaxation": {
+            "title": "Pohodlná relaxace",
+            "description": "Terasy a společné prostory pro odpočinek a setkávání s přáteli."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Naše byty kombinují moderní design s praktičností a nabízejí ideální řešení pro bydlení v České republice."
+        },
+        "whoAppreciates": {
+          "title": "Kdo si cení našich bytů?",
+          "modernCouples": {
+            "title": "Moderní páry"
+          },
+          "flexibleFamilies": {
+            "title": "Flexibilní rodiny"
+          },
+          "styleIndividuals": {
+            "title": "Styloví jednotlivci"
+          }
+        },
+        "benefits": {
+          "title": "Výhody našich bytů",
+          "subtitle": "Proč si vybrat právě naše byty?",
+          "modern": {
+            "title": "Moderní design",
+            "description": "Kvalitní materiály a funkční dispozice pro pohodlné bydlení."
+          },
+          "location": {
+            "title": "Výborná lokalita",
+            "description": "Strategická poloha s dostupností ke všem důležitým službám."
+          },
+          "quality": {
+            "title": "Kvalitní provedení",
+            "description": "Pozornost k detailům a dlouhodobá hodnota nemovitosti."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných bytů",
+          "subtitle": "Prozkoumejte naše byty s moderním designem"
+        }
+      },
+      "familyHouses": {
+        "hero": {
+          "title": "Rodinné domy v České republice",
+          "subtitle": "Prostorné domy pro rodinné bydlení"
+        },
+        "description": {
+          "title": "Ideální domy pro rodiny",
+          "content": "Naše rodinné domy v České republice nabízejí prostorné dispozice, soukromé zahrady a klidnou lokalitu. Každý dům je navržen s ohledem na potřeby moderní rodiny."
+        },
+        "whyChoose": {
+          "title": "Proč si vybrat naše rodinné domy?",
+          "ampleSpace": {
+            "title": "Dostatek prostoru",
+            "description": "Prostorné dispozice s oddělenými zónami pro každého člena rodiny."
+          },
+          "privateGardens": {
+            "title": "Soukromé zahrady",
+            "description": "Vlastní zahrada s možností bazénu a venkovního posezení."
+          },
+          "peacefulEnvironment": {
+            "title": "Klidné prostředí",
+            "description": "Lokalita obklopená zelení s minimálním hlukem a rušivými vlivy."
+          },
+          "practicalLayout": {
+            "title": "Praktické dispozice",
+            "description": "Funkční rozvržení místností optimalizované pro každodenní život."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Klíčové výhody",
+          "content": "Naše rodinné domy nabízejí ideální kombinaci prostoru, soukromí a komfortu pro celou rodinu."
+        },
+        "whoAppreciates": {
+          "title": "Kdo si cení našich rodinných domů?",
+          "familiesSpace": {
+            "title": "Rodiny hledající prostor"
+          },
+          "couplesPlanning": {
+            "title": "Páry plánující rodinu"
+          },
+          "multiGenerational": {
+            "title": "Mezigenerační rodiny"
+          }
+        },
+        "benefits": {
+          "title": "Výhody našich rodinných domů",
+          "subtitle": "Proč si vybrat právě naše rodinné domy?",
+          "space": {
+            "title": "Dostatek prostoru",
+            "description": "Prostorné dispozice pro pohodlné bydlení celé rodiny."
+          },
+          "garden": {
+            "title": "Soukromá zahrada",
+            "description": "Vlastní zahrada s možností venkovních aktivit a relaxace."
+          },
+          "family": {
+            "title": "Rodinné bydlení",
+            "description": "Ideální prostředí pro růst a rozvoj dětí v bezpečném prostředí."
+          }
+        },
+        "gallery": {
+          "title": "Galerie vybraných rodinných domů",
+          "subtitle": "Prozkoumejte naše prostorné rodinné domy"
+        }
+      }
+    },
+    "whyChoose": {
+      "title": "Proč si vybrat naše developerské projekty?",
+      "subtitle": "Naše developerské projekty kombinují kvalitu, inovace a výhodné lokality",
+      "experience": {
+        "title": "Léta zkušeností",
+        "description": "Máme bohaté zkušenosti s developerskými projekty v různých regionech."
+      },
+      "location": {
+        "title": "Výborné lokality",
+        "description": "Pečlivě vybíráme lokality s výbornou dostupností a infrastrukturou."
+      },
+      "quality": {
+        "title": "Kvalitní provedení",
+        "description": "Spolupracujeme s nejlepšími developery a dodavateli materiálů."
+      }
+    }
   },
   "hero": {
     "title": "Najděte si svůj vysněný domov",
@@ -863,621 +1656,6 @@
         "title": "Developerské projekty",
         "subtitle": "Objevte exkluzivní novostavby na Costa del Sol"
       },
-      "categories": {
-        "badge": "Kategorie",
-        "subtitle": "Prozkoumejte náš komplexní výběr developerských projektů napříč různými typy nemovitostí",
-        "title": "Kategorie nemovitostí",
-        "backToCategories": "Zpět ke kategoriím",
-        "apartments": {
-          "title": "Byty",
-          "description": "Stylové byty různých velikostí a dispozic, ideální pro páry, rodiny a jednotlivce. Každý byt nabízí moderní design, dostatek přirozeného světla a často terasu nebo balkon s výhledem na moře."
-        },
-        "penthouses": {
-          "title": "Penthousy",
-          "description": "Luxusní penthousy v nejvyšších patrech, často s panoramatickým výhledem na pobřeží a soukromou střešní terasou. Některé jednotky zahrnují soukromý bazén nebo vířivku."
-        },
-        "familyHouses": {
-          "title": "Rodinné, řadové domy a dvojdomy",
-          "description": "Prostorné domy vhodné pro rodinné bydlení, obklopené klidem a zelení. Nabízejí soukromou zahradu, často s bazénem, a dostatek prostoru pro každodenní život a relaxaci."
-        },
-        "villas": {
-          "title": "Vily",
-          "description": "Samostatně stojící vily s prémiovým vybavením a důrazem na maximální soukromí. Ideální volba pro náročné klienty hledající luxusní útočiště s dechberoucími výhledy a prémiovou lokalitou."
-        },
-        "residentialComplexes": {
-          "title": "Nemovitosti v rezidenčních komplexech",
-          "description": "Bydlení v bezpečných a prestižních komplexech, které nabízejí sdílené prostory jako bazény, wellness, posilovny, zahrady nebo coworking centra. Ideální pro ty, kteří hledají komunitní životní styl."
-        },
-        "hotelServices": {
-          "title": "Nemovitosti s hotelovými službami",
-          "description": "Rezidence s přístupem k hotelovým službám jako úklid, concierge, stravování nebo správa nemovitostí. Perfektní volba pro pohodlný a bezstarostný pobyt."
-        },
-        "golfProperties": {
-          "title": "Golfové nemovitosti",
-          "description": "Nemovitosti umístěné poblíž špičkových golfových hřišť. Ideální pro golfové nadšence, kteří chtějí spojit svou vášeň s bydlením v prestižní lokalitě."
-        },
-        "smartHomes": {
-          "title": "Smart & Green Living",
-          "description": "Moderní projekty s důrazem na udržitelnost, nízkou spotřebu energie a ekologické materiály. Perfektní pro ty, kteří hledají harmonii s přírodou."
-        }
-      },
-      "apartments": {
-        "hero": {
-          "title": "Byty",
-          "subtitle": "Moderní byty v nejkrásnějších lokalitách na Costa del Sol"
-        },
-        "description": {
-          "title": "Stylové byty pro každou potřebu",
-          "content": "Naše bytové projekty nabízejí dokonalou kombinaci pohodlí, stylu a lokace. Každý byt je navržen s důrazem na detail, používá kvalitní materiály a moderní technologie. Ať už hledáte útulný studio pro dva nebo prostorný rodinný byt, máme pro vás tu správnou volbu."
-        },
-        "features": {
-          "modernDesign": "Moderní design a vybavení",
-          "naturalLight": "Dostatek přirozeného světla",
-          "terraceBalcony": "Terasa nebo balkon s výhledem",
-          "variousSizes": "Různé velikosti a dispozice",
-          "idealForAll": "Ideální pro páry, rodiny a jednotlivce",
-          "excellentLocation": "Vynikající lokace na Costa del Sol"
-        },
-        "projects": {
-          "title": "Vybrané projekty",
-          "subtitle": "Objevte náš výběr nejlepších bytových projektů"
-        },
-        "whyChoose": {
-          "title": "Proč si vybrat tento typ nemovitosti",
-          "flexibleLayout": {
-            "title": "Flexibilní dispozice",
-            "description": "Výběr různých velikostí a uspořádání bytů podle vašich potřeb."
-          },
-          "modernInteriors": {
-            "title": "Moderní interiéry",
-            "description": "Vybavení a design odpovídají nejnovějším trendům v bydlení."
-          },
-          "plentyOfLight": {
-            "title": "Dostatek světla",
-            "description": "Velká okna a otevřené prostory zajišťují příjemné prostředí."
-          },
-          "comfortableRelaxation": {
-            "title": "Pohodlná relaxace",
-            "description": "Balkony, terasy nebo zahrady poskytují ideální místo pro relaxaci."
-          }
-        },
-        "keyAdvantages": {
-          "title": "Klíčové výhody",
-          "content": "Byty nabízejí flexibilní možnosti dispozic, které vyhovují různým potřebám, od jednotlivců po větší rodiny. Díky modernímu designu a kvalitnímu zpracování si můžete užívat pohodlné bydlení plné světla, doplněné venkovním prostorem pro relaxaci."
-        },
-        "whoAppreciates": {
-          "title": "Kdo ocení tento typ nemovitosti",
-          "modernCouples": {
-            "title": "Páry hledající moderní a praktické bydlení"
-          },
-          "flexibleFamilies": {
-            "title": "Rodiny, které potřebují flexibilní dispozice"
-          },
-          "styleIndividuals": {
-            "title": "Jednotlivci preferující pohodlí a stylové prostředí"
-          }
-        },
-        "benefits": {
-          "title": "Výhody našich bytů",
-          "subtitle": "Proč si vybrat naše bytové projekty",
-          "modern": {
-            "title": "Moderní design",
-            "description": "Současný design s kvalitními materiály a smart home technologiemi."
-          },
-          "location": {
-            "title": "Prémiová lokace",
-            "description": "Vynikající lokace s snadným přístupem k plážím, obchodům a vybavení."
-          },
-          "quality": {
-            "title": "Kvalitní stavba",
-            "description": "Postaveno ověřenými developery s léty zkušeností na trhu."
-          }
-        },
-        "gallery": {
-          "title": "Galerie vybraných pohledů",
-          "subtitle": "Objevte naše bytové projekty"
-        }
-      },
-      "penthouses": {
-        "hero": {
-          "title": "Penthousy",
-          "subtitle": "Exkluzivní penthousy s panoramatickými výhledy"
-        },
-        "description": {
-          "title": "Luxusní bydlení v nejvyšší kvalitě",
-          "content": "Naše projekty penthousů představují vrchol luxusního bydlení na Costa del Sol. Tyto exkluzivní nemovitosti nabízejí nejen dechberoucí panoramatické výhledy, ale také nejvyšší úroveň soukromí a pohodlí. Každý penthous je jedinečný a navržen pro nejnáročnější klienty."
-        },
-        "features": {
-          "panoramicViews": "Panoramatické výhledy na pobřeží",
-          "privateTerraces": "Soukromá střešní terasa",
-          "privatePool": "Soukromý bazén nebo vířivka",
-          "luxuryAmenities": "Luxusní vybavení a materiály",
-          "maximumPrivacy": "Maximální soukromí a klid",
-          "prestigiousLocation": "Prestižní lokace v nejvyšších patrech"
-        },
-        "projects": {
-          "title": "Vybrané penthousy",
-          "subtitle": "Objevte naše exkluzivní projekty penthousů"
-        },
-        "whyChoose": {
-          "title": "Proč si vybrat tento typ nemovitosti",
-          "exclusiveViews": {
-            "title": "Exkluzivní výhledy",
-            "description": "Panoramatické výhledy na okolní krajinu garantují jedinečný zážitek."
-          },
-          "privateTerraces": {
-            "title": "Soukromé terasy",
-            "description": "Prostor pro relaxaci, setkávání s přáteli nebo opalování."
-          },
-          "luxuryAmenities": {
-            "title": "Luxusní vybavení",
-            "description": "Prémiové materiály, vířivky a další prvky pro maximální pohodlí."
-          },
-          "peacefulEnvironment": {
-            "title": "Klidné prostředí",
-            "description": "Nejvyšší patra budov zajišťují minimální hluk a maximální soukromí."
-          }
-        },
-        "keyAdvantages": {
-          "title": "Klíčové výhody",
-          "content": "Penthousy představují kombinaci luxusu a soukromí, doplněnou jedinečnými výhledy a prémiovým vybavením. Nabízejí ideální prostor pro relaxaci na soukromých terasách, zatímco kvalitní materiály a design zajišťují maximální pohodlí."
-        },
-        "whoAppreciates": {
-          "title": "Kdo ocení tento typ nemovitosti",
-          "demandingCouples": {
-            "title": "Náročné páry a jednotlivci, kteří chtějí luxusní bydlení"
-          },
-          "exclusiveFamilies": {
-            "title": "Rodiny hledající exkluzivitu a prostor"
-          },
-          "panoramicViews": {
-            "title": "Milovníci panoramatických výhledů a soukromí"
-          }
-        },
-        "benefits": {
-          "title": "Výhody našich penthousů",
-          "subtitle": "Proč si vybrat naše projekty penthousů",
-          "luxury": {
-            "title": "Ultimátní luxus",
-            "description": "Prémiové materiály, exkluzivní design a nejvyšší kvalita dokončení."
-          },
-          "view": {
-            "title": "Panoramatické výhledy",
-            "description": "Dechberoucí výhledy na Středozemní moře a pobřeží Costa del Sol."
-          },
-          "privacy": {
-            "title": "Maximální soukromí",
-            "description": "Soukromé terasy a exkluzivní přístup zajišťují úplné soukromí."
-          }
-        },
-        "gallery": {
-          "title": "Galerie vybraných pohledů",
-          "subtitle": "Objevte naše projekty penthousů"
-        }
-      },
-      "familyHouses": {
-        "hero": {
-          "title": "Rodinné, řadové domy a dvojdomy",
-          "subtitle": "Prostorné rodinné domy v klidných lokalitách"
-        },
-        "description": {
-          "title": "Rodinné, řadové domy a dvojdomy",
-          "content": "Prostorné domy ideální pro rodinné bydlení, obklopené klidnou přírodou. Každý dům nabízí vlastní zahradu, často s bazénem, a dostatek prostoru pro každodenní život a relaxaci, včetně vícegeneračního bydlení."
-        },
-        "whyChoose": {
-          "title": "Proč si vybrat tento typ nemovitosti",
-          "ampleSpace": {
-            "title": "Dostatek prostoru",
-            "description": "Ideální pro rodinný život a větší pohodlí."
-          },
-          "privateGardens": {
-            "title": "Soukromé zahrady",
-            "description": "Skvělý prostor pro relaxaci, děti nebo zahradničení."
-          },
-          "peacefulEnvironment": {
-            "title": "Klidné prostředí",
-            "description": "Lokace obklopená zelení nabízí únik od městského ruchu."
-          },
-          "practicalLayout": {
-            "title": "Praktické uspořádání",
-            "description": "Promyšlené uspořádání umožňuje efektivní využití prostoru."
-          }
-        },
-        "keyAdvantages": {
-          "title": "Klíčové výhody",
-          "content": "Rodinné domy nabízejí prostorné interiéry a venkovní zahrady pro každodenní život a relaxaci. Lokace v klidném prostředí s dostatkem soukromí a kvalitním vybavením zajišťuje pohodlné bydlení pro rodiny a více generací."
-        },
-        "whoAppreciates": {
-          "title": "Kdo ocení tento typ nemovitosti",
-          "familiesSpace": {
-            "title": "Rodiny hledající pohodlné bydlení s dostatkem prostoru"
-          },
-          "couplesPlanning": {
-            "title": "Páry plánující rodinu, které chtějí klidné prostředí"
-          },
-          "multiGenerational": {
-            "title": "Vícegenerační domácnosti s potřebou prostorných dispozic"
-          }
-        },
-        "projects": {
-          "title": "Galerie vybraných domů",
-          "subtitle": "Objevte naše projekty rodinných domů"
-        },
-        "benefits": {
-          "title": "Výhody našich rodinných domů",
-          "subtitle": "Proč si vybrat naše projekty rodinných domů",
-          "space": {
-            "title": "Štědrý prostor",
-            "description": "Prostorné dispozice s více ložnicemi a obytnými prostory pro pohodlné rodinné bydlení."
-          },
-          "garden": {
-            "title": "Soukromé zahrady",
-            "description": "Soukromé zahrady s bazény a venkovními obytnými prostory."
-          },
-          "family": {
-            "title": "Rodinné prostředí",
-            "description": "Umístěny v bezpečných, klidných oblastech s vynikajícími školami a rodinným vybavením."
-          }
-        },
-        "gallery": {
-          "title": "Galerie vybraných pohledů",
-          "subtitle": "Objevte naše projekty rodinných domů"
-        }
-      },
-      "villas": {
-        "hero": {
-          "title": "Luxusní vily",
-          "subtitle": "Luxusní vily pro nejnáročnější klienty"
-        },
-        "description": {
-          "title": "Luxusní vily",
-          "content": "Samostatně stojící vily s prémiovým vybavením a důrazem na maximální soukromí. Ideální volba pro ty, kteří hledají luxusní útočiště v prémiové lokalitě s dechberoucími výhledy a prostornými interiéry."
-        },
-        "whyChoose": {
-          "title": "Proč si vybrat tento typ nemovitosti",
-          "maximumPrivacy": {
-            "title": "Maximální soukromí",
-            "description": "Samostatně stojící nemovitosti nabízejí klid a nerušené prostředí."
-          },
-          "luxuryAmenities": {
-            "title": "Luxusní vybavení",
-            "description": "Prémiové materiály, moderní technologie a prvotřídní design."
-          },
-          "generousSpaces": {
-            "title": "Štědré prostory",
-            "description": "Vnitřní a venkovní prostory poskytují pohodlné bydlení."
-          },
-          "attractiveLocation": {
-            "title": "Atraktivní lokace",
-            "description": "Umístěny v prestižních oblastech s krásnými výhledy."
-          }
-        },
-        "keyAdvantages": {
-          "title": "Klíčové výhody",
-          "content": "Vily kombinují luxus, soukromí a štědré prostory, které splňují očekávání nejnáročnějších. Díky prémiovému vybavení, moderní technologii, atraktivním lokalitám a často spolupráci s předními architekty představují ideální volbu pro pohodlné a stylové bydlení."
-        },
-        "whoAppreciates": {
-          "title": "Kdo ocení tento typ nemovitosti",
-          "prestigiousFamilies": {
-            "title": "Rodiny, které hledají prestižní a klidné bydlení"
-          },
-          "elegantCouples": {
-            "title": "Páry, které si cení elegantního stylu a vynikajícího vybavení"
-          },
-          "privateIndividuals": {
-            "title": "Jednotlivci, kteří si cení soukromí a luxusního prostředí"
-          },
-          "demandingExclusivity": {
-            "title": "Nároční lidé hledající exkluzivitu a maximální pohodlí"
-          }
-        },
-        "projects": {
-          "title": "Galerie vybraných vil",
-          "subtitle": "Objevte naše exkluzivní projekty vil"
-        },
-        "benefits": {
-          "title": "Výhody našich vil",
-          "subtitle": "Proč si vybrat naše projekty vil",
-          "luxury": {
-            "title": "Ultimátní luxus",
-            "description": "Prémiové materiály, exkluzivní design a nejvyšší kvalita stavby."
-          },
-          "privacy": {
-            "title": "Maximální soukromí",
-            "description": "Samostatně stojící nemovitosti se soukromými zahradami a exkluzivním přístupem."
-          },
-          "location": {
-            "title": "Prémiová lokace",
-            "description": "Umístěny v nejprestižnějších oblastech Costa del Sol."
-          }
-        },
-        "gallery": {
-          "title": "Galerie vybraných pohledů",
-          "subtitle": "Objevte naše projekty vil"
-        }
-      },
-      "residentialComplexes": {
-        "hero": {
-          "title": "Nemovitosti v rezidenčních komplexech",
-          "subtitle": "Bezpečné a prestižní rezidenční komunity"
-        },
-        "description": {
-          "title": "Nemovitosti v rezidenčních komplexech",
-          "content": "Uzavřené rezidenční komplexy nabízejí bezpečné a prestižní bydlení se širokou škálou služeb a sdílených prostor. Bazény, wellness, zahrady nebo coworking centra vytvářejí příjemné prostředí pro pohodlný životní styl."
-        },
-        "whyChoose": {
-          "title": "Proč si vybrat tento typ nemovitosti",
-          "secureEnvironment": {
-            "title": "Bezpečné prostředí s dohledem",
-            "description": "Uzavřené komplexy poskytují kontrolovaný přístup a vysokou úroveň bezpečnosti."
-          },
-          "modernFacilities": {
-            "title": "Moderní vybavení",
-            "description": "Nabízí luxusní vybavení jako wellness centra, fitness nebo coworking prostory."
-          },
-          "friendlyCommunity": {
-            "title": "Přátelská komunita",
-            "description": "Možnost budovat vztahy s ostatními obyvateli prostřednictvím sdílených prostor."
-          },
-          "greatLocation": {
-            "title": "Skvělá lokace",
-            "description": "Často umístěny poblíž přírody a městské infrastruktury."
-          }
-        },
-        "keyAdvantages": {
-          "title": "Klíčové výhody",
-          "content": "Uzavřené rezidenční komplexy zajišťují vysokou úroveň bezpečnosti a pohodlí. Díky sdíleným prostorům jako bazény nebo coworking centra nabízejí nejen bydlení, ale také prostor pro relaxaci a setkávání s ostatními obyvateli. Klidné prostředí a moderní vybavení splňují potřeby náročných uživatelů."
-        },
-        "whoAppreciates": {
-          "title": "Kdo ocení tento typ nemovitosti",
-          "familiesChildren": {
-            "title": "Rodiny s dětmi hledající bezpečný domov"
-          },
-          "individualsServices": {
-            "title": "Jednotlivci hledající širokou škálu služeb"
-          },
-          "couplesComfort": {
-            "title": "Páry, které si cení moderního vybavení a pohodlí"
-          },
-          "communityLiving": {
-            "title": "Lidé, kteří chtějí komunitní bydlení s přidanou hodnotou"
-          }
-        },
-        "projects": {
-          "title": "Galerie vybraných nemovitostí v uzavřených komplexech",
-          "subtitle": "Prozkoumejte naše bezpečné rezidenční komplexy s prémiovým vybavením"
-        },
-        "benefits": {
-          "title": "Výhody našich komplexů",
-          "subtitle": "Proč si vybrat naše projekty rezidenčních komplexů",
-          "community": {
-            "title": "Komunitní bydlení",
-            "description": "Bezpečné prostředí s podobně smýšlejícími sousedy a sdíleným vybavením."
-          },
-          "amenities": {
-            "title": "Prémiové vybavení",
-            "description": "Bazény, fitness centra, zahrady a coworking prostory pro obyvatele."
-          },
-          "security": {
-            "title": "24/7 bezpečnost",
-            "description": "Nepřetržitá bezpečnost a dohled pro klid duše."
-          }
-        },
-        "gallery": {
-          "title": "Galerie vybraných nemovitostí v uzavřených komplexech",
-          "subtitle": "Prozkoumejte naše bezpečné rezidenční komplexy s prémiovým vybavením"
-        }
-      },
-      "hotelServices": {
-        "hero": {
-          "title": "Nemovitosti s hotelovými službami",
-          "subtitle": "Luxusní rezidence s hotelovým vybavením"
-        },
-        "description": {
-          "title": "Nemovitosti s hotelovými službami",
-          "content": "Nemovitosti s hotelovými službami kombinují pohodlí bydlení s výhodami profesionální péče. Obyvatelé mohou využívat služby jako úklid, stravování nebo concierge, což jim umožňuje bezstarostný a pohodlný pobyt."
-        },
-        "whyChoose": {
-          "title": "Proč si vybrat tento typ nemovitosti",
-          "carefreeStay": {
-            "title": "Bezstarostný pobyt",
-            "description": "Služby jako úklid nebo concierge zajišťují maximální pohodlí."
-          },
-          "professionalManagement": {
-            "title": "Profesionální správa nemovitostí",
-            "description": "Stará se o vše od údržby po administrativu."
-          },
-          "luxuryAmenities": {
-            "title": "Luxusní vybavení",
-            "description": "Prémiové materiály a moderní design splňují očekávání náročných uživatelů."
-          },
-          "idealRecreation": {
-            "title": "Ideální pro rekreaci",
-            "description": "Perfektní volba pro relaxační pobyty bez starostí."
-          }
-        },
-        "keyAdvantages": {
-          "title": "Klíčové výhody",
-          "content": "Tento typ nemovitosti zajišťuje pohodlí na úrovni luxusních hotelů, přičemž nabízí soukromí vlastního domova. Díky široké škále služeb si obyvatelé mohou užívat bezstarostný život, zatímco péče o nemovitost je v rukou profesionálů."
-        },
-        "whoAppreciates": {
-          "title": "Kdo ocení tento typ nemovitosti",
-          "individualsRelaxation": {
-            "title": "Jednotlivci hledající pohodlí a relaxaci"
-          },
-          "couplesTime": {
-            "title": "Páry, které chtějí mít maximální čas pro sebe"
-          },
-          "carefreeManagement": {
-            "title": "Lidé, kteří preferují bezstarostnou správu svého bydlení"
-          },
-          "premiumLocation": {
-            "title": "Ti, kteří si cení prémiové lokace a kvalitních služeb"
-          }
-        },
-        "projects": {
-          "title": "Galerie vybraných nemovitostí s hotelovými službami",
-          "subtitle": "Objevte naše projekty hotelových služeb"
-        },
-        "benefits": {
-          "title": "Výhody hotelových služeb",
-          "subtitle": "Proč si vybrat naše projekty hotelových služeb",
-          "convenience": {
-            "title": "Ultimátní pohodlí",
-            "description": "Všechny hotelové služby dostupné bez opuštění vašeho domova."
-          },
-          "services": {
-            "title": "Komplexní služby",
-            "description": "Úklid, concierge, stravování a správa nemovitostí v ceně."
-          },
-          "management": {
-            "title": "Profesionální správa",
-            "description": "Profesionální správa nemovitostí zajišťuje bezstarostné vlastnictví."
-          }
-        },
-        "gallery": {
-          "title": "Galerie vybraných pohledů",
-          "subtitle": "Objevte naše projekty hotelových služeb"
-        }
-      },
-      "golfProperties": {
-        "hero": {
-          "title": "Golfové nemovitosti",
-          "subtitle": "Nemovitosti poblíž špičkových golfových hřišť"
-        },
-        "description": {
-          "title": "Golfové nemovitosti",
-          "content": "Nemovitosti poblíž špičkových golfových hřišť. Tyto nemovitosti nabízejí exkluzivní bydlení v prestižních lokalitách s výhledem na zeleň. Kombinují vášeň pro golf s možností trávit čas v krásném a klidném prostředí."
-        },
-        "whyChoose": {
-          "title": "Proč si vybrat tento typ nemovitosti",
-          "golfProximity": {
-            "title": "Blízkost golfového hřiště",
-            "description": "Perfektní pro milovníky golfu a nadšence uvolněného životního stylu."
-          },
-          "luxuryLocation": {
-            "title": "Luxusní lokace",
-            "description": "Klidné prostředí s krásnými výhledy na přírodu."
-          },
-          "socialFacilities": {
-            "title": "Společenské vybavení",
-            "description": "Ideální pro setkávání s podobně smýšlejícími sousedy."
-          },
-          "activeRecreation": {
-            "title": "Aktivní rekreace",
-            "description": "Možnost kombinovat sport a relaxaci."
-          }
-        },
-        "keyAdvantages": {
-          "title": "Klíčové výhody",
-          "content": "Golfové nemovitosti jsou synonymem prestiže a pohodlí. Jsou umístěny v klidných oblastech s krásnými výhledy a nabízejí špičkové služby a vybavení. Jsou ideální volbou pro ty, kteří chtějí kombinovat relaxaci s aktivním životním stylem."
-        },
-        "whoAppreciates": {
-          "title": "Kdo ocení tento typ nemovitosti",
-          "golfEnthusiasts": {
-            "title": "Golfoví nadšenci hledající bydlení poblíž hřišť"
-          },
-          "prestigiousCouples": {
-            "title": "Páry hledající prestižní bydlení"
-          },
-          "exclusiveFamilies": {
-            "title": "Rodiny, které preferují klidné a exkluzivní lokace"
-          },
-          "activeRecreation": {
-            "title": "Lidé, kteří chtějí kombinovat rekreaci s aktivním odpočinkem"
-          }
-        },
-        "gallery": {
-          "title": "Galerie vybraných pohledů",
-          "subtitle": "Objevte naše projekty golfových nemovitostí"
-        },
-        "benefits": {
-          "title": "Výhody golfových nemovitostí",
-          "subtitle": "Proč si vybrat naše projekty golfových nemovitostí",
-          "golf": {
-            "title": "Přístup k golfu",
-            "description": "Snadný přístup ke světovým golfovým hřištím a vybavení."
-          },
-          "luxury": {
-            "title": "Luxusní bydlení",
-            "description": "Prémiové nemovitosti v prestižních golfových komunitách."
-          },
-          "lifestyle": {
-            "title": "Aktivní životní styl",
-            "description": "Perfektní pro aktivní životní styl s vynikajícími sportovními vybaveními."
-          }
-        }
-      },
-      "smartHomes": {
-        "hero": {
-          "title": "Smart & Green Living",
-          "subtitle": "Moderní bydlení s důrazem na udržitelnost a ekologickou šetrnost"
-        },
-        "description": {
-          "title": "Smart a Green Living",
-          "content": "Moderní bydlení s důrazem na udržitelnost a ekologickou šetrnost. Tyto nemovitosti používají ekologické materiály, nízkoenergetické technologie a nabízejí harmonické spojení s přírodou."
-        },
-        "whyChoose": {
-          "title": "Proč si vybrat tento typ nemovitosti",
-          "ecoLiving": {
-            "title": "Ekologické bydlení",
-            "description": "Udržitelné materiály a nízká spotřeba energie šetří přírodu a náklady."
-          },
-          "modernTech": {
-            "title": "Moderní technologie",
-            "description": "Inteligentní systémy usnadňují každodenní život."
-          },
-          "healthyEnvironment": {
-            "title": "Zdravé prostředí",
-            "description": "Kvalitní vzduch, blízkost přírody a relaxační zóny."
-          },
-          "designFocus": {
-            "title": "Důraz na design",
-            "description": "Architektonicky promyšlené projekty s moderním vzhledem."
-          }
-        },
-        "keyAdvantages": {
-          "title": "Klíčové výhody",
-          "content": "Smart a green living přináší kombinaci moderního pohodlí a ekologické šetrnosti. Energetická účinnost, ekologické materiály a kvalitní technologie činí tyto projekty atraktivní volbou pro každého, kdo chce žít v harmonii s přírodou."
-        },
-        "whoAppreciates": {
-          "title": "Kdo ocení tento typ nemovitosti",
-          "ecoConscious": {
-            "title": "Jednotlivci a rodiny zajímající se o ekologii"
-          },
-          "energyEfficient": {
-            "title": "Lidé hledající energeticky účinné a moderní bydlení"
-          },
-          "natureLovers": {
-            "title": "Milovníci přírody a nadšenci zdravého životního stylu"
-          }
-        },
-        "projects": {
-          "title": "Galerie vybraných ekologických nemovitostí",
-          "subtitle": "Objevte naše projekty smart a green living"
-        },
-        "benefits": {
-          "title": "Výhody smart living",
-          "subtitle": "Proč si vybrat naše projekty smart living",
-          "sustainability": {
-            "title": "Ekologicky šetrné",
-            "description": "Udržitelná stavba s ekologicky šetrnými materiály a technologiemi."
-          },
-          "energy": {
-            "title": "Energeticky účinné",
-            "description": "Nízká spotřeba energie s obnovitelnými zdroji energie."
-          },
-          "technology": {
-            "title": "Smart technologie",
-            "description": "Moderní smart home technologie pro pohodlné bydlení."
-          }
-        },
-        "gallery": {
-          "title": "Galerie vybraných pohledů",
-          "subtitle": "Objevte naše projekty smart a green living"
-        }
-      }
-      ,
       "whyChoose": {
         "title": "Proč si vybrat naše developerské projekty",
         "subtitle": "Spolupracujeme výhradně s ověřenými developery a nabízíme komplexní podporu během celého procesu nákupu",

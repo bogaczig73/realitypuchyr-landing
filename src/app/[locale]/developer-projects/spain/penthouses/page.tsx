@@ -10,44 +10,44 @@ import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
 import WhyChooseSection from "../../../components/spain/why-choose-section";
 import WhoAppreciatesSection from "../../../components/spain/who-appreciates-section";
-import PhotoGallery from "../components/photo-gallery";
+import PhotoGallery from "../../components/photo-gallery";
 
 const features = [
-    "features.modernDesign",
-    "features.naturalLight",
-    "features.terraceBalcony",
-    "features.variousSizes",
-    "features.idealForAll",
-    "features.excellentLocation"
+    "features.panoramicViews",
+    "features.privateTerraces",
+    "features.privatePool",
+    "features.luxuryAmenities",
+    "features.maximumPrivacy",
+    "features.prestigiousLocation"
 ];
 
 const projects = [
     {
-        name: "Marina Bay Residences",
+        name: "Golden Heights Penthouse",
         location: "Marbella",
-        price: "od 250 000 €",
+        price: "od 1 200 000 €",
         image: "/images/property/residential.jpg",
-        description: "Luxusní apartmány s výhledem na moře"
+        description: "Luxusní penthous s panoramatickým výhledem"
     },
     {
-        name: "Costa del Sol Gardens",
+        name: "Sunset Tower Penthouse",
         location: "Benalmádena",
-        price: "od 180 000 €",
+        price: "od 950 000 €",
         image: "/images/property/residential.jpg",
-        description: "Stylové byty v klidné lokalitě"
+        description: "Exkluzivní penthous s privátní terasou"
     },
     {
-        name: "Sunset Beach Apartments",
-        location: "Fuengirola",
-        price: "od 220 000 €",
+        name: "Marina View Penthouse",
+        location: "Puerto Banús",
+        price: "od 1 500 000 €",
         image: "/images/property/residential.jpg",
-        description: "Moderní apartmány u pláže"
+        description: "Prestižní penthous s výhledem na přístav"
     }
 ];
 
-export default function ApartmanyPage() {
-    const t = useTranslations('spain.developerProjects.apartments');
-    const tCategories = useTranslations('spain.developerProjects.categories');
+export default function PenthousyPage() {
+    const t = useTranslations('developerProjects.spain.penthouses');
+    const tCategories = useTranslations('developerProjects.categories');
 
     return (
         <>
@@ -55,13 +55,13 @@ export default function ApartmanyPage() {
             
             {/* Hero Section */}
             <section
-                style={{ backgroundImage: "url('/images/spain/apartment/spain_apartman_1.webp')" }}
+                style={{ backgroundImage: "url('/images/spain/penthouses/spain_penthouses_1.webp')" }}
                 className="relative table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
                 <div className="absolute inset-0 bg-slate-900/80"></div>
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <div className="mb-4">
-                            <Link href="/spain/developer-projects" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                            <Link href="/developer-projects/spain" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
                                 {tCategories('backToCategories')}
                             </Link>
@@ -105,8 +105,8 @@ export default function ApartmanyPage() {
                         <div className="relative">
                             <div className="aspect-video rounded-xl overflow-hidden">
                                 <img 
-                                    src="/images/spain/apartment/spain_apartman_8.webp" 
-                                    alt="Apartmány Costa del Sol" 
+                                    src="/images/spain/penthouses/spain_penthouses_2.webp" 
+                                    alt="Penthousy Costa del Sol"   
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -120,35 +120,35 @@ export default function ApartmanyPage() {
                 items={[
                     {
                         icon: <FiHome className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.flexibleLayout.title'),
-                        description: t('whyChoose.flexibleLayout.description'),
-                        image: "/images/spain/apartment/spain_apartman_1.webp",
-                        imageAlt: "Flexible Layout",
-                        emoji: "🏠"
+                        title: t('whyChoose.exclusiveViews.title'),
+                        description: t('whyChoose.exclusiveViews.description'),
+                        image: "/images/spain/penthouses/spain_penthouses_1.webp",
+                        imageAlt: "Exclusive Views",
+                        emoji: "🏙️"
                     },
                     {
                         icon: <FiStar className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.modernInteriors.title'),
-                        description: t('whyChoose.modernInteriors.description'),
-                        image: "/images/spain/apartment/spain_apartman_2.webp",
-                        imageAlt: "Modern Interiors",
-                        emoji: "✨"
+                        title: t('whyChoose.privateTerraces.title'),
+                        description: t('whyChoose.privateTerraces.description'),
+                        image: "/images/spain/penthouses/spain_penthouses_2.webp",
+                        imageAlt: "Private Terraces",
+                        emoji: "🌅"
                     },
                     {
                         icon: <FiMapPin className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.plentyOfLight.title'),
-                        description: t('whyChoose.plentyOfLight.description'),
-                        image: "/images/spain/apartment/spain_apartman_3.webp",
-                        imageAlt: "Plenty of Light",
-                        emoji: "☀️"
+                        title: t('whyChoose.luxuryAmenities.title'),
+                        description: t('whyChoose.luxuryAmenities.description'),
+                        image: "/images/spain/penthouses/spain_penthouses_3.webp",
+                        imageAlt: "Luxury Amenities",
+                        emoji: "✨"
                     },
                     {
                         icon: <FiCheck className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.comfortableRelaxation.title'),
-                        description: t('whyChoose.comfortableRelaxation.description'),
-                        image: "/images/spain/apartment/spain_apartman_10.webp",
-                        imageAlt: "Comfortable Relaxation",
-                        emoji: "🌴"
+                        title: t('whyChoose.peacefulEnvironment.title'),
+                        description: t('whyChoose.peacefulEnvironment.description'),
+                        image: "/images/spain/penthouses/spain_penthouses_4.webp",
+                        imageAlt: "Peaceful Environment",
+                        emoji: "🧘"
                     }
                 ]}
             />
@@ -170,19 +170,19 @@ export default function ApartmanyPage() {
                 items={[
                     {
                         emoji: "💑",
-                        title: t('whoAppreciates.modernCouples.title'),
+                        title: t('whoAppreciates.demandingCouples.title'),
                         gradientFrom: "green-50",
                         gradientTo: "green-60"
                     },
                     {
                         emoji: "👨‍👩‍👧‍👦",
-                        title: t('whoAppreciates.flexibleFamilies.title'),
+                        title: t('whoAppreciates.exclusiveFamilies.title'),
                         gradientFrom: "blue-50",
                         gradientTo: "blue-60"
                     },
                     {
-                        emoji: "👤",
-                        title: t('whoAppreciates.styleIndividuals.title'),
+                        emoji: "🌅",
+                        title: t('whoAppreciates.panoramicViews.title'),
                         gradientFrom: "teal-50",
                         gradientTo: "teal-60"
                     }
@@ -204,76 +204,85 @@ export default function ApartmanyPage() {
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiHome className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.modern.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.modern.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.luxury.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.luxury.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiMapPin className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.location.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.location.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.view.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.view.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiStar className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.quality.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.quality.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.privacy.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.privacy.description')}</p>
                         </div>
                     </div>
                 </div>
             </section>
-
             {/* Photo Gallery Section */}
             <PhotoGallery 
                 photos={[
                     {
-                        src: "/images/spain/apartment/spain_apartman_1.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_1.webp",
                         alt: "Residential Complex Exterior"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_2.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_2.webp",
                         alt: "Residential Complex Pool"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_3.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_3.webp",
                         alt: "Residential Complex Garden"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_4.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_4.webp",
                         alt: "Residential Complex Gym"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_5.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_16.webp",
                         alt: "Residential Complex Lobby"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_6.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_6.webp",
                         alt: "Residential Complex Coworking"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_7.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_7.webp",
                         alt: "Residential Complex Coworking"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_8.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    
-                    {
-                        src: "/images/spain/apartment/spain_apartman_10.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_8.webp",
                         alt: "Residential Complex Coworking"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_11.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_9.webp",
                         alt: "Residential Complex Coworking"
                     },
                     {
-                        src: "/images/spain/apartment/spain_apartman_12.webp",
+                        src: "/images/spain/penthouses/spain_penthouses_15.webp",
                         alt: "Residential Complex Coworking"
                     },
-                    
+                    {
+                        src: "/images/spain/penthouses/spain_penthouses_11.webp",
+                        alt: "Residential Complex Coworking"
+                    },
+                    {
+                        src: "/images/spain/penthouses/spain_penthouses_12.webp",
+                        alt: "Residential Complex Coworking"
+                    },
+                    {
+                        src: "/images/spain/penthouses/spain_penthouses_13.webp",
+                        alt: "Residential Complex Coworking"
+                    },
+                    {
+                        src: "/images/spain/penthouses/spain_penthouses_14.webp",
+                        alt: "Residential Complex Coworking"
+                    }
                 ]}
                 title={t('gallery.title')}
                 subtitle={t('gallery.subtitle')}

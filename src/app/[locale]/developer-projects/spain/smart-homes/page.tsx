@@ -8,7 +8,7 @@ import Navbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
 import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
-import PhotoGallery from "../components/photo-gallery";
+import PhotoGallery from "../../components/photo-gallery";
 import WhyChooseSection from "../../../components/spain/why-choose-section";
 import WhoAppreciatesSection from "../../../components/spain/who-appreciates-section";
 
@@ -46,8 +46,8 @@ const projects = [
 ];
 
 export default function SmartHomesPage() {
-    const t = useTranslations('spain.developerProjects.smartHomes');
-    const tCategories = useTranslations('spain.developerProjects.categories');
+    const t = useTranslations('developerProjects.spain.smartHomes');
+    const tCategories = useTranslations('developerProjects.categories');
 
     return (
         <>
@@ -61,7 +61,7 @@ export default function SmartHomesPage() {
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <div className="mb-4">
-                            <Link href="/spain/developer-projects" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                            <Link href="/developer-projects/spain" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
                                 {tCategories('backToCategories')}   
                             </Link>

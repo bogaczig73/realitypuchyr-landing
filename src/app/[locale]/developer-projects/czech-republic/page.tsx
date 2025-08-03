@@ -2,7 +2,7 @@
 import React from "react";
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { FiArrowRight, FiHome, FiMapPin, FiStar } from 'react-icons/fi';
+import { FiArrowLeft, FiArrowRight, FiHome, FiMapPin, FiStar } from 'react-icons/fi';
 
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
@@ -16,13 +16,6 @@ const categories = [
         descriptionKey: "categories.apartments.description",
         icon: "🏢",
         image: "/images/spain/spain_aparman.webp"
-    },
-    {
-        id: "penthouses",
-        titleKey: "categories.penthouses.title",
-        descriptionKey: "categories.penthouses.description",
-        icon: "🏙️",
-        image: "/images/spain/spain_penthouse.webp"
     },
     {
         id: "houses",
@@ -44,44 +37,29 @@ const categories = [
         descriptionKey: "categories.residentialComplexes.description",
         icon: "🏘️",
         image: "/images/spain/spain_residential.webp"
-    },
-    {
-        id: "hotel-services",
-        titleKey: "categories.hotelServices.title",
-        descriptionKey: "categories.hotelServices.description",
-        icon: "🏨",
-        image: "/images/spain/spain_hotel.webp"
-    },
-    {
-        id: "golf-properties",
-        titleKey: "categories.golfProperties.title",
-        descriptionKey: "categories.golfProperties.description",
-        icon: "⛳",
-        image: "/images/spain/spain_golf.webp"
-    },
-    {
-        id: "smart-homes",
-        titleKey: "categories.smartHomes.title",
-        descriptionKey: "categories.smartHomes.description",
-        icon: "🌱",
-        image: "/images/spain/spain_smart.webp"
     }
 ];
 
-export default function DeveloperProjects() {
-    const t = useTranslations('spain.developerProjects');
-
+export default function DeveloperProjectsCzechRepublic() {
+    const t = useTranslations('developerProjects');
+    const tCategories = useTranslations('developerProjects.categories');
     return (
         <>
             <Navbar navClass="navbar-white" topnavClass={""} tagline={false} />
             
             {/* Hero Section */}
             <section
-                style={{ backgroundImage: "url('/images/spain/hero-bg.webp')" }}
+                style={{ backgroundImage: "url('/images/property/developer_projects_czech_republic.webp')" }}
                 className="relative table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
                 <div className="absolute inset-0 bg-slate-900/80"></div>
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
+                        <div className="mb-4">
+                            <Link href="/developer-projects" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                                <FiArrowLeft className="h-4 w-4" />
+                                {tCategories('backToRegions')}
+                            </Link>
+                        </div>
                         <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">
                             {t('hero.title')}
                         </h3>
@@ -115,7 +93,7 @@ export default function DeveloperProjects() {
                         {categories.map((category, index) => (
                             <Link 
                                 key={index} 
-                                href={`/spain/developer-projects/${category.id}`}
+                                href={`/developer-projects/czech-republic/${category.id}`}
                                 className="group relative transition-all duration-500 ease-in-out rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-1"
                             >
                                 <div className="relative h-64">

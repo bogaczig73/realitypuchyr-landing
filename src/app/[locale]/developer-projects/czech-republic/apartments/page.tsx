@@ -8,46 +8,46 @@ import Navbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
 import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
-import PhotoGallery from "../components/photo-gallery";
 import WhyChooseSection from "../../../components/spain/why-choose-section";
 import WhoAppreciatesSection from "../../../components/spain/who-appreciates-section";
+import PhotoGallery from "../../components/photo-gallery";
 
 const features = [
-    "Prostorné dispozice pro rodiny",
-    "Vlastní zahrada s bazénem",
-    "Klidná lokalita obklopená zelení",
-    "Dostatek prostoru pro každodenní život",
-    "Ideální pro rodinné bydlení",
-    "Soukromí a bezpečnost"
+    "features.modernDesign",
+    "features.naturalLight",
+    "features.terraceBalcony",
+    "features.variousSizes",
+    "features.idealForAll",
+    "features.excellentLocation"
 ];
 
 const projects = [
     {
-        name: "Costa Verde Family Homes",
-        location: "Estepona",
-        price: "od 450 000 €",
+        name: "Praha Residence",
+        location: "Praha",
+        price: "od 4 500 000 Kč",
         image: "/images/property/residential.jpg",
-        description: "Prostorné rodinné domy s vlastní zahradou"
+        description: "Moderní apartmány v centru Prahy"
     },
     {
-        name: "Sunset Gardens Villas",
-        location: "Mijas",
-        price: "od 380 000 €",
+        name: "Brno Gardens",
+        location: "Brno",
+        price: "od 3 200 000 Kč",
         image: "/images/property/residential.jpg",
-        description: "Řadové domy v klidné lokalitě"
+        description: "Stylové byty v klidné lokalitě"
     },
     {
-        name: "Marina Family Residences",
-        location: "Benalmádena",
-        price: "od 520 000 €",
+        name: "Ostrava Heights",
+        location: "Ostrava",
+        price: "od 2 800 000 Kč",
         image: "/images/property/residential.jpg",
-        description: "Dvojdomky s výhledem na moře"
+        description: "Moderní apartmány s výhledem na město"
     }
 ];
 
-export default function RodinneDomyPage() {
-    const t = useTranslations('spain.developerProjects.familyHouses');
-    const tCategories = useTranslations('spain.developerProjects.categories');
+export default function CzechApartmentsPage() {
+    const t = useTranslations('developerProjects.czechRepublic.apartments');
+    const tCategories = useTranslations('developerProjects.categories');
 
     return (
         <>
@@ -55,13 +55,13 @@ export default function RodinneDomyPage() {
             
             {/* Hero Section */}
             <section
-                style={{ backgroundImage: "url('/images/spain/houses/spain_houses_1.webp')" }}
+                style={{ backgroundImage: "url('/images/property/residential.jpg')" }}
                 className="relative table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
                 <div className="absolute inset-0 bg-slate-900/80"></div>
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <div className="mb-4">
-                            <Link href="/spain/developer-projects" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                            <Link href="/developer-projects/czech-republic" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
                                 {tCategories('backToCategories')}
                             </Link>
@@ -93,12 +93,20 @@ export default function RodinneDomyPage() {
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                                 {t('description.content')}
                             </p>
+                            <div className="grid grid-cols-2 gap-4">
+                                {features.map((feature, index) => (
+                                    <div key={index} className="flex items-center gap-3">
+                                        <FiCheck className="h-5 w-5 text-green-600 flex-shrink-0" />
+                                        <span className="text-slate-600">{t(feature)}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                         <div className="relative">
                             <div className="aspect-video rounded-xl overflow-hidden">
                                 <img 
-                                    src="/images/spain/houses/spain_houses_3.webp" 
-                                    alt="Family Houses Costa del Sol" 
+                                    src="/images/property/residential.jpg" 
+                                    alt="Apartmány Česká republika" 
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -112,35 +120,35 @@ export default function RodinneDomyPage() {
                 items={[
                     {
                         icon: <FiHome className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.ampleSpace.title'),
-                        description: t('whyChoose.ampleSpace.description'),
-                        image: "/images/spain/houses/spain_houses_1.webp",
-                        imageAlt: "Ample Space",
+                        title: t('whyChoose.flexibleLayout.title'),
+                        description: t('whyChoose.flexibleLayout.description'),
+                        image: "/images/property/residential.jpg",
+                        imageAlt: "Flexible Layout",
                         emoji: "🏠"
                     },
                     {
                         icon: <FiStar className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.privateGardens.title'),
-                        description: t('whyChoose.privateGardens.description'),
-                        image: "/images/spain/houses/spain_houses_2.webp",
-                        imageAlt: "Private Gardens",
-                        emoji: "🌳"
+                        title: t('whyChoose.modernInteriors.title'),
+                        description: t('whyChoose.modernInteriors.description'),
+                        image: "/images/property/residential.jpg",
+                        imageAlt: "Modern Interiors",
+                        emoji: "✨"
                     },
                     {
                         icon: <FiMapPin className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.peacefulEnvironment.title'),
-                        description: t('whyChoose.peacefulEnvironment.description'),
-                        image: "/images/spain/houses/spain_houses_3.webp",
-                        imageAlt: "Peaceful Environment",
-                        emoji: "🌿"
+                        title: t('whyChoose.plentyOfLight.title'),
+                        description: t('whyChoose.plentyOfLight.description'),
+                        image: "/images/property/residential.jpg",
+                        imageAlt: "Plenty of Light",
+                        emoji: "☀️"
                     },
                     {
                         icon: <FiCheck className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.practicalLayout.title'),
-                        description: t('whyChoose.practicalLayout.description'),
-                        image: "/images/spain/houses/spain_houses_4.webp",
-                        imageAlt: "Practical Layout",
-                        emoji: "📐"
+                        title: t('whyChoose.comfortableRelaxation.title'),
+                        description: t('whyChoose.comfortableRelaxation.description'),
+                        image: "/images/property/residential.jpg",
+                        imageAlt: "Comfortable Relaxation",
+                        emoji: "🌴"
                     }
                 ]}
             />
@@ -161,20 +169,20 @@ export default function RodinneDomyPage() {
                 title={t('whoAppreciates.title')}
                 items={[
                     {
-                        emoji: "👨‍👩‍👧‍👦",
-                        title: t('whoAppreciates.familiesSpace.title'),
+                        emoji: "💑",
+                        title: t('whoAppreciates.modernCouples.title'),
                         gradientFrom: "green-50",
                         gradientTo: "green-60"
                     },
                     {
-                        emoji: "💑",
-                        title: t('whoAppreciates.couplesPlanning.title'),
+                        emoji: "👨‍👩‍👧‍👦",
+                        title: t('whoAppreciates.flexibleFamilies.title'),
                         gradientFrom: "blue-50",
                         gradientTo: "blue-60"
                     },
                     {
-                        emoji: "👴👵",
-                        title: t('whoAppreciates.multiGenerational.title'),
+                        emoji: "👤",
+                        title: t('whoAppreciates.styleIndividuals.title'),
                         gradientFrom: "teal-50",
                         gradientTo: "teal-60"
                     }
@@ -196,22 +204,22 @@ export default function RodinneDomyPage() {
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiHome className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.space.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.space.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.modern.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.modern.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiMapPin className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.garden.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.garden.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.location.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.location.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiStar className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.family.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.family.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.quality.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.quality.description')}</p>
                         </div>
                     </div>
                 </div>
@@ -221,73 +229,32 @@ export default function RodinneDomyPage() {
             <PhotoGallery 
                 photos={[
                     {
-                        src: "/images/spain/houses/spain_houses_1.webp",
-                        alt: "Family House Exterior"
+                        src: "/images/property/residential.jpg",
+                        alt: "Residential Complex Exterior"
                     },
                     {
-                        src: "/images/spain/houses/spain_houses_2.webp",
-                        alt: "Family House Garden"
+                        src: "/images/property/residential.jpg",
+                        alt: "Residential Complex Pool"
                     },
                     {
-                        src: "/images/spain/houses/spain_houses_3.webp",
-                        alt: "Family House Interior"
+                        src: "/images/property/residential.jpg",
+                        alt: "Residential Complex Garden"
                     },
                     {
-                        src: "/images/spain/houses/spain_houses_4.webp",
-                        alt: "Family House Pool"
+                        src: "/images/property/residential.jpg",
+                        alt: "Residential Complex Gym"
                     },
                     {
-                        src: "/images/spain/houses/spain_houses_5.webp",
-                        alt: "Family House Kitchen"
+                        src: "/images/property/residential.jpg",
+                        alt: "Residential Complex Lobby"
                     },
                     {
-                        src: "/images/spain/houses/spain_houses_6.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_7.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_8.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_9.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_10.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_11.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_12.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_13.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_15.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_17.webp",
-                        alt: "Family House Living Room"
-                    },
-                    {
-                        src: "/images/spain/houses/spain_houses_19.webp",
-                        alt: "Family House Living Room"
-                    },
-                    
+                        src: "/images/property/residential.jpg",
+                        alt: "Residential Complex Coworking"
+                    }
                 ]}
-                title="Gallery of Selected Houses"
-                subtitle="Explore our spacious family houses with private gardens"
+                title={t('gallery.title')}
+                subtitle={t('gallery.subtitle')}
             />
 
             {/* Contact Section */}

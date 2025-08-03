@@ -8,46 +8,46 @@ import Navbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
 import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
-import PhotoGallery from "../components/photo-gallery";
+import PhotoGallery from "../../components/photo-gallery";
 import WhyChooseSection from "../../../components/spain/why-choose-section";
 import WhoAppreciatesSection from "../../../components/spain/who-appreciates-section";
 
 const features = [
-    "Rezidence s hotelovými službami",
-    "Úklid a údržba nemovitosti",
-    "Concierge služby",
-    "Catering a room service",
-    "Pohodlný a bezstarostný pobyt",
-    "Profesionální správa nemovitosti"
+    "Prostorné dispozice pro rodiny",
+    "Vlastní zahrada s bazénem",
+    "Klidná lokalita obklopená zelení",
+    "Dostatek prostoru pro každodenní život",
+    "Ideální pro rodinné bydlení",
+    "Soukromí a bezpečnost"
 ];
 
 const projects = [
     {
-        name: "Marina Bay Hotel Residences",
-        location: "Marbella",
+        name: "Costa Verde Family Homes",
+        location: "Estepona",
         price: "od 450 000 €",
         image: "/images/property/residential.jpg",
-        description: "Luxusní rezidence s hotelovými službami"
+        description: "Prostorné rodinné domy s vlastní zahradou"
     },
     {
-        name: "Costa del Sol Hotel Apartments",
-        location: "Benalmádena",
+        name: "Sunset Gardens Villas",
+        location: "Mijas",
         price: "od 380 000 €",
         image: "/images/property/residential.jpg",
-        description: "Apartmány s concierge službami"
+        description: "Řadové domy v klidné lokalitě"
     },
     {
-        name: "Sunset Beach Hotel Residences",
-        location: "Fuengirola",
-        price: "od 420 000 €",
+        name: "Marina Family Residences",
+        location: "Benalmádena",
+        price: "od 520 000 €",
         image: "/images/property/residential.jpg",
-        description: "Rezidence s room service"
+        description: "Dvojdomky s výhledem na moře"
     }
 ];
 
-export default function HoteloveSluzbyPage() {
-    const t = useTranslations('spain.developerProjects.hotelServices');
-    const tCategories = useTranslations('spain.developerProjects.categories');
+export default function RodinneDomyPage() {
+    const t = useTranslations('developerProjects.spain.familyHouses');
+    const tCategories = useTranslations('developerProjects.categories');
 
     return (
         <>
@@ -55,15 +55,15 @@ export default function HoteloveSluzbyPage() {
             
             {/* Hero Section */}
             <section
-                style={{ backgroundImage: "url('/images/spain/hotel/spain_hotel_1.webp')" }}
+                style={{ backgroundImage: "url('/images/spain/houses/spain_houses_1.webp')" }}
                 className="relative table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
                 <div className="absolute inset-0 bg-slate-900/80"></div>
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <div className="mb-4">
-                            <Link href="/spain/developer-projects" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                            <Link href="/developer-projects/spain" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
-                                Zpět na kategorie
+                                {tCategories('backToCategories')}
                             </Link>
                         </div>
                         <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">
@@ -97,8 +97,8 @@ export default function HoteloveSluzbyPage() {
                         <div className="relative">
                             <div className="aspect-video rounded-xl overflow-hidden">
                                 <img 
-                                    src="/images/spain/hotel/spain_hotel_2.webp" 
-                                    alt="Hotel Services Costa del Sol" 
+                                    src="/images/spain/houses/spain_houses_3.webp" 
+                                    alt="Family Houses Costa del Sol" 
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -112,35 +112,35 @@ export default function HoteloveSluzbyPage() {
                 items={[
                     {
                         icon: <FiHome className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.carefreeStay.title'),
-                        description: t('whyChoose.carefreeStay.description'),
-                        image: "/images/spain/hotel/spain_hotel_1.webp",
-                        imageAlt: "Carefree Stay",
-                        emoji: "🏨"
+                        title: t('whyChoose.ampleSpace.title'),
+                        description: t('whyChoose.ampleSpace.description'),
+                        image: "/images/spain/houses/spain_houses_1.webp",
+                        imageAlt: "Ample Space",
+                        emoji: "🏠"
                     },
                     {
                         icon: <FiStar className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.professionalManagement.title'),
-                        description: t('whyChoose.professionalManagement.description'),
-                        image: "/images/spain/hotel/spain_hotel_5.webp",
-                        imageAlt: "Professional Management",
-                        emoji: "👨‍💼"
+                        title: t('whyChoose.privateGardens.title'),
+                        description: t('whyChoose.privateGardens.description'),
+                        image: "/images/spain/houses/spain_houses_2.webp",
+                        imageAlt: "Private Gardens",
+                        emoji: "🌳"
                     },
                     {
                         icon: <FiMapPin className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.luxuryAmenities.title'),
-                        description: t('whyChoose.luxuryAmenities.description'),
-                        image: "/images/spain/hotel/spain_hotel_3.webp",
-                        imageAlt: "Luxury Amenities",
-                        emoji: "✨"
+                        title: t('whyChoose.peacefulEnvironment.title'),
+                        description: t('whyChoose.peacefulEnvironment.description'),
+                        image: "/images/spain/houses/spain_houses_3.webp",
+                        imageAlt: "Peaceful Environment",
+                        emoji: "🌿"
                     },
                     {
                         icon: <FiCheck className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.idealRecreation.title'),
-                        description: t('whyChoose.idealRecreation.description'),
-                        image: "/images/spain/hotel/spain_hotel_4.webp",
-                        imageAlt: "Ideal Recreation",
-                        emoji: "🌴"
+                        title: t('whyChoose.practicalLayout.title'),
+                        description: t('whyChoose.practicalLayout.description'),
+                        image: "/images/spain/houses/spain_houses_4.webp",
+                        imageAlt: "Practical Layout",
+                        emoji: "📐"
                     }
                 ]}
             />
@@ -161,32 +161,25 @@ export default function HoteloveSluzbyPage() {
                 title={t('whoAppreciates.title')}
                 items={[
                     {
-                        emoji: "👤",
-                        title: t('whoAppreciates.individualsRelaxation.title'),
+                        emoji: "👨‍👩‍👧‍👦",
+                        title: t('whoAppreciates.familiesSpace.title'),
                         gradientFrom: "green-50",
                         gradientTo: "green-60"
                     },
                     {
                         emoji: "💑",
-                        title: t('whoAppreciates.couplesTime.title'),
+                        title: t('whoAppreciates.couplesPlanning.title'),
                         gradientFrom: "blue-50",
                         gradientTo: "blue-60"
                     },
                     {
-                        emoji: "🏠",
-                        title: t('whoAppreciates.carefreeManagement.title'),
+                        emoji: "👴👵",
+                        title: t('whoAppreciates.multiGenerational.title'),
                         gradientFrom: "teal-50",
                         gradientTo: "teal-60"
-                    },
-                    {
-                        emoji: "⭐",
-                        title: t('whoAppreciates.premiumLocation.title'),
-                        gradientFrom: "purple-50",
-                        gradientTo: "purple-60"
                     }
                 ]}
             />
-
 
             {/* Benefits Section */}
             <section className="relative lg:py-24 py-16">
@@ -203,22 +196,22 @@ export default function HoteloveSluzbyPage() {
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiHome className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.convenience.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.convenience.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.space.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.space.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiMapPin className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.services.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.services.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.garden.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.garden.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiStar className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.management.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.management.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.family.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.family.description')}</p>
                         </div>
                     </div>
                 </div>
@@ -228,48 +221,73 @@ export default function HoteloveSluzbyPage() {
             <PhotoGallery 
                 photos={[
                     {
-                        src: "/images/spain/hotel/spain_hotel_1.webp",
-                        alt: "Hotel Service Lobby"
+                        src: "/images/spain/houses/spain_houses_1.webp",
+                        alt: "Family House Exterior"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_2.webp",
-                        alt: "Hotel Service Apartment"
+                        src: "/images/spain/houses/spain_houses_2.webp",
+                        alt: "Family House Garden"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_3.webp",
-                        alt: "Concierge Service"
+                        src: "/images/spain/houses/spain_houses_3.webp",
+                        alt: "Family House Interior"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_4.webp",
-                        alt: "Hotel Service Pool"
+                        src: "/images/spain/houses/spain_houses_4.webp",
+                        alt: "Family House Pool"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_5.webp",
-                        alt: "Hotel Service Restaurant"
+                        src: "/images/spain/houses/spain_houses_5.webp",
+                        alt: "Family House Kitchen"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_6.webp",
-                        alt: "Hotel Service Spa"
+                        src: "/images/spain/houses/spain_houses_6.webp",
+                        alt: "Family House Living Room"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_7.webp",
-                        alt: "Hotel Service Spa"
+                        src: "/images/spain/houses/spain_houses_7.webp",
+                        alt: "Family House Living Room"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_8.webp",
-                        alt: "Hotel Service Spa"
+                        src: "/images/spain/houses/spain_houses_8.webp",
+                        alt: "Family House Living Room"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_9.webp",
-                        alt: "Hotel Service Spa"
+                        src: "/images/spain/houses/spain_houses_9.webp",
+                        alt: "Family House Living Room"
                     },
                     {
-                        src: "/images/spain/hotel/spain_hotel_10.webp",
-                        alt: "Hotel Service Spa"
+                        src: "/images/spain/houses/spain_houses_10.webp",
+                        alt: "Family House Living Room"
                     },
+                    {
+                        src: "/images/spain/houses/spain_houses_11.webp",
+                        alt: "Family House Living Room"
+                    },
+                    {
+                        src: "/images/spain/houses/spain_houses_12.webp",
+                        alt: "Family House Living Room"
+                    },
+                    {
+                        src: "/images/spain/houses/spain_houses_13.webp",
+                        alt: "Family House Living Room"
+                    },
+                    {
+                        src: "/images/spain/houses/spain_houses_15.webp",
+                        alt: "Family House Living Room"
+                    },
+                    {
+                        src: "/images/spain/houses/spain_houses_17.webp",
+                        alt: "Family House Living Room"
+                    },
+                    {
+                        src: "/images/spain/houses/spain_houses_19.webp",
+                        alt: "Family House Living Room"
+                    },
+                    
                 ]}
-                title="Gallery of Selected Properties with Hotel Services"
-                subtitle="Explore our luxury properties with comprehensive hotel amenities"
+                title="Gallery of Selected Houses"
+                subtitle="Explore our spacious family houses with private gardens"
             />
 
             {/* Contact Section */}

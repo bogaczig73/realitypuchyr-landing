@@ -8,46 +8,46 @@ import Navbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
 import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
+import PhotoGallery from "../../components/photo-gallery";
 import WhyChooseSection from "../../../components/spain/why-choose-section";
 import WhoAppreciatesSection from "../../../components/spain/who-appreciates-section";
-import PhotoGallery from "../components/photo-gallery";
 
 const features = [
-    "features.panoramicViews",
-    "features.privateTerraces",
-    "features.privatePool",
-    "features.luxuryAmenities",
-    "features.maximumPrivacy",
-    "features.prestigiousLocation"
+    "Prostorné dispozice pro rodiny",
+    "Vlastní zahrada s bazénem",
+    "Klidná lokalita obklopená zelení",
+    "Dostatek prostoru pro každodenní život",
+    "Ideální pro rodinné bydlení",
+    "Soukromí a bezpečnost"
 ];
 
 const projects = [
     {
-        name: "Golden Heights Penthouse",
-        location: "Marbella",
-        price: "od 1 200 000 €",
+        name: "Praha Family Homes",
+        location: "Praha",
+        price: "od 8 500 000 Kč",
         image: "/images/property/residential.jpg",
-        description: "Luxusní penthous s panoramatickým výhledem"
+        description: "Prostorné rodinné domy s vlastní zahradou"
     },
     {
-        name: "Sunset Tower Penthouse",
-        location: "Benalmádena",
-        price: "od 950 000 €",
+        name: "Brno Garden Villas",
+        location: "Brno",
+        price: "od 6 800 000 Kč",
         image: "/images/property/residential.jpg",
-        description: "Exkluzivní penthous s privátní terasou"
+        description: "Řadové domy v klidné lokalitě"
     },
     {
-        name: "Marina View Penthouse",
-        location: "Puerto Banús",
-        price: "od 1 500 000 €",
+        name: "Ostrava Family Residences",
+        location: "Ostrava",
+        price: "od 5 200 000 Kč",
         image: "/images/property/residential.jpg",
-        description: "Prestižní penthous s výhledem na přístav"
+        description: "Dvojdomky s výhledem na město"
     }
 ];
 
-export default function PenthousyPage() {
-    const t = useTranslations('spain.developerProjects.penthouses');
-    const tCategories = useTranslations('spain.developerProjects.categories');
+export default function CzechHousesPage() {
+    const t = useTranslations('developerProjects.czechRepublic.familyHouses');
+    const tCategories = useTranslations('developerProjects.categories');
 
     return (
         <>
@@ -55,13 +55,13 @@ export default function PenthousyPage() {
             
             {/* Hero Section */}
             <section
-                style={{ backgroundImage: "url('/images/spain/penthouses/spain_penthouses_1.webp')" }}
+                style={{ backgroundImage: "url('/images/property/residential.jpg')" }}
                 className="relative table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover">
                 <div className="absolute inset-0 bg-slate-900/80"></div>
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <div className="mb-4">
-                            <Link href="/spain/developer-projects" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                            <Link href="/developer-projects/czech-republic" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
                                 {tCategories('backToCategories')}
                             </Link>
@@ -93,20 +93,12 @@ export default function PenthousyPage() {
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                                 {t('description.content')}
                             </p>
-                            <div className="grid grid-cols-2 gap-4">
-                                {features.map((feature, index) => (
-                                    <div key={index} className="flex items-center gap-3">
-                                        <FiCheck className="h-5 w-5 text-green-600 flex-shrink-0" />
-                                        <span className="text-slate-600">{t(feature)}</span>
-                                    </div>
-                                ))}
-                            </div>
                         </div>
                         <div className="relative">
                             <div className="aspect-video rounded-xl overflow-hidden">
                                 <img 
-                                    src="/images/spain/penthouses/spain_penthouses_2.webp" 
-                                    alt="Penthousy Costa del Sol"   
+                                    src="/images/property/residential.jpg" 
+                                    alt="Family Houses Czech Republic" 
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -120,35 +112,35 @@ export default function PenthousyPage() {
                 items={[
                     {
                         icon: <FiHome className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.exclusiveViews.title'),
-                        description: t('whyChoose.exclusiveViews.description'),
-                        image: "/images/spain/penthouses/spain_penthouses_1.webp",
-                        imageAlt: "Exclusive Views",
-                        emoji: "🏙️"
+                        title: t('whyChoose.ampleSpace.title'),
+                        description: t('whyChoose.ampleSpace.description'),
+                        image: "/images/property/residential.jpg",
+                        imageAlt: "Ample Space",
+                        emoji: "🏠"
                     },
                     {
                         icon: <FiStar className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.privateTerraces.title'),
-                        description: t('whyChoose.privateTerraces.description'),
-                        image: "/images/spain/penthouses/spain_penthouses_2.webp",
-                        imageAlt: "Private Terraces",
-                        emoji: "🌅"
+                        title: t('whyChoose.privateGardens.title'),
+                        description: t('whyChoose.privateGardens.description'),
+                        image: "/images/property/residential.jpg",
+                        imageAlt: "Private Gardens",
+                        emoji: "🌳"
                     },
                     {
                         icon: <FiMapPin className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.luxuryAmenities.title'),
-                        description: t('whyChoose.luxuryAmenities.description'),
-                        image: "/images/spain/penthouses/spain_penthouses_3.webp",
-                        imageAlt: "Luxury Amenities",
-                        emoji: "✨"
+                        title: t('whyChoose.peacefulEnvironment.title'),
+                        description: t('whyChoose.peacefulEnvironment.description'),
+                        image: "/images/property/residential.jpg",
+                        imageAlt: "Peaceful Environment",
+                        emoji: "🌿"
                     },
                     {
                         icon: <FiCheck className="h-6 w-6 text-white" />,
-                        title: t('whyChoose.peacefulEnvironment.title'),
-                        description: t('whyChoose.peacefulEnvironment.description'),
-                        image: "/images/spain/penthouses/spain_penthouses_4.webp",
-                        imageAlt: "Peaceful Environment",
-                        emoji: "🧘"
+                        title: t('whyChoose.practicalLayout.title'),
+                        description: t('whyChoose.practicalLayout.description'),
+                        image: "/images/property/residential.jpg",
+                        imageAlt: "Practical Layout",
+                        emoji: "📐"
                     }
                 ]}
             />
@@ -169,20 +161,20 @@ export default function PenthousyPage() {
                 title={t('whoAppreciates.title')}
                 items={[
                     {
-                        emoji: "💑",
-                        title: t('whoAppreciates.demandingCouples.title'),
+                        emoji: "👨‍👩‍👧‍👦",
+                        title: t('whoAppreciates.familiesSpace.title'),
                         gradientFrom: "green-50",
                         gradientTo: "green-60"
                     },
                     {
-                        emoji: "👨‍👩‍👧‍👦",
-                        title: t('whoAppreciates.exclusiveFamilies.title'),
+                        emoji: "💑",
+                        title: t('whoAppreciates.couplesPlanning.title'),
                         gradientFrom: "blue-50",
                         gradientTo: "blue-60"
                     },
                     {
-                        emoji: "🌅",
-                        title: t('whoAppreciates.panoramicViews.title'),
+                        emoji: "👴👵",
+                        title: t('whoAppreciates.multiGenerational.title'),
                         gradientFrom: "teal-50",
                         gradientTo: "teal-60"
                     }
@@ -204,88 +196,57 @@ export default function PenthousyPage() {
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiHome className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.luxury.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.luxury.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.space.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.space.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiMapPin className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.view.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.view.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.garden.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.garden.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiStar className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('benefits.privacy.title')}</h3>
-                            <p className="text-slate-600">{t('benefits.privacy.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3">{t('benefits.family.title')}</h3>
+                            <p className="text-slate-600">{t('benefits.family.description')}</p>
                         </div>
                     </div>
                 </div>
             </section>
+
             {/* Photo Gallery Section */}
             <PhotoGallery 
                 photos={[
                     {
-                        src: "/images/spain/penthouses/spain_penthouses_1.webp",
-                        alt: "Residential Complex Exterior"
+                        src: "/images/property/residential.jpg",
+                        alt: "Family House Exterior"
                     },
                     {
-                        src: "/images/spain/penthouses/spain_penthouses_2.webp",
-                        alt: "Residential Complex Pool"
+                        src: "/images/property/residential.jpg",
+                        alt: "Family House Garden"
                     },
                     {
-                        src: "/images/spain/penthouses/spain_penthouses_3.webp",
-                        alt: "Residential Complex Garden"
+                        src: "/images/property/residential.jpg",
+                        alt: "Family House Interior"
                     },
                     {
-                        src: "/images/spain/penthouses/spain_penthouses_4.webp",
-                        alt: "Residential Complex Gym"
+                        src: "/images/property/residential.jpg",
+                        alt: "Family House Pool"
                     },
                     {
-                        src: "/images/spain/penthouses/spain_penthouses_16.webp",
-                        alt: "Residential Complex Lobby"
+                        src: "/images/property/residential.jpg",
+                        alt: "Family House Kitchen"
                     },
                     {
-                        src: "/images/spain/penthouses/spain_penthouses_6.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    {
-                        src: "/images/spain/penthouses/spain_penthouses_7.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    {
-                        src: "/images/spain/penthouses/spain_penthouses_8.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    {
-                        src: "/images/spain/penthouses/spain_penthouses_9.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    {
-                        src: "/images/spain/penthouses/spain_penthouses_15.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    {
-                        src: "/images/spain/penthouses/spain_penthouses_11.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    {
-                        src: "/images/spain/penthouses/spain_penthouses_12.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    {
-                        src: "/images/spain/penthouses/spain_penthouses_13.webp",
-                        alt: "Residential Complex Coworking"
-                    },
-                    {
-                        src: "/images/spain/penthouses/spain_penthouses_14.webp",
-                        alt: "Residential Complex Coworking"
+                        src: "/images/property/residential.jpg",
+                        alt: "Family House Living Room"
                     }
                 ]}
-                title={t('gallery.title')}
-                subtitle={t('gallery.subtitle')}
+                title="Gallery of Selected Houses"
+                subtitle="Explore our spacious family houses with private gardens"
             />
 
             {/* Contact Section */}

@@ -79,8 +79,8 @@ export default function Sidebar(){
                                 </Link>
                             </li>
 
-                            <li className={`${manu === "/spain/developer-projects" ? 'active' : ''} ms-0`}>
-                                <Link href="/spain/developer-projects" onClick={toggleSidebar} scroll={false}>
+                                            <li className={`${manu === "/developer-projects" ? 'active' : ''} ms-0`}>
+                    <Link href="/developer-projects" onClick={toggleSidebar} scroll={false}>
                                     <i className="mdi mdi-earth me-2"></i>{navigationT('developerProjects')}
                                 </Link>
                             </li>

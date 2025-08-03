@@ -16,6 +16,23 @@ const staticPaths = [
   'neighborhood-explorer',
   'privacy',
   'terms',
+  'explore',
+  'reviews',
+  'developer-projects',
+  'developer-projects/czech-republic',
+  'developer-projects/czech-republic/apartments',
+  'developer-projects/czech-republic/houses',
+  'developer-projects/czech-republic/residential-complexes',
+  'developer-projects/czech-republic/villas',
+  'developer-projects/spain',
+  'developer-projects/spain/apartments',
+  'developer-projects/spain/houses',
+  'developer-projects/spain/residential-complexes',
+  'developer-projects/spain/villas',
+  'developer-projects/spain/penthouses',
+  'developer-projects/spain/golf-properties',
+  'developer-projects/spain/hotel-services',
+  'developer-projects/spain/smart-homes',
 ];
 
 export async function GET(req: NextRequest) {

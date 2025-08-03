@@ -12,6 +12,7 @@ import { FiHexagon } from "react-icons/fi";
 import Switcher from "../components/switcher";
 
 export interface Feature {
+    id: string;
     title: string;
     description: string;
     icon: string;
@@ -23,54 +24,63 @@ export default function Services() {
 
     const feature: Feature[] = [
         {
+            id: 'property-sale',
             title: t('features.propertySale.title'),
             description: t('features.propertySale.description'),
             icon: "uil uil-home",
             emoji: "🏠"
         },
         {
+            id: 'property-purchase',
             title: t('features.propertyPurchase.title'),
             description: t('features.propertyPurchase.description'),
             icon: "uil uil-search",
             emoji: "🔍"
         },
         {
+            id: 'property-valuation',
             title: t('features.propertyValuation.title'),
             description: t('features.propertyValuation.description'),
             icon: "uil uil-chart-line",
             emoji: "💰"
         },
         {
+            id: 'home-staging',
             title: t('features.homeStaging.title'),
             description: t('features.homeStaging.description'),
             icon: "uil uil-paint-tool",
             emoji: "✨"
         },
         {
+            id: 'professional-presentation',
             title: t('features.professionalPresentation.title'),
             description: t('features.professionalPresentation.description'),
             icon: "uil uil-camera",
             emoji: "📸"
         },
         {
+            id: 'legal-service',
             title: t('features.legalService.title'),
             description: t('features.legalService.description'),
             icon: "uil uil-balance-scale",
             emoji: "⚖️"
         },
         {
+            id: 'financial-services',
             title: t('features.financialServices.title'),
             description: t('features.financialServices.description'),
             icon: '',
             emoji: '💳',
         },
         {
+            id: 'investment',
             title: t('features.investment.title'),
             description: t('features.investment.description'),
             icon: '',
             emoji: '📈',
         },
         {
+            id: 'development-projects',
             title: t('features.developmentProjects.title'),
             description: t('features.developmentProjects.description'),
             icon: '',

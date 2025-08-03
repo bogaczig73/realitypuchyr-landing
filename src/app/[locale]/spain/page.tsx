@@ -130,7 +130,7 @@ export default function Spain() {
                                     <p className="text-slate-400 mt-3">{t(feature.descriptionKey)}</p>
                                     {feature.titleKey === "properties.developerProjects.title" ? (
                                         <Link 
-                                            href="/spain/developer-projects"
+                                            href="/developer-projects"
                                             className="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-4"
                                         >
                                             {t(feature.ctaKey)}

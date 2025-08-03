@@ -3,7 +3,23 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { FiArrowRight, FiHexagon } from 'react-icons/fi'
-import { aboutData } from '../../data/data'
+
+
+const aboutData = [
+    {
+        image:'/images/rent.png',
+        link:'/services',
+    },
+    {
+        image:'/images/buy.png',
+        link:'/services',
+    },
+    {
+        image:'/images/sell.png',
+        link:'/developer-projects',
+    }
+]
+
 
 interface AboutData {
     image: string;
@@ -23,7 +39,7 @@ export default function AboutMe() {
                 </div>
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                    {aboutData.map((item: AboutData, index: number) => {
+                    {aboutData.map((item, index: number) => {
                         return (
                             <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-transparent overflow-hidden text-center" key={index}>
                                 <div className="relative overflow-hidden text-transparent -m-3">
@@ -34,11 +50,11 @@ export default function AboutMe() {
                                 </div>
 
                                 <div className="mt-6">
-                                    <Link href="" className="text-xl font-medium hover:text-green-600">{t(`services.${index}.title`)}</Link>
+                                    <Link href={item.link} className="text-xl font-medium hover:text-green-600">{t(`services.${index}.title`)}</Link>
                                     <p className="text-slate-400 mt-3">{t(`services.${index}.description`)}</p>
 
                                     <div className="mt-4">
-                                        <Link href="/services" className="btn btn-link text-green-600 hover:text-green-600 after:bg-green-600 transition duration-500">{t(`services.${index}.readMore`)} <FiArrowRight className="ms-1" /></Link>
+                                        <Link href={item.link} className="btn btn-link text-green-600 hover:text-green-600 after:bg-green-600 transition duration-500">{t(`services.${index}.readMore`)} <FiArrowRight className="ms-1" /></Link>
                                     </div>
                                 </div>
                             </div>
