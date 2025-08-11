@@ -949,7 +949,18 @@
     "closed": "Closed",
     "reviews": "reviews",
     "distance": "distance",
-    "contactForInfo": "Information on request"
+    "contactForInfo": "Information on request",
+    "categoryFlats": "Flats",
+    "categoryCottages": "Cottages",
+    "categoryHouses": "Houses",
+    "categoryProjects": "Projects",
+    "categoryLands": "Lands",
+    "statusActive": "Active",
+    "statusSold": "Sold",
+    "statusRent": "For Rent",
+    "statusShowcase": "Showcase",
+    "ownershipTypeRent": "Rent",
+    "ownershipTypeOwnership": "Ownership"
   },
   "spainSection": {
     "title": "Foreign Real Estate",

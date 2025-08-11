@@ -947,7 +947,18 @@
       "closed": "Закрыто",
       "reviews": "отзывов",
       "distance": "расстояние",
-      "contactForInfo": "Информация по запросу"
+      "contactForInfo": "Информация по запросу",
+      "categoryFlats": "Квартиры",
+      "categoryCottages": "Коттеджи",
+      "categoryHouses": "Дома",
+      "categoryProjects": "Проекты",
+      "categoryLands": "Участки",
+      "statusActive": "Активно",
+      "statusSold": "Продано",
+      "statusRent": "Аренда",
+      "statusShowcase": "Демонстрация",
+      "ownershipTypeRent": "Аренда",
+      "ownershipTypeOwnership": "Собственность"
     },
     "spainSection": {
       "title": "Зарубежная недвижимость",

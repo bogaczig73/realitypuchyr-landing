@@ -948,7 +948,18 @@
       "closed": "Закрито",
       "reviews": "відгуки",
       "distance": "відстань",
-      "contactForInfo": "Інформація на запит"
+      "contactForInfo": "Інформація на запит",
+      "categoryFlats": "Квартири",
+      "categoryCottages": "Котеджі",
+      "categoryHouses": "Будинки",
+      "categoryProjects": "Проекти",
+      "categoryLands": "Ділянки",
+      "statusActive": "Активно",
+      "statusSold": "Продано",
+      "statusRent": "Оренда",
+      "statusShowcase": "Демонстрація",
+      "ownershipTypeRent": "Оренда",
+      "ownershipTypeOwnership": "Власність"
     },
     "spainSection": {
       "title": "Зарубіжна нерухомість",

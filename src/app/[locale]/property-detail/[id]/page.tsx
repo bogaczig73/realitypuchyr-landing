@@ -90,6 +90,58 @@ export default function PropertyDetail() {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   };
 
+  // Helper function to translate enum values
+  const translateEnumValue = (value: any, type: 'category' | 'status' | 'ownershipType') => {
+    if (!value) return null;
+    
+    if (type === 'category' && typeof value === 'object' && 'name' in value) {
+      // For category objects, translate the name
+      const categoryName = value.name;
+      switch (categoryName) {
+        case 'Flats':
+          return t('categoryFlats');
+        case 'Cottages':
+          return t('categoryCottages');
+        case 'Houses':
+          return t('categoryHouses');
+        case 'Projects':
+          return t('categoryProjects');
+        case 'Lands':
+          return t('categoryLands');
+        default:
+          return categoryName;
+      }
+    }
+    
+    if (type === 'status') {
+      switch (value) {
+        case 'ACTIVE':
+          return t('statusActive');
+        case 'SOLD':
+          return t('statusSold');
+        case 'RENT':
+          return t('statusRent');
+        case 'SHOWCASE':
+          return t('statusShowcase');
+        default:
+          return value;
+      }
+    }
+    
+    if (type === 'ownershipType') {
+      switch (value) {
+        case 'RENT':
+          return t('ownershipTypeRent');
+        case 'OWNERSHIP':
+          return t('ownershipTypeOwnership');
+        default:
+          return value;
+      }
+    }
+    
+    return value;
+  };
+
   useEffect(() => {
     const fetchProperty = async () => {
       try {
@@ -139,10 +191,19 @@ export default function PropertyDetail() {
     );
   }
 
-  const formatValue = (value: any) => {
+  const formatValue = (value: any, fieldType?: 'category' | 'status' | 'ownershipType') => {
     if (value === null || value === undefined || value === '') {
       return <span className="text-gray-400 italic">-</span>;
     }
+    
+    // Use translation helper for enum values
+    if (fieldType) {
+      const translatedValue = translateEnumValue(value, fieldType);
+      if (translatedValue) {
+        return <span>{translatedValue}</span>;
+      }
+    }
+    
     if (typeof value === 'object' && value !== null) {
       if ('name' in value && 'slug' in value && 'image' in value) {
         return <span>{String(value.name)}</span>;
@@ -273,15 +334,15 @@ export default function PropertyDetail() {
                   <ul className="space-y-2">
                     <li className="flex justify-between items-center">
                       <span className="font-medium">{t('category')}:</span>
-                      <span className="text-right">{formatValue(property.category)}</span>
+                      <span className="text-right">{formatValue(property.category, 'category')}</span>
                     </li>
                     <li className="flex justify-between items-center">
                       <span className="font-medium">{t('status')}:</span>
-                      <span className="text-right">{formatValue(property.status)}</span>
+                      <span className="text-right">{formatValue(property.status, 'status')}</span>
                     </li>
                     <li className="flex justify-between items-center">
                       <span className="font-medium">{t('ownershipType')}:</span>
-                      <span className="text-right">{formatValue(property.ownershipType)}</span>
+                      <span className="text-right">{formatValue(property.ownershipType, 'ownershipType')}</span>
                     </li>
                     <li className="flex justify-between items-center">
                       <span className="font-medium">{t('size')}:</span>
@@ -579,7 +640,7 @@ export default function PropertyDetail() {
                 {property.status === 'SOLD' ? (
                   <div className="rounded-md bg-red-50 dark:bg-red-900/20 border-2 border-red-500 dark:border-red-800 shadow-sm shadow-gray-200 dark:shadow-gray-700">
                     <div className="p-6 text-center">
-                      <h5 className="text-3xl font-bold text-red-600 mb-4">{t('sold')}</h5>
+                      <h5 className="text-3xl font-bold text-red-600 mb-4">{t('statusSold')}</h5>
                       <p className="text-slate-600 dark:text-slate-300 mb-6">{t('propertySoldMessage')}</p>
                       <div className="mt-6">
                         <Link href="/contact" className="btn bg-transparent hover:bg-red-600 border border-red-600 text-red-600 hover:text-white rounded-md">

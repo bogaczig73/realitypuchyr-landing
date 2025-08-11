@@ -955,7 +955,18 @@
     "closed": "Geschlossen",
     "reviews": "Bewertungen",
     "distance": "Entfernung",
-    "contactForInfo": "Informationen auf Anfrage"
+    "contactForInfo": "Informationen auf Anfrage",
+    "categoryFlats": "Wohnungen",
+    "categoryCottages": "Ferienhäuser",
+    "categoryHouses": "Häuser",
+    "categoryProjects": "Projekte",
+    "categoryLands": "Grundstücke",
+    "statusActive": "Aktiv",
+    "statusSold": "Verkauft",
+    "statusRent": "Zu vermieten",
+    "statusShowcase": "Ausstellung",
+    "ownershipTypeRent": "Miete",
+    "ownershipTypeOwnership": "Eigentum"
   },
   "spainSection": {
     "title": "Ausländische Immobilien",

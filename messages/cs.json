@@ -1103,7 +1103,18 @@
     "closed": "Zavřeno",
     "reviews": "hodnocení",
     "distance": "vzdálenost",
-    "contactForInfo": "Informace na vyžádání"
+    "contactForInfo": "Informace na vyžádání",
+    "categoryFlats": "Byty",
+    "categoryCottages": "Chaty",
+    "categoryHouses": "Domy",
+    "categoryProjects": "Projekty",
+    "categoryLands": "Pozemky",
+    "statusActive": "Aktivní",
+    "statusSold": "Prodáno",
+    "statusRent": "K pronájmu",
+    "statusShowcase": "Ukázka",
+    "ownershipTypeRent": "Nájem",
+    "ownershipTypeOwnership": "Prodej"
   },
   "spainSection": {
     "title": "Zahraniční nemovitosti",
