@@ -78,7 +78,7 @@ export default function BlogCard({ item }: BlogCardProps) {
                     
                     <div className="mt-3">
                         <Link href={`/blog/${item.slug}`} className="btn btn-link hover:text-green-600 after:bg-green-600 duration-500 ease-in-out inline-flex items-center">
-                            {t('readMore')} <FiArrowRight className="ms-1"/>
+                            {t('readMore')} "{item.name}" <FiArrowRight className="ms-1"/>
                         </Link>
                     </div>
                 </div>

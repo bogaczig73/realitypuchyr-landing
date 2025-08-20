@@ -36,7 +36,6 @@ export default function Page() {
      <BlogSection/>
 
      <GetInTuch/>
-     <InstagramEmbed/>
      <Footer/>
      <Switcher/>
     </>
