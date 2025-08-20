@@ -4,4 +4,43 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+  font-preload: true;
+}
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Reduce layout shift for fonts */
+.font-league-spartan {
+  font-family: 'League Spartan', system-ui, -apple-system, sans-serif;
+  font-display: swap;
+}
+
+/* Critical CSS for above-the-fold content */
+.critical-content {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

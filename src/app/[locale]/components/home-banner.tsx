@@ -1,31 +1,14 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-
-import 'tiny-slider/dist/tiny-slider.css';
 
 const heroimage = '/images/agency/pavel.webp'
 
 export default function HomeBanner() {
     const t = useTranslations('components.homeBanner');
     
-    const settings = {
-        container: '.tiny-single',
-        items: 1,
-        controls: false,
-        mouseDrag: true,
-        loop: true,
-        rewind: true,
-        autoplay: true,
-        autoplayButtonOutput: false,
-        autoplayTimeout: 3000,
-        nav: false,
-        speed: 800,
-        gutter: 0,
-      };
-
   return (
     <>
     <section className="relative py-24">
@@ -45,10 +28,19 @@ export default function HomeBanner() {
                 <div className="md:col-span-5">
                     <div className="!rounded-full shadow-lg shadow-gray-200 dark:shadow-gray-800 relative overflow-hidden border-8 border-white dark:border-slate-900">
                         <div className="grid grid-cols-1 relative">
-                            <div className="tiny-single">
-                                <div className="tiny-slide">
-                                    <img src={heroimage} className="object-cover w-full lg:h-[600px] md:h-[500px]" alt=""/>
-                                </div>
+                            <div className="relative">
+                                <Image 
+                                    src={heroimage} 
+                                    alt="Pavel Puchýř - Real Estate Professional"
+                                    width={600}
+                                    height={600}
+                                    className="object-cover w-full lg:h-[600px] md:h-[500px]"
+                                    priority
+                                    fetchPriority="high"
+                                    quality={85}
+                                    placeholder="blur"
+                                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                                />
                             </div>
                         </div>
                     </div>
