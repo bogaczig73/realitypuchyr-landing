@@ -2,6 +2,13 @@
 
 import { useEffect } from 'react'
 
+// Type definitions for performance entries
+interface FirstInputEntry extends PerformanceEntry {
+  processingStart: number
+  processingEnd: number
+  target?: EventTarget
+}
+
 export default function PerformanceMonitor() {
   useEffect(() => {
     if (typeof window !== 'undefined' && 'PerformanceObserver' in window) {
@@ -20,8 +27,11 @@ export default function PerformanceMonitor() {
       const fidObserver = new PerformanceObserver((list) => {
         const entries = list.getEntries()
         entries.forEach((entry) => {
-          console.log('FID:', entry.processingStart - entry.startTime)
-          // Send to analytics if needed
+          const fidEntry = entry as FirstInputEntry
+          if (fidEntry.processingStart && fidEntry.startTime) {
+            console.log('FID:', fidEntry.processingStart - fidEntry.startTime)
+            // Send to analytics if needed
+          }
         })
       })
       fidObserver.observe({ entryTypes: ['first-input'] })
