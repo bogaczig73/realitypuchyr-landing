@@ -2,47 +2,97 @@
 import React from "react";
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { FiArrowLeft, FiArrowRight, FiHome, FiMapPin, FiStar } from 'react-icons/fi';
+import { FiArrowLeft, FiArrowRight, FiHome, FiMapPin, FiStar, FiCalendar, FiUsers } from 'react-icons/fi';
 
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import GetInTuch from "../../components/get-in-touch";
 import Switcher from "../../components/switcher";
 
-const categories = [
+const projects = [
     {
-        id: "apartments",
-        titleKey: "categories.apartments.title",
-        descriptionKey: "categories.apartments.description",
-        icon: "🏢",
-        image: "/images/spain/spain_aparman.webp"
+        id: "triangl-park",
+        title: "Triangl Park",
+        location: "Plzeň-Bory",
+        status: "Third stage now selling",
+        availableUnits: 38,
+        completionRate: 93,
+        image: "/images/projects/czech-republic/triangl-park/triangl-park-23.webp",
+        logo: "/images/projects/czech-republic/triangl-park/triangl-logo.svg",
+        description: "Unique residential concept in southern Plzeň-Bory with three distinct living standards",
+        features: ["Garden Suite", "Family Home", "Penthouse Lodge"],
+        stages: [
+            { name: "First Stage", status: "Completed", units: "Sold out" },
+            { name: "Second Stage", status: "Completed", units: "Sold out" },
+            { name: "Third Stage", status: "Selling now", units: "38 available" }
+        ]
     },
     {
-        id: "houses",
-        titleKey: "categories.familyHouses.title",
-        descriptionKey: "categories.familyHouses.description",
-        icon: "🏘️",
-        image: "/images/spain/spain_house.webp"
+        id: "icon-park",
+        title: "ICON Park Kladno",
+        location: "Kladno",
+        status: "Ready for move-in",
+        availableUnits: "Contact for details",
+        completionRate: 100,
+        image: "/images/projects/czech-republic/icon-park/icon-park-21.webp",
+        description: "Modern and comfortable living in the new residential district of Kladno",
+        logo: "/images/projects/czech-republic/icon-park/icon-park-logo.svg",
+        features: ["1+kk to 4+kk", "Award Winner 2024", "Ready for move-in"],
+        stages: [
+            { name: "Project Status", status: "Completed", units: "Ready for move-in" }
+        ]
     },
     {
-        id: "villas",
-        titleKey: "categories.villas.title",
-        descriptionKey: "categories.villas.description",
-        icon: "🏰",
-        image: "/images/spain/spain_villa.webp"
+        id: "english-embankment",
+        title: "English Embankment Palace",
+        location: "Plzeň Center",
+        status: "Construction in progress",
+        availableUnits: "Contact for details",
+        completionRate: 25,
+        image: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-03.webp",
+        description: "Luxury palace-style living in the heart of Plzeň's historic center",
+        logo: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-logo.svg",
+        features: ["Luxury Apartments", "Commercial Space", "Park Courtyard"],
+        stages: [
+            { name: "Construction", status: "In Progress", units: "Completion 2028" }
+        ]
     },
     {
-        id: "residential-complexes",
-        titleKey: "categories.residentialComplexes.title",
-        descriptionKey: "categories.residentialComplexes.description",
-        icon: "🏘️",
-        image: "/images/spain/spain_residential.webp"
+        id: "horovice",
+        title: "Bydlení Hořovice",
+        location: "Hořovice",
+        status: "Now selling",
+        availableUnits: "Contact for details",
+        completionRate: 60,
+        image: "/images/projects/czech-republic/horovice/horovice-08.webp",
+        logo: "/images/projects/czech-republic/horovice/horovice-09.webp",
+        description: "From the foundation up - a good place for life between Plzeň and Prague",
+        features: ["Brick Construction", "Custom Kitchens", "3D Configurator"],
+        stages: [
+            { name: "Project Status", status: "Now Selling", units: "Contact for details" }
+        ]
+    },
+    {
+        id: "tiskarna-kristianov",
+        title: "Tiskárna Kristiánov",
+        location: "Liberec Center",
+        status: "Second stage now selling",
+        availableUnits: "Contact for details",
+        completionRate: 70,
+        image: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-02.webp",
+        logo: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-logo.png",
+        description: "Living with a story in the heart of Liberec - industrial heritage meets modern luxury",
+        features: ["Industrial Heritage", "Award-Winning Architecture", "200 Units"],
+        stages: [
+            { name: "Second Stage", status: "Now Selling", units: "Contact for details" }
+        ]
     }
 ];
 
 export default function DeveloperProjectsCzechRepublic() {
     const t = useTranslations('developerProjects');
     const tCategories = useTranslations('developerProjects.categories');
+    
     return (
         <>
             <Navbar navClass="navbar-white" topnavClass={""} tagline={false} />
@@ -78,42 +128,69 @@ export default function DeveloperProjectsCzechRepublic() {
                 </div>
             </div>
 
-            {/* Categories Section */}
+            {/* Projects Section */}
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <span className="text-green-600 font-semibold text-lg uppercase tracking-wide">{t('categories.badge')}</span>
-                        <h2 className="text-5xl font-bold mt-3 mb-4">{t('categories.title')}</h2>
+                        <span className="text-green-600 font-semibold text-lg uppercase tracking-wide">Our Projects</span>
+                        <h2 className="text-5xl font-bold mt-3 mb-4">Featured Development Projects</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            {t('categories.subtitle')}
+                            Discover our premium residential developments across the Czech Republic
                         </p>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-8">
-                        {categories.map((category, index) => (
+                    <div className="grid lg:grid-cols-1 gap-8">
+                        {projects.map((project, index) => (
                             <Link 
                                 key={index} 
-                                href={`/developer-projects/czech-republic/${category.id}`}
+                                href={`/developer-projects/czech-republic/${project.id}`}
                                 className="group relative transition-all duration-500 ease-in-out rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-1"
                             >
-                                <div className="relative h-64">
+                                <div className="relative h-96">
                                     <img 
-                                        src={category.image} 
-                                        alt={t(category.titleKey)}
+                                        src={project.image} 
+                                        alt={project.title}
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20"></div>
-                                    <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                                        <div className="flex items-center gap-4 mb-3">
-                                            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
-                                                <span className="text-2xl">{category.icon}</span>
+                                    <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                                        <div className="flex justify-between items-start">
+                                            <div className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                                                {project.status}
                                             </div>
-                                            <div className="flex-1">
-                                                <h3 className="text-xl font-semibold text-white mb-1">{t(category.titleKey)}</h3>
-                                                <p className="text-white/80 text-sm leading-relaxed line-clamp-2">{t(category.descriptionKey)}</p>
+                                            <div className="text-right">
+                                                <img src={project.logo} alt={project.title} className="w-30 h-30 object-contain text-white" />
                                             </div>
-                                            <div className="flex-shrink-0">
-                                                <FiArrowRight className="h-6 w-6 text-white group-hover:translate-x-2 transition-transform duration-300" />
+                                        </div>
+                                        
+                                        <div className="space-y-4">
+                                            <div>
+                                                <h3 className="text-3xl font-bold text-white mb-2">{project.title}</h3>
+                                                <p className="text-white/80 text-lg mb-4">{project.description}</p>
+                                            </div>
+                                            
+                                            <div className="flex items-center gap-4 text-white/80">
+                                                <div className="flex items-center gap-2">
+                                                    <FiMapPin className="h-4 w-4" />
+                                                    <span>{project.location}</span>
+                                                </div>
+                                                <div className="flex items-center gap-2">
+                                                    <FiUsers className="h-4 w-4" />
+                                                    <span>{project.completionRate}% {project.completionRate === 100 ? 'completed' : 'sold'}</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div className="flex gap-2">
+                                                {project.features.map((feature, idx) => (
+                                                    <span key={idx} className="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+                                                        {feature}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                            
+                                            <div className="flex items-center gap-2 text-white group-hover:translate-x-2 transition-transform duration-300">
+                                                <span className="font-semibold">View Project Details</span>
+                                                <FiArrowRight className="h-5 w-5" />
                                             </div>
                                         </div>
                                     </div>
