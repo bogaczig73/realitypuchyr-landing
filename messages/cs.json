@@ -1678,7 +1678,7 @@
       "title": "Proč si vybrat naše developerské projekty?",
       "subtitle": "Naše developerské projekty kombinují kvalitu, inovace a výhodné lokality",
       "experience": {
-        "title": "Léta zkušeností",
+        "title": "Roky zkušeností",
         "description": "Máme bohaté zkušenosti s developerskými projekty v různých regionech."
       },
       "location": {
@@ -1689,6 +1689,13 @@
         "title": "Kvalitní provedení",
         "description": "Spolupracujeme s nejlepšími developery a dodavateli materiálů."
       }
+    },
+    "cta": {
+      "spain": "Máme dalších 70+ projektů ve Španělsku! 🇪🇸",
+      "czechRepublic": "Máme dalších 65+ projektů v České republice! 🇨🇿",
+      "interested": "Máte zájem? Zavolejte mi pro více informací!",
+      "phone": "+420 733 781 696",
+      "email": "pavel.puchyr@bcas.cz"
     }
   },
   "hero": {

@@ -167,72 +167,104 @@ export default function DeveloperProjects() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <span className="text-green-600 font-semibold text-lg uppercase tracking-wide">{t('regions.badge')}</span>
-                        <h2 className="text-5xl font-bold mt-3 mb-4">{t('regions.title')}</h2>
-                        <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                        <span className="text-green-600 dark:text-green-400 font-semibold text-lg uppercase tracking-wide">{t('regions.badge')}</span>
+                        <h2 className="text-5xl font-bold mt-3 mb-4 text-slate-900 dark:text-white">{t('regions.title')}</h2>
+                        <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
                             {t('regions.subtitle')}
                         </p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-8">
                         {regions.map((region, index) => (
-                            <div key={index} className="group relative transition-all duration-500 ease-in-out rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-1">
-                                <Link href={`/developer-projects/${region.id}`}>
-                                <div className="relative h-64">
-                                    <img 
-                                        src={region.image} 
-                                        alt={t(region.titleKey)}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20"></div>
-                                    <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                                        <div className="flex items-center gap-4 mb-3">
-                                            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
-                                                <span className="text-2xl">{region.icon}</span>
+                            <div key={index}>
+                                <div className="group relative transition-all duration-500 ease-in-out rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-1">
+                                    <Link href={`/developer-projects/${region.id}`}>
+                                    <div className="relative h-64">
+                                        <img 
+                                            src={region.image} 
+                                            alt={t(region.titleKey)}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20"></div>
+                                        <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                                            <div className="flex items-center gap-4 mb-3">
+                                                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                                                    <span className="text-2xl">{region.icon}</span>
+                                                </div>
+                                                <div className="flex-1">
+                                                    <h3 className="text-xl font-semibold text-white mb-1">{t(region.titleKey)}</h3>
+                                                    <p className="text-white/80 text-sm leading-relaxed line-clamp-2">{t(region.descriptionKey)}</p>
+                                                </div>
+                                                <div className="flex-shrink-0">
+                                                    <FiGlobe className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-300" />
+                                                </div>
                                             </div>
-                                            <div className="flex-1">
-                                                <h3 className="text-xl font-semibold text-white mb-1">{t(region.titleKey)}</h3>
-                                                <p className="text-white/80 text-sm leading-relaxed line-clamp-2">{t(region.descriptionKey)}</p>
-                                            </div>
-                                            <div className="flex-shrink-0">
-                                                <FiGlobe className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-300" />
                                             </div>
                                         </div>
-                                        </div>
-                                    </div>
-                                </Link>
+                                    </Link>
 
-                                {/* Categories Grid */}
-                                <div className="p-6 bg-white">
-                                    <h4 className="text-lg font-semibold mb-4 text-slate-800">{t('regions.categoriesTitle')}</h4>
-                                    <div className="grid grid-cols-2 gap-3">
-                                        {region.categories.map((category, catIndex) => (
-                                            <Link 
-                                                key={catIndex}
-                                                href={`/developer-projects/${region.id}/${category.id}`}
-                                                className="group/cat flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors duration-200"
-                                            >
-                                                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center group-hover/cat:bg-green-200 transition-colors">
-                                                    <span className="text-sm">{category.icon}</span>
-                                                </div>
-                                                <div className="flex-1 min-w-0">
-                                                    <h5 className="text-sm font-medium text-slate-800 truncate">{t(category.titleKey)}</h5>
-                                                    <p className="text-xs text-slate-500 truncate">{t(category.descriptionKey)}</p>
-                                                    <div className="flex items-center gap-1 mt-1">
-                                                        {'status' in category && category.status && (
-                                                            <>
-                                                                <span className="text-xs text-green-600 font-medium">{t(category.status)}</span>
-                                                                <span className="text-xs text-slate-400">•</span>
-                                                            </>
-                                                        )}
-                                                        {'location' in category && category.location && (
-                                                            <span className="text-xs text-slate-500">{t(category.location)}</span>
-                                                        )}
+                                    {/* Categories Grid */}
+                                    <div className="p-6 bg-white dark:bg-slate-800">
+                                        <h4 className="text-lg font-semibold mb-4 text-slate-800 dark:text-white">{t('regions.categoriesTitle')}</h4>
+                                        <div className="grid grid-cols-2 gap-3 h-80 overflow-y-auto">
+                                            {region.categories.map((category, catIndex) => (
+                                                <Link 
+                                                    key={catIndex}
+                                                    href={`/developer-projects/${region.id}/${category.id}`}
+                                                    className="group/cat flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors duration-200"
+                                                >
+                                                    <div className="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center group-hover/cat:bg-green-200 dark:group-hover/cat:bg-green-800 transition-colors">
+                                                        <span className="text-sm">{category.icon}</span>
                                                     </div>
+                                                    <div className="flex-1 min-w-0">
+                                                        <h5 className="text-sm font-medium text-slate-800 dark:text-white truncate">{t(category.titleKey)}</h5>
+                                                        <p className="text-xs text-slate-500 dark:text-slate-300 truncate">{t(category.descriptionKey)}</p>
+                                                        <div className="flex items-center gap-1 mt-1">
+                                                            {'status' in category && category.status && (
+                                                                <>
+                                                                    <span className="text-xs text-green-600 dark:text-green-400 font-medium">{t(category.status)}</span>
+                                                                    <span className="text-xs text-slate-400 dark:text-slate-500">•</span>
+                                                                </>
+                                                            )}
+                                                            {'location' in category && category.location && (
+                                                                <span className="text-xs text-slate-500 dark:text-slate-300">{t(category.location)}</span>
+                                                            )}
+                                                        </div>
+                                                    </div>
+                                                    <FiArrowRight className="h-4 w-4 text-slate-400 dark:text-slate-500 group-hover/cat:text-green-600 dark:group-hover/cat:text-green-400 transition-colors" />
+                                                </Link>
+                                            ))}
+                                        </div>
+                                        
+                                        {/* CTA Section - Inside the project box at the bottom */}
+                                        <div className="mt-6 p-4 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg border border-green-200 dark:border-green-700">
+                                            <div className="text-center">
+                                                <h5 className="text-sm font-semibold text-slate-800 dark:text-white mb-2">
+                                                    {region.id === 'spain' 
+                                                        ? t('cta.spain')
+                                                        : t('cta.czechRepublic')
+                                                    }
+                                                </h5>
+                                                <p className="text-xs text-slate-600 dark:text-slate-300 mb-3">
+                                                    {t('cta.interested')}
+                                                </p>
+                                                <div className="flex items-center justify-center gap-2">
+                                                    <a 
+                                                        href={`tel:${t('cta.phone')}`}
+                                                        className="text-xs text-green-600 dark:text-green-400 font-medium hover:text-green-700 dark:hover:text-green-300 transition-colors"
+                                                    >
+                                                        📞 {t('cta.phone')}
+                                                    </a>
+                                                    <span className="text-xs text-slate-400 dark:text-slate-500">•</span>
+                                                    <a 
+                                                        href={`mailto:${t('cta.email')}`}
+                                                        className="text-xs text-green-600 dark:text-green-400 font-medium hover:text-green-700 dark:hover:text-green-300 transition-colors"
+                                                    >
+                                                        📧 {t('cta.email')}
+                                                    </a>
                                                 </div>
-                                                <FiArrowRight className="h-4 w-4 text-slate-400 group-hover/cat:text-green-600 transition-colors" />
-                                            </Link>
-                                        ))}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -245,8 +277,8 @@ export default function DeveloperProjects() {
             <section className="relative lg:py-24 py-16 bg-slate-50 dark:bg-slate-800">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-5xl font-bold mb-4">{t('whyChoose.title')}</h2>
-                        <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                        <h2 className="text-5xl font-bold mb-4 text-slate-900 dark:text-white">{t('whyChoose.title')}</h2>
+                        <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
                             {t('whyChoose.subtitle')}
                         </p>
                     </div>
@@ -256,22 +288,22 @@ export default function DeveloperProjects() {
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiStar className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('whyChoose.experience.title')}</h3>
-                            <p className="text-slate-600">{t('whyChoose.experience.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">{t('whyChoose.experience.title')}</h3>
+                            <p className="text-slate-600 dark:text-slate-300">{t('whyChoose.experience.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiMapPin className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('whyChoose.location.title')}</h3>
-                            <p className="text-slate-600">{t('whyChoose.location.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">{t('whyChoose.location.title')}</h3>
+                            <p className="text-slate-600 dark:text-slate-300">{t('whyChoose.location.description')}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <FiHome className="h-8 w-8 text-white" />
                             </div>
-                            <h3 className="text-xl font-semibold mb-3">{t('whyChoose.quality.title')}</h3>
-                            <p className="text-slate-600">{t('whyChoose.quality.description')}</p>
+                            <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">{t('whyChoose.quality.title')}</h3>
+                            <p className="text-slate-600 dark:text-slate-300">{t('whyChoose.quality.description')}</p>
                         </div>
                     </div>
                 </div>

@@ -1629,6 +1629,13 @@
         "title": "Quality execution",
         "description": "We collaborate with the best developers and material suppliers."
       }
+    },
+    "cta": {
+      "spain": "We have another 70+ projects in Spain! 🇪🇸",
+      "czechRepublic": "We have another 65+ projects in Czech Republic! 🇨🇿",
+      "interested": "Are you interested? Call me for more details!",
+      "phone": "+420 733 781 696",
+      "email": "pavel.puchyr@bcas.cz"
     }
   },
   "hero": {
