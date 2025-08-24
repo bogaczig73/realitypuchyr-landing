@@ -9,89 +9,68 @@ import Footer from "../../components/footer";
 import GetInTuch from "../../components/get-in-touch";
 import Switcher from "../../components/switcher";
 
-const projects = [
-    {
-        id: "triangl-park",
-        title: "Triangl Park",
-        location: "Plzeň-Bory",
-        status: "Third stage now selling",
-        availableUnits: 38,
-        completionRate: 93,
-        image: "/images/projects/czech-republic/triangl-park/triangl-park-23.webp",
-        logo: "/images/projects/czech-republic/triangl-park/triangl-logo.svg",
-        description: "Unique residential concept in southern Plzeň-Bory with three distinct living standards",
-        features: ["Garden Suite", "Family Home", "Penthouse Lodge"],
-        stages: [
-            { name: "First Stage", status: "Completed", units: "Sold out" },
-            { name: "Second Stage", status: "Completed", units: "Sold out" },
-            { name: "Third Stage", status: "Selling now", units: "38 available" }
-        ]
-    },
-    {
-        id: "icon-park",
-        title: "ICON Park Kladno",
-        location: "Kladno",
-        status: "Ready for move-in",
-        availableUnits: "Contact for details",
-        completionRate: 100,
-        image: "/images/projects/czech-republic/icon-park/icon-park-21.webp",
-        description: "Modern and comfortable living in the new residential district of Kladno",
-        logo: "/images/projects/czech-republic/icon-park/icon-park-logo.svg",
-        features: ["1+kk to 4+kk", "Award Winner 2024", "Ready for move-in"],
-        stages: [
-            { name: "Project Status", status: "Completed", units: "Ready for move-in" }
-        ]
-    },
-    {
-        id: "english-embankment",
-        title: "English Embankment Palace",
-        location: "Plzeň Center",
-        status: "Construction in progress",
-        availableUnits: "Contact for details",
-        completionRate: 25,
-        image: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-03.webp",
-        description: "Luxury palace-style living in the heart of Plzeň's historic center",
-        logo: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-logo.svg",
-        features: ["Luxury Apartments", "Commercial Space", "Park Courtyard"],
-        stages: [
-            { name: "Construction", status: "In Progress", units: "Completion 2028" }
-        ]
-    },
-    {
-        id: "horovice",
-        title: "Bydlení Hořovice",
-        location: "Hořovice",
-        status: "Now selling",
-        availableUnits: "Contact for details",
-        completionRate: 60,
-        image: "/images/projects/czech-republic/horovice/horovice-08.webp",
-        logo: "/images/projects/czech-republic/horovice/horovice-09.webp",
-        description: "From the foundation up - a good place for life between Plzeň and Prague",
-        features: ["Brick Construction", "Custom Kitchens", "3D Configurator"],
-        stages: [
-            { name: "Project Status", status: "Now Selling", units: "Contact for details" }
-        ]
-    },
-    {
-        id: "tiskarna-kristianov",
-        title: "Tiskárna Kristiánov",
-        location: "Liberec Center",
-        status: "Second stage now selling",
-        availableUnits: "Contact for details",
-        completionRate: 70,
-        image: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-02.webp",
-        logo: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-logo.png",
-        description: "Living with a story in the heart of Liberec - industrial heritage meets modern luxury",
-        features: ["Industrial Heritage", "Award-Winning Architecture", "200 Units"],
-        stages: [
-            { name: "Second Stage", status: "Now Selling", units: "Contact for details" }
-        ]
-    }
-];
-
 export default function DeveloperProjectsCzechRepublic() {
     const t = useTranslations('developerProjects');
     const tCategories = useTranslations('developerProjects.categories');
+    const tOverview = useTranslations('developerProjects.overviewPages.czechRepublic');
+
+    const projects = [
+        {
+            id: "triangl-park",
+            title: tOverview('projectsData.trianglPark.title'),
+            location: tOverview('projectsData.trianglPark.location'),
+            status: tOverview('projectsData.trianglPark.status'),
+            availableUnits: 38,
+            completionRate: 93,
+            image: "/images/projects/czech-republic/triangl-park/triangl-park-23.webp",
+            logo: "/images/projects/czech-republic/triangl-park/triangl-logo.svg",
+            description: tOverview('projectsData.trianglPark.description'), 
+        },
+        {
+            id: "icon-park",
+            title: tOverview('projectsData.iconPark.title'),
+            location: tOverview('projectsData.iconPark.location'),
+            status: tOverview('projectsData.iconPark.status'),
+            availableUnits: "Contact for details",
+            completionRate: 100,
+            image: "/images/projects/czech-republic/icon-park/icon-park-21.webp",
+            description: tOverview('projectsData.iconPark.description'),
+            logo: "/images/projects/czech-republic/icon-park/icon-park-logo.svg",
+        },
+        {
+            id: "english-embankment",
+            title: tOverview('projectsData.englishEmbankment.title'),
+            location: tOverview('projectsData.iconPark.location'),
+            status: tOverview('projectsData.englishEmbankment.status'),
+            availableUnits: "Contact for details",
+            completionRate: 25,
+            image: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-03.webp",
+            description: tOverview('projectsData.englishEmbankment.description'),
+            logo: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-logo.svg",
+        },
+        {
+            id: "horovice",
+            title: tOverview('projectsData.horovice.title'),
+            location: tOverview('projectsData.horovice.location'),
+            status: tOverview('projectsData.horovice.status'),
+            availableUnits: "Contact for details",
+            completionRate: 60,
+            image: "/images/projects/czech-republic/horovice/horovice-08.webp",
+            logo: "/images/projects/czech-republic/horovice/horovice-09.webp",
+            description: tOverview('projectsData.horovice.description'),
+        },
+        {
+            id: "tiskarna-kristianov",
+            title: tOverview('projectsData.tiskarnaKristianov.title'),
+            location: tOverview('projectsData.tiskarnaKristianov.location'),
+            status: tOverview('projectsData.tiskarnaKristianov.status'),
+            availableUnits: "Contact for details",
+            completionRate: 70,
+            image: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-02.webp",
+            logo: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-logo.png",
+            description: tOverview('projectsData.tiskarnaKristianov.description'),
+        }
+    ];
     
     return (
         <>
@@ -132,10 +111,10 @@ export default function DeveloperProjectsCzechRepublic() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <span className="text-green-600 font-semibold text-lg uppercase tracking-wide">Our Projects</span>
-                        <h2 className="text-5xl font-bold mt-3 mb-4">Featured Development Projects</h2>
+                        <span className="text-green-600 font-semibold text-lg uppercase tracking-wide">{tOverview('projects.badge')}</span>
+                        <h2 className="text-5xl font-bold mt-3 mb-4">{tOverview('projects.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover our premium residential developments across the Czech Republic
+                            {tOverview('projects.subtitle')}
                         </p>
                     </div>
 
@@ -176,20 +155,12 @@ export default function DeveloperProjectsCzechRepublic() {
                                                 </div>
                                                 <div className="flex items-center gap-2">
                                                     <FiUsers className="h-4 w-4" />
-                                                    <span>{project.completionRate}% {project.completionRate === 100 ? 'completed' : 'sold'}</span>
+                                                    <span>{project.completionRate}% {project.completionRate === 100 ? tOverview('projects.completed') : tOverview('projects.sold')}</span>
                                                 </div>
                                             </div>
                                             
-                                            <div className="flex gap-2">
-                                                {project.features.map((feature, idx) => (
-                                                    <span key={idx} className="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
-                                                        {feature}
-                                                    </span>
-                                                ))}
-                                            </div>
-                                            
                                             <div className="flex items-center gap-2 text-white group-hover:translate-x-2 transition-transform duration-300">
-                                                <span className="font-semibold">View Project Details</span>
+                                                <span className="font-semibold">{tOverview('projects.viewProjectDetails')}</span>
                                                 <FiArrowRight className="h-5 w-5" />
                                             </div>
                                         </div>

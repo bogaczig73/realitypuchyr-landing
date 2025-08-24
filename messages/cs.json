@@ -33,44 +33,44 @@
       }
     },
     "categories": {
-        "badge": "Kategorie",
-        "subtitle": "Prozkoumejte náš komplexní výběr developerských projektů napříč různými typy nemovitostí",
-        "title": "Kategorie nemovitostí",
-        "backToCategories": "Zpět ke kategoriím",
-        "backToRegions": "Zpět ke regionům",
-        "apartments": {
-          "title": "Byty",
-          "description": "Stylové byty různých velikostí a dispozic, ideální pro páry, rodiny a jednotlivce. Každý byt nabízí moderní design, dostatek přirozeného světla a často terasu nebo balkon s výhledem na moře."
-        },
-        "penthouses": {
-          "title": "Penthousy",
-          "description": "Luxusní penthousy v nejvyšších patrech, často s panoramatickým výhledem na pobřeží a soukromou střešní terasou. Některé jednotky zahrnují soukromý bazén nebo vířivku."
-        },
-        "familyHouses": {
-          "title": "Rodinné, řadové domy a dvojdomy",
-          "description": "Prostorné domy vhodné pro rodinné bydlení, obklopené klidem a zelení. Nabízejí soukromou zahradu, často s bazénem, a dostatek prostoru pro každodenní život a relaxaci."
-        },
-        "villas": {
-          "title": "Vily",
-          "description": "Samostatně stojící vily s prémiovým vybavením a důrazem na maximální soukromí. Ideální volba pro náročné klienty hledající luxusní útočiště s dechberoucími výhledy a prémiovou lokalitou."
-        },
-        "residentialComplexes": {
-          "title": "Nemovitosti v rezidenčních komplexech",
-          "description": "Bydlení v bezpečných a prestižních komplexech, které nabízejí sdílené prostory jako bazény, wellness, posilovny, zahrady nebo coworking centra. Ideální pro ty, kteří hledají komunitní životní styl."
-        },
-        "hotelServices": {
-          "title": "Nemovitosti s hotelovými službami",
-          "description": "Rezidence s přístupem k hotelovým službám jako úklid, concierge, stravování nebo správa nemovitostí. Perfektní volba pro pohodlný a bezstarostný pobyt."
-        },
-        "golfProperties": {
-          "title": "Golfové nemovitosti",
-          "description": "Nemovitosti umístěné poblíž špičkových golfových hřišť. Ideální pro golfové nadšence, kteří chtějí spojit svou vášeň s bydlením v prestižní lokalitě."
-        },
-        "smartHomes": {
-          "title": "Smart & Green Living",
-          "description": "Moderní projekty s důrazem na udržitelnost, nízkou spotřebu energie a ekologické materiály. Perfektní pro ty, kteří hledají harmonii s přírodou."
-        }
+      "badge": "Kategorie",
+      "subtitle": "Prozkoumejte náš komplexní výběr developerských projektů napříč různými typy nemovitostí",
+      "title": "Kategorie nemovitostí",
+      "backToCategories": "Zpět ke kategoriím",
+      "backToRegions": "Zpět ke regionům",
+      "apartments": {
+        "title": "Byty",
+        "description": "Stylové byty různých velikostí a dispozic, ideální pro páry, rodiny a jednotlivce. Každý byt nabízí moderní design, dostatek přirozeného světla a často terasu nebo balkon s výhledem na moře."
       },
+      "penthouses": {
+        "title": "Penthousy",
+        "description": "Luxusní penthousy v nejvyšších patrech, často s panoramatickým výhledem na pobřeží a soukromou střešní terasou. Některé jednotky zahrnují soukromý bazén nebo vířivku."
+      },
+      "familyHouses": {
+        "title": "Rodinné, řadové domy a dvojdomy",
+        "description": "Prostorné domy vhodné pro rodinné bydlení, obklopené klidem a zelení. Nabízejí soukromou zahradu, často s bazénem, a dostatek prostoru pro každodenní život a relaxaci."
+      },
+      "villas": {
+        "title": "Vily",
+        "description": "Samostatně stojící vily s prémiovým vybavením a důrazem na maximální soukromí. Ideální volba pro náročné klienty hledající luxusní útočiště s dechberoucími výhledy a prémiovou lokalitou."
+      },
+      "residentialComplexes": {
+        "title": "Nemovitosti v rezidenčních komplexech",
+        "description": "Bydlení v bezpečných a prestižních komplexech, které nabízejí sdílené prostory jako bazény, wellness, posilovny, zahrady nebo coworking centra. Ideální pro ty, kteří hledají komunitní životní styl."
+      },
+      "hotelServices": {
+        "title": "Nemovitosti s hotelovými službami",
+        "description": "Rezidence s přístupem k hotelovým službám jako úklid, concierge, stravování nebo správa nemovitostí. Perfektní volba pro pohodlný a bezstarostný pobyt."
+      },
+      "golfProperties": {
+        "title": "Golfové nemovitosti",
+        "description": "Nemovitosti umístěné poblíž špičkových golfových hřišť. Ideální pro golfové nadšence, kteří chtějí spojit svou vášeň s bydlením v prestižní lokalitě."
+      },
+      "smartHomes": {
+        "title": "Smart & Green Living",
+        "description": "Moderní projekty s důrazem na udržitelnost, nízkou spotřebu energie a ekologické materiály. Perfektní pro ty, kteří hledají harmonii s přírodou."
+      }
+    },
     "spain": {
       "apartments": {
         "hero": {
@@ -413,10 +413,6 @@
           "communityLiving": {
             "title": "Lidé, kteří chtějí komunitní bydlení s přidanou hodnotou"
           }
-        },
-        "projects": {
-          "title": "Galerie vybraných nemovitostí v uzavřených komplexech",
-          "subtitle": "Prozkoumejte naše bezpečné rezidenční komplexy s prémiovým vybavením"
         },
         "benefits": {
           "title": "Výhody našich komplexů",
@@ -787,6 +783,895 @@
           "title": "Galerie vybraných rodinných domů",
           "subtitle": "Prozkoumejte naše prostorné rodinné domy"
         }
+      },
+      "englishEmbankment": {
+        "hero": {
+          "title": "Palác na anglickém nábřeží",
+          "subtitle": "Výjimečný ve všech parametrech - Luxusní bydlení v palácovém stylu v srdci historického centra Plzně",
+          "backToProjects": "Zpět na projekty"
+        },
+        "projectFeatures": {
+          "commercialSpace": {
+            "name": "Komerční prostory",
+            "value": "2,800 m²",
+            "description": "K dispozici k pronájmu"
+          },
+          "residentialUnits": {
+            "name": "Obytné jednotky",
+            "value": "200",
+            "description": "Apartmány na prodej"
+          },
+          "parkingSpaces": {
+            "name": "Parkovací místa",
+            "value": "400",
+            "description": "Včetně nabíjení elektromobilů"
+          },
+          "floors": {
+            "name": "Podlahy",
+            "value": "8",
+            "description": "Nadzemní úrovně"
+          }
+        },
+        "aboutProject": {
+          "title": "O projektu",
+          "description1": "Palác na Anglickém nábřeží vyrůstá v samém srdci historického centra Plzně, kde je nová výstavba mimořádně vzácným jevem. Jen pár kroků od náměstí Republiky s katedrálou svatého Bartoloměje a obklopen nejkrásnějšími plzeňskými parky a oblíbeným nábřežím řeky Radbuzy.",
+          "description2": "Jednoduše řečeno, jedná se o jedinečnou příležitost koupit luxusní městský byt v perfektní lokalitě na prestižní adrese. Budova v palácovém stylu z rýsovacího prkna renomovaných architektů ze studia PRO-STORY přinese svým obyvatelům nejen exkluzivní výhledy, ale také obytný vnitřní dvůr s parkovou úpravou.",
+          "constructionStatus": {
+            "title": "Probíhající stavba",
+            "description": "Realizace projektu byla zahájena v červnu 2024 a stavba je již v plném proudu. Dokončení je naplánováno na začátek roku 2028."
+          }
+        },
+        "projectFeaturesSection": {
+          "title": "Vlastnosti projektu",
+          "subtitle": "Objevte, čím je palác English Embankment Palace výjimečný ve všech parametrech",
+          "commercialSpace": {
+            "title": "Komerční prostory",
+            "description1": "První dvě nadzemní podlaží nabídnou téměř tři tisíce metrů čtverečních komerčních prostor k pronájmu. V prvním nadzemním podlaží bude přibližně 1 200 m² obchodních ploch vhodných pro značkové prodejny, showroomy nebo služby.",
+            "description2": "Ve druhém patře bude k dispozici přibližně 1 600 m² kanceláří a několik bytů."
+          },
+          "exclusiveApartments": {
+            "title": "Exkluzivní apartmány",
+            "description1": "Ve třetím až osmém patře budou umístěny výhradně bytové jednotky. Celý projekt nabídne k prodeji přibližně 200 bytů všech dispozic a velikostí.",
+            "description2": "Od nejmenších 1+kk o rozloze cca 30 m² až po krásné prostorné penthousy a mezonety s dispozicemi navrženými na míru a terasami s výhledem na centrum města nebo řeku Radbuzu."
+          },
+          "parking": {
+            "title": "Bezproblémové parkování",
+            "description1": "Parkování bude k dispozici v celkem čtyřech podlažích, což poskytne dostatek parkovacích míst pro administrativní výškovou budovu, ale i pro obchody, kanceláře a byty.",
+            "description2": "Plánujeme téměř 400 parkovacích míst. Novinkou budou speciálně upravená parkovací místa pro elektromobily s možností rychlejšího nabíjení."
+          },
+          "parkCourtyard": {
+            "title": "Park Courtyard",
+            "description1": "Díky jedinečně řešeným zeleným vnitřním dvorům získáte klid a soukromí, kdykoli si to budete přát. A to na exkluzivní adrese v samém centru živé západočeské metropole.",
+            "description2": "Upraven a zkrášlen bude také okolní uliční prostor nového paláce. Prestiž místa podtrhne architektura budovy s řadou teras osázených stromy a okrasnými keři."
+          }
+        },
+        "externalViews": {
+          "title": "Vnější pohledy na budovy",
+          "subtitle": "Poznejte architektonickou krásu a design paláce na anglickém nábřeží",
+          "exteriorView": "Pohled zvenčí"
+        },
+        "interiorVisualizations": {
+          "title": "Vizualizace interiéru",
+          "subtitle": "Objevte interiéry a návrhy pro všechny typy bytů",
+          "interiorDesign": "Design interiéru"
+        },
+        "premiumStandards": {
+          "title": "Nejvyšší standard v Plzni",
+          "subtitle": "Luxus a pohodlí jako standard - výjimečné provedení v každém detailu",
+          "amenities": {
+            "parkCourtyard": {
+              "name": "Park Courtyard",
+              "description": "Soukromý zelený vnitřní dvůr s parkovou úpravou"
+            },
+            "premiumStandards": {
+              "name": "Prémiové standardy",
+              "description": "okna s trojskly, dřevěné podlahy, podlahové vytápění"
+            },
+            "smartTechnology": {
+              "name": "Inteligentní technologie",
+              "description": "Rekuperace a moderní komfortní systémy"
+            },
+            "evParking": {
+              "name": "Parkování elektromobilů",
+              "description": "Speciálně upravené parkoviště s rychlonabíjením"
+            },
+            "riverViews": {
+              "name": "River Views",
+              "description": "Panoramatický výhled na řeku Radbuzu"
+            },
+            "cityViews": {
+              "name": "City Views",
+              "description": "Exkluzivní výhled na historické centrum Plzně"
+            }
+          }
+        },
+        "location": {
+          "title": "Exkluzivní umístění",
+          "description": "Výjimečná poloha v samém srdci historického centra města, jen pár kroků od náměstí Republiky. Obklopen řekou a nejkrásnějšími plzeňskými parky. Kultura, gastronomie, obchod, noční život - vše, co dělá město živým a inspirativním, je nyní jen pár kroků od vašeho apartmánu.",
+          "features": {
+            "republicSquare": {
+              "feature": "Náměstí Republiky",
+              "time": "2 minuty",
+              "description": "Katedrála svatého Bartoloměje"
+            },
+            "radbuzaRiver": {
+              "feature": "Řeka Radbuza",
+              "time": "3 minuty",
+              "description": "Krásné říční nábřeží"
+            },
+            "cityParks": {
+              "feature": "Městské parky",
+              "time": "5 minut",
+              "description": "Nejkrásnější parky Plzně"
+            },
+            "culturalCenter": {
+              "feature": "Kulturní centrum",
+              "time": "5 minut",
+              "description": "Divadla, muzea, galerie"
+            }
+          }
+        },
+        "partners": {
+          "title": "Záruka kvality",
+          "subtitle": "Silná partnerství zaručují nejvyšší kvalitu",
+          "investika": {
+            "name": "INVESTIKA",
+            "role": "Fond nemovitostí",
+            "description": "Jeden z největších hráčů na českém realitním trhu"
+          },
+          "bcReal": {
+            "name": "BC Real",
+            "role": "Vývojář",
+            "description": "Více než 19 let zkušeností v Plzni, 14 dokončených projektů"
+          },
+          "brokerConsulting": {
+            "name": "Poradenství pro makléře",
+            "role": "Prodej a financování",
+            "description": "Nejžádanější nezávislý konzultant v České republice"
+          }
+        },
+        "availableUnits": {
+          "title": "Najděte si svůj apartmán",
+          "description": "Podrobné informace o dostupných jednotkách, cenách a aktuální dostupnosti získáte přímo od našeho prodejního týmu.",
+          "contactUs": "Kontaktujte nás",
+          "forUnitInfo": "Informace o jednotce",
+          "getUnitDetails": "Získat podrobnosti o jednotce"
+        }
+      },
+      "horovice": {
+        "hero": {
+          "title": "Bydlení Hořovice",
+          "subtitle": "Od základů nahoru - dobré místo pro život. Položili jsme si otázku, jak by mělo vypadat ideální místo pro život, a pak jsme ho vytvořili.",
+          "backToProjects": "Zpět na projekty"
+        },
+        "projectFeatures": {
+          "location": {
+            "name": "Umístění",
+            "value": "Hořovice",
+            "description": "Mezi Plzní a Prahou"
+          },
+          "construction": {
+            "name": "Stavebnictví",
+            "value": "Brick",
+            "description": "300mm červené cihlové zdi"
+          },
+          "soundInsulation": {
+            "name": "Zvuková izolace",
+            "value": "Premium",
+            "description": "Vynikající soukromí"
+          },
+          "customKitchens": {
+            "name": "Kuchyně na míru",
+            "value": "Zahrnuto",
+            "description": "Na míru vašemu bytu"
+          }
+        },
+        "aboutProject": {
+          "title": "O projektu",
+          "description1": "Bydlení Hořovice představuje naši vizi vytvoření ideálního místa pro život. Tato nová čtvrť, která se nachází mezi Plzní a Prahou, v rostoucím a rozvíjejícím se městě, nabízí ideální rovnováhu pro ty, kteří nechtějí žít ve velkém městě nebo na vesnici, ale chtějí mít vše na dosah.",
+          "description2": "Tento projekt jsme vybudovali od základů poctivou a důkladnou prací. Naše stavby jsou postaveny jako masivní zděné konstrukce z kvalitních červených cihel, které poskytují vynikající zvukovou izolaci pro soukromí a klid. Vybrali jsme nadčasové materiály, které vydrží, a zajistili jsme zakázkovou výrobu kuchyní a vestavěných skříní na míru vybranému bytu.",
+          "communityFocus": {
+            "title": "Zaměření na komunitu",
+            "description": "Tímto projektem hrdě žijeme a dýcháme. Neustále budujeme a vylepšujeme naši čtvrť, zůstáváme ve spojení s obyvateli prostřednictvím skupin WhatsApp a vždy proměňujeme zpětnou vazbu v činy."
+          }
+        },
+        "projectBenefits": {
+          "title": "Čím jsme výjimeční",
+          "subtitle": "Objevte jedinečné výhody, kterými se Bydlení Hořovice liší od ostatních",
+          "perfectLocation": {
+            "title": "Perfektní poloha",
+            "description1": "Nachází se mezi Plzní a Prahou, ve městě, které roste a rozvíjí se. Tato nová čtvrť nabízí vše, co potřebujete: obchody, školky, pracovní příležitosti, zdravotní péči, kulturu a přírodu - vše na dosah.",
+            "description2": "Ideální pro ty, kteří nechtějí žít ve velkém městě nebo na vesnici, ale chtějí mít vše po ruce."
+          },
+          "qualityConstruction": {
+            "title": "Kvalitní konstrukce",
+            "description1": "Chceme, abyste za své peníze dostali poctivou práci - byt, který se stane vaším pohodlným a hodnotným domovem. Proto naše stavby stavíme jako pevné zděné konstrukce.",
+            "description2": "Použití kvalitních červených cihel, které poskytují vynikající zvukovou izolaci pro soukromí a klid, s nadčasovými designovými materiály, které vydrží."
+          },
+          "activeCommunity": {
+            "title": "Aktivní komunita",
+            "description1": "Tímto projektem hrdě žijeme a dýcháme. Neustále budujeme a vylepšujeme naši čtvrť, zůstáváme ve spojení s obyvateli prostřednictvím skupin WhatsApp a vždy proměňujeme zpětnou vazbu v činy.",
+            "description2": "Nejde jen o to, jak se cítíte za dveřmi svého bytu - domov tvoří příjemní sousedé, čistota v celé čtvrti, pocit bezpečí a detaily, jako je parkování a dětská hřiště."
+          },
+          "diverseApartmentOptions": {
+            "title": "Rozmanité možnosti apartmánů",
+            "description1": "Naše čtvrť nabízí rozmanité dispozice bytů, které vytvářejí pestrou a příjemnou komunitu. Najdete zde byty pro rodiny s dětmi, mladé začínající páry i ty, kteří hledají pohodlí a moderní bydlení s perfektní dostupností služeb.",
+            "description2": "Od dispozic 1+kk až po 4+kk - každý si vybere něco pro své potřeby a životní styl."
+          }
+        },
+        "apartmentStandards": {
+          "title": "Standardy a výhody apartmánů",
+          "subtitle": "Pečlivě promyšlené a poctivé standardy, které jinde nenajdete",
+          "standards": {
+            "soundInsulatingWalls": {
+              "name": "Zvukově izolační stěny",
+              "description": "300mm červená cihlová konstrukce pro naprosté soukromí"
+            },
+            "airConditioningPrep": {
+              "name": "Příprava klimatizace",
+              "description": "Připraveno k instalaci klimatizace"
+            },
+            "smartScreenPrep": {
+              "name": "Příprava chytré obrazovky",
+              "description": "Příprava na elektrické clony a žaluzie"
+            },
+            "customKitchen": {
+              "name": "Vlastní kuchyně",
+              "description": "Kuchyně na míru dispozicím vašeho bytu"
+            },
+            "builtInWardrobes": {
+              "name": "Vestavěné skříně",
+              "description": "Včetně vlastních úložných řešení"
+            },
+            "securityDoors": {
+              "name": "Bezpečnostní dveře",
+              "description": "Vysoce kvalitní vchodové dveře s bezpečnostními prvky"
+            },
+            "timelessBathrooms": {
+              "name": "Nadčasové koupelny",
+              "description": "Kvalitní obklady a moderní sanitární vybavení"
+            },
+            "chemicalFreeFloors": {
+              "name": "Podlahy bez chemických látek",
+              "description": "Laminátové podlahy Egger Eclic z udržitelných zdrojů"
+            },
+            "woodenDoors": {
+              "name": "Dřevěné dveře",
+              "description": "Lamistonové dveře s dřevěnou konstrukcí a nerezovým kováním"
+            },
+            "frenchWindows": {
+              "name": "Francouzská okna",
+              "description": "Velká okna s balkonem, terasou nebo vstupem do zahrady."
+            }
+          }
+        },
+        "externalViews": {
+          "title": "Pohledy do okolí a exteriéru",
+          "subtitle": "Prozkoumejte krásné okolí a architektonické detaily Bydlení Hořovice",
+          "exteriorView": "Pohled zvenčí"
+        },
+        "interiorVisualizations": {
+          "title": "Vizualizace interiéru",
+          "subtitle": "Objevte interiéry a vlastní funkce pro všechny typy apartmánů.",
+          "interiorDesign": "Design interiéru"
+        },
+        "configurator": {
+          "title": "3D konfigurátor apartmánů",
+          "subtitle": "Vytvořte si dokonalý interiér bytu prostřednictvím našeho interaktivního 3D konfigurátoru",
+          "mainTitle": "Navrhněte si svůj vysněný domov",
+          "description": "Vyberte si z široké nabídky podlahových materiálů, obkladů a dlažeb. Vyberte si barvu a tvar dvířek nebo si navrhněte svou budoucí kuchyň, kterou vám vyrobíme na míru. Ať je koupě bytu spíše radostí než starostí.",
+          "features": {
+            "materialSelection": {
+              "title": "Výběr materiálu",
+              "description": "Výběr podlah, dlažeb a obkladů stěn"
+            },
+            "doorDesign": {
+              "title": "Design dveří",
+              "description": "Výběr barev a tvarů dveří"
+            },
+            "kitchenDesign": {
+              "title": "Design kuchyně",
+              "description": "Navrhněte si vlastní uspořádání kuchyně"
+            }
+          },
+          "launchButton": "Spuštění 3D konfigurátoru"
+        },
+        "sampleApartment": {
+          "title": "Navštivte náš ukázkový apartmán",
+          "description1": "Chcete si na vlastní oči prohlédnout vybavení svého budoucího bytu? Dotknout se materiálů, osahat si povrchy a prozkoumat kvalitu zpracování?",
+          "description2": "Rádi vás přivítáme v našem vzorovém apartmánu přímo v Hořovicích. Vyzkoušejte si kvalitu a řemeslné zpracování každého detailu vašeho budoucího domova.",
+          "benefits": {
+            "realMaterials": "Prohlédněte si skutečné materiály a povrchové úpravy",
+            "experienceQuality": "Vyzkoušejte si kvalitu na vlastní kůži",
+            "meetTeam": "Seznamte se s naším týmem osobně"
+          },
+          "bookButton": "Rezervujte si návštěvu"
+        },
+        "location": {
+          "title": "Perfektní poloha mezi dvěma městy",
+          "description1": "Nachází se mezi Plzní a Prahou, ve městě, které roste a rozvíjí se. Tato nová čtvrť nabízí vše, co potřebujete: obchody, školky, pracovní příležitosti, zdravotní péči, kulturu a přírodu - vše na dosah.",
+          "description2": "Ideální pro ty, kteří nechtějí žít ve velkém městě nebo na vesnici, ale chtějí mít vše po ruce. Užijte si blízkost přírody a zároveň využijte výborné spojení s oběma městy.",
+          "features": {
+            "plzen": {
+              "feature": "Plzeň",
+              "time": "30 minut",
+              "description": "Rychlý přístup do Plzně"
+            },
+            "prague": {
+              "feature": "Praha",
+              "time": "45 minut",
+              "description": "Snadné napojení na kapitál"
+            },
+            "localServices": {
+              "feature": "Místní služby",
+              "time": "5 minut",
+              "description": "Vše na dosah"
+            },
+            "nature": {
+              "feature": "Příroda",
+              "time": "2 minuty",
+              "description": "Zelené plochy v okolí"
+            }
+          }
+        },
+        "availableUnits": {
+          "title": "Vyberte si svůj apartmán",
+          "description": "Podrobné informace o dostupných jednotkách, cenách a aktuální dostupnosti získáte přímo od našeho prodejního týmu.",
+          "contactUs": "Kontaktujte nás",
+          "forUnitInfo": "Informace o jednotce",
+          "getUnitDetails": "Získat podrobnosti o jednotce"
+        }
+      },
+      "iconPark": {
+        "hero": {
+          "title": "ICON Park Kladno",
+          "subtitle": "Moderní a pohodlné bydlení v nové rezidenční čtvrti Kladna",
+          "backToProjects": "Zpět na projekty",
+          "stats": {
+            "floors": "Podlahy",
+            "totalUnits": "Jednotky celkem",
+            "layouts": "Rozložení"
+          }
+        },
+        "projectOverview": {
+          "title": "Váš nový domov začíná v ICON Parku",
+          "description1": "Hledáte moderní a pohodlné bydlení, které splní vaše očekávání? ICON Park v Kladně přináší ideální kombinaci moderního designu, pohodlí a klidné lokality v nově revitalizované čtvrti.",
+          "description2": "Apartmány s dispozicemi od 1+kk do 4+kk jsou navrženy s důrazem na kvalitu a pohodlí, každý s vlastním prostorem pro relaxaci - balkonem, terasou nebo předzahrádkou. Dokončení projektu v roce 2025 znamená, že váš nový domov je blíž, než si myslíte. ICON Park je místem, kde začíná vaše budoucnost.",
+          "readyForMoveIn": {
+            "title": "Připraveno k nastěhování!",
+            "description": "Budova byla zkolaudována a vy se můžete začít stěhovat již letos v létě!"
+          }
+        },
+        "award": {
+          "title": "Vítěz prestižní ceny",
+          "subtitle": "ICON PARK získal prestižní cenu poroty v soutěži Realitní projekt roku 2024",
+          "awardTitle": "Realitní projekt roku 2024",
+          "nominatedProject": "Nominovaný projekt - Středočeský kraj",
+          "quote": "Velmi si tohoto ocenění vážíme, zejména vzhledem k silné konkurenci v letošním ročníku. Potvrzuje, že kombinace moderní architektury, kvalitního provedení a atraktivní lokality má ohlas nejen u zákazníků, ale i u odborné veřejnosti.",
+          "attribution": "František Vladař, investiční a projektový ředitel, BHM group"
+        },
+        "externalViews": {
+          "title": "Vnější pohledy na budovy",
+          "subtitle": "Prozkoumejte architektonickou krásu a design všech budov v ICON Parku."
+        },
+        "interiorVisualizations": {
+          "title": "Vizualizace interiéru",
+          "subtitle": "Objevte interiéry a návrhy pro všechny typy bytů"
+        },
+        "projectStatus": {
+          "title": "Stav projektu",
+          "subtitle": "Aktuální stav výstavby a podrobnosti o dokončení",
+          "constructionStatus": "Stav výstavby",
+          "completedReady": "Dokončeno a připraveno k nastěhování",
+          "completionQ3": "Q3 2025",
+          "completionDetails": "Budovy a apartmány jsou kompletně dokončené, včetně venkovní fitness zóny a dětského hřiště.",
+          "ready": "Připraveno!",
+          "forMoveIn": "Pro nastěhování",
+          "signMeUp": "Přihlaste mě!"
+        },
+        "location": {
+          "title": "Rychlý přístup do práce a za zábavou",
+          "description1": "Kladno nabízí ideální kombinaci klidného bydlení a výborné dostupnosti do Prahy. V rezidenční čtvrti ICON Park máte vše na dosah - kvalitní školy, školky, obchody, služby, restaurace, sportoviště i cyklostezky.",
+          "description2": "Navíc si můžete užívat blízkost přírody a zároveň využívat výborné spojení do Kladna i hlavního města.",
+          "features": {
+            "kladnoCenter": {
+              "feature": "Centrum Kladno",
+              "time": "5 minut",
+              "description": "Rychlý přístup do centra města"
+            },
+            "vaclavHavelAirport": {
+              "feature": "Letiště Václava Havla",
+              "time": "10 minut",
+              "description": "Mezinárodní letiště v blízkosti"
+            },
+            "veleslavinStation": {
+              "feature": "Nádraží Veleslavín",
+              "time": "20 minut",
+              "description": "Přímé spojení do Prahy"
+            },
+            "masarykStation": {
+              "feature": "Masarykovo nádraží",
+              "time": "30 minut",
+              "description": "Hlavní nádraží Praha"
+            }
+          }
+        },
+        "amenities": {
+          "title": "Pohodlné bydlení se vším na dosah",
+          "subtitle": "Objevte vybavení, díky kterému je ICON Park ideálním místem pro život",
+          "cafe": {
+            "name": "Kavárna",
+            "description": "Dodání energie a sladké zakončení s celou rodinou"
+          },
+          "kindergarten": {
+            "name": "Mateřská škola",
+            "description": "Kvalitní předškolní vzdělávání dětí"
+          },
+          "playground": {
+            "name": "Dětské hřiště",
+            "description": "Bezpečné venkovní hřiště pro děti"
+          },
+          "outdoorGym": {
+            "name": "Venkovní posilovna",
+            "description": "Posilovací zařízení na čerstvém vzduchu"
+          },
+          "publicSpaces": {
+            "name": "Veřejná prostranství",
+            "description": "Společenské prostory pro setkávání"
+          }
+        }
+      },
+      "trianglPark": {
+        "hero": {
+          "title": "Park Triangl",
+          "subtitle": "Jedinečný koncept bydlení v jižní části Plzně-Bory se třemi odlišnými standardy bydlení",
+          "backToProjects": "Zpět na projekty",
+          "stats": {
+            "availableUnits": "Dostupné jednotky",
+            "projectSold": "Prodaný projekt"
+          }
+        },
+        "projectOverview": {
+          "title": "O projektu",
+          "description": "Triangl Park představuje jedinečný koncept bydlení v jižní části Plzně-Borech. Tento výjimečný projekt vyniká nejen atraktivní polohou se snadnou dostupností do centra Plzně, ale také komplexním přístupem, kvalitativními standardy a především jedinečnou možností výběru ze tří různorodých standardů bydlení.",
+          "specialOffer": {
+            "title": "Speciální nabídka",
+            "description": "Nyní stačí zaplatit pouze 20 % kupní ceny bytu. Zbývající částka je splatná po prohlídce budovy. Časově omezená nabídka!"
+          }
+        },
+        "externalViews": {
+          "title": "Vnější pohledy na budovy",
+          "subtitle": "Prozkoumejte architektonickou krásu a design všech budov v Triangl Parku."
+        },
+        "livingStyles": {
+          "title": "Tři styly, tři normy, tři způsoby života",
+          "subtitle": "Triangl Park nabízí jedinečnou možnost vybrat si apartmány podle stylu. Každý styl nabízí nejen vlastní škálu standardů, ale také specifické výhody v podobě relaxačních zón, dispozičních řešení nebo výhledů. Jaký je váš styl?",
+          "gardenSuite": {
+            "name": "Zahradní apartmá",
+            "number": "01",
+            "features": [
+              "Soukromá zahrada",
+              "Prostorné uspořádání",
+              "Kvalitní materiály"
+            ],
+            "description": "Ideální pro ty, kteří mají rádi venkovní bydlení a přírodu."
+          },
+          "familyHome": {
+            "name": "Rodinný dům",
+            "number": "02",
+            "features": [
+              "Balkony nebo lodžie",
+              "Pohodlné uspořádání",
+              "Přírodní materiály"
+            ],
+            "description": "Ideální pro rodiny, které hledají pohodlí a praktické obytné prostory"
+          },
+          "penthouseLodge": {
+            "name": "Penthouse Lodge",
+            "number": "03",
+            "features": [
+              "Prostorné terasy",
+              "Velkorysé rozměry",
+              "Luxusní materiály"
+            ],
+            "description": "Prémiové bydlení s exkluzivními prvky a panoramatickým výhledem"
+          },
+          "viewAvailableUnits": "Zobrazit dostupné jednotky"
+        },
+        "interiorVisualizations": {
+          "title": "Vizualizace interiéru",
+          "subtitle": "Objevte uspořádání a návrhy interiérů pro všechny typy bytů a styly bydlení."
+        },
+        "projectStages": {
+          "title": "Fáze výstavby projektu",
+          "subtitle": "Přehled jednotlivých etap projektu a harmonogram výstavby",
+          "thirdStage": "Třetí fáze",
+          "secondStage": "Druhá fáze",
+          "firstStage": "První fáze",
+          "nowSelling": "Nyní se prodává",
+          "completed": "Dokončeno",
+          "startSale": "Zahájení prodeje:",
+          "constructionStart": "Zahájení stavby:",
+          "completion": "Dokončení:",
+          "buildings": "Budovy: ",
+          "availableUnits": "Dostupné jednotky",
+          "selectYourUnit": "Vyberte svou jednotku"
+        },
+        "location": {
+          "title": "Vynikající poloha a dostupnost",
+          "description": "Bory je moderní a plně vybavená čtvrť s perfektní dostupností služeb, vzdělání, práce a centra města. Výborná dostupnost do centra Plzně městskou hromadnou dopravou během několika minut, skvělá místní občanská vybavenost, bohaté sportovní vyžití a lesní plochy v docházkové vzdálenosti činí z Triangl Parku mimořádně atraktivní lokalitu a především velmi příjemné místo k bydlení.",
+          "features": {
+            "cityCenter": {
+              "feature": "Centrum města",
+              "time": "10 minut",
+              "description": "Snadný přístup do centra Plzně"
+            },
+            "highwayD5": {
+              "feature": "Dálnice D5",
+              "time": "5 minut",
+              "description": "Rychlé napojení na hlavní silnice"
+            },
+            "shoppingCenters": {
+              "feature": "Nákupní centra",
+              "time": "5 minut",
+              "description": "OC Area Bory a OC Borská pole v blízkosti"
+            },
+            "university": {
+              "feature": "Univerzita",
+              "time": "5 minut",
+              "description": "Západočeská univerzita v docházkové vzdálenosti"
+            }
+          }
+        },
+        "lifestyleAmenities": {
+          "title": "Životní styl a vybavení",
+          "subtitle": "Objevte výjimečný životní styl, který Triangl Park svým obyvatelům nabízí",
+          "modernLivingStandards": {
+            "title": "Moderní životní standardy",
+            "description": "Každý apartmán má alespoň jednu zahradu, lodžii, balkon nebo prostornou terasu. Ke všem jednotlivým bytům patří také vlastní sklepní úložné prostory, které zajišťují pohodlí a praktické bydlení pro každého obyvatele.",
+            "features": {
+              "privateOutdoorSpaces": "Soukromé venkovní prostory pro každou jednotku",
+              "basementStorage": "Skladování v suterénu v ceně",
+              "highQualityMaterials": "Vysoce kvalitní materiály a povrchové úpravy"
+            }
+          },
+          "virtualTour": {
+            "title": "Zkušenosti z virtuální prohlídky",
+            "description": "Prozkoumejte Triangl Park z pohodlí domova díky naší pohlcující virtuální prohlídce. Zažijte projekt v 360° a objevte každý detail svého budoucího domova.",
+            "features": {
+              "virtualApartment": {
+                "title": "Virtuální apartmán",
+                "description": "Podrobně si prohlédněte vzorové apartmány"
+              },
+              "constructionProgress": {
+                "title": "Postup výstavby",
+                "description": "Podívejte se, jak se projekt vyvíjí"
+              },
+              "locationOverview": {
+                "title": "Přehled umístění",
+                "description": "Objevte okolí"
+              }
+            },
+            "startVirtualTour": "Zahájení virtuální prohlídky"
+          }
+        }
+      },
+      "tiskarnaKristianov": {
+        "hero": {
+          "title": "Tiskárna Kristiánov",
+          "subtitle": "Bydlení s příběhem v srdci Liberce. Kde se historie potkává s moderním luxusem v jedinečně přepracovaném industriálním komplexu.",
+          "backToProjects": "Zpět na projekty",
+          "projectFeatures": {
+            "location": {
+              "name": "Umístění",
+              "value": "Centrum Liberec",
+              "description": "Srdce města"
+            },
+            "apartments": {
+              "name": "Apartmány",
+              "value": "200",
+              "description": "Celkový počet jednotek"
+            },
+            "parking": {
+              "name": "Parkování",
+              "value": "218",
+              "description": "Parkovací místa"
+            },
+            "history": {
+              "name": "Historie",
+              "value": "1791",
+              "description": "Protože Bergerův dům"
+            }
+          }
+        },
+        "projectOverview": {
+          "title": "O projektu",
+          "description1": "Tiskárna Kristiánov nabízí netradiční bytové a nebytové prostory v komplexně zrekonstruovaném areálu s fascinující historií. Tato architektonická perla v sobě spojuje silná období historie zahradního města a průmyslové éry.",
+          "description2": "Komplex se nachází v centru města s výbornou dostupností. Zachovali jsme původní tvář budov a zároveň jim dali nový výraz. Dominantou je 32 metrů vysoký nefunkční komín viditelný ze vzdálených koutů Liberce.",
+          "secondStage": {
+            "title": "Druhá etapa je nyní k dispozici",
+            "description": "Neváhejte a vyberte si svůj vysněný domov ještě dnes. Po omezenou dobu jsou k dispozici speciální zaváděcí ceny."
+          }
+        },
+        "projectHistory": {
+          "title": "Příběh, který začal v roce 1791",
+          "subtitle": "Objevte fascinující cestu od Bergerova domu k dnešnímu modernímu komplexu.",
+          "timeline": {
+            "1791": {
+              "event": "Stavba Bergerova domu - první liberecká manufaktura",
+              "description": "Počátek průmyslového dědictví"
+            },
+            "1800s": {
+              "event": "Postavené vilové domy",
+              "description": "Rozvoj čtvrti zahradních měst"
+            },
+            "1900s": {
+              "event": "Rozšíření tiskařského komplexu",
+              "description": "Největší německá tiskárna v Čechách"
+            },
+            "1990s": {
+              "event": "Komplex opuštěný",
+              "description": "Čeká na svou druhou šanci"
+            },
+            "2024": {
+              "event": "Začíná druhá fáze",
+              "description": "Moderní přestavba s ohledem na historii"
+            }
+          }
+        },
+        "whatMakesUsSpecial": {
+          "title": "Čím jsme výjimeční",
+          "subtitle": "Objevte jedinečné vlastnosti, kterými se Tiskárna Kristiánov odlišuje od ostatních.",
+          "excellentLocation": {
+            "title": "Výborná poloha",
+            "description1": "Bydlete v samém srdci metropole pod Ještědem. Komplex se nachází v centru města s výbornou dostupností a tvoří spolu se Starým a Novým Městem centrální trojúhelník Liberce.",
+            "description2": "Perfektní dostupnost nákupů, veřejné dopravy, vzdělávání a kulturních zařízení."
+          },
+          "stylishLiving": {
+            "title": "Stylové bydlení",
+            "description1": "Spojili jsme historii a jedinečnou moderní architekturu. Komplex obsahuje prvky neorenesanční, industriální a moderní architektury a vytváří tak skutečně jedinečné prostředí pro život.",
+            "description2": "Každá budova vypráví svůj vlastní příběh a zároveň nabízí moderní komfort a luxus."
+          },
+          "modernTechnology": {
+            "title": "Moderní technologie",
+            "description1": "Postaráme se o vaše pohodlné a energeticky úsporné bydlení. Všechny apartmány jsou vybaveny rekuperací vzduchu a podlahovým vytápěním, fotovoltaickými panely a kogeneračními jednotkami pro udržitelnou energii.",
+            "description2": "Systémy sběru dešťové vody a inteligentní správa budovy zajišťují snížení měsíčních nákladů."
+          },
+          "comprehensiveAmenities": {
+            "title": "Komplexní vybavení",
+            "description1": "Komplex zahrnuje 200 bytů a nebytových prostor s prostorem pro galerie, kavárny, pekárny, fitness centra a další občanskou vybavenost.",
+            "description2": "Vnitřní nádvoří nabízí dětský koutek, fontánu, věžní hodiny a společné venkovní prostory."
+          }
+        },
+        "apartmentStandards": {
+          "title": "Prémiové stavební normy",
+          "subtitle": "Snížení spotřeby energie je naší prioritou. Objevte udržitelné prvky, díky nimž bude váš domov efektivní a pohodlný.",
+          "standards": {
+            "airRecuperation": {
+              "name": "Rekuperace vzduchu",
+              "description": "Systém větrání čerstvého vzduchu pro zdravé bydlení"
+            },
+            "underfloorHeating": {
+              "name": "Podlahové vytápění",
+              "description": "Účinný a komfortní systém vytápění"
+            },
+            "photovoltaicPanels": {
+              "name": "Fotovoltaické panely",
+              "description": "Solární panely s bateriovým úložištěm"
+            },
+            "cogenerationUnit": {
+              "name": "Kogenerační jednotka",
+              "description": "Kombinovaná výroba tepla a elektřiny"
+            },
+            "rainwaterCollection": {
+              "name": "Sběr dešťové vody",
+              "description": "Udržitelný systém hospodaření s vodou"
+            },
+            "smartTechnology": {
+              "name": "Inteligentní technologie",
+              "description": "Moderní systémy řízení budov"
+            },
+            "premiumMaterials": {
+              "name": "Prémiové materiály",
+              "description": "Vysoce kvalitní povrchové úpravy a konstrukce"
+            },
+            "energyEfficient": {
+              "name": "Energetická účinnost",
+              "description": "Snížení měsíčních provozních nákladů"
+            },
+            "soundInsulation": {
+              "name": "Zvuková izolace",
+              "description": "Klidné životní prostředí"
+            },
+            "balconiesTerraces": {
+              "name": "Balkony a terasy",
+              "description": "Venkovní obytné prostory s výhledem"
+            }
+          }
+        },
+        "architecturalAwards": {
+          "title": "Oceněná architektura",
+          "subtitle": "Jiří Opočenský a Štěpán Valouch jsou držiteli České ceny za architekturu 2020",
+          "awards": {
+            "czechArchitectureAward": {
+              "name": "Česká cena za architekturu 2020",
+              "description": "Česká cena za architekturu 2020",
+              "architect": "OV-A Studio"
+            },
+            "experience": {
+              "name": "15+ let zkušeností",
+              "description": "Úspěšně dokončené projekty",
+              "architect": "Jiří Opočenský & Štěpán Valouch"
+            },
+            "uniqueSolutions": {
+              "name": "Jedinečná řešení",
+              "description": "Funkční, strukturální a poetická architektura",
+              "architect": "Oceněný tým"
+            }
+          }
+        },
+        "exteriorViews": {
+          "title": "Pohledy na exteriér & architektura",
+          "subtitle": "Prozkoumejte jedinečné průmyslové dědictví a moderní architektonické spojení",
+          "exteriorView": "Pohled zvenčí"
+        },
+        "location": {
+          "title": "Perfektní poloha v centru Liberce",
+          "description": "Spolu se Starým a Novým Městem tvoří Kristiánov centrální trojúhelník Liberce. Tato městská čtvrť, která se nachází na východě Liberce, je domovem více než 5 000 obyvatel a vznikla s cílem vybudovat reprezentativní prostředí kolem přilehlého zámeckého komplexu a slavného Liebiegova paláce.",
+          "features": {
+            "cityCenter": {
+              "feature": "Centrum města",
+              "time": "0 min",
+              "description": "Srdce Liberce"
+            },
+            "shopping": {
+              "feature": "Nakupování",
+              "time": "1-3 minuty",
+              "description": "Lidl, Billa, Forum Liberec"
+            },
+            "publicTransport": {
+              "feature": "Veřejná doprava",
+              "time": "2 minuty",
+              "description": "Autobusová zastávka Fügnerova"
+            },
+            "castlePark": {
+              "feature": "Zámecký park",
+              "time": "1 min",
+              "description": "Krásná zelená plocha"
+            }
+          }
+        },
+        "availableUnits": {
+          "title": "Vyberte si svůj vysněný domov",
+          "description": "Podrobné informace o dostupných jednotkách, cenách a aktuální dostupnosti získáte přímo od našeho prodejního týmu.",
+          "contactMe": "Kontaktujte mě",
+          "forUnitInfo": "Informace o jednotce",
+          "getUnitDetails": "Získat podrobnosti o jednotce"
+        }
+      }
+    },
+    "overviewPages": {
+      "czechRepublic": {
+        "hero": {
+          "title": "Česká republika",
+          "subtitle": "Kvalitní developerské projekty v srdci Evropy"
+        },
+        "projects": {
+          "badge": "Naše projekty",
+          "title": "Doporučené vývojové projekty",
+          "subtitle": "Objevte naše prémiové rezidenční projekty v České republice",
+          "viewProjectDetails": "Zobrazit podrobnosti o projektu",
+          "completed": "dokončeno",
+          "sold": "prodává se na"
+        },
+        "projectsData": {
+          "trianglPark": {
+            "title": "Park Triangl",
+            "location": "Plzeň-Bory",
+            "status": "Třetí etapa se nyní prodává",
+            "description": "Jedinečný koncept bydlení v jižní části Plzně-Bory se třemi odlišnými standardy bydlení",
+            "features": [
+              "Zahradní apartmá",
+              "Rodinný dům",
+              "Penthouse Lodge"
+            ],
+            "stages": [
+              {
+                "name": "První fáze",
+                "status": "Dokončeno",
+                "units": "Vyprodáno"
+              },
+              {
+                "name": "Druhá fáze",
+                "status": "Dokončeno",
+                "units": "Vyprodáno"
+              },
+              {
+                "name": "Třetí fáze",
+                "status": "Prodává se nyní",
+                "units": "38 k dispozici"
+              }
+            ]
+          },
+          "iconPark": {
+            "title": "ICON Park Kladno",
+            "location": "Kladno",
+            "status": "Připraveno k nastěhování",
+            "description": "Moderní a pohodlné bydlení v nové rezidenční čtvrti Kladna",
+            "features": [
+              "1+kk až 4+kk",
+              "Vítěz ceny 2024",
+              "Připraveno k nastěhování"
+            ],
+            "stages": [
+              {
+                "name": "Stav projektu",
+                "status": "Dokončeno",
+                "units": "Připraveno k nastěhování"
+              }
+            ]
+          },
+          "englishEmbankment": {
+            "title": "Palác na anglickém nábřeží",
+            "location": "Centrum Plzeň",
+            "status": "Probíhající stavba",
+            "description": "Luxusní palácové bydlení v srdci historického centra Plzně",
+            "features": [
+              "Luxusní apartmány",
+              "Komerční prostory",
+              "Park Courtyard"
+            ],
+            "stages": [
+              {
+                "name": "Stavebnictví",
+                "status": "Probíhá",
+                "units": "Dokončení 2028"
+              }
+            ]
+          },
+          "horovice": {
+            "title": "Bydlení Hořovice",
+            "location": "Hořovice",
+            "status": "Nyní prodává",
+            "description": "Od základů nahoru - dobré místo pro život mezi Plzní a Prahou",
+            "features": [
+              "Cihlová konstrukce",
+              "Kuchyně na míru",
+              "3D konfigurátor"
+            ],
+            "stages": [
+              {
+                "name": "Stav projektu",
+                "status": "Nyní se prodává",
+                "units": "Kontakt pro podrobnosti"
+              }
+            ]
+          },
+          "tiskarnaKristianov": {
+            "title": "Tiskárna Kristiánov",
+            "location": "Centrum Liberec",
+            "status": "Druhá etapa se nyní prodává",
+            "description": "Bydlení s příběhem v srdci Liberce - industriální dědictví se snoubí s moderním luxusem",
+            "features": [
+              "Průmyslové dědictví",
+              "Oceněná architektura",
+              "200 jednotek"
+            ],
+            "stages": [
+              {
+                "name": "Druhá fáze",
+                "status": "Nyní se prodává",
+                "units": "Kontakt pro podrobnosti"
+              }
+            ]
+          }
+        }
+      },
+      "spain": {
+        "hero": {
+          "title": "Španělsko - Costa del Sol",
+          "subtitle": "Luxusní developerské projekty na slunném pobřeží Španělska"
+        }
       }
     },
     "whyChoose": {
@@ -811,152 +1696,6 @@
     "subtitle": "Objevte nemovitost, která odpovídá vašemu životnímu stylu",
     "search": "Hledat nemovitosti"
   },
-  "list": {
-    "title": "Seznam nemovitostí",
-    "description": "Profesionální platforma pro nákup, prodej a pronájem nemovitostí bez zbytečných poplatků.",
-    "noResults": "Žádné nemovitosti nenalezeny",
-    "loadMore": "Načíst další",
-    "sortBy": "Řadit podle",
-    "filterBy": "Filtrovat podle",
-    "viewOptions": {
-      "grid": "Mřížka",
-      "list": "Seznam"
-    },
-    "status": {
-      "active": "Aktivní",
-      "sold": "Prodané",
-      "reserved": "Rezervované"
-    },
-    "price": {
-      "asc": "Cena: od nejnižší",
-      "desc": "Cena: od nejvyšší"
-    },
-    "date": {
-      "newest": "Nejnovější",
-      "oldest": "Nejstarší"
-    },
-    "area": {
-      "asc": "Výměra: od nejmenší",
-      "desc": "Výměra: od největší"
-    },
-    "filters": {
-      "priceRange": "Cenové rozpětí",
-      "propertyType": "Typ nemovitosti",
-      "area": "Výměra",
-      "rooms": "Počet pokojů",
-      "features": "Vybavení",
-      "location": "Lokalita",
-      "reset": "Resetovat filtry",
-      "apply": "Použít filtry"
-    },
-    "pagination": {
-      "previous": "Předchozí",
-      "next": "Další",
-      "page": "Stránka",
-      "of": "z"
-    },
-    "listViewLayout": "Seznam nemovitostí",
-    "loadError": "Nepodařilo se načíst nemovitosti. Prosím zkuste to později.",
-    "noPropertiesFound": "Nebyly nalezeny žádné nemovitosti odpovídající vašim kritériím.",
-    "tryAdjustingFilters": "Zkuste upravit filtry nebo vyhledávací výrazy."
-  },
-  "common": {
-    "search": "Hledat",
-    "searchPlaceholder": "Hledat nemovitosti",
-    "list": {
-      "title": "Seznam nemovitostí",
-      "description": "Profesionální platforma pro nákup, prodej a pronájem nemovitostí bez zbytečných poplatků.",
-      "noResults": "Žádné nemovitosti nenalezeny",
-      "loadMore": "Načíst další",
-      "sortBy": "Řadit podle",
-      "filterBy": "Filtrovat podle",
-      "viewOptions": {
-        "grid": "Mřížka",
-        "list": "Seznam"
-      },
-      "status": {
-        "active": "Aktivní",
-        "sold": "Prodané",
-        "reserved": "Rezervované"
-      },
-      "price": {
-        "asc": "Cena: od nejnižší",
-        "desc": "Cena: od nejvyšší"
-      },
-      "date": {
-        "newest": "Nejnovější",
-        "oldest": "Nejstarší"
-      },
-      "area": {
-        "asc": "Výměra: od nejmenší",
-        "desc": "Výměra: od největší"
-      },
-      "filters": {
-        "priceRange": "Cenové rozpětí",
-        "propertyType": "Typ nemovitosti",
-        "area": "Výměra",
-        "rooms": "Počet pokojů",
-        "features": "Vybavení",
-        "location": "Lokalita",
-        "reset": "Resetovat filtry",
-        "apply": "Použít filtry"
-      },
-      "pagination": {
-        "previous": "Předchozí",
-        "next": "Další",
-        "page": "Stránka",
-        "of": "z"
-      },
-      "listViewLayout": "Seznam nemovitostí",
-      "loadError": "Nepodařilo se načíst nemovitosti. Prosím zkuste to později.",
-      "noPropertiesFound": "Nebyly nalezeny žádné nemovitosti odpovídající vašim kritériím.",
-      "tryAdjustingFilters": "Zkuste upravit filtry nebo vyhledávací výrazy."
-    }
-  },
-  "footer": {
-    "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku.",
-    "sitemap": "Mapa stránek",
-    "listing": "Nabídka nemovitostí",
-    "services": "Služby",
-    "blog": "Blog",
-    "contact": "Kontakt",
-    "usefulLinks": "Užitečné odkazy",
-    "blogPost": "Článek na blogu",
-    "termsOfService": "Podmínky použití",
-    "privacyPolicy": "Ochrana osobních údajů",
-    "contactDetails": "Kontaktní údaje",
-    "address": "Šimáčkova 916/13,\n170 00 Praha 7-Holešovice,\nČeská republika",
-    "viewOnGoogleMap": "Zobrazit na Google mapách"
-  },
-  "home": {
-    "whatDoIDo": {
-      "title": "Co nabízím?",
-      "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku."
-    },
-    "services": [
-      {
-        "title": "Správa nemovitostí",
-        "description": "Profesionální správa vašich nemovitostí pro maximalizaci výnosů a minimalizaci starostí."
-      },
-      {
-        "title": "Investiční poradenství",
-        "description": "Odborné poradenství o investičních příležitostech na realitním trhu a analýza trhu."
-      },
-      {
-        "title": "Analýza trhu",
-        "description": "Hloubková analýza tržních trendů a ocenění nemovitostí pro informovaná rozhodnutí."
-      }
-    ],
-    "categories": {
-      "title": "Kategorie nemovitostí"
-    },
-    "blog": {
-      "title": "Nejnovější články a novinky",
-      "description": "Profesionální platforma pro nákup, prodej a pronájem nemovitostí bez zbytečných poplatků.",
-      "readTime": "5 minut čtení"
-    },
-    "readMore": "Číst více"
-  },
   "sidebar": {
     "home": "Domů",
     "listing": "Nemovitosti",
@@ -966,11 +1705,6 @@
     "blog": "Blog",
     "contact": "Kontakt",
     "phoneNumber": "+420 733 781 696"
-  },
-  "hero": {
-    "title": "Najděte si svůj vysněný domov",
-    "subtitle": "Objevte nemovitost, která odpovídá vašemu životnímu stylu",
-    "search": "Hledat nemovitosti"
   },
   "contact": {
     "title": "Kontaktujte mě",
@@ -989,10 +1723,10 @@
     "contactMe": "Kontaktujte mě",
     "yourName": "Vaše jméno",
     "yourEmail": "Váš e-mail",
+    "yourPhone": "Vaše telefonní číslo",
     "yourQuestion": "Vaše otázka",
     "yourComment": "Váš komentář",
     "rating": "5.00(30)",
-    "yourPhone": "Vaše telefonní číslo",
     "phone": "Telefon",
     "socialMedia": {
       "facebook": "Navštivte naši stránku na Facebooku",
@@ -1273,7 +2007,8 @@
       "yourName": "Vaše jméno",
       "yourEmail": "Váš e-mail",
       "yourQuestion": "Vaše otázka",
-      "yourComment": "Váš komentář"
+      "yourComment": "Váš komentář",
+      "contactForInfo": "Informace na vyžádání"
     },
     "property": {
       "featuredProperties": "Vybrané nemovitosti",
@@ -1350,8 +2085,8 @@
       "faq": "FAQ",
       "blog": "Blog",
       "contact": "Kontakt",
-      "services": "Služby",
-      "phoneNumber": "+420 733 781 696"
+      "phoneNumber": "+420 733 781 696",
+      "services": "Služby"
     },
     "form": {
       "status": {
@@ -1424,6 +2159,55 @@
     "recentPosts": "Nejnovější články",
     "socialSites": "Sociální sítě"
   },
+  "list": {
+    "title": "Seznam nemovitostí",
+    "description": "Profesionální platforma pro nákup, prodej a pronájem nemovitostí bez zbytečných poplatků.",
+    "noResults": "Žádné nemovitosti nenalezeny",
+    "loadMore": "Načíst další",
+    "sortBy": "Řadit podle",
+    "filterBy": "Filtrovat podle",
+    "viewOptions": {
+      "grid": "Mřížka",
+      "list": "Seznam"
+    },
+    "status": {
+      "active": "Aktivní",
+      "sold": "Prodané",
+      "reserved": "Rezervované"
+    },
+    "price": {
+      "asc": "Cena: od nejnižší",
+      "desc": "Cena: od nejvyšší"
+    },
+    "date": {
+      "newest": "Nejnovější",
+      "oldest": "Nejstarší"
+    },
+    "area": {
+      "asc": "Výměra: od nejmenší",
+      "desc": "Výměra: od největší"
+    },
+    "filters": {
+      "priceRange": "Cenové rozpětí",
+      "propertyType": "Typ nemovitosti",
+      "area": "Výměra",
+      "rooms": "Počet pokojů",
+      "features": "Vybavení",
+      "location": "Lokalita",
+      "reset": "Resetovat filtry",
+      "apply": "Použít filtry"
+    },
+    "pagination": {
+      "previous": "Předchozí",
+      "next": "Další",
+      "page": "Stránka",
+      "of": "z"
+    },
+    "listViewLayout": "Seznam nemovitostí",
+    "loadError": "Nepodařilo se načíst nemovitosti. Prosím zkuste to později.",
+    "noPropertiesFound": "Nebyly nalezeny žádné nemovitosti odpovídající vašim kritériím.",
+    "tryAdjustingFilters": "Zkuste upravit filtry nebo vyhledávací výrazy."
+  },
   "services": {
     "title": "Služby",
     "subtitle": "Široký rozsah služeb na míru každému realitnímu případu",
@@ -1464,6 +2248,11 @@
         }
       }
     },
+    "buying": {
+      "title": "Koupě nemovitosti",
+      "description": "Hledáte specifickou nemovitost a stále se vám nedaří najít bydlení snů? I v tomto případě se na mě můžete obracet. Realitní kancelář ARCHER reality Praha a.s., pod kterou působím, disponuje rozsáhlou databází nabízených nemovitostí.",
+      "description2": "Společně vyplníme parametry vámi hledané nemovitosti a ve chvíli, kdy se podobná nabídka objeví v našem systému, dojde k jejímu spárování. Oslovit vás tak můžeme ještě předtím, než s ní půjdeme na trh veřejně. Budete tak mezi prvními, kdo se o nabídce dozví."
+    },
     "staging": {
       "beforeAfter": {
         "title": "Home Staging - Před a po",
@@ -1471,11 +2260,6 @@
         "after": "Po",
         "dragToCompare": "Přetáhnout k porovnání"
       }
-    },
-    "buying": {
-      "title": "Koupě nemovitosti",
-      "description": "Hledáte specifickou nemovitost a stále se vám nedaří najít bydlení snů? I v tomto případě se na mě můžete obracet. Realitní kancelář ARCHER reality Praha a.s., pod kterou působím, disponuje rozsáhlou databází nabízených nemovitostí.",
-      "description2": "Společně vyplníme parametry vámi hledané nemovitosti a ve chvíli, kdy se podobná nabídka objeví v našem systému, dojde k jejímu spárování. Oslovit vás tak můžeme ještě předtím, než s ní půjdeme na trh veřejně. Budete tak mezi prvními, kdo se o nabídce dozví."
     },
     "financial": {
       "title": "Finanční služby",
@@ -1683,8 +2467,7 @@
           "description": "Spolupracujeme pouze s ověřenými developery, kteří garantují vysokou kvalitu stavby a materiálů."
         }
       }
-    },
-    "contactForInfo": "Informace na vyžádání"
+    }
   },
   "reviews": {
     "title": "Recenze a hodnocení klientů",
@@ -1704,20 +2487,5 @@
       "contactButton": "Kontaktujte mě",
       "viewProperties": "Zobrazit nemovitosti"
     }
-  },
-  "footer": {
-    "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku.",
-    "sitemap": "Mapa stránek",
-    "listing": "Nabídka nemovitostí",
-    "services": "Služby",
-    "blog": "Blog",
-    "contact": "Kontakt",
-    "usefulLinks": "Užitečné odkazy",
-    "blogPost": "Článek na blogu",
-    "termsOfService": "Podmínky použití",
-    "privacyPolicy": "Ochrana osobních údajů",
-    "contactDetails": "Kontaktní údaje",
-    "address": "Šimáčkova 916/13,\n170 00 Praha 7-Holešovice,\nČeská republika",
-    "viewOnGoogleMap": "Zobrazit na Google mapách"
   }
-} 
+}

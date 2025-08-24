@@ -10,106 +10,100 @@ import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
 import PhotoGallery from "../../components/photo-gallery";
 
-const projectStages = [
-    {
-        name: "Third Stage",
-        status: "Now Selling",
-        startSale: "April 2025",
-        startConstruction: "2Q 2025",
-        completion: "3Q 2027",
-        buildings: ["J", "K", "L", "M"],
-        availableUnits: 38,
-        image: "/images/property/developer_projects_czech_republic.webp"
-    },
-    {
-        name: "Second Stage",
-        status: "Completed",
-        startSale: "April 2024",
-        startConstruction: "1Q 2024",
-        completion: "2Q 2026",
-        buildings: ["F", "G", "H"],
-        availableUnits: 0,
-        image: "/images/property/developer_projects_czech_republic.webp"
-    },
-    {
-        name: "First Stage",
-        status: "Completed",
-        startSale: "April 2022",
-        startConstruction: "2Q 2022",
-        completion: "4Q 2024",
-        buildings: ["A", "B", "C", "D", "E"],
-        availableUnits: 0,
-        image: "/images/property/developer_projects_czech_republic.webp"
-    }
-];
-
-const livingStyles = [
-    {
-        id: "garden-suite",
-        name: "Garden Suite",
-        number: "01",
-        features: ["Private Garden", "Spacious Layout", "Quality Materials"],
-        description: "Perfect for those who appreciate outdoor living and natural surroundings",
-        image: "/images/projects/czech-republic/triangl-park/triangl-park-02.webp"
-    },
-    {
-        id: "family-home",
-        name: "Family Home",
-        number: "02",
-        features: ["Balconies or Loggias", "Comfortable Layout", "Natural Materials"],
-        description: "Ideal for families seeking comfort and practical living spaces",
-        image: "/images/projects/czech-republic/triangl-park/triangl-park-07.webp"
-    },
-    {
-        id: "penthouse-lodge",
-        name: "Penthouse Lodge",
-        number: "03",
-        features: ["Spacious Terraces", "Generous Dimensions", "Luxury Materials"],
-        description: "Premium living with exclusive features and panoramic views",
-        image: "/images/projects/czech-republic/triangl-park/triangl-park-15.webp"
-    }
-];
-
-const locationFeatures = [
-    { feature: "City Center", time: "10 min", description: "Easy access to Plzeň city center" },
-    { feature: "Highway D5", time: "5 min", description: "Quick connection to major roads" },
-    { feature: "Shopping Centers", time: "5 min", description: "OC Area Bory and OC Borská pole nearby" },
-    { feature: "University", time: "5 min", description: "Západočeská univerzita in walking distance" }
-];
-
-const externalBuildingPhotos = [
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-02.webp", alt: "Building A - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-04.webp", alt: "Building C - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-05.webp", alt: "Building D - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-09.webp", alt: "Building H - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-10.webp", alt: "Building J - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-11.webp", alt: "Building K - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-16.webp", alt: "Building M - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-22.webp", alt: "Building M - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-23.webp", alt: "Building M - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-24.webp", alt: "Building M - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-26.webp", alt: "Building M - Exterior View" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-27.webp", alt: "Building M - Exterior View" }
-
-];
-
-const interiorVisualizations = [
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-01.webp", alt: "1+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-03.webp", alt: "3+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-07.webp", alt: "4+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-15.webp", alt: "1+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-17.webp", alt: "2+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-19.webp", alt: "4+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-25.webp", alt: "4+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-18.webp", alt: "3+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-20.webp", alt: "1+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/triangl-park/triangl-park-21.webp", alt: "2+kk Apartment Layout" },
-
-];
-
 export default function TrianglParkPage() {
-    const t = useTranslations('developerProjects.czechRepublic');
-    const tCategories = useTranslations('developerProjects.categories');
+    const t = useTranslations('developerProjects.czechRepublic.trianglPark');
+
+    const projectStages = [
+        {
+            name: t('projectStages.thirdStage'),
+            status: t('projectStages.nowSelling'),
+            startSale: "April 2025",
+            startConstruction: "2Q 2025",
+            completion: "3Q 2027",
+            buildings: ["J", "K", "L", "M"],
+            availableUnits: 38,
+            image: "/images/property/developer_projects_czech_republic.webp"
+        },
+        {
+            name: t('projectStages.secondStage'),
+            status: t('projectStages.completed'),
+            startSale: "April 2024",
+            startConstruction: "1Q 2024",
+            completion: "2Q 2026",
+            buildings: ["F", "G", "H"],
+            availableUnits: 0,
+            image: "/images/property/developer_projects_czech_republic.webp"
+        },
+        {
+            name: t('projectStages.firstStage'),
+            status: t('projectStages.completed'),
+            startSale: "April 2022",
+            startConstruction: "2Q 2022",
+            completion: "4Q 2024",
+            buildings: ["A", "B", "C", "D", "E"],
+            availableUnits: 0,
+            image: "/images/property/developer_projects_czech_republic.webp"
+        }
+    ];
+
+    const livingStyles = [
+        {
+            id: "garden-suite",
+            name: t('livingStyles.gardenSuite.name'),
+            number: t('livingStyles.gardenSuite.number'),
+            description: t('livingStyles.gardenSuite.description'),
+            image: "/images/projects/czech-republic/triangl-park/triangl-park-02.webp"
+        },
+        {
+            id: "family-home",
+            name: t('livingStyles.familyHome.name'),
+            number: t('livingStyles.familyHome.number'),
+            description: t('livingStyles.familyHome.description'),
+            image: "/images/projects/czech-republic/triangl-park/triangl-park-07.webp"
+        },
+        {
+            id: "penthouse-lodge",
+            name: t('livingStyles.penthouseLodge.name'),
+            number: t('livingStyles.penthouseLodge.number'),
+            description: t('livingStyles.penthouseLodge.description'),
+            image: "/images/projects/czech-republic/triangl-park/triangl-park-15.webp"
+        }
+    ];
+
+    const locationFeatures = [
+        { feature: t('location.features.cityCenter.feature'), time: t('location.features.cityCenter.time'), description: t('location.features.cityCenter.description') },
+        { feature: t('location.features.highwayD5.feature'), time: t('location.features.highwayD5.time'), description: t('location.features.highwayD5.description') },
+        { feature: t('location.features.shoppingCenters.feature'), time: t('location.features.shoppingCenters.time'), description: t('location.features.shoppingCenters.description') },
+        { feature: t('location.features.university.feature'), time: t('location.features.university.time'), description: t('location.features.university.description') }
+    ];
+
+    const externalBuildingPhotos = [
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-02.webp", alt: "Building A - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-04.webp", alt: "Building C - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-05.webp", alt: "Building D - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-09.webp", alt: "Building H - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-10.webp", alt: "Building J - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-11.webp", alt: "Building K - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-16.webp", alt: "Building M - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-22.webp", alt: "Building M - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-23.webp", alt: "Building M - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-24.webp", alt: "Building M - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-26.webp", alt: "Building M - Exterior View" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-27.webp", alt: "Building M - Exterior View" }
+    ];
+
+    const interiorVisualizations = [
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-01.webp", alt: "1+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-03.webp", alt: "3+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-07.webp", alt: "4+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-15.webp", alt: "1+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-17.webp", alt: "2+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-19.webp", alt: "4+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-25.webp", alt: "4+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-18.webp", alt: "3+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-20.webp", alt: "1+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/triangl-park/triangl-park-21.webp", alt: "2+kk Apartment Layout" }
+    ];
 
     return (
         <>
@@ -125,23 +119,23 @@ export default function TrianglParkPage() {
                         <div className="mb-4">
                             <Link href="/developer-projects/czech-republic" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
-                                Back to Projects
+                                {t('hero.backToProjects')}
                             </Link>
                         </div>
                         <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">
-                            Triangl Park
+                            {t('hero.title')}
                         </h3>
                         <p className="text-white/70 text-lg max-w-2xl mx-auto mt-4">
-                            Unique residential concept in southern Plzeň-Bory with three distinct living standards
+                            {t('hero.subtitle')}
                         </p>
                         <div className="mt-8 flex items-center justify-center gap-8">
                             <div className="text-center">
                                 <div className="text-4xl font-bold text-white">38</div>
-                                <div className="text-white/80">Available Units</div>
+                                <div className="text-white/80">{t('hero.stats.availableUnits')}</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-4xl font-bold text-white">93%</div>
-                                <div className="text-white/80">Project Sold</div>
+                                <div className="text-white/80">{t('hero.stats.projectSold')}</div>
                             </div>
                         </div>
                     </div>
@@ -161,18 +155,14 @@ export default function TrianglParkPage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">About the Project</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('projectOverview.title')}</h2>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                Triangl Park represents a unique residential concept in the southern district of Plzeň-Bory. 
-                                This exceptional project stands out not only for its attractive location with easy access to 
-                                Plzeň city center, but also for its comprehensive approach, quality standards, and above all, 
-                                the unique opportunity to choose from three diverse living standards.
+                                {t('projectOverview.description')}
                             </p>
                             <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                                <h3 className="font-semibold text-green-800 mb-2">Special Offer</h3>
+                                <h3 className="font-semibold text-green-800 mb-2">{t('projectOverview.specialOffer.title')}</h3>
                                 <p className="text-green-700">
-                                    Now you only need to pay 20% of the apartment purchase price. The remaining amount 
-                                    is due after the building inspection. Limited time offer!
+                                    {t('projectOverview.specialOffer.description')}
                                 </p>
                             </div>
                         </div>
@@ -193,9 +183,9 @@ export default function TrianglParkPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">External Building Views</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('externalViews.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Explore the architectural beauty and design of all buildings in Triangl Park
+                            {t('externalViews.subtitle')}
                         </p>
                     </div>
                     
@@ -219,11 +209,9 @@ export default function TrianglParkPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Three Styles, Three Standards, Three Ways of Life</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('livingStyles.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Triangl Park offers a unique opportunity to choose apartments by style. Each style provides 
-                            not only its own range of standards but also specific benefits in the form of relaxation zones, 
-                            layout solutions, or views. What's your style?
+                            {t('livingStyles.subtitle')}
                         </p>
                     </div>
 
@@ -243,18 +231,11 @@ export default function TrianglParkPage() {
                                         <h3 className="text-2xl font-bold mb-2">{style.name}</h3>
                                         <p className="text-slate-600">{style.description}</p>
                                     </div>
-                                    <div className="space-y-3">
-                                        {style.features.map((feature, idx) => (
-                                            <div key={idx} className="flex items-center gap-3">
-                                                <FiCheck className="h-5 w-5 text-green-600 flex-shrink-0" />
-                                                <span className="text-slate-700 font-medium">{feature}</span>
-                                            </div>
-                                        ))}
-                                    </div>
+                                    
                                     <div className="mt-6 text-center">
                                         <Link href="#contact">
                                             <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-                                                View Available Units
+                                                {t('livingStyles.viewAvailableUnits')}
                                             </button>
                                         </Link>
                                     </div>
@@ -269,9 +250,9 @@ export default function TrianglParkPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Interior Visualizations</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('interiorVisualizations.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the interior layouts and designs for all apartment types and living styles
+                            {t('interiorVisualizations.subtitle')}
                         </p>
                     </div>
                     
@@ -295,52 +276,52 @@ export default function TrianglParkPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Project Construction Stages</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('projectStages.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Overview of individual project stages and construction schedule
+                            {t('projectStages.subtitle')}
                         </p>
                     </div>
 
                     <div className="space-y-8">
                         {projectStages.map((stage, index) => (
-                            <div key={index} className={`border-l-4 ${stage.status === 'Now Selling' ? 'border-green-600' : 'border-slate-300'} bg-white p-8 rounded-lg shadow-lg`}>
+                            <div key={index} className={`border-l-4 ${stage.status === t('projectStages.nowSelling') ? 'border-green-600' : 'border-slate-300'} bg-white p-8 rounded-lg shadow-lg`}>
                                 <div className="grid lg:grid-cols-3 gap-8">
                                     <div className="lg:col-span-2">
                                         <div className="flex items-center gap-4 mb-4">
                                             <h3 className="text-2xl font-bold">{stage.name}</h3>
                                             <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                                                stage.status === 'Now Selling' ? 'bg-green-100 text-green-800' : 'bg-slate-100 text-slate-800'
+                                                stage.status === t('projectStages.nowSelling') ? 'bg-green-100 text-green-800' : 'bg-slate-100 text-slate-800'
                                             }`}>
                                                 {stage.status}
                                             </span>
                                         </div>
                                         <div className="space-y-2 text-slate-600">
                                             <div className="flex justify-between">
-                                                <span>Start of Sales:</span>
+                                                <span>{t('projectStages.startSale')}</span>
                                                 <span className="font-medium">{stage.startSale}</span>
                                             </div>
                                             <div className="flex justify-between">
-                                                <span>Construction Start:</span>
+                                                <span>{t('projectStages.constructionStart')}</span>
                                                 <span className="font-medium">{stage.startConstruction}</span>
                                             </div>
                                             <div className="flex justify-between">
-                                                <span>Completion:</span>
+                                                <span>{t('projectStages.completion')}</span>
                                                 <span className="font-medium">{stage.completion}</span>
                                             </div>
                                         </div>
                                         <div className="mt-4">
-                                            <span className="text-sm text-slate-500">Buildings: </span>
+                                            <span className="text-sm text-slate-500">{t('projectStages.buildings')}</span>
                                             <span className="font-medium">{stage.buildings.join(', ')}</span>
                                         </div>
                                     </div>
                                     <div className="flex flex-col items-center justify-center">
                                         <div className="text-center">
                                             <div className="text-3xl font-bold text-green-600 mb-2">{stage.availableUnits}</div>
-                                            <div className="text-slate-600">Available Units</div>
-                                            {stage.status === 'Now Selling' && (
+                                            <div className="text-slate-600">{t('projectStages.availableUnits')}</div>
+                                            {stage.status === t('projectStages.nowSelling') && (
                                                 <Link href="#contact">
                                                     <button className="mt-4 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-                                                        Select Your Unit
+                                                        {t('projectStages.selectYourUnit')}
                                                     </button>
                                                 </Link>
                                             )}
@@ -358,13 +339,9 @@ export default function TrianglParkPage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">Excellent Location & Accessibility</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('location.title')}</h2>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                Bory is a modern and fully equipped district with perfect access to services, education, 
-                                work, and the city center. Excellent accessibility to Plzeň city center by public transport 
-                                in just a few minutes, great local civic amenities, rich sports activities, and forest areas 
-                                within walking distance make Triangl Park an exceptionally attractive location and, above all, 
-                                a very pleasant place to live.
+                                {t('location.description')}
                             </p>
                             <div className="grid grid-cols-2 gap-4">
                                 {locationFeatures.map((feature, index) => (
@@ -397,32 +374,30 @@ export default function TrianglParkPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Lifestyle & Amenities</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('lifestyleAmenities.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the exceptional lifestyle that Triangl Park offers to its residents
+                            {t('lifestyleAmenities.subtitle')}
                         </p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
                         <div className="order-2 lg:order-1">
-                            <h3 className="text-3xl font-bold mb-6">Modern Living Standards</h3>
+                            <h3 className="text-3xl font-bold mb-6">{t('lifestyleAmenities.modernLivingStandards.title')}</h3>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                Every apartment unit features at least one garden, loggia, balcony, or spacious terrace. 
-                                All individual apartments also include their own basement storage space, ensuring convenience 
-                                and practical living for every resident.
+                                {t('lifestyleAmenities.modernLivingStandards.description')}
                             </p>
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <FiCheck className="h-6 w-6 text-green-600 flex-shrink-0" />
-                                    <span className="text-slate-700">Private outdoor spaces for every unit</span>
+                                    <span className="text-slate-700">{t('lifestyleAmenities.modernLivingStandards.features.privateOutdoorSpaces')}</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <FiCheck className="h-6 w-6 text-green-600 flex-shrink-0" />
-                                    <span className="text-slate-700">Basement storage included</span>
+                                    <span className="text-slate-700">{t('lifestyleAmenities.modernLivingStandards.features.basementStorage')}</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <FiCheck className="h-6 w-6 text-green-600 flex-shrink-0" />
-                                    <span className="text-slate-700">High-quality materials and finishes</span>
+                                    <span className="text-slate-700">{t('lifestyleAmenities.modernLivingStandards.features.highQualityMaterials')}</span>
                                 </div>
                             </div>
                         </div>
@@ -465,37 +440,36 @@ export default function TrianglParkPage() {
                     </div>
 
                     <div className="bg-slate-50 rounded-2xl p-12 text-center">
-                        <h3 className="text-3xl font-bold mb-6">Virtual Tour Experience</h3>
+                        <h3 className="text-3xl font-bold mb-6">{t('lifestyleAmenities.virtualTour.title')}</h3>
                         <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-                            Explore Triangl Park from the comfort of your home with our immersive virtual tour. 
-                            Experience the project in 360° and discover every detail of your future home.
+                            {t('lifestyleAmenities.virtualTour.description')}
                         </p>
                         <div className="grid lg:grid-cols-3 gap-8">
                             <div className="bg-white p-6 rounded-xl">
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">🏠</span>
                                 </div>
-                                <h4 className="font-semibold mb-2">Virtual Apartment</h4>
-                                <p className="text-slate-600 text-sm">Explore sample apartments in detail</p>
+                                <h4 className="font-semibold mb-2">{t('lifestyleAmenities.virtualTour.features.virtualApartment.title')}</h4>
+                                <p className="text-slate-600 text-sm">{t('lifestyleAmenities.virtualTour.features.virtualApartment.description')}</p>
                             </div>
                             <div className="bg-white p-6 rounded-xl">
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">🏗️</span>
                                 </div>
-                                <h4 className="font-semibold mb-2">Construction Progress</h4>
-                                <p className="text-slate-600 text-sm">See how the project is developing</p>
+                                <h4 className="font-semibold mb-2">{t('lifestyleAmenities.virtualTour.features.constructionProgress.title')}</h4>
+                                <p className="text-slate-600 text-sm">{t('lifestyleAmenities.virtualTour.features.constructionProgress.description')}</p>
                             </div>
                             <div className="bg-white p-6 rounded-xl">
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">🗺️</span>
                                 </div>
-                                <h4 className="font-semibold mb-2">Location Overview</h4>
-                                <p className="text-slate-600 text-sm">Discover the surrounding area</p>
+                                <h4 className="font-semibold mb-2">{t('lifestyleAmenities.virtualTour.features.locationOverview.title')}</h4>
+                                <p className="text-slate-600 text-sm">{t('lifestyleAmenities.virtualTour.features.locationOverview.description')}</p>
                             </div>
                         </div>
                         <button className="mt-8 bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors">
                             <Link href="https://www.triangl-park.cz/vyber/model" target="_blank">
-                                Start Virtual Tour
+                                {t('lifestyleAmenities.virtualTour.startVirtualTour')}
                             </Link>
                         </button>
                     </div>

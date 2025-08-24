@@ -783,6 +783,835 @@
           "title": "Gallery of selected family houses",
           "subtitle": "Explore our spacious family houses"
         }
+      },
+      "englishEmbankment": {
+        "hero": {
+          "title": "English Embankment Palace",
+          "subtitle": "Exceptional in all parameters - Luxury palace-style living in the heart of Plzeň's historic center",
+          "backToProjects": "Back to Projects"
+        },
+        "projectFeatures": {
+          "commercialSpace": {
+            "name": "Commercial Space",
+            "value": "2,800 m²",
+            "description": "Available for rent"
+          },
+          "residentialUnits": {
+            "name": "Residential Units",
+            "value": "200",
+            "description": "Apartments for sale"
+          },
+          "parkingSpaces": {
+            "name": "Parking Spaces",
+            "value": "400",
+            "description": "Including EV charging"
+          },
+          "floors": {
+            "name": "Floors",
+            "value": "8",
+            "description": "Above ground levels"
+          }
+        },
+        "aboutProject": {
+          "title": "About the Project",
+          "description1": "The English Embankment Palace is growing in the very heart of Plzeň's historic city center, where new construction is an exceptionally rare phenomenon. Just a few steps from Republic Square with the Cathedral of St. Bartholomew and surrounded by Plzeň's most beautiful parks and the popular Radbuza River embankment.",
+          "description2": "Simply put, this is a unique opportunity to purchase a luxury city apartment in a perfect location at a prestigious address. The palace-style building from the drawing board of renowned architects from PRO-STORY studio will bring its residents not only exclusive views but also a residential inner courtyard with park landscaping.",
+          "constructionStatus": {
+            "title": "Construction in Progress",
+            "description": "Project realization began in June 2024 and construction is already in full swing. Completion is scheduled for early 2028."
+          }
+        },
+        "projectFeaturesSection": {
+          "title": "Project Features",
+          "subtitle": "Discover what makes English Embankment Palace exceptional in all parameters",
+          "commercialSpace": {
+            "title": "Commercial Space",
+            "description1": "The first two above-ground floors will offer nearly three thousand square meters of commercial space for rent. The first floor will be elevated with approximately 1,200 m² of retail space, suitable for brand stores, showrooms, or services.",
+            "description2": "The second floor will have around 1,600 m² of offices and several apartments available."
+          },
+          "exclusiveApartments": {
+            "title": "Exclusive Apartments",
+            "description1": "From the third to the eighth floor, exclusively residential units will be located. The entire project will offer approximately 200 apartments of all layouts and sizes for sale.",
+            "description2": "From the smallest 1+kk with about 30 m² to beautiful spacious penthouses and maisonettes with custom-designed layouts and terraces overlooking the city center or the Radbuza River."
+          },
+          "parking": {
+            "title": "Hassle-free Parking",
+            "description1": "Parking will be available in a total of four floors, providing sufficient parking spaces for the administrative high-rise building, as well as for shops, offices, and apartments.",
+            "description2": "We're planning nearly 400 parking spaces. A novelty will be specially adapted parking spaces for electric vehicles with the possibility of faster charging."
+          },
+          "parkCourtyard": {
+            "title": "Park Courtyard",
+            "description1": "Thanks to uniquely designed green inner courtyards, you'll gain peace and privacy whenever you desire it. And this at an exclusive address in the very center of the living West Bohemian metropolis.",
+            "description2": "The surrounding street space of the new palace will also be improved and beautified. The prestige of the location will be emphasized by the building's architecture with a series of terraces planted with trees and ornamental shrubs."
+          }
+        },
+        "externalViews": {
+          "title": "External Building Views",
+          "subtitle": "Explore the architectural beauty and design of the English Embankment Palace",
+          "exteriorView": "Exterior View"
+        },
+        "interiorVisualizations": {
+          "title": "Interior Visualizations",
+          "subtitle": "Discover the interior layouts and designs for all apartment types",
+          "interiorDesign": "Interior Design"
+        },
+        "premiumStandards": {
+          "title": "Highest Standard in Plzeň",
+          "subtitle": "Luxury and comfort as standard - exceptional execution in every detail",
+          "amenities": {
+            "parkCourtyard": {
+              "name": "Park Courtyard",
+              "description": "Private green inner courtyard with park design"
+            },
+            "premiumStandards": {
+              "name": "Premium Standards",
+              "description": "Triple-glazed windows, wooden floors, underfloor heating"
+            },
+            "smartTechnology": {
+              "name": "Smart Technology",
+              "description": "Recuperation and modern comfort systems"
+            },
+            "evParking": {
+              "name": "EV Parking",
+              "description": "Specially adapted parking with fast charging"
+            },
+            "riverViews": {
+              "name": "River Views",
+              "description": "Panoramic views of the Radbuza River"
+            },
+            "cityViews": {
+              "name": "City Views",
+              "description": "Exclusive views of Plzeň's historic center"
+            }
+          }
+        },
+        "location": {
+          "title": "Exclusive Location",
+          "description": "Exceptional location in the very heart of the historic city center, just a few steps from Republic Square. Surrounded by the river and Plzeň's most beautiful parks. Culture, gastronomy, business, nightlife – everything that makes the city alive and inspiring is now just a few steps from your apartment.",
+          "features": {
+            "republicSquare": {
+              "feature": "Republic Square",
+              "time": "2 min",
+              "description": "Cathedral of St. Bartholomew"
+            },
+            "radbuzaRiver": {
+              "feature": "Radbuza River",
+              "time": "3 min",
+              "description": "Beautiful river embankment"
+            },
+            "cityParks": {
+              "feature": "City Parks",
+              "time": "5 min",
+              "description": "Plzeň's most beautiful parks"
+            },
+            "culturalCenter": {
+              "feature": "Cultural Center",
+              "time": "5 min",
+              "description": "Theaters, museums, galleries"
+            }
+          }
+        },
+        "partners": {
+          "title": "Quality Guarantee",
+          "subtitle": "Strong partnerships guarantee the highest quality",
+          "investika": {
+            "name": "INVESTIKA",
+            "role": "Real Estate Fund",
+            "description": "One of the largest players on the Czech real estate market"
+          },
+          "bcReal": {
+            "name": "BC Real",
+            "role": "Developer",
+            "description": "19+ years of experience in Plzeň, 14 completed projects"
+          },
+          "brokerConsulting": {
+            "name": "Broker Consulting",
+            "role": "Sales & Financing",
+            "description": "Most requested independent consultant in Czech Republic"
+          }
+        },
+        "availableUnits": {
+          "title": "Find Your Apartment",
+          "description": "For detailed information about available units, pricing, and current availability, please contact our sales team directly.",
+          "contactUs": "Contact Us",
+          "forUnitInfo": "For Unit Information",
+          "getUnitDetails": "Get Unit Details"
+        }
+      },
+      "horovice": {
+        "hero": {
+          "title": "Bydlení Hořovice",
+          "subtitle": "From the foundation up - a good place for life. We asked ourselves what an ideal place to live should look like, and then we created it.",
+          "backToProjects": "Back to Projects"
+        },
+        "projectFeatures": {
+          "location": {
+            "name": "Location",
+            "value": "Hořovice",
+            "description": "Between Plzeň & Prague"
+          },
+          "construction": {
+            "name": "Construction",
+            "value": "Brick",
+            "description": "300mm red brick walls"
+          },
+          "soundInsulation": {
+            "name": "Sound Insulation",
+            "value": "Premium",
+            "description": "Excellent privacy"
+          },
+          "customKitchens": {
+            "name": "Custom Kitchens",
+            "value": "Included",
+            "description": "Tailored to your apartment"
+          }
+        },
+        "aboutProject": {
+          "title": "About the Project",
+          "description1": "Bydlení Hořovice represents our vision of creating an ideal place to live. Located between Plzeň and Prague, in a city that's growing and developing, this new neighborhood offers the perfect balance for those who don't want to live in a big city or village, but want everything within reach.",
+          "description2": "We've built this project from the foundation up with honest, thorough work. Our buildings are constructed as solid brick structures using quality red bricks that provide excellent sound insulation for privacy and peace. We've selected timeless materials that last, and we ensure custom kitchen and built-in wardrobe production tailored to your chosen apartment.",
+          "communityFocus": {
+            "title": "Community Focus",
+            "description": "We live and breathe this project with pride. We're constantly building and improving our neighborhood, staying connected with residents through WhatsApp groups and always turning feedback into action."
+          }
+        },
+        "projectBenefits": {
+          "title": "What Makes Us Special",
+          "subtitle": "Discover the unique benefits that set Bydlení Hořovice apart",
+          "perfectLocation": {
+            "title": "Perfect Location",
+            "description1": "Located between Plzeň and Prague, in a city that's growing and developing. This new neighborhood offers everything you need: shops, kindergartens, work opportunities, healthcare, culture, and nature - all within reach.",
+            "description2": "Perfect for those who don't want to live in a big city or village, but want to have everything at hand."
+          },
+          "qualityConstruction": {
+            "title": "Quality Construction",
+            "description1": "We want you to get an honest piece of our work for your money - an apartment that becomes your comfortable and valuable home. That's why we build our buildings as solid brick structures.",
+            "description2": "Using quality red bricks that provide excellent sound insulation for privacy and peace, with timeless design materials that last."
+          },
+          "activeCommunity": {
+            "title": "Active Community",
+            "description1": "We live and breathe this project with pride. We're constantly building and improving our neighborhood, staying connected with residents through WhatsApp groups and always turning feedback into action.",
+            "description2": "It's not just about how you feel behind your apartment door - home is made by pleasant neighbors, cleanliness throughout the neighborhood, a sense of security, and details like parking and playgrounds."
+          },
+          "diverseApartmentOptions": {
+            "title": "Diverse Apartment Options",
+            "description1": "Our neighborhood offers a diverse range of apartment layouts to create a varied and pleasant community. You'll find apartments for families with children, young couples starting out, and those seeking comfort and modern living with perfect access to services.",
+            "description2": "From 1+kk to 4+kk layouts, there's something for everyone's needs and lifestyle."
+          }
+        },
+        "apartmentStandards": {
+          "title": "Apartment Standards & Benefits",
+          "subtitle": "Carefully thought-out and honest standards you won't find elsewhere",
+          "standards": {
+            "soundInsulatingWalls": {
+              "name": "Sound-Insulating Walls",
+              "description": "300mm red brick construction for complete privacy"
+            },
+            "airConditioningPrep": {
+              "name": "Air Conditioning Prep",
+              "description": "Ready for climate control installation"
+            },
+            "smartScreenPrep": {
+              "name": "Smart Screen Prep",
+              "description": "Preparation for electric screens and blinds"
+            },
+            "customKitchen": {
+              "name": "Custom Kitchen",
+              "description": "Kitchen tailored to your apartment layout"
+            },
+            "builtInWardrobes": {
+              "name": "Built-in Wardrobes",
+              "description": "Custom storage solutions included"
+            },
+            "securityDoors": {
+              "name": "Security Doors",
+              "description": "High-quality entrance doors with security features"
+            },
+            "timelessBathrooms": {
+              "name": "Timeless Bathrooms",
+              "description": "Quality tiles and modern sanitary equipment"
+            },
+            "chemicalFreeFloors": {
+              "name": "Chemical-Free Floors",
+              "description": "Egger Eclic laminate floors from sustainable sources"
+            },
+            "woodenDoors": {
+              "name": "Wooden Doors",
+              "description": "Lamistone doors with wooden construction and stainless hardware"
+            },
+            "frenchWindows": {
+              "name": "French Windows",
+              "description": "Large windows with balcony, terrace, or garden access"
+            }
+          }
+        },
+        "externalViews": {
+          "title": "Neighborhood & Exterior Views",
+          "subtitle": "Explore the beautiful neighborhood and architectural details of Bydlení Hořovice",
+          "exteriorView": "Exterior View"
+        },
+        "interiorVisualizations": {
+          "title": "Interior Visualizations",
+          "subtitle": "Discover the interior layouts and custom features for all apartment types",
+          "interiorDesign": "Interior Design"
+        },
+        "configurator": {
+          "title": "3D Apartment Configurator",
+          "subtitle": "Create your perfect apartment interior through our interactive 3D configurator",
+          "mainTitle": "Design Your Dream Home",
+          "description": "Choose from a wide range of floor materials, tiles, and wall coverings. Select the color and shape of doors, or design your future kitchen that we'll custom-manufacture for you. Make buying an apartment more joy than worry.",
+          "features": {
+            "materialSelection": {
+              "title": "Material Selection",
+              "description": "Choose floors, tiles, and wall coverings"
+            },
+            "doorDesign": {
+              "title": "Door Design",
+              "description": "Select colors and shapes for your doors"
+            },
+            "kitchenDesign": {
+              "title": "Kitchen Design",
+              "description": "Design your custom kitchen layout"
+            }
+          },
+          "launchButton": "Launch 3D Configurator"
+        },
+        "sampleApartment": {
+          "title": "Visit Our Sample Apartment",
+          "description1": "Want to see the equipment of your future apartment with your own eyes? Touch the materials, feel the surfaces, and explore the quality of workmanship?",
+          "description2": "We'd be happy to welcome you to our sample apartment, right in Hořovice. Experience the quality and craftsmanship that goes into every detail of your future home.",
+          "benefits": {
+            "realMaterials": "See real materials and finishes",
+            "experienceQuality": "Experience the quality firsthand",
+            "meetTeam": "Meet our team in person"
+          },
+          "bookButton": "Book Your Visit"
+        },
+        "location": {
+          "title": "Perfect Location Between Two Cities",
+          "description1": "Located between Plzeň and Prague, in a city that's growing and developing. This new neighborhood offers everything you need: shops, kindergartens, work opportunities, healthcare, culture, and nature - all within reach.",
+          "description2": "Perfect for those who don't want to live in a big city or village, but want to have everything at hand. Enjoy the proximity of nature while benefiting from excellent connections to both cities.",
+          "features": {
+            "plzen": {
+              "feature": "Plzeň",
+              "time": "30 min",
+              "description": "Quick access to Plzeň"
+            },
+            "prague": {
+              "feature": "Prague",
+              "time": "45 min",
+              "description": "Easy connection to capital"
+            },
+            "localServices": {
+              "feature": "Local Services",
+              "time": "5 min",
+              "description": "Everything within reach"
+            },
+            "nature": {
+              "feature": "Nature",
+              "time": "2 min",
+              "description": "Green spaces nearby"
+            }
+          }
+        },
+        "availableUnits": {
+          "title": "Choose Your Apartment",
+          "description": "For detailed information about available units, pricing, and current availability, please contact our sales team directly.",
+          "contactUs": "Contact Us",
+          "forUnitInfo": "For Unit Information",
+          "getUnitDetails": "Get Unit Details"
+        }
+      },
+      "iconPark": {
+        "hero": {
+          "title": "ICON Park Kladno",
+          "subtitle": "Modern and comfortable living in the new residential district of Kladno",
+          "backToProjects": "Back to Projects",
+          "stats": {
+            "floors": "Floors",
+            "totalUnits": "Total Units",
+            "layouts": "Layouts"
+          }
+        },
+        "projectOverview": {
+          "title": "Your New Home Starts at ICON Park",
+          "description1": "Looking for modern and comfortable living that meets your expectations? ICON Park in Kladno brings the ideal combination of modern design, comfort, and a quiet location in the newly revitalized district.",
+          "description2": "Apartments with layouts from 1+kk to 4+kk are designed with emphasis on quality and comfort, each with its own space for relaxation - balcony, terrace, or front garden. Project completion in 2025 means your new home is closer than you think. ICON Park is where your future begins.",
+          "readyForMoveIn": {
+            "title": "Ready for Move-in!",
+            "description": "The building has received final approval and you can start moving in this summer!"
+          }
+        },
+        "award": {
+          "title": "Prestigious Award Winner",
+          "subtitle": "ICON PARK received the prestigious Jury Award in the Real Estate Project of the Year 2024 competition",
+          "awardTitle": "Real Estate Project of the Year 2024",
+          "nominatedProject": "Nominated Project - Central Bohemian Region",
+          "quote": "We greatly value this award, especially given the strong competition in this year's edition. It confirms that the combination of modern architecture, quality execution, and attractive location resonates not only with customers but also with the professional public.",
+          "attribution": "František Vladař, Investment & Project Director, BHM group"
+        },
+        "externalViews": {
+          "title": "External Building Views",
+          "subtitle": "Explore the architectural beauty and design of all buildings in ICON Park"
+        },
+        "interiorVisualizations": {
+          "title": "Interior Visualizations",
+          "subtitle": "Discover the interior layouts and designs for all apartment types"
+        },
+        "projectStatus": {
+          "title": "Project Status",
+          "subtitle": "Current construction status and completion details",
+          "constructionStatus": "Construction Status",
+          "completedReady": "Completed & Ready for Move-in",
+          "completionQ3": "Q3 2025",
+          "completionDetails": "Buildings and apartments are completely finished, including outdoor fitness zone and children's playground",
+          "ready": "Ready!",
+          "forMoveIn": "For Move-in",
+          "signMeUp": "Sign me up!"
+        },
+        "location": {
+          "title": "Quick Access to Work and Entertainment",
+          "description1": "Kladno offers the ideal combination of quiet living and excellent accessibility to Prague. In the ICON Park residential district, you have everything within reach - quality schools, kindergartens, shops, services, restaurants, sports facilities, and cycling paths.",
+          "description2": "Additionally, you can enjoy the proximity of nature while benefiting from excellent connections to both Kladno and the capital city.",
+          "features": {
+            "kladnoCenter": {
+              "feature": "Kladno Center",
+              "time": "5 min",
+              "description": "Quick access to city center"
+            },
+            "vaclavHavelAirport": {
+              "feature": "Václav Havel Airport",
+              "time": "10 min",
+              "description": "International airport nearby"
+            },
+            "veleslavinStation": {
+              "feature": "Veleslavín Station",
+              "time": "20 min",
+              "description": "Direct connection to Prague"
+            },
+            "masarykStation": {
+              "feature": "Masaryk Station",
+              "time": "30 min",
+              "description": "Main Prague railway station"
+            }
+          }
+        },
+        "amenities": {
+          "title": "Comfortable Living with Everything Within Reach",
+          "subtitle": "Discover the amenities that make ICON Park a perfect place to live",
+          "cafe": {
+            "name": "Café",
+            "description": "Energy boost and sweet endings with the whole family"
+          },
+          "kindergarten": {
+            "name": "Kindergarten",
+            "description": "Quality early education for children"
+          },
+          "playground": {
+            "name": "Playground",
+            "description": "Safe outdoor play area for children"
+          },
+          "outdoorGym": {
+            "name": "Outdoor Gym",
+            "description": "Fitness equipment in fresh air"
+          },
+          "publicSpaces": {
+            "name": "Public Spaces",
+            "description": "Community areas for socializing"
+          }
+        }
+      },
+      "trianglPark": {
+        "hero": {
+          "title": "Triangl Park",
+          "subtitle": "Unique residential concept in southern Plzeň-Bory with three distinct living standards",
+          "backToProjects": "Back to Projects",
+          "stats": {
+            "availableUnits": "Available Units",
+            "projectSold": "Project Sold"
+          }
+        },
+        "projectOverview": {
+          "title": "About the Project",
+          "description": "Triangl Park represents a unique residential concept in the southern district of Plzeň-Bory. This exceptional project stands out not only for its attractive location with easy access to Plzeň city center, but also for its comprehensive approach, quality standards, and above all, the unique opportunity to choose from three diverse living standards.",
+          "specialOffer": {
+            "title": "Special Offer",
+            "description": "Now you only need to pay 20% of the apartment purchase price. The remaining amount is due after the building inspection. Limited time offer!"
+          }
+        },
+        "externalViews": {
+          "title": "External Building Views",
+          "subtitle": "Explore the architectural beauty and design of all buildings in Triangl Park"
+        },
+        "livingStyles": {
+          "title": "Three Styles, Three Standards, Three Ways of Life",
+          "subtitle": "Triangl Park offers a unique opportunity to choose apartments by style. Each style provides not only its own range of standards but also specific benefits in the form of relaxation zones, layout solutions, or views. What's your style?",
+          "gardenSuite": {
+            "name": "Garden Suite",
+            "number": "01",
+            "features": ["Private Garden", "Spacious Layout", "Quality Materials"],
+            "description": "Perfect for those who appreciate outdoor living and natural surroundings"
+          },
+          "familyHome": {
+            "name": "Family Home",
+            "number": "02",
+            "features": ["Balconies or Loggias", "Comfortable Layout", "Natural Materials"],
+            "description": "Ideal for families seeking comfort and practical living spaces"
+          },
+          "penthouseLodge": {
+            "name": "Penthouse Lodge",
+            "number": "03",
+            "features": ["Spacious Terraces", "Generous Dimensions", "Luxury Materials"],
+            "description": "Premium living with exclusive features and panoramic views"
+          },
+          "viewAvailableUnits": "View Available Units"
+        },
+        "interiorVisualizations": {
+          "title": "Interior Visualizations",
+          "subtitle": "Discover the interior layouts and designs for all apartment types and living styles"
+        },
+        "projectStages": {
+          "title": "Project Construction Stages",
+          "subtitle": "Overview of individual project stages and construction schedule",
+          "thirdStage": "Third Stage",
+          "secondStage": "Second Stage",
+          "firstStage": "First Stage",
+          "nowSelling": "Now Selling",
+          "completed": "Completed",
+          "startSale": "Start of Sales:",
+          "constructionStart": "Construction Start:",
+          "completion": "Completion:",
+          "buildings": "Buildings: ",
+          "availableUnits": "Available Units",
+          "selectYourUnit": "Select Your Unit"
+        },
+        "location": {
+          "title": "Excellent Location & Accessibility",
+          "description": "Bory is a modern and fully equipped district with perfect access to services, education, work, and the city center. Excellent accessibility to Plzeň city center by public transport in just a few minutes, great local civic amenities, rich sports activities, and forest areas within walking distance make Triangl Park an exceptionally attractive location and, above all, a very pleasant place to live.",
+          "features": {
+            "cityCenter": {
+              "feature": "City Center",
+              "time": "10 min",
+              "description": "Easy access to Plzeň city center"
+            },
+            "highwayD5": {
+              "feature": "Highway D5",
+              "time": "5 min",
+              "description": "Quick connection to major roads"
+            },
+            "shoppingCenters": {
+              "feature": "Shopping Centers",
+              "time": "5 min",
+              "description": "OC Area Bory and OC Borská pole nearby"
+            },
+            "university": {
+              "feature": "University",
+              "time": "5 min",
+              "description": "Západočeská univerzita in walking distance"
+            }
+          }
+        },
+        "lifestyleAmenities": {
+          "title": "Lifestyle & Amenities",
+          "subtitle": "Discover the exceptional lifestyle that Triangl Park offers to its residents",
+          "modernLivingStandards": {
+            "title": "Modern Living Standards",
+            "description": "Every apartment unit features at least one garden, loggia, balcony, or spacious terrace. All individual apartments also include their own basement storage space, ensuring convenience and practical living for every resident.",
+            "features": {
+              "privateOutdoorSpaces": "Private outdoor spaces for every unit",
+              "basementStorage": "Basement storage included",
+              "highQualityMaterials": "High-quality materials and finishes"
+            }
+          },
+          "virtualTour": {
+            "title": "Virtual Tour Experience",
+            "description": "Explore Triangl Park from the comfort of your home with our immersive virtual tour. Experience the project in 360° and discover every detail of your future home.",
+            "features": {
+              "virtualApartment": {
+                "title": "Virtual Apartment",
+                "description": "Explore sample apartments in detail"
+              },
+              "constructionProgress": {
+                "title": "Construction Progress",
+                "description": "See how the project is developing"
+              },
+              "locationOverview": {
+                "title": "Location Overview",
+                "description": "Discover the surrounding area"
+              }
+            },
+            "startVirtualTour": "Start Virtual Tour"
+          }
+        }
+      },
+      "tiskarnaKristianov": {
+        "hero": {
+          "title": "Tiskárna Kristiánov",
+          "subtitle": "Living with a story in the heart of Liberec. Where history meets modern luxury in a uniquely reimagined industrial complex.",
+          "backToProjects": "Back to Projects",
+          "projectFeatures": {
+            "location": {
+              "name": "Location",
+              "value": "Liberec Center",
+              "description": "Heart of the city"
+            },
+            "apartments": {
+              "name": "Apartments",
+              "value": "200",
+              "description": "Total units"
+            },
+            "parking": {
+              "name": "Parking",
+              "value": "218",
+              "description": "Parking spaces"
+            },
+            "history": {
+              "name": "History",
+              "value": "1791",
+              "description": "Since Berger's house"
+            }
+          }
+        },
+        "projectOverview": {
+          "title": "About the Project",
+          "description1": "Tiskárna Kristiánov offers unconventional living and non-residential spaces in a comprehensively reconstructed complex with fascinating history. This architectural pearl combines the strong periods of garden city and industrial era history.",
+          "description2": "The complex is located in the city center with excellent accessibility. We've preserved the original face of the buildings while giving them new expression. The dominant feature is a 32-meter high non-functional chimney visible from distant corners of Liberec.",
+          "secondStage": {
+            "title": "Second Stage Now Available",
+            "description": "Don't hesitate and choose your dream home today. Special introductory prices available for a limited time."
+          }
+        },
+        "projectHistory": {
+          "title": "A Story That Began in 1791",
+          "subtitle": "Discover the fascinating journey from Berger's house to today's modern complex",
+          "timeline": {
+            "1791": {
+              "event": "Berger's house built - first Liberec manufactory",
+              "description": "The beginning of industrial heritage"
+            },
+            "1800s": {
+              "event": "Villa houses constructed",
+              "description": "Development of the garden city quarter"
+            },
+            "1900s": {
+              "event": "Printing complex expansion",
+              "description": "Largest German printing plant in Bohemia"
+            },
+            "1990s": {
+              "event": "Complex abandoned",
+              "description": "Waiting for its second chance"
+            },
+            "2024": {
+              "event": "Second stage begins",
+              "description": "Modern redevelopment with respect for history"
+            }
+          }
+        },
+        "whatMakesUsSpecial": {
+          "title": "What Makes Us Special",
+          "subtitle": "Discover the unique features that set Tiskárna Kristiánov apart",
+          "excellentLocation": {
+            "title": "Excellent Location",
+            "description1": "Live in the very heart of the metropolis under Ještěd. The complex is located in the city center with excellent accessibility, forming the central triangle of Liberec together with Staré and Nové Město.",
+            "description2": "Perfect access to shopping, public transport, education, and cultural facilities."
+          },
+          "stylishLiving": {
+            "title": "Stylish Living",
+            "description1": "We've combined history and unique modern architecture. The complex features neorenaissance, industrial, and modern architectural elements, creating a truly unique living environment.",
+            "description2": "Each building tells its own story while offering modern comfort and luxury."
+          },
+          "modernTechnology": {
+            "title": "Modern Technology",
+            "description1": "We take care of your comfortable and energy-efficient living. All apartments feature air recuperation and underfloor heating, with photovoltaic panels and cogeneration units for sustainable energy.",
+            "description2": "Rainwater collection systems and smart building management ensure reduced monthly costs."
+          },
+          "comprehensiveAmenities": {
+            "title": "Comprehensive Amenities",
+            "description1": "The complex includes 200 apartments and non-residential spaces with room for galleries, cafés, bakeries, fitness centers, and other civic amenities.",
+            "description2": "Inner courtyard features children's corner, fountain, clock tower, and communal outdoor spaces."
+          }
+        },
+        "apartmentStandards": {
+          "title": "Premium Construction Standards",
+          "subtitle": "Reducing energy consumption is our priority. Discover the sustainable features that make your home efficient and comfortable.",
+          "standards": {
+            "airRecuperation": {
+              "name": "Air Recuperation",
+              "description": "Fresh air ventilation system for healthy living"
+            },
+            "underfloorHeating": {
+              "name": "Underfloor Heating",
+              "description": "Efficient and comfortable heating system"
+            },
+            "photovoltaicPanels": {
+              "name": "Photovoltaic Panels",
+              "description": "Solar panels with battery storage"
+            },
+            "cogenerationUnit": {
+              "name": "Cogeneration Unit",
+              "description": "Combined heat and power generation"
+            },
+            "rainwaterCollection": {
+              "name": "Rainwater Collection",
+              "description": "Sustainable water management system"
+            },
+            "smartTechnology": {
+              "name": "Smart Technology",
+              "description": "Modern building management systems"
+            },
+            "premiumMaterials": {
+              "name": "Premium Materials",
+              "description": "High-quality finishes and construction"
+            },
+            "energyEfficient": {
+              "name": "Energy Efficient",
+              "description": "Reduced monthly operating costs"
+            },
+            "soundInsulation": {
+              "name": "Sound Insulation",
+              "description": "Peaceful living environment"
+            },
+            "balconiesTerraces": {
+              "name": "Balconies & Terraces",
+              "description": "Outdoor living spaces with views"
+            }
+          }
+        },
+        "architecturalAwards": {
+          "title": "Award-Winning Architecture",
+          "subtitle": "Jiří Opočenský and Štěpán Valouch are recipients of the Czech Architecture Award 2020",
+          "awards": {
+            "czechArchitectureAward": {
+              "name": "Česká cena za architekturu 2020",
+              "description": "Czech Architecture Award 2020",
+              "architect": "OV-A Studio"
+            },
+            "experience": {
+              "name": "15+ Years Experience",
+              "description": "Successfully completed projects",
+              "architect": "Jiří Opočenský & Štěpán Valouch"
+            },
+            "uniqueSolutions": {
+              "name": "Unique Solutions",
+              "description": "Functional, structural and poetic architecture",
+              "architect": "Award-winning team"
+            }
+          }
+        },
+        "exteriorViews": {
+          "title": "Exterior Views & Architecture",
+          "subtitle": "Explore the unique industrial heritage and modern architectural fusion",
+          "exteriorView": "Exterior View"
+        },
+        "location": {
+          "title": "Perfect Location in Liberec Center",
+          "description": "Together with Staré and Nové Město, Kristiánov forms the central triangle of Liberec. Located in the east of Liberec, this urban district is home to over 5,000 residents and was created with the aim of building a representative environment around the adjacent castle complex and famous Liebieg Palace.",
+          "features": {
+            "cityCenter": {
+              "feature": "City Center",
+              "time": "0 min",
+              "description": "Heart of Liberec"
+            },
+            "shopping": {
+              "feature": "Shopping",
+              "time": "1-3 min",
+              "description": "Lidl, Billa, Forum Liberec"
+            },
+            "publicTransport": {
+              "feature": "Public Transport",
+              "time": "2 min",
+              "description": "Fügnerova bus stop"
+            },
+            "castlePark": {
+              "feature": "Castle Park",
+              "time": "1 min",
+              "description": "Beautiful green space"
+            }
+          }
+        },
+        "availableUnits": {
+          "title": "Choose Your Dream Home",
+          "description": "For detailed information about available units, pricing, and current availability, please contact our sales team directly.",
+          "contactMe": "Contact Me",
+          "forUnitInfo": "For Unit Information",
+          "getUnitDetails": "Get Unit Details"
+        }
+      }
+    },
+    "overviewPages": {
+      "czechRepublic": {
+        "hero": {
+          "title": "Czech Republic",
+          "subtitle": "Quality developer projects in the heart of Europe"
+        },
+        "projects": {
+          "badge": "Our Projects",
+          "title": "Featured Development Projects",
+          "subtitle": "Discover our premium residential developments across the Czech Republic",
+          "viewProjectDetails": "View Project Details",
+          "completed": "completed",
+          "sold": "sold"
+        },
+        "projectsData": {
+          "trianglPark": {
+            "title": "Triangl Park",
+            "location": "Plzeň-Bory",
+            "status": "Third stage now selling",
+            "description": "Unique residential concept in southern Plzeň-Bory with three distinct living standards",
+            "features": ["Garden Suite", "Family Home", "Penthouse Lodge"],
+            "stages": [
+              { "name": "First Stage", "status": "Completed", "units": "Sold out" },
+              { "name": "Second Stage", "status": "Completed", "units": "Sold out" },
+              { "name": "Third Stage", "status": "Selling now", "units": "38 available" }
+            ]
+          },
+          "iconPark": {
+            "title": "ICON Park Kladno",
+            "location": "Kladno",
+            "status": "Ready for move-in",
+            "description": "Modern and comfortable living in the new residential district of Kladno",
+            "features": ["1+kk to 4+kk", "Award Winner 2024", "Ready for move-in"],
+            "stages": [
+              { "name": "Project Status", "status": "Completed", "units": "Ready for move-in" }
+            ]
+          },
+          "englishEmbankment": {
+            "title": "English Embankment Palace",
+            "location": "Plzeň Center",
+            "status": "Construction in progress",
+            "description": "Luxury palace-style living in the heart of Plzeň's historic center",
+            "features": ["Luxury Apartments", "Commercial Space", "Park Courtyard"],
+            "stages": [
+              { "name": "Construction", "status": "In Progress", "units": "Completion 2028" }
+            ]
+          },
+          "horovice": {
+            "title": "Bydlení Hořovice",
+            "location": "Hořovice",
+            "status": "Now selling",
+            "description": "From the foundation up - a good place for life between Plzeň and Prague",
+            "features": ["Brick Construction", "Custom Kitchens", "3D Configurator"],
+            "stages": [
+              { "name": "Project Status", "status": "Now Selling", "units": "Contact for details" }
+            ]
+          },
+          "tiskarnaKristianov": {
+            "title": "Tiskárna Kristiánov",
+            "location": "Liberec Center",
+            "status": "Second stage now selling",
+            "description": "Living with a story in the heart of Liberec - industrial heritage meets modern luxury",
+            "features": ["Industrial Heritage", "Award-Winning Architecture", "200 Units"],
+            "stages": [
+              { "name": "Second Stage", "status": "Now Selling", "units": "Contact for details" }
+            ]
+          }
+        }
+      },
+      "spain": {
+        "hero": {
+          "title": "Spain - Costa del Sol",
+          "subtitle": "Luxury developer projects on the sunny coast of Spain"
+        }
       }
     },
     "whyChoose": {

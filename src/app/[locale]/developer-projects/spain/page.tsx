@@ -89,10 +89,10 @@ export default function DeveloperProjectsSpain() {
                             </Link>
                         </div>
                         <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">
-                            {t('hero.title')}
+                            {t('overviewPages.spain.hero.title')}
                         </h3>
                         <p className="text-white/70 text-lg max-w-2xl mx-auto mt-4">
-                            {t('hero.subtitle')}
+                            {t('overviewPages.spain.hero.subtitle')}
                         </p>
                     </div>
                 </div>

@@ -9,103 +9,102 @@ import Footer from "../../../components/footer";
 import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
 
-const projectFeatures = [
-    {
-        name: "Location",
-        value: "Hořovice",
-        description: "Between Plzeň & Prague",
-        icon: "📍"
-    },
-    {
-        name: "Construction",
-        value: "Brick",
-        description: "300mm red brick walls",
-        icon: "🧱"
-    },
-    {
-        name: "Sound Insulation",
-        value: "Premium",
-        description: "Excellent privacy",
-        icon: "🔇"
-    },
-    {
-        name: "Custom Kitchens",
-        value: "Included",
-        description: "Tailored to your apartment",
-        icon: "🍳"
-    }
-];
-
-const apartmentTypes = [
-    { type: "1+kk", size: "Various sizes", description: "Perfect for singles or couples" },
-    { type: "2+kk", size: "Various sizes", description: "Ideal for young families" },
-    { type: "3+kk", size: "Various sizes", description: "Great for growing families" },
-    { type: "4+kk", size: "Various sizes", description: "Spacious family living" }
-];
-
-const locationFeatures = [
-    { feature: "Plzeň", time: "30 min", description: "Quick access to Plzeň" },
-    { feature: "Prague", time: "45 min", description: "Easy connection to capital" },
-    { feature: "Local Services", time: "5 min", description: "Everything within reach" },
-    { feature: "Nature", time: "2 min", description: "Green spaces nearby" }
-];
-
-const amenities = [
-    { name: "Custom Kitchens", description: "Built-in kitchens tailored to your apartment", icon: "🍳" },
-    { name: "Built-in Wardrobes", description: "Custom storage solutions included", icon: "👕" },
-    { name: "Sound Insulation", description: "300mm brick walls for complete privacy", icon: "🔇" },
-    { name: "Air Conditioning", description: "Preparation for climate control systems", icon: "❄️" },
-    { name: "Smart Screens", description: "Preparation for electric screens and blinds", icon: "🪟" },
-    { name: "Parking", description: "One reserved space per apartment", icon: "🚗" }
-];
-
-const apartmentStandards = [
-    { name: "Sound-Insulating Walls", description: "300mm red brick construction for complete privacy" },
-    { name: "Air Conditioning Prep", description: "Ready for climate control installation" },
-    { name: "Smart Screen Prep", description: "Preparation for electric screens and blinds" },
-    { name: "Custom Kitchen", description: "Kitchen tailored to your apartment layout" },
-    { name: "Built-in Wardrobes", description: "Custom storage solutions included" },
-    { name: "Security Doors", description: "High-quality entrance doors with security features" },
-    { name: "Timeless Bathrooms", description: "Quality tiles and modern sanitary equipment" },
-    { name: "Chemical-Free Floors", description: "Egger Eclic laminate floors from sustainable sources" },
-    { name: "Wooden Doors", description: "Lamistone doors with wooden construction and stainless hardware" },
-    { name: "French Windows", description: "Large windows with balcony, terrace, or garden access" }
-];
-
-const exteriorPhotos = [
-    { src: "/images/projects/czech-republic/horovice/horovice-10.webp", alt: "Building Exterior View" },
-    { src: "/images/projects/czech-republic/horovice/horovice-04.webp", alt: "Neighborhood View" },
-    { src: "/images/projects/czech-republic/horovice/horovice-05.webp", alt: "Garden Areas" },
-    { src: "/images/projects/czech-republic/horovice/horovice-06.webp", alt: "Parking Area" },
-    { src: "/images/projects/czech-republic/horovice/horovice-08.webp", alt: "Playground" },
-];
-
-const interiorVisualizations = [
-    { src: "/images/projects/czech-republic/horovice/horovice-01.webp", alt: "1+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/horovice/horovice-03.webp", alt: "2+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/horovice/horovice-07.webp", alt: "3+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/horovice/horovice-17.webp", alt: "4+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/horovice/horovice-18.webp", alt: "Custom Kitchen Design" },
-    { src: "/images/projects/czech-republic/horovice/horovice-19.webp", alt: "Built-in Wardrobes" },
-    { src: "/images/projects/czech-republic/horovice/horovice-20.webp", alt: "Bathroom Design" },
-    { src: "/images/projects/czech-republic/horovice/horovice-21.webp", alt: "Living Room Layout" },
-    { src: "/images/projects/czech-republic/horovice/horovice-22.webp", alt: "Living Room Layout" },
-    { src: "/images/projects/czech-republic/horovice/horovice-23.webp", alt: "Living Room Layout" },
-    { src: "/images/projects/czech-republic/horovice/horovice-24.webp", alt: "Living Room Layout" }
-];
-
-const projectBenefits = [
-    { name: "Community Living", description: "Active WhatsApp groups and resident feedback system" },
-    { name: "Ongoing Development", description: "Continuous neighborhood improvements and enhancements" },
-    { name: "Quality Materials", description: "Timeless design with durable, long-lasting materials" },
-    { name: "Custom Solutions", description: "Kitchens and wardrobes tailored to each apartment" },
-    { name: "Smart Preparation", description: "Ready for modern amenities like air conditioning" },
-    { name: "Privacy Focus", description: "Excellent sound insulation for peaceful living" }
-];
-
 export default function HorovicePage() {
-    const t = useTranslations('developerProjects.czechRepublic');
-    const tCategories = useTranslations('developerProjects.categories');
+    const t = useTranslations('developerProjects.czechRepublic.horovice');
+
+    const projectFeatures = [
+        {
+            name: t('projectFeatures.location.name'),
+            value: t('projectFeatures.location.value'),
+            description: t('projectFeatures.location.description'),
+            icon: "📍"
+        },
+        {
+            name: t('projectFeatures.construction.name'),
+            value: t('projectFeatures.construction.value'),
+            description: t('projectFeatures.construction.description'),
+            icon: "🧱"
+        },
+        {
+            name: t('projectFeatures.soundInsulation.name'),
+            value: t('projectFeatures.soundInsulation.value'),
+            description: t('projectFeatures.soundInsulation.description'),
+            icon: "🔇"
+        },
+        {
+            name: t('projectFeatures.customKitchens.name'),
+            value: t('projectFeatures.customKitchens.value'),
+            description: t('projectFeatures.customKitchens.description'),
+            icon: "🍳"
+        }
+    ];
+
+    const apartmentTypes = [
+        { type: "1+kk", size: "Various sizes", description: "Perfect for singles or couples" },
+        { type: "2+kk", size: "Various sizes", description: "Ideal for young families" },
+        { type: "3+kk", size: "Various sizes", description: "Great for growing families" },
+        { type: "4+kk", size: "Various sizes", description: "Spacious family living" }
+    ];
+
+    const locationFeatures = [
+        { feature: t('location.features.plzen.feature'), time: t('location.features.plzen.time'), description: t('location.features.plzen.description') },
+        { feature: t('location.features.prague.feature'), time: t('location.features.prague.time'), description: t('location.features.prague.description') },
+        { feature: t('location.features.localServices.feature'), time: t('location.features.localServices.time'), description: t('location.features.localServices.description') },
+        { feature: t('location.features.nature.feature'), time: t('location.features.nature.time'), description: t('location.features.nature.description') }
+    ];
+
+    const amenities = [
+        { name: t('apartmentStandards.standards.customKitchen.name'), description: t('apartmentStandards.standards.customKitchen.description'), icon: "🍳" },
+        { name: t('apartmentStandards.standards.builtInWardrobes.name'), description: t('apartmentStandards.standards.builtInWardrobes.description'), icon: "👕" },
+        { name: t('apartmentStandards.standards.soundInsulatingWalls.name'), description: t('apartmentStandards.standards.soundInsulatingWalls.description'), icon: "🔇" },
+        { name: t('apartmentStandards.standards.airConditioningPrep.name'), description: t('apartmentStandards.standards.airConditioningPrep.description'), icon: "❄️" },
+        { name: t('apartmentStandards.standards.smartScreenPrep.name'), description: t('apartmentStandards.standards.smartScreenPrep.description'), icon: "🪟" },
+        { name: "Parking", description: "One reserved space per apartment", icon: "🚗" }
+    ];
+
+    const apartmentStandards = [
+        { name: t('apartmentStandards.standards.soundInsulatingWalls.name'), description: t('apartmentStandards.standards.soundInsulatingWalls.description') },
+        { name: t('apartmentStandards.standards.airConditioningPrep.name'), description: t('apartmentStandards.standards.airConditioningPrep.description') },
+        { name: t('apartmentStandards.standards.smartScreenPrep.name'), description: t('apartmentStandards.standards.smartScreenPrep.description') },
+        { name: t('apartmentStandards.standards.customKitchen.name'), description: t('apartmentStandards.standards.customKitchen.description') },
+        { name: t('apartmentStandards.standards.builtInWardrobes.name'), description: t('apartmentStandards.standards.builtInWardrobes.description') },
+        { name: t('apartmentStandards.standards.securityDoors.name'), description: t('apartmentStandards.standards.securityDoors.description') },
+        { name: t('apartmentStandards.standards.timelessBathrooms.name'), description: t('apartmentStandards.standards.timelessBathrooms.description') },
+        { name: t('apartmentStandards.standards.chemicalFreeFloors.name'), description: t('apartmentStandards.standards.chemicalFreeFloors.description') },
+        { name: t('apartmentStandards.standards.woodenDoors.name'), description: t('apartmentStandards.standards.woodenDoors.description') },
+        { name: t('apartmentStandards.standards.frenchWindows.name'), description: t('apartmentStandards.standards.frenchWindows.description') }
+    ];
+
+    const exteriorPhotos = [
+        { src: "/images/projects/czech-republic/horovice/horovice-10.webp", alt: "Building Exterior View", building: "Building Exterior" },
+        { src: "/images/projects/czech-republic/horovice/horovice-04.webp", alt: "Neighborhood View", building: "Neighborhood" },
+        { src: "/images/projects/czech-republic/horovice/horovice-05.webp", alt: "Garden Areas", building: "Garden Areas" },
+        { src: "/images/projects/czech-republic/horovice/horovice-06.webp", alt: "Parking Area", building: "Parking Area" },
+        { src: "/images/projects/czech-republic/horovice/horovice-08.webp", alt: "Playground", building: "Playground" },
+    ];
+
+    const interiorVisualizations = [
+        { src: "/images/projects/czech-republic/horovice/horovice-01.webp", alt: "1+kk Apartment Layout", type: "1+kk Layout" },
+        { src: "/images/projects/czech-republic/horovice/horovice-03.webp", alt: "2+kk Apartment Layout", type: "2+kk Layout" },
+        { src: "/images/projects/czech-republic/horovice/horovice-07.webp", alt: "3+kk Apartment Layout", type: "3+kk Layout" },
+        { src: "/images/projects/czech-republic/horovice/horovice-17.webp", alt: "4+kk Apartment Layout", type: "4+kk Layout" },
+        { src: "/images/projects/czech-republic/horovice/horovice-18.webp", alt: "Custom Kitchen Design", type: "Kitchen Design" },
+        { src: "/images/projects/czech-republic/horovice/horovice-19.webp", alt: "Built-in Wardrobes", type: "Built-in Wardrobes" },
+        { src: "/images/projects/czech-republic/horovice/horovice-20.webp", alt: "Bathroom Design", type: "Bathroom Design" },
+        { src: "/images/projects/czech-republic/horovice/horovice-21.webp", alt: "Living Room Layout", type: "Living Room" },
+        { src: "/images/projects/czech-republic/horovice/horovice-22.webp", alt: "Living Room Layout", type: "Living Room" },
+        { src: "/images/projects/czech-republic/horovice/horovice-23.webp", alt: "Living Room Layout", type: "Living Room" },
+        { src: "/images/projects/czech-republic/horovice/horovice-24.webp", alt: "Living Room Layout", type: "Living Room" }
+    ];
+
+    const projectBenefits = [
+        { name: "Community Living", description: "Active WhatsApp groups and resident feedback system" },
+        { name: "Ongoing Development", description: "Continuous neighborhood improvements and enhancements" },
+        { name: "Quality Materials", description: "Timeless design with durable, long-lasting materials" },
+        { name: "Custom Solutions", description: "Kitchens and wardrobes tailored to each apartment" },
+        { name: "Smart Preparation", description: "Ready for modern amenities like air conditioning" },
+        { name: "Privacy Focus", description: "Excellent sound insulation for peaceful living" }
+    ];
 
     return (
         <>
@@ -121,14 +120,14 @@ export default function HorovicePage() {
                         <div className="mb-4">
                             <Link href="/developer-projects/czech-republic" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
-                                Back to Projects
+                                {t('hero.backToProjects')}
                             </Link>
                         </div>
                         <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">
-                            Bydlení Hořovice
+                            {t('hero.title')}
                         </h3>
                         <p className="text-white/70 text-lg max-w-2xl mx-auto mt-4">
-                            From the foundation up - a good place for life. We asked ourselves what an ideal place to live should look like, and then we created it.
+                            {t('hero.subtitle')}
                         </p>
                         <div className="mt-8 flex items-center justify-center gap-6">
                             {projectFeatures.map((feature, index) => (
@@ -155,23 +154,17 @@ export default function HorovicePage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">About the Project</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('aboutProject.title')}</h2>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                Bydlení Hořovice represents our vision of creating an ideal place to live. Located between Plzeň and Prague, 
-                                in a city that's growing and developing, this new neighborhood offers the perfect balance for those who 
-                                don't want to live in a big city or village, but want everything within reach.
+                                {t('aboutProject.description1')}
                             </p>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                We've built this project from the foundation up with honest, thorough work. Our buildings are constructed 
-                                as solid brick structures using quality red bricks that provide excellent sound insulation for privacy and peace. 
-                                We've selected timeless materials that last, and we ensure custom kitchen and built-in wardrobe production 
-                                tailored to your chosen apartment.
+                                {t('aboutProject.description2')}
                             </p>
                             <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                                <h3 className="font-semibold text-green-800 mb-2">Community Focus</h3>
+                                <h3 className="font-semibold text-green-800 mb-2">{t('aboutProject.communityFocus.title')}</h3>
                                 <p className="text-green-700">
-                                    We live and breathe this project with pride. We're constantly building and improving our neighborhood, 
-                                    staying connected with residents through WhatsApp groups and always turning feedback into action.
+                                    {t('aboutProject.communityFocus.description')}
                                 </p>
                             </div>
                         </div>
@@ -192,9 +185,9 @@ export default function HorovicePage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">What Makes Us Special</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('projectBenefits.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the unique benefits that set Bydlení Hořovice apart
+                            {t('projectBenefits.subtitle')}
                         </p>
                     </div>
                     
@@ -204,14 +197,13 @@ export default function HorovicePage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiMapPin className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Perfect Location</h3>
+                                <h3 className="text-2xl font-bold">{t('projectBenefits.perfectLocation.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                Located between Plzeň and Prague, in a city that's growing and developing. This new neighborhood offers 
-                                everything you need: shops, kindergartens, work opportunities, healthcare, culture, and nature - all within reach.
+                                {t('projectBenefits.perfectLocation.description1')}
                             </p>
                             <p className="text-slate-600">
-                                Perfect for those who don't want to live in a big city or village, but want to have everything at hand.
+                                {t('projectBenefits.perfectLocation.description2')}
                             </p>
                         </div>
                         
@@ -220,14 +212,13 @@ export default function HorovicePage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiHome className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Quality Construction</h3>
+                                <h3 className="text-2xl font-bold">{t('projectBenefits.qualityConstruction.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                We want you to get an honest piece of our work for your money - an apartment that becomes your comfortable 
-                                and valuable home. That's why we build our buildings as solid brick structures.
+                                {t('projectBenefits.qualityConstruction.description1')}
                             </p>
                             <p className="text-slate-600">
-                                Using quality red bricks that provide excellent sound insulation for privacy and peace, with timeless design materials that last.
+                                {t('projectBenefits.qualityConstruction.description2')}
                             </p>
                         </div>
                         
@@ -236,15 +227,13 @@ export default function HorovicePage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiUsers className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Active Community</h3>
+                                <h3 className="text-2xl font-bold">{t('projectBenefits.activeCommunity.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                We live and breathe this project with pride. We're constantly building and improving our neighborhood, 
-                                staying connected with residents through WhatsApp groups and always turning feedback into action.
+                                {t('projectBenefits.activeCommunity.description1')}
                             </p>
                             <p className="text-slate-600">
-                                It's not just about how you feel behind your apartment door - home is made by pleasant neighbors, 
-                                cleanliness throughout the neighborhood, a sense of security, and details like parking and playgrounds.
+                                {t('projectBenefits.activeCommunity.description2')}
                             </p>
                         </div>
                         
@@ -253,15 +242,13 @@ export default function HorovicePage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiHeart className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Diverse Apartment Options</h3>
+                                <h3 className="text-2xl font-bold">{t('projectBenefits.diverseApartmentOptions.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                Our neighborhood offers a diverse range of apartment layouts to create a varied and pleasant community. 
-                                You'll find apartments for families with children, young couples starting out, and those seeking comfort 
-                                and modern living with perfect access to services.
+                                {t('projectBenefits.diverseApartmentOptions.description1')}
                             </p>
                             <p className="text-slate-600">
-                                From 1+kk to 4+kk layouts, there's something for everyone's needs and lifestyle.
+                                {t('projectBenefits.diverseApartmentOptions.description2')}
                             </p>
                         </div>
                     </div>
@@ -272,9 +259,9 @@ export default function HorovicePage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Apartment Standards & Benefits</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('apartmentStandards.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Carefully thought-out and honest standards you won't find elsewhere
+                            {t('apartmentStandards.subtitle')}
                         </p>
                     </div>
 
@@ -298,9 +285,9 @@ export default function HorovicePage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Neighborhood & Exterior Views</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('externalViews.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Explore the beautiful neighborhood and architectural details of Bydlení Hořovice
+                            {t('externalViews.subtitle')}
                         </p>
                     </div>
                     
@@ -317,7 +304,7 @@ export default function HorovicePage() {
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <div className="text-center text-white">
                                         <div className="text-sm font-semibold">{photo.building}</div>
-                                        <div className="text-xs opacity-90">Exterior View</div>
+                                        <div className="text-xs opacity-90">{t('externalViews.exteriorView')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -330,9 +317,9 @@ export default function HorovicePage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Interior Visualizations</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('interiorVisualizations.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the interior layouts and custom features for all apartment types
+                            {t('interiorVisualizations.subtitle')}
                         </p>
                     </div>
                     
@@ -349,7 +336,7 @@ export default function HorovicePage() {
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <div className="text-center text-white">
                                         <div className="text-sm font-semibold">{visualization.type}</div>
-                                        <div className="text-xs opacity-90">Interior Design</div>
+                                        <div className="text-xs opacity-90">{t('interiorVisualizations.interiorDesign')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -362,9 +349,9 @@ export default function HorovicePage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">3D Apartment Configurator</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('configurator.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Create your perfect apartment interior through our interactive 3D configurator
+                            {t('configurator.subtitle')}
                         </p>
                     </div>
 
@@ -372,37 +359,36 @@ export default function HorovicePage() {
                         <div className="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                             <span className="text-3xl">🏠</span>
                         </div>
-                        <h3 className="text-3xl font-bold mb-6">Design Your Dream Home</h3>
+                        <h3 className="text-3xl font-bold mb-6">{t('configurator.mainTitle')}</h3>
                         <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-                            Choose from a wide range of floor materials, tiles, and wall coverings. Select the color and shape of doors, 
-                            or design your future kitchen that we'll custom-manufacture for you. Make buying an apartment more joy than worry.
+                            {t('configurator.description')}
                         </p>
                         <div className="grid lg:grid-cols-3 gap-8 mb-8">
                             <div className="bg-slate-50 p-6 rounded-xl">
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">🎨</span>
                                 </div>
-                                <h4 className="font-semibold mb-2">Material Selection</h4>
-                                <p className="text-slate-600 text-sm">Choose floors, tiles, and wall coverings</p>
+                                <h4 className="font-semibold mb-2">{t('configurator.features.materialSelection.title')}</h4>
+                                <p className="text-slate-600 text-sm">{t('configurator.features.materialSelection.description')}</p>
                             </div>
                             <div className="bg-slate-50 p-6 rounded-xl">
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">🚪</span>
                                 </div>
-                                <h4 className="font-semibold mb-2">Door Design</h4>
-                                <p className="text-slate-600 text-sm">Select colors and shapes for your doors</p>
+                                <h4 className="font-semibold mb-2">{t('configurator.features.doorDesign.title')}</h4>
+                                <p className="text-slate-600 text-sm">{t('configurator.features.doorDesign.description')}</p>
                             </div>
                             <div className="bg-slate-50 p-6 rounded-xl">
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span className="text-2xl">🍳</span>
                                 </div>
-                                <h4 className="font-semibold mb-2">Kitchen Design</h4>
-                                <p className="text-slate-600 text-sm">Design your custom kitchen layout</p>
+                                <h4 className="font-semibold mb-2">{t('configurator.features.kitchenDesign.title')}</h4>
+                                <p className="text-slate-600 text-sm">{t('configurator.features.kitchenDesign.description')}</p>
                             </div>
                         </div>
                         <Link href="https://bydlenihorovice.cz/konfigurator-bytu" target="_blank">
                             <button className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors">
-                                Launch 3D Configurator
+                                {t('configurator.launchButton')}
                             </button>
                         </Link>
                     </div>
@@ -414,31 +400,29 @@ export default function HorovicePage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">Visit Our Sample Apartment</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('sampleApartment.title')}</h2>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                Want to see the equipment of your future apartment with your own eyes? Touch the materials, 
-                                feel the surfaces, and explore the quality of workmanship?
+                                {t('sampleApartment.description1')}
                             </p>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                We'd be happy to welcome you to our sample apartment, right in Hořovice. Experience the quality 
-                                and craftsmanship that goes into every detail of your future home.
+                                {t('sampleApartment.description2')}
                             </p>
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <FiCheck className="h-6 w-6 text-green-600 flex-shrink-0" />
-                                    <span className="text-slate-700">See real materials and finishes</span>
+                                    <span className="text-slate-700">{t('sampleApartment.benefits.realMaterials')}</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <FiCheck className="h-6 w-6 text-green-600 flex-shrink-0" />
-                                    <span className="text-slate-700">Experience the quality firsthand</span>
+                                    <span className="text-slate-700">{t('sampleApartment.benefits.experienceQuality')}</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <FiCheck className="h-6 w-6 text-green-600 flex-shrink-0" />
-                                    <span className="text-slate-700">Meet our team in person</span>
+                                    <span className="text-slate-700">{t('sampleApartment.benefits.meetTeam')}</span>
                                 </div>
                             </div>
                             <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
-                                Book Your Visit
+                                {t('sampleApartment.bookButton')}
                             </button>
                         </div>
                         <div className="relative">
@@ -459,14 +443,12 @@ export default function HorovicePage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">Perfect Location Between Two Cities</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('location.title')}</h2>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                Located between Plzeň and Prague, in a city that's growing and developing. This new neighborhood offers 
-                                everything you need: shops, kindergartens, work opportunities, healthcare, culture, and nature - all within reach.
+                                {t('location.description1')}
                             </p>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                Perfect for those who don't want to live in a big city or village, but want to have everything at hand. 
-                                Enjoy the proximity of nature while benefiting from excellent connections to both cities.
+                                {t('location.description2')}
                             </p>
                             <div className="grid grid-cols-2 gap-4">
                                 {locationFeatures.map((feature, index) => (
@@ -499,17 +481,16 @@ export default function HorovicePage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="text-4xl font-bold mb-6">Choose Your Apartment</h2>
+                        <h2 className="text-4xl font-bold mb-6">{t('availableUnits.title')}</h2>
                         <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-                            For detailed information about available units, pricing, and current availability, 
-                            please contact our sales team directly.
+                            {t('availableUnits.description')}
                         </p>
                         <div className="bg-white p-8 rounded-xl shadow-lg inline-block">
-                            <div className="text-4xl font-bold text-green-600 mb-2">Contact Us</div>
-                            <div className="text-xl mb-4">For Unit Information</div>
+                            <div className="text-4xl font-bold text-green-600 mb-2">{t('availableUnits.contactUs')}</div>
+                            <div className="text-xl mb-4">{t('availableUnits.forUnitInfo')}</div>
                             <Link href="#contact">
                                 <button className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
-                                    Get Unit Details
+                                    {t('availableUnits.getUnitDetails')}
                                 </button>
                             </Link>
                         </div>

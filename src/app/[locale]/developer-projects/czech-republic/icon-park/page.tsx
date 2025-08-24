@@ -2,7 +2,7 @@
 import React from "react";
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { FiArrowLeft, FiCheck, FiMapPin, FiHome, FiStar, FiCalendar, FiUsers, FiPhone, FiMail, FiAward, FiBuilding } from 'react-icons/fi';
+import { FiArrowLeft, FiCheck, FiMapPin, FiHome, FiStar, FiCalendar, FiUsers, FiPhone, FiMail, FiAward } from 'react-icons/fi';
 
 import Navbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
@@ -10,82 +10,81 @@ import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
 import PhotoGallery from "../../components/photo-gallery";
 
-const projectStages = [
-    {
-        name: "Construction Status",
-        status: "Completed & Ready for Move-in",
-        completion: "Q3 2025",
-        details: "Buildings and apartments are completely finished, including outdoor fitness zone and children's playground",
-        image: "/images/projects/czech-republic/icon-park/icon-park-34.webp"
-    }
-];
-
-const buildingInfo = [
-    { name: "Building A1", floors: 4, units: "Various", status: "Completed" },
-    { name: "Building A2", floors: 4, units: "Various", status: "Completed" },
-    { name: "Building B1", floors: 4, units: "Various", status: "Completed" },
-    { name: "Building B2", floors: 4, units: "Various", status: "Completed" },
-    { name: "Building C1", floors: 4, units: "Various", status: "Completed" },
-    { name: "Building C2", floors: 4, units: "Various", status: "Completed" },
-    { name: "Building C3", floors: 4, units: "Various", status: "Completed" }
-];
-
-const apartmentTypes = [
-    { type: "1+kk", description: "Compact living for singles or couples" },
-    { type: "2+kk", description: "Perfect for couples or small families" },
-    { type: "3+kk", description: "Ideal for growing families" },
-    { type: "4+kk", description: "Spacious living for larger families" }
-];
-
-const locationFeatures = [
-    { feature: "Kladno Center", time: "5 min", description: "Quick access to city center" },
-    { feature: "Václav Havel Airport", time: "10 min", description: "International airport nearby" },
-    { feature: "Veleslavín Station", time: "20 min", description: "Direct connection to Prague" },
-    { feature: "Masaryk Station", time: "30 min", description: "Main Prague railway station" }
-];
-
-const amenities = [
-    { name: "Café", description: "Energy boost and sweet endings with the whole family", icon: "☕" },
-    { name: "Kindergarten", description: "Quality early education for children", icon: "🏫" },
-    { name: "Playground", description: "Safe outdoor play area for children", icon: "🎠" },
-    { name: "Outdoor Gym", description: "Fitness equipment in fresh air", icon: "💪" },
-    { name: "Public Spaces", description: "Community areas for socializing", icon: "🌳" }
-];
-
-const exteriorPhotos = [
-    { src: "/images/projects/czech-republic/icon-park/icon-park-01.webp", alt: "Building A1 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-02.webp", alt: "Building A2 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-03.webp", alt: "Building B1 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-04.webp", alt: "Building B2 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-05.webp", alt: "Building C1 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-06.webp", alt: "Building C2 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-07.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-08.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-09.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-10.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-12.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-13.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-14.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-20.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-21.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-22.webp", alt: "Building C3 Exterior" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-23.webp", alt: "Building C3 Exterior" }
-];
-
-const interiorVisualizations = [
-    { src: "/images/projects/czech-republic/icon-park/icon-park-11.webp", alt: "1+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-15.webp", alt: "2+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-16.webp", alt: "3+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-17.webp", alt: "4+kk Apartment Layout" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-18.webp", alt: "Kitchen Design" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-19.webp", alt: "Living Room Design" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-24.webp", alt: "Bedroom Design" },
-    { src: "/images/projects/czech-republic/icon-park/icon-park-25.webp", alt: "Bathroom Design" }
-];
-
 export default function IconParkPage() {
-    const t = useTranslations('developerProjects.czechRepublic');
-    const tCategories = useTranslations('developerProjects.categories');
+    const t = useTranslations('developerProjects.czechRepublic.iconPark');
+
+    const projectStages = [
+        {
+            name: t('projectStatus.constructionStatus'),
+            status: t('projectStatus.completedReady'),
+            completion: t('projectStatus.completionQ3'),
+            details: t('projectStatus.completionDetails'),
+            image: "/images/projects/czech-republic/icon-park/icon-park-34.webp"
+        }
+    ];
+
+    const buildingInfo = [
+        { name: "Building A1", floors: 4, units: "Various", status: "Completed" },
+        { name: "Building A2", floors: 4, units: "Various", status: "Completed" },
+        { name: "Building B1", floors: 4, units: "Various", status: "Completed" },
+        { name: "Building B2", floors: 4, units: "Various", status: "Completed" },
+        { name: "Building C1", floors: 4, units: "Various", status: "Completed" },
+        { name: "Building C2", floors: 4, units: "Various", status: "Completed" },
+        { name: "Building C3", floors: 4, units: "Various", status: "Completed" }
+    ];
+
+    const apartmentTypes = [
+        { type: "1+kk", description: "Compact living for singles or couples" },
+        { type: "2+kk", description: "Perfect for couples or small families" },
+        { type: "3+kk", description: "Ideal for growing families" },
+        { type: "4+kk", description: "Spacious living for larger families" }
+    ];
+
+    const locationFeatures = [
+        { feature: t('location.features.kladnoCenter.feature'), time: t('location.features.kladnoCenter.time'), description: t('location.features.kladnoCenter.description') },
+        { feature: t('location.features.vaclavHavelAirport.feature'), time: t('location.features.vaclavHavelAirport.time'), description: t('location.features.vaclavHavelAirport.description') },
+        { feature: t('location.features.veleslavinStation.feature'), time: t('location.features.veleslavinStation.time'), description: t('location.features.veleslavinStation.description') },
+        { feature: t('location.features.masarykStation.feature'), time: t('location.features.masarykStation.time'), description: t('location.features.masarykStation.description') }
+    ];
+
+    const amenities = [
+        { name: t('amenities.cafe.name'), description: t('amenities.cafe.description'), icon: "☕" },
+        { name: t('amenities.kindergarten.name'), description: t('amenities.kindergarten.description'), icon: "🏫" },
+        { name: t('amenities.playground.name'), description: t('amenities.playground.description'), icon: "🎠" },
+        { name: t('amenities.outdoorGym.name'), description: t('amenities.outdoorGym.description'), icon: "💪" },
+        { name: t('amenities.publicSpaces.name'), description: t('amenities.publicSpaces.description'), icon: "🌳" }
+    ];
+
+    const exteriorPhotos = [
+        { src: "/images/projects/czech-republic/icon-park/icon-park-01.webp", alt: "Building A1 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-02.webp", alt: "Building A2 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-03.webp", alt: "Building B1 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-04.webp", alt: "Building B2 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-05.webp", alt: "Building C1 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-06.webp", alt: "Building C2 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-07.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-08.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-09.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-10.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-12.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-13.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-14.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-20.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-21.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-22.webp", alt: "Building C3 Exterior" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-23.webp", alt: "Building C3 Exterior" }
+    ];
+
+    const interiorVisualizations = [
+        { src: "/images/projects/czech-republic/icon-park/icon-park-11.webp", alt: "1+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-15.webp", alt: "2+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-16.webp", alt: "3+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-17.webp", alt: "4+kk Apartment Layout" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-18.webp", alt: "Kitchen Design" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-19.webp", alt: "Living Room Design" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-24.webp", alt: "Bedroom Design" },
+        { src: "/images/projects/czech-republic/icon-park/icon-park-25.webp", alt: "Bathroom Design" }
+    ];
 
     return (
         <>
@@ -101,27 +100,27 @@ export default function IconParkPage() {
                         <div className="mb-4">
                             <Link href="/developer-projects/czech-republic" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
-                                Back to Projects
+                                {t('hero.backToProjects')}
                             </Link>
                         </div>
                         <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">
-                            ICON Park Kladno
+                            {t('hero.title')}
                         </h3>
                         <p className="text-white/70 text-lg max-w-2xl mx-auto mt-4">
-                            Modern and comfortable living in the new residential district of Kladno
+                            {t('hero.subtitle')}
                         </p>
                         <div className="mt-8 flex items-center justify-center gap-8">
                             <div className="text-center">
                                 <div className="text-4xl font-bold text-white">4</div>
-                                <div className="text-white/80">Floors</div>
+                                <div className="text-white/80">{t('hero.stats.floors')}</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-4xl font-bold text-white">230</div>
-                                <div className="text-white/80">Total Units</div>
+                                <div className="text-white/80">{t('hero.stats.totalUnits')}</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-4xl font-bold text-white">1+kk - 4+kk</div>
-                                <div className="text-white/80">Layouts</div>
+                                <div className="text-white/80">{t('hero.stats.layouts')}</div>
                             </div>
                         </div>
                     </div>
@@ -141,21 +140,17 @@ export default function IconParkPage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">Your New Home Starts at ICON Park</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('projectOverview.title')}</h2>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                Looking for modern and comfortable living that meets your expectations? ICON Park in Kladno 
-                                brings the ideal combination of modern design, comfort, and a quiet location in the newly 
-                                revitalized district.
+                                {t('projectOverview.description1')}
                             </p>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                Apartments with layouts from 1+kk to 4+kk are designed with emphasis on quality and comfort, 
-                                each with its own space for relaxation - balcony, terrace, or front garden. Project completion 
-                                in 2025 means your new home is closer than you think. ICON Park is where your future begins.
+                                {t('projectOverview.description2')}
                             </p>
                             <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                                <h3 className="font-semibold text-green-800 mb-2">Ready for Move-in!</h3>
+                                <h3 className="font-semibold text-green-800 mb-2">{t('projectOverview.readyForMoveIn.title')}</h3>
                                 <p className="text-green-700">
-                                    The building has received final approval and you can start moving in this summer!
+                                    {t('projectOverview.readyForMoveIn.description')}
                                 </p>
                             </div>
                         </div>
@@ -179,24 +174,22 @@ export default function IconParkPage() {
                         <div className="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                             <FiAward className="h-12 w-12 text-white" />
                         </div>
-                        <h2 className="text-4xl font-bold mb-4">Prestigious Award Winner</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('award.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            ICON PARK received the prestigious Jury Award in the Real Estate Project of the Year 2024 competition
+                            {t('award.subtitle')}
                         </p>
                     </div>
                     
                     <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto">
                         <div className="text-center mb-6">
-                            <h3 className="text-2xl font-bold text-green-600 mb-2">Real Estate Project of the Year 2024</h3>
-                            <p className="text-slate-600">Nominated Project - Central Bohemian Region</p>
+                            <h3 className="text-2xl font-bold text-green-600 mb-2">{t('award.awardTitle')}</h3>
+                            <p className="text-slate-600">{t('award.nominatedProject')}</p>
                         </div>
                         <p className="text-lg text-slate-600 text-center leading-relaxed">
-                            "We greatly value this award, especially given the strong competition in this year's edition. 
-                            It confirms that the combination of modern architecture, quality execution, and attractive location 
-                            resonates not only with customers but also with the professional public."
+                            {t('award.quote')}
                         </p>
                         <div className="text-center mt-6">
-                            <p className="text-sm text-slate-500">- František Vladař, Investment & Project Director, BHM group</p>
+                            <p className="text-sm text-slate-500">- {t('award.attribution')}</p>
                         </div>
                     </div>
                 </div>
@@ -206,9 +199,9 @@ export default function IconParkPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">External Building Views</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('externalViews.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Explore the architectural beauty and design of all buildings in ICON Park
+                            {t('externalViews.subtitle')}
                         </p>
                     </div>
                     
@@ -232,9 +225,9 @@ export default function IconParkPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Interior Visualizations</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('interiorVisualizations.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the interior layouts and designs for all apartment types
+                            {t('interiorVisualizations.subtitle')}
                         </p>
                     </div>
                     
@@ -258,9 +251,9 @@ export default function IconParkPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Project Status</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('projectStatus.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Current construction status and completion details
+                            {t('projectStatus.subtitle')}
                         </p>
                     </div>
 
@@ -285,12 +278,12 @@ export default function IconParkPage() {
                                     </div>
                                     <div className="flex flex-col items-center justify-center">
                                         <div className="text-center">
-                                            <div className="text-2xl font-bold text-green-600 mb-2">Ready!</div>
-                                            <div className="text-slate-600">For Move-in</div>
+                                            <div className="text-2xl font-bold text-green-600 mb-2">{t('projectStatus.ready')}</div>
+                                            <div className="text-slate-600">{t('projectStatus.forMoveIn')}</div>
                                         </div>
                                         <Link href="#contact">
                                             <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-                                                Sign me up!
+                                                {t('projectStatus.signMeUp')}
                                             </button>
                                         </Link>
                                     </div>
@@ -306,15 +299,12 @@ export default function IconParkPage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">Quick Access to Work and Entertainment</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('location.title')}</h2>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                Kladno offers the ideal combination of quiet living and excellent accessibility to Prague. 
-                                In the ICON Park residential district, you have everything within reach - quality schools, 
-                                kindergartens, shops, services, restaurants, sports facilities, and cycling paths.
+                                {t('location.description1')}
                             </p>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                Additionally, you can enjoy the proximity of nature while benefiting from excellent 
-                                connections to both Kladno and the capital city.
+                                {t('location.description2')}
                             </p>
                             <div className="grid grid-cols-2 gap-4">
                                 {locationFeatures.map((feature, index) => (
@@ -347,9 +337,9 @@ export default function IconParkPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Comfortable Living with Everything Within Reach</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('amenities.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the amenities that make ICON Park a perfect place to live
+                            {t('amenities.subtitle')}
                         </p>
                     </div>
 
@@ -364,8 +354,6 @@ export default function IconParkPage() {
                     </div>
                 </div>
             </section>
-
-
 
             {/* Contact Section */}
             <GetInTuch id="contact" />

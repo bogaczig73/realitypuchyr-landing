@@ -33,44 +33,44 @@
       }
     },
     "categories": {
-        "badge": "Kategorien",
-        "subtitle": "Entdecken Sie unsere umfassende Auswahl an Entwicklerprojekten in verschiedenen Immobilientypen",
-        "title": "Immobilienkategorien",
-        "backToCategories": "Zurück zu Kategorien",
-        "backToRegions": "Zurück zu Regionen",
-        "apartments": {
-          "title": "Wohnungen",
-          "description": "Stylvolle Wohnungen verschiedener Größen und Grundrisse, ideal für Paare, Familien und Einzelpersonen. Jede Wohnung bietet modernes Design, viel natürliches Licht und oft eine Terrasse oder einen Balkon mit Meerblick."
-        },
-        "penthouses": {
-          "title": "Penthäuser",
-          "description": "Luxuriöse Penthäuser in den obersten Etagen, oft mit Panoramablick auf die Küste und privater Dachterrasse. Einige Einheiten umfassen privaten Pool oder Whirlpool."
-        },
-        "familyHouses": {
-          "title": "Familien-, Reihenhäuser und Doppelhäuser",
-          "description": "Geräumige Häuser für Familienleben, umgeben von Ruhe und Grün. Sie bieten privaten Garten, oft mit Pool, und viel Platz für den Alltag und Entspannung."
-        },
-        "villas": {
-          "title": "Villen",
-          "description": "Freistehende Villen mit Premium-Ausstattung und Betonung auf maximale Privatsphäre. Ideale Wahl für anspruchsvolle Kunden, die ein luxuriöses Refugium mit atemberaubenden Ausblicken und Premium-Lage suchen."
-        },
-        "residentialComplexes": {
-          "title": "Immobilien in Wohnkomplexen",
-          "description": "Leben in sicheren und prestigeträchtigen Komplexen, die gemeinsame Räume wie Pools, Wellness, Fitnessstudios, Gärten oder Coworking-Zentren bieten. Ideal für diejenigen, die einen gemeinschaftlichen Lebensstil suchen."
-        },
-        "hotelServices": {
-          "title": "Immobilien mit Hotel-Services",
-          "description": "Residenzen mit Zugang zu Hotel-Services wie Reinigung, Concierge, Catering oder Immobilienverwaltung. Perfekt für komfortablen und sorgenfreien Aufenthalt."
-        },
-        "golfProperties": {
-          "title": "Golf-Immobilien",
-          "description": "Immobilien in der Nähe erstklassiger Golfplätze. Ideal für Golf-Enthusiasten, die ihre Leidenschaft mit dem Leben in einer prestigeträchtigen Lage verbinden möchten."
-        },
-        "smartHomes": {
-          "title": "Smart & Green Living",
-          "description": "Moderne Projekte mit Betonung auf Nachhaltigkeit, niedrigen Energieverbrauch und umweltfreundliche Materialien. Perfekt für diejenigen, die Harmonie mit der Natur suchen."
-        }
+      "badge": "Kategorien",
+      "subtitle": "Entdecken Sie unsere umfassende Auswahl an Entwicklerprojekten in verschiedenen Immobilientypen",
+      "title": "Immobilienkategorien",
+      "backToCategories": "Zurück zu Kategorien",
+      "backToRegions": "Zurück zu Regionen",
+      "apartments": {
+        "title": "Wohnungen",
+        "description": "Stylvolle Wohnungen verschiedener Größen und Grundrisse, ideal für Paare, Familien und Einzelpersonen. Jede Wohnung bietet modernes Design, viel natürliches Licht und oft eine Terrasse oder einen Balkon mit Meerblick."
       },
+      "penthouses": {
+        "title": "Penthäuser",
+        "description": "Luxuriöse Penthäuser in den obersten Etagen, oft mit Panoramablick auf die Küste und privater Dachterrasse. Einige Einheiten umfassen privaten Pool oder Whirlpool."
+      },
+      "familyHouses": {
+        "title": "Familien-, Reihenhäuser und Doppelhäuser",
+        "description": "Geräumige Häuser für Familienleben, umgeben von Ruhe und Grün. Sie bieten privaten Garten, oft mit Pool, und viel Platz für den Alltag und Entspannung."
+      },
+      "villas": {
+        "title": "Villen",
+        "description": "Freistehende Villen mit Premium-Ausstattung und Betonung auf maximale Privatsphäre. Ideale Wahl für anspruchsvolle Kunden, die ein luxuriöses Refugium mit atemberaubenden Ausblicken und Premium-Lage suchen."
+      },
+      "residentialComplexes": {
+        "title": "Immobilien in Wohnkomplexen",
+        "description": "Leben in sicheren und prestigeträchtigen Komplexen, die gemeinsame Räume wie Pools, Wellness, Fitnessstudios, Gärten oder Coworking-Zentren bieten. Ideal für diejenigen, die einen gemeinschaftlichen Lebensstil suchen."
+      },
+      "hotelServices": {
+        "title": "Immobilien mit Hotel-Services",
+        "description": "Residenzen mit Zugang zu Hotel-Services wie Reinigung, Concierge, Catering oder Immobilienverwaltung. Perfekt für komfortablen und sorgenfreien Aufenthalt."
+      },
+      "golfProperties": {
+        "title": "Golf-Immobilien",
+        "description": "Immobilien in der Nähe erstklassiger Golfplätze. Ideal für Golf-Enthusiasten, die ihre Leidenschaft mit dem Leben in einer prestigeträchtigen Lage verbinden möchten."
+      },
+      "smartHomes": {
+        "title": "Smart & Green Living",
+        "description": "Moderne Projekte mit Betonung auf Nachhaltigkeit, niedrigen Energieverbrauch und umweltfreundliche Materialien. Perfekt für diejenigen, die Harmonie mit der Natur suchen."
+      }
+    },
     "spain": {
       "apartments": {
         "hero": {
@@ -414,10 +414,6 @@
             "title": "Menschen, die gemeinschaftliches Wohnen mit Mehrwert wünschen"
           }
         },
-        "projects": {
-          "title": "Galerie ausgewählter Immobilien in geschlossenen Komplexen",
-          "subtitle": "Erkunden Sie unsere sicheren Wohnkomplexe mit Premium-Ausstattung"
-        },
         "benefits": {
           "title": "Vorteile unserer Komplexe",
           "subtitle": "Warum unsere Wohnkomplex-Projekte wählen",
@@ -512,146 +508,142 @@
         }
       },
       "golfProperties": {
+        "hero": {
           "title": "Golf-Immobilien",
-          "description": "Immobilien in der Nähe erstklassiger Golfplätze. Ideal für Golf-Enthusiasten, die ihre Leidenschaft mit dem Leben in einer prestigeträchtigen Lage verbinden möchten.",
-          "hero": {
-            "title": "Golf-Immobilien",
-            "subtitle": "Immobilien in der Nähe erstklassiger Golfplätze"
+          "subtitle": "Immobilien in der Nähe erstklassiger Golfplätze"
+        },
+        "description": {
+          "title": "Golf-Immobilien",
+          "content": "Immobilien in der Nähe erstklassiger Golfplätze. Diese Immobilien bieten exklusives Wohnen in prestigeträchtigen Lagen mit Blick auf das Grün. Sie kombinieren Leidenschaft für Golf mit der Möglichkeit, Zeit in schöner und ruhiger Umgebung zu verbringen."
+        },
+        "whyChoose": {
+          "title": "Warum diesen Immobilientyp wählen",
+          "golfProximity": {
+            "title": "Nähe zum Golfplatz",
+            "description": "Perfekt für Golf-Liebhaber und Enthusiasten entspannten Lebensstils."
           },
-          "description": {
-            "title": "Golf-Immobilien",
-            "content": "Immobilien in der Nähe erstklassiger Golfplätze. Diese Immobilien bieten exklusives Wohnen in prestigeträchtigen Lagen mit Blick auf das Grün. Sie kombinieren Leidenschaft für Golf mit der Möglichkeit, Zeit in schöner und ruhiger Umgebung zu verbringen."
+          "luxuryLocation": {
+            "title": "Luxuriöse Lage",
+            "description": "Ruhige Umgebung mit schönen Ausblicken auf die Natur."
           },
-          "whyChoose": {
-            "title": "Warum diesen Immobilientyp wählen",
-            "golfProximity": {
-              "title": "Nähe zum Golfplatz",
-              "description": "Perfekt für Golf-Liebhaber und Enthusiasten entspannten Lebensstils."
-            },
-            "luxuryLocation": {
-              "title": "Luxuriöse Lage",
-              "description": "Ruhige Umgebung mit schönen Ausblicken auf die Natur."
-            },
-            "socialFacilities": {
-              "title": "Gesellschaftliche Einrichtungen",
-              "description": "Ideal für Treffen mit gleichgesinnten Nachbarn."
-            },
-            "activeRecreation": {
-              "title": "Aktive Erholung",
-              "description": "Möglichkeit, Sport und Entspannung zu kombinieren."
-            }
+          "socialFacilities": {
+            "title": "Gesellschaftliche Einrichtungen",
+            "description": "Ideal für Treffen mit gleichgesinnten Nachbarn."
           },
-          "keyAdvantages": {
-            "title": "Hauptvorteile",
-            "content": "Golf-Immobilien sind Synonym für Prestige und Komfort. Sie sind in ruhigen Gebieten mit schönen Ausblicken gelegen und bieten erstklassige Dienstleistungen und Einrichtungen. Sie sind eine ideale Wahl für diejenigen, die Entspannung mit aktivem Lebensstil kombinieren möchten."
-          },
-          "whoAppreciates": {
-            "title": "Wer diesen Immobilientyp schätzen wird",
-            "golfEnthusiasts": {
-              "title": "Golf-Enthusiasten, die Wohnraum in der Nähe von Plätzen suchen"
-            },
-            "prestigiousCouples": {
-              "title": "Paare, die prestigeträchtiges Wohnen suchen"
-            },
-            "exclusiveFamilies": {
-              "title": "Familien, die ruhige und exklusive Lagen bevorzugen"
-            },
-            "activeRecreation": {
-              "title": "Menschen, die Erholung mit aktiver Erholung kombinieren möchten"
-            }
-          },
-          "gallery": {
-            "title": "Galerie ausgewählter Ansichten",
-            "subtitle": "Entdecken Sie unsere Golf-Immobilien-Projekte"
-          },
-          "benefits": {
-            "title": "Vorteile von Golf-Immobilien",
-            "subtitle": "Warum unsere Golf-Immobilien-Projekte wählen",
-            "golf": {
-              "title": "Golf-Zugang",
-              "description": "Einfacher Zugang zu erstklassigen Golfplätzen und Einrichtungen."
-            },
-            "luxury": {
-              "title": "Luxuriöses Wohnen",
-              "description": "Premium-Immobilien in prestigeträchtigen Golf-Gemeinschaften."
-            },
-            "lifestyle": {
-              "title": "Aktiver Lebensstil",
-              "description": "Perfekt für aktiven Lebensstil mit ausgezeichneten Sporteinrichtungen."
-            }
+          "activeRecreation": {
+            "title": "Aktive Erholung",
+            "description": "Möglichkeit, Sport und Entspannung zu kombinieren."
           }
         },
-        "smartHomes": {
-          "title": "Smart & Green Living",
-          "description": "Moderne Projekte mit Betonung auf Nachhaltigkeit, niedrigen Energieverbrauch und umweltfreundliche Materialien. Perfekt für diejenigen, die Harmonie mit der Natur suchen.",
-          "hero": {
-            "title": "Smart & Green Living",
-            "subtitle": "Modernes Wohnen mit Betonung auf Nachhaltigkeit und Umweltfreundlichkeit"
+        "keyAdvantages": {
+          "title": "Hauptvorteile",
+          "content": "Golf-Immobilien sind Synonym für Prestige und Komfort. Sie sind in ruhigen Gebieten mit schönen Ausblicken gelegen und bieten erstklassige Dienstleistungen und Einrichtungen. Sie sind eine ideale Wahl für diejenigen, die Entspannung mit aktivem Lebensstil kombinieren möchten."
+        },
+        "whoAppreciates": {
+          "title": "Wer diesen Immobilientyp schätzen wird",
+          "golfEnthusiasts": {
+            "title": "Golf-Enthusiasten, die Wohnraum in der Nähe von Plätzen suchen"
           },
-          "description": {
-            "title": "Smart und Green Living",
-            "content": "Modernes Wohnen mit Betonung auf Nachhaltigkeit und Umweltfreundlichkeit. Diese Immobilien verwenden umweltfreundliche Materialien, energiesparende Technologien und bieten harmonische Verbindung mit der Natur."
+          "prestigiousCouples": {
+            "title": "Paare, die prestigeträchtiges Wohnen suchen"
           },
-          "whyChoose": {
-            "title": "Warum diesen Immobilientyp wählen",
-            "ecoLiving": {
-              "title": "Umweltfreundliches Wohnen",
-              "description": "Nachhaltige Materialien und niedriger Energieverbrauch schonen Natur und Kosten."
-            },
-            "modernTech": {
-              "title": "Moderne Technologie",
-              "description": "Intelligente Systeme erleichtern den Alltag."
-            },
-            "healthyEnvironment": {
-              "title": "Gesunde Umgebung",
-              "description": "Qualitativ hochwertige Luft, Nähe zur Natur und Entspannungszonen."
-            },
-            "designFocus": {
-              "title": "Design-Fokus",
-              "description": "Architektonisch durchdachte Projekte mit modernem Aussehen."
-            }
+          "exclusiveFamilies": {
+            "title": "Familien, die ruhige und exklusive Lagen bevorzugen"
           },
-          "keyAdvantages": {
-            "title": "Hauptvorteile",
-            "content": "Smart und Green Living bringt eine Kombination aus modernem Komfort und Umweltfreundlichkeit. Energieeffizienz, umweltfreundliche Materialien und hochwertige Technologie machen diese Projekte zu einer attraktiven Wahl für jeden, der in Harmonie mit der Natur leben möchte."
+          "activeRecreation": {
+            "title": "Menschen, die Erholung mit aktiver Erholung kombinieren möchten"
+          }
+        },
+        "gallery": {
+          "title": "Galerie ausgewählter Ansichten",
+          "subtitle": "Entdecken Sie unsere Golf-Immobilien-Projekte"
+        },
+        "benefits": {
+          "title": "Vorteile von Golf-Immobilien",
+          "subtitle": "Warum unsere Golf-Immobilien-Projekte wählen",
+          "golf": {
+            "title": "Golf-Zugang",
+            "description": "Einfacher Zugang zu erstklassigen Golfplätzen und Einrichtungen."
           },
-          "whoAppreciates": {
-            "title": "Wer diesen Immobilientyp schätzen wird",
-            "ecoConscious": {
-              "title": "Einzelpersonen und Familien, die sich für Ökologie interessieren"
-            },
-            "energyEfficient": {
-              "title": "Menschen, die energieeffizientes und modernes Wohnen suchen"
-            },
-            "natureLovers": {
-              "title": "Naturliebhaber und Enthusiasten gesunden Lebensstils"
-            }
+          "luxury": {
+            "title": "Luxuriöses Wohnen",
+            "description": "Premium-Immobilien in prestigeträchtigen Golf-Gemeinschaften."
           },
-          "projects": {
-            "title": "Galerie ausgewählter umweltfreundlicher Immobilien",
-            "subtitle": "Entdecken Sie unsere Smart- und Green-Living-Projekte"
-          },
-          "benefits": {
-            "title": "Vorteile von Smart Living",
-            "subtitle": "Warum unsere Smart-Living-Projekte wählen",
-            "sustainability": {
-              "title": "Umweltfreundlich",
-              "description": "Nachhaltiger Bau mit umweltfreundlichen Materialien und Technologien."
-            },
-            "energy": {
-              "title": "Energieeffizient",
-              "description": "Niedriger Energieverbrauch mit erneuerbaren Energiequellen."
-            },
-            "technology": {
-              "title": "Smart-Technologie",
-              "description": "Moderne Smart-Home-Technologien für komfortables Wohnen."
-            }
-          },
-          "gallery": {
-            "title": "Galerie ausgewählter Ansichten",
-            "subtitle": "Entdecken Sie unsere Smart- und Green-Living-Projekte"
+          "lifestyle": {
+            "title": "Aktiver Lebensstil",
+            "description": "Perfekt für aktiven Lebensstil mit ausgezeichneten Sporteinrichtungen."
           }
         }
+      },
+      "smartHomes": {
+        "hero": {
+          "title": "Smart & Green Living",
+          "subtitle": "Modernes Wohnen mit Betonung auf Nachhaltigkeit und Umweltfreundlichkeit"
+        },
+        "description": {
+          "title": "Smart und Green Living",
+          "content": "Modernes Wohnen mit Betonung auf Nachhaltigkeit und Umweltfreundlichkeit. Diese Immobilien verwenden umweltfreundliche Materialien, energiesparende Technologien und bieten harmonische Verbindung mit der Natur."
+        },
+        "whyChoose": {
+          "title": "Warum diesen Immobilientyp wählen",
+          "ecoLiving": {
+            "title": "Umweltfreundliches Wohnen",
+            "description": "Nachhaltige Materialien und niedriger Energieverbrauch schonen Natur und Kosten."
+          },
+          "modernTech": {
+            "title": "Moderne Technologie",
+            "description": "Intelligente Systeme erleichtern den Alltag."
+          },
+          "healthyEnvironment": {
+            "title": "Gesunde Umgebung",
+            "description": "Qualitativ hochwertige Luft, Nähe zur Natur und Entspannungszonen."
+          },
+          "designFocus": {
+            "title": "Design-Fokus",
+            "description": "Architektonisch durchdachte Projekte mit modernem Aussehen."
+          }
+        },
+        "keyAdvantages": {
+          "title": "Hauptvorteile",
+          "content": "Smart und Green Living bringt eine Kombination aus modernem Komfort und Umweltfreundlichkeit. Energieeffizienz, umweltfreundliche Materialien und hochwertige Technologie machen diese Projekte zu einer attraktiven Wahl für jeden, der in Harmonie mit der Natur leben möchte."
+        },
+        "whoAppreciates": {
+          "title": "Wer diesen Immobilientyp schätzen wird",
+          "ecoConscious": {
+            "title": "Einzelpersonen und Familien, die sich für Ökologie interessieren"
+          },
+          "energyEfficient": {
+            "title": "Menschen, die energieeffizientes und modernes Wohnen suchen"
+          },
+          "natureLovers": {
+            "title": "Naturliebhaber und Enthusiasten gesunden Lebensstils"
+          }
+        },
+        "projects": {
+          "title": "Galerie ausgewählter umweltfreundlicher Immobilien",
+          "subtitle": "Entdecken Sie unsere Smart- und Green-Living-Projekte"
+        },
+        "benefits": {
+          "title": "Vorteile von Smart Living",
+          "subtitle": "Warum unsere Smart-Living-Projekte wählen",
+          "sustainability": {
+            "title": "Umweltfreundlich",
+            "description": "Nachhaltiger Bau mit umweltfreundlichen Materialien und Technologien."
+          },
+          "energy": {
+            "title": "Energieeffizient",
+            "description": "Niedriger Energieverbrauch mit erneuerbaren Energiequellen."
+          },
+          "technology": {
+            "title": "Smart-Technologie",
+            "description": "Moderne Smart-Home-Technologien für komfortables Wohnen."
+          }
+        },
+        "gallery": {
+          "title": "Galerie ausgewählter Ansichten",
+          "subtitle": "Entdecken Sie unsere Smart- und Green-Living-Projekte"
+        }
+      }
     },
     "czechRepublic": {
       "apartments": {
@@ -791,6 +783,895 @@
           "title": "Galerie ausgewählter Wohnhäuser",
           "subtitle": "Entdecken Sie unsere großzügigen Wohnhäuser"
         }
+      },
+      "englishEmbankment": {
+        "hero": {
+          "title": "Englische Uferpromenade Palast",
+          "subtitle": "Außergewöhnlich in allen Parametern - Luxuriöses Wohnen im Palaststil im Herzen des historischen Zentrums von Plzeň",
+          "backToProjects": "Zurück zu Projekte"
+        },
+        "projectFeatures": {
+          "commercialSpace": {
+            "name": "Kommerzieller Raum",
+            "value": "2,800 m²",
+            "description": "Verfügbar für Miete"
+          },
+          "residentialUnits": {
+            "name": "Wohneinheiten",
+            "value": "200",
+            "description": "Wohnungen zu verkaufen"
+          },
+          "parkingSpaces": {
+            "name": "Stellplätze",
+            "value": "400",
+            "description": "Einschließlich EV-Ladung"
+          },
+          "floors": {
+            "name": "Fußböden",
+            "value": "8",
+            "description": "Oberirdische Ebenen"
+          }
+        },
+        "aboutProject": {
+          "title": "Über das Projekt",
+          "description1": "Das English Embankment Palace wächst im Herzen des historischen Stadtzentrums von Pilsen, wo Neubauten ein äußerst seltenes Phänomen sind. Nur wenige Schritte vom Platz der Republik mit der St.-Bartholomäus-Kathedrale entfernt und umgeben von den schönsten Parks von Pilsen und dem beliebten Radbuza-Ufer.",
+          "description2": "Einfach ausgedrückt ist dies eine einzigartige Gelegenheit, eine luxuriöse Stadtwohnung in perfekter Lage an einer prestigeträchtigen Adresse zu erwerben. Das palastartige Gebäude vom Reißbrett der renommierten Architekten von PRO-STORY Studio wird seinen Bewohnern nicht nur exklusive Ausblicke, sondern auch einen Wohninnenhof mit Parklandschaft bieten.",
+          "constructionStatus": {
+            "title": "Bauarbeiten im Gange",
+            "description": "Die Projektrealisierung begann im Juni 2024 und die Bauarbeiten sind bereits in vollem Gange. Die Fertigstellung ist für Anfang 2028 geplant."
+          }
+        },
+        "projectFeaturesSection": {
+          "title": "Projekt Merkmale",
+          "subtitle": "Entdecken Sie, was English Embankment Palace in allen Parametern außergewöhnlich macht",
+          "commercialSpace": {
+            "title": "Kommerzieller Raum",
+            "description1": "Die ersten beiden oberirdischen Etagen werden fast dreitausend Quadratmeter Gewerbefläche zur Miete anbieten. Die erste Etage wird aufgestockt und bietet etwa 1.200 m² Einzelhandelsfläche, die sich für Markengeschäfte, Ausstellungsräume oder Dienstleistungen eignet.",
+            "description2": "In der zweiten Etage werden rund 1.600 m² Büros und mehrere Wohnungen zur Verfügung stehen."
+          },
+          "exclusiveApartments": {
+            "title": "Exklusive Wohnungen",
+            "description1": "Von der dritten bis zur achten Etage werden sich ausschließlich Wohneinheiten befinden. Das gesamte Projekt wird ca. 200 Wohnungen in allen Grundrissen und Größen zum Verkauf anbieten.",
+            "description2": "Von den kleinsten 1+kk mit etwa 30 m² bis hin zu wunderschönen geräumigen Penthäusern und Maisonetten mit individuell gestalteten Grundrissen und Terrassen mit Blick auf das Stadtzentrum oder den Fluss Radbuza."
+          },
+          "parking": {
+            "title": "Problemloses Parken",
+            "description1": "Auf insgesamt vier Etagen werden ausreichend Parkplätze für das Verwaltungshochhaus sowie für Geschäfte, Büros und Wohnungen zur Verfügung stehen.",
+            "description2": "Wir planen fast 400 Parkplätze. Eine Neuheit werden speziell angepasste Parkplätze für Elektrofahrzeuge mit der Möglichkeit zum schnellen Aufladen sein."
+          },
+          "parkCourtyard": {
+            "title": "Park Innenhof",
+            "description1": "Dank der einzigartig gestalteten grünen Innenhöfe finden Sie Ruhe und Privatsphäre, wann immer Sie es wünschen. Und das an einer exklusiven Adresse im Zentrum der lebendigen westböhmischen Metropole.",
+            "description2": "Auch der Straßenraum um den neuen Palast wird verbessert und verschönert. Das Prestige des Ortes wird durch die Architektur des Gebäudes mit einer Reihe von Terrassen, die mit Bäumen und Ziersträuchern bepflanzt sind, unterstrichen."
+          }
+        },
+        "externalViews": {
+          "title": "Außenansichten von Gebäuden",
+          "subtitle": "Entdecken Sie die architektonische Schönheit und das Design des English Embankment Palace",
+          "exteriorView": "Außenansicht"
+        },
+        "interiorVisualizations": {
+          "title": "Interieur-Visualisierungen",
+          "subtitle": "Entdecken Sie die Inneneinrichtungen und Designs für alle Wohnungstypen",
+          "interiorDesign": "Innenarchitektur"
+        },
+        "premiumStandards": {
+          "title": "Höchster Standard in Pilsen (Plzeň)",
+          "subtitle": "Luxus und Komfort als Standard - außergewöhnliche Ausführung in jedem Detail",
+          "amenities": {
+            "parkCourtyard": {
+              "name": "Park Innenhof",
+              "description": "Privater grüner Innenhof mit Parkgestaltung"
+            },
+            "premiumStandards": {
+              "name": "Premium-Standards",
+              "description": "Dreifach verglaste Fenster, Holzböden, Fußbodenheizung"
+            },
+            "smartTechnology": {
+              "name": "Intelligente Technologie",
+              "description": "Erholung und moderne Komfortsysteme"
+            },
+            "evParking": {
+              "name": "EV-Parken",
+              "description": "Speziell angepasste Parkplätze mit Schnellladefunktion"
+            },
+            "riverViews": {
+              "name": "Fluss Ansichten",
+              "description": "Panoramablick auf den Fluss Radbuza"
+            },
+            "cityViews": {
+              "name": "Stadtansichten",
+              "description": "Exklusive Aussicht auf das historische Zentrum von Pilsen"
+            }
+          }
+        },
+        "location": {
+          "title": "Exklusive Lage",
+          "description": "Außergewöhnliche Lage im Herzen des historischen Stadtzentrums, nur ein paar Schritte vom Platz der Republik entfernt. Umgeben von dem Fluss und den schönsten Parks von Pilsen. Kultur, Gastronomie, Geschäfte, Nachtleben - alles, was die Stadt lebendig und inspirierend macht, ist jetzt nur ein paar Schritte von Ihrem Apartment entfernt.",
+          "features": {
+            "republicSquare": {
+              "feature": "Platz der Republik",
+              "time": "2 min",
+              "description": "Kathedrale von St. Bartholomäus"
+            },
+            "radbuzaRiver": {
+              "feature": "Radbuza Fluss",
+              "time": "3 min",
+              "description": "Schönes Flussufer"
+            },
+            "cityParks": {
+              "feature": "Stadtparks",
+              "time": "5 min",
+              "description": "Die schönsten Parks von Pilsen"
+            },
+            "culturalCenter": {
+              "feature": "Kulturzentrum",
+              "time": "5 min",
+              "description": "Theater, Museen, Galerien"
+            }
+          }
+        },
+        "partners": {
+          "title": "Qualitätsgarantie",
+          "subtitle": "Starke Partnerschaften garantieren höchste Qualität",
+          "investika": {
+            "name": "INVESTIKA",
+            "role": "Immobilienfonds",
+            "description": "Einer der größten Akteure auf dem tschechischen Immobilienmarkt"
+          },
+          "bcReal": {
+            "name": "BC Real",
+            "role": "Entwickler",
+            "description": "19+ Jahre Erfahrung in Plzeň, 14 abgeschlossene Projekte"
+          },
+          "brokerConsulting": {
+            "name": "Makler Beratung",
+            "role": "Verkauf & Finanzierung",
+            "description": "Meistgefragter unabhängiger Berater in der Tschechischen Republik"
+          }
+        },
+        "availableUnits": {
+          "title": "Finden Sie Ihr Apartment",
+          "description": "Für detaillierte Informationen über verfügbare Einheiten, Preise und die aktuelle Verfügbarkeit wenden Sie sich bitte direkt an unser Verkaufsteam.",
+          "contactUs": "Kontaktieren Sie uns",
+          "forUnitInfo": "Für Informationen zur Einheit",
+          "getUnitDetails": "Details zur Einheit erhalten"
+        }
+      },
+      "horovice": {
+        "hero": {
+          "title": "Bydlení Hořovice",
+          "subtitle": "Von Grund auf - ein guter Ort zum Leben. Wir haben uns gefragt, wie ein idealer Ort zum Leben aussehen sollte, und dann haben wir ihn geschaffen.",
+          "backToProjects": "Zurück zu Projekte"
+        },
+        "projectFeatures": {
+          "location": {
+            "name": "Standort",
+            "value": "Hořovice",
+            "description": "Zwischen Pilsen & Prag"
+          },
+          "construction": {
+            "name": "Bauwesen",
+            "value": "Ziegelstein",
+            "description": "300mm rote Ziegelwände"
+          },
+          "soundInsulation": {
+            "name": "Schalldämmung",
+            "value": "Premium",
+            "description": "Ausgezeichnete Privatsphäre"
+          },
+          "customKitchens": {
+            "name": "Maßgeschneiderte Küchen",
+            "value": "Inklusive",
+            "description": "Maßgeschneidert für Ihr Apartment"
+          }
+        },
+        "aboutProject": {
+          "title": "Über das Projekt",
+          "description1": "Bydlení Hořovice steht für unsere Vision, einen idealen Ort zum Leben zu schaffen. Zwischen Pilsen und Prag gelegen, in einer Stadt, die wächst und sich entwickelt, bietet dieses neue Viertel den perfekten Ausgleich für diejenigen, die nicht in einer Großstadt oder einem Dorf leben möchten, aber alles in Reichweite haben wollen.",
+          "description2": "Wir haben dieses Projekt von Grund auf mit ehrlicher, gründlicher Arbeit aufgebaut. Unsere Gebäude werden als solide Ziegelbauten aus hochwertigen roten Ziegeln errichtet, die eine hervorragende Schalldämmung für Privatsphäre und Ruhe bieten. Wir haben zeitlose Materialien ausgewählt, die lange halten, und wir sorgen für eine maßgeschneiderte Produktion von Küchen und Einbauschränken, die auf die von Ihnen gewählte Wohnung zugeschnitten sind.",
+          "communityFocus": {
+            "title": "Gemeinschaft im Fokus",
+            "description": "Wir leben und atmen dieses Projekt mit Stolz. Wir bauen und verbessern unsere Nachbarschaft ständig weiter, bleiben über WhatsApp-Gruppen mit den Bewohnern in Kontakt und setzen Feedback immer in Taten um."
+          }
+        },
+        "projectBenefits": {
+          "title": "Was uns besonders macht",
+          "subtitle": "Entdecken Sie die einzigartigen Vorteile, die Bydlení Hořovice auszeichnen",
+          "perfectLocation": {
+            "title": "Perfekte Lage",
+            "description1": "Gelegen zwischen Pilsen und Prag, in einer Stadt, die wächst und sich entwickelt. Diese neue Nachbarschaft bietet alles, was Sie brauchen: Geschäfte, Kindergärten, Arbeitsmöglichkeiten, Gesundheitsversorgung, Kultur und Natur - alles in Reichweite.",
+            "description2": "Perfekt für alle, die nicht in einer großen Stadt oder einem Dorf leben möchten, aber trotzdem alles in Reichweite haben wollen."
+          },
+          "qualityConstruction": {
+            "title": "Qualität Konstruktion",
+            "description1": "Wir möchten, dass Sie für Ihr Geld ein ehrliches Stück unserer Arbeit bekommen - eine Wohnung, die zu Ihrem komfortablen und wertvollen Zuhause wird. Deshalb bauen wir unsere Gebäude in solider Ziegelbauweise.",
+            "description2": "Die Verwendung hochwertiger roter Ziegelsteine bietet eine hervorragende Schalldämmung für Privatsphäre und Ruhe, mit zeitlosem Design und langlebigen Materialien."
+          },
+          "activeCommunity": {
+            "title": "Aktive Gemeinschaft",
+            "description1": "Wir leben und atmen dieses Projekt mit Stolz. Wir bauen und verbessern unsere Nachbarschaft ständig weiter, bleiben über WhatsApp-Gruppen mit den Bewohnern in Kontakt und setzen Feedback immer in Taten um.",
+            "description2": "Es geht nicht nur darum, wie Sie sich hinter Ihrer Wohnungstür fühlen - ein Zuhause wird durch angenehme Nachbarn, Sauberkeit in der gesamten Nachbarschaft, ein Gefühl der Sicherheit und Details wie Parkplätze und Spielplätze geschaffen."
+          },
+          "diverseApartmentOptions": {
+            "title": "Vielfältige Wohnungsoptionen",
+            "description1": "Unsere Nachbarschaft bietet eine breite Palette von Wohnungsgrundrissen, die eine abwechslungsreiche und angenehme Gemeinschaft schaffen. Sie finden hier Wohnungen für Familien mit Kindern, junge Paare, die neu anfangen, und Menschen, die Komfort und modernes Wohnen mit perfektem Zugang zu Dienstleistungen suchen.",
+            "description2": "Von 1+kk bis 4+kk gibt es etwas für jeden Bedarf und Lebensstil."
+          }
+        },
+        "apartmentStandards": {
+          "title": "Apartment Standards & Vorteile",
+          "subtitle": "Sorgfältig durchdachte und ehrliche Standards, die Sie nirgendwo anders finden werden",
+          "standards": {
+            "soundInsulatingWalls": {
+              "name": "Schalldämmende Wände",
+              "description": "300 mm starke rote Ziegelkonstruktion für absolute Privatsphäre"
+            },
+            "airConditioningPrep": {
+              "name": "Klimatisierung vorbereiten",
+              "description": "Bereit für die Installation der Klimatisierung"
+            },
+            "smartScreenPrep": {
+              "name": "Intelligente Bildschirmvorbereitung",
+              "description": "Vorbereitung für elektrische Bildschirme und Jalousien"
+            },
+            "customKitchen": {
+              "name": "Maßgeschneiderte Küche",
+              "description": "Küche nach Maß für Ihre Wohnung"
+            },
+            "builtInWardrobes": {
+              "name": "Einbauschränke",
+              "description": "Maßgeschneiderte Aufbewahrungslösungen inklusive"
+            },
+            "securityDoors": {
+              "name": "Sicherheitstüren",
+              "description": "Hochwertige Eingangstüren mit Sicherheitsmerkmalen"
+            },
+            "timelessBathrooms": {
+              "name": "Zeitlose Bäder",
+              "description": "Hochwertige Fliesen und moderne Sanitäranlagen"
+            },
+            "chemicalFreeFloors": {
+              "name": "Chemiefreie Böden",
+              "description": "Egger Eclic Laminatböden aus nachhaltigen Quellen"
+            },
+            "woodenDoors": {
+              "name": "Holztüren",
+              "description": "Lamistone-Türen mit Holzkonstruktion und Edelstahlbeschlägen"
+            },
+            "frenchWindows": {
+              "name": "Französische Fenster",
+              "description": "Große Fenster mit Zugang zu Balkon, Terrasse oder Garten"
+            }
+          }
+        },
+        "externalViews": {
+          "title": "Nachbarschaft & Außenansichten",
+          "subtitle": "Erkunden Sie die schöne Nachbarschaft und die architektonischen Details von Bydlení Hořovice",
+          "exteriorView": "Außenansicht"
+        },
+        "interiorVisualizations": {
+          "title": "Interieur-Visualisierungen",
+          "subtitle": "Entdecken Sie die Inneneinrichtung und die individuelle Ausstattung für alle Apartmenttypen",
+          "interiorDesign": "Innenarchitektur"
+        },
+        "configurator": {
+          "title": "3D-Wohnungskonfigurator",
+          "subtitle": "Gestalten Sie Ihre perfekte Wohnungseinrichtung mit unserem interaktiven 3D-Konfigurator",
+          "mainTitle": "Entwerfen Sie Ihr Traumhaus",
+          "description": "Wählen Sie aus einer breiten Palette von Bodenbelägen, Fliesen und Wandverkleidungen. Wählen Sie die Farbe und Form der Türen oder entwerfen Sie Ihre zukünftige Küche, die wir für Sie anfertigen. Machen Sie sich beim Kauf einer Wohnung mehr Freude als Sorgen.",
+          "features": {
+            "materialSelection": {
+              "title": "Materialauswahl",
+              "description": "Wählen Sie Böden, Fliesen und Wandverkleidungen"
+            },
+            "doorDesign": {
+              "title": "Tür Design",
+              "description": "Wählen Sie Farben und Formen für Ihre Türen"
+            },
+            "kitchenDesign": {
+              "title": "Küche Design",
+              "description": "Entwerfen Sie Ihr individuelles Küchenlayout"
+            }
+          },
+          "launchButton": "3D-Konfigurator starten"
+        },
+        "sampleApartment": {
+          "title": "Besuchen Sie unsere Musterwohnung",
+          "description1": "Möchten Sie die Ausstattung Ihrer zukünftigen Wohnung mit eigenen Augen sehen? Die Materialien anfassen, die Oberflächen fühlen und die Qualität der Verarbeitung erkunden?",
+          "description2": "Wir würden uns freuen, Sie in unserer Musterwohnung, direkt in Hořovice, begrüßen zu dürfen. Erleben Sie die Qualität und Handwerkskunst, die in jedem Detail Ihres zukünftigen Zuhauses steckt.",
+          "benefits": {
+            "realMaterials": "Sehen Sie echte Materialien und Oberflächen",
+            "experienceQuality": "Erleben Sie die Qualität aus erster Hand",
+            "meetTeam": "Treffen Sie unser Team persönlich"
+          },
+          "bookButton": "Buchen Sie Ihren Besuch"
+        },
+        "location": {
+          "title": "Perfekte Lage zwischen zwei Städten",
+          "description1": "Gelegen zwischen Pilsen und Prag, in einer Stadt, die wächst und sich entwickelt. Diese neue Nachbarschaft bietet alles, was Sie brauchen: Geschäfte, Kindergärten, Arbeitsmöglichkeiten, Gesundheitsversorgung, Kultur und Natur - alles in Reichweite.",
+          "description2": "Perfekt für diejenigen, die nicht in einer großen Stadt oder einem Dorf leben möchten, aber alles in Reichweite haben wollen. Genießen Sie die Nähe zur Natur und profitieren Sie von der hervorragenden Anbindung an beide Städte.",
+          "features": {
+            "plzen": {
+              "feature": "Plzeň",
+              "time": "30 min",
+              "description": "Schneller Zugang zu Plzeň"
+            },
+            "prague": {
+              "feature": "Prag",
+              "time": "45 min",
+              "description": "Einfache Verbindung zum Kapital"
+            },
+            "localServices": {
+              "feature": "Lokale Dienstleistungen",
+              "time": "5 min",
+              "description": "Alles in Reichweite"
+            },
+            "nature": {
+              "feature": "Natur",
+              "time": "2 min",
+              "description": "Grünflächen in der Nähe"
+            }
+          }
+        },
+        "availableUnits": {
+          "title": "Wählen Sie Ihr Apartment",
+          "description": "Für detaillierte Informationen über verfügbare Einheiten, Preise und die aktuelle Verfügbarkeit wenden Sie sich bitte direkt an unser Verkaufsteam.",
+          "contactUs": "Kontaktieren Sie uns",
+          "forUnitInfo": "Für Informationen zur Einheit",
+          "getUnitDetails": "Details zur Einheit erhalten"
+        }
+      },
+      "iconPark": {
+        "hero": {
+          "title": "ICON Park Kladno",
+          "subtitle": "Modernes und komfortables Wohnen in dem neuen Wohnviertel von Kladno",
+          "backToProjects": "Zurück zu Projekte",
+          "stats": {
+            "floors": "Fußböden",
+            "totalUnits": "Total Einheiten",
+            "layouts": "Layouts"
+          }
+        },
+        "projectOverview": {
+          "title": "Ihr neues Zuhause beginnt im ICON Park",
+          "description1": "Suchen Sie nach modernem und komfortablem Wohnen, das Ihre Erwartungen erfüllt? ICON Park in Kladno bietet die ideale Kombination aus modernem Design, Komfort und einer ruhigen Lage in dem neu belebten Stadtteil.",
+          "description2": "Die Wohnungen mit Grundrissen von 1+kk bis 4+kk wurden mit Schwerpunkt auf Qualität und Komfort entworfen, jede mit einem eigenen Raum zur Entspannung - Balkon, Terrasse oder Vorgarten. Die Fertigstellung des Projekts im Jahr 2025 bedeutet, dass Ihr neues Zuhause näher ist, als Sie denken. ICON Park ist der Ort, an dem Ihre Zukunft beginnt.",
+          "readyForMoveIn": {
+            "title": "Bereit zum Einzug!",
+            "description": "Das Gebäude hat die endgültige Genehmigung erhalten und Sie können diesen Sommer einziehen!"
+          }
+        },
+        "award": {
+          "title": "Gewinner der prestigeträchtigen Auszeichnung",
+          "subtitle": "ICON PARK erhielt den prestigeträchtigen Jury-Preis im Wettbewerb Immobilienprojekt des Jahres 2024",
+          "awardTitle": "Immobilienprojekt des Jahres 2024",
+          "nominatedProject": "Nominiertes Projekt - Zentralböhmische Region",
+          "quote": "Wir schätzen diese Auszeichnung sehr, insbesondere angesichts der starken Konkurrenz in diesem Jahr. Sie bestätigt, dass die Kombination aus moderner Architektur, hochwertiger Ausführung und attraktiver Lage nicht nur bei den Kunden, sondern auch bei der Fachöffentlichkeit Anklang findet.",
+          "attribution": "František Vladař, Direktor für Investitionen und Projekte, BHM-Gruppe"
+        },
+        "externalViews": {
+          "title": "Außenansichten von Gebäuden",
+          "subtitle": "Erkunden Sie die architektonische Schönheit und das Design aller Gebäude im ICON Park"
+        },
+        "interiorVisualizations": {
+          "title": "Interieur-Visualisierungen",
+          "subtitle": "Entdecken Sie die Inneneinrichtungen und Designs für alle Wohnungstypen"
+        },
+        "projectStatus": {
+          "title": "Projektstatus",
+          "subtitle": "Aktueller Baustatus und Details zur Fertigstellung",
+          "constructionStatus": "Baustatus",
+          "completedReady": "Fertiggestellt und bereit zum Einzug",
+          "completionQ3": "Q3 2025",
+          "completionDetails": "Gebäude und Wohnungen sind komplett fertiggestellt, einschließlich Fitnessbereich im Freien und Kinderspielplatz",
+          "ready": "Fertig!",
+          "forMoveIn": "Für den Einzug",
+          "signMeUp": "Melden Sie mich an!"
+        },
+        "location": {
+          "title": "Schneller Zugang zu Arbeit und Unterhaltung",
+          "description1": "Kladno bietet die ideale Kombination aus ruhigem Wohnen und hervorragender Erreichbarkeit von Prag. Im Wohnviertel ICON Park haben Sie alles in Reichweite - gute Schulen, Kindergärten, Geschäfte, Dienstleistungen, Restaurants, Sportanlagen und Radwege.",
+          "description2": "Außerdem können Sie die Nähe zur Natur genießen und gleichzeitig von den ausgezeichneten Verbindungen sowohl nach Kladno als auch in die Hauptstadt profitieren.",
+          "features": {
+            "kladnoCenter": {
+              "feature": "Kladno Zentrum",
+              "time": "5 min",
+              "description": "Schneller Zugang zum Stadtzentrum"
+            },
+            "vaclavHavelAirport": {
+              "feature": "Václav Havel Flughafen",
+              "time": "10 min",
+              "description": "Internationaler Flughafen in der Nähe"
+            },
+            "veleslavinStation": {
+              "feature": "Bahnhof Veleslavín",
+              "time": "20 min",
+              "description": "Direkte Verbindung nach Prag"
+            },
+            "masarykStation": {
+              "feature": "Masaryk Bahnhof",
+              "time": "30 min",
+              "description": "Hauptbahnhof Prag"
+            }
+          }
+        },
+        "amenities": {
+          "title": "Komfortables Wohnen mit allem in Reichweite",
+          "subtitle": "Entdecken Sie die Annehmlichkeiten, die ICON Park zu einem perfekten Ort zum Leben machen",
+          "cafe": {
+            "name": "Café",
+            "description": "Energieschub und süßes Ende für die ganze Familie"
+          },
+          "kindergarten": {
+            "name": "Kindergarten",
+            "description": "Hochwertige Früherziehung für Kinder"
+          },
+          "playground": {
+            "name": "Spielplatz",
+            "description": "Sicherer Spielbereich im Freien für Kinder"
+          },
+          "outdoorGym": {
+            "name": "Fitnessstudio im Freien",
+            "description": "Fitnessgeräte an der frischen Luft"
+          },
+          "publicSpaces": {
+            "name": "Öffentliche Räume",
+            "description": "Gemeinschaftsbereiche für geselliges Beisammensein"
+          }
+        }
+      },
+      "trianglPark": {
+        "hero": {
+          "title": "Dreieckiger Park",
+          "subtitle": "Einzigartiges Wohnkonzept im südlichen Plzeň-Bory mit drei unterschiedlichen Wohnstandards",
+          "backToProjects": "Zurück zu Projekte",
+          "stats": {
+            "availableUnits": "Verfügbare Einheiten",
+            "projectSold": "Projekt verkauft"
+          }
+        },
+        "projectOverview": {
+          "title": "Über das Projekt",
+          "description": "Triangl Park steht für ein einzigartiges Wohnkonzept im südlichen Stadtteil Plzeň-Bory. Dieses außergewöhnliche Projekt zeichnet sich nicht nur durch seine attraktive Lage mit leichtem Zugang zum Stadtzentrum von Pilsen aus, sondern auch durch seinen umfassenden Ansatz, seine Qualitätsstandards und vor allem durch die einzigartige Möglichkeit, aus drei verschiedenen Wohnstandards zu wählen.",
+          "specialOffer": {
+            "title": "Sonderangebot",
+            "description": "Jetzt müssen Sie nur noch 20% des Kaufpreises der Wohnung bezahlen. Der Restbetrag wird nach der Gebäudeinspektion fällig. Zeitlich begrenztes Angebot!"
+          }
+        },
+        "externalViews": {
+          "title": "Außenansichten von Gebäuden",
+          "subtitle": "Erkunden Sie die architektonische Schönheit und das Design aller Gebäude im Triangl Park"
+        },
+        "livingStyles": {
+          "title": "Drei Stile, drei Standards, drei Lebensweisen",
+          "subtitle": "Triangl Park bietet die einzigartige Möglichkeit, die Wohnungen nach Stil auszuwählen. Jeder Stil bietet nicht nur seine eigenen Standards, sondern auch besondere Vorteile in Form von Ruhezonen, Grundrisslösungen oder Ausblicken. Was ist Ihr Stil?",
+          "gardenSuite": {
+            "name": "Garten-Suite",
+            "number": "01",
+            "features": [
+              "Privater Garten",
+              "Geräumiges Layout",
+              "Hochwertige Materialien"
+            ],
+            "description": "Perfekt für alle, die das Leben im Freien und die natürliche Umgebung schätzen"
+          },
+          "familyHome": {
+            "name": "Familie Zuhause",
+            "number": "02",
+            "features": [
+              "Balkone oder Loggias",
+              "Bequemes Layout",
+              "Natürliche Materialien"
+            ],
+            "description": "Ideal für Familien, die Komfort und praktische Wohnräume suchen"
+          },
+          "penthouseLodge": {
+            "name": "Penthouse Lodge",
+            "number": "03",
+            "features": [
+              "Geräumige Terrassen",
+              "Großzügige Abmessungen",
+              "Luxuriöse Materialien"
+            ],
+            "description": "Premium-Wohnen mit exklusiver Ausstattung und Panoramablick"
+          },
+          "viewAvailableUnits": "Verfügbare Einheiten anzeigen"
+        },
+        "interiorVisualizations": {
+          "title": "Interieur-Visualisierungen",
+          "subtitle": "Entdecken Sie die Inneneinrichtungen und Designs für alle Wohnungstypen und Wohnstile"
+        },
+        "projectStages": {
+          "title": "Projekt Bauphasen",
+          "subtitle": "Übersicht über die einzelnen Projektphasen und den Bauzeitplan",
+          "thirdStage": "Dritte Stufe",
+          "secondStage": "Zweite Etappe",
+          "firstStage": "Erste Etappe",
+          "nowSelling": "Jetzt Verkaufen",
+          "completed": "Abgeschlossen",
+          "startSale": "Beginn des Verkaufs:",
+          "constructionStart": "Baubeginn:",
+          "completion": "Fertigstellung:",
+          "buildings": "Gebäude: ",
+          "availableUnits": "Verfügbare Einheiten",
+          "selectYourUnit": "Wählen Sie Ihr Gerät"
+        },
+        "location": {
+          "title": "Ausgezeichnete Lage & Erreichbarkeit",
+          "description": "Bory ist ein moderner und voll ausgestatteter Stadtteil mit perfektem Zugang zu Dienstleistungen, Bildung, Arbeit und dem Stadtzentrum. Die hervorragende Erreichbarkeit des Stadtzentrums von Pilsen mit den öffentlichen Verkehrsmitteln in nur wenigen Minuten, die großartigen städtischen Einrichtungen, das reichhaltige Sportangebot und die fußläufig erreichbaren Waldgebiete machen den Triangl Park zu einem außergewöhnlich attraktiven Standort und vor allem zu einem sehr angenehmen Wohnort.",
+          "features": {
+            "cityCenter": {
+              "feature": "Stadtzentrum",
+              "time": "10 min",
+              "description": "Einfacher Zugang zum Stadtzentrum von Plzeň"
+            },
+            "highwayD5": {
+              "feature": "Schnellstraße D5",
+              "time": "5 min",
+              "description": "Schnelle Anbindung an Hauptverkehrsstraßen"
+            },
+            "shoppingCenters": {
+              "feature": "Einkaufszentren",
+              "time": "5 min",
+              "description": "OC Area Bory und OC Borská pole in der Nähe"
+            },
+            "university": {
+              "feature": "Universität",
+              "time": "5 min",
+              "description": "Západočeská univerzita in Gehweite"
+            }
+          }
+        },
+        "lifestyleAmenities": {
+          "title": "Lebensstil & Annehmlichkeiten",
+          "subtitle": "Entdecken Sie den außergewöhnlichen Lebensstil, den Triangl Park seinen Bewohnern bietet",
+          "modernLivingStandards": {
+            "title": "Moderne Lebensstandards",
+            "description": "Jede Wohneinheit verfügt über mindestens einen Garten, eine Loggia, einen Balkon oder eine großzügige Terrasse. Zu jeder Wohnung gehört auch ein eigener Kellerraum, so dass jeder Bewohner bequem und praktisch leben kann.",
+            "features": {
+              "privateOutdoorSpaces": "Private Außenbereiche für jede Einheit",
+              "basementStorage": "Lagerung im Keller inklusive",
+              "highQualityMaterials": "Hochwertige Materialien und Oberflächen"
+            }
+          },
+          "virtualTour": {
+            "title": "Virtuelle Tour erleben",
+            "description": "Erkunden Sie Triangl Park bequem von zu Hause aus mit unserer immersiven virtuellen Tour. Erleben Sie das Projekt in 360° und entdecken Sie jedes Detail Ihres zukünftigen Zuhauses.",
+            "features": {
+              "virtualApartment": {
+                "title": "Virtuelles Appartement",
+                "description": "Entdecken Sie Beispielwohnungen im Detail"
+              },
+              "constructionProgress": {
+                "title": "Baufortschritt",
+                "description": "Sehen Sie, wie sich das Projekt entwickelt"
+              },
+              "locationOverview": {
+                "title": "Standort Übersicht",
+                "description": "Entdecken Sie die Umgebung"
+              }
+            },
+            "startVirtualTour": "Virtuelle Tour starten"
+          }
+        }
+      },
+      "tiskarnaKristianov": {
+        "hero": {
+          "title": "Tiskárna Kristiánov",
+          "subtitle": "Wohnen mit Geschichte im Herzen von Liberec. Hier trifft Geschichte auf modernen Luxus in einem einzigartig neu gestalteten Industriekomplex.",
+          "backToProjects": "Zurück zu Projekte",
+          "projectFeatures": {
+            "location": {
+              "name": "Standort",
+              "value": "Liberec Zentrum",
+              "description": "Das Herz der Stadt"
+            },
+            "apartments": {
+              "name": "Wohnungen",
+              "value": "200",
+              "description": "Total Einheiten"
+            },
+            "parking": {
+              "name": "Parken",
+              "value": "218",
+              "description": "Stellplätze"
+            },
+            "history": {
+              "name": "Geschichte",
+              "value": "1791",
+              "description": "Seit Bergers Haus"
+            }
+          }
+        },
+        "projectOverview": {
+          "title": "Über das Projekt",
+          "description1": "Tiskárna Kristiánov bietet unkonventionelle Wohn- und Nichtwohnräume in einem umfassend rekonstruierten Komplex mit faszinierender Geschichte. Diese architektonische Perle vereint die starken Epochen der Gartenstadt und der Industriegeschichte.",
+          "description2": "Der Komplex befindet sich im Stadtzentrum und ist sehr gut erreichbar. Wir haben das ursprüngliche Gesicht der Gebäude erhalten und ihnen gleichzeitig einen neuen Ausdruck verliehen. Die Dominante ist ein 32 Meter hoher, nicht funktionsfähiger Schornstein, der schon von weitem in Liberec zu sehen ist.",
+          "secondStage": {
+            "title": "Zweite Etappe jetzt verfügbar",
+            "description": "Zögern Sie nicht und wählen Sie noch heute Ihr Traumhaus. Spezielle Einführungspreise sind für eine begrenzte Zeit verfügbar."
+          }
+        },
+        "projectHistory": {
+          "title": "Eine Geschichte, die im Jahr 1791 begann",
+          "subtitle": "Entdecken Sie die faszinierende Reise von Bergers Haus zum heutigen modernen Komplex",
+          "timeline": {
+            "1791": {
+              "event": "Bau des Berger-Hauses - erste Liberecer Manufaktur",
+              "description": "Der Beginn des industriellen Erbes"
+            },
+            "1800s": {
+              "event": "Villa Häuser gebaut",
+              "description": "Entwicklung des Gartenstadtviertels"
+            },
+            "1900s": {
+              "event": "Erweiterung des Druckkomplexes",
+              "description": "Größte deutsche Druckerei in Böhmen"
+            },
+            "1990s": {
+              "event": "Komplex aufgegeben",
+              "description": "Wartet auf seine zweite Chance"
+            },
+            "2024": {
+              "event": "Zweite Etappe beginnt",
+              "description": "Moderne Sanierung mit Respekt vor der Geschichte"
+            }
+          }
+        },
+        "whatMakesUsSpecial": {
+          "title": "Was uns besonders macht",
+          "subtitle": "Entdecken Sie die einzigartigen Merkmale, die Tiskárna Kristiánov auszeichnen",
+          "excellentLocation": {
+            "title": "Ausgezeichnete Lage",
+            "description1": "Wohnen Sie im Herzen der Metropole unter dem Ještěd. Der Komplex befindet sich im Stadtzentrum mit hervorragender Anbindung und bildet zusammen mit Staré und Nové Město das zentrale Dreieck von Liberec.",
+            "description2": "Perfekter Zugang zu Einkaufsmöglichkeiten, öffentlichen Verkehrsmitteln, Bildungs- und Kultureinrichtungen."
+          },
+          "stylishLiving": {
+            "title": "Stilvoll Wohnen",
+            "description1": "Wir haben Geschichte und einzigartige moderne Architektur miteinander kombiniert. Der Komplex weist Elemente der Neorenaissance, der Industrie und der modernen Architektur auf und schafft so eine wirklich einzigartige Wohnumgebung.",
+            "description2": "Jedes Gebäude erzählt seine eigene Geschichte und bietet gleichzeitig modernen Komfort und Luxus."
+          },
+          "modernTechnology": {
+            "title": "Moderne Technologie",
+            "description1": "Wir kümmern uns um Ihr komfortables und energieeffizientes Wohnen. Alle Wohnungen verfügen über eine Luftrekuperation und eine Fußbodenheizung sowie über Photovoltaikanlagen und Blockheizkraftwerke für nachhaltige Energie.",
+            "description2": "Regenwasserauffangsysteme und ein intelligentes Gebäudemanagement sorgen für geringere monatliche Kosten."
+          },
+          "comprehensiveAmenities": {
+            "title": "Umfassende Annehmlichkeiten",
+            "description1": "Der Komplex umfasst 200 Wohnungen und Nicht-Wohnräume mit Platz für Galerien, Cafés, Bäckereien, Fitnesscenter und andere städtische Einrichtungen.",
+            "description2": "Der Innenhof bietet eine Kinderecke, einen Brunnen, einen Uhrenturm und gemeinschaftliche Außenbereiche."
+          }
+        },
+        "apartmentStandards": {
+          "title": "Premium-Baustandards",
+          "subtitle": "Die Reduzierung des Energieverbrauchs ist unsere Priorität. Entdecken Sie die nachhaltigen Merkmale, die Ihr Zuhause effizient und komfortabel machen.",
+          "standards": {
+            "airRecuperation": {
+              "name": "Luftrekuperation",
+              "description": "Frischluftventilationssystem für gesundes Wohnen"
+            },
+            "underfloorHeating": {
+              "name": "Fußbodenheizung",
+              "description": "Effizientes und komfortables Heizsystem"
+            },
+            "photovoltaicPanels": {
+              "name": "Photovoltaische Paneele",
+              "description": "Sonnenkollektoren mit Batteriespeicher"
+            },
+            "cogenerationUnit": {
+              "name": "Blockheizkraftwerk",
+              "description": "Kraft-Wärme-Kopplung"
+            },
+            "rainwaterCollection": {
+              "name": "Regenwassersammlung",
+              "description": "Nachhaltiges Wassermanagementsystem"
+            },
+            "smartTechnology": {
+              "name": "Intelligente Technologie",
+              "description": "Moderne Gebäudemanagementsysteme"
+            },
+            "premiumMaterials": {
+              "name": "Hochwertige Materialien",
+              "description": "Hochwertige Verarbeitung und Konstruktion"
+            },
+            "energyEfficient": {
+              "name": "Energieeffizient",
+              "description": "Reduzierte monatliche Betriebskosten"
+            },
+            "soundInsulation": {
+              "name": "Schalldämmung",
+              "description": "Friedliche Wohnumgebung"
+            },
+            "balconiesTerraces": {
+              "name": "Balkone & Terrassen",
+              "description": "Außenwohnbereiche mit Aussicht"
+            }
+          }
+        },
+        "architecturalAwards": {
+          "title": "Preisgekrönte Architektur",
+          "subtitle": "Jiří Opočenský und Štěpán Valouch sind Preisträger des tschechischen Architekturpreises 2020",
+          "awards": {
+            "czechArchitectureAward": {
+              "name": "Česká cena za architekturu 2020",
+              "description": "Tschechischer Architekturpreis 2020",
+              "architect": "OV-A Studio"
+            },
+            "experience": {
+              "name": "15+ Jahre Erfahrung",
+              "description": "Erfolgreich abgeschlossene Projekte",
+              "architect": "Jiří Opočenský & Štěpán Valouch"
+            },
+            "uniqueSolutions": {
+              "name": "Einzigartige Lösungen",
+              "description": "Funktionale, strukturelle und poetische Architektur",
+              "architect": "Preisgekröntes Team"
+            }
+          }
+        },
+        "exteriorViews": {
+          "title": "Außenansichten & Architektur",
+          "subtitle": "Entdecken Sie das einzigartige industrielle Erbe und die moderne architektonische Verschmelzung",
+          "exteriorView": "Außenansicht"
+        },
+        "location": {
+          "title": "Perfekte Lage im Zentrum von Liberec",
+          "description": "Zusammen mit Staré und Nové Město bildet Kristiánov das zentrale Dreieck von Liberec. Der im Osten von Liberec gelegene Stadtteil beherbergt mehr als 5.000 Einwohner und wurde mit dem Ziel gegründet, ein repräsentatives Umfeld rund um den angrenzenden Schlosskomplex und das berühmte Liebieg-Palais zu schaffen.",
+          "features": {
+            "cityCenter": {
+              "feature": "Stadtzentrum",
+              "time": "0 min",
+              "description": "Das Herz von Liberec"
+            },
+            "shopping": {
+              "feature": "Einkaufen",
+              "time": "1-3 min",
+              "description": "Lidl, Billa, Forum Liberec"
+            },
+            "publicTransport": {
+              "feature": "Öffentliche Verkehrsmittel",
+              "time": "2 min",
+              "description": "Bushaltestelle Fügnerova"
+            },
+            "castlePark": {
+              "feature": "Schlosspark",
+              "time": "1 min",
+              "description": "Schöne Grünfläche"
+            }
+          }
+        },
+        "availableUnits": {
+          "title": "Wählen Sie Ihr Traumhaus",
+          "description": "Für detaillierte Informationen über verfügbare Einheiten, Preise und die aktuelle Verfügbarkeit wenden Sie sich bitte direkt an unser Verkaufsteam.",
+          "contactMe": "Kontaktieren Sie mich",
+          "forUnitInfo": "Für Informationen zur Einheit",
+          "getUnitDetails": "Details zur Einheit erhalten"
+        }
+      }
+    },
+    "overviewPages": {
+      "czechRepublic": {
+        "hero": {
+          "title": "Tschechische Republik",
+          "subtitle": "Qualitätsentwicklungsprojekte im Herzen Europas"
+        },
+        "projects": {
+          "badge": "Unsere Projekte",
+          "title": "Ausgewählte Entwicklungsprojekte",
+          "subtitle": "Entdecken Sie unsere Premium-Wohnanlagen in der Tschechischen Republik",
+          "viewProjectDetails": "Projektdetails ansehen",
+          "completed": "abgeschlossen",
+          "sold": "verkauft"
+        },
+        "projectsData": {
+          "trianglPark": {
+            "title": "Dreieckiger Park",
+            "location": "Plzeň-Bory",
+            "status": "Dritte Stufe jetzt im Verkauf",
+            "description": "Einzigartiges Wohnkonzept im südlichen Plzeň-Bory mit drei unterschiedlichen Wohnstandards",
+            "features": [
+              "Garten-Suite",
+              "Familie Zuhause",
+              "Penthouse Lodge"
+            ],
+            "stages": [
+              {
+                "name": "Erste Etappe",
+                "status": "Abgeschlossen",
+                "units": "Ausverkauft"
+              },
+              {
+                "name": "Zweite Etappe",
+                "status": "Abgeschlossen",
+                "units": "Ausverkauft"
+              },
+              {
+                "name": "Dritte Stufe",
+                "status": "Jetzt verkaufen",
+                "units": "38 verfügbar"
+              }
+            ]
+          },
+          "iconPark": {
+            "title": "ICON Park Kladno",
+            "location": "Kladno",
+            "status": "Bereit zum Einzug",
+            "description": "Modernes und komfortables Wohnen in dem neuen Wohnviertel von Kladno",
+            "features": [
+              "1+kk bis 4+kk",
+              "Gewinner des Preises 2024",
+              "Bereit zum Einzug"
+            ],
+            "stages": [
+              {
+                "name": "Projektstatus",
+                "status": "Abgeschlossen",
+                "units": "Bereit zum Einzug"
+              }
+            ]
+          },
+          "englishEmbankment": {
+            "title": "Englische Uferpromenade Palast",
+            "location": "Plzeň Zentrum",
+            "status": "Bauarbeiten im Gange",
+            "description": "Luxuriöses Wohnen im Palaststil im Herzen des historischen Zentrums von Pilsen",
+            "features": [
+              "Luxus-Apartments",
+              "Kommerzieller Raum",
+              "Park Innenhof"
+            ],
+            "stages": [
+              {
+                "name": "Bauwesen",
+                "status": "In Arbeit",
+                "units": "Fertigstellung 2028"
+              }
+            ]
+          },
+          "horovice": {
+            "title": "Bydlení Hořovice",
+            "location": "Hořovice",
+            "status": "Jetzt verkaufen",
+            "description": "Von Grund auf neu - ein guter Ort zum Leben zwischen Pilsen und Prag",
+            "features": [
+              "Backsteinbau",
+              "Maßgeschneiderte Küchen",
+              "3D-Konfigurator"
+            ],
+            "stages": [
+              {
+                "name": "Projektstatus",
+                "status": "Jetzt Verkaufen",
+                "units": "Kontakt für Details"
+              }
+            ]
+          },
+          "tiskarnaKristianov": {
+            "title": "Tiskárna Kristiánov",
+            "location": "Liberec Zentrum",
+            "status": "Zweite Etappe jetzt im Verkauf",
+            "description": "Wohnen mit Geschichte im Herzen von Liberec - industrielles Erbe trifft auf modernen Luxus",
+            "features": [
+              "Industrielles Erbe",
+              "Preisgekrönte Architektur",
+              "200 Einheiten"
+            ],
+            "stages": [
+              {
+                "name": "Zweite Etappe",
+                "status": "Jetzt Verkaufen",
+                "units": "Kontakt für Details"
+              }
+            ]
+          }
+        }
+      },
+      "spain": {
+        "hero": {
+          "title": "Spanien - Costa del Sol",
+          "subtitle": "Luxuriöse Bauträgerprojekte an der Sonnenküste Spaniens"
+        }
       }
     },
     "whyChoose": {
@@ -810,6 +1691,11 @@
       }
     }
   },
+  "hero": {
+    "title": "Finden Sie Ihr Traumhaus",
+    "subtitle": "Entdecken Sie die perfekte Immobilie, die zu Ihrem Lebensstil passt",
+    "search": "Immobilien suchen"
+  },
   "sidebar": {
     "home": "Startseite",
     "listing": "Immobilien",
@@ -819,11 +1705,6 @@
     "blog": "Blog",
     "contact": "Kontakt",
     "phoneNumber": "+420 733 781 696"
-  },
-  "hero": {
-    "title": "Finden Sie Ihr Traumhaus",
-    "subtitle": "Entdecken Sie die perfekte Immobilie, die zu Ihrem Lebensstil passt",
-    "search": "Immobilien suchen"
   },
   "contact": {
     "title": "Kontaktieren Sie uns",
@@ -859,6 +1740,7 @@
       "subjectPlaceholder": "Betreff :",
       "messagePlaceholder": "Nachricht :",
       "phonePlaceholder": "Telefon :",
+      "yourPhone": "Ihr Telefon",
       "successMessage": "Nachricht erfolgreich gesendet.",
       "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
     },
@@ -1606,4 +2488,4 @@
       "viewProperties": "Immobilien anzeigen"
     }
   }
-} 
+}

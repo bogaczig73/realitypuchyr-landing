@@ -22,56 +22,56 @@ const regions = [
                 titleKey: "categories.apartments.title",
                 descriptionKey: "categories.apartments.description",
                 icon: "🏢",
-                image: "/images/spain/spain_aparman.webp"
+                image: "/images/spain/spain_aparman.webp",
             },
             {
                 id: "penthouses",
                 titleKey: "categories.penthouses.title",
                 descriptionKey: "categories.penthouses.description",
                 icon: "🏙️",
-                image: "/images/spain/spain_penthouse.webp"
+                image: "/images/spain/spain_penthouse.webp",
             },
             {
                 id: "houses",
                 titleKey: "categories.familyHouses.title",
                 descriptionKey: "categories.familyHouses.description",
                 icon: "🏡",
-                image: "/images/spain/spain_house.webp"
+                image: "/images/spain/spain_house.webp",
             },
             {
                 id: "villas",
                 titleKey: "categories.villas.title",
                 descriptionKey: "categories.villas.description",
                 icon: "🏰",
-                image: "/images/spain/spain_villa.webp"
+                image: "/images/spain/spain_villa.webp",
             },
             {
                 id: "residential-complexes",
                 titleKey: "categories.residentialComplexes.title",
                 descriptionKey: "categories.residentialComplexes.description",
                 icon: "🏘️",
-                image: "/images/spain/spain_residential.webp"
+                image: "/images/spain/spain_residential.webp",
             },
             {
                 id: "hotel-services",
                 titleKey: "categories.hotelServices.title",
                 descriptionKey: "categories.hotelServices.description",
                 icon: "🏨",
-                image: "/images/spain/spain_hotel.webp"
+                image: "/images/spain/spain_hotel.webp",
             },
             {
                 id: "golf-properties",
                 titleKey: "categories.golfProperties.title",
                 descriptionKey: "categories.golfProperties.description",
                 icon: "⛳",
-                image: "/images/spain/spain_golf.webp"
+                image: "/images/spain/spain_golf.webp",
             },
             {
                 id: "smart-homes",
                 titleKey: "categories.smartHomes.title",
                 descriptionKey: "categories.smartHomes.description",
                 icon: "🌱",
-                image: "/images/spain/spain_smart.webp"
+                image: "/images/spain/spain_smart.webp",
             }
         ]
     },
@@ -83,32 +83,49 @@ const regions = [
         image: "/images/property/developer_projects_czech_republic.webp",
         categories: [
             {
-                id: "apartments",
-                titleKey: "categories.apartments.title",
-                descriptionKey: "categories.apartments.description",
+                id: "triangl-park",
+                titleKey: "overviewPages.czechRepublic.projectsData.trianglPark.title",
+                descriptionKey: "overviewPages.czechRepublic.projectsData.trianglPark.description",
+                icon: "🏗️",
+                image: "/images/projects/czech-republic/triangl-park/triangl-park-23.webp",
+                location: "overviewPages.czechRepublic.projectsData.trianglPark.location",
+                status: "overviewPages.czechRepublic.projectsData.trianglPark.status"
+            },
+            {
+                id: "icon-park",
+                titleKey: "overviewPages.czechRepublic.projectsData.iconPark.title",
+                descriptionKey: "overviewPages.czechRepublic.projectsData.iconPark.description",
                 icon: "🏢",
-                image: "/images/property/residential.jpg"
+                image: "/images/projects/czech-republic/icon-park/icon-park-21.webp",
+                location: "overviewPages.czechRepublic.projectsData.iconPark.location",
+                status: "overviewPages.czechRepublic.projectsData.iconPark.status"
             },
             {
-                id: "houses",
-                titleKey: "categories.familyHouses.title",
-                descriptionKey: "categories.familyHouses.description",
+                id: "english-embankment",
+                titleKey: "overviewPages.czechRepublic.projectsData.englishEmbankment.title",
+                descriptionKey: "overviewPages.czechRepublic.projectsData.englishEmbankment.description",
+                icon: "🏛️",
+                image: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-03.webp",
+                location: "overviewPages.czechRepublic.projectsData.englishEmbankment.location",
+                status: "overviewPages.czechRepublic.projectsData.englishEmbankment.status"
+            },
+            {
+                id: "horovice",
+                titleKey: "overviewPages.czechRepublic.projectsData.horovice.title",
+                descriptionKey: "overviewPages.czechRepublic.projectsData.horovice.description",
                 icon: "🏡",
-                image: "/images/property/residential.jpg"
+                image: "/images/projects/czech-republic/horovice/horovice-08.webp",
+                location: "overviewPages.czechRepublic.projectsData.horovice.location",
+                status: "overviewPages.czechRepublic.projectsData.horovice.status"
             },
             {
-                id: "villas",
-                titleKey: "categories.villas.title",
-                descriptionKey: "categories.villas.description",
-                icon: "🏰",
-                image: "/images/property/residential.jpg"
-            },
-            {
-                id: "residential-complexes",
-                titleKey: "categories.residentialComplexes.title",
-                descriptionKey: "categories.residentialComplexes.description",
-                icon: "🏘️",
-                image: "/images/property/residential.jpg"
+                id: "tiskarna-kristianov",
+                titleKey: "overviewPages.czechRepublic.projectsData.tiskarnaKristianov.title",
+                descriptionKey: "overviewPages.czechRepublic.projectsData.tiskarnaKristianov.description",
+                icon: "🏭",
+                image: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-02.webp",
+                location: "overviewPages.czechRepublic.projectsData.tiskarnaKristianov.location",
+                status: "overviewPages.czechRepublic.projectsData.tiskarnaKristianov.status"
             }
         ]
     }
@@ -201,6 +218,17 @@ export default function DeveloperProjects() {
                                                 <div className="flex-1 min-w-0">
                                                     <h5 className="text-sm font-medium text-slate-800 truncate">{t(category.titleKey)}</h5>
                                                     <p className="text-xs text-slate-500 truncate">{t(category.descriptionKey)}</p>
+                                                    <div className="flex items-center gap-1 mt-1">
+                                                        {category.status && (
+                                                            <>
+                                                                <span className="text-xs text-green-600 font-medium">{t(category.status)}</span>
+                                                                <span className="text-xs text-slate-400">•</span>
+                                                            </>
+                                                        )}
+                                                        {category.location && (
+                                                            <span className="text-xs text-slate-500">{t(category.location)}</span>
+                                                        )}
+                                                    </div>
                                                 </div>
                                                 <FiArrowRight className="h-4 w-4 text-slate-400 group-hover/cat:text-green-600 transition-colors" />
                                             </Link>

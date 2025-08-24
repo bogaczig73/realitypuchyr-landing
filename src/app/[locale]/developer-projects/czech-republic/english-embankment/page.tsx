@@ -10,80 +10,70 @@ import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
 import PhotoGallery from "../../components/photo-gallery";
 
-const projectFeatures = [
-    {
-        name: "Commercial Space",
-        value: "2,800 m²",
-        description: "Available for rent",
-        icon: "🏢"
-    },
-    {
-        name: "Residential Units",
-        value: "200",
-        description: "Apartments for sale",
-        icon: "🏠"
-    },
-    {
-        name: "Parking Spaces",
-        value: "400",
-        description: "Including EV charging",
-        icon: "🚗"
-    },
-    {
-        name: "Floors",
-        value: "8",
-        description: "Above ground levels",
-        icon: "🏗️"
-    }
-];
-
-const apartmentTypes = [
-    { type: "1+kk", size: "From 30 m²", description: "Compact luxury living" },
-    { type: "2+kk", size: "Various sizes", description: "Perfect for couples" },
-    { type: "3+kk", size: "Various sizes", description: "Ideal for families" },
-    { type: "4+kk", size: "Various sizes", description: "Spacious family living" },
-    { type: "Penthouse", size: "Custom layouts", description: "Exclusive top-floor living" },
-    { type: "Maisonette", size: "Custom layouts", description: "Unique multi-level design" }
-];
-
-const locationFeatures = [
-    { feature: "Republic Square", time: "2 min", description: "Cathedral of St. Bartholomew" },
-    { feature: "Radbuza River", time: "3 min", description: "Beautiful river embankment" },
-    { feature: "City Parks", time: "5 min", description: "Plzeň's most beautiful parks" },
-    { feature: "Cultural Center", time: "5 min", description: "Theaters, museums, galleries" }
-];
-
-const amenities = [
-    { name: "Park Courtyard", description: "Private green inner courtyard with park design", icon: "🌳" },
-    { name: "Premium Standards", description: "Triple-glazed windows, wooden floors, underfloor heating", icon: "✨" },
-    { name: "Smart Technology", description: "Recuperation and modern comfort systems", icon: "🏠" },
-    { name: "EV Parking", description: "Specially adapted parking with fast charging", icon: "⚡" },
-    { name: "River Views", description: "Panoramic views of the Radbuza River", icon: "🌊" },
-    { name: "City Views", description: "Exclusive views of Plzeň's historic center", icon: "🏛️" }
-];
-
-const exteriorPhotos = [
-    { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-07.webp", alt: "River Front View", building: "River Front" },
-    { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-05.webp", alt: "Park Courtyard", building: "Park Area" },
-    { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-06.webp", alt: "Terrace Design", building: "Terraces" },
-    { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-03.webp", alt: "Building Entrance", building: "Entrance" },
-    { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-08.webp", alt: "Night View", building: "Night View" }
-];
-
-const interiorVisualizations = [
-    { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-04.webp", alt: "Penthouse Design", type: "Penthouse" },
-    { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-02.webp", alt: "Luxury Kitchen", type: "Kitchen" },
-];
-
-const projectPartners = [
-    { name: "INVESTIKA", role: "Real Estate Fund", description: "One of the largest players on the Czech real estate market" },
-    { name: "BC Real", role: "Developer", description: "19+ years of experience in Plzeň, 14 completed projects" },
-    { name: "Broker Consulting", role: "Sales & Financing", description: "Most requested independent consultant in Czech Republic" }
-];
-
 export default function EnglishEmbankmentPage() {
-    const t = useTranslations('developerProjects.czechRepublic');
-    const tCategories = useTranslations('developerProjects.categories');
+    const t = useTranslations('developerProjects.czechRepublic.englishEmbankment');
+
+    const projectFeatures = [
+        {
+            name: t('projectFeatures.commercialSpace.name'),
+            value: t('projectFeatures.commercialSpace.value'),
+            description: t('projectFeatures.commercialSpace.description'),
+            icon: "🏢"
+        },
+        {
+            name: t('projectFeatures.residentialUnits.name'),
+            value: t('projectFeatures.residentialUnits.value'),
+            description: t('projectFeatures.residentialUnits.description'),
+            icon: "🏠"
+        },
+        {
+            name: t('projectFeatures.parkingSpaces.name'),
+            value: t('projectFeatures.parkingSpaces.value'),
+            description: t('projectFeatures.parkingSpaces.description'),
+            icon: "🚗"
+        },
+        {
+            name: t('projectFeatures.floors.name'),
+            value: t('projectFeatures.floors.value'),
+            description: t('projectFeatures.floors.description'),
+            icon: "🏗️"
+        }
+    ];
+
+    const locationFeatures = [
+        { feature: t('location.features.republicSquare.feature'), time: t('location.features.republicSquare.time'), description: t('location.features.republicSquare.description') },
+        { feature: t('location.features.radbuzaRiver.feature'), time: t('location.features.radbuzaRiver.time'), description: t('location.features.radbuzaRiver.description') },
+        { feature: t('location.features.cityParks.feature'), time: t('location.features.cityParks.time'), description: t('location.features.cityParks.description') },
+        { feature: t('location.features.culturalCenter.feature'), time: t('location.features.culturalCenter.time'), description: t('location.features.culturalCenter.description') }
+    ];
+
+    const amenities = [
+        { name: t('premiumStandards.amenities.parkCourtyard.name'), description: t('premiumStandards.amenities.parkCourtyard.description'), icon: "🌳" },
+        { name: t('premiumStandards.amenities.premiumStandards.name'), description: t('premiumStandards.amenities.premiumStandards.description'), icon: "✨" },
+        { name: t('premiumStandards.amenities.smartTechnology.name'), description: t('premiumStandards.amenities.smartTechnology.description'), icon: "🏠" },
+        { name: t('premiumStandards.amenities.evParking.name'), description: t('premiumStandards.amenities.evParking.description'), icon: "⚡" },
+        { name: t('premiumStandards.amenities.riverViews.name'), description: t('premiumStandards.amenities.riverViews.description'), icon: "🌊" },
+        { name: t('premiumStandards.amenities.cityViews.name'), description: t('premiumStandards.amenities.cityViews.description'), icon: "🏛️" }
+    ];
+
+    const exteriorPhotos = [
+        { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-07.webp", alt: "River Front View", building: "River Front" },
+        { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-05.webp", alt: "Park Courtyard", building: "Park Area" },
+        { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-06.webp", alt: "Terrace Design", building: "Terraces" },
+        { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-03.webp", alt: "Building Entrance", building: "Entrance" },
+        { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-08.webp", alt: "Night View", building: "Night View" }
+    ];
+
+    const interiorVisualizations = [
+        { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-04.webp", alt: "Penthouse Design", type: "Penthouse" },
+        { src: "/images/projects/czech-republic/anglicke-nabrezi/anglicke-nabrezi-02.webp", alt: "Luxury Kitchen", type: "Kitchen" },
+    ];
+
+    const projectPartners = [
+        { name: t('partners.investika.name'), role: t('partners.investika.role'), description: t('partners.investika.description') },
+        { name: t('partners.bcReal.name'), role: t('partners.bcReal.role'), description: t('partners.bcReal.description') },
+        { name: t('partners.brokerConsulting.name'), role: t('partners.brokerConsulting.role'), description: t('partners.brokerConsulting.description') }
+    ];
 
     return (
         <>
@@ -99,14 +89,14 @@ export default function EnglishEmbankmentPage() {
                         <div className="mb-4">
                             <Link href="/developer-projects/czech-republic" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
-                                Back to Projects
+                                {t('hero.backToProjects')}
                             </Link>
                         </div>
                         <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">
-                            English Embankment Palace
+                            {t('hero.title')}
                         </h3>
                         <p className="text-white/70 text-lg max-w-2xl mx-auto mt-4">
-                            Exceptional in all parameters - Luxury palace-style living in the heart of Plzeň's historic center
+                            {t('hero.subtitle')}
                         </p>
                         <div className="mt-8 flex items-center justify-center gap-6">
                             {projectFeatures.map((feature, index) => (
@@ -133,24 +123,17 @@ export default function EnglishEmbankmentPage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">About the Project</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('aboutProject.title')}</h2>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                The English Embankment Palace is growing in the very heart of Plzeň's historic city center, 
-                                where new construction is an exceptionally rare phenomenon. Just a few steps from Republic 
-                                Square with the Cathedral of St. Bartholomew and surrounded by Plzeň's most beautiful parks 
-                                and the popular Radbuza River embankment.
+                                {t('aboutProject.description1')}
                             </p>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                Simply put, this is a unique opportunity to purchase a luxury city apartment in a perfect 
-                                location at a prestigious address. The palace-style building from the drawing board of 
-                                renowned architects from PRO-STORY studio will bring its residents not only exclusive views 
-                                but also a residential inner courtyard with park landscaping.
+                                {t('aboutProject.description2')}
                             </p>
                             <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                                <h3 className="font-semibold text-green-800 mb-2">Construction in Progress</h3>
+                                <h3 className="font-semibold text-green-800 mb-2">{t('aboutProject.constructionStatus.title')}</h3>
                                 <p className="text-green-700">
-                                    Project realization began in June 2024 and construction is already in full swing. 
-                                    Completion is scheduled for early 2028.
+                                    {t('aboutProject.constructionStatus.description')}
                                 </p>
                             </div>
                         </div>
@@ -171,9 +154,9 @@ export default function EnglishEmbankmentPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Project Features</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('projectFeaturesSection.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover what makes English Embankment Palace exceptional in all parameters
+                            {t('projectFeaturesSection.subtitle')}
                         </p>
                     </div>
                     
@@ -183,15 +166,13 @@ export default function EnglishEmbankmentPage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiGrid className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Commercial Space</h3>
+                                <h3 className="text-2xl font-bold">{t('projectFeaturesSection.commercialSpace.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                The first two above-ground floors will offer nearly three thousand square meters of 
-                                commercial space for rent. The first floor will be elevated with approximately 1,200 m² 
-                                of retail space, suitable for brand stores, showrooms, or services.
+                                {t('projectFeaturesSection.commercialSpace.description1')}
                             </p>
                             <p className="text-slate-600">
-                                The second floor will have around 1,600 m² of offices and several apartments available.
+                                {t('projectFeaturesSection.commercialSpace.description2')}
                             </p>
                         </div>
                         
@@ -200,17 +181,13 @@ export default function EnglishEmbankmentPage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiHome className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Exclusive Apartments</h3>
+                                <h3 className="text-2xl font-bold">{t('projectFeaturesSection.exclusiveApartments.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                From the third to the eighth floor, exclusively residential units will be located. 
-                                The entire project will offer approximately 200 apartments of all layouts and sizes 
-                                for sale.
+                                {t('projectFeaturesSection.exclusiveApartments.description1')}
                             </p>
                             <p className="text-slate-600">
-                                From the smallest 1+kk with about 30 m² to beautiful spacious penthouses and 
-                                maisonettes with custom-designed layouts and terraces overlooking the city center 
-                                or the Radbuza River.
+                                {t('projectFeaturesSection.exclusiveApartments.description2')}
                             </p>
                         </div>
                         
@@ -219,16 +196,13 @@ export default function EnglishEmbankmentPage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiBox className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Hassle-free Parking</h3>
+                                <h3 className="text-2xl font-bold">{t('projectFeaturesSection.parking.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                Parking will be available in a total of four floors, providing sufficient parking 
-                                spaces for the administrative high-rise building, as well as for shops, offices, 
-                                and apartments.
+                                {t('projectFeaturesSection.parking.description1')}
                             </p>
                             <p className="text-slate-600">
-                                We're planning nearly 400 parking spaces. A novelty will be specially adapted 
-                                parking spaces for electric vehicles with the possibility of faster charging.
+                                {t('projectFeaturesSection.parking.description2')}
                             </p>
                         </div>
                         
@@ -237,17 +211,13 @@ export default function EnglishEmbankmentPage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiZap className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Park Courtyard</h3>
+                                <h3 className="text-2xl font-bold">{t('projectFeaturesSection.parkCourtyard.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                Thanks to uniquely designed green inner courtyards, you'll gain peace and privacy 
-                                whenever you desire it. And this at an exclusive address in the very center of 
-                                the living West Bohemian metropolis.
+                                {t('projectFeaturesSection.parkCourtyard.description1')}
                             </p>
                             <p className="text-slate-600">
-                                The surrounding street space of the new palace will also be improved and beautified. 
-                                The prestige of the location will be emphasized by the building's architecture 
-                                with a series of terraces planted with trees and ornamental shrubs.
+                                {t('projectFeaturesSection.parkCourtyard.description2')}
                             </p>
                         </div>
                     </div>
@@ -258,9 +228,9 @@ export default function EnglishEmbankmentPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">External Building Views</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('externalViews.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Explore the architectural beauty and design of the English Embankment Palace
+                            {t('externalViews.subtitle')}
                         </p>
                     </div>
                     
@@ -277,7 +247,7 @@ export default function EnglishEmbankmentPage() {
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <div className="text-center text-white">
                                         <div className="text-sm font-semibold">{photo.building}</div>
-                                        <div className="text-xs opacity-90">Exterior View</div>
+                                        <div className="text-xs opacity-90">{t('externalViews.exteriorView')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -290,9 +260,9 @@ export default function EnglishEmbankmentPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Interior Visualizations</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('interiorVisualizations.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the interior layouts and designs for all apartment types
+                            {t('interiorVisualizations.subtitle')}
                         </p>
                     </div>
                     
@@ -309,7 +279,7 @@ export default function EnglishEmbankmentPage() {
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <div className="text-center text-white">
                                         <div className="text-sm font-semibold">{visualization.type}</div>
-                                        <div className="text-xs opacity-90">Interior Design</div>
+                                        <div className="text-xs opacity-90">{t('interiorVisualizations.interiorDesign')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -322,9 +292,9 @@ export default function EnglishEmbankmentPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Highest Standard in Plzeň</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('premiumStandards.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Luxury and comfort as standard - exceptional execution in every detail
+                            {t('premiumStandards.subtitle')}
                         </p>
                     </div>
 
@@ -345,17 +315,14 @@ export default function EnglishEmbankmentPage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">Exclusive Location</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('location.title')}</h2>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                Exceptional location in the very heart of the historic city center, just a few steps 
-                                from Republic Square. Surrounded by the river and Plzeň's most beautiful parks. 
-                                Culture, gastronomy, business, nightlife – everything that makes the city alive and 
-                                inspiring is now just a few steps from your apartment.
+                                {t('location.description')}
                             </p>
                             <div className="grid grid-cols-2 gap-4">
                                 {locationFeatures.map((feature, index) => (
                                     <div key={index} className="flex items-center gap-3">
-                                        <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                                        <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-center text-white font-bold">
                                             {feature.time}
                                         </div>
                                         <div>
@@ -383,9 +350,9 @@ export default function EnglishEmbankmentPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Quality Guarantee</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('partners.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Strong partnerships guarantee the highest quality
+                            {t('partners.subtitle')}
                         </p>
                     </div>
 
@@ -408,17 +375,16 @@ export default function EnglishEmbankmentPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="text-4xl font-bold mb-6">Find Your Apartment</h2>
+                        <h2 className="text-4xl font-bold mb-6">{t('availableUnits.title')}</h2>
                         <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-                            For detailed information about available units, pricing, and current availability, 
-                            please contact our sales team directly.
+                            {t('availableUnits.description')}
                         </p>
                         <div className="bg-white p-8 rounded-xl shadow-lg inline-block">
-                            <div className="text-4xl font-bold text-green-600 mb-2">Contact Us</div>
-                            <div className="text-xl mb-4">For Unit Information</div>
+                            <div className="text-4xl font-bold text-green-600 mb-2">{t('availableUnits.contactUs')}</div>
+                            <div className="text-xl mb-4">{t('availableUnits.forUnitInfo')}</div>
                             <Link href="#contact">
                                 <button className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors mb-4">
-                                    Get Unit Details
+                                    {t('availableUnits.getUnitDetails')}
                                 </button>
                             </Link>
                         </div>

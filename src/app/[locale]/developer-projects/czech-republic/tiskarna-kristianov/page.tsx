@@ -9,101 +9,99 @@ import Footer from "../../../components/footer";
 import GetInTuch from "../../../components/get-in-touch";
 import Switcher from "../../../components/switcher";
 
-const projectFeatures = [
-    {
-        name: "Location",
-        value: "Liberec Center",
-        description: "Heart of the city",
-        icon: "📍"
-    },
-    {
-        name: "Apartments",
-        value: "200",
-        description: "Total units",
-        icon: "🏠"
-    },
-    {
-        name: "Parking",
-        value: "218",
-        description: "Parking spaces",
-        icon: "🚗"
-    },
-    {
-        name: "History",
-        value: "1791",
-        description: "Since Berger's house",
-        icon: "🏛️"
-    }
-];
-
-const apartmentTypes = [
-    { type: "Studio", size: "Various sizes", description: "Perfect for singles or couples" },
-    { type: "1+kk to 4+kk", size: "Various sizes", description: "From classic to spacious layouts" },
-    { type: "Penthouse", size: "Premium sizes", description: "Luxury top-floor living" },
-    { type: "Villa", size: "Custom layouts", description: "Unique villa-style units" },
-    { type: "Office", size: "Commercial space", description: "Professional workspaces" },
-    { type: "Retail", size: "Various sizes", description: "Commercial opportunities" }
-];
-
-const locationFeatures = [
-    { feature: "City Center", time: "0 min", description: "Heart of Liberec" },
-    { feature: "Shopping", time: "1-3 min", description: "Lidl, Billa, Forum Liberec" },
-    { feature: "Public Transport", time: "2 min", description: "Fügnerova bus stop" },
-    { feature: "Castle Park", time: "1 min", description: "Beautiful green space" }
-];
-
-const amenities = [
-    { name: "Gallery Space", description: "Cultural venue for exhibitions and events", icon: "🎨" },
-    { name: "Café & Bakery", description: "Charming café and pastry shop", icon: "☕" },
-    { name: "Fitness Center", description: "Modern fitness facilities", icon: "💪" },
-    { name: "Children's Corner", description: "Play area in the inner courtyard", icon: "👶" },
-    { name: "Fountain & Clock", description: "Historic fountain and clock tower", icon: "⏰" },
-    { name: "Rooftop Gardens", description: "Terrace gardens with city views", icon: "🌿" }
-];
-
-const apartmentStandards = [
-    { name: "Air Recuperation", description: "Fresh air ventilation system for healthy living" },
-    { name: "Underfloor Heating", description: "Efficient and comfortable heating system" },
-    { name: "Photovoltaic Panels", description: "Solar panels with battery storage" },
-    { name: "Cogeneration Unit", description: "Combined heat and power generation" },
-    { name: "Rainwater Collection", description: "Sustainable water management system" },
-    { name: "Smart Technology", description: "Modern building management systems" },
-    { name: "Premium Materials", description: "High-quality finishes and construction" },
-    { name: "Energy Efficient", description: "Reduced monthly operating costs" },
-    { name: "Sound Insulation", description: "Peaceful living environment" },
-    { name: "Balconies & Terraces", description: "Outdoor living spaces with views" }
-];
-
-const exteriorPhotos = [
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-01.webp", alt: "Industrial Complex View"},
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-02.webp", alt: "32m Chimney" },
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-03.webp", alt: "Neorenaissance Architecture" },
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-04.webp", alt: "Industrial Heritage" },
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-05.webp", alt: "Inner Courtyard" },
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-06.webp", alt: "Rooftop Gardens" },
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-10.webp", alt: "Castle Park View" },
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-08.webp", alt: "City Center Location" },
-    { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-12.webp", alt: "City Center Location" }
-];
-
-
-const projectHistory = [
-    { year: "1791", event: "Berger's house built - first Liberec manufactory", description: "The beginning of industrial heritage" },
-    { year: "1800s", event: "Villa houses constructed", description: "Development of the garden city quarter" },
-    { year: "1900s", event: "Printing complex expansion", description: "Largest German printing plant in Bohemia" },
-    { year: "1990s", event: "Complex abandoned", description: "Waiting for its second chance" },
-    { year: "2024", event: "Second stage begins", description: "Modern redevelopment with respect for history" }
-];
-
-const architecturalAwards = [
-    { name: "Česká cena za architekturu 2020", description: "Czech Architecture Award 2020", architect: "OV-A Studio" },
-    { name: "15+ Years Experience", description: "Successfully completed projects", architect: "Jiří Opočenský & Štěpán Valouch" },
-    { name: "Unique Solutions", description: "Functional, structural and poetic architecture", architect: "Award-winning team" }
-];
-
 export default function TiskarnaKristianovPage() {
-    const t = useTranslations('developerProjects.czechRepublic');
-    const tCategories = useTranslations('developerProjects.categories');
+    const t = useTranslations('developerProjects.czechRepublic.tiskarnaKristianov');
+
+    const projectFeatures = [
+        {
+            name: t('hero.projectFeatures.location.name'),
+            value: t('hero.projectFeatures.location.value'),
+            description: t('hero.projectFeatures.location.description'),
+            icon: "📍"
+        },
+        {
+            name: t('hero.projectFeatures.apartments.name'),
+            value: t('hero.projectFeatures.apartments.value'),
+            description: t('hero.projectFeatures.apartments.description'),
+            icon: "🏠"
+        },
+        {
+            name: t('hero.projectFeatures.parking.name'),
+            value: t('hero.projectFeatures.parking.value'),
+            description: t('hero.projectFeatures.parking.description'),
+            icon: "🚗"
+        },
+        {
+            name: t('hero.projectFeatures.history.name'),
+            value: t('hero.projectFeatures.history.value'),
+            description: t('hero.projectFeatures.history.description'),
+            icon: "🏛️"
+        }
+    ];
+
+    const apartmentTypes = [
+        { type: "Studio", size: "Various sizes", description: "Perfect for singles or couples" },
+        { type: "1+kk to 4+kk", size: "Various sizes", description: "From classic to spacious layouts" },
+        { type: "Penthouse", size: "Premium sizes", description: "Luxury top-floor living" },
+        { type: "Villa", size: "Custom layouts", description: "Unique villa-style units" },
+        { type: "Office", size: "Commercial space", description: "Professional workspaces" },
+        { type: "Retail", size: "Various sizes", description: "Commercial opportunities" }
+    ];
+
+    const locationFeatures = [
+        { feature: t('location.features.cityCenter.feature'), time: t('location.features.cityCenter.time'), description: t('location.features.cityCenter.description') },
+        { feature: t('location.features.shopping.feature'), time: t('location.features.shopping.time'), description: t('location.features.shopping.description') },
+        { feature: t('location.features.publicTransport.feature'), time: t('location.features.publicTransport.time'), description: t('location.features.publicTransport.description') },
+        { feature: t('location.features.castlePark.feature'), time: t('location.features.castlePark.time'), description: t('location.features.castlePark.description') }
+    ];
+
+    const amenities = [
+        { name: "Gallery Space", description: "Cultural venue for exhibitions and events", icon: "🎨" },
+        { name: "Café & Bakery", description: "Charming café and pastry shop", icon: "☕" },
+        { name: "Fitness Center", description: "Modern fitness facilities", icon: "💪" },
+        { name: "Children's Corner", description: "Play area in the inner courtyard", icon: "👶" },
+        { name: "Fountain & Clock", description: "Historic fountain and clock tower", icon: "⏰" },
+        { name: "Rooftop Gardens", description: "Terrace gardens with city views", icon: "🌿" }
+    ];
+
+    const apartmentStandards = [
+        { name: t('apartmentStandards.standards.airRecuperation.name'), description: t('apartmentStandards.standards.airRecuperation.description') },
+        { name: t('apartmentStandards.standards.underfloorHeating.name'), description: t('apartmentStandards.standards.underfloorHeating.description') },
+        { name: t('apartmentStandards.standards.photovoltaicPanels.name'), description: t('apartmentStandards.standards.photovoltaicPanels.description') },
+        { name: t('apartmentStandards.standards.cogenerationUnit.name'), description: t('apartmentStandards.standards.cogenerationUnit.description') },
+        { name: t('apartmentStandards.standards.rainwaterCollection.name'), description: t('apartmentStandards.standards.rainwaterCollection.description') },
+        { name: t('apartmentStandards.standards.smartTechnology.name'), description: t('apartmentStandards.standards.smartTechnology.description') },
+        { name: t('apartmentStandards.standards.premiumMaterials.name'), description: t('apartmentStandards.standards.premiumMaterials.description') },
+        { name: t('apartmentStandards.standards.energyEfficient.name'), description: t('apartmentStandards.standards.energyEfficient.description') },
+        { name: t('apartmentStandards.standards.soundInsulation.name'), description: t('apartmentStandards.standards.soundInsulation.description') },
+        { name: t('apartmentStandards.standards.balconiesTerraces.name'), description: t('apartmentStandards.standards.balconiesTerraces.description') }
+    ];
+
+    const exteriorPhotos = [
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-01.webp", alt: "Industrial Complex View"},
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-02.webp", alt: "32m Chimney" },
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-03.webp", alt: "Neorenaissance Architecture" },
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-04.webp", alt: "Industrial Heritage" },
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-05.webp", alt: "Inner Courtyard" },
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-06.webp", alt: "Rooftop Gardens" },
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-10.webp", alt: "Castle Park View" },
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-08.webp", alt: "City Center Location" },
+        { src: "/images/projects/czech-republic/tiskarna-kristianov/kristianov-12.webp", alt: "City Center Location" }
+    ];
+
+    const projectHistory = [
+        { year: "1791", event: t('projectHistory.timeline.1791.event'), description: t('projectHistory.timeline.1791.description') },
+        { year: "1800s", event: t('projectHistory.timeline.1800s.event'), description: t('projectHistory.timeline.1800s.description') },
+        { year: "1900s", event: t('projectHistory.timeline.1900s.event'), description: t('projectHistory.timeline.1900s.description') },
+        { year: "1990s", event: t('projectHistory.timeline.1990s.event'), description: t('projectHistory.timeline.1990s.description') },
+        { year: "2024", event: t('projectHistory.timeline.2024.event'), description: t('projectHistory.timeline.2024.description') }
+    ];
+
+    const architecturalAwards = [
+        { name: t('architecturalAwards.awards.czechArchitectureAward.name'), description: t('architecturalAwards.awards.czechArchitectureAward.description'), architect: t('architecturalAwards.awards.czechArchitectureAward.architect') },
+        { name: t('architecturalAwards.awards.experience.name'), description: t('architecturalAwards.awards.experience.description'), architect: t('architecturalAwards.awards.experience.architect') },
+        { name: t('architecturalAwards.awards.uniqueSolutions.name'), description: t('architecturalAwards.awards.uniqueSolutions.description'), architect: t('architecturalAwards.awards.uniqueSolutions.architect') }
+    ];
 
     return (
         <>
@@ -119,14 +117,14 @@ export default function TiskarnaKristianovPage() {
                         <div className="mb-4">
                             <Link href="/developer-projects/czech-republic" className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors">
                                 <FiArrowLeft className="h-4 w-4" />
-                                Back to Projects
+                                {t('hero.backToProjects')}
                             </Link>
                         </div>
                         <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">
-                            Tiskárna Kristiánov
+                            {t('hero.title')}
                         </h3>
                         <p className="text-white/70 text-lg max-w-2xl mx-auto mt-4">
-                            Living with a story in the heart of Liberec. Where history meets modern luxury in a uniquely reimagined industrial complex.
+                            {t('hero.subtitle')}
                         </p>
                         <div className="mt-8 flex items-center justify-center gap-6">
                             {projectFeatures.map((feature, index) => (
@@ -153,20 +151,17 @@ export default function TiskarnaKristianovPage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">About the Project</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('projectOverview.title')}</h2>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                Tiskárna Kristiánov offers unconventional living and non-residential spaces in a comprehensively reconstructed complex 
-                                with fascinating history. This architectural pearl combines the strong periods of garden city and industrial era history.
+                                {t('projectOverview.description1')}
                             </p>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                                The complex is located in the city center with excellent accessibility. We've preserved the original face of the buildings 
-                                while giving them new expression. The dominant feature is a 32-meter high non-functional chimney visible from distant 
-                                corners of Liberec.
+                                {t('projectOverview.description2')}
                             </p>
                             <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                                <h3 className="font-semibold text-green-800 mb-2">Second Stage Now Available</h3>
+                                <h3 className="font-semibold text-green-800 mb-2">{t('projectOverview.secondStage.title')}</h3>
                                 <p className="text-green-700">
-                                    Don't hesitate and choose your dream home today. Special introductory prices available for a limited time.
+                                    {t('projectOverview.secondStage.description')}
                                 </p>
                             </div>
                         </div>
@@ -187,9 +182,9 @@ export default function TiskarnaKristianovPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">A Story That Began in 1791</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('projectHistory.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the fascinating journey from Berger's house to today's modern complex
+                            {t('projectHistory.subtitle')}
                         </p>
                     </div>
                     
@@ -215,9 +210,9 @@ export default function TiskarnaKristianovPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">What Makes Us Special</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('whatMakesUsSpecial.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Discover the unique features that set Tiskárna Kristiánov apart
+                            {t('whatMakesUsSpecial.subtitle')}
                         </p>
                     </div>
                     
@@ -227,14 +222,13 @@ export default function TiskarnaKristianovPage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiMapPin className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Excellent Location</h3>
+                                <h3 className="text-2xl font-bold">{t('whatMakesUsSpecial.excellentLocation.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                Live in the very heart of the metropolis under Ještěd. The complex is located in the city center with excellent 
-                                accessibility, forming the central triangle of Liberec together with Staré and Nové Město.
+                                {t('whatMakesUsSpecial.excellentLocation.description1')}
                             </p>
                             <p className="text-slate-600">
-                                Perfect access to shopping, public transport, education, and cultural facilities.
+                                {t('whatMakesUsSpecial.excellentLocation.description2')}
                             </p>
                         </div>
                         
@@ -243,14 +237,13 @@ export default function TiskarnaKristianovPage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiGrid className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Stylish Living</h3>
+                                <h3 className="text-2xl font-bold">{t('whatMakesUsSpecial.stylishLiving.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                We've combined history and unique modern architecture. The complex features neorenaissance, industrial, and modern 
-                                architectural elements, creating a truly unique living environment.
+                                {t('whatMakesUsSpecial.stylishLiving.description1')}
                             </p>
                             <p className="text-slate-600">
-                                Each building tells its own story while offering modern comfort and luxury.
+                                {t('whatMakesUsSpecial.stylishLiving.description2')}
                             </p>
                         </div>
                         
@@ -259,14 +252,13 @@ export default function TiskarnaKristianovPage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiZap className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Modern Technology</h3>
+                                <h3 className="text-2xl font-bold">{t('whatMakesUsSpecial.modernTechnology.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                We take care of your comfortable and energy-efficient living. All apartments feature air recuperation and underfloor 
-                                heating, with photovoltaic panels and cogeneration units for sustainable energy.
+                                {t('whatMakesUsSpecial.modernTechnology.description1')}
                             </p>
                             <p className="text-slate-600">
-                                Rainwater collection systems and smart building management ensure reduced monthly costs.
+                                {t('whatMakesUsSpecial.modernTechnology.description2')}
                             </p>
                         </div>
                         
@@ -275,14 +267,13 @@ export default function TiskarnaKristianovPage() {
                                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                                     <FiHeart className="h-8 w-8 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold">Comprehensive Amenities</h3>
+                                <h3 className="text-2xl font-bold">{t('whatMakesUsSpecial.comprehensiveAmenities.title')}</h3>
                             </div>
                             <p className="text-lg text-slate-600 mb-4">
-                                The complex includes 200 apartments and non-residential spaces with room for galleries, cafés, bakeries, 
-                                fitness centers, and other civic amenities.
+                                {t('whatMakesUsSpecial.comprehensiveAmenities.description1')}
                             </p>
                             <p className="text-slate-600">
-                                Inner courtyard features children's corner, fountain, clock tower, and communal outdoor spaces.
+                                {t('whatMakesUsSpecial.comprehensiveAmenities.description2')}
                             </p>
                         </div>
                     </div>
@@ -293,9 +284,9 @@ export default function TiskarnaKristianovPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Premium Construction Standards</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('apartmentStandards.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Reducing energy consumption is our priority. Discover the sustainable features that make your home efficient and comfortable.
+                            {t('apartmentStandards.subtitle')}
                         </p>
                     </div>
 
@@ -322,9 +313,9 @@ export default function TiskarnaKristianovPage() {
                         <div className="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                             <FiAward className="h-12 w-12 text-white" />
                         </div>
-                        <h2 className="text-4xl font-bold mb-4">Award-Winning Architecture</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('architecturalAwards.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Jiří Opočenský and Štěpán Valouch are recipients of the Czech Architecture Award 2020
+                            {t('architecturalAwards.subtitle')}
                         </p>
                     </div>
                     
@@ -347,9 +338,9 @@ export default function TiskarnaKristianovPage() {
             <section className="relative lg:py-24 py-16 bg-slate-50">
                 <div className="container">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Exterior Views & Architecture</h2>
+                        <h2 className="text-4xl font-bold mb-4">{t('exteriorViews.title')}</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                            Explore the unique industrial heritage and modern architectural fusion
+                            {t('exteriorViews.subtitle')}
                         </p>
                     </div>
                     
@@ -365,7 +356,7 @@ export default function TiskarnaKristianovPage() {
                                 </div>
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <div className="text-center text-white">
-                                        <div className="text-xs opacity-90">Exterior View</div>
+                                        <div className="text-xs opacity-90">{t('exteriorViews.exteriorView')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -379,11 +370,9 @@ export default function TiskarnaKristianovPage() {
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold mb-6">Perfect Location in Liberec Center</h2>
+                            <h2 className="text-4xl font-bold mb-6">{t('location.title')}</h2>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                Together with Staré and Nové Město, Kristiánov forms the central triangle of Liberec. Located in the east of Liberec, 
-                                this urban district is home to over 5,000 residents and was created with the aim of building a representative 
-                                environment around the adjacent castle complex and famous Liebieg Palace.
+                                {t('location.description')}
                             </p>
                             <div className="grid grid-cols-2 gap-4">
                                 {locationFeatures.map((feature, index) => (
@@ -416,24 +405,22 @@ export default function TiskarnaKristianovPage() {
             <section className="relative lg:py-24 py-16">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="text-4xl font-bold mb-6">Choose Your Dream Home</h2>
+                        <h2 className="text-4xl font-bold mb-6">{t('availableUnits.title')}</h2>
                         <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-                            For detailed information about available units, pricing, and current availability, 
-                            please contact our sales team directly.
+                            {t('availableUnits.description')}
                         </p>
                         <div className="bg-white p-8 rounded-xl shadow-lg inline-block">
-                            <div className="text-4xl font-bold text-green-600 mb-2">Contact Me</div>
-                            <div className="text-xl mb-4">For Unit Information</div>
+                            <div className="text-4xl font-bold text-green-600 mb-2">{t('availableUnits.contactMe')}</div>
+                            <div className="text-xl mb-4">{t('availableUnits.forUnitInfo')}</div>
                             <Link href="#contact">
                                 <button className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
-                                    Get Unit Details
+                                    {t('availableUnits.getUnitDetails')}
                                 </button>
                             </Link>
                         </div>
                     </div>
                 </div>
             </section>
-
 
             {/* Contact Section */}
             <GetInTuch id="contact" />
