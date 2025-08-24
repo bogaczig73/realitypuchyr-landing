@@ -219,13 +219,13 @@ export default function DeveloperProjects() {
                                                     <h5 className="text-sm font-medium text-slate-800 truncate">{t(category.titleKey)}</h5>
                                                     <p className="text-xs text-slate-500 truncate">{t(category.descriptionKey)}</p>
                                                     <div className="flex items-center gap-1 mt-1">
-                                                        {category.status && (
+                                                        {'status' in category && category.status && (
                                                             <>
                                                                 <span className="text-xs text-green-600 font-medium">{t(category.status)}</span>
                                                                 <span className="text-xs text-slate-400">•</span>
                                                             </>
                                                         )}
-                                                        {category.location && (
+                                                        {'location' in category && category.location && (
                                                             <span className="text-xs text-slate-500">{t(category.location)}</span>
                                                         )}
                                                     </div>
