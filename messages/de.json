@@ -2,6 +2,7 @@
   "navigation": {
     "homeLink": "Startseite",
     "aboutLink": "Über mich",
+    "aboutMeLink": "Über mich",
     "propertiesLink": "Immobilien",
     "servicesLink": "Dienstleistungen",
     "allServices": "Alle Dienstleistungen",
@@ -9,6 +10,7 @@
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
     "blogLink": "Blog",
+    "achievementsLink": "Erfolge",
     "spain": "Spanien",
     "developerProjects": "Entwicklerprojekte",
     "reviewsLink": "Bewertungen"
@@ -1710,6 +1712,8 @@
     "spain": "Spanien",
     "faq": "FAQ",
     "blog": "Blog",
+    "aboutMe": "Über mich",
+    "achievements": "Erfolge",
     "contact": "Kontakt",
     "phoneNumber": "+420 733 781 696"
   },
@@ -2128,27 +2132,42 @@
     }
   },
   "aboutMe": {
+    "hero": {
+      "title": "Über mich",
+      "subtitle": "Ihr vertrauenswürdiger Immobilienpartner in Prag und Mittelböhmen"
+    },
     "whatDoIDo": {
       "title": "Was mache ich?",
       "description": "Ich kümmere mich um das Vermögen meiner Kunden — durch professionelle Maklerberatung zum Schutz und Wachstum ihres Vermögens."
     },
-    "services": [
-      {
-        "title": "Immobilienverwaltung",
-        "description": "Verkauf oder Kauf – mit uns finden Sie schnell und unter fairen Bedingungen die perfekte Immobilie oder einen Käufer, ob Sie eine Wohnung, ein Haus oder eine Investitionsmöglichkeit suchen.",
-        "readMore": "Weiterlesen"
+    "services": {
+      "badge": "Dienstleistungen",
+      "title": "Was ich anbiete",
+      "subtitle": "Umfassende Immobiliendienstleistungen, die auf Ihre Bedürfnisse zugeschnitten sind",
+      "0": {
+        "title": "Mieten",
+        "description": "Ich helfe Ihnen dabei, die perfekte Mietimmobilie zu finden, die Ihren Bedürfnissen und Ihrem Budget entspricht.",
+        "readMore": "Mehr erfahren über"
       },
-      {
-        "title": "Finanzdienstleistungen",
-        "description": "Ich biete maßgeschneiderte Finanzlösungen – von Hypotheken und Refinanzierung bis hin zu Anlageberatung – damit Sie Ihre Ziele mit Zuversicht und günstigen Bedingungen erreichen können.",
-        "readMore": "Weiterlesen"
+      "1": {
+        "title": "Kaufen",
+        "description": "Ich führe Sie durch den gesamten Kaufprozess, von der Immobiliensuche bis zum Abschluss.",
+        "readMore": "Mehr erfahren über"
       },
-      {
-        "title": "Entwicklerprojekte",
-        "description": "Entdecken Sie exklusive Neubauprojekte an erstklassigen Standorten in der Tschechischen Republik und im Ausland – modernes Wohnen mit Premium-Ausstattung und persönlichem Service von vertrauenswürdigen Entwicklern.",
-        "readMore": "Weiterlesen"
+      "2": {
+        "title": "Verkaufen",
+        "description": "Ich helfe Ihnen dabei, Ihre Immobilie schnell und zum bestmöglichen Preis zu verkaufen.",
+        "readMore": "Mehr erfahren über"
       }
-    ]
+    },
+    "highlights": {
+      "title": "Warum mich wählen",
+      "subtitle": "Bewährte Expertise und Engagement für Kundenzufriedenheit"
+    },
+    "cta": {
+      "reviews": "Bewertungen anzeigen",
+      "achievements": "Erfolge anzeigen"
+    }
   },
   "categories": {
     "title": "Immobilienkategorien"
@@ -2474,6 +2493,36 @@
           "description": "Wir arbeiten nur mit verifizierten Entwicklern, die hochwertige Konstruktion und Materialien garantieren."
         }
       }
+    }
+  },
+  "achievements": {
+    "hero": {
+      "title": "Meine Erfolge",
+      "subtitle": "Entdecken Sie die Anerkennung und Auszeichnungen, die mein Engagement für Exzellenz in Immobiliendienstleistungen hervorheben"
+    },
+    "badge": "Anerkennung",
+    "title": "Professionelle Erfolge",
+    "subtitle": "Preisgekrönte Immobiliendienstleistungen mit bewährter Erfolgsbilanz",
+    "achievements": {
+      "2022": {
+        "title": "Top-Immobilienmakler 2022",
+        "description": "🏆 Gekrönt als #1 Immobilienprofi in Prag und Mittelböhmen! Diese prestigeträchtige Auszeichnung würdigt unser unerschütterliches Engagement für Exzellenz, innovative Marketingstrategien und rekordverdächtige Verkaufsleistung. Mit über 150+ erfolgreichen Transaktionen und 98% Kundenzufriedenheit haben wir neue Branchenstandards für Luxusimmobilienverkäufe und außergewöhnlichen Kundenservice gesetzt."
+      },
+      "2024": {
+        "title": "Top-Immobilienmakler 2024",
+        "description": "🎯 Wiederholungssieger! Den ersten Platz auch 2024 gesichert und damit unsere konstant hohe Exzellenz auf dem wettbewerbsintensiven Prager Immobilienmarkt bewiesen. Diese bemerkenswerte Leistung spiegelt unseren modernsten digitalen Marketingansatz, personalisierte Kundenerfahrungen und Expertise bei Premium-Immobilien wider. Wir haben über 200+ Familien geholfen, ihre Traumhäuser zu finden und dabei unsere Position als vertrauenswürdigste Immobilienautorität der Region behauptet."
+      }
+    },
+    "stats": {
+      "awards": "Gewonnene Auszeichnungen",
+      "recognition": "Branchenanerkennung",
+      "satisfaction": "Kundenzufriedenheit",
+      "growth": "Geschäftswachstum"
+    },
+    "cta": {
+      "title": "Bereit zusammenzuarbeiten?",
+      "description": "Lassen Sie meine bewährte Erfolgsbilanz und Erfolge für Sie arbeiten, um Ihre perfekte Immobilie zu finden.",
+      "button": "Kontakt aufnehmen"
     }
   },
   "reviews": {

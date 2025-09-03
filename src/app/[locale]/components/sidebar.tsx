@@ -93,8 +93,22 @@ export default function Sidebar(){
                                 <Link href="/blog" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-post-outline me-2"></i>{t('blog')}</Link>
                             </li>
 
-                            <li className={`${manu === "/reviews" ? 'active' : ''} ms-0`}>
-                                <Link href="/reviews" onClick={toggleSidebar} scroll={false}><i className="mdi mdi-star me-2"></i>{navigationT('reviewsLink')}</Link>
+                            <li className={`${manu === "/about-me" || manu === "/reviews" || manu === "/achievements" ? 'active' : ''} ms-0`}>
+                                <Link href="#" onClick={(e) => {e.preventDefault(); setSubManu(submanu === "/reviews" ? "" : "/reviews")}}>
+                                    <i className="mdi mdi-account me-2"></i>{t('aboutMe')}
+                                </Link>
+                                <ul className={`submenu ${["/reviews", "/achievements", "/about-item"].includes(submanu) ? 'open' : ''}`}>
+                                    <li className={manu === "/reviews" ? 'active' : ''}>
+                                        <Link href="/reviews" onClick={toggleSidebar} scroll={false} className="sub-menu-item">
+                                            {navigationT('reviewsLink')}
+                                        </Link>
+                                    </li>
+                                    <li className={manu === "/achievements" ? 'active' : ''}>
+                                        <Link href="/achievements" onClick={toggleSidebar} scroll={false} className="sub-menu-item">
+                                            {t('achievements')}
+                                        </Link>
+                                    </li>
+                                </ul>
                             </li>
 
                             <li className={`${manu === "/contact" ? 'active' : ''} ms-0`}>

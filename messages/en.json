@@ -2,6 +2,7 @@
   "navigation": {
     "homeLink": "Home",
     "aboutLink": "About",
+    "aboutMeLink": "About Me",
     "propertiesLink": "Properties",
     "servicesLink": "Services",
     "allServices": "All Services",
@@ -9,6 +10,7 @@
     "contactLink": "Contact",
     "faqLink": "FAQ",
     "blogLink": "Blog",
+    "achievementsLink": "Achievements",
     "spain": "Spain",
     "developerProjects": "Developer Projects",
     "reviewsLink": "Reviews"
@@ -1650,6 +1652,8 @@
     "spain": "Spain",
     "faq": "FAQ",
     "blog": "Blog",
+    "aboutMe": "About Me",
+    "achievements": "Achievements",
     "contact": "Contact",
     "phoneNumber": "+420 733 781 696"
   },
@@ -2069,27 +2073,42 @@
     }
   },
   "aboutMe": {
+    "hero": {
+      "title": "About Me",
+      "subtitle": "Your trusted real estate partner in Prague and Central Bohemia"
+    },
     "whatDoIDo": {
       "title": "What Do I Do?",
       "description": "I take care of my clients' assets—providing expert broker consulting to protect and grow their wealth."
     },
-    "services": [
-      {
-        "title": "Property Management",
-        "description": "Sale or purchase – with us, you'll find the perfect property or a buyer quickly and under fair conditions, whether you're looking for an apartment, house, or investment opportunity.",
-        "readMore": "Read More"
+    "services": {
+      "badge": "Services",
+      "title": "What I Offer",
+      "subtitle": "Comprehensive real estate services tailored to your needs",
+      "0": {
+        "title": "Rent",
+        "description": "I help you find the perfect rental property that meets your needs and budget.",
+        "readMore": "Learn more about"
       },
-      {
-        "title": "Financial Services",
-        "description": "I offer tailored financial solutions – from mortgages and refinancing to investment advisory – so you can achieve your goals with confidence and favorable terms.",
-        "readMore": "Read More"
+      "1": {
+        "title": "Buy",
+        "description": "I guide you through the entire buying process, from property search to closing.",
+        "readMore": "Learn more about"
       },
-      {
-        "title": "Developer Projects",
-        "description": "Discover exclusive new developments in prime locations in the Czech Republic and abroad – modern living with premium amenities and personalized service from trusted developers.",
-        "readMore": "Read More"
+      "2": {
+        "title": "Sell",
+        "description": "I help you sell your property quickly and at the best possible price.",
+        "readMore": "Learn more about"
       }
-    ]
+    },
+    "highlights": {
+      "title": "Why Choose Me",
+      "subtitle": "Proven expertise and dedication to client satisfaction"
+    },
+    "cta": {
+      "reviews": "View Reviews",
+      "achievements": "View Achievements"
+    }
   },
   "categories": {
     "title": "Listing Categories"
@@ -2415,6 +2434,36 @@
           "description": "We work only with verified developers who guarantee high quality construction and materials."
         }
       }
+    }
+  },
+  "achievements": {
+    "hero": {
+      "title": "My Achievements",
+      "subtitle": "Discover the recognition and awards that highlight my commitment to excellence in real estate services"
+    },
+    "badge": "Recognition",
+    "title": "Professional Achievements",
+    "subtitle": "Award-winning real estate services with proven track record of success",
+    "achievements": {
+      "2022": {
+        "title": "Top Real Estate Agent 2022",
+        "description": "🏆 Crowned as the #1 real estate professional in Prague and Central Bohemia! This prestigious award recognizes our unwavering commitment to excellence, innovative marketing strategies, and record-breaking sales performance. With over 150+ successful transactions and 98% client satisfaction rate, we've set new industry standards for luxury property sales and exceptional customer service."
+      },
+      "2024": {
+        "title": "Top Real Estate Agent 2024",
+        "description": "🎯 Back-to-back champion! Secured the top spot again in 2024, proving our consistent excellence in the competitive Prague real estate market. This remarkable achievement reflects our cutting-edge digital marketing approach, personalized client experiences, and expertise in premium properties. We've helped 200+ families find their dream homes while maintaining our position as the region's most trusted real estate authority."
+      }
+    },
+    "stats": {
+      "awards": "Awards Won",
+      "recognition": "Industry Recognition",
+      "satisfaction": "Client Satisfaction",
+      "growth": "Business Growth"
+    },
+    "cta": {
+      "title": "Ready to Work Together?",
+      "description": "Let my proven track record and achievements work for you in finding your perfect property.",
+      "button": "Get in Touch"
     }
   },
   "reviews": {

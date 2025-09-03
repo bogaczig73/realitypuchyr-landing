@@ -133,7 +133,26 @@ export default function Navbar({ navClass, topnavClass, tagline }:{ navClass:str
                         <ul className={`navigation-menu ${navClass === '' || navClass === undefined ? '' : 'nav-light'} ${topnavClass !== '' && topnavClass !== undefined ? '!justify-center' : '!justify-end'}`}>
                             <li className={`has-submenu parent-menu-item ${isActive('/') ? 'active' : ''}`}><Link href={`/${currentLocale}`}>{t('homeLink')}</Link></li>
                             <li className={`has-submenu parent-menu-item ${isActive('/list') ? 'active' : ''}`}><Link href={`/${currentLocale}/list?status=ACTIVE`}>{t('propertiesLink')}</Link></li>
-                            <li className={`has-submenu parent-menu-item ${isActive('/reviews') ? 'active' : ''}`}><Link href={`/${currentLocale}/reviews`}>{t('reviewsLink')}</Link></li>
+                            
+                            {/* About Me Dropdown */}
+                            <li className={`has-submenu parent-menu-item ${isActive('/about-me') || isActive('/reviews') || isActive('/achievements') ? 'active' : ''}`}>
+                                <Link href="#" onClick={(e) => {e.preventDefault(); setSubManu(subManu === "/about-item" ? "" : "/about-item")}}>
+                                    {t('aboutMeLink')}
+                                </Link>
+                                <span className="menu-arrow"></span>
+                                <ul className={`submenu ${["/reviews", "/achievements", "/about-item"].includes(subManu) ? 'open' : ''}`}>
+                                    <li className={isActive('/reviews') ? 'active' : ''}>
+                                        <Link href={`/${currentLocale}/reviews`} className="sub-menu-item">
+                                            {t('reviewsLink')}
+                                        </Link>
+                                    </li>
+                                    <li className={isActive('/achievements') ? 'active' : ''}>
+                                        <Link href={`/${currentLocale}/achievements`} className="sub-menu-item">
+                                            {t('achievementsLink')}
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
                             
                             {/* Services Dropdown */}
                             <li className={`has-submenu parent-menu-item ${isActive('/services') ? 'active' : ''}`}>

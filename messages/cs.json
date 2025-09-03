@@ -2,6 +2,7 @@
   "navigation": {
     "homeLink": "Domů",
     "aboutLink": "O mně",
+    "aboutMeLink": "O mně",
     "propertiesLink": "Nemovitosti",
     "servicesLink": "Služby",
     "allServices": "Všechny služby",
@@ -9,6 +10,7 @@
     "contactLink": "Kontakt",
     "faqLink": "FAQ",
     "blogLink": "Blog",
+    "achievementsLink": "Úspěchy",
     "spain": "Španělsko",
     "developerProjects": "Developerské projekty",
     "reviewsLink": "Recenze"
@@ -1710,6 +1712,8 @@
     "spain": "Španělsko",
     "faq": "FAQ",
     "blog": "Blog",
+    "aboutMe": "O mně",
+    "achievements": "Úspěchy",
     "contact": "Kontakt",
     "phoneNumber": "+420 733 781 696"
   },
@@ -2128,27 +2132,42 @@
     }
   },
   "aboutMe": {
+    "hero": {
+      "title": "O mně",
+      "subtitle": "Váš důvěryhodný realitní partner v Praze a Středočeském kraji"
+    },
     "whatDoIDo": {
       "title": "Co dělám?",
       "description": "Starám se o majetek svých klientů — poskytuji odborné realitní poradenství pro ochranu a růst jejich majetku."
     },
-    "services": [
-      {
-        "title": "Nemovitost",
-        "description": "Prodej nebo koupě – se mnou najdete ideální nemovitost nebo kupce rychle a za férových podmínek, ať už hledáte byt, dům nebo investiční příležitost.",
-        "readMore": "Číst více"
+    "services": {
+      "badge": "Služby",
+      "title": "Co nabízím",
+      "subtitle": "Komplexní realitní služby na míru vašim potřebám",
+      "0": {
+        "title": "Pronájem",
+        "description": "Pomůžu vám najít ideální pronajatou nemovitost, která splní vaše potřeby a rozpočet.",
+        "readMore": "Dozvědět se více o"
       },
-      {
-        "title": "Finanční poradenství",
-        "description": "Nabízím komplexní finanční řešení na míru – od hypoték a refinancování po investiční poradenství – abyste dosáhli svých cílů s jistotou a výhodnými podmínkami.",
-        "readMore": "Číst více"
+      "1": {
+        "title": "Koupě",
+        "description": "Provedu vás celým procesem nákupu, od hledání nemovitosti až po uzavření smlouvy.",
+        "readMore": "Dozvědět se více o"
       },
-      {
-        "title": "Developerské projekty",
-        "description": "Objevte exkluzivní novostavby v atraktivních lokalitách v ČR i v zahraničí – moderní bydlení s nadstandardním vybavením a individuálním přístupem od ověřených developerů.",
-        "readMore": "Číst více"
+      "2": {
+        "title": "Prodej",
+        "description": "Pomůžu vám prodat vaši nemovitost rychle a za nejlepší možnou cenu.",
+        "readMore": "Dozvědět se více o"
       }
-    ]
+    },
+    "highlights": {
+      "title": "Proč si vybrat mě",
+      "subtitle": "Ověřené odborné znalosti a oddanost spokojenosti klientů"
+    },
+    "cta": {
+      "reviews": "Zobrazit recenze",
+      "achievements": "Zobrazit úspěchy"
+    }
   },
   "categories": {
     "title": "Kategorie nemovitostí"
@@ -2474,6 +2493,36 @@
           "description": "Spolupracujeme pouze s ověřenými developery, kteří garantují vysokou kvalitu stavby a materiálů."
         }
       }
+    }
+  },
+  "achievements": {
+    "hero": {
+      "title": "Moje úspěchy",
+      "subtitle": "Objevte uznání a ocenění, která dokládají mou oddanost excelentním realitním službám"
+    },
+    "badge": "Uznání",
+    "title": "Profesionální úspěchy",
+    "subtitle": "Oceněné realitní služby s ověřenou úspěšností",
+    "achievements": {
+      "2022": {
+        "title": "Nejlepší realitní makléř 2022",
+        "description": "🏆 Korunován jako #1 realitní profesionál v Praze a Středočeském kraji! Toto prestižní ocenění uznává naše neochvějné odhodlání k excelenci, inovativní marketingové strategie a rekordní prodejní výkonnost. S více než 150+ úspěšnými transakcemi a 98% spokojeností klientů jsme stanovili nové standardy odvětví pro prodej luxusních nemovitostí a výjimečný zákaznický servis."
+      },
+      "2024": {
+        "title": "Nejlepší realitní makléř 2024",
+        "description": "🎯 Znovu vítěz! Zajistil jsem si první místo i v roce 2024, což dokazuje naši konzistentní excelenci na konkurenčním pražském realitním trhu. Tento pozoruhodný úspěch odráží náš pokročilý digitální marketingový přístup, personalizované zákaznické zážitky a odbornost v prémiových nemovitostech. Pomohli jsme více než 200+ rodinám najít jejich vysněné domovy a udrželi jsme si pozici nejdůvěryhodnější realitní autority v regionu."
+      }
+    },
+    "stats": {
+      "awards": "Získaná ocenění",
+      "recognition": "Oborové uznání",
+      "satisfaction": "Spokojenost klientů",
+      "growth": "Růst podnikání"
+    },
+    "cta": {
+      "title": "Připraveni spolupracovat?",
+      "description": "Nechte můj ověřený přehled a úspěchy pracovat pro vás při hledání vaší dokonalé nemovitosti.",
+      "button": "Kontaktujte mě"
     }
   },
   "reviews": {
