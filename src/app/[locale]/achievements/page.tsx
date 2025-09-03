@@ -24,7 +24,7 @@ const getAchievements = (t: any) => [
     title: t('achievements.2024.title'),
     description: t('achievements.2024.description'),
     year: "2024",
-    image: "/images/achievements/makler-roku-2024.webp"
+    image: "/images/achievements/makler-roku-2024.jpeg"
   }
 ]
 
