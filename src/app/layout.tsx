@@ -42,7 +42,23 @@ export default function RootLayout({
         {/* DNS prefetch for performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       </head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-LRK1DNRN0X"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-LRK1DNRN0X', {
+            page_title: document.title,
+            page_location: window.location.href
+          });
+        `}
+      </Script>
       <Script
         src="https://cloud.umami.is/script.js"
         data-website-id="0e375b50-6281-4376-8873-457d342a18c3"
