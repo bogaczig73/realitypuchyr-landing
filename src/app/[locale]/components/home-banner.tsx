@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
-const heroimage = '/images/agency/pavel.webp'
+const heroimage = '/images/agency/pavel_puchyr_photo_1.webp'
 
 export default function HomeBanner() {
     const t = useTranslations('components.homeBanner');

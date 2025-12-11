@@ -154,6 +154,15 @@ export default function AchievementsPage() {
       <section className="relative lg:py-24 py-16">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <Image 
+                src="/images/agency/pavel_puchyr_photo_2.webp" 
+                alt="Pavel Puchyr" 
+                width={600} 
+                height={600}
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
             <div>
               <h3 className="text-4xl font-bold mb-6 text-slate-900 dark:text-white">
                 {t('cta.title')}

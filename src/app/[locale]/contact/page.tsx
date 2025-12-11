@@ -88,7 +88,7 @@ export default function Page() {
                     <div className="grid grid-cols-1">
                         <div className="p-6 rounded-md bg-green-600/10 dark:bg-green-600/20">
                             <div className="md:flex items-center">
-                                <Image src='/images/agency/pavel-2.webp' width={112} height={112} className="rounded-full object-cover w-28 h-28" alt="" />
+                                <Image src='/images/agency/pavel_puchyr_photo_2.webp' width={112} height={112} className="rounded-full object-cover w-28 h-28" alt="" />
 
                                 <div className="md:ms-4 md:mt-0 mt-4 md:flex justify-between items-end">
                                     <div>

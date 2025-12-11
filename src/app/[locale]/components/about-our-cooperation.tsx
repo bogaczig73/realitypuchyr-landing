@@ -14,7 +14,7 @@ export default function AboutOurCooperation() {
                 <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                     <div className="md:col-span-5">
                         <div className="relative">
-                            <Image src="/images/about.jpg" className="rounded-xl shadow-md" alt="" width={0} height={0} sizes="100vw" style={{width:"100%" , height:'auto'}} priority />
+                            <Image src="/images/agency/pavel_puchyr_photo_3.webp" className="rounded-xl shadow-md" alt="" width={0} height={0} sizes="100vw" style={{width:"100%" , height:'auto'}} priority />
                         </div>
                     </div>
 
